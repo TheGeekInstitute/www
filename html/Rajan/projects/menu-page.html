@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .heading{
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+        }
+        .nav{
+            /* border: 1px solid black; */
+            margin: 8px 0;
+        }
+        .nav ul{
+            /* border: 1px solid black; */
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            border-radius: 50px;
+            background-color: gray;
+            color: white;
+        }
+        .nav ul li{
+            padding: 7px;
+            font-size: 18px;
+            border-radius: 50px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .nav ul li:hover{
+            background-color: rgb(250, 84, 84);
+        }
+        .container{
+            /* border: 1px solid black; */
+            background-color: rgba(128, 128, 128, 0.281);
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container .box{
+            height: 10rem;
+            width: 16rem;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            margin:10px;
+            background-size: 100%;
+            user-select: none;
+            cursor: pointer;
+        }
+        .container .box.size{
+            position: absolute;
+            border: 1px solid black;
+            height: 80%;
+            width: 80%;
+
+        }
+
+        .nav ul .active{
+            background-color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>RAJAN</h1>
+    </div>
+    <div class="nav">
+        <ul id="btns">
+            <li data-food="all">All</li>
+            <li data-food="breakfast">Breakfast</li>
+            <li data-food="brunch">Brunch</li>
+            <li data-food="elevenses">Elevenses</li>
+            <li data-food="lunch">Lunch</li>
+            <li data-food="supper">Supper</li>
+            <li data-food="dinner">Dinner</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b01.jpeg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b02.webp);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b03.jpg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b04.jpg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b05.jpeg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b06.jpg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b07.jpg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b08.jpg);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b09.png);"></div>
+        <div class="box breakfast" style="background-image: url(../rajan-img-food/b10.webp);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br01.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br02.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br03.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br04.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br05.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br06.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de7.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br07.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu07.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br09.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br10.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su04.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br12.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de01.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el02.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su06.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el05.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el06.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de4.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu02.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu03.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu05.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br11.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su01.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu08.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu09.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu10.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu11.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el03.jpg);"></div>
+        <div class="box brunch" style="background-image: url(../rajan-img-food/br08.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su02.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su03.jpg);"></div>
+        <div class="box supper" style="background-image: url(../rajan-img-food/su05.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu06.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el01.webp);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu01.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de02.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de03.jpg);"></div>
+        <div class="box lunch" style="background-image: url(../rajan-img-food/lu04.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de5.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de6.jpg);"></div>
+        <div class="box elevenses" style="background-image: url(../rajan-img-food/el04.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de8.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de9.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de10.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de11.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de12.jpg);"></div>
+        <div class="box dinner" style="background-image: url(../rajan-img-food/de13.jpg);"></div>
+    </div>
+
+
+
+    <script>
+        let box=document.querySelector('.container').children;
+        Array.from(box).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                e.classList.toggle("size");
+            })
+        })
+        let btns=document.querySelector('#btns').children;
+        Array.from(btns).forEach((i)=>{
+            i.addEventListener("click",()=>{
+                var attr =  i.getAttribute("data-food");
+                Array.from(btns).forEach((a)=>{
+                a.classList.remove("active")
+            })
+            i.classList.add("active")
+            
+            let container =  document.querySelector(".container")
+            Array.from(box).forEach((element) => {
+                if(element.classList.contains(attr)){
+                    element.style.display="block"
+                }
+                else if(attr=="all"){
+                    element.style.display="block"
+                }
+                else{
+                    element.style.display="none"
+                }
+            });
+            })
+            
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .tablet,.mobile{
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .pc,.mobile{
+                display: none;
+            }
+
+            .tablet{
+                display: block;
+            }
+        }
+
+
+
+        @media screen and (max-width:480px) {
+            .pc,.tablet{
+                display: none;
+            }
+
+            .mobile{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h1 class="pc">Computer Screen</h1>
+    <h1 class="tablet">Tablest Screen</h1>
+    <h1 class="mobile">Mobile Screen</h1>
+</body>
+</html>

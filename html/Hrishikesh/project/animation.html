@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .card{
+            height: 300px;
+            width: 250px;
+            background-color: springgreen;
+            border-radius: 10px; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            /* animation-name: ami; */
+            /* animation-duration: 5s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-iteration-count: infinite; */
+            animation: move 5s linear 2s infinite alternate ;
+        }
+        .card img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin: 10px 0px 10px 0px;
+            border: 5px ridge red;
+        }
+    
+        @keyframes move{
+            %{
+                transform: translate(0,0) rotate(0);
+            }
+
+            20%{
+                transform: translate(calc(100vw - 150px),0) rotate(0) scale(1);
+                background-color: green;
+
+            }
+
+            40%{
+                transform: translate(calc(100vw - 150px),calc(100vw - 150px)) rotate(120deg) scale(0.5);
+                background-color: red;
+
+
+            }
+
+            60%{
+                transform: translate(0,calc(100vw - 150px)) rotate(240deg) scale(1);
+                background-color: cyan;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>MAA JAWAHARI</h1>
+        <img src="/FB_IMG_1717173305375.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime est, excepturi et exercitationem amet nemo doloribus saepe cupiditate atque, quia quos obcaecati adipisci rem.</p>
+    </div>
+</body>
+</html>

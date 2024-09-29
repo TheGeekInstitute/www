@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction To DOM</title>
+</head>
+<body>
+    <div class="box">
+        <h1 id="heading" style="color: red;" align="center">This <br> is Simple heading</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque labore, similique obcaecati eligendi asperiores id mollitia enim blanditiis voluptatem animi nulla corporis dolores a et iure dolorem molestiae ab ipsa.</p>
+        <a href="#">one</a>
+        <a href="#">two</a>
+        <a href="#">Three</a>
+        <h1>Lorem ipsum</h1>
+        <b class="para">Lorem ipsum dolor sit amet consectetur,</b>
+    </div>
+
+    <!-- &lt; abcd &gt; -->
+
+    <button onclick="change()">Change</button>
+
+    <script>
+
+        // console.log(document.all[7]);
+
+        // console.log(document.getElementsByTagName("p")[0])
+        // console.log(document.head)
+        // console.log(document.title)
+        // console.log(document.body)
+        // console.log(document.links[1])
+        // console.log(document.URL)
+        // console.log(document.baseURI)
+
+        // let target_id = document.getElementById("heading")
+
+        // console.log(target_id)
+        // let target_class = document.getElementsByClassName("para")
+
+        // console.log(target_class[0])
+
+        // console.log(document.getElementsByClassName("box")[0].innerHTML)
+        // console.log(document.getElementsByClassName("box")[0].innerText)
+        // console.log(document.getElementById("heading").getAttribute("align"))
+        // console.log(document.getElementById("heading").getAttributeNode("style"))
+
+        // console.log(document.getElementById("heading").attributes)
+
+        function change(){
+          let element = document.getElementById("heading");
+
+        //   element.innerText="<i>Hello World</i>"
+        // element.setAttribute("style","color:green;")
+
+        element.removeAttribute("style")
+        }
+
+
+
+    </script>
+</body>
+</html>

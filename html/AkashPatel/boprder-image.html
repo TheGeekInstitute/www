@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 20px solid ;
+            margin: auto;
+            /* border-image-source: url("https://www.w3schools.com/cssref/border.png"); */
+
+            border-image-source: linear-gradient(45deg,red,green,yellow);
+            border-image:linear-gradient(#f6b73c, #4d9f0c) 30;
+            background-color: rebeccapurple;
+            border-image-slice: 30;
+            /* border-image-width: 20px; */
+            /* border-image-outset: -20px; */
+            border-image-repeat: repeat;
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 7vh;
+            color: white;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            margin-left: 10px;
+        }
+        .logo span{
+            color: blue;
+        }
+        .nav ul li{
+            display: inline-block;
+        }
+        .nav ul li a{
+            color: aliceblue;
+            /* margin: 5px; */
+            font-size: larger;
+            font-weight: 700;
+            border: 1px solid white;
+            padding: 10px;
+            display: block;
+        }
+        .nav ul li a:hover{
+            background: red;
+            color: black;
+
+        }
+        .drop{
+            position: absolute;
+            background: gray;
+            width: 8.3rem;
+            /* left: 5; */
+            /* padding: -50px; */
+            margin-top: 20px;
+            margin-left: 0px;
+            display: none;
+        }
+        .nav ul li ul li{
+            display: block;
+        }
+        .nav ul li ul li a{
+            /* margin-top: 10px; */
+            color: black;
+            display: block;
+        }
+        .nav ul li:hover .drop{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">DEC<span>BLOW</span></h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">DropDown +</a>
+        <ul class="drop">
+            <li><a href="#">Drop down1</a></li>
+            <li><a href="#">Drop down2</a></li>
+            <li><a href="#">Drop down3</a></li>
+        </ul>
+        </li>
+        <li><a href="#">About</a></li>
+    </ul>
+    </div>
+    
+</body>
+</html>

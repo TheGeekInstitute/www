@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        
+        .card{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            /* perspective: ; */
+            cursor: wait;
+            
+        }
+        
+        .content{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            font-size: 100px;
+            backface-visibility: hidden;
+            transition: all 1s;
+            text-align: center;
+            /* line-height:250px; */
+            transform-style: preserve-3d;
+            
+        }
+
+        .first,.second{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            box-shadow: 4px 4px 6px gray;
+        }
+
+        .first{
+            background-color: antiquewhite;
+        }
+        .first img{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+        }
+
+        .second{
+            transform: rotatey(180deg);
+            background-color: aqua;
+        }
+
+.card:hover .content{
+    transform: rotatey(180deg);
+}
+.content .first h2{
+    /* border: 1px solid yellow; */
+    font-size: 50px;
+    /* margin-top: -15em; */
+    margin-top: -2em;
+    background-color: rgb(21, 196, 123);
+}
+.second h1{
+    font-size: 50px;
+    margin-top: -4px;
+    
+
+}
+.second p{
+    font-size: 25px;
+    margin-top: -20px;
+}
+.icons {
+    /* border: 2px solid black; */
+    margin-top: -60px;
+}
+.instagram{
+    height: 40px;
+}
+.facbook{
+    height: 40px;
+}
+.youtube{
+    height: 40px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="first">
+                <img class="motu" src="https://play-lh.googleusercontent.com/V4WZDnlPjOhomc8rkWk2DoLjJg6CWGk32lXuHwocmF5WWwXFR-PdpxX-DpS4jW3s9-w" alt="">
+                <h2>Motu</h2>
+            </div>
+
+            <div class="second">
+                <h1>Motu</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non itaque, et sapiente accusamus dolor hic ullam blanditiis rem rerum ea nihil in, voluptates officiis quasi</p>
+                <div class="icons">
+                    <img class="instagram" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="">
+                    <img class="facbook" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/640px-Facebook_icon.svg.png" alt="">
+                    
+    
+                    <img class="youtube" src="https://yt3.googleusercontent.com/vHozuIm26qE6214k2voRUv-XJq_aXD3QD4AqRkwC4MZJtqVCxNkPzD_9VjjGLtHPJccJdpXhzQ=s900-c-k-c0x00ffffff-no-rj" alt="">
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

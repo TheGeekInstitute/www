@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web pages </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        }
+        .nav{
+            height: 12vh;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 100px;
+            background-color: rgb(232, 248, 248);
+
+        }
+
+        .logo{
+            margin-left: 20px;
+
+        }
+
+        .nav ul{
+
+        }
+        .nav ul li{
+            /* text-align: center; */
+            display: inline;
+        }
+        .nav ul li a{
+            margin: 5px;
+            /* font-size: large; */
+            color: black;
+            font-weight: 300;
+            font-family:   Arial, sans-serif;
+        }
+    
+        input[type=search]{
+            padding: 5px 7px;
+        /* font-size: larger; */
+    }
+    .search{
+        border: 1px solid red;
+        /* margin-left: -5 ; */
+        background: red;
+        color: white;
+        padding:  5px 10px;
+        /* align-items: center; */
+        margin-left: -5px;
+    }
+        .icon{
+            font-size: xx-large ;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+         
+        .container{
+            
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 50px;
+        }
+        .items img{
+            /* border: 1px solid black; */
+            height: 110px;
+        }
+        .main {
+                margin: 2rem 2rem;
+                background-color: rgb(232, 248, 248);
+                width: 96vw;
+                height: 160vh;
+            }
+            .scroll img{
+                height: 20rem;
+                width:85vw ;
+                margin: 3rem 5rem ;
+                border-radius: 30px;
+            }
+            .scroll h1{
+                /* font-size: x-large; */
+                margin: 10px 30px;
+
+            }
+            .scroll p{
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(66, 66, 66);
+                margin: 10px 30px;
+            }
+            .scroll h1 i{
+                color: rgba(128, 128, 128, 0.445);
+            }
+            .card{
+                margin: 30px  15px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            .box {
+                border: 2px solid white;
+                border-radius: 10px;
+                height: 35vh;
+                width: 17vw;
+                text-align: center;
+                box-shadow: 2px 2px 2px gray;
+                background: white;
+            }
+            .box img{
+                height: 18vh;
+                /* align-items: center; */
+                margin: 10px 30px;
+                padding: 5px 0px;
+            }
+            .box h3{
+                text-align: center;
+                margin: 5px;
+            }
+            span{
+                color: rgb(250, 77, 207);
+                margin: 15px;
+
+            }
+            
+            .box h4{
+                display: inline-block;
+            }
+            .add{
+                margin: 10px 0px;
+                padding: 5px;
+                /* display: inline; */
+                border: 1px solid rgb(0, 89, 255);
+                background:rgb(0, 89, 255);
+                color: white;
+                /* border-radius: ; */
+                border-radius: 4px;
+
+            }
+            .buy{
+                /* background: white; */
+                border: 1px solid rgb(0, 89, 255);
+                border-radius: 4px;
+                padding: 5px;
+            }
+            .main2 i{
+                color: rgba(128, 128, 128, 0.445);
+            }
+            .main3 i{
+                color: rgba(128, 128, 128, 0.445);
+            }
+            .footer{
+                column-count: 4;
+                height: 350px;
+                background: black;
+                color: white;
+            }
+            .left {
+                height:200px;
+                width:2%;
+                text-align:center;
+                float:left;
+                display: inline-block;
+                }
+
+                .right{
+                height:100px;
+                width:20%;
+                float:right;
+                text-align:left;
+                display: inline-block;
+                }
+
+           .centered{
+                width:5%;
+                verflow: hidden;
+                display: inline-block;
+                text-align:center;
+                }
+            
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+        <ul >
+            <li ><input type="search"></li>
+            <li class="search"><i class="fa fa-search" aria-hidden="true"></i></li>
+            <li><i class="fa fa-cart-arrow-down icon" aria-hidden="true"></i></li>
+            <li><i class="fa fa-user icon" aria-hidden="true"></i></li>
+        </ul>
+        
+        
+    </div>
+    
+    <div class="container">
+        <div class="items">
+            <img src="https://png.pngtree.com/png-clipart/20230407/ourmid/pngtree-3d-laptop-original-design-png-image_6688925.png" alt="">
+            <p>Laptop</p>
+            
+        </div>
+            <div class="items">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+            <p>Apple iPhone</p>
+            </div>
+        
+            <div class="items">
+                <img src="https://www.pngmart.com/files/3/Video-Camera-Lens-Transparent-PNG.png
+            " alt="">
+            <p>Camera</p>
+            </div>
+        
+            <div class="items">
+                <img src="https://www.freepnglogos.com/uploads/airpods-png/wireless-charger-case-for-apple-airpods-hyperjuice-13.png" alt="">
+            <p>Airpods</p>
+            </div>
+        
+            <div class="items">
+                <img src="http://clipart-library.com/image_gallery2/Watch-PNG-Clipart.png" alt="">
+            <p>Legend Watch</p>
+            </div>
+        
+            <div class="items">
+                <img src="http://clipart-library.com/new_gallery/89-895242_beats-ep-on-ear-headphones-black.png" alt="">
+                <p>Headphones</p>
+            </div>
+
+       
+    </div>
+    <div class="main">
+        <div class="scroll">
+            <img src="https://www.mensfashionmagazine.com/wp-content/uploads/2023/02/vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" alt="">
+        <h1>Most Viewed <i class="fa fa-long-arrow-right" ></i>
+        </h1>
+        <p>Checkout Our Most Viewed Products</p>
+        </div>
+        
+        <div class="card">
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            
+        </div>
+        <div class="main2">
+            <h1>Latest Deals  <i class="fa fa-long-arrow-right" id="arrow"></i></h1>
+            <p>Check Our Latest deals</p>
+        
+            <div class="card">
+                <div class="box">
+                    <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                    <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+                <span>Rs 59,0000</span>
+                <br>
+                <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+            </div>
+     </div>
+     <div class="main3">
+        <h1>Shop By Cateogary  <i class="fa fa-long-arrow-right" id="arrow"></i></h1>
+        <p>Chosse the Product that will not affect the budget.</p>
+        <div class="card">
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone</h3>
+            <span>Rs 59,0000</span>
+            <br>
+            <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+        </div>
+        <div class="box">
+            <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+            <h3>iPhone</h3>
+            <span>Rs 59,0000</span>
+            <br>
+            <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+        </div>
+        <div class="box">
+            <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+            <h3>iPhone</h3>
+            <span>Rs 59,0000</span>
+            <br>
+            <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+        </div>
+        <div class="box">
+            <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+            <h3>iPhone</h3>
+            <span>Rs 59,0000</span>
+            <br>
+            <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+        </div>
+        <div class="box">
+            <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+            <h3>iPhone</h3>
+            <span>Rs 59,0000</span>
+            <br>
+            <h4 class="add">Add to cart</h4> <h4 class="buy">Buy Now</h4>
+
+        </div>
+ </div>
+ <div class="footer">
+    <div class="wrapper">
+    
+    <div class="p">
+    <h1>Easter</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur rerum eos corrupti? Sed, incidunt repellendus aut possimus fuga doloremque, voluptas facilis culpa, maxime et esse. Maxime culpa amet nulla?</p>
+        </div>
+        <div class="service">
+            <h1>Services</h1>
+            <p>Deals in Devices</p>
+            <p>Home Decor</p>
+            <p>Beauty</p>
+            <p>Health</p>
+        </div>
+
+        <div class="categories">
+            <h1>Categories</h1>
+            <p>Electronics</p>
+            <p>Refurbished Devices</p>
+            <p>Fashion</p>
+            <p>Accesories</p>
+            <p>Decoration</p>
+            <p>Beauty Products</p>
+            <p>Tickets</p>
+        </div>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p>Email Us</p>
+            <p>Call Us </p>
+            <p>Kapashera New Delhi</p>
+            <a href="#"><i class="fa-brands fa-instagram ig"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f fb"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter tw " ></i></a>
+        </div>
+
+    </div>
+    <div class="copy">
+    <p>Copyright 2022 Created By <span>Gics</span></p>
+    </div>
+    </div>
+
+    
+</body>
+</html>

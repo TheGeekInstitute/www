@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-CARD-TEST....HTML</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF1tmMzWpXlDE0C96ETkL8t07jTUk_hE07Uw&s">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: calc(50%-200px);
+            left: calc(50%-200px);
+            transform-style: preserve-3d
+            back
+        }
+        .container .card{
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s linear;
+            align-items: center;
+            background-position: center;
+        }
+        .container .card .in,
+        .container .card .out{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+        .container .card .in{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIM3jOmbk33dR15oWQAPHNIFySDsqiYhFpzA&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: end;
+        }
+        .container .card .in h1{
+            background-color: rgba(24, 207, 34, 0.541);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            top: 263px;
+            color:rgb(166, 197, 187);
+        }
+       .container .card .out{
+            background-color: rgb(49, 60, 80);
+            transform: rotateY(180deg);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr4d45PP2eG6rEjYmNt4sXHSg-QYUoVg_6bw&s);
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }   
+        .container .card .out h1{
+            color: rgb(104, 121, 138);
+
+        }   
+        .container .card .out p{
+            color: rgb(120, 137, 155);
+            
+        }   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="in">
+                <h1>Kevin Mitnick</h1>
+            </div>
+            <div class="out">
+                <h1>Kevin Mitnick</h1>
+                <p>Kevin David Mitnick (August 6, 1963 – July 16, 2023) was an American computer security consultant, author, and convicted hacker. He is best known for his high-profile 1995 arrest and five years in prison for various computer and communications-related crimes.[5] Mitnick's pursuit, arrest, trial and sentence were all controversial, as ?.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="in">
+                <h1>Kevin Mitnick</h1>
+            </div>
+            <div class="out">
+                <h1>Kevin Mitnick</h1>
+                <p>Kevin David Mitnick (August 6, 1963 – July 16, 2023) was an American computer security consultant, author, and convicted hacker. He is best known for his high-profile 1995 arrest and five years in prison for various computer and communications-related crimes.[5] Mitnick's pursuit, arrest, trial and sentence were all controversial, as ?.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIM3jOmbk33dR15oWQAPHNIFySDsqiYhFpzA&s" alt="ABCD">
+<h1>
+    Kevin Mitnick
+    </h1>
+</div>
+<div class="in">
+    <p>Kevin David Mitnick (August 6, 1963 – July 16, 2023) was an American computer security consultant, author, and convicted hacker. He is best known for his high-profile 1995 arrest and five years in prison for various computer and communications-related crimes.[5] Mitnick's pursuit, arrest, trial and sentence were all controversial, as ?.</p> -->

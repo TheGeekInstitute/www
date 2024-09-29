@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;   
+        }
+        body{
+            background-color: grey  ;
+            height: 100vh;
+        }
+        .sign{
+            font-size: 1rem;
+            text-align: center;
+            /* border: 2px solid black; */
+            height: 30rem;
+            width: 20rem;
+            position: absolute;
+            top: calc(50% - 15rem);
+            left: calc(50% - 10rem);
+        }
+
+        .sign h1{
+            /* border: 1px  solid red; */
+            /* width: 7.5rem; */
+            padding-left: 2rem;
+            margin-bottom: 4rem;
+            font-size: 2rem;
+
+        }
+        label{
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+        input{
+            outline: none;
+            border: none;
+            border-bottom: 3px solid blue;
+            border-radius: 10px;
+            width: 20rem;
+            margin: 1rem;
+            padding: 2rem;
+            color: black;
+            background-color: transparent;
+            cursor: grab;
+        }
+        .tr{
+            text-align: center;
+            background-color: rgb(221, 238, 238);
+            padding: .5rem;
+            margin-top: 1rem;
+            font-weight: bold;
+            border-bottom:  2px solid black;
+            height: 2rem;
+            width: 8rem;
+        }
+        .tr:hover{
+            color: black;
+            background-color: rgb(90, 3, 161);
+    
+        }
+        .htr{
+            padding: .5rem;
+            margin: .2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign">
+        <h1 class="name">Create Account</h1>
+        <label for="">Name</label><br>
+        <input type="text"><br><br>
+         <label for="">Email</label><br>
+          <input type="text"><br><br>
+          <label for="">Password</label><br>  
+           <input type="text">   <br><br>
+           <input class="tr" type="submit" value="Sign Up">  
+           <p class="htr">Already have an account. <a href="#">Login</a><p>
+    </div>
+</body>
+</html>

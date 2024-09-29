@@ -1,0 +1,12 @@
+@use "usecolor";
+@import "usefont";
+@use "usefont";
+
+nav{
+    @include nav;
+    // color: usecolor.$first-color;
+
+    input{
+        display: none;
+    }
+}

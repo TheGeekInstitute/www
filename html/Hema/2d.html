@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 150px;
+            margin: auto;
+            /* margin-top: 200px; */
+            background-color: red;
+            transition: all 2s linear;
+            text-align: center;
+            line-height: 100px;
+            font-size: 60px;
+            font-weight: 900;
+        }
+        .box:hover{
+            
+            /* transform: translate(100px,200px); */
+            /* transform: rotate(90deg); */
+            /* background-color: cyan; */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+            /* transform: scaleX(2) scaleY(1.5); */
+            /* transform: skewX(20deg); */
+            /* transform: skewY(30deg); */
+            transform: skew(30deg,10deg) rotate(360deg);
+        }
+
+        .container{
+            /* border: 1px solid red; */
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+            overflow: hidden;
+            /* background-image: url("../web/images/11.jpg"); */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(0, 255, 200, 0.527);
+            transform: translate(-100%,0);
+            transition: transform .3s;
+            background-image: url("../web/images/15.jpg");
+            opacity: 50%;
+        }
+
+        .container:hover .main{
+            transform: translate(0,0);
+
+        }
+        .nav{
+            border: 2px solid red;
+            height: 150px;
+            width:150px;
+            margin: auto;
+            text-align: center;
+            background-color: aquamarine;
+            transition: all 2s linear;
+            line-height: 100px;
+            font-size: 40px;
+            font-weight:1000;
+
+            
+        }
+        .nav:hover{
+            /* transform: translate(100px,250px); */
+            /* transform: rotate(90deg); */
+            background-color: blue;
+            transform: scaleX(2);
+        }
+
+   
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia illo labore beatae numquam nostrum non dolore pariatur voluptatibus voluptas dolorem? Voluptate perspiciatis obcaecati doloremque vel at autem blanditiis repellat praesentium?</p>
+    <div class="box">BOX</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa consequuntur quisquam commodi sint vel aspernatur sed sapiente quas. Laboriosam illo minima cumque beatae eos totam incidunt recusandae consequatur officiis.</p>
+
+
+    <div class="container">
+        <div class="main">
+         
+        </div>
+      
+    </div>
+  <div class="nav">HELLO  </div>
+
+   
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            margin: 150px auto;
+
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count:infinite ;
+            animation-timing-function: linear;
+            animation-direction:alternate;
+
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        @keyframes circle {
+            0%{
+                background-color:yellow;
+            }
+            30%{
+                background-color: orange;
+            border-radius: 16.5%;
+            }
+            70%{
+                background-color:orangered;
+            border-radius: 33%;
+            }
+            100%{
+                background-color: red;
+                border-radius: 50%;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>CHEETAH</h1>
+    </div>
+</body>
+</html>

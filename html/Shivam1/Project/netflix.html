@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .container{
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60vh;
+        }
+        
+        .container .nav{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 7rem;
+        }
+
+        .container .nav img{
+            height: 80px;
+            filter: saturate(600%);
+
+        }
+
+        .container .nav .btn a{
+            /* border: 2px solid green; */
+            padding: 7px 12px;
+            background-color: red;
+            color: white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        /* .container .nav .btn{
+            padding: 0 10px;
+        } */
+        #lang{
+            border: none;
+            background-color: rgba(0, 0, 0, 0.671) ;
+            color: white;
+            border: 1px solid grey;
+            padding: 7px 7px 7px 30px;
+            font-weight: 700;
+            border-radius: 5px;
+            
+        }
+     
+        .fa-globe{
+            color: white;
+            position: relative;
+            left: 25px;
+            top: 1px;
+        }
+
+
+        select:focus{
+            outline: 2px solid white;
+            /* outline-offset: 1px; */
+        }
+        
+        .container .main{
+            color: white;
+        }
+
+        .container .main{
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .container .main p:nth-child(1){
+            font-size: 50px;
+            font-weight:900;
+            margin-bottom: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container .main p:nth-child(2), .container .main p:nth-child(3){
+            margin: 15px 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 19px;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="Netflix">
+            <div class="btn">
+               
+                    <i class="fa-solid fa-globe"></i>
+                <select name="English" id="lang">
+                    <option value="">English</option>
+                    <option value="">Hindi</option>
+                </select>
+               
+                <a href="https://www.netflix.com/in/login">Sign In</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <p>Unlimited movies, TV shows and more</p>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            
+            <input type="email" name="" id="">
+            <label for="">Email Address</label>
+            <input type="submit" value="Get Started➤">
+        </div>
+    </div>
+</body>
+
+</html>

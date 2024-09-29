@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>3d cube</title>
+</head>
+<style>
+    
+
+    
+*{
+    box-sizing: border-box;
+}
+
+    .container{
+       /* margin: auto; */
+       margin: 80px;
+        border: 2px solid red;
+               height: 200px;
+        width: 200px;
+        perspective:400px;
+       
+    }
+    .face{
+
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transform: translateZ(-100px);
+        transition: transform 2s ;
+    }
+    .box{
+        /* margin-top:200px; */
+    /* margin-left: 200px; */
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 200px;
+    text-align: center;
+    transform:translate3d(360);
+    transform-origin: center;
+    transition: all 2s;
+    }
+    
+        .box1{
+        transform:translateZ(-100px) rotateY(0);
+        background-color: red;
+        /* z-index: 100; */
+    }
+    .box2{
+        background-color: green;
+        transform:translateZ(-100px) rotateY(90deg);
+    }
+    .box3{
+        background-color: cyan;
+        transform:translateZ(-100px) rotateY(-90deg);
+    }
+    .box4{
+        background-color: purple;transform:translateZ(-100px) rotateY(180);
+    }
+    .box5{
+        background-color: chartreuse;
+        transform:translateZ(-100px) rotateX(-90);
+    }
+    .box6{
+        background-color: aqua;
+        transform:translateZ(-100px) rotateX(90);
+    }
+    .container:hover .box{
+        transform: rotate(360deg);
+    }
+</style>
+<body>
+<div class="container">
+    <div class="face">
+    <div class="box box1"><h1>1</h1></div>
+    <div class="box box2"><h1>2</h1></div>
+    <div class="box box3"><h1>3</h1></div>
+    <div class="box box4"><h1>4</h1></div>
+    <div class="box box5"><h1>5</h1></div>
+    <div class="box box6"><h1>6</h1></div>
+</div>
+</div>
+</body>
+</html>

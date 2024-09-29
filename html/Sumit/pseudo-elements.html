@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+
+
+        ul li::marker{
+            color: red;
+            /* font-size: xx-large; */
+        }
+
+        .para::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+        .para{
+           /* user-select: all; */
+            user-select: none;
+        }
+
+
+        input::placeholder{
+            color: crimson;
+            opacity: 0.5;
+        }
+
+        input{
+            caret-color: blue;
+            accent-color: yellow;
+
+        }
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button
+        {
+            background-color: red;
+            border: 2px solid crimson;
+        }
+
+        #geek::before{
+            content: 'The ';
+            color: red;
+        }   
+
+        #geek:hover::after{
+            content: attr(data-myattr);
+            color: orangered;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, qui ratione voluptatem similique aspernatur tempora dicta repudiandae eveniet veniam ab facilis! Aut aliquid neque consectetur, non distinctio doloribus eveniet enim.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ut, vel et quasi doloremque totam dolores non fuga quod impedit nihil, quae iusto voluptate similique ducimus nostrum dolor maiores ad?
+    </p>
+
+    <input type="text" placeholder="EMAIL ADDRESS" name="" id="">
+
+
+    <input type="radio" name="" id="">
+    <input type="checkbox">
+
+    <input type="file" name="" id="">
+
+    <h1 id="geek" data-myattr=" Institute of Cyber Security">Geek</h1>
+</body>
+</html>

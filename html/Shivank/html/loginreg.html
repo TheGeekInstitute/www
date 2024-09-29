@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none; 
+        }
+        body{
+            background-image:url("https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1911&q=80");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+        }
+        .login{
+            display: block;
+            /* border: 2px solid blue; */
+            padding: 10px;
+            border-radius: 8px;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+            /* background-image: url(../../wallpapers/landscape/courtnie-tosana-school-of-dolphins-in-australia.jpg); */
+            background-size: cover;
+            background-color: transparent;
+            box-shadow: 3px 6px 13px rgba(27, 22, 28, 0.695);
+        }
+        .login h1{
+            font-weight: 1000;
+            margin: 15px;
+            background-color: transparent;
+        }
+        .login label{
+            text-align: left;
+            font-weight: 950;
+            display: block;
+            margin: 5px;
+            font-size: larger;
+            padding-left: 47px;
+            background-color: transparent;
+        }
+        .login input[type=text]{
+            outline: none;
+            height: 29px;
+            width: 200px;
+            margin: 5px 0px;
+            border-bottom: 3px solid black;
+            border-top: 1px solid black ;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-radius: 6px;
+            transition: all .5s linear;
+            background-color: transparent;
+      }
+      .login input[type=text]:focus{
+        transform: scale(1.1,1.1);
+      }
+        .login input[type=submit]{
+            display: block;
+            margin: auto;
+            font-weight: 700;
+            background-color: transparent;
+            width: 100px;
+            margin-top: 10px;
+            border-radius: 12px;
+            height: 32px;
+            border-bottom: 3px solid black;
+            border-top: 1px solid black ;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            transition: all .2s linear;
+        }
+        .login input[type=submit]:active{
+            transform:translate(2px,3px);
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="login">
+    <h1>LOGIN</h1>
+
+    <label for="">Username</label>
+    <input type="text">
+    <label for="">Password</label>
+    <input type="text">
+    <input type="submit" value="Login">
+</div>
+</body>
+</html>

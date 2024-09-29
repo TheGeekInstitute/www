@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            /* background-image: url(https://themewagon.github.io/arsha/assets/img/hero-img.png); */
+            background-color: darkblue;
+            background-position: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .nav{
+            /* background-color: green; */
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            justify-content:space-between;
+           
+            
+        }
+        .nav .logo{
+            font-family: cursive;
+            color: white;
+            font-size: x-large;
+        }
+
+        .nav > .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        
+        }
+
+    .nav > .links > li > a {
+        margin: 0px 10px;
+        padding: 0px 10px;
+        font-size: large;
+        line-height: 50px;
+        display: block;
+        color: white;
+       
+    }
+.nav > .links > li > a:hover{
+    background-color: yellow;
+    color: black;
+    
+}
+
+.nav .links li .sub{
+    position: absolute;
+    text-align: center;
+    background-color: grey;
+    width: 110px;
+    display: none;
+}
+
+.nav .links li .sub li a{
+    display: block;
+    line-height: 40px;
+    color: white;
+}
+
+.nav .links li .sub li a:hover{
+    background-color: red;
+}
+
+.nav .links li:hover .sub{
+    display: block;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">Pages</a>
+           
+                <ul class="sub">
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </li>    
+            
+            <li><a href="">Contact</a></li>
+        
+        </ul>
+        
+        
+        </div>
+    
+</body>
+</html>

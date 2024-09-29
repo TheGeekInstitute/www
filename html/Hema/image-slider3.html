@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+     <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            /* border: 2px solid red; */
+            height: 70px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            font-size:30px;
+            font-family: fantasy;
+            font-weight: 400;
+            background-color: violet;
+            color: white;
+            
+
+        }
+        .nav ul{
+            display: flex;
+        }
+        .nav ul li{
+            margin: 0 10px;
+        }
+        .nav ul li a{
+            color: white;
+            font-family: cursive;
+            
+        }
+        .nav .logo{
+            color: transparent;
+            background-image: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            -webkit-background-clip: text;
+
+            animation-name:logo-color;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+        .image1{
+            background-image: url("./images/1.jpeg");
+        }
+        .image2{
+            background-image: url("./images/2.jpeg");
+
+        }
+        .image3{
+            background-image: url("./images/3.jpeg");
+        }
+        .image4{
+            background-image: url("./images/4.jpeg");
+        }
+        .image5{
+            background-image: url("./images/5.webp");
+        }
+        
+        .main{
+            height: 70vh;
+            width: 100vw;
+            overflow: hidden;
+
+        }
+        .main .box{
+            width: 500vw;
+            height: 70vh;
+            /* border: 2px solid red; */
+            display: flex;
+            animation-name: image-content;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .main .box .image{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-size: cover;
+
+            background-repeat: no-repeat;
+        }
+        .main .box .image .content{
+            border: 2px solid red;
+            text-align: center;
+            height: 30vh;
+            width: 50vw;
+            padding: 5vh 3vw;
+            border-top-left-radius: 5rem;
+            border-top-right-radius: .5rem;
+            border-bottom-left-radius:.5rem;
+            border-bottom-right-radius:5rem;
+            backdrop-filter: blur(1.5px);
+            background-color: rgba(0, 0, 0, .3);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.171);
+
+        }
+        .main .box .image .content{
+            border: 2px solid white;
+            height: 30vh;
+            text-align: center;
+            font-family: cursive;
+        }
+        @keyframes image-content{
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(-100vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+            60%{
+                transform: translateX(-300vw);
+            }
+            65%{
+                transform: translateX(-300vw);
+            }
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+
+        }
+        @keyframes logo-color {
+            0%{
+                background-size: 0;
+            }
+
+            25%{
+            background-size: 100%;
+            }
+
+            50%{
+            background-size: 200%;
+            }
+            75%{
+            background-size: 300%;
+            }
+            100%{
+            background-size: 400%;
+            }
+        }
+
+        .name{
+            font-size: 100px;
+            background-image: url("./images/3.jpeg");
+            background-size: cover;
+            background-position: bottom;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+     </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">GeekInstitute</div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+     <div class="main">
+        <div class="box">
+
+
+            <div class="image image1">
+
+                <div class="content">
+                    <h1>Welcome to our Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti consequatur beatae, aut ratione molestias corrupti, quae deserunt possimus optio harum, hic animi aspernatur in illum asperiores dolores! Incidunt, culpa.</p>
+                </div>
+            </div>
+            
+            <div class="image image2">
+
+                <div class="content">
+                    <h1>Welcome to our Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti consequatur beatae, aut ratione molestias corrupti, quae deserunt possimus optio harum, hic animi aspernatur in illum asperiores dolores! Incidunt, culpa.</p>
+                </div>
+            </div>
+
+            
+            <div class="image image3">
+
+                <div class="content">
+                    <h1>Welcome to our Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti consequatur beatae, aut ratione molestias corrupti, quae deserunt possimus optio harum, hic animi aspernatur in illum asperiores dolores! Incidunt, culpa.</p>
+                </div>
+            </div>
+
+            
+            <div class="image image4">
+
+                <div class="content">
+                    <h1>Welcome to our Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti consequatur beatae, aut ratione molestias corrupti, quae deserunt possimus optio harum, hic animi aspernatur in illum asperiores dolores! Incidunt, culpa.</p>
+                </div>
+            </div>
+
+            
+            <div class="image image5">
+
+                <div class="content">
+                    <h1>Welcome to our Website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti consequatur beatae, aut ratione molestias corrupti, quae deserunt possimus optio harum, hic animi aspernatur in illum asperiores dolores! Incidunt, culpa.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

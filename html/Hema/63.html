@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        img{
+            height: 200px;
+            width: 250px;
+        }
+        .img2{
+            position:absolute;
+            left: 60px;
+            top: 0px;
+            z-index: 1000;
+        }
+        p{
+            position: absolute;
+            color: red;
+            z-index: 200;
+        }
+
+        .box{
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <img src="../web/images/11.jpg" alt="" class="img1"> -->
+        <img src="../web/images/17.jpg" alt="" class="img2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perspiciatis est commodi ipsa, delectus minima fugit iusto quae, quasi nostrum perferendis tempora alias incidunt dolores ut officia architecto optio nam!</p>
+    </div>
+
+
+    
+</body>
+</html>

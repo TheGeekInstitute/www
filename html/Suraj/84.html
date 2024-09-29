@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{ margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .upperbox{
+            border: 2px solid black;
+            display: flex;
+            height: 200px;
+            flex: auto;
+            justify-content: center;
+            align-content: flex-end;
+            
+            
+        }
+        .sms1,.sms2,.sms3,.sms4,.sms5{
+            height: 200px;
+            width: 30vh;
+            flex: 3;
+            align-content: flex-end;
+        }
+        .sms1{
+            border: 2px solid blue;
+            height: 30px;
+            margin: 10px;
+            background-color: blue;
+
+        }
+        .sms2{
+            border: 2px solid red;
+            height: 30px;
+            margin: 10px;
+            background-color: red
+         }
+         .sms3{
+            border: 2px solid yellow;
+            height: 30px;
+            margin: 10px;
+            background-color: yellow;
+            order: -1;
+
+         }
+         .sms4{
+            border: 2px solid black;
+            height: 30px;
+            margin: 10px;
+            background-color: black
+        }
+        .sms5{
+            border: 2px solid aqua;
+            height: 30px;
+            margin: 10px;
+            background-color: aqua
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="upperbox">
+        <div class="sms1">suraj1</div>
+        <div class="sms2">suraj2</div>
+        <div class="sms3">suraj3</div>
+        <div class="sms4">suraj4</div>
+        <div class="sms5">suraj5</div>
+        
+    </div>
+    
+</body>
+</html>

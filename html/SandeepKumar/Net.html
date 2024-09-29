@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{margin: 0;
+padding: 0;
+list-style: none;
+text-decoration:none ;
+box-sizing: border-box;}
+
+.container{ background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/304/975/original/aerial-view-of-green-wheat-field-video.jpg);
+background-repeat: no-repeat;
+background-position:top center;
+background-size:cover;
+height: 100vh;
+width: 100vw;
+
+
+}
+
+.body1{ border: 5px solid black;
+border-radius:20px;
+height:500px ;
+width:60px;
+position:absolute;
+top:250px;
+left: 300px;
+background-color: white;
+
+}
+
+.circle{ border: 4px solid black;
+    border-radius: 50%;
+    height:80px;
+    width: 80px;
+    position: absolute;
+    top: 170px;
+    left:292px;
+    background-color: black;
+    animation: wind 3600s linear 0s infinite alternate;
+
+}
+.wing1{ border: 3px solid cyan;
+    background-color: cyan;
+    height:350px;
+    width:40px;
+ position: absolute;
+ top:35px;
+ left:320px;
+transform: rotate(90deg);
+animation: wind 3600s linear 0s infinite alternate;
+}
+
+.wing2{border: 3px solid red;
+    background-color: red;
+    height:350px;
+    width:40px;
+ position: absolute;
+ top:35px;
+ left:320px;
+ animation: wind 3600s linear -3s infinite alternate;
+}
+
+ @keyframes wind {form{
+    transform: rotate(0);
+
+ }
+ to{ transform:rotate(360000000deg);}
+
+}
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="body1"></div>
+    <div class="wings">
+        <div class="circle"></div>
+        <div class="wing1"></div>
+        <div class="wing2"></div>
+        <div class="wing3"></div>
+
+    </div>
+   </div>
+    
+</body>
+</html>

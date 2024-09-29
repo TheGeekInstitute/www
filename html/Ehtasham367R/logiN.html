@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+    }
+.box{
+    border: 8px double black;
+    height: 250px;
+    width: 250px;
+    margin:20px auto;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    padding: 20px 10px;
+    border-radius: 10px ;
+    box-shadow:0px 0px 10 black;
+background-image: url(https://images.unsplash.com/photo-1560015534-cee980ba7e13?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29sb3VyZnVsJTIwd2FsbHxlbnwwfHwwfHx8MA%3D%3D);
+
+}
+.box form input:hover{
+    background-color:sienna;
+    color: black;
+    border-color: black;
+}
+
+    
+
+
+
+.box form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+
+}
+.box form input{
+    border:1px solid blue;
+    height: 25px;
+    border-radius: 0px 0px 10px black;
+    text-align: left;
+    margin-top: 10px;
+    background-color:rgba(58, 58, 226, 0.774);
+    border-radius: 40px ;
+    box-shadow: 3px 0px 20px black;
+    border-color: white;
+}
+.box form #btn{
+    background-color: blue;
+    color: white;
+    width: 80px;
+    text-align: center;
+    
+}
+
+
+</style>
+</head>
+<body>
+    <div class="box">
+    <h1>Login</h1>
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <label>password</label>
+        <input type="password">
+        <input type="submit" value="Login" id="btn">
+
+</form>
+
+
+    </div>
+
+
+
+</body>
+</html>

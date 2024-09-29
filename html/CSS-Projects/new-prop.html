@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS New Properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* box-sizing: border-box; */
+        }
+        .box{
+            border: 5px solid black;
+            /* height: 150px; */
+            /* width: 300px; */
+            inline-size: 400px;
+            block-size: 300px;
+            margin: 150px auto;
+            /* border-inline-start: solid; */
+            /* border-inline-end: dotted; */
+            /* border-inline-style: solid; */
+            /* border-inline-color: black; */
+            /* border-inline-width: 2px; */
+
+            /* border-inline: 2px solid black; */
+            /* border-block: 2px solid red; */
+            /* padding-block: 20px; */
+            padding-inline: 15px;
+
+            /* writing-mode: vertical-lr; */
+            /* text-orientation: upright; */
+          
+           
+        }
+
+        .container{
+            border: 5px solid black;
+            height: 400px;
+            max-width: 600px;
+            container-name: mybox;
+            container-type: inline-size;
+        }
+
+        .container .box1{
+            background-color: rebeccapurple;
+            height: 100px;
+            width: 100px;
+        }
+
+        @container mybox (max-width:400px){
+            .container .box1{
+                background-color: red;
+            }
+        }
+
+        #heading{
+            color: yellow;
+        }
+        
+        
+        .heading{
+            color: cyan;
+        }
+        
+        h1{
+            color: green !important;
+            /* padding: 10px ; */
+            padding-block:10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 style="color: red;"  class="heading" id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laboriosam consectetur nihil et dolorem voluptatum ipsam nemo, fugit itaque corporis eos aut iure ipsa odit quis quas excepturi quam sequi.</h1>
+
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos similique, doloribus fuga aut voluptatum voluptatibus incidunt quasi tenetur iusto dignissimos quis 
+    </div>
+
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+
+</body>
+</html>

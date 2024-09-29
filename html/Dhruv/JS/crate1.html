@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <div class="box">
+        <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam numquam saepe possimus quod. Illo vero et ratione eligendi aliquam ipsum reiciendis maiores, voluptatibus nulla recusandae consequatur sed vitae, cumque consequuntur?</b>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa explicabo iure aliquid recusandae nobis magni reiciendis quo doloribus illum, error blanditiis deserunt? Officia tenetur adipisci voluptatum soluta voluptate consequuntur tempore?</p>
+        
+    </div>
+    <script>
+        let element = document.createElement("h1")
+        let text = document.createTextNode("This is Simple text");
+        element.appendChild(text)
+       
+        let comment = document.createComment("This is Comment")
+        // console.log(element)
+        // console.log(comment)
+        let box =document.querySelector(".box");
+        let para = document.querySelector("#para");
+   
+        // console.log(element)
+        // box.appendChild(element)
+           box.insertBefore(element,para)
+        // box.insertBefore(element,box.children[0])
+
+         
+
+    </script>
+</body>
+</html>

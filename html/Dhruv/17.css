@@ -1,0 +1,122 @@
+*{
+    background-color: black;
+
+}
+h1{
+    text-align: center;
+    color: blue;
+    background-color: aliceblue;
+    text-transform: capitalize;
+    text-shadow: 5px 2px 2px chartreuse;
+    font-weight: bolder;
+}
+p{
+background-color: brown;
+font-family:  "Titan One";
+font-size: 15px;
+font-weight: lighter;
+text-transform: lowercase;
+color: cornflowerblue;
+font-style: italic;
+text-overflow: ellipsis;
+text-shadow: 5px 2px 2px gray;
+}
+::selection{
+    color: chartreuse;
+    background-color: darkblue;
+    font-size: 5px;
+}
+marquee{
+    background-color: aqua;
+    color:red;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-shadow:5px 2px 2px yellow;
+    text-transform: capitalize;
+    text-overflow: clip;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+.main{
+    color:wheat ;
+    border-bottom: 5px solid gray;
+    margin-top: 25px;
+}
+.main input{
+    color: blue;
+}
+.input{
+    /* outline-color: blueviolet */
+    border: 5px solid red;
+    color: blue;
+    background-color: skyblue;
+}
+.null{
+    margin-left: 40px;
+    color: beige;
+    border-bottom: 5px solid gray;
+}
+legend{
+    color: beige;
+    text-align: center;
+    font-size: 25px;
+}
+fieldset{
+    background-color: brown;
+    
+}
+img{
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    border: 6px solid cyan;
+    border-style: inset;
+    
+}
+.im{
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        border: 6px solid cyan;
+        border-style: inset;
+        margin-top: 50px;
+}
+a{
+    text-align: center;
+    margin-top: 50px;
+    border: 5px solid white;
+    background-color: coral;
+    border-bottom: none;
+    color: darkgreen;
+    margin-bottom: 50px;
+}
+.in{
+    background-color: blue;
+    color: chartreuse;
+}
+@media only screen and (max-width: 600px){
+    h1{
+        background-color: yellow;
+        color: skyblue;
+
+    }
+
+    p{
+        background-color:wheat;
+        color: black;
+        font-size: x-large;
+
+    }
+
+    .img{
+        top: 0px;
+        margin: auto;
+    }
+}

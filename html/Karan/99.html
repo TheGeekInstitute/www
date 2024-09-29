@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .front h4 {
+            display: flex;
+            margin: 5px;
+        }
+      
+    .navbar{
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+
+    }
+    .logo{
+        color: salmon;
+    }
+    h1{
+        height: 25px;
+
+    }
+  .navbar ul li{
+    float: left;
+    margin: 5px;
+  }
+  .navbar ul li a{
+    color: #fff;
+    font-size: 20px;
+  }
+  .navbar ul li a:hover{
+    color:salmon ;
+  }
+  .navbar ul li ul{
+    position: absolute;
+  }
+  .navbar ul li ul li{
+        width: 100%;
+       }
+
+       .navbar ul li ul li a{
+        padding: 15px 5px;
+       }
+       
+        .items{
+            background-color:whitesmoke;
+            color: black;
+            visibility: hidden;
+            width: 100px;
+            margin-bottom: 25px;
+        }
+
+        .navbar ul li:hover .items{
+            visibility: visible;
+            background-color: grey;
+            color: black;
+        }
+
+     
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="front">
+          <h4>
+            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,India</a></li>
+            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>contact@geekinstitute.org</a></li>
+        </h4>
+            <ol>
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#">in</a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            
+            
+          </ol>
+        </div>
+        <div class="navbar">
+            <h1><span class="logo">Geek</span>Institute</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#" class="sub">pages</a>
+                    <ul class="items">
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Our team</a></li>
+                        <li><a href="#">testimonial</a></li>
+                        <li><a href="#">page 404</a></li>
+                    </ul>
+
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+        </div>
+    </nav>
+    <div class="hero">
+        <p>Lets change the world with humanity</p>
+
+    </div>
+</body>
+</html>

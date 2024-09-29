@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .container .box{
+            border: 2px solid black;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 900;
+            line-height: 70px;
+            background-color: red;
+        }
+
+        .container .mid{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box mid">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <script>
+        const container =  document.querySelector(".container");
+        const mid = document.querySelector(".mid");
+        
+        // console.log(mid.parentElement.parentElement.parentElement.parentNode)
+
+        // console.log(container.children)
+
+        // console.log(container.childNodes)
+
+        // console.log(container.firstChild)
+
+        // console.log(container.firstElementChild.innerHTML)
+
+        // console.log(container.lastElementChild)
+
+        // console.log(mid.previousElementSibling.previousElementSibling)
+
+        // console.log(mid.nextElementSibling)
+
+    </script>
+
+
+</body>
+</html>
+
+<!-- parentElement & parentNode
+
+DOM Children & Child Nodes
+DOM first Child & lastChild
+DOM nextSibling & previousSibling -->

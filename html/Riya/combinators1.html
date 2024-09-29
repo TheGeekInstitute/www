@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .container p{
+            color: blue;
+        }
+        .container > p{
+            color: aqua;
+        }
+        .container + p{
+            color: chartreuse;
+        }
+        .container ~ p{
+            color: brown;
+        }
+        .container b{
+            color: crimson;
+        }
+        .p .b{
+            color: cadetblue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>container Child</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione laboriosam facere quaerat voluptates cupiditate modi amet ipsa repellendus necessitatibus. Dolorum dicta dolor magnam adipisci totam ipsa fugit, nostrum architecto!</b>
+
+        <div class="box">
+            <p>box Child</p>
+        </div>
+    </div>
+    <p>ABCD XYZ</p>
+    <b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, accusamus nemo? Sapiente aspernatur tempora natus nemo neque. Expedita unde dolorum nihil deleniti dolores consequuntur maxime, blanditiis, in, praesentium reiciendis tempora.</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam, quidem placeat ipsum eum eos rem similique excepturi! Minus tenetur eius ullam dolor soluta harum ratione veniam hic accusantium similique.</p>
+        <p>abcd xyz</p>
+    
+</body>
+</html>

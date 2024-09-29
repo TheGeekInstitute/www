@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 40rem;
+            width: 100vw;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            margin: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <button class="button">add</button>
+    <script>
+        let container = document.querySelector(".container")
+        let btn = document.querySelector(".button")
+        btn.addEventListener("click",()=>{
+            let count =  container.childElementCount;
+            let box = `<div class="box">
+                    <label class="cross" style="float: right;">X</label>
+                    </div>`
+            // box.classlist.add("box")
+            box.append(count+1)
+            container.insertAdjacentElement("afterbegin",box)
+        })
+        console.log(container)
+        
+    </script>
+</body>
+</html>

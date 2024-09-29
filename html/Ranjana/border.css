@@ -1,0 +1,68 @@
+
+.dotted{
+    border-style: dotted;
+}
+
+.dashed{
+    border-style: dashed;
+}
+
+.solid{
+    border-style: solid;
+}
+.double{
+    border-style: double;
+}
+
+.groove{
+    border-style: groove;
+}
+
+.ridge{
+    border-style: ridge;
+}
+.inset{
+    border-style: inset;
+}
+.outset{
+    border-style: outset;
+
+}
+
+.none{
+    border-style: none;
+}
+
+.hidden{
+    border-style: hidden;
+}
+
+.mix{
+    border-top-style: solid ;
+    border-bottom-style: dotted ;
+    border-left-style: ridge ;
+    border-right-style: outset ;
+
+
+}
+
+.new{
+    border-style: solid;
+    border-width: 10px;
+    border-color: red;
+    border-radius: 20px;
+}
+
+.new1{
+    border: 5px solid green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+
+    /* outline-style: ridge;
+    outline-width: 20px;
+    outline-color: red;
+    outline-offset: 5px; */
+    outline: 10px outset greenyellow;
+} }

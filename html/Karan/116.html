@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type:none;
+        }
+        .topbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4vh;
+            background-color: black;
+            color: white;
+        }
+        .menu{
+            color: white;
+            text-decoration: none;
+            margin:100px;
+
+        
+        }
+        h4{
+            color: #fff;
+            margin: 0;
+            display: block;
+        }
+        button{
+         background-color: greenyellow;
+         color: black;
+         padding: 4px;
+        }
+        .navbar{
+            height: 6vh;
+            background-color:rgb(207, 194, 194);
+            align-items: center;
+            box-shadow: 2px 2px 3px rgb(175, 128, 128);
+            
+            
+        }
+        .navbar,.navbar ul{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .navbar ul li a{
+            color:black;
+            margin: 10px;
+            font-weight: 900;
+        }
+        .navbar ul li a:hover{
+            text-decoration: underline;
+        }
+        .hero{
+            height: 30vh;
+            background-color: rgb(125, 201, 10);
+            align-items: center;
+            
+        }
+        .bar{
+            padding: 45px;
+            text-align: center;
+            align-items: center;
+        }
+         h2{
+        background-color: rgb(69, 187, 69);
+        color: #fff;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        }
+       h5{
+        text-align: center;
+        padding: 30px;
+        width: 50%;
+        margin-left: 270px;
+       }
+         .btn1{
+            background-color: rgb(255, 255, 0);
+            border-radius: 2px ;
+            border-color: yellow;
+        }
+    
+        .mouse{
+            padding: 20PX;
+            height: 40vh;
+            background-color: #9e9999;
+            box-shadow: 2px 2px 3px grey;
+
+        }
+        .first {
+            text-align: center;
+        }
+        /* h2{
+            text-align: center;
+        } */
+        SPAN{
+            color:green
+        }
+        .circle{
+            border: 2px solid rgb(182, 174, 174);
+            height: 80px;
+            width: 180px;
+            border-radius: 50%;
+            padding: 7px;
+            text-align: center;
+            margin: 80px;
+            background-color: rgb(124, 113, 113);
+        }
+        i{
+            font-size: 50px;
+            padding: 10px;
+        }
+        .karan{
+            display: flex;    
+            margin-top: -40px;
+        }
+        .karan .circle i{
+            color: yellowgreen;
+            font-size: 30px;
+        }
+        .pop{
+            display: flex;
+            color: black;
+            margin: 10px;
+        }
+        .heading{
+            text-align: center;
+        }
+        .round{
+            height: 60vh;
+            background-color: rgb(177, 199, 219);
+            text-transform: capitalize;
+            box-shadow: 2px 2px 2px red;
+        }
+        .heading p{
+            width: 45%;
+            text-align: justify;
+        }
+        /* .btn3{
+            padding: 8px;
+            border-radius: 5px;
+            border-color: green;
+            background-color: green;
+            margin-right: 1100px;
+            text-align: center;
+        } */
+        .image img{
+            height: 70vh;
+            padding: 100px;
+            width: 50vw;
+            float: right;
+            margin-top: -470px;
+        }
+
+        .geek{
+            background-color: rgb(214, 209, 211);
+            padding: 30px 0px;
+            text-align: center;
+            height: 70vh;
+        }
+        .org{
+            height: 200px;
+            border: 1px solid black;
+            background-color: #f1eded;
+            width: 200px;
+            text-align: center;
+            text-transform: capitalize;
+            text-align: justify;
+            
+        }
+        .org a{
+            text-align: center;
+        }
+        .institute{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 25px;
+        }
+        .logo img{
+            height: 5vh;
+            width: 5vw;
+            margin: 120px;
+            
+        }
+    
+     .head h2 p{
+        width: 50%;
+        text-align: center;
+        margin-left: 300px;
+        }
+        .head h2{
+            margin-right: 50px;
+        }
+        .head{
+            text-align: center;
+            width: 50%;
+            margin-left: 300px;
+            text-align: justify;
+        }
+       h2 span{
+        text-align: center;
+       }
+       .grid{
+        background-color: rgb(203, 196, 196);
+        height: 60vh;
+        padding: 10px;
+       }
+       .jawa{
+            display: grid;
+            grid-template-columns: 150px 150px  auto;
+            grid-template-rows: 100px 100px 100px;
+            margin-top: 15px;
+            margin-left: 250px;
+        }
+        .function h1{
+            text-align: center;
+            padding: 10px;
+        }
+        .function p{
+            padding: 10px;
+            width: 50%;
+            margin-left:300px;
+          
+        }
+       
+        .function ul{
+            display: flex; 
+        }
+        .function ul li a{
+            color: red;
+        }
+        .function ul li a {
+            margin: 10px;
+            margin-left: 60px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        
+    <h4>un</h4>
+    <h4>mn</h4>
+    <h4>or</h4>
+    <h4>dl</h4>
+    </ul>
+        
+            <li><a href="#" class="menu"><i class="fa fa-codepen" aria-hidden="true"></i>
+                Jawa script</a></li>
+            <li><a href="#" class="menu"><i class="fa fa-code-fork" aria-hidden="true"></i>
+                Jawa language</a></li>
+                <button class="btn">Python run</button>
+        </ul>
+    </div>
+    <div class="navbar">
+        <h1>AGENCEY <i class="fa fa-lock" aria-hidden="true"></i>
+        </h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">System</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Company Policy</a></li>
+        </ul>
+        </div>
+<div class="hero">
+    <div class="bar">
+<h2>WE ARE EXERTS</h2>
+<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam, vel quisquam ullam provident in beatae qui rem odio iste at. Eum quae facere dolor unde aspernatur quibusdam provident dolores.</h5>
+<button class="btn1">MORE READ</button>
+</div>
+</div>
+<section>
+    <div class="mouse">
+<div class="main">
+    <div class="first">
+        <h1>OUR <SPAN> ADVANTAGES</SPAN></h1>
+       <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae repudiandae doloremque autem voluptates nostrum quod facere officia quos unde, possimus explicabo provident labore qui et. Maxime commodi vel excepturi dolorum!</h5>
+</div>
+<div class="karan">
+    <div class="circle">
+    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+    </div>
+    <div class="circle">
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+    </div>
+    <div class="circle">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+    </div>
+    <div class="circle">
+        <i class="fa fa-users" aria-hidden="true"></i>
+    </div>
+    <div class="circle">
+        <i class="fa fa-commenting" aria-hidden="true"></i>
+    </div>
+    </div>
+    <!-- <div class="pop">
+    <div class="line">
+        <h4>LIGHT</h4>
+       </div>
+       <div class="line">
+        <h4>DESTOP</h4>
+       </div>
+       <div class="line">
+        <h4>CLOCK</h4>
+       </div>
+       <div class="line">
+        <h4>USERS</h4>
+       </div>
+       <div class="line">
+        <h4>PEOPLE</h4>
+       </div>
+    </div>
+</div> -->
+</section>
+<div class="round">
+    <div class="heading">
+        <h1>ABOUT <span>US</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia pariatur expedita veritatis consectetur minima. Sunt, beatae? Tenetur eaque ipsam, modi non dicta doloribus laboriosam minima ullam molestias dolorem magni.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, optio in aspernatur, aliquid dolore ullam corporis sit laborum distinctio numquam ipsa minima quasi voluptatum quaerat ab. Dolor dolorum cum explicabo!Lorem
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi 
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, minima cupiditate, molestias sapiente odit illum, tempore officia repellat voluptas perspiciatis impedit inventore nisi. Quis, sed omnis? Sint tenetur autem numquam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, corporis excepturi? Debitis nihil nam adipisci autem aperiam quaerat doloribus, fuga reiciendis in non, omnis beatae deserunt ut, magni commodi officiis.lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quod excepturi voluptatum blanditiis quidem vero necessitatibus. Atque exercitationem itaque dignissimos id accusantium quos eligendi officiis doloremque molestiae, doloribus rem velit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo atque nobis quam ipsa placeat facere sequi, delectus pariatur, hic dignissimos magni ab dicta dolorum neque quidem, natus consequuntur! Soluta, odit?
+        </p>
+        <button class="btn3">Learn More</button>
+        <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227__480.jpg" alt="">
+        </div>
+    </div>
+</div>
+<section1>
+    <div class="geek">
+        <div class="head">
+            <h1>OUR <SPAN>SERVICES</SPAN></h1>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptatum sit pariatur praesentium dolor animi molestiae cupiditate? Eveniet laborum vero cupiditate ex, est quo dolorum laudantium sit! Aliquid, dicta repellat.</p>
+        </div>
+        <div class="institute">          
+            <div class="org">
+                <H2>OUR <span>SYSTEM</span></H2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quidem nostrum unde dicta nihil distinctio, ducimus beatae? Iure a unde veritatis. </P>
+                <a href="#">click here</a>
+            </div>
+            <div class="org">
+                <H2>OUR <span>SYSTEM</span></H2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quidem nostrum unde dicta nihil distinctio, ducimus beatae? Iure a unde veritatis. </P>
+                <a href="#">click here</a>
+            </div>
+            <div class="org">
+                <H2>OUR <span>SYSTEM</span></H2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quidem nostrum unde dicta nihil distinctio, ducimus beatae? Iure a unde veritatis. </P>
+                <a href="#">click here</a>
+            </div>
+            <div class="org">
+                <H2>OUR <span>SYSTEM</span></H2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quidem nostrum unde dicta nihil distinctio, ducimus beatae? Iure a unde veritatis. </P>
+                <a href="#">click here</a>
+            </div>
+        </div>
+    </div>
+</section1>
+<section2>
+<div class="grid">
+    <div class="function">
+    <h1>OUR <span>PORTFOLIO</span></h1>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veritatis neque molestias eaque dolorum animi, consequatur cum, inventore rem maxime nam error est. Mollitia quasi doloremque, laborum sequi veniam quis?</P>
+    <ul>
+        <li><a href="#">with us</a></li>
+        <li><a href="#">our Company</a></li>
+        <li><a href="#">about company</a></li>
+        <li><a href="#">about policy</a></li>
+        <li><a href="#">about privacy</a></li>
+        <li><a href="#">save us</a></li>
+    </ul>
+</div>
+<div class="jawa">
+    <img src="../web/images/14.jpg" alt="">
+    <img src="../web/images/14.jpg" alt="">
+    <img src="../web/images/14.jpg" alt="">
+    <img src="../web/images/18.jpg" alt="">
+    <img src="../web/images/18.jpg" alt="">
+    <img src="../web/images/18.jpg" alt="">
+
+</div>
+</div>
+</section2>
+    
+</body>
+</html>

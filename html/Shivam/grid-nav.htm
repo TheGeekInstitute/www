@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border :1px solid red; */
+            /* background-color: red; */
+            background-color: black;
+            display: grid;
+            grid-template-columns: 250px 900px repeat(3,1fr) ;
+            grid-template-rows: 8vh;
+            
+            
+        }
+        .box1{
+            /* background-color: blue; */
+            text-align: center;
+        }
+        .box1 img{
+            height:50px;
+            margin-top: 5px;
+            border-radius: 50px;
+            box-shadow: 2px 2px 1px gray;
+
+        }
+        
+        .box2{
+            /* background-color: aqua; */
+        }
+        .box3{
+            /* background-color: green; */
+        }
+        .box a{
+            /* background-color: rgb(61, 238, 17); */
+        }
+        .box4{
+            /* background-color: yellow; */
+            /* background-color: rgb(61, 238, 17); */
+            
+        }
+        .box5{
+            /* background-color: pink; */
+            /* background-color: rgb(61, 238, 17); */
+
+        }
+        .box{
+          
+        }
+        .box a{
+            margin: 1.5vh 4vh;
+            display: block;
+            text-align: center;
+            line-height: 5vh;
+            color: black;
+            font-weight: 700;
+            font-family: sans-serif;
+            text-decoration: none;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 2px 2px 1px white;
+            
+        }
+        .box a:hover{
+            background-color: rgb(61, 238, 17);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <img src="../Our Mart Web/our mart1.png" alt="">
+        </div>
+        <div class="box box2">
+            <p>If U need Help Contqact us</p>
+        </div>
+        <div class="box box3" >
+            <a href="#"> Contect</a>
+        </div>
+        <div class="box box4">
+            <a href="#"> Sing Up</a>
+        </div>
+        <div class="box box5">
+            <a href="#"> Login</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 1</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .hero{
+        /* border: 1px solid red; */
+        height: 22rem;
+        text-align: center;
+        padding: 4rem 2rem;
+        background-image: url("../wallpapers/abstract/Acrylic\ Paint\ 3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .hero h1{
+        margin-top: 1rem;
+    }
+    .hero p{
+        margin-top: 1.5rem;
+    }
+
+    .search{
+        /* border: 1px solid red; */
+        margin-top: .7rem;
+    }
+    .search input{
+        border: 1px solid grey;
+        padding: 5px;
+        border-radius: 1px;
+        width: 15rem;
+        outline: none;
+    }
+    .search button{
+        padding: 5px;
+        border: 1px solid aqua;
+        background-color: aqua;
+        border-radius: 1px;
+        width: 8rem;
+        margin-left: -2px;
+    }
+    .section{
+        text-align: center;
+        margin-top: 10px;
+    }
+.container{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right .sub{
+    /* border: 1px solid black; */
+    width: 300px;
+    padding: 10px 20px;
+    text-align: left;
+    height: 200px;
+
+}
+
+.right .sub img{
+    height: 80px;
+    width: 100px;
+    margin-left: 70px;
+}
+
+.left img{
+    height: 200px;
+    width: 300px;
+}
+</style>
+</head>
+<body>
+    <div class="hero">  
+        <h3>Lorem ipsum dolor</h3>
+        <h1>Build The Future</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo blanditiis, in odio unde sequi dolorem veniam nam voluptas magni, maxime id. Quidem magni ad neque id odit ratione sed saepe?</p>
+        <div class="search">
+            <input type="text">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Top Stories</h2>
+        <div class="container">
+            <div class="left">
+                <img src="../web/images/10.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="sub">
+                    <img src="../web/images/10.jpg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sed alias debitis quam tempora laboriosam iusto! Velit odit doloribus iusto voluptatem aliquam pariatur repellat laudantium dicta. Soluta totam illum saepe.</p>
+                </div>
+                <div class="sub">
+                    <img src="../web/images/10.jpg" alt="">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, sed alias debitis quam tempora laboriosam iusto! Velit odit doloribus iusto voluptatem aliquam pariatur repellat laudantium dicta. Soluta totam illum saepe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

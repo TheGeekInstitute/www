@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .main{
+            background-color: rgb(43, 157, 228);
+            /* margin: 0; */
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+      .main .box{
+            background-color: skyblue;
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+
+        .alias{
+            cursor: alias;
+        }
+
+        .all-scroll{
+            cursor: all-scroll;
+        }
+
+        .img{
+            cursor: url("https://csscursor.info/santahand.fbeeee9f.png"),auto;
+        }
+
+    .cell{
+        cursor: cell;
+    }
+    .col-resize{
+        cursor: col-resize;
+    }
+    .context-menu{
+        cursor: context-menu;
+    }
+    .copy{
+        cursor: copy;
+    }
+    .crosshair{
+        cursor: crosshair;
+    }
+    .default{
+        cursor: default;
+    }
+    .e-resize{
+        cursor: e-resize;
+    }
+    .ew-resize{
+        cursor: ew-resize;
+    }
+    .grab{
+        cursor: grab;
+    }
+    .grabbing{
+        cursor: grabbing;
+    }
+    .help{
+        cursor: help;
+    }
+    .move{
+        cursor: move;
+    }
+    .n-resize{
+        cursor: n-resize;
+    }
+    .ne-resize{
+        cursor: ne-resize;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box alias">1</div>
+        <div class="box all-scroll">2</div>
+        <div class="box img">3</div>
+        <div class="box cell">4</div>
+        <div class="box col-resize">5</div>
+        <div class="box context-menu">6</div>
+        <div class="box copy">7</div>
+
+        <div class="box crosshair"></div>
+        <div class="box default"></div>
+        <div class="box e-resize"></div>
+        <div class="box ew-resize"></div>
+        <div class="box grab"></div>
+        <div class="box grabbing"></div>
+        <div class="box help"></div>
+        <div class="box move"></div>
+        <div class="box n-resize"></div>
+        <div class="box ne-resize "></div>
+    </div>
+    
+</body>
+</html>

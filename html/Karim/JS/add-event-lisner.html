@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 1px solid black;
+            height: 400px;
+            width: 400px;
+            background-color:  red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inner{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam nobis reprehenderit laboriosam adipisci aperiam fugiat nam dolor! Nam mollitia perferendis in, voluptate minus ab quam blanditiis optio labore unde?</h1>
+
+    <button id="btn">Change</button>
+
+
+
+    <div class="outer">
+        Outer DIV
+        <div class="inner">Inner DIV</div>
+    </div>
+
+
+    <script>
+        // document.querySelector("#btn").addEventListener('click',change_color)
+
+
+        // function change_color(){
+        //     document.querySelector("#heading").style.color="red"
+        // }
+
+
+
+        // document.querySelector("#btn").addEventListener('click', function(){
+        //     document.querySelector("#heading").style.color="red"
+        // });
+
+        
+        // document.querySelector("#btn").addEventListener('mouseenter',()=>{
+        //     let text="This is Simple Text";
+        //     document.querySelector("#heading").style.color="red"
+        //     // document.querySelector("#heading").innerHTML = text
+        // });
+
+        // document.querySelector("#btn").addEventListener('mouseleave',()=>{
+            
+        //     document.querySelector("#heading").removeAttribute("style")
+           
+        // });
+
+
+
+//   let abcd =document.querySelector("html").parentElement;
+let abcd =document.querySelector(".inner").parentNode;
+
+            console.log(abcd)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            background-color:white;
+            color:black;
+            align-items: center;
+            display: flex;
+           justify-content: space-between;
+           padding: 0 20px; 
+        }
+        .nav .logo{
+            font-size: 35px;
+            font-weight: 900px;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 20px;
+            background-image: url(https://preview.colorlib.com/theme/personalportfolio/index.html);
+            
+        }
+        .nav .link{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .nav .link li a{
+            display: block;
+            color: black;
+            padding: 0 15px;
+            margin : 0 10px;
+            line-height: 50px;
+            font-size: large;
+            margin-top: 20px;
+        &:hover{
+            background-color: orangered;
+        }
+
+        }
+        .nav .link li .sub{
+            position: absolute;
+            text-align: center;
+            background-color: white;
+             display: none;
+             width: 170px;
+             font-size: 35px;
+             &:hover{
+                background-color:white;
+                color: black;
+             }
+             
+        }
+        .nav .link li .sub li a{
+            display: block;
+            line-height: 35px;
+            color: black;
+            &:hover{
+                background-color:white;
+            }
+        }
+        .nav .link li:hover .sub{
+            display: block;
+        }
+       .nav .link #btn{
+        background-color: rgba(235, 101, 52, 0.856);
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        border: none;
+        &:hover{
+            background-color:orangered;
+        }
+    
+       }
+       .come{
+        background-image: url(https://preview.colorlib.com/theme/personalportfolio/assets/img/hero/h1_hero.jpg);
+        background-size: cover;
+        border: 2px solid transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 20px;
+        color: white;
+        height: 700px;
+        margin-top: 40px;
+       }
+       .come h4{
+        margin-top: 180px;
+        font-size: large;
+        display: flex;
+        color: rgb(241, 147, 112);
+        padding: 0 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">PORTFOLIO</div>
+        <ul class="link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Page</a>
+            <ul class="sub">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Details</a></li>
+                <li><a href="#">Element</a></li>
+                <li><a href="#">Portfolio Details</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <a href="#" id="btn">Get Free Consultent</a>
+        </ul>
+    </div>
+    <div class="come">
+        <h4>GET EVERY SINGLE SOLUTION</h4>
+        <div class="osm">
+            <h1>I'm Designer Haris F. Watson</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero obcaecati rem ullam itaque animi eum nostrum, libero quis facilis eos doloremque qui placeat, dignissimos nesciunt similique ducimus magni aperiam. Eaque.</p>
+        </div>
+    </div>
+</body>
+</html>

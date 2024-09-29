@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+
+    }
+.box{
+
+    border: 2px solid black;
+    height: 600px;
+    width: fit-content;
+    margin: 150px auto;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTjavMVc2rJPvT6kbbSaP591770WMyqs7DQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+
+}
+body{
+    background-color:skyblue;
+}
+.box form #btn{
+    background-color: blue;
+    color: white;
+    margin: 7px;
+
+}
+.box form{
+    text-align: center;
+    flex-direction:column;
+    display: flex;
+    margin:50px;
+}
+.box h1{
+    text-align: center;
+    /* text-shadow: 2px 3px 10px yellow; */
+    padding:30px 20px 3px;   
+}
+.box form label{
+    display: block;   
+    box-shadow: 0px 2px 20px black;
+    font-size: large;
+    font-family: cursive;
+}
+.box form input{
+text-align: center;
+
+}
+.box input:hover{
+    background-color: palegreen;
+    color:blue;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="box">
+<h1>Regestration Form</h1>
+<form>
+<label>First Name</label>
+<input type="text">
+<label>Last Name</label>
+<input type="text">
+<label>DOB</label>
+<input type="text">
+<label>Gender</label>
+<input type="text">
+<label>Address</label>
+<input type="text">
+<label>Mobile No</label>
+<input type="number">
+<label>state</label>
+<input type="text">
+<label>District</label>
+<input type="text">
+<label>Email</label>
+<input type="email">
+<input type="reset" value="reset" Id="btn">
+<input type="submit" value="submit" id="btn" >
+
+
+
+
+</form>
+    </div>
+</body>
+</html>

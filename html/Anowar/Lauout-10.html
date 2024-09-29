@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+   
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+     .contianer{
+        color: black;
+        background-image: url(https://i.pinimg.com/originals/11/b6/e4/11b6e43f67fcffd5625e6bbb781c5c32.jpg);
+        height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.39);
+    }
+    .nav .logo{
+        
+        color: black;
+        padding: 10px;
+        margin-right: 100px;
+
+
+
+    }
+    .nav .links{
+        display: flex;
+        
+    }
+    .nav .links li a{
+        font-size: large;
+        color: white;
+        padding: 10px;
+        margin-right: 20px;
+        text-decoration: underline;
+    }
+    .nav .btn p{
+        border: 2px solid red;
+        border: hidden;
+        background-color: rgba(0, 255, 255, 0.719);
+        color: white;
+        border-radius: 30px;
+        height: 50px;
+        padding: 15px;
+    }
+    .nav .btn p:hover{
+        color: black;
+        background-color: aqua;
+    }
+    
+
+    /* .nav .links li .sub{
+       line-height: 50px;
+       position: absolute;
+       text-align: center;
+       top: 50px;
+       width: 100px;
+
+       
+    }
+    .nav .links li .sub a{
+        display: block;
+        color: white;
+        line-height: 50px;
+    }
+    .nav .links li:hover .sub{
+        display: block;
+    } */
+    .box{
+        height: 76vh;
+        width: 500px;
+        
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+
+    }
+    .icons .links1 .fa-apple:hover{
+        color: red;
+        
+    }
+    .icons .links1 .fa-face-smile:hover{
+        color: yellow;
+        
+    }
+    .icons .links1 .fa-facebook:hover{
+        color: aqua;
+        
+    }
+    .icons .links1 .fa-twitter:hover{
+        color: green;
+        
+    }
+
+    .icons .links1{
+        display: flex;
+        padding: 10px;
+    }
+    .icons .links1 li a{
+        padding: 10px;
+        font-size: 25px;
+        color: white;
+    }
+    .box h1{
+        margin-top: 100px;
+        margin-left: 150px;
+        color: white;
+    }
+    .box h3{
+        margin-top: 20px;
+        margin-left: 150px;
+        font-size: 20px;
+        color: white;
+    }
+    .box p{
+        margin-top: 30px;
+        margin-left: 150px;
+        color: white;
+    }
+    .contaner1{
+        
+       
+        height: 50vh;
+        display: flex;
+    }
+    .box1{
+        
+        height: 400px;
+        width: 350px;
+        margin-left: 270px;
+        margin-top: 50px;
+
+    }
+    .box1 h1{
+        margin-top: 50px;
+    }
+    .box1 h3{
+        margin-top: 30px
+    }
+    .box1 p{
+        margin-top: 30px;
+    }
+    .box1 .box4{
+       
+        width: 150px;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+        background-color: black;
+        color: white;
+        margin-top: 70px;
+        margin-left: 90px;
+        border-radius: 20px;
+    }
+    .box1 .box4:hover{
+        background-color: aqua;
+    }
+
+    .box2{
+       
+        height: 400px;
+        width: 350px;
+        margin-left: 50px;
+        margin-top: 50px;
+
+        
+    }
+    .box2 h1{
+        margin-top: 50px;
+    }
+    .box2 h3{
+        margin-top: 30px
+    }
+    .box2 .box5{
+        
+
+        width: 150px;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+        background-color: black;
+        color: white;
+        margin-top: 70px;
+        margin-left: 90px;
+        border-radius: 20px;
+    }
+    .box2 .box5:hover{
+        background-color: aqua;
+    }
+    .box3{
+       
+        height: 400px;
+        width: 350px;
+        margin-left: 50px;
+        margin-top: 50px;
+    
+    }
+    .box3 h1{
+        margin-top: 50px;
+    }
+    .box3 h3{
+        margin-top: 30px
+    }
+    .box3 .box6{
+        
+        width: 150px;
+        text-align: center;
+        height: 40px;
+        padding: 9px;
+        background-color: black;
+        color: white;
+        margin-top: 70px;
+        margin-left: 90px;
+        border-radius: 20px;
+    }
+    .box3 .box6:hover{
+        background-color: aqua;
+    }
+
+
+
+
+    .contianer3{
+        height: 100vh;
+        
+        display: flex;
+        margin-top: 50px;
+    }
+    .contianer3 h1{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    .contianer3 .left h3{
+        margin-top: 70px;
+        margin-left: 200px;
+    }
+    .contianer3 .left p{
+        margin-top: 30px;
+        margin-left: 200px;
+    }
+    .contianer3 .left h4{
+        margin-top: 30px;
+        margin-left: 200px;
+        text-decoration: underline;
+        text-decoration-style: 10px;
+
+    }
+    .contianer3 .left h4:hover{
+        color: rgba(0, 255, 255, 0.61);
+        text-decoration: underline;
+        line-height: 10px;
+    }
+    .right{
+        margin-left: 400px;
+        margin-top: 170px;
+        
+
+    }
+    .right img:first-child{
+        height: 400px;
+        width: 450px;
+        position: absolute;
+     
+        right:  120px;
+    }
+    .right:hover img:first-child{
+        transform: scale(1.05);
+    }
+
+    /* .container:hover .image img{
+            transform: scale(1.2);
+        } */
+    .right img:last-child{
+        height: 400px;
+        width: 450px;
+        position: absolute;
+        top: 1250px;
+    }
+    .right:hover img:last-child{
+        transform: skew(5deg);
+    }
+
+
+
+    .contianer4{
+        height: 70vh;
+        margin-top: 100px;
+        
+
+    }
+    .contianer4 h1{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .contianer4 h2{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .contianer4 .apple{
+        display: flex;
+    }
+    .apple .a p{
+        padding-left: 500px;
+        margin-top: 50px;
+        
+    }
+    .apple .a h4{
+        color: red;
+        margin-top: 40px;
+        font-size: 20px;
+        margin-left: 500px;
+    }
+    .apple .a h5{
+        margin-left: 500px;
+        margin-top: 20px;
+    }
+
+    .apple .b p{
+        padding-right: 400px;
+       
+        margin-top: 50px;
+
+    }
+    .apple .b h4{
+        color: red;
+        margin-top: 40px;
+        font-size: 20px;
+        
+    }
+    .apple .b h5{
+        margin-top: 20px;
+    }
+
+
+
+
+
+    .contianer5{
+       
+        height: 100vh;
+        margin-top: 150px;
+    }
+    .contianer5 h1{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 50px;
+        
+    }
+
+    .contianer5 .viedo{
+        margin-left: 450px;
+        margin-top: 50px;
+    }
+    .contianer5 p{
+        margin-left: 350px;
+        margin-top: 50px;
+        font-size: large;
+
+    }
+    .contianer5 h5{
+        margin-left: 350px;
+        margin-top: 30px;
+        color: rgba(0, 0, 0, 0.445);
+        font-size: 20px;
+    }
+
+    .contianer5 .box7{
+        
+        margin-left: 500px;
+        margin-top: 50px;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        background-color: aqua;
+        color: white;
+        border-radius: 30px;
+    }
+    .contianer5 .box7:hover{
+        background-color: rgba(0, 255, 255, 0.582);
+    }
+
+
+
+
+
+
+
+
+    .contianer6{
+       
+        height: 130vh;
+        /* border: 2px solid red; */
+        margin-top: 300px;
+    }
+    .contianer6 .box8{
+        
+        height: 60vh;
+        width: 700px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.795);
+        margin-left: 350px;
+        margin-top: 20px;
+    }
+    .contianer6 .box8 .logo1{
+        font-size: 40px;
+        margin-left: 150px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .contianer6 .box8 h3{
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    .contianer6 .box8 .submit{
+        display: flex;
+        margin-top: 30px;
+    }
+    .contianer6 .box8 .submit input{
+        margin-left: 100px;
+        height: 40px;
+        width: 220px;
+        padding: 10px;
+        border-radius: 30px;
+        
+
+    }
+    .contianer6 .box8 .submit .box10{
+        
+        height: 40px;
+        width: 150px;
+        margin-left: 20px;
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: large;
+        background-color: rgba(0, 255, 255, 0.664);
+    }
+    .contianer6 .box8 .submit .box10:hover{
+        background-color: aqua;
+
+    }
+    .contianer6 .box8 .logo2{
+        font-size: 40px;
+        margin-left: 150px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .contianer6 .box8 .sign label:nth-child(1){
+        margin-left: 150px;
+        padding: 30px;
+        color: rgba(255, 255, 255, 0.555);
+        margin-top: 10px;
+    }
+    .contianer6 .box8 .sign label:nth-child(3){
+        margin-left: 150px;
+        display: block;
+        padding: 30px;
+        color: rgba(255, 255, 255, 0.555);
+        margin-top: -15px;
+    } .contianer6 .box8 .sign label:nth-child(5){
+        margin-left: 150px;
+        display: block;
+        padding: 30px;
+        color: rgba(255, 255, 255, 0.555);
+        margin-top: -67px;
+    }
+
+
+
+    .contianer6 .box9{
+       
+        height: 70vh;
+        width: 700px;
+        margin-left: 350px;
+        background-color: rgba(0, 0, 0, 0.767);
+        color: white;
+       
+    }
+    .contianer6 .box9 .book{
+        display: flex;
+        /* margin-top: 20px; */
+    }
+    .contianer6 .box9 .book h1{
+        margin-left: 100px;
+        font-size: 25px;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.651);
+    }
+   
+    .contianer6 .box9 .book h2{
+        margin-left: 100px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .contianer6 .box9 .book h2:hover{
+        color: aqua;
+    }
+    .contianer6 .box9 .book h3{
+        margin-left: 100px;
+        font-size: 18px;
+        padding: 7px;
+        
+        
+        
+    }
+    .contianer6 .box9 .book h3:hover{
+        color: aqua;
+    }
+    .contianer6 .box9 .book h4{
+        margin-left: 100px;
+        font-size: 18px;
+        padding: 7px;
+        
+        
+        
+    }
+    .contianer6 .box9 .book h4:hover{
+        color: aqua;
+    }
+    .contianer6 .box9 .book h5{
+        margin-left: 100px;
+        font-size: 18px;
+        padding: 7px;
+        
+        
+        
+    }
+    .contianer6 .box9 .book h5:hover{
+        color: aqua;
+    }
+    .contianer6 .box9 .book h6{
+        margin-left: 100px;
+        font-size: 18px;
+        padding: 7px;
+        
+        
+        
+    }
+    .contianer6 .box9 .book h6:hover{
+        color: aqua;
+    }
+
+
+
+
+
+
+
+    .contianer6 .box9 p{
+        margin-left: 30px;
+        color: rgba(255, 255, 255, 0.507);
+        margin-top: 30px;
+
+    }
+    .contianer6 .box9 .pragraph{
+        color: rgba(255, 255, 255, 0.596);
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .contianer6 .box9 .last{
+        margin-left: 190px;
+        margin-top: 40px;
+        color: rgba(255, 255, 255, 0.5);
+    }    
+    .contianer6 .box9 .last span{
+        color: white;
+    }
+        
+
+
+    
+   </style>
+</head>
+<body>
+    <div class="contianer">
+       
+        <div class="nav">
+            <div class="logo">
+                <img src="https://livedemo00.template-help.com/wt_58723_v1/images/logo.png" alt="abcd">
+            </div>
+            <ul class="links">
+                <li><a href="#home">Home</a>
+                    <!-- <ul class="su">
+                        <li><a href="#">Header style <i class="fa-solid fa-arrow-right"></i></a></li>
+                        <li><a href="#">Foter Style <i class="fa-solid fa-arrow-right"></i></a></li>
+
+
+                    </ul> -->
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#">Investment Help</a></li>
+                <li><a href="#advice">Advice</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="btn">
+                <p>Free Consulation</p>
+            </div>
+        </div>
+      
+
+        <div class="box">
+            <div class="icons">
+                <ul class="links1">
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-face-smile"></i></a></li>
+                </ul>
+                
+                
+            </div>
+            <h1>Because Money <br> Doesn’t Come <br>
+                With Instructions</h1>
+                <h3>Sure, dealing with your finances can <br> be intimidating.</h3>
+                <p>That's why we take the time to listen <br>to you, learn your goals and then <br> create your plan using John <br> Doe’s philosophies that reflect the latest <br>academic research.</p>
+
+           
+        </div>
+      
+       
+            
+       
+    </div>
+  <div class="contaner1">
+    <div class="box1">
+        <h1>Saving Solutions</h1>
+        <h3>There is a variety of saving plans which <br> can be tailored to your needs, <br> including: </h3>
+        <p>Tax Exempt Savings
+            Regular Savings..</p>
+            <div class="box4">LEARN MORE</div>
+
+    </div>
+    <div class="box2">
+        <h1>Tax Planning</h1>
+        <h3>
+            Inheritance tax planning is an important element of your wealth management <br>strategy, as it allows you to continue to  loved ones after  you’re  <br>gone.
+
+        </h3>
+        <div class="box5">LEARN MORE</div>
+        
+    </div>
+    <div class="box3">
+        <h1>University Fee Planning</h1>
+        <h3>
+            We all want our children to have good prospects, which is why education fee <br> planning is a vital wealth management matter that shouldn’t <br>be overlooked.
+        </h3>
+        <div class="box6">LEARN MORE</div>
+    </div>
+  </div>
+
+
+
+
+  <div class="contianer3" id="about">
+   <div class="left">
+    <h1>About</h1>
+
+    <h3>I am John Doe, a senior advisor for <br>an independently owned financial <br>planning company called Financial <br>Vision.</h3>
+
+    <p>Financial Vision is an International <br>Financial Planning company with offices <br>in multiple jurisdictions over the world.<br>Working with Financial Vision gives me <br>the ability to advise international <br>expatriates living in the middle east from <br>where I live in USA.</p>
+
+    <h4>EXPLORE MORE</h4>
+
+   </div>
+   <div class="right">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEUAAAD////s7Oz39/fg4OCbm5u7u7vk5OTx8fHp6en19fW3t7fU1NTe3t7m5uZ1dXU6OjoZGRkuLi6Ojo6ysrKqqqqenp5gYGAgICBsbGx3d3dPT08NDQ3Hx8c8PDwpKSlWVlYxMTGBgYFGRkYdHR3Pz8+Hh4dCQkLCwsJSUlISEhIG05E1AAAECklEQVR4nO3ca3vxQBAGYBshIqHRINQpDlWv//8DX6kqWVkhJteM9Lk/+zDPFfYwu1GrAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACk9Rbv3CWUaRTOXFXnrqI8H75K1KfchZRk7Kij+p67lFLMZ+qkzV1LKcbt34DK5S6mDA11YcZdTQm8y4CqwV0OvX4qoBpz10MuTAe0FtwFUZukA6omd0HU9paWMOauiNpAC+hzF0RtUtcSVm6caVb9EX7pj/CLuyJqQy1g9WZ7bSCt3oLtKx3Qrtxkry1nrCV3PfRSI2mHu5oy+BcB+9zFlML5zdet3Ex/5P7kqzeq2n06PkN/y11HeVZNbziuzuPbLJfL0e2PLNdxFEXx+vXa3tP5tunbrmU5nebKMOuNor7vHpepddf33l5p9l8OHHWpkzGujHdtpZl9MNRaROTrpR98pqqf6Nvg0xAbchX9gPUsu3jVGsbHTwTbjuEjLzFNhlffvYsnZHvhduC3zJ9IeNwRbtN38EV0csZfTgubIOBhyyF23x+4+dXfpSU04ogqoFLOhjtMpqxJoqhP7jBZDFNcQQJHmzfKfBIbVAv9NOIZIluM/fy677biDpNlThhQ5vaYYi3zQ+RXtDalCyj0vLSRX/mdHIHTxMGUZj2aiLizZFuTBZQ4ESb0I7PipPZqyFakUh9hkLNrv5/UFkZEFbDFncQkzK/9PkLnQsI1qcgFaeKTKmHMncSkSxSwFXAnMaHaGnZ73EkMRlSThc2dxOSdKqHYmwvBjUb+Q8Q+wyXVM3S4k5iQfUtdqevuDVXC9po7iglZI1HqwptsxhfahKoRbg/F3hemayVKvXRC18SQelGB7lBG6ltsMVlCqaNpQHfu1OXOYnDjfsyjhtxZsnn5ld9NZtN7RZjQFXm7PSBMKHOXSHgyc2BLvGFLecZ9iCjwwtCYNKGyBE6LtAmVGnAHumK6VFqYJa3//UGd8PBrlHW3bUrVbzuTNmvQjqYJaTspsjPEk7q4KYPy7mVixx3oCvVYI28F3nPyq36AtHEmQXbW/U3adPiN7EaGknpnYUuYUOQjPL8g+jypp1B0w6nYl9ioLmWI7e7X5vrfehQk9pSNasYQ2lE8ovieSh1mjjYECSfcIW57/pRG7DHpybMbRZHvdKVMn9tGWWLvtp2tn2poCOwjXntmuy+tdWFQ/KDmZf6ypujBvrzOhZHhfdKWPfP63q5jZa/uxF7zzpLxIpTbiE7vNO3jMKPnIa+Tf1OkPSYv1j4Qa7dw2i8xil7a988Zs/7bpFbrNc7HjtbwFf/xOgj9ruV2/eE/U/W9Sbjr2LbvjaXeu8y1XywkHugCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAn/YfbgEz22Z3uN0AAAAASUVORK5CYII=" alt="fihsdis">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO6qS3hQu9W2dffmDzqa2QGJIZAOM4wHYMpA&usqp=CAU" alt="kdk">
+   </div>
+  </div>
+
+
+  <div class="contianer4" id="service">
+    <h1>Testimonials</h1>
+    <h2>Read what my clients say about my level of service and the success that they've <br> achieved</h2>
+    <div class="apple">
+        <div class="a">
+            <p>inancial Vision is an International  Financial Planning company with offices in multiple   world. Working with Financial Vi middle east from  where I live in USA.</p>
+            <h4>Snor.T.M.</h4>
+            <h5>jurisdictions over the world.</h5>
+        </div>
+        <div class="b">
+            <p>inancial Vision is an International Financial Pla the ability to advise international expatriates living in the middle east from where I live in USA.</p>
+
+            <h4>Snor.J.R.</h4>
+            <h5>jurisdictions over the world.</h5>
+        </div>
+    </div>
+  </div>
+
+  <div class="contianer5" id="advice">
+    <h1>More Than 100 Financial Planners,<br> One Philosophy</h1>
+    <div class="viedo">
+        <video src="../video.mp4"height="350px" controls poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjTEfxmNVqg7mnur45U__UojyYkmwFi6N_A&usqp=CAU"></video>
+    </div>
+    <p>Every single one of our financial advisors receives rigorous training in Ric Edelman's<br> philosophy, which is based on academic research (including that of a Nobel laureate in<br> Economics) and Behavioral Finance.</p>
+
+    <h5>All of our planners believe that everyone, rich or not so rich, deserves great financial advice and<br> planning services. No matter which advisor you work with, you can be confident that they'll put<br> YOUR BEST INTERESTS FIRST and that you are getting the best experience we have<br> to offer.</h5>
+    <div class="box7">Get Your Free Fincial Analysis</div>
+  </div>
+
+
+
+
+
+  <div class="contianer6" id="contacts">
+    <div class="box8">
+        <div class="logo1"><i class="fa-regular fa-paper-plane"></i>Sign Up</div>
+
+        <h3>Get subscriber only insights & news <br>
+                    delivered by John Doe</h3>
+            <div class="submit">
+                <input type="text" placeholder="E-Mail">
+                <div class="box10">Submit</div>
+            </div>
+
+            <div class="logo2"><i class="fa-regular fa-envelope"></i>Contact Me</div>
+            <div class="sign">
+                <label>E-mail:</label>
+            <br>
+            <label>Telephone:</label>
+            <br>
+            <label>Adress:</label>
+            </div>
+
+    </div>
+    <!-- <div class="logo1"><i class="fa-regular fa-envelope"></i>Contact Me</div>
+    <label>E-mail:</label>
+    <br>
+    <label>Telephone:</label>
+    <br>
+    <label>Adress:</label> -->
+   
+    <div class="box9">
+       <div class="book">
+        <div class="left1">
+            <h1>Financial Planning</h1>
+            <h2>Investment Managemant</h2>
+            <h3>Retirment Planning</h3>
+            <h4>Long Them Care</h4>
+            <h5>Estate Planing</h5>
+            <h6>Social Security</h6>
+
+        </div>
+        <div class="right1">
+            <h1>Investment Help</h1>
+            <h2>Wealth Managemant</h2>
+            <h3>>Retirment & College</h3>
+            <h4>Savings Business Owners</h4>
+            <h5>Insurence & Annuites</h5>
+            <h6>Cash & Credit</h6>
+
+        </div>
+       </div>
+        <p>Investments products and services available only to residents of : Arizona - AZ, California - CA, Hawaii - HI, Idaho - ID, New Jersey - NJ, New Mexico - NM, Oregon - OR, Washington - WA Securities and Investment Advice through John Doe & Company, A registered broker/dealer and Investment Advisor, Member FINRA and SIPC. 101 Serious Road, Fincity, FL 32707 Tel: (959) 603- 6035.| John Doe Financial Advisors is not an affiliate of Wall Street Company.
+        </p>
+
+        <div class="pragraph">All other trademarks and copyrights are the properties of their respective holders. This website provides information related to the subjects covered. Before making any financial or legal decisions, a professional should be consulted.</div>
+
+        <div class="last">Financial Vision ©2024 | <span>Privacy Policy</span></div>
+
+    </div>
+    
+  </div>
+</body>
+</html>
+<!-- https://demo.templatemonster.com/demo/58723.html?_gl=1*kpflgy*_ga*MTQ0NTMwMTQwNy4xNzEwNTg5NDMx*_ga_FTPYEGT5LY*MTcxMDU4OTQzMS4xLjEuMTcxMDU4OTQ4Ny40LjAuMA.. -->

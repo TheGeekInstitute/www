@@ -1,0 +1,26 @@
+
+
+Password Cracking with John The Ripper
+
+01. root@Mr~Malware:~# zip2john (path of Zip file) > (new File name).txt
+
+02. root@Mr~Malware:~# john (file path of our .txt file)
+
+03. root@Mr~Malware:~# rar2john (path of rar file) > (new File name).txt
+
+04. root@Mr~Malware:~# john (file path of our .txt file)
+
+05 . root@Mr~Malware:~# pdf2john (path of pdf file) > hash.txt
+
+06. root@Mr~Malware:~# john hash.txt
+
+07. root@Mr~Malware:~# office2john word.docx > wordhash.txt
+
+08. root@Mr~Malware:~# john wordhash.txt
+
+
+Crack Password with John The Ripper using wordlist
+
+07. root@Mr~Malware:~# john --wordlist=(path of wordlist) hash.txt
+Published with Simplenote
+Report abuse

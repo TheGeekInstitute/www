@@ -1,0 +1,32 @@
+$color-red:red;
+$color-green:green;
+$color-yellow:yellow;
+$color-gray:gray;
+$color-orangered:orangered;
+$color-blue:blue;
+
+$font-one:"cursive";
+$font-two:"arial";
+$font-three:"sans-serif;"
+
+
+
+@mixin p{
+    height: 200px;
+    border: 5px solid $color-green;
+    color: transparent;
+
+}
+
+p{
+    @include p;
+    font-family: $font-one;
+    // -webkit-text-stroke:2PX red;
+    // font-size:30px ;
+    // background-color:$color-gray;
+    // background-color: lighten(blue, 30%);
+    // background-color: darken(blue,10%);
+    // background-color: mix($color-orangered, $color-yellow, 40%);
+    // background-color: adjust-hue($color-gray, 90);
+    
+}

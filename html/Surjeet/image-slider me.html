@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid red;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .container .slider{
+            height: 600px;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: slider 10s linear 
+            0s infinite alternate ;
+        }
+
+        .container .slider .image{
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container .slider .image .content{
+            background-color: rgba(0, 0, 0, 0.068);
+            border-radius: 10px 20px;
+            width: 500px;
+            padding: 30px;
+            box-sizing: 0px 0px 10px white;
+            color: white;
+        }
+
+        .container:hover .slider{
+            animation: paused;
+        }
+
+        @keyframes slider {
+            0%{transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+            }
+
+            15%{
+                transform: translateX(-100vw);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" style="background-image: url(../Aasha/image/1.jpeg);">
+        
+        <div class="contant">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae saepe dolorem itaque sapiente iusto ut, omnis eos officiis aut repellat no</h1>
+        </div>
+    </div>
+
+        <div class="box" style="background-image: url(../Aasha/image/2.jpeg);">
+
+        <div class="contant">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae saepe dolorem itaque sapiente iusto ut, omnis eos officiis aut repellat no</h1>
+        </div>
+    </div>
+
+        <div class="box" style="background-image: url(../Aasha/image/3.jpeg);">
+
+        <div class="contant">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae saepe dolorem itaque sapiente iusto ut, omnis eos officiis aut repellat no</h1>
+        </div>
+    </div>
+
+        <div class="box" style="background-image: url(../Aasha/image/4.jpeg);">
+
+        <div class="contant">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae saepe dolorem itaque sapiente iusto ut, omnis eos officiis aut repellat no</h1>
+        </div>
+    </div>
+
+        <div class="box" style="background-image: url(../Aasha/image/5.webp);">
+            
+        <div class="contant">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quae saepe dolorem itaque sapiente iusto ut, omnis eos officiis aut repellat no</h1>
+        </div>
+    </div>
+    
+      
+</div>
+
+</body>
+</html>

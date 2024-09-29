@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border: 2px solid black;
+        height: 200px;
+        width: 70%;
+        margin: 50px auto;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <p class="para">This is paragraph</p>
+    </div>
+
+    <script>
+
+        let box = document.querySelector(".box");
+        let element =  document.createElement("h1");
+        let para = document.querySelector(".para");
+        // console.log(element)
+        let text = document.createTextNode("This is Simple text");
+        element.append(text);
+
+        // console.log(text)
+
+        // let comment  = document.createComment("This is Comment");
+
+        // console.log(comment)
+
+
+        // console.log(element)
+
+        // box.append(element)
+        // box.appendChild(element)
+
+        box.insertBefore(element,para)
+
+    </script>
+</body>
+</html>

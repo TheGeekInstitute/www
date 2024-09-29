@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text</title>
+    <style>
+        .first,#second{
+            margin-left:10px ;
+            height: 50vh;
+            width: 50vw;
+            border: 1px solid red;
+            text-align: center;
+
+        }
+
+        .cont{
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+
+        <!-- first <div></div> -->
+
+         <div class="first">
+              <h1>panding</h1>
+                   <input type="checkbox" id="check" >
+                   <p class="para">Lorem ipsum dolor sit amet consectetur s.</p>
+
+            <br>
+
+                   <input type="checkbox" class="check">
+                   <p id="pera">Lorem ipsum, dolor sit amet consectetur adipisicing t?</p>
+
+         </div>
+
+         <!-- /second <div></div> -->
+
+          <div id="second">
+              <h2>complete</h2>
+            <button class="delete">delete</button>
+            </div>
+
+
+
+<script>
+
+  
+  let check = document.getElementById("check").addEventListner('click',function(){
+    
+    let complete = document.getElementById("second");
+  let next = document.querySelector(".check");
+  let para = document.querySelectorAll(".para").nextElementSibling;
+
+  complete.appendChild(para);
+  console.log(complete)
+
+})
+
+
+
+// let check = document.querySelectorAll(".check")
+// let first = document.querySelector(".first");
+// let second = document.querySelector(".second");
+
+
+
+// check.forEach((checkbox)=>{
+//   checkbox.addEventListener('click',function(){
+  
+  
+
+//     let para =  checkbox.nextElementSibling;
+//     let text = para.innerText
+
+   
+  
+//     if(checkbox.checked==true){
+//       para.innerHTML = "<s>"+ text +"</s>";
+
+//       second.insertAdjacentHTML("beforeend","<p>"+para+"</p>")
+//     }
+//     else{
+//       para.innerHTML =  text ;
+//     }
+//   })
+
+// })
+
+// document.querySelector(".delete").addEventListener('click', function(){
+//   text.style.color=white;
+
+// })
+
+
+
+
+
+
+</script>
+
+
+</div>
+</body>
+</html>

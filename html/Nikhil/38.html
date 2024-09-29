@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOding page</title>
+    <style>
+        .ring{
+            width: 200px;
+            height: 200px;
+            border: 0px solid #000;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+        .ring:nth-child(1){
+            border-bottom-width: 8px;
+            border-color: rgb(153, 253, 38);
+            animation:rotatel 2s linear infinite;
+            animation-delay: -5s;
+        }
+        .ring:nth-child(2){
+            border-bottom-width: 8px;
+            border-color: rgb(110, 20, 20);
+            animation:rot 2s linear infinite;
+            animation-delay: -8s;
+        }
+        .ring:nth-child(3){
+            border-bottom-width: 8px;
+            border-color: rgb(126, 20, 197);
+            animation:rol 2s linear infinite;
+            animation-delay: .5s;
+        }
+        @keyframes rotatel {
+            0{
+                rotate: 0deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+            
+        }
+        @keyframes rot {
+            0{
+                rotate: 0;
+
+            }
+            100%{
+                rotate: 360deg;
+            }
+            
+        }
+        @keyframes rol {
+            0{
+                rotate: 0;
+            }
+            100%{
+                rotate:360deg;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p>Loding...</p>
+    </div>
+</body>
+</html>

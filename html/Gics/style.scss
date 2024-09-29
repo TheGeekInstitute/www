@@ -1,0 +1,55 @@
+@import './header';
+@import './variables';
+@import './choicelist';
+@import './courses';
+@import './teams';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection{
+    background: turquoise;
+    color: rgb(97, 59, 13);
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+::-webkit-scrollbar{
+    width: .7em;
+}
+
+::-webkit-scrollbar-track{
+    background: linear-gradient(60deg,hotpink,skyblue);
+    height: 100vh;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    background: #333;
+}
+
+
+@supports (scrollbar-color: hsl(12,75%,70%) #000){
+    *{
+scrollbar-color: hsl(12,75%,70%) #000;
+scrollbar-width: .51em;
+    }
+}
+
+p,h1,h2,h3,h4,img{
+    user-select: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            height: 50px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            top:calc(50% - 25px);
+            left: calc(50% - 50px);
+            animation: rotate 3s linear 0s infinite;
+            display: none;
+        }
+
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader"></div>
+
+    <button id="btn">Fetch Data</button>
+
+    <h1 id="result"></h1>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let result = document.querySelector("#result");
+        let loader = document.querySelector(".loader")
+        
+        // btn.addEventListener("click",()=>{
+        //     loader.style.display="block";
+        //     let xhr = new XMLHttpRequest();
+        //     xhr.onreadystatechange = function(){
+        //         if(this.readyState==4 && this.status==200){
+        //             loader.style.display="none";    
+        //             result.innerHTML = this.responseText;
+        //         }
+        //     }
+        //     xhr.open("GET","data.php",true);
+        //     xhr.send();
+
+        // })
+
+
+        btn.addEventListener("click",()=>{
+            let data =  fetch("data.txt");
+            data.then((e)=>{
+                return e.text()
+            }).then((abcd)=>{
+                result.innerHTML = abcd
+            })
+
+        })
+    </script>
+
+</body>
+</html>

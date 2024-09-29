@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1  class="how">This is what</h1>
+<p id="now">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, id? Animi aspernatur magni iusto maxime, ducimus vitae saepe voluptatibus voluptate placeat blanditiis totam aperiam cum nihil distinctio harum excepturi! Ducimus?</p>
+
+<script>
+    // document.querySelector(".how").addEventListener('click' ,function(){
+    //     this.style.color="green";
+    // });
+
+    // document.querySelector("#now").addEventListener('mouseenter',function(){
+    //     this.style.color = "blue";
+    //     this.style.fontWeight = "bold";
+    //     this.style.fontSize = "20px"
+    //     this.style.transition = "all 0.5s"
+    // });
+    // document.querySelector("#now").addEventListener('mouseleave',function(){
+    //     document.querySelector("#now").removeAttribute("style");
+    // });
+
+    document.querySelector(".how").addEventListener('onblur',function(){
+        this.style.color = "red";
+    });
+</script>
+</body>
+</html>

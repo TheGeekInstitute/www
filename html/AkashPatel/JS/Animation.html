@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animination</title>
+    <style>
+        #aero{
+            /* border: 1px solid black; */
+        }
+
+        @keyframes car {
+            0%{
+                
+            }
+            
+            100%{
+                
+            left: 120vw;
+                
+            }
+            
+        } 
+        #aero{
+            height: 200px;
+            width: 400px;
+            position: relative;
+            margin-top: 160px;
+            animation-name:car ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* filter: drop-shadow(4px 4px 10px black); */
+            left: -320px;         
+            
+        }
+
+        .aero:hover{
+        }
+        .pause{
+            
+            animation-play-state: paused;
+        }
+
+    </style>
+   
+</head>
+<body>
+
+ <div class="ani">
+    <img src="https://clipart-library.com/2023/flying-airplane.gif" alt="" id="aero">
+
+ </div>
+
+ <button id="btn">stop</button>
+ <button id="btn1">play</button>
+
+
+ <script>
+      
+    //   document.getElementById(btn).addEventListener(click, function(){
+    //     document.getElementById(aero).style.animationPlayState = "paused";
+    //   })
+
+    // function click(){
+    //     document.getElementById("aero").setAttribute( 
+    //         "style","animation-play-state:paused ;"
+    //     )
+        
+    // }
+
+    // document.getElementById("btn").addEventListener(onclick,function(){
+    //       document.getElementById("aero").setAttribute()
+    // })
+
+    document.querySelector("#btn").addEventListener('click',function(){
+        let stop = document.querySelector("#aero");
+        stop.classList.toggle("pause");
+    })
+
+    document.querySelector("#btn").addEventListener('click',function(){
+        this.innerHTML="play";
+        
+        // if(this.innerHTML= "stop"){
+        //     this.innerHTML = "paly"
+        // }
+        // // if(this.innerHTML = "stop"){
+        // //     this.innerHTML = "play"
+        // // }
+        
+        // if(document.querySelector("#btn").innerHTML= "stop"){
+        //     document.querySelector("#btn").innerHTML = "play"
+        // }
+        // else(
+        //     document.querySelector("#btn").innerHTML = "stop"
+
+        // )
+
+        
+    })
+
+    // document.querySelector("#btn").addEventListener('click',function(){
+    //     if(this.innerHTML="play"){
+    //         this.innerHTML="stop"
+    //     }
+    // })
+
+    
+
+
+    </script>
+</body>
+</html>

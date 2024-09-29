@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+     .box{
+        border:2px solid black ;
+        height:200px ;
+        width:200px ;
+        margin:150px ;
+        background-color:red ;
+        /* transition-property:width, height ; */
+        /* transition-property:all ; */
+        /* transition-duration:1s ; */
+        /* transition-delay:2s ; */
+        /* transition-timing-function:ease-in-out ; */
+        /* transition-timing-function:step(5) ; */
+
+        transition: all 1s linear;
+     }
+
+     .box:hover{
+            width: 400px;
+            height: 400px;
+            background-color:Blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="box"></div>
+
+</body>
+</html>

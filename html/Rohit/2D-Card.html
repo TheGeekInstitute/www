@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D - Card</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+      
+        width: 250px;
+        height: 300px;
+        margin: 150px auto;
+        text-align: center;
+        background-image: url("../wallpapers/people/hepuburn-car.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        overflow: hidden;
+        filter: blur(50px);
+    }
+
+    .container .card{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        backdrop-filter: blur(2px);
+        transform: translateY(100%);
+        transition: all .3s linear;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .container .card    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+
+    }
+
+    .container:hover .card{
+        transform: translateY(0%);
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="../web/images/11.jpg" alt="adas">
+            <h1>ABCD</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam necessitatibus recusandae minima quia atque ipsum aliquam ipsam expedita</p>
+        </div>
+    </div>
+</body>
+</html>

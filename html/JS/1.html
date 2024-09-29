@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function odd_even(num){
+            let resust="";
+            let sum=0;
+            if(num !=null && Number.isInteger(num)==true){
+                if(num%2==0){
+                    for(let i=0 ; i<=num ; i+=2){
+                        sum+=i;
+                        resust += i + "<br>";
+                    }
+                    return resust + "The Sum of All Even Numbers : "+sum;
+                }
+                else{
+                    
+                    for(let i=1 ; i<=num ; i+=2){
+                        sum+=i;
+                        resust += i + "<br>";
+                    }
+                    return resust + "The Sum of All Odd Numbers : "+sum;
+                }
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // console.log(odd_even(11))
+
+        function print_arr(arr){
+            let result="";
+            if(arr !=null && Array.isArray(arr)==true){
+                for(let data of arr){
+                    result += data + "<br>";
+                }
+                return result;
+                // document.write(result)
+            }
+            else{
+                return "Please Provide an Array";
+            }
+        }
+
+        let name=["A","B","C","D"]
+        // document.write(print_arr(name))
+        // print_arr(name)
+
+        function check_num(num){
+            if(num!=null && Number.isInteger(num)){
+                if(num%2==0){
+                    return  num+  " is an even number";
+                }
+                else{
+                    return  num+  " is a odd number";
+
+                }
+            }
+            else{
+                return "Please provide a Number";
+            }
+        }
+
+        // document.write(check_num(9))
+
+
+        // *
+        // * *
+        // * * *
+        
+        let row=15;
+
+        // for(let i=1 ; i<=row ; i++){
+        //     for(let j=1 ;j <=i ; j++){
+        //         document.write("* ");
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // for(let i=1 ; i<=row ; i++){
+        //     for(let j=1 ;j <=i ; j++){
+        //         document.write(i + " ");
+        //     }
+        //     document.write("<br>")
+        // }
+
+    
+
+
+        // 1
+        // 12
+        // 123
+        // 1234
+
+
+    </script>
+
+
+</body>
+</html>

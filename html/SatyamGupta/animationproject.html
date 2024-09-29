@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Project</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 2px solid green;
+        }
+
+        .main.box{
+            /* height: 50vh; */
+            width: 100vw;
+            /* border: 2px solid yellow; */
+        }
+        .main .box img{
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main .box .center{
+            position: relative;
+            top: -23rem;
+            /* bottom: -2rem; */
+            flex-basis: 100%;
+            animation: box 3s ease-in 0s infinite alternate;
+        }
+
+        .main .box .center .boy img{
+            height: 12rem;
+            width: 23rem;
+            /* border: 2px solid yellow;/ */
+        }
+        .main .box .center .car img{
+            height: 12rem;
+            width: 23rem;
+            /* border: 2px solid red; */
+        }
+
+
+     
+        @keyframes box{
+            0%{
+                transform: translatex(0);
+            }
+            5%{
+                transform: translatex(5vw);
+            }
+            10%{
+                transform: translatex(10vw);
+            }
+            15%{
+                transform: translatex(15vw);
+            }
+
+            20%{
+                transform: translatex(20vw);
+            }
+            25%{
+                transform: translatex(25vw);
+            }
+            30%{
+                transform: translatex(30vw);
+
+            }
+            35%{
+                transform: translatex(35vw);
+
+            }
+            40%{transform: translatex(40vw);
+            }
+
+            45%{
+                transform: translatex(45vw);
+            }
+            50%{
+                transform: translatex(50vw);
+
+            }
+            55%{
+                transform: translatex(55vw);
+
+            }
+            60%{transform: translatex(60vw);
+            }
+            65%{
+                transform: translatex(65vw);
+            }
+            70%{
+                transform: translatex(70vw);
+
+            }
+            75%{
+                transform: translatex(75vw);
+
+            }
+            80%{transform: translatex(80vw);
+            }
+
+            85%{
+                transform: translatex(85vw);
+
+            }
+            90%{transform: translatex(90vw);
+            }
+            95%{
+                transform: translatex(95vw);
+            }
+            100%{
+                transform: translatex(100vw);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="box">
+        <img src="./images/background.jpg" alt="" srcset="">
+        <div class="center">
+            <div class="boy">
+            <img src="./images/boy.gif"" srcset="">
+        </div>
+            <div class="car">
+                <img src="./images/car.gif" alt="" srcset="">
+            </div>
+    
+    </div>
+    
+
+    </div>
+    </div>
+    
+</body>
+</html>

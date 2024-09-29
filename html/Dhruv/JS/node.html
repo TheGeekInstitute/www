@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <p id="para" class="abcd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, blanditiis officia odio dolor placeat assumenda numquam? Id, animi ex, quod optio laboriosam voluptates officia, asperiores numquam suscipit voluptas quas quia!</p>
+    </div>
+
+    <ul class="list">
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+
+
+    <ul class="list1">
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+
+    <script>
+        let box = document.querySelector(".box");
+        let para = document.querySelector('#para')
+        let list = document.querySelector(".list")
+        let list1 = document.querySelector(".list1")
+
+
+        
+        
+        // console.log(box.contains(para))
+
+        // console.log(para.hasAttribute("style"))
+
+        // console.log(box.hasChildNodes())
+
+        console.log(list.children[0].isEqualNode(list1.children[0]))
+    </script>
+</body>
+</html>

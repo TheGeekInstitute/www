@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .accordion{
+            border: 1px solid black;
+            width: 40rem;
+            margin: 10px auto;
+        }
+
+        .accordion .box input[type="checkbox"]{
+            display: none;
+        }
+
+        .accordion .box{
+            margin: .5rem;
+        }
+
+        .accordion .box label{
+            display: block;
+            background-color: rebeccapurple;
+            height: 2.5rem;
+            color: white;
+            font-size: x-large;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .accordion .box .content{
+            background-color: bisque;
+            padding: 5px 10px;
+            display: none;
+        }
+
+        .accordion .box input[type="checkbox"]:checked ~ .content{
+            display: block;
+        }
+
+
+        .accordion .box  label i{
+            transition: all .3s linear;
+        }
+
+
+        .accordion .box input[type="checkbox"]:checked ~ label i{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn">
+                <p>What is HTML ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint provident at, iure ipsa porro praesentium officia nulla, expedita autem corrupti reprehenderit optio voluptates eaque. Rerum debitis architecto quod. Voluptates.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn1">
+            <label for="btn1">
+                <p>What is HTML ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint provident at, iure ipsa porro praesentium officia nulla, expedita autem corrupti reprehenderit optio voluptates eaque. Rerum debitis architecto quod. Voluptates.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn2">
+            <label for="btn2">
+                <p>What is HTML ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint provident at, iure ipsa porro praesentium officia nulla, expedita autem corrupti reprehenderit optio voluptates eaque. Rerum debitis architecto quod. Voluptates.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn3">
+            <label for="btn3">
+                <p>What is HTML ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sint provident at, iure ipsa porro praesentium officia nulla, expedita autem corrupti reprehenderit optio voluptates eaque. Rerum debitis architecto quod. Voluptates.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

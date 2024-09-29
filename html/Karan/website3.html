@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />ss
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+        }
+        h1{
+            font-style: italic;
+        }
+        h1:hover{
+            color: #fff;
+        }
+        .nav{
+            height: 10VH;
+            background-color: blue;
+        }
+        .nav, .nav ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .nav ul li a{
+            color: black;
+            margin: 15px;
+            font-size: 20PX;
+        }
+        .nav ul li a:hover{
+            color: #fff;
+        }
+        .hero image img {
+            display: flex;
+        }
+        .main{
+            display: flex;
+            background-color: rgb(19, 19, 165);
+        }
+        .hero{
+            margin-left:110px;
+            color: #ffff;
+        }
+        h3{
+            margin: 40px;
+        }
+         p{
+            width: 45vw;
+        }
+        span{
+            font-style: italic;
+            font-size: 52px;
+        }
+        .btn{
+            background-color: orangered;
+            color: black;
+            padding: 5px;
+        }
+        .input [type=text]{
+            margin: 20px;
+            border: 2px solid black ;
+            padding: 5px;
+            background-color: #ccc;
+        }
+        .image img{
+            height: 60vh;
+            width: 38vw;
+            padding: 50px;
+        }
+        h2{
+            margin: 50px;
+        }
+        .new{
+            display: flex;
+            height: 40vh;
+            background-color: #ccc;
+            margin-top: -50px;
+            width: 92%;
+        }
+        .para{
+            margin: 50px;
+        }
+        .para a{
+            border: 1px solid orangered;
+            background-color: orangered;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+        }
+        .para p{
+            margin: 20px;
+            margin-left: 3px;
+        }
+        .rank a{
+            border: 1px solid orangered;
+            background-color: orangered;
+            color: black;
+            padding: 5px;
+            margin: 5px;
+        }
+        .old{ 
+            display: flex;
+        }
+        .rank{
+            background-color: #ccc;
+            width: 50%;
+            height: 40vh;
+        }
+        .rank h1{
+            padding: 40px;
+        }
+        .rank p{
+            margin: 20px;
+            margin-left: 3px;
+        }
+        .picture img{
+            width: 50vw;
+            height: 43vh;
+        }
+        .third{
+            display: flex;
+            width: 90%;
+            margin-left: 100px;
+        }
+        .first{
+            background-color: #ccc;
+            padding: 10px;
+            height: 80vh;
+            width: 100%;
+        }
+        .first h1{
+            margin-left: 100px;
+        }
+        .second{
+            background-color: #fff;
+            margin-left: 100px;
+            width: 80vw;
+            height: 50vh;
+        }
+        .face img{
+            margin: 40px;
+        }
+        .not{
+            display: flex;
+            width: 90%;
+            margin: 15px;
+            margin-left: 50px;
+        }
+        .village{
+            display: flex;
+        }
+        .village h1{
+            margin: 20px;
+            font-size: 45px;
+            margin-left: 20px;
+        }
+        .line{
+            width: 500px;
+            height: 0px;
+            border: 1px solid #ffff;
+            margin: 60px;
+        }
+        .village i{
+            margin: 50px;
+        }
+        .village h3{
+            font-style: italic;
+        }
+        .footer{
+        background-color: black;
+        height: 50vh;
+        color: #fff;
+        padding: 5px;
+    }
+        .bar{
+            display: flex;
+            color: #fff;
+        }
+        .key{
+            margin: 10px;
+            padding: 10px;
+        }
+        .btn5{
+            background-color: orangered;
+            color: black;
+            padding: 5px;
+            margin-left: -16px;
+        }
+        .box [type=text]{
+            margin: 15px;
+            border: 2px solid black ;
+            padding: 5px;
+            background-color: #ccc;
+        }
+        SPAN{
+            color: rgb(245, 29, 5);
+        }
+        .sudo{
+            margin-right: 40px;
+        }
+        .select{
+            margin-right: 40px;
+        }
+        .org{
+            margin-right: 40px;
+        }
+        .sudo ul li a{
+            color: #fff;
+        }
+        .select ul li a{
+            color: #fff;
+        }
+        .org ul li a{
+            color: #fff;
+        }
+        .social{
+            font-size: 40px;
+        }
+        .yt{
+            color: red;
+            font-size: 40px;
+        }
+        .yt:hover{
+            background-color: #fff;
+            padding: px;
+        }
+        .ti{
+            color: aqua;
+            font-size: 40px;
+        }
+        .ti:hover{
+            background-color: #fff;
+            padding: 5px;
+        }
+        .fb{
+            color: blue;
+        }
+        .fb:hover{
+            background-color: #fff;
+            padding: 5px;
+        }
+        .ig{
+            color: rgb(184, 14, 184);
+        }
+        .ig:hover{
+            background-color: #fff;
+            padding: 5px;
+        }
+         .tw{
+        color: rgba(0, 255, 255, 0.842);
+        }
+        .tw:hover{
+            background-color: #fff;
+            padding: 5px;
+        }
+
+        .li{
+            color: rgb(49, 49, 235);
+        }
+        .li:hover{
+            background-color: #fff;
+            padding: 5px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>BEN<span>SMITH</span></h1>
+        <ul>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">MY PRODUCTS</a></li>
+            <li><a href="#">TOOLS</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="hero">
+        <h3>Hey I'm <span>Ben Smith</span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id officiis, similique qui praesentium animi perspiciatis dignissimos earum quam accusamus numquam sed eos esse quisquam dolore repellat assumenda totam optio minus!</p>
+        <div class="input">
+            <input type="text">
+            <button class="btn">Sign Up</button><br>
+            Sign up here and please enter your email Id
+        </div>
+        <h2>Here isk whats I'm currently working in Wipro</h2>
+    </div>
+        <div class="image">
+            <img src="https://n2.sdlcdn.com/imgs/a/c/7/SDL527166128_1375686862_image1-bc8bf.jpg" alt="">
+        </div>
+    </div>
+    <div class="new">
+        <div class="post">
+            <img src="https://th.bing.com/th/id/OIP.tpI2pvVPuyveou8BgviDsgHaE8?pid=ImgDet&rs=1" alt="">
+        </div>
+        <div class="para">
+            <h1>Niche site using programming SEO</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sed distinctio harum vitae earum. Perferendis fugiat vel maiores modi quasi esse impedit neque blanditiis voluptas, consequuntur alias? Vel, eius fugiat.</p>
+            <a href="#">Try Again</a>
+            </div>
+        </div>
+        <div class="old">
+        <div class="rank">
+            <h1>WP Plugin</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident sed distinctio harum vitae earum. Perferendis fugiat vel maiores modi quasi esse impedit neque blanditiis voluptas, consequuntur alias? Vel, eius fugiat.</p>
+            <a href="#">Try Again</a>
+            </div>
+            <div class="picture">
+                <img src="https://www.shutterstock.com/image-photo/tea-cup-teapot-modern-room-260nw-2064455723.jpg" alt="">
+            </div>
+        </div>
+        <div class="first">
+            <h1>Cheak out my recent posts</h1>
+            <div class="second">
+                <div class="face">
+                    <img src="../web/images/19.jpg"alt="">
+                    <img src="../web/images/14.jpg"alt="">
+                    <img src="../web/images/16.jpg"alt="">
+                </div>
+                <div class="third">
+                    <h2>Blog Title</h2>
+                    <h2>Blog Title</h2>
+                    <h2>Blog Title</h2>  
+                </div>
+                <div class="not">
+                   <p>This is my official website please visit this page and supprot.</p>
+                   <p>This is my official website please visit this page and supprot.</p>
+                   <p>This is my official website please visit this page and supprot.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="village">
+                <h1>Ben Smith</h1>
+                <hr class="line">
+                <h3>Follow me</h3>
+                <i class="fa fa-youtube-play yt" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square ti" aria-hidden="true"></i>
+            </div>
+            <div class="bar">
+                <div class="key">
+                    <p>My name is karan chnara i am from uttarakhand i was very happy in my coding life....</p>
+                    <div class="box">
+                        <input type="text"><button class="btn5">Sigh Up</button>
+                    </div>
+                </div>
+                <div class="sudo">
+                    <h1>ESTER</h1>
+                    <ul>
+                        <li><a href="#">Home Dacer</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Hales</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Hales</a></li>
+                    </ul>
+                </div>
+                <div class="select">
+                    <h1>SERVICES</h1>
+                    <UL>
+                    <li><a href="#">Deals in Dives</a></li>
+                    <li><a href="#">Home Dacer</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Hales</a></li>
+                    </UL>
+                </div>
+                <div class="org">
+                    <h1>CETEOGARIES</h1>
+                    <UL>
+                        <li><a href="#">Electronic</a></li>
+                        <li><a href="#">Sevices</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Decoreaction</a></li>
+                        <li><a href="#">Home Dacer</a></li>
+                    </UL>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/@karanpokhriyal5">
+                        <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                    </a>
+                <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                        <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                    </a>
+                <a href="https://twitter.com">
+                        <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                    </a>
+                <a href="https://in.linkedin.com">
+                        <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                    </a>
+            </div>
+            </div>
+            </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        let container = document.querySelector(".container");
+        let xhr = new XMLHttpRequest;
+
+        xhr.onreadystatechange = function(){
+            if(this.readyState == 2 && this.status == 400){
+                let josn_data = JSON.parse(this.responseText);
+
+                for(data of josn_data.projects){
+                    let text = `
+                    <div class="box">
+                    <p>${data.id}</p>
+                    <h1>${data.title}</h1>
+                    <p>${data.price}</p>
+                 <img src="${data.thumbnail}" alt="">
+                </div>
+                    `;
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

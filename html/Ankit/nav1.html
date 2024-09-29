@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Nav bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            
+            background-color: bisque;
+        }
+
+
+        .nav{
+            /* border: 1px solid red; */
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: black;
+            box-shadow: 2px 2px 10px grey;
+        }
+
+        .nav ul{
+            display: flex;
+        }
+
+        .nav ul li{
+            margin: 0 20px;
+        }
+        
+        .nav ul li a{
+            display: block;
+            text-align: center;
+            height: 50px;
+            width: 70px;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            /* border: 1px solid red; */
+            line-height: 50px;
+        }
+        .nav ul li a:hover{
+            background-color: grey;
+        }
+      .side ul li{
+        margin-top:0;
+        padding-top:65px;
+    }
+    .side {
+          /* background-color: black; */
+          width: 100px;
+          padding: 5px;
+          height:875px;
+          box-shadow: 5px 5px 10px solid grey;
+
+      }
+      .side ul li a{
+        color: black;
+        /* font-size: medium; */
+        font-weight: 500;
+        display:flex;
+        justify-content: space-around;
+        height:40px;
+        /* height: 25px; */
+        text-align: center;
+        align-items: center;
+        
+    }
+    .side ul li a:hover{
+          background-color: rgb(162, 84, 180);
+
+      }
+      .log{
+        /* position:absolute; */
+        /* margin-top:900px; */
+        color: darkred;
+        
+      }
+      .container{
+        margin-top: 50px;
+        margin-left: 100px;    
+        border: 1px solid red;    
+        background-color: red;
+        z-index: 1000;
+      }
+      .main{
+        box-sizing: border-box;
+        /* border: 2px solid red; */
+        position: absolute;
+        height: 368px;
+        width: 40%;
+        margin-left:95px;
+        margin-top: -940px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow:5px 5px 10px black ;
+        
+      }
+      .main img{
+        height:100px;
+        font-weight: 900;
+        width: 100px;
+        border-radius: 10%;
+        box-shadow:3px 3px 10px rgb(10, 10, 10) ;
+      }
+      .main h1{
+        text-align: center;
+        text-shadow:2px 2px 8px rgba(38, 37, 37, 0.866) ;
+      }
+      .main p{
+        font-weight: 600;
+        /* text-align:justify; */
+      }
+      .btn{
+        background-color: rgb(160, 170, 170);
+        color: darkred;
+        font-size: large;
+      }
+      .sub{
+        
+        /* margin: 0px; */
+        padding: 0px;
+        margin-left:100px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+          <div class="logo"><img src="" alt="LOGO"></div>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="side">
+<ul>
+    <li><a href="#"><i class="fa-solid fa-download"></i>Download</a></li>
+    <li><a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i>Gift Code</a></li>
+    <li><a href="#"><i class="fa-brands fa-github"></i>Support</a></li>
+    <li><a href="#"><i class="fa-solid fa-ghost"></i>Services</a></li>
+    <li><a href="#"><i class="fa-solid fa-circle-down"></i>Pages
+        <ul class="sub">
+        <li><a href="">Page 1</a></li>
+        <li><a href=""></a>Page 2</li>
+        </ul>
+    <li class="log"><i class="fa-solid fa-arrow-right"></i>Logout</li>
+</ul>
+<div class="container">
+    <!-- <div class="main">
+        <img src="https://media.istockphoto.com/id/1138383258/vector/roaring-tiger-head.jpg?s=612x612&w=0&k=20&c=VlMAriyIv3RjDdQC8kOliRsBN8VRj553iMDojbGpAH8=">
+        <h1>Bengol Tigers</h1>
+        <p>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring</p>
+        <a href="https://en.wikipedia.org/wiki/Tiger" class="btn">Read More..</a>
+    </div> -->
+
+
+</div>
+<div class="foot">
+    Enscript by A Raj Deg Vijay<br>
+    all right&copy reserver
+
+</div>
+    
+</body>
+</html>

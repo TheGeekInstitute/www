@@ -1,0 +1,188 @@
+Introduction to PHP
+Installing XAMPP
+PHP Code Structure
+echo & print statement
+variavles
+ data types
+comment
+constaints
+Oprators:
+    Assignment oprators
+    Airthmetic oprators
+    Comparision oprators
+    Logical Oprators
+If Statements
+if else statement
+elseif statement
+Switch Statement
+ternary Oprator
+Loops:
+    While Loop
+    For Loop
+    foreach Loop
+    Nested Loop
+Break  continue and goto
+Functions
+Functions with parameters
+functions with return
+Function Arguments by Refrence
+recursive function
+Global and Local variables
+Index Array
+Associative Array
+Multidimensional Index Array
+Multidimensional Associative Array
+Forearch Loop with List
+
+Array Methods:
+    Array Count & Sizeof Function
+    in_array & array_search Function
+    array_replace & array_replace_recursive
+    array_op & array_push
+    array_shift & array_unshift
+    array_merge & array Combine
+    array_slice & array_splice
+    Array Key functionArray Intersect Function
+    Array Diff & Udiff Function
+    Array_value & Array Unique
+    Array Column & Array_chunk
+    Array_Flip && Array_change_key_Case
+    Array_sum & Array_product
+    Array_Rand & Shuffle Function
+    Array_Fill & Array_Fill_Keys
+    Array_walk && Array_Walk_Recursive
+    Array_Map
+    Array_Reduce
+    Array_shorting Function
+    Array Traversing Function
+    Array List Function
+    Array Extract & Compact Function
+    Array_Range Function
+    Explode & Implode Function
+
+String Functions:
+    string_split & chunk_split
+    String Lowercase & uppercase
+    string Lengt Count
+    string Search & find position
+    substr
+    string replace
+    string compare
+    string reverse
+    str_pad & str_repeat
+    String trim & chop function
+    String addslashes & stripslashes Functions
+    htmlentities & htmlspecialchars
+    convert_uuencode & convert_udecode
+    bin2hex & hex2bin
+    chr & ord function
+    Strip_tag & wrodwrap
+
+Math Functions:  
+    min & max
+    ceil, floor, round and abs
+    intdiv, sqrt and pow
+    rand, mt_rand & lcg_value
+
+Date Function:
+Time
+mktime & gmmktime
+date_create & date_format
+checkdate & date_diff
+date_add, date_sub, date_modify
+getdate, localtime, gettimeofday
+date_parse
+strtotime, strftime, gmstrtime
+date_time_set function
+timezone function
+
+Include & Require Statement
+include_once & Require_once
+
+$_GET , $_POST & $_REQUEST
+$_SERVER
+cookie
+session
+PHP FILES handling
+moveuploaded files
+
+die & exit
+
+
+Mysqli Functions
+myqsli_fetch
+mysqli affected_rows
+mysqli error
+filter validation
+sanitize filter
+filter_var_array function
+filter_input
+
+PHP FileSystem Functions
+    filesystem is function
+    chmod & fileperms functions
+    file_puts_contents & file_get_contents
+    Glob function
+    getcwd, chdir, scandir functions
+    readDir, CloseDir functions
+
+Regular Expressions (REGEX)
+    preg_match
+    preg_replace & preg_split
+
+PHP OOps
+    Introduction
+    constructor & Destructor
+    inheritance
+    Access Modifier
+    Overriding methods & properties
+    Abstract Class
+    Interfaces
+    Static Members
+    late Static Binding
+    Trait
+    Trait Method Overriding
+    Type Hinting
+    Namespace
+    method Chaining
+    Megic Methods
+        __autoload()
+        __get()
+        __set()
+        __call()
+        __callStatic()
+        __isset()
+        __unset()
+        __toString()
+        __sleep()
+        __wakeup()
+        __clone()
+        __invoke()
+    get method
+    set method
+    Call Method
+    Call Static Method
+    isset Method
+    unset Method
+    to string Method
+    sleep Method
+    wakeup method
+    clone & invoke Method
+    Magic Constants
+        __CLASS__	
+        __DIR__	
+        __FILE__
+        __FUNCTION__
+        __LINE__	
+        __METHOD__		
+        __NAMESPACE__
+        __TRAIT__
+    Conditional Functions
+    Get Functions
+
+Mysqli Object oriented CRUD
+    Insert Method
+    Update Method
+    Delete Method
+    Select Method
+    pagination Method

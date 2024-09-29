@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            box-sizing: border-box;
+        }  
+       
+                .container{
+                    margin-top: 7rem;
+                    /* border: 1px solid red; */
+                    display: flex;
+                    justify-content: space-evenly;
+                    /* height: 100vh; */
+                }
+                .container .left{
+                    width: 70vw;
+                    display: grid;
+                    grid-template-columns:35vw 35vw ;
+                    grid-template-rows: auto auto;
+                    gap: 5px 5px;
+                }
+                .container .left img{
+                    height: 25rem;
+                    max-width: 100%;
+                    width: 35vw;
+                    /* display: block; */
+                }
+                .left h3{
+                    border: 1px solid black;
+                    height: 3rem;
+                    width: 15rem;
+                    text-align: center;
+                    margin-left: 28rem;
+                    margin-top: -2rem;
+                    padding: 0.8rem;
+                    background-color: white;
+                }
+                .left h3:hover{
+                    color: grey;
+                }
+                .left h3 i{
+                padding-inline: 1.2rem;
+                }
+        .right table{
+            margin: 0.5rem;
+            display: flex;
+        }
+        .right table th{
+            border: 1px solid black;
+            height: 2.2rem;
+            width: 5rem;
+        }
+        .right table th:hover{
+            background-color: black;
+            color: white;
+        }
+        .right{
+           width: 30vw; 
+         border: 15px solid black;
+         }
+         .right h2{
+            border: 1px solid black;
+            height: 3rem;
+            width: 22rem;
+            margin-left: 1rem;
+            padding: 0.5rem;
+            color: white;
+            background-color: black;
+            margin-top: 20rem;
+         }
+         .right h2 i{
+            position: relative;
+            border: none;
+            right: 6rem;
+            padding-top: 1.5rem;
+         }
+         .right i{
+            border: 1px solid black;
+            height: 3rem;
+            width: 3rem;
+            margin-left: 24.5rem;
+           text-align: center;
+           position: relative;
+           z-index: 1000;
+           top: -3rem;
+           padding: 0.6rem;
+            font-size: 1.5rem;
+         }
+         .right h2:hover{
+            color: grey;
+         }
+         .right h4,h1,h3,p{
+            margin: 0.7rem;
+         }
+         .itf{
+            margin: 1rem;
+         }
+         .itf img{
+            height: 5rem;
+            width: 5rem;
+         }
+         .itf img:hover{
+            background-color: black;
+         }
+         .container1{
+            margin-top: 4rem;
+         }
+         .container1 h1{
+            font-size: 2rem;
+         }
+      .the{
+        border: 1px solid red;
+        display: flex;
+        padding-right: 30vw;
+      }
+      .the,img{
+        border: 1px solid blue;
+      }
+      .the img{
+        height: 20rem;
+        width: 20rem;
+    }
+      
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="left">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/70af6c98d9d24f12aaa2557f9861affe_9366/Stan_Smith_rights_White_IG3128_01_standard.jpg" alt="">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/063ccd1f3ec74ed89db5adc12031c459_9366/Stan_Smith_rights_White_IG3128_02_standard_hover.jpg" alt="">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/05d1713c94d84162a59ae9ea5991b38f_9366/Stan_Smith_rights_White_IG3128_03_standard.jpg" alt="">
+        <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c77266a15043431da961ae4e72ad86e0_9366/Stan_Smith_rights_White_IG3128_04_standard.jpg" alt="">
+        <h3>SHOW MORE <i class="fa-sharp fa-solid fa-chevron-down"></i></h3>
+    </div>
+    <div class="right">
+        <h4>Women's • Originals</h4>
+        <h1>Stan Smith rights </h1>
+        <h3>$110</h3>
+        <p>Great catch! This exclusive product is only available at adidas and can't be found anywhere else. This product is excluded from all promotional discounts and offers.</p>
+        <h3>Sizes</h3>
+        <table>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>11</th>
+        </table>
+        <h1 class="ht">12 colours available</h1>
+        <div class="itf">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/6979bef50a2e4381a8e9af34011f75b5_9366/Stan_Smith_Shoes_White_FZ6371_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/a4f65de67f4e40b8997aac64010d810e_9366/Stan_Smith_Shoes_White_G58184_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/e10dae92843745f792e0ae060099a117_9366/Stan_Smith_Shoes_White_GY1072_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/59a6b25adc6b4cabb59fae99007afffe_9366/Stan_Smith_Shoes_Beige_GY9393_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/dfbaa3f260644e039965af8700881f0a_9366/Stan_Smith_Shoes_White_HP6378_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/1013e152c01c4551b87caf8e012a5478_9366/Stan_Smith_Shoes_White_HP9656_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/2a3473d6398c48d1b598af460061068a_9366/Stan_Smith_Shoes_White_HQ4243_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/4cba85bd579049448e3aaf8f0088e07b_9366/Stan_Smith_Shoes_White_HQ4252_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/389ec9ddf38a49b48755af9c012e3605_9366/Stan_Smith_Shoes_White_HQ4404_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/c68f09963c6e47dcad68ac01014ecfc6_9366/Stan_Smith_Shoes_White_Q47225_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/7186ac30599a4d7e8147692d2de84ba3_9366/Stan_Smith_Shoes_Black_IE4633_01_standard.jpg" alt="">
+            <img src="https://assets.adidas.com/images/w_180,f_auto,q_auto,fl_lossy,c_fill,g_auto/9802edf99c4245149145ac5a01571e82_9366/Stan_Smith_Shoes_White_Q47226_01_standard.jpg" alt="">
+        </div>
+        <h2>Add To Bag <i class="fa-solid fa-arrow-right"></i></h2>
+        <i class="fa-regular fa-heart"></i>
+    </div>
+</div>
+<div class="container1">
+    <hr>
+    <h1>Description</h1>
+    <div class="the">
+    <h1>These shoes are made with nature.</h1> 
+    <p> Adidas Stan Smith shoes have been an icon for decades, and this pair keeps the tradition alive. The premium leather upper feels luxuriously soft, and the EVA midsole adds cushioned comfort. Perforated 3-Stripes and a Stan Smith logo on the tongue are thehallmarks of signature style, mirrored by embroidered adidas logos on one heel and an embroidered Stan Smith silhouette on the other.</p>
+    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c77266a15043431da961ae4e72ad86e0_9366/Stan_Smith_Shoes_White_IG3128.jpg" alt="">
+    <hr>
+</div>
+</div>
+</body>
+</html>

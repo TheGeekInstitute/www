@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Whatsaap</title>
+    <style>
+        body{
+            /* margin: 0; */
+            height: 100vh;
+            background-color:rgba(255, 255, 255, 0.545);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:arial,sans-serif;
+        }
+        .container{
+            width: 450px;
+            background-color:rgba(255, 255, 255, 0.789);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.83);
+            border-radius: 8px;
+            color:white;
+            overflow: hidden;
+            background-image: url(https://th.bing.com/th/id/OIP.veUlBiPLhXnfOaO73U_pDAHaNK?rs=1&pid=ImgDetMain);
+            height:600px ;
+        }
+        .nav{background-color: black;
+            color:black;
+            padding: 10px;
+            width:600px;
+            text-align: center;
+            border-radius:5px;
+        }
+        .nav img{
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            margin-right:500px;
+            align-items: left;
+            margin-top: 5px;
+        }
+        .nav b{
+            text-align:left;
+            margin-right:495px;
+            color: white;
+        }
+
+        .sender{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.411);
+            align-self:start;
+            width: 300px;
+        }
+        .reciver{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color:rgba(0, 128, 0, 0.658);
+            align-self:end;
+            width: 300px;
+        }
+        .txt{
+            flex: 1;
+            padding: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.37);
+            border-radius: 5px;
+            align-items: center;
+            margin-right: 20px;
+            width:300px;
+            margin-left: 10px;
+            
+            
+        }
+        .container .button{
+            padding: 10px 20px;
+            background-color:green;
+            color:black;
+            border: none;
+            align-items: right;
+            border-radius: 5px;
+            cursor:pointer;
+            padding: 12px 25px;
+           
+        
+          
+            
+        }
+        
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .massage{
+            margin-top:115px;
+        
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="https://th.bing.com/th/id/OIP.hCfHyL8u8XAbreXuaiTMQgHaHZ?rs=1&pid=ImgDetMain" alt="Profile">
+            <b>Mani kumar</b>
+        </div>
+        <div class="main">
+            <div class="sender">How may I help yop?</div>
+            <div class="reciver">I want to know about you.</div> 
+            <div class="sender">My name is mani kumar</div>
+            <div class="sender">I own my institute that's name is Geek institute.</div>
+            <div class="reciver">Its sounds good.</div>
+           
+        </div>
+        <div class="massage">
+            <input class="txt" type="text" placeholder="Type you massage...">
+
+            <button class="button">Send</button>
+        </div>
+       
+     
+    </div>
+</body>
+</html>

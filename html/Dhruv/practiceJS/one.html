@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hour{
+            color: red;
+        }
+        #minutes{
+            color: yellowgreen;
+        }
+        #seconds{
+            color: blue;
+        }
+        #miliseconds{
+            color: rebeccapurple;
+        }
+
+        #time{
+            border: 2px solid red;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="time">
+        <span id="hour"></span>:
+        <span id="minutes"></span>:
+        <span id="seconds"></span>:
+        <span id="miliseconds"></span>
+    </h1>
+    <button onclick="stop()">ABCD</button>
+    
+    <script>
+        let dhruv;
+
+        let abcd = setInterval(ppp,1)
+
+        function ppp(){
+            let date = new Date();
+            document.querySelector("#hour").innerHTML = date.getHours(); 
+            document.querySelector("#minutes").innerHTML = date.getMinutes();
+            document.querySelector("#seconds").innerHTML = date.getSeconds();
+            document.querySelector("#miliseconds").innerHTML = date.getMilliseconds();
+            dhruv=true;
+        }
+
+
+console.log(abcd)
+
+        function stop(){
+            if(dhruv==true){
+                clearInterval(abcd);
+                let time = document.querySelector("#time")
+                time.style.backgroundColor = "Green";
+                dhruv=false;
+
+            }
+            else{
+                setInterval(ppp,1)
+                dhruv=false
+                time.style.backgroundColor = "white";
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

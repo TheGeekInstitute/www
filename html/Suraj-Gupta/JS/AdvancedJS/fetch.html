@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+
+    </div>
+    <script> c
+        let nav = document.querySelector(".nav");
+        let fetchData = fetch("https://dummyjson.com/product");
+        fetchData.then((e)=>{
+            return e.text();
+        }).then((a)=>{
+            document.write("a")
+        })
+    </script>
+</body>
+</html>

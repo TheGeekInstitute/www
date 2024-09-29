@@ -1,0 +1,5 @@
+http://10.10.10.10/Karim/phpMySQL/web/
+https://preview.colorlib.com/theme/glint/
+
+
+https://www.freecodecamp.org/news/javascript-projects-for-beginners/

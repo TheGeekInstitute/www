@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+       
+            height: 300px;
+            width: 250px;
+            margin: 150px auto;
+            overflow: hidden;
+            background-image: url("../wallpapers/art/ARTWORK-christianas-world.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container .card{
+            background-color:(rgb(0, 0, 0));
+            height: 200%;
+            width: 200%;
+            transform: translate(0,100px);
+            transition-duration:all 1s linear;
+            backdrop-filter: blur;
+           
+        }
+        {
+            
+        }
+
+        .container:hover .card{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>This is Name</h1>
+        </div>
+    </div>
+</body>
+</html>

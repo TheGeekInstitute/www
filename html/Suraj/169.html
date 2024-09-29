@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        @keyframes car {
+            0%{
+                /* left: -30px; */
+               /* top: 70vh;  */
+               margin-top: 500px;
+                height: 20vh;
+            }
+        
+            50%{
+                /* top: 50vh; */
+                margin-top: 450px;
+                height: 10vh;
+            }
+
+            100%{
+                margin-top: 400px;
+                height: 5vh;
+            }
+          
+            
+        } 
+        body{
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+
+            overflow-x: hidden;
+            background-image: url("https://rukminim1.flixcart.com/image/416/416/kw5ag7k0/mousepad/4/w/c/beautiful-road-scenery-designer-gaming-non-slip-rubber-base-original-imag8vt4b7dp3h8u.jpeg?q=70");
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        img{
+            height: 30vh;
+            margin-top:500px ;
+            /* transform: rotatey(50deg); */
+            position: relative;
+            z-index: 150;
+            /* bottom: 100px; */
+            /* transform: rotateX(90deg); */
+            /* transform: skew(0deg,30deg); */
+            transform: perspective(600px);
+            /* transform: rotateY(94deg); */
+            margin-top: 500px;
+            animation-name:car ;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            /* animation-timing-function: linear; */
+            filter: drop-shadow(4px 4px 10px black);
+            /* left: -320px; */
+            /* right: 30px; */
+            /* left: -100px; */
+            /* margin: auto; */
+
+
+        }
+    </style>
+</head>
+<body>
+    
+        <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="">
+        
+    
+</body>
+</html>

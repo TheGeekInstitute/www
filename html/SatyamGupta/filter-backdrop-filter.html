@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter backdrop filter</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            
+
+            /* filter: blur(4px); */
+            /* filter: brightness(170%); */
+            /* filter: contrast(150%); */
+            /* filter: drop-shadow(-2px -2px red ); */
+            /* box-shadow: 2px 2px red; */
+
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(120deg); */
+
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            filter: sepia(50%);
+        }
+
+        .container{
+            background-image: url(../wallpapers/animals/lachlan-dempsey-black-whales.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 200px;   
+            /* background-color: rgba(255, 255, 255, 0.1); */
+            /* backdrop-filter: blur(2px); */
+        }
+
+        @supports (backdrop-filter: blur(2px)) and (border : 2px solid black){
+            .container .box{
+            backdrop-filter: blur(2px);
+            border: 2px solid black;
+                
+            }
+        }
+
+        @supports not (backdrop-filter: blur(2px)){
+            .container .box{
+            background-color: rgba(0, 0, 0, 0.39);
+                
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/lachlan-dempsey-black-whales.jpg" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="">
+
+
+
+    <div class="container">
+        <div class="box">
+            <h1>ABCD</h1>
+        </div>
+    </div>
+
+</body>
+</html>

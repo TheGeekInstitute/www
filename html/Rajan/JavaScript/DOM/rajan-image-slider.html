@@ -1,0 +1,236 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            /* border: 5px solid black; */
+            height: 42rem;
+            display: flex;
+            /* overflow: hidden; */
+
+        }
+        .container .box{
+            /* border:  1px solid red; */
+            border-radius: 10px;
+            padding: 10px;
+            width: 100vw;
+            height: 40rem;
+            
+            
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+        .container .box img{
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        .next{
+            /* border: 1px solid black; */
+            background-color: rgba(124, 121, 121, 0.418);
+            width: 100px;
+            line-height: 20px;
+            position: relative;
+            left: 50%;
+            top: -8rem;
+            color: white;
+            font-size: 20px;
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        }
+        .prev{
+            /* border: 1px solid black; */
+            background-color: rgba(124, 121, 121, 0.418);
+            width: 100px;
+            line-height: 20px;
+            position: relative;
+            left: 50%;
+            top: -8rem;
+            color: white;
+            font-size: 20px;
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        }
+        .number{
+            background-color: rgba(124, 121, 121, 0.418);
+            width: 30px;
+            line-height: 30px;
+            border-radius: 200px;
+            position: relative;
+            left: 30%;
+            top: -5rem;
+        }
+        .number:hover{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://wallpapers.com/images/hd/dark-angel-anime-9vmbk8r6d6ab1hxo.jpg" alt="01">
+        </div>
+        <div class="box">
+            <img src="https://c4.wallpaperflare.com/wallpaper/15/171/632/angel-wings-apocalyptic-vitaly-s-alexius-wallpaper-preview.jpg" alt="02">
+        </div>
+        <div class="box">
+            <img src="https://www.teahub.io/photos/full/15-150074_photo-wallpaper-angel-dark-wings-death-goddess-angel.jpg" alt="03">
+        </div>
+        <div class="box">
+            <img src="https://cdnb.artstation.com/p/marketplace/presentation_assets/002/277/367/large/file.jpg?1672034541" alt="04">
+        </div>
+        <div class="box">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/076dea75-2def-4445-b528-3fcf73d7c888/dgfw4ec-64b6443f-0eb5-4296-b39f-aeab05183387.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA3NmRlYTc1LTJkZWYtNDQ0NS1iNTI4LTNmY2Y3M2Q3Yzg4OFwvZGdmdzRlYy02NGI2NDQzZi0wZWI1LTQyOTYtYjM5Zi1hZWFiMDUxODMzODcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iEUqOHOwRWIfy6SJPp3dIm8e2X-izsvRZPk7sWxKwfQ" alt="05">
+        </div>
+        <div class="box">
+            <img src="https://images.playground.com/6fb587f1ecb249ea89511aab06cea742.jpeg" alt="06">
+        </div>
+        <div class="box">
+            <img src="https://wallpapers.com/images/hd/masculine-giant-dragon-anime-world-3d-z5ylfq3qdu73acsw.jpg" alt="07">
+        </div>
+        <div class="box">
+            <img src="https://e0.pxfuel.com/wallpapers/327/428/desktop-wallpaper-anime-3d-dazzling-dragon.jpg" alt="08">
+        </div>
+        <div class="box">
+            <img src="https://c4.wallpaperflare.com/wallpaper/555/684/922/anime-original-girl-night-reflection-hd-wallpaper-preview.jpg" alt="09">
+        </div>
+        <div class="box">
+            <img src="https://img.goodfon.com/original/3840x2160/d/40/ken-kaneki-ken-kaneki-kaneki-ken-tokyo-ghoul-ghoul-monster-b.jpg" alt="10">
+        </div>
+    </div>
+    <button class="prev">prev</button>
+    <button class="next">Next</button>
+    <button class="one number">1</button>
+    <button class="two number">2</button>
+    <button class="three number">3</button>
+    <button class="four number">4</button>
+    <button class="five number">5</button>
+    <button class="six number">6</button>
+    <button class="seven number">7</button>
+    <button class="eight number">8</button>
+    <button class="nine number">9</button>
+    <button class="ten number">10</button>
+
+    <script>
+        let container = document.querySelector('.container');
+        let box = document.querySelectorAll('.box');
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let one = document.querySelector('.one');
+        let two = document.querySelector('.two');
+        let three = document.querySelector('.three');
+        let four = document.querySelector(".four");
+        let five = document.querySelector('.five');
+        let six = document.querySelector('.six');
+        let seven = document.querySelector('.seven');
+        let eight = document.querySelector('.eight');
+        let nine = document.querySelector('.nine');
+        let ten = document.querySelector('.ten');
+
+        let a=100;
+        console.log(container);
+        next.addEventListener("click",()=>{
+            if(a==1000){
+                a=100;
+            }
+            container.style.transform = "translateX(-"+a+"%)"
+            a=a+100;
+        })
+        prev.addEventListener("click",()=>{
+            if(a==100){
+                a=1000;
+            }
+            container.style.transform = "translateX(-"+a+"%)"
+            a=a-100;
+        })
+        one.addEventListener("click",()=>{
+            container.style.transform = "translateX(-0%)"
+            one.style.backgroundColor = "red"
+        }) 
+        two.addEventListener("click",()=>{
+            container.style.transform = "translateX(-100%)"
+            two.style.backgroundColor = "red"
+        })
+        three.addEventListener("click",()=>{
+            container.style.transform = "translateX(-200%)"
+            three.style.backgroundColor = "red"
+        })
+        four.addEventListener("click",()=>{
+            container.style.transform = "translateX(-300%)"
+            four.style.backgroundColor = "red"
+        })
+        five.addEventListener("click",()=>{
+            container.style.transform = "translateX(-400%)"
+            five.style.backgroundColor = "red"
+        })
+        six.addEventListener("click",()=>{
+            container.style.transform = "translateX(-500%)"
+            six.style.backgroundColor = "red"
+        })
+        seven.addEventListener("click",()=>{
+            container.style.transform = "translateX(-600%)"
+            seven.style.backgroundColor = "red"
+        })
+        eight.addEventListener("click",()=>{
+            container.style.transform = "translateX(-700%)"
+            eight.style.backgroundColor = "red"
+        })
+        nine.addEventListener("click",()=>{
+            container.style.transform = "translateX(-800%)"
+            nine.style.backgroundColor = "red"
+        })
+        ten.addEventListener("click",()=>{
+            container.style.transform = "translateX(-900%)"
+            ten.style.backgroundColor = "red"
+        })
+
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slikder</title>
+    <style>
+        .silder{
+            height: 40rem;
+            border: 1px solid black;
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .box{
+            height: 100%;
+            border: 2px solid purple;
+            width: 100%;
+            background-size: cover;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="silder">
+        <div class="box" style="background-image: url(https://i.pinimg.com/736x/e7/a4/45/e7a445a729176a80acfb9368b34a799f.jpg);"></div>
+        <div class="box" style="background-image: url(https://wallpapers.com/images/hd/anime-4k-pictures-q1cg89niv319ld1a.jpg);"></div>
+        <div class="box" style="background-image: url(https://www.chromethemer.com/wallpapers/chromebook-wallpapers/images/960/dark-anime-chromebook-wallpaper.jpg);"></div>
+        <div class="box" style="background-image: url(https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546198.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721952000&semt=ais_user);"></div>
+        <div class="box" style="background-image: url(https://img2.wallspic.com/previews/7/7/6/7/7/177677/177677-raiden_shogun_genshin_impact_art-genshin_impact-raiden_shogun-art-neuvillette-550x310.jpg);"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem mollitia totam libero omnis culpa
+        dolores, hic ducimus natus sint molestiae quaerat nisi? Consequuntur velit, molestias id quidem veritatis
+        delectus?</p>
+
+    <script>
+
+        // console.log(window.innerHeight)
+        // console.log(window.innerWidth)
+
+        // console.log(window.outerHeight)
+
+        window.addEventListener("resize", () => {
+            console.log("dasd")
+            if (window.innerWidth <= 600) {
+                document.body.style.backgroundColor = "red"
+            }
+            else {
+                document.body.style.backgroundColor = "white"
+
+            }
+        })
+
+
+        // console.log(screen.width)
+        // console.log(screen.height)
+
+        // console.log(screen.availHeight)
+
+        // console.log(screen.colorDepth)
+
+        // console.log(screen.pixelDepth)
+    </script>
+</body>
+
+</html>
+<!-- 
+Browser Object Model (BOM) Introduction
+    Window height and Width
+        innerHeight
+        innerWidth
+        outerHeight
+        outerWidth
+
+Window Screen
+    screen.width
+    screen.height
+    screen.availWidth
+    screen.availHeight
+    screen.colorDepth
+    screen.pixelDepth 
+
+-->

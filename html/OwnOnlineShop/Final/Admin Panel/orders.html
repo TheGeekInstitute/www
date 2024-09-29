@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* search container */
+        .order-search-container form {
+            padding: .5em;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .order-search-container form label {
+            color: hsl(212, 70%, 15%);
+        }
+
+        .order-search-container form input {
+            padding: .3em;
+            border-radius: 4px;
+            outline: none;
+            border: 1px solid #ddd;
+        }
+
+        .order-search-container form button {
+            padding: 0 1em;
+            background: royalblue;
+            color: #fff;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* search container ends */
+
+        .orders-container {
+            padding: .51em;
+            margin: 1em 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5em;
+        }
+
+        .orders-container h2 {
+            margin-bottom: .5em;
+        }
+
+        .orders-container a {
+            text-decoration: none;
+            color: hsl(212, 60%, 25%);
+            display: inline-block;
+            margin: .2em;
+        }
+
+        .orders-container .order {
+            margin: .5em 0;
+            box-shadow: 0 0 10px #ddd;
+            padding: .5em;
+            border-radius: 5px;
+        }
+
+        .orders-container .order #UserID {
+            color: tomato;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="order-search-container">
+        <form action="">
+            <button type="submit">Search</button>
+            <section>
+                <label for="">State</label>
+                <input type="text" placeholder="State">
+            </section>
+            <section>
+                <label for="">Shop No</label>
+                <input type="text" placeholder="Shop No">
+            </section>
+            <section>
+                <label for="">Mobile Number</label>
+                <input type="number" placeholder="Mobile Number">
+            </section>
+        </form>
+    </div>
+    <hr>
+    <div class="orders-container">
+        <div class="allOrders-container">
+            <h2>Fresh Orders</h2>
+            <div class="order">
+                <a href="./order.html">123456</a>
+                <br>
+                <a href="./order.html">Timestamp</a>
+                <br>
+                <a href="./order.html">Product</a>
+                <br>
+                <a href="">Last Person - <span id="UserID">SK8424K</span></a>
+            </div>
+            <div class="order">
+                <a href="./order.html">654123</a>
+                <br>
+                <a href="./order.html">Timestamp</a>
+                <br>
+                <a href="./order.html">Product</a>
+                <br>
+                <a href="">Last Person - <span id="UserID">SK8424K</span></a>
+            </div>
+            <section>
+                <label for="">Sort By - </label>
+                <select name="" id="">
+                    <option value="Old To New">Old To New </option>
+                    <option value="new to old"> New To Old</option>
+                </select>
+            </section>
+        </div>
+        <div class="pendingOrder-container">
+            <h2>Pending Orders</h2>
+            <div class="order">
+                <a href="./order.html">123456</a>
+                <br>
+                <a href="./order.html">Timestamp</a>
+                <br>
+                <a href="./order.html">Product</a>
+                <br>
+                <a href="">Last Person - <span id="UserID">SK8424K</span></a>
+            </div>
+            <section>
+                <label for="">Sort By - </label>
+                <select name="" id="">
+                    <option value="Old To New">Old To New </option>
+                    <option value="new to old"> New To Old</option>
+                </select>
+            </section>
+        </div>
+        <div class="returnOrders-container">
+            <h2>Return Orders</h2>
+            <div class="order">
+                <a href="./order.html">BArcode ID</a>
+                <br>
+                <a href="./order.html">Timestamp</a>
+                <br>
+                <a href="./order.html">Product</a>
+                <br>
+                <a href="">Last Person - <span id="UserID">SK8424K</span></a>
+            </div>
+            <section>
+                <label for="">Sort By - </label>
+                <select name="" id="">
+                    <option value="Old To New">Old To New </option>
+                    <option value="new to old"> New To Old</option>
+                </select>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

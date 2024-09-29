@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Content</title>
+    <style>
+        .card{
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 150px);
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s;
+            
+        }
+        .contain{
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            /* font-size: 60px; */
+            /* line-height: 400px; */
+            text-align: center ;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        .front,.back{
+            position: absolute;
+            height: 400px;
+            width: 300px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            border: 2px solid green;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px black;
+        }
+        .front{
+            background: blue;
+        }
+        .front img{
+            /* position: absolute; */
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            border: 3px solid rgb(30, 190, 30);
+            border-radius: 50%;
+        }
+        .front h1{
+            border: 2px groove red;
+            /* padding: 0; */
+            border-radius: 50%;
+            background: red;
+            color: yellow;
+        }
+        .front hr{
+            border-radius: 20px;
+            height: 1px;
+            background: red;
+            border: 2px solid red;
+            width: 270px;
+            border-radius: 3px;
+        }
+        .back{
+            background: red;
+            transform: rotatey(180deg);
+        }
+        .card:hover .contain{
+            transform: rotatey(180deg);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="contain">
+            <div class="front">
+                <img src="https://i.pinimg.com/originals/a8/7b/bc/a87bbc35958523ab2a1634b02c79083d.jpg" alt="">
+                <hr>
+                <h1>Doremon</h1>
+            </div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+    
+</body>
+</html>

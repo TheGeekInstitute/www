@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        .box{
+            counter-reset: order;
+        }
+
+        .box h1::before{
+            content: counter(order) ". " ;
+            color: rebeccapurple;
+            /* background-color: red; */
+            counter-increment: order;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+        h1{
+            counter-reset: sub-order;
+        }
+
+
+
+        h2::before{
+            content: counter(order) "." counter(sub-order) " " ;
+            counter-increment: sub-order;
+            color: red;
+        }
+
+        h2{
+            text-indent: 30px;
+            counter-reset: sub-sub-order;
+        }
+
+        h3::before{
+            content: counter(order) "." counter(sub-order) "." counter(sub-sub-order) " ";
+            color: green;
+            counter-increment: sub-sub-order;
+        }
+
+        h3{
+            text-indent: 60px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Web Designing</h1>
+        <h2>HTML</h2>
+            <h3>Head</h3>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Programming</h1>
+        <h2>JAVA</h2>
+        <h2>Python</h2>
+        <h2>C</h2>
+    <h1>ADCA</h1>
+        <h2>Word</h2>
+            <h3>Home</h3>
+            <h3>Insert</h3>
+        <h2>Excel</h2>
+        <h2>PowerPoint</h2>
+    <h1>Ethical Hacking</h1>
+        <h2>Linux</h2>
+        <h2>Windows</h2>
+        <h2>BASH</h2>
+  
+
+        <h3>sdfjsd</h3>
+
+
+</div>
+</body>
+</html>

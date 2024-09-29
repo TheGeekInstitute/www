@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* height: 100vh; */
+            /* width: 100vw; */
+            border: 1px solid black;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            margin: auto;
+            grid-template-rows:  100px 50px 1fr 70px;
+            grid-template-columns:150px 1fr 150px ;
+
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "left-content main right-content"
+                                 "footer footer footer"
+            
+            ;
+        
+
+        }
+
+        .box{
+            font-weight: 900;
+            border: 1px solid black;
+            
+        }
+
+        .box1{
+            background-color: gray;
+       
+            grid-area: header;
+          
+        }
+        .box2{
+           background-color: rgb(132, 85, 85);
+            grid-area: nav;
+         
+       
+          
+        }
+        .box3{
+            background-color: rgb(199, 199, 171);
+            grid-area: left-content;
+        }
+        .box4{
+            background-color: crimson;
+            grid-area: main;
+        }
+        .box5{
+            background-color: rgb(182, 153, 212);
+            grid-area: right-content;
+          
+        }
+        .box6{
+            background-color: orange;
+            grid-area: footer;
+          
+
+        
+        }
+       .box7{
+        background-color: yellow;
+       }
+
+       .box8{
+        background-color: green;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"> </div>
+        <div class="box box3"></div>
+        <div class="box box4"> </div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+     
+
+    </div>
+</body>
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

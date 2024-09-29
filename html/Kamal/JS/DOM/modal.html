@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body{
+            overflow: hidden;
+        }
+         .modal{
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.281);
+            display: none;
+            transform: scale(0);
+          
+        }
+
+       .modal .box{
+            height: 350px;
+            width: 450px;
+            position: absolute;
+            top: calc(50% - 175px);
+            left: calc(50% - 225px);
+            padding: 10px;
+            box-shadow: 0px 0px 10px black;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+
+        .modal .box .header{
+            display: flex;
+            /* border: 1px solid red; */
+            align-items: center;
+            justify-content: space-between;
+            font-size: 2rem;
+            font-weight: 900;
+            height: 3rem;
+            border-bottom: 2px inset white;
+            user-select: none;
+        }
+
+        .modal  .box  .content p::selection{
+            color: black;
+            background-color: white;
+        }
+        
+          
+       
+
+        .modal .box .content{
+            padding: 10px;
+            font-size: large;
+        }
+
+        .modal .box .header label:last-child{
+            color: red;
+            cursor: pointer;
+        }
+
+
+        #btn{
+            background-color: royalblue;
+            padding: 5px;
+            margin: 20px;
+            border: none;
+            color: white;
+            font-weight: 900;
+            width:3rem;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+
+        #btn:active{
+            transform: translate(3px,3px);
+        }
+
+        @keyframes open {
+            0%{
+                transform: scale(0);
+                border-radius: 50%;
+            }
+
+            100%{
+                transform: scale(1);
+                border-radius: 0%;
+
+            }
+        }
+
+        @keyframes close {
+            0%{
+                transform: scale(1);
+                border-radius: 0%;
+                
+            }
+            
+            100%{
+                transform: scale(0);
+                
+                border-radius: 50%;
+
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Open</button>
+
+    <div class="modal">
+        <div class="box">
+            <div class="header">
+                <label>What is Modal ?</label>
+                <label id="close">X</label>
+            </div>
+    
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel cum repellendus labore deleniti, quas unde autem aut molestiae magni exercitationem. Provident dignissimos repellendus consequatur delectus accusamus doloremque pariatur est!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, culpa, alias nobis eaque vero quaerat quisquam id harum illo cupiditate obcaecati cum ducimus ab nostrum ex, esse deserunt neque omnis.
+    </main>
+
+
+<script>
+    let modal = document.querySelector(".modal");
+    let close = document.querySelector('#close');
+
+    document.querySelector("#btn").addEventListener('click',()=>{
+        modal.style.display = "block"
+        modal.style.animation="open .3s linear 0s 1 alternate forwards"
+
+    })
+
+    close.addEventListener('click',()=>{
+        modal.style.animation="close.3s linear 0s 1 alternate forwards"
+        setTimeout(() => {
+            modal.style.display="none" 
+        }, 290);
+    })
+</script>
+</body>
+</html>

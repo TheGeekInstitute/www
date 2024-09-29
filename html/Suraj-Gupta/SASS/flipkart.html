@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./flipkart.css">
+        <style>
+            label{
+                /* margin-top: -50px; */
+                /* border: 2px solid red; */
+                /* display: block; */
+                /* text-align: left; */
+                /* width:100%; */
+                text-align: left;
+                /* padding-left:4rem ; */
+                padding: 0 1px;
+                font-size: larger;
+                font-weight: 900;
+                position: relative;
+                top: -1.9rem;
+                z-index: 1;
+                transition: all .3s;
+                position: relative;
+                left: -100px;
+    
+            }
+        
+
+            input[type="text"]{
+        background-color: transparent;
+/* background-color: red; */
+        position: relative;
+        z-index: 10;
+    }
+    
+    input[type="text"]::placeholder{
+        color: transparent;
+    }
+
+    
+    input[type="text"]:not(:placeholder-shown) + label, 
+    
+    input[type="text"]:focus + label
+
+    {
+        transform: translateY(-22px);
+        background-color: white;
+        z-index: 11;
+        display: inline-block;
+        /* border: 1px solid red; */
+    }
+    
+
+
+
+        </style>
+    
+</head>
+<body>
+    <div class="nav">
+        <img src="https://www.flipkartcareers.com/images/20220719183016_FlipkartGroupTransparentBG.png" alt="">
+    </div>
+    <div class="main">
+        <h1>Candidate Login</h1>
+
+        <input type="text" placeholder="">
+        <label for="">Email ID </label>
+        <input type="text" placeholder="fgdf">
+        <label for="">Password</label>
+
+        <div class="login">
+            <input type="checkbox">
+            <h2>I am not a robot</h2>
+            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="">
+        </div>
+        <div class="footer">
+            <a href="#">LOGIN</a>
+            <!-- <a href="#">Forget Password</a> -->
+        </div>
+        <div class="back">
+            <a href="#">Forget Password</a>
+        </div>
+    </div>
+   
+</body>
+</html>

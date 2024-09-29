@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+
+        :root{
+            --main-color:cyan;
+            --second-color:yellow;
+        }
+
+        /* ul li:first-child{
+            color: red;
+        }
+
+        ul li:last-child{
+            color: blue;
+        } */
+/* 
+        ul li:nth-child(2n+1){
+            color: red;
+        } */
+/* 
+        div p:nth-last-child(1){
+            color: red;
+        } */
+
+        /* div p:nth-of-type(1){
+            color: red;
+        } */
+
+/* div p:only-child{
+    color: red;
+} */
+
+
+p:only-of-type{
+    /* color: red; */
+}
+
+p:first-of-type{
+    /* color: red; */
+}
+
+p:last-of-type{
+    color: red;
+}
+
+
+div:empty{
+    /* border: 2px solid red; */
+    /* height: 300px; */
+}
+
+div{
+    border: 2px solid red;
+}
+
+/* div:not(:empty){
+    border: none;
+} */
+
+
+body div:last-of-type{
+    border: none;
+}
+/* 
+p:lang(fr){
+    color: blue;
+} */
+
+.links a:link{
+    color:var(--second-color);
+
+}
+
+:target{
+    background-color: var(--main-color);
+}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicindfgdgg elit. Placeat, optio eaque. Voluptatum id unde quae voluptatibus temporibus voluptatem, expedita illo vel quis reprehenderit quos, saepe corporis? Nisi ex perferendis obcaecati!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusantium eveniet provident facere rem id, porro repellat, at earum aspernatur officia dicta cumque saepe possimus cupiditate dolor fuga similique beatae!</p>
+
+        <div>
+            <p>Lorem fsdfipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores nisi explicabo pariatur repellendus nesciunt sequi quo. Fuga quo itaque placeat porro, laudantium consectetur quisquam a quod cumque harum deserunt.</p>
+
+            <p>Loredfgdfm ipsum dolor sit amet consectetur adipisicing elit. Ea est deserunt voluptatem excepturi odit ipsa accusamus praesentium fugit. Iusto quas provident asperiores quam ipsam, exercitationem omnis aperiam perferendis reiciendis. Esse.</p>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam repellat quos dignissimos in illo, non saepe, voluptatum suscipit necessitatibus at facilis possimus magni blanditiis qui ratione earum laboriosam veritatis neque.</p>
+    </div>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident nihil rerum necessitatibus nisi debitis dolores vero fuga laborum perferendis? Optio recusandae excepturi repellendus animi neque illum earum ab dignissimos quos?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt nostrum illo odio blanditiis facere dignissimos natus dolorum nisi expedita eaque aspernatur, laudantium ea voluptates odit fugiat saepe officiis est.</p>
+
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos beatae eveniet at excepturi ipsum saepe quas, et tempore dolorum ducimus eligendi cupiditate labore laboriosam, tempora temporibus facere iste adipisci aperiam!</b>
+    </div>
+
+    <p lang="fr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur maxime ad vitae adipisci aperiam enim tempora veritatis illo tempore dignissimos earum optio porro cumque natus reprehenderit, qui placeat doloribus nulla?</p>
+
+    <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempora adipisci quaerat asperiores autem expedita maiores quia sint a nesciunt deleniti voluptates reprehenderit, rerum mollitia harum est ipsam voluptatibus excepturi?</p>
+
+<div></div>
+
+<div class="links">
+    <a href="#ch1">Chapter 1</a>
+    <a href="#ch2">chapter 2</a>
+    <a href="#ch3">chapter 3</a>
+    <a href="#">Link1</a> 
+</div>
+
+<p id="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptas at, perferendis accusantium aliquam possimus maxime consectetur. Sunt incidunt maiores iste ipsam, consequuntur natus alias velit qui quia aut.</p>
+
+
+<p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptas at, perferendis accusantium aliquam possimus maxime consectetur. Sunt incidunt maiores iste ipsam, consequuntur natus alias velit qui quia aut.</p>
+
+
+
+<p id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus voluptas at, perferendis accusantium aliquam possimus maxime consectetur. Sunt incidunt maiores iste ipsam, consequuntur natus alias velit qui quia aut.</p>
+
+</body>
+</html>

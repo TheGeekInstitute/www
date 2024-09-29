@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change{
+            background-color: red;
+            font-family: cursive;
+        }
+
+        .heading{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>abcd</h1>
+    <h1 class="heading">dsas</h1>
+    <h1 class="heading abcde"  id="abcd">dsas1</h1>
+    <h1 class="heading">dsas1</h1>
+
+
+<script>
+    // let heading = document.querySelector("#abcd");
+    // let heading = document.querySelector("h1");
+    // let heading = document.querySelectorAll("h1")[2];
+    // console.log(heading)
+    // heading.style.color="red"
+    // heading.style.backgroundColor = "red"
+    // console.log(heading.className)
+    // heading.className = "change"
+    // heading.classList.add("change")
+    // heading.classList.remove("abcde")
+
+
+    let data = document.querySelectorAll("h1");
+    // data = document.getElementsByTagName("h1");
+
+    // console.log(data)
+
+    data.forEach( function(e){
+        e.addEventListener('click', function(){
+            this.style.backgroundColor = "red"
+        })
+    })
+    
+
+
+
+    // document.body.addEventListener('click',hello);
+
+    // document.body.addEventListener('click',function(){
+    //     alert("hello")
+
+    // });
+
+
+
+    // function hello(){
+    //     alert("hello")
+    // }
+
+</script>
+
+
+</body>
+</html>

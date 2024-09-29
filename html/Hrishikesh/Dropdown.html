@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            background-color: rebeccapurple;
+            height: 3.5rem;
+            color: white;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav > .links > li > a{
+            display: block;
+            line-height: 3.5rem;
+            padding: 0 10px;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .nav > .links > li > a:hover{
+            background-color: green;
+        }
+
+        .nav .links li .sub{
+            position: absolute;
+            width: 100px;
+            background-color: grey;
+            text-align: center;
+
+            display: none;
+        }
+
+        .nav .links li .sub li a{
+            display: block;
+            color: black;
+            line-height: 40px;
+        }
+
+        .nav .links li .sub li a:hover{
+            background-color: red;
+        }
+
+        .nav .links li:hover .sub{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logo">Logo</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+            
+                <ul class="sub">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Pages</a>
+
+                <ul class="sub">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

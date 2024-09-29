@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            height: 50vh;
+            width: 500px;
+            margin:  100px auto;
+            display: grid;
+            grid-template-columns: [col1-start] 150px [col1-end col2-start] 1fr [col2-end col3-start] 150px [col3-end];
+            grid-template-rows: [row1-start] 70px [row1-end row2-start] 50px [row2-end row3-start] 1fr [row3-end row4-start] 50px [row4-end]; 
+            gap: 5px;
+    
+
+        }
+
+        .box1{
+            background-color: aqua;
+            grid-area: row1-start / col1-start / row1-end / col3-end;
+           
+
+        }
+        .box2{
+            background-color: blue;
+            grid-area: row2-start / col1-start / row1-end / col3-end;
+           
+        }
+        .box3{
+            background-color: brown;
+
+        }
+        .box4{
+            background-color: blueviolet;
+        }
+        .box5{
+            background-color: chartreuse;
+
+        }
+        .box6{
+            background-color: chocolate;
+            grid-area: row4-start / col1-start / row4-end / col3-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Nav</div>
+        <div class="box box3">Sidebar</div>
+        <div class="box box4">main</div>
+        <div class="box box5">sidebar</div>  
+        <div class="box box6">footer</div>   
+    
+    </div>
+</body>
+</html>

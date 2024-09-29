@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[class="paragraph"]{
+            /* color: red; */
+        }
+        input[type=password]{
+            background-color: cyan;
+        }
+
+
+        p[class~="my"]{
+            /* background-color: grey; */
+        }
+
+        input[class|="my"]{
+            background-color: red;
+        }
+
+        p[class^="p"]{
+            /* color: red; */
+        }
+
+        p[class$="h"]{
+            /* background-color: red; */
+        }
+
+        
+
+        p[class*="gr"]{
+            background-color: cyan;
+        }
+
+        input[placeholder]{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <p align="center" class="para paragraph my">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, et. Assumenda soluta corrupti minima repellendus necessitatibus deleniti aperiam? Dolor exercitationem quo doloribus natus vero illo incidunt, nam expedita consequatur. Expedita!</p>
+<p class="para my paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi iusto, delectus sequi aspernatur provident ad possimus quos voluptate, deserunt rerum ipsum? Reprehenderit atque quasi in, quod eum recusandae eius!</p>
+<a href="#" target="_blank">google</a>
+<input type="text" class="my-field-abcd" placeholder="abcd">
+<input type="password">
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+Recon for Bugbounty
+
+* Working of website
+
+1. Basic/Passive Recon
+  * wappalyzer , technology built with
+  * whois
+  * data breaches
+  * emails
+  * social media 
+
+2. Passive Recon 
+    * Subdomain Enumeration
+        crt.sh  --> webiste for finding subdomain
+        dnsdumpster.com
+        nmmapper.com
+        subfinder
+        sublist3r
+        assetsfinder
+        findomain
+        amass
+        Knock / Knockpy
+        Aquatone
+        Subdomainizer
+        Finddomain
+
+        AltDNS  -> https://media.licdn.com/dms/image/v2/D4D12AQGgzjdRzuYhfQ/article-inline_image-shrink_1500_2232/article-inline_image-shrink_1500_2232/0/1678537423766?e=1731542400&v=beta&t=SvklTIP9osxJiSstnezrFMFG_Bujs393jNCZeG3oux0
+        
+        DNS-Recon
+        Recon-ng 
+    * sorting subdomain lists
+      cat subdomain.txt  | sort -u | uniq | tee -a sorted_domain.txt    
+
+      
+      gem install aquatone
+
+      httprobe --> Convert To URL
+
+      cat sub.txt | httprobe | tee -a httprobe.txt 
+      cat httprobe.txt | urlprobe   --> checking status code
+      cat hosts.txt | aquatone -out ~/aquatone/example.com
+
+
+      AquaTone Article - https://www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/

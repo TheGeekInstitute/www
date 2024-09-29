@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .container{
+
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px auto;
+         
+        }
+        .box:nth-child(odd){
+            background-color: red;
+        }
+
+        .box:nth-child(even){
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="abcd animate__animated animate__bounce">This Scroll Animation</h1>
+    <div class="container">
+        <div class="box my"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box my"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box my"></div>
+        <div class="box"></div>
+        <div class="box my"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script>
+        let box = document.querySelectorAll(".box");
+        box.forEach(e=>{
+            e.classList.add("wow")
+            e.classList.add("animate__animated")
+            if(e.classList.contains("my")){
+                e.classList.add("animate__fadeInLeft")
+            }
+            
+        })
+    </script>
+</body>
+</html>

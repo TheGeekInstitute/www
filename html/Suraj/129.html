@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        .nav{
+            background-color: black;
+            display: block;
+        }
+        .nav ul li {
+            margin: 10px;
+            float: right;
+        }
+        .sidebar{
+            border: 2px solid blue;
+            /* border-right: 100px; */
+            /* position: fixed; */
+            width: 300px;
+            height: 700px;
+            /* text-align: center; */
+            padding-top: 10px;
+            background-color: yellow;
+            font-size: x-large;
+            color: red;
+            
+        }
+        .sidebar img{
+              height: 150px;  
+        }
+        .sidebar h2 p{
+            font-weight: 800;
+        }
+        .less{
+            /* border: 2px solid black; */
+
+        }
+        .more .less{
+            /* border: 2px solid black; */
+            margin: 5px;
+            font-size: x-large;
+            width: 290px;
+            background-color: rgb(236, 229, 122);
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: all 0.5s;
+        
+        }
+        .more .less ul li{
+            display: block;
+            height: 8vh;
+            /* text-align: center; */
+            /* border: 1px solid rebeccapurple; */
+            padding: 1vh;
+        }
+
+        .more .less ul li a{
+            color: red;
+
+        }
+        
+        .less ul li{
+            
+        transition: all 1 linear;
+ 
+        }
+        .more .less ul li:hover{
+            top: 10vh;
+            /* margin-top: 30vh; */
+            height: 10vh;
+            font-size: xx-large;
+            background-color: rgb(238, 238, 30);
+            text-align: center;
+        }
+        .more .less ul li a:hover{
+            color: skyblue;
+        }
+
+        .sidebar img:hover{
+            height: 100px;
+            background-color: rgb(67, 235, 15);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Singn</a></li>
+        </ul>
+    </div>
+    <div class="sidebar">
+        <center>
+        <img src="https://cdn-icons-png.flaticon.com/512/900/900834.png" alt="">
+        <h2>Suraj Official</h2>
+        <p>Youtuber</p>
+    </center>
+    <div class="more">
+        <div class="less">
+            <ul> 
+                <li><a href="#">Desktop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

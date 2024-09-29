@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 140px  1fr  140px ;
+            grid-template-rows:50px  1fr 200px 200px 50px ;
+            /* margin-left: 100px; */
+            grid-template-areas: "nav nav "
+                                "left-sidebar main right-sidebar"
+                                "left-sidebar main right-sidebar1"
+                                "left-sidebar main right-sidebar2"
+                                "footer footer footer";
+            }
+
+        .nav,.footer{
+            background-color: black;
+            color: white;
+        }
+
+        .nav{
+           grid-area: nav;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 20px;
+            /* border-radius: 50px; */
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+        }
+        .nav ul li{
+            margin: 0 10px;
+        }
+        .nav ul li a{
+            display: block;
+            text-decoration: none;
+            font-weight: 700;
+            color: white;
+            /* border: 1px solid red; */
+            height: 50px;
+            width: 70px;
+            text-align: center;
+            list-style: none;
+            line-height: 50px;
+        }
+
+        .nav ul li a:hover{
+            background-color: green;
+        }
+
+        .logo{
+            
+        }
+
+        .footer{
+            grid-area: footer;
+        }
+        .left-sidebar{
+            background-color: cyan;
+            grid-area: left-sidebar;
+     
+        }
+
+        .right-sidebar{
+            background-color: green;
+            grid-area: right-sidebar;
+        }
+        .right-sidebar1{
+            background-color: greenyellow;
+            grid-area: right-sidebar1;
+
+        }
+        .right-sidebar2{
+            background-color: yellow;
+            grid-area: right-sidebar2;
+
+        }
+
+        .main{
+            background-color: red;
+            grid-area: main;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">Logo</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    
+    <div class="main">
+    </div>
+
+
+
+    <div class="left-sidebar"></div>
+    <div class="right-sidebar"></div>
+    <div class="right-sidebar1"></div>
+    <div class="right-sidebar2"></div>
+    <div class="footer"></div>
+
+</body>
+</html>

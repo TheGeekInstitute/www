@@ -1,0 +1,17 @@
+background-origin
+background-clip
+border-inline
+border-block
+outline
+inline-size
+block-size
+display flow-root
+@font-face rule
+@import rule
+css mix-blend-mode
+@container
+css resize
+css variables var() 
+css calc() function
+css object-fit
+css caret color

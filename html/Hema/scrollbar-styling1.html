@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollbar</title>
+    <style>
+        .box{
+            height: 350px;
+            width: 250px;
+            border: 2px solid red;
+            overflow: scroll;
+        }
+        div::-webkit-scrollbar{
+            background:rgb(63, 0, 238);
+            width: 15px;
+        }
+        div::-webkit-scrollbar-track{
+            background-color: rgb(211, 211, 211);
+            box-shadow: inset 2px 2px grey;
+            border-radius: 10px;
+
+        }
+        .box::-webkit-scrollbar-thumb{
+            background:linear-gradient(red,yellow);
+            border-radius: 10px;
+
+        }
+        .box::-webkit-scrollbar-corner{
+            background:linear-gradient(red, yellow);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum fugiat suscipit quae aliquam quam deserunt omnis repudiandae maxime impedit ullam a repellendus rerum, sunt cum ad minus officiis nam. Modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illum nobis, minima iusto eius nisi id officia distinctio, esse vero fuga minus quae vitae et. Accusamus ducimus exercitationem sapiente blanditiis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos exercitationem quibusdam amet harum dolorum! Commodi, culpa, eveniet eligendi perferendis necessitatibus et consequatur alias illum maxime iusto, eius dolorum sed quo.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio vel vitae eveniet incidunt amet nemo autem esse at minima possimus ipsum odit sequi deleniti, neque asperiores ab, et mollitia nostrum?
+    </div>
+    
+</body>
+</html>

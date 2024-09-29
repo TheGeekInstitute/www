@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+
+            /* transition-property: width , height; */
+            transition-property: all;
+            transition-duration: 2s;
+            /* transition-delay: 2s; */
+
+            /* transition-timing-function:linear ; */
+            /* transition-timing-function: steps(10); */
+
+            transition: all 1s linear;
+        }
+
+        .box:hover{
+            width: 600px;
+            /* height: 200px; */
+            background-color: yellow;
+        }
+
+        img{
+            filter: blur(5px) grayscale(1);
+            transition: all .5s linear;
+        }
+
+        img:hover{
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <img src="../web/images/11.jpg" alt="">
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text animation</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 120px;
+            background:linear-gradient(45deg,goldenrod,blue,black,silver) ;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: color 1s linear 0s infinite alternate;
+            text-align: center;
+        }
+        @keyframes color{
+            0%{
+                background-size: 100%;
+            }
+            25%{
+                background-size:200%;
+            }
+            50%{
+                background-size: 300%;
+            }
+            75%{
+                background-size: 400%;
+            }
+            100%{
+                background-size: 500%;
+            }
+        }
+        body{
+            background-color:black ;
+        }
+        h2{
+            color: green;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <H1>RAJPUT JI</H1>
+    <H2>money doesnt give you happiness
+        its give you crazy ass happiness
+    </H2>
+</body>
+</html>

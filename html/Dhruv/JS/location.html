@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">Click</button>
+
+    <a href="https://abcde?data=123#abcd" id="anchor">abcd</a>
+
+    <script>
+        document.querySelector("#click").addEventListener('click',()=>{
+            // console.log(window.location)
+
+            // location.assign("https://www.google.com/")
+
+            let btn = document.querySelector("#anchor");
+            // console.log(btn.hash);
+            
+
+            // console.log(location.host);
+            // console.log(location.hostname)
+            // location.href = "https://www.google.com/"
+            // console.log(location.origin)
+            // console.log(location.pathname)
+
+            // console.log(location.port)
+            // console.log(location.protocol)
+            // location.reload()
+            // location.replace("https://www.google.com/")
+
+            console.log(btn.search)
+
+
+        })
+
+        
+    </script>
+</body>
+</html>

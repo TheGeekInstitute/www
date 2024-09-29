@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            height: 19rem;
+            width: 20rem;
+            margin: 150px auto;
+            /* background-color: rgba(0, 128, 128, 0.612); */
+            text-align: center;
+            padding: 1rem;
+    
+            animation: move 1s linear 0s infinite ;
+        }
+        .card img{
+            height: 7rem;
+            width: 7rem;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        @keyframes move{
+            0%{
+                border: 1rem solid transparent;
+            }
+            
+            25%{
+                border-style: solid;
+                border-color: transparent transparent;
+                border-width: 1rem ;
+            }
+            50%{
+                border-style: solid;
+
+                border-color: transparent red transparent transparent;
+
+                /* border-right:1rem solid red; */
+                border-width:1rem;
+
+            }
+            75%{
+                border-style: solid;
+              
+                border-color: transparent  transparent red transparent;
+
+                border-bottom: 1rem solid red;
+                border-width: 1rem ;
+                
+            }
+            100%{
+                border-style: solid;
+              
+                border-color: transparent  transparent  transparent red;
+
+                border-left: 1rem solid red;
+                border-width:1rem;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Geek Institute</h1>
+        <img src="../wallpaper.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ratione vero mollitia aliquid totam temporibus a esse corrupti eum </p>
+    </div>
+</body>
+</html>

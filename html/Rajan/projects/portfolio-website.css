@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+.heading{
+    border: 1px solid black;
+    background-color: black;
+    font-size: 22px;
+}
+.heading h1{
+    color: white;
+}
+.heading h1 span{
+    color: royalblue;
+}
+.container{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 40rem;
+}
+.container .side{
+    /* border: 1px solid red; */
+    width: 20%;
+    background-color: rgb(165, 165, 165);
+}
+.container .side.show{
+    width: 5%;
+}
+.container .side ul{
+    /* border: 1px solid green; */
+    margin: 15px 2px;
+}
+.container .side ul li{
+    /* border: 1px solid black; */
+    color: black;
+    border-radius: 5px;
+    margin: 10px 4px;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+.container .side ul li:hover{
+    background-color: white;
+}
+.container .side ul li .tabs.show{
+    display: none;
+}
+.container .box{
+    /* border: 1px solid red; */
+    width: 80%;
+    background-color: black;
+    background-image: url(https://img.freepik.com/free-photo/black-prism-concept-ai-generated_268835-7011.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .box.show{
+    width: 95%;
+}
+.container .box .nav{
+    /* border: 1px solid black; */
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin: 5px;
+    padding: 2px 10px;
+    border-radius: 8px;
+    /* position: fixed; */
+}
+.container .box .hero{
+    margin: 8px 0;
+}
+.container .box .hero .btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 50px;
+    background-color: gray;
+    color: white;
+}
+.container .box .hero .btns li{
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.container .box .hero .btns li:hover{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .html.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .css.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .js.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .c.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .j.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .hero .btns .php.show{
+    background-color: rgb(250, 84, 84);
+    transition: all 0.5s linear;
+}
+.container .box .contante{
+    /* border: 1px solid black; */
+    background-color: rgba(165, 165, 165, 0.158);
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+.container .box .contante p{
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    display: none;
+    /* user-select: none; */
+}
+.container .box .contante .phtml.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.container .box .contante .pcss.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.container .box .contante .pjs.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.container .box .contante .pc.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.container .box .contante .pj.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.container .box .contante .pphp.show{
+    display: block;
+    transition: all 0.5s linear;
+}
+.silder{
+    /* border: 1px solid black; */
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgba(136, 135, 135, 0.685);
+}
+.silder .image{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.silder .image img{
+    /* border: 1px solid black; */
+    width: 6rem;
+    height: 6rem;
+    margin: 2px 40px;
+}
+.data{
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+}
+.data h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.data .video{
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 5px solid gray;
+}
+.data .video .img{
+    /* border: 1px solid gray; */
+    width: 50%;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/video-1.png);
+    background-size: cover;
+    height: 25rem;
+}
+.data .video .contante{
+    /* border: 1px solid gray; */
+    width: 50%;
+    text-align: center;
+}
+.data .video .contante a{
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 1px solid royalblue;
+}
+.data .video .contante h1{
+    font-size: 30px;
+}
+.data .color{
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 5px solid gray;
+}
+.data .color .img{
+    /* border: 1px solid gray; */
+    width: 50%;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/color-flipper.png);
+    background-size: cover;
+    height: 25rem;
+}
+.data .color .contante{
+    /* border: 1px solid gray; */
+    width: 50%;
+    text-align: center;
+}
+.data .color .contante a{
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 1px solid royalblue;
+}
+.data .color .contante h1{
+    font-size: 30px;
+}
+.data .counter{
+    /* border: 1px solid red; */
+    display: flex;
+    border-bottom: 5px solid gray;
+}
+.data .counter .img{
+    /* border: 1px solid gray; */
+    width: 50%;
+    background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/counter.png);
+    background-size: cover;
+    height: 25rem;
+}
+.data .counter .contante{
+    /* border: 1px solid gray; */
+    width: 50%;
+    text-align: center;
+}
+.data .counter .contante a{
+    font-size: 25px;
+    font-style: italic;
+    border-bottom: 1px solid royalblue;
+}
+.data .counter .contante h1{
+    font-size: 30px;
+}
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration-line: none;
+    }
+    .heading{
+        border: 1px solid black;
+        background-color: black;
+        font-size: 22px;
+    }
+    .heading h1{
+        color: white;
+    }
+    .heading h1 span{
+        color: royalblue;
+    }
+    .container{
+        /* border: 1px solid black; */
+        display: flex;
+        height: 35rem;
+    }
+    .container .side{
+        /* border: 1px solid red; */
+        width: 10%;
+        background-color: rgb(165, 165, 165);
+    }
+    .container .side.show{
+        width: 10%;
+    }
+    .container .side ul{
+        /* border: 1px solid green; */
+        margin: 15px 2px;
+    }
+    .container .side ul li{
+        /* border: 1px solid black; */
+        color: black;
+        border-radius: 5px;
+        margin: 10px 4px;
+        text-align: center;
+        padding: 5px 0;
+        font-size: 20px;
+    }
+    .container .side ul li:hover{
+        background-color: white;
+    }
+    .container .side ul li .tabs{
+        display: none;
+    }
+    .container .side ul li .tabs.show{
+        display: none;
+    }
+    .container .box{
+        /* border: 1px solid red; */
+        width: 90%;
+        background-color: black;
+        background-image: url(https://img.freepik.com/free-photo/black-prism-concept-ai-generated_268835-7011.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container .box.show{
+        width: 90%;
+    }
+    .container .box .nav{
+        /* border: 1px solid black; */
+        background-color: gray;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+        margin: 5px;
+        padding: 2px 10px;
+        border-radius: 8px;
+        /* position: fixed; */
+    }
+    .container .box .hero{
+        margin: 8px 0;
+    }
+    .container .box .hero .btns{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        border-radius: 50px;
+        background-color: gray;
+        color: white;
+    }
+    .container .box .hero .btns li{
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 50px;
+        user-select: none;
+        cursor: pointer;
+    }
+    .container .box .hero .btns li:hover{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .html.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .css.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .js.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .c.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .j.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .hero .btns .php.show{
+        background-color: rgb(250, 84, 84);
+        transition: all 0.5s linear;
+    }
+    .container .box .contante{
+        /* border: 1px solid black; */
+        background-color: rgba(165, 165, 165, 0.158);
+        width: 80%;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+    .container .box .contante p{
+        color: white;
+        font-size: 12px;
+        padding: 5px;
+        display: none;
+        /* user-select: none; */
+    }
+    .container .box .contante .phtml.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .container .box .contante .pcss.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .container .box .contante .pjs.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .container .box .contante .pc.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .container .box .contante .pj.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .container .box .contante .pphp.show{
+        display: block;
+        transition: all 0.5s linear;
+    }
+    .silder{
+        /* border: 1px solid black; */
+        width: 100vw;
+        overflow: hidden;
+        background-color: rgba(136, 135, 135, 0.685);
+    }
+    .silder .image{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .silder .image img{
+        /* border: 1px solid black; */
+        width: 3rem;
+        height: 3rem;
+        margin: 2px 20px;
+    }
+    .data{
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+    }
+    .data h1{
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+        border-bottom: 1px solid gray;
+    }
+    .data .video{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid gray;
+    }
+    .data .video .img{
+        /* border: 1px solid gray; */
+        width: 100%;
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/video-1.png);
+        background-size: cover;
+        height: 25rem;
+    }
+    .data .video .contante{
+        /* border: 1px solid gray; */
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+    }
+    .data .video .contante a{
+        font-size: 20px;
+        font-style: italic;
+        border-bottom: 1px solid royalblue;
+    }
+    .data .video .contante h1{
+        font-size: 25px;
+    }
+    .data .color{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid gray;
+    }
+    .data .color .img{
+        /* border: 1px solid gray; */
+        width: 100%;
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/color-flipper.png);
+        background-size: cover;
+        height: 25rem;
+    }
+    .data .color .contante{
+        /* border: 1px solid gray; */
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+    }
+    .data .color .contante a{
+        font-size: 20px;
+        font-style: italic;
+        border-bottom: 1px solid royalblue;
+    }
+    .data .color .contante h1{
+        font-size: 25px;
+    }   
+    .data .counter{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid gray;
+    }
+    .data .counter .img{
+        /* border: 1px solid gray; */
+        width: 100%;
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/03/counter.png);
+        background-size: cover;
+        height: 25rem;
+    }
+    .data .counter .contante{
+        /* border: 1px solid gray; */
+        width: 100%;
+        height: 15rem;
+        text-align: center;
+    }
+    .data .counter .contante a{
+        font-size: 20px;
+        font-style: italic;
+        border-bottom: 1px solid royalblue;
+    }
+    .data .counter .contante h1{
+        font-size: 25px;
+    }   
+}

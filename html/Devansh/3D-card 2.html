@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: calc( 50% - 150px );
+            left: calc(50% - 150px);
+            transform-style: preserve-3d;
+            perspective: 600px;
+
+        }
+        .container .card{
+            height: 300px;
+            width: 300px;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+        }
+        .container .card .back,
+        .container .card .front{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            /* border: 1px solid red; */
+            /* line-height: 300px; */
+            /* font-size: 70px; */
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+
+        }
+
+        .container .card .back{
+
+            background-color: cadetblue;
+            transform: rotateY(180deg);
+            padding: 10px;
+        }
+
+        .container .card .front{
+
+            background-color: aqua;
+            background-image: url("../web/images/11.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+       
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+
+        .container .card .front h1{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.521);
+            position: relative;
+            bottom: -260px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <h1>ABCD XYZ</h1>
+            </div>
+            <div class="back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis molestias assumenda aliquid nesciunt quis quidem corrupti? Vitae, accusantium nesciunt, sint rem, assumenda dolores reiciendis consequuntur provident doloribus quam distinctio.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

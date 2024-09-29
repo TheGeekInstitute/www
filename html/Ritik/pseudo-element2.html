@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element2</title>
+    <style>
+        .para::first-letter{
+            font-size: 80px;
+            color: red;
+        }
+
+        .para::first-line{
+            color: blue;
+            font-size: 20px;
+        }
+
+        .sea::after{
+            content: url("../web/images/10.jpg");
+
+        }
+
+        .sea::before{
+            content: "brilliant";
+            word-spacing: ;
+        }
+
+        ul li::marker{
+            color: blue;
+        }
+
+        ol li::marker:hover{
+            color: brown;
+            /* background-color: aliceblue; */
+        }
+        .para2::selection{
+            color: red;
+            background-color: blue;
+        }
+        .para2{
+            user-select:auto;
+        }
+
+        input::placeholder{
+            caret-color: blue;
+             color: chartreuse;
+
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ex cum, sunt eum quibusdam, perspiciatis esse suscipit illo eius quaerat accusamus asperiores saepe? Fugiat numquam eos tempore ea. Consequuntur, impedit.</p>
+
+    <h2 class="sea">coaching</h2>
+
+    <ul>
+        <li>name</li>
+        <li>class</li>
+        <li>roll no</li>
+    </ul>
+
+    <ol>
+        <li>name</li>
+        <li>class</li>
+        <li>roll no</li>
+    </ol>
+
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio inventore dicta omnis aliquam ad quas numquam repellendus fuga iste rerum. Minima veniam voluptas ullam optio perferendis dolores voluptatum est aperiam.</p>
+
+    <input type="text" placeholder="enter your name">
+</body>
+</html>

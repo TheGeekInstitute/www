@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        .dotted{
+            border-style: dotted;
+        }
+        .dashed{
+            border-style: dashed;
+        }
+        .solid{
+            border-style: solid;
+        }
+        .double{
+            border-style: double;
+        }
+        .groove{
+            border-style: groove;
+        }
+        .ridge{
+            border-style: ridge;
+        }
+        .inset{
+            border-style: inset;
+        }
+        .outset{
+            border-style: outset;
+            /* background-color: red; */
+        }
+        .none{
+            border-style: none;
+        }
+
+        .hidden{
+            border-style: hidden;
+        }
+
+        .mix{
+            border-top-style: dashed;
+            border-bottom-style:solid;
+            border-left-style: inset;
+            border-right-style: outset;
+        }
+
+        .new{
+            /* border-style: solid;
+            border-width: 10px;
+            border-color: red;
+            border-radius: 20px;
+         */
+        border: 10px solid red;
+        }
+
+        .coding{
+            border: 20px solid;
+            border-top-color: red;
+            border-right-color: green;
+            border-bottom-color: blue;
+            border-left-color: yellow;
+
+            border-top-left-radius: 30px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 30px;
+
+        }
+
+        img{
+            border: 10px solid red;
+            /* outline-style: dashed;
+            outline-width: 20px;
+            outline-color: blue; */
+            outline-offset: -15px;
+            outline: 10px dotted yellow;
+        }
+    </style>
+</head>
+<body>
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<p class="new">The Fine art </p>
+<p class="coding">The coding classes Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas deleniti iure sint officia cum. Quidem harum odit voluptate eveniet quia blanditiis sunt ullam asperiores ex temporibus, fuga tempore! Vel, enim.</p>
+
+<img src="../../web/images/11.jpg" alt="">
+
+</body>
+</html>

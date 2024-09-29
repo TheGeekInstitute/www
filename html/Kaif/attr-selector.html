@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+<style>
+    p[align="center"]{
+        /* color: red; */
+    }
+
+    input[type="text"]{
+        background-color: greenyellow;
+    }
+   input[type="password"]{
+    size: large;
+    background-color: crimson;
+
+   }
+    p[class~="para"]{
+        /* background-color: cyan; */
+    }
+    /* p[class~="paragraph"]{ */
+        /* color: chocolate; */
+        /* font-size: large; */
+    }
+
+    
+    p[class|="my"]{
+        background-color: cyan;
+    }
+    p[class|=""]{
+        background-color: crimson;
+    }
+
+    p[class^="p"]{
+        /* background-color: red; */
+    }
+
+    p[class$="y"]{
+        /* background-color: greenyellow; */
+    }
+
+    p[class*=""]{
+        /* background-color: greenyellow; */
+    }
+
+
+</style>
+</head>
+<body>
+    <p align="center" class="abcd para1 paragraph1 mypara1 abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus in totam tenetur, sunt mollitia distinctio quaerat, voluptates similique, maxime alias magnam? Nulla vel animi omnis, reiciendis ducimus explicabo laudantium.</p>
+    <p align="left" class="para paragraph mypara my-abcd key">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facere est aliquam eum veniam quo tenetur dolorum explicabo aspernatur aliquid, deserunt tempora eaque fugiat animi nam necessitatibus in quam iure.</p>
+    
+    <a href="#">Abcd</a>
+    <a href="#" target="_abcd">qwerty</a>
+    <a href="#" target="_blank">Xyz</a>
+<input type="text">
+<input type="password">
+</body>
+</html>

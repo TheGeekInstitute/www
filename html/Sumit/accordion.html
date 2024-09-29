@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+        *{
+            margin: 50;
+            padding:0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }   
+
+        .accordion{
+             /*border: 2px solid red; */
+            width: 600px;
+            margin: 5px 0;
+        }
+
+        .accordion input{
+            display: none;
+        }
+
+
+
+        .accordion .heading{
+            background-color: rebeccapurple;
+            display: flex;
+            height: 40px;
+            color: white;
+            justify-content: space-between;
+            padding: 0 10px;
+            align-items: center;
+            font-size: x-large;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .accordion .heading i{
+            transition: all .3s linear;
+        }
+        .accordion .content{
+            background-color: aqua;
+            padding: 10px;
+            display: none;
+        }
+
+        .accordion #btn:checked ~ .content{
+            display: block;
+        }
+
+        .accordion #btn1:checked ~ .content{
+            display: block;
+        }
+
+        .accordion #btn2:checked ~ .content{
+            display: block;
+        }
+
+        .accordion #btn3:checked ~ .content{
+            display: block;
+        }
+
+
+
+        .accordion #btn:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+
+        .accordion #btn1:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+
+        .accordion #btn2:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+
+        .accordion #btn3:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="accordion">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="heading">
+                <p>Heading</p>
+                <label for="btn">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+            </label>
+            
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi est laborum eius, quidem pariatur hic. Delectus ea assumenda dolorem vero aperiam velit rem officiis, dicta illo id, facere libero!</p>
+            </div>
+
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" id="btn1">
+            <label for="btn1"  class="heading">
+                <p>Heading</p>
+                <label for="btn1">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+            </label>
+            
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi est laborum eius, quidem pariatur hic. Delectus ea assumenda dolorem vero aperiam velit rem officiis, dicta illo id, facere libero!</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="accordion">
+            <input type="checkbox" id="btn2">
+            <label for="btn2"  class="heading">
+                <p>Heading</p>
+                <label for="btn2">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+            </label>
+            
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi est laborum eius, quidem pariatur hic. Delectus ea assumenda dolorem vero aperiam velit rem officiis, dicta illo id, facere libero!</p>
+            </div>
+
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" id="btn3">
+            <label for="btn3"  class="heading">
+                <p>Heading</p>
+                <label for="btn3">
+                    <i class="fa-solid fa-plus"></i>
+                </label>
+            </label>
+            
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi est laborum eius, quidem pariatur hic. Delectus ea assumenda dolorem vero aperiam velit rem officiis, dicta illo id, facere libero!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

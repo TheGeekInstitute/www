@@ -1,0 +1,19 @@
+#heading2{
+    color: red;
+    background-color: black;
+}
+
+.myheading{
+    color: green;
+    background-color: yellow;
+}
+
+.para{
+    color: yellow;
+    background-color: crimson;
+}
+
+#bold{
+    color: white;
+    background-color: green;
+}

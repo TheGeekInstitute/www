@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    
+</head>
+<body>
+    
+    <!-- <button onclick="bulbon()">On</button>
+
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" id="bulb">
+
+    <button onclick="bulboff()">Off</button> -->
+
+
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" id="bulb">
+
+    <br>
+
+    <button id="btn">On</button>
+
+
+
+
+    <script>
+        let bulb = document.querySelector('#bulb');
+        let btn = document.querySelector('#btn');
+
+        btn.addEventListener('click',function (){
+            if(btn.innerHTML=="On"){
+                btn.innerHTML="Off"
+               
+                bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif")
+
+            }
+            else{
+                btn.innerHTML="On"
+                bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif")
+             
+
+                
+
+            }
+
+
+            
+        })
+
+
+
+        // function bulbon(){
+        //     bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif")
+        // }
+
+        
+        // function bulboff(){
+        //     bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif")
+        // }
+
+
+
+
+
+    </script>
+
+</body>
+</html>

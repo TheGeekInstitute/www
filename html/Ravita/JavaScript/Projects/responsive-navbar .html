@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .container{
+            /* border: 1px solid black ; */
+            height: 100vw;
+            text-align: center;
+            background-image: linear-gradient(rgb(248, 224, 228),rgba(150, 150, 241, 0.795));
+
+        }
+
+        .container .nav{
+            /* border: 1px solid black; */
+            height: 45px;
+            display: flex;
+            justify-content: space-between;
+            padding:  6px 10px;
+            background-color: rgb(54, 43, 104);
+            color: white;
+            
+
+        }
+
+        .container .nav i{
+            font-size: 30px;
+        }
+
+        .btns{
+            /* border: 1px solid black; */
+            width: 20%;
+            height:90vw;
+
+            /* display: none; */
+            background-color:rgb(52, 60, 67);
+
+        }
+
+         
+
+         .btns .show{
+            display: block;
+
+        }
+        .btns ul{
+            border: 1px solid transparent;
+        }
+      
+         .btns ul li{
+            /* border: 1px solid black; */
+            line-height:25px ;
+            margin:4px;
+
+            text-align: center;
+            font-size: large;
+            border-radius: 4px;
+            background-color: rgba(196, 240, 109, 0.753);
+
+        }
+
+        .btns ul li:hover{
+            background-color:white;
+
+
+        }
+
+      
+
+    </style>
+<body>
+    <div class="container">
+        <h1>How to create a responsive Navbar</h1>
+
+
+        <div class="nav">
+            <!-- <i class="fa-regular fa-face-smile"></i> -->
+            <h1>Ravita</h1>
+            <i class="fa-solid fa-bars"></i>
+    
+         </div>
+
+        <div class="response">
+           <div class="btns">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contant</a>
+                </li>
+            </ul>
+           </div>
+        </div>
+    </div>
+
+    <script>
+        //   let nav=document.querySelector('.nav');
+        // let btns=document.querySelector('#btns');
+        // let icon =document.querySelector('.fa-bars');
+        // icon.addEventListener("click",()=>{
+        //     btns.classList.toggle("show");
+        // })
+
+        let nav=document.querySelector('.nav');
+        let btns=document.querySelector('.btns');
+        let icon=document.querySelector('.fa-solid');
+        icon.addEventListener("click",()=>{
+            btns.classList.toggle("show");
+        })
+
+
+    </script>
+</body>
+</html>

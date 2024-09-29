@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Website</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .bg{
+            /* position: absolute; */
+            /* background-image: url("http://192.168.1.4/GEEK/img/carousel-1.jpg"); */
+            /* height: 100vh; */
+            /* width: 100vw; */
+            background-size: cover;
+            background-color: rgba(165, 208, 255, 0.966);
+            background-blend-mode: overlay;
+
+        }
+        .top{
+            border: 1px solid red;
+            height: 3vh;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px groove  rgba(255, 255, 255, 0.514);
+            /* background-color: gray; */
+
+        }
+        .contact{
+            display: flex;
+            /* margin-left: 3vw; */
+        }
+        .contact p{
+            /* border:  1px solid blue; */
+            margin-left: 10px;
+            color:  rgba(255, 255, 255, 0.514);
+            /* align-items: center; */
+            text-align: center;
+            font-size: 15px;
+        }
+        .contact i{
+            margin-right: 5px;
+            /* border: 1px solid black; */
+            font-size: 16px;
+        }
+        .media{
+            margin-right: 3px;
+        }
+        .media ul li{
+            display: inline-block;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 3px;
+            font-size: smaller;
+            /* color: aliceblue; */
+        }
+        .media ul li a{
+            color: rgba(255, 255, 255, 0.514);
+        }
+        .media i{
+            font-size: 15px;
+        }
+        .nav{
+            height: 7vh;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            /* border:1px solid  red; */
+        }
+        .nav ul li{
+            display: inline-block;
+            font-size: smaller;
+            margin: 1rem;
+            /* border: 1px solid blue; */
+        }
+        .nav > .btn > li > a{
+            font-size: 17px;
+            color: white;
+            text-decoration: none;
+
+        }
+        .drop{
+            position: absolute;
+            background: gray;
+            width: 6.3rem;
+            border: 1px solid white;
+            border-radius: 5px;
+            /* background: white; */
+            /* color: white; */
+            /* left: 5; */
+            /* padding: -50px; */
+            margin-top: .7rem;
+            margin-left: -1.3rem;
+            display: none;
+            color: black;
+        }
+        .drop li a{
+            /* border: 1px solid green; */
+            font-size:15px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav h1{
+            font-size: xx-large;
+            margin-left: 4rem;
+        }
+        span{
+            color: rgb(255, 255, 255);
+        }
+        .nav ul li:hover .drop{
+            display: block;
+            transition: all .3s linear;
+        }
+        .veri{
+            border: 1px solid  orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #book{
+            border: 1px solid white;
+            border-radius: 50%;
+            /* background: white; */
+            padding: 3px;
+        }
+        .content h1{
+            /* position: absolute; */
+            text-align: center;
+            margin-top: 250px;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        /* .ler{
+            color: white;
+            border: 1 solid rgb(255, 123, 0);
+            background:  rgb(255, 123, 0);
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            border-radius: 5px;
+            margin: auto;
+            margin-wi: 10px;
+            margin-top: 150px;
+            
+            
+        } */
+
+        
+    </style>
+</head>
+<body>
+    <div class="bg">
+    <div class="topnav">
+        
+            <div class="top">
+                
+                <div class="contact">
+                <p><i class="fa-solid fa-phone"></i>+01-977-2599-12</p>
+                <p><i class="fa-solid fa-envelope"></i>studyplay@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-location-dot"></i>432 bhootiya road, canada</p>
+            </div>
+            <div class="media">
+                <ul>
+                    <li>Follow us:</li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="nav">
+        <h1><span>Geek</span>Institute</h1>
+        <ul class="btn">
+            <li><a href=""> <span>Home</span></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Pages +</a>
+            <ul class="drop">
+                <li><a href="">Servise</a></li>
+                <li><a href="">Donate</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">404 pages</a></li>
+            </ul></li>
+            <li><a href="">Contect</a></li>
+            <li><a href=""> <span class="veri"> Verify certificate<i  id="book" class="fa fa-book" aria-hidden="true"></i></span></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Let's Change The World
+           <br> With knowledge
+        </h1>
+        
+    <!-- </div>
+    <h1 class="ler">Learn more<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h1>
+</div> -->
+</div>
+    
+</body>
+</html>

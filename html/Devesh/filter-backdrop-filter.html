@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter & BackDropFilter</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+            
+            /* filter: blur(2px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(150%); */
+            /* filter: drop-shadow(2px 2px red); */
+
+            /* box-shadow: 2px 2px red; */
+            
+            /* filter: grayscale(50%); */
+            /* filter: hue-rotate(60deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(.5); */
+            /* filter: saturate(200%) brightness(150%); */
+            /* filter: sepia(50%); */
+        }
+
+        .container{
+            background-image: url("../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 200px;
+
+            backdrop-filter: blur(2px) brightness(150%);
+        }
+
+        @supports (backdrop-filter: blur(2px)){
+            .box{
+            backdrop-filter: blur(2px) brightness(150%);
+
+            }
+        }
+
+
+        @supports not (backdrop-filter: blur(2px)){
+            .box{
+           background-color: rgba(0, 0, 0, 0.521);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg" alt="">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png" alt=""> -->
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

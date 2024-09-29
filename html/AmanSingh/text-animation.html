@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .container{
+            font-size: 80px;
+            position: absolute;
+            top: -2.5px;
+            left: -3px;
+            right: 10px;
+            bottom: 0px;
+            font-size: 81px;
+            /* color: transparent; */
+            animation: change-color 20s linear 0s infinite alternate-reverse;
+        }
+        
+        h1{
+            /* font-size: 80px;
+            position: absolute;
+            top: -2.5px;
+            left: -3px;
+            right: 10px;
+            bottom: 0px;
+            font-size: 81px; */
+            /* color: transparent; */
+            animation: change-color 20s linear 0s infinite alternate-reverse;
+        }
+
+        h1::after,h1::before{
+            /* position: absolute;
+            top: -2.5px;
+            left: -3px;
+            right: 10px;
+            bottom: 0px;
+            font-size: 81px; */
+            content: "HELLO WORLD";
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: -1;
+            animation: change-color 20s linear 0s infinite alternate-reverse;
+    border-radius: 10px;
+        }
+
+        h1::after{
+            filter: blur(5px);
+        }
+
+        @keyframes change-color {
+    
+        0%{
+            background-size: 0;
+            transform:translate(0,0) rotate(0deg)
+                    }
+        25%{
+            background-size:400px;
+           transform: translate(50px,20px) rotate(90deg);
+        }
+        50%{
+            background-size:400px;
+        transform:translate(100px,60px) rotate(180deg);
+        }
+        75%{
+            background-size:400px;
+            transform: translate(150px,90px) rotate(270deg);
+        }
+        100%{
+            background-size:400px;
+            transform: translate(200px,120px) rotate(360%);
+        }
+    
+}
+
+
+.logo{
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: -1;
+            animation: change-color 3s linear 0s infinite alternate;
+            font-size: 60px;
+            font-weight: 900;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>HELLO WORLD</h1>
+
+
+    <!-- <div class="logo"> -->
+        <!-- LOGO -->
+    </div>
+</body>
+</html>

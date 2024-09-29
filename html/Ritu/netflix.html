@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+       @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style-type: none;   
+            text-decoration: none;    
+         }
+         body{
+            background-color: rgba(0, 0, 0, 0.637);
+         }
+         .main{
+            height: 100vh;
+            width: 100vw;
+            color:white;
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.527);
+            background-blend-mode: darken;
+
+         }
+         .nav{
+            display: flex;
+            justify-content: space-between;
+           
+         
+         }
+         .nav img{
+            height: 3.5rem;
+            width: 11rem;
+            margin-left: 5rem;
+            margin-top: 1rem;
+            /* background-color: transparent; */
+         }
+         .menu{
+            margin: 20px;
+            margin-right: 5rem;
+           
+    
+         }
+         .menu select{
+            padding: 8px 30px;
+            margin: 10px;
+            color: rgba(255, 255, 255, 0.726);
+            background-color: transparent;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgba(255, 255, 255, 0.534);
+            border-radius: 5px;
+            font-size: 1rem;
+             
+         }
+         .menu a{
+            background-color: red;
+            color: rgb(255, 255, 255);
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 10rem;
+           
+         }
+         .menu i{
+            position: absolute;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.801);
+            /* padding-top: 20px; */
+         }
+         .mail a{
+            color: rgba(255, 255, 255, 0.979);
+            background-color: red;
+            padding: 16px 30px;
+            margin: 13px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         }
+         .content h1{
+            font-size: 3.3rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+         }
+         .content p{
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+         }
+         .content h5{
+            font-size: 1.3rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 1rem;
+         }
+         input[type=email]{
+            padding: 18px;
+            width: 25rem;
+            margin-top:20px ;
+            background-color: rgba(0, 0, 0, 0.425);
+            border: 1px solid grey;
+            border-radius: 5px;
+            color: white;
+            outline: none;
+            font-size: larger;
+          
+         }
+         input::placeholder{
+            color: white;
+            font-size: large;
+            font-weight: 500;
+         }
+         .main2{
+            height: 80vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+            margin-top: 6px;
+
+        
+         }
+         .main2 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30vh;
+            font-size: 3.2rem;
+            font-weight: 900;
+         }
+         .main2 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.3rem; 
+            width: 35rem;
+             margin-top: 2rem;
+         }
+         .right{
+            height: 30rem;
+            width: 35rem;
+         }
+       .right img{
+         height: 30rem;
+         width: 35rem;
+         position: relative;
+         z-index: 10;
+       }
+       .right video{
+         display: inline-block;
+         height: 30rem;
+         width: 35rem;
+         position: relative;
+         z-index: 9;
+         bottom: 30rem;
+       object-fit: cover; 
+        
+       }
+       .content1{
+            height: 80vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+            margin-top: 6px;
+
+        
+         }
+         .content1 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30vh;
+            font-size: 3.2rem;
+            font-weight: 900;
+            width: 40rem;
+         }
+         .content1 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.4rem; 
+            width: 35rem;
+             margin-top: 2rem;
+         }
+         .content2{
+            height: 80vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+            margin-top: 6px;
+
+        
+         }
+         .content2 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30vh;
+            font-size: 3.2rem;
+            font-weight: 900;
+            width: 40rem;
+            margin-left: 10rem;
+         }
+         .content2 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.4rem; 
+            width: 35rem;
+             margin-top: 2rem;
+             margin-left: 10rem;
+         }
+         .right2 img{
+         height: 30rem;
+         width: 35rem;
+         position: relative;
+         z-index: 10;
+       }
+         .right2 video{
+         /* display: inline-block; */
+         height: 16rem;
+         width: 21rem;
+         /* border: 2px solid red;  */
+         position: relative;
+         z-index: 9;
+         bottom: 27rem;
+         left: 7rem;
+         object-fit: cover;  
+        
+       } 
+        
+     
+     
+         .content3{
+            height: 80vh;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            color: white;
+            margin-top: 6px;
+
+        
+         }
+         .content3 h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 30vh;
+            font-size: 3.2rem;
+            font-weight: 900;
+            width: 40rem;
+         }
+         .content3 p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.4rem; 
+            width: 35rem;
+             margin-top: 2rem;
+         }
+         .end{
+            height: 110vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            margin-top: 6px;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            
+         }
+         input[type="checkbox"]{
+            display: none;
+         }
+         .end h1{
+            font-weight: 900;
+            margin-bottom: 3rem;
+            font-size: 3.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 3rem;
+            text-align: center;
+         }
+
+         .end .info .name{
+            background-color: rgba(73, 73, 73, 0.733);
+            display: inline-block;
+            margin-top: .5rem;
+            height: 4rem;
+            width: 80vw;
+            line-height: 4rem;
+            font-size: 1.4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 2rem;
+            padding-right: 2rem;
+         }
+         .name i{
+            font-size: 25px;
+            transform: rotate(45deg);
+            transition: all .2s;
+            padding-top: 1rem;
+         }
+         .end .info .para{
+            width: 80vw;
+            padding:.5rem 1rem;
+            margin-top: .5rem;
+            font-size: 1.2rem;
+            background-color:rgba(73, 73, 73, 0.733) ;
+         }
+         .para{
+            display: none;
+
+         }
+         #btn:checked ~ .para{
+            display: block;
+         }
+         #btn1:checked ~ .para{
+            display: block;
+         }
+         #btn2:checked ~ .para{
+            display: block;
+         }
+         #btn3:checked ~ .para{
+            display: block;
+         }
+         #btn4:checked ~ .para{
+            display: block;
+         }
+         #btn5:checked ~ .para{
+            display: block;
+         }
+        #btn:checked ~ .name i{
+         transform: rotate(0);
+        }
+        #btn1:checked ~ .name i{
+         transform: rotate(0);
+        }
+        #btn2:checked ~ .name i{
+         transform: rotate(0);
+        }
+        #btn3:checked ~ .name i{
+         transform: rotate(0);
+        }
+         #btn4:checked ~ .name i{
+         transform: rotate(0);
+        }
+        #btn5:checked ~ .name i{
+         transform: rotate(0);
+        }
+        
+         .end h5{
+            font-size: 1.3rem;
+            margin-top: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+         }
+         .end .info .name:hover{
+            background-color: rgba(61, 61, 61, 0.61);
+         }
+         .footer {
+            background-color: black;
+            margin-top: 6px;
+            height: 70vh;
+            color: rgba(255, 255, 255, 0.63);
+            padding-left: 12vw;
+         }
+         .footer p{
+            font-size: 1.2rem;
+            padding-top: 4rem;
+            padding-left: 2.5rem;
+         
+         }
+         .footer span{
+            text-decoration: underline;
+         }
+         .footer .menu{
+            padding-left: -5rem;
+         }
+         .final{
+            display: flex;
+            justify-content: space-evenly;
+          
+            
+         }
+         
+         .last{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            margin-bottom: 2rem;
+            margin-left: -5rem;
+         }
+        .last a{
+         color: rgba(255, 255, 255, 0.664);
+         margin-top: 25px;
+         margin-left: -18vw;
+         text-decoration: underline;
+        }
+        .footer h3{
+         margin-left: 2rem;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-weight: 500;
+        }
+     
+     
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="">
+            <div class="menu">
+               <i class="fa-solid fa-globe"></i>
+            <select>
+                <option value="">English</option>
+                <option value="">हिन्दी</option>
+            </select>
+            <a href="#">Sign In</a>
+            </div>
+        </div>
+     <div class="content">
+      <h1>Unlimited movies,TV shows and more</h1>
+      <p>Watch anywhere.Cancel anytime.</p>
+      <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+      <div class="mail">
+      <input type="email" placeholder="Email address">
+      <a href="#">Get Started <i class="fa-solid fa-angle-right"></i> </a>
+      
+      </div>
+      </div>
+        
+    </div>
+    <div class="main2">
+      <div class="left">
+      <h1>Enjoy on your TV</h1>
+      <p>Watch on smart TVs, Xbox,Playstation,Chromecast,Apple TV,Blu-ray players and more.</p> 
+      </div>
+      <div class="right">
+         <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+         <video src="../video.mp4" autoplay height="400px"></video>
+      </div>
+    </div>
+    <div class="content1">
+       <div class="right1">
+          <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+         </div>
+         <div class="left1">
+            <h1>Download your shows to watch offline</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+           </div>
+      
+    
+</div>
+<div class="content2">
+   <div class="left2">
+    <h1>Watch everywhere</h1>
+    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+   </div>
+   <div class="right2">
+    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+    <video src="../video.mp4" autoplay"></video>
+  
+    
+    
+
+   </div>
+</div>
+<div class="content3">
+   <div class="right3">
+   <img src="https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt=""> 
+  
+   </div>
+   <div class="left3">
+    <h1>Create profiles for kids</h1>
+    <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+   </div>
+</div>
+<div class="end">
+   <h1>Frequently Asked Questions</h1>
+   <div class="info">
+      <input type="checkbox" id="btn">
+      <label for="btn" class="name">
+         <span>What is Netflix?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <div class="info">
+      <input type="checkbox" id="btn1">
+      <label for="btn1" class="name">
+         <span>How much does Netflix cost?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <div class="info">
+      <input type="checkbox" id="btn2">
+      <label for="btn2" class="name">
+         <span>Where can I watch?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <div class="info">
+      <input type="checkbox" id="btn3">
+      <label for="btn3" class="name">
+         <span>How do I cancel?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <div class="info">
+      <input type="checkbox" id="btn4">
+      <label for="btn4" class="name">
+         <span>What can I watch on Netflix?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <div class="info">
+      <input type="checkbox" id="btn5">
+      <label for="btn5" class="name">
+         <span>Is Netflix good for for kids?</span>
+         <i class="fa-solid fa-xmark"></i>
+      </label>
+      <div class="para">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam molestias iste, labore consequuntur ratione tempora quas facilis provident ipsam sit omnis. Soluta corrupti quisquam facere repellendus, ex officia architecto!
+      </div>
+   </div>
+   <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+      <div class="mail">
+      <input type="email" placeholder="Email address">
+      <a href="#">Get Started <i class="fa-solid fa-angle-right"></i> </a>
+
+</div>
+</div>
+<div class="footer">
+   <p>Questions? Call <span>000-800-919-1694</span></p>
+   <div class="final">
+   <div class="last">
+      <a href="#">FAQ</a>
+      <a href="#">Media Center</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Privacy</a>
+   </div>
+   <div class="last">
+      <a href="#">Speed Test</a>
+      <a href="#">Help Center</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Only on Netflix</a>
+   </div>
+   <div class="last">
+      <a href="#">Corporate Information</a>
+      <a href="#">Legal Information</a>
+      <a href="#">Account</a>
+      <a href="#">Jobs</a>
+      <a href="#">Contact Us</a>
+   </div>
+</div>
+   <div class="menu">
+      <i class="fa-solid fa-globe"></i>
+   <select>
+       <option value="">English</option>
+       <option value="">हिन्दी</option>
+   </select>
+  
+   </div>
+   <h3>Netflix India</h3>
+</div>
+
+    
+    
+</body>
+</html>

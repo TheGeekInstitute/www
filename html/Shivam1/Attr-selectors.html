@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr-selectors</title>
+    <style>
+        p[align]{
+            /* background-color: red; */
+        }
+
+        input[type="text"]{
+            /* background-color: green; */
+        }
+
+        p[class~="para"]{
+            /* background-color: red; */
+        }
+
+        p[class|="our"]{
+            /* background-color: red; */
+        }
+
+        p[class^="para"]{
+            /* color: red; */
+        }
+
+        p[class$="my-para"]{
+            /* background-color: red; */
+        }
+
+        p[class*="graph"]{
+            /* color: red; */
+        }
+    </style>
+</head>
+<body>
+    <p class="para paragraph new abcd" align="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam nisi sapiente saepe! Amet praesentium possimus cupiditate unde, delectus soluta nostrum voluptatem, autem reprehenderit, rem doloremque doloribus qui fugiat voluptatibus?</p>
+
+    <p class="our-para paragraph my-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam quod sint hic magni corrupti, dolorem excepturi ad amet voluptatum harum minus blanditiis architecto, consectetur reprehenderit temporibus voluptas! Aperiam, sit?</p>
+    <input type="text">
+    <input type="password" name="" id="">
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let name="Amit";
+        // let name="SUmit";
+        // name="ABCD"
+
+        // var name="XYZ";
+        // var name="ABCD";
+
+        // const name ='AMit';
+        // console.log(name)
+
+        // let data = `hello ${name} welcome to our webiste`;
+
+        // console.log(data)
+        
+        
+        // function abcd(){
+            //     console.log("ABCD");
+            // }
+            
+            // let abcd = ()=>{
+            //     console.log('ABCD');
+            // }
+            
+            // abcd();
+
+
+            // let abcd = a => a;
+
+            // let abcd = (a)=>{
+            //     return a;
+            // }
+
+            // console.log(abcd("hello"))
+
+
+            // let func = (val)=>{
+            //     console.log(val)
+            // }
+
+            // function func(){
+            //     var sum=0;
+            //     // console.log(arguments)
+            //     for(x of arguments){
+            //         sum+= x;
+            //     }
+            //     console.log(sum);
+            // }
+
+            // function func(name,gender,...args){
+            //     var sum=0;
+               
+            //     for(x of args){
+            //         sum+= x;
+            //     }
+            //     console.log(name+gender+sum);
+            //     // console.log(name)
+            // }
+
+
+            // func("Amit","Male",12,15,18,78,25)
+
+
+
+            function func(name,...args){
+                var sum=0;
+                // console.log(name);
+                           for(x of args){
+                    sum+= x;
+                }
+                console.log(name+sum);
+                // console.log(name)
+            }   
+
+            func("SUM : ",...[45,25,78,96]);
+
+
+    </script>
+</body>
+</html>

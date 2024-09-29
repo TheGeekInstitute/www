@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            height: 73px;
+            background-color: rgb(43, 41, 41);
+
+        }
+
+        .container .nav {
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            margin: 7px;
+
+            .btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btns img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+
+        }
+
+        .container .nav .btns button {
+            border: none;
+            background-color: royalblue;
+            color: white;
+
+            padding: 7px 10px;
+            font-size: 13px;
+            border-radius: 3px;
+
+            margin-left: 5px;
+        }
+
+        .container .nav .btns i {
+            border: none;
+
+            padding: 7px 10px;
+            font-size: 33px;
+            margin-left: 5px;
+            color: aliceblue;
+
+
+        }
+
+        .container .nav .fa-bars {
+            font-size: 25px;
+            color: white;
+        }
+
+        .boxs {
+            display: grid;
+            gap: 30px;
+
+            grid-template-columns: 200px 200px 200px 200px 200px 200px ;
+            grid-template-rows: 100px 100px 100px;
+
+            text-align: center;
+            
+
+
+        }
+        .boxs{ font-size: large;
+        margin-top:40px;
+         margin-left: 50px;
+        }
+
+        .boxs i{font-size:23px;
+        margin-top:20px;}
+
+
+        .box1{ background-color:rgba(0, 128, 0, 0.616);}
+
+        .box2{ background-color:rgba(255, 68, 0, 0.801);}
+
+        .box3{ background-color:rgba(65, 105, 225, 0.733)}
+
+        .box4{ background-color:rgba(255, 166, 0, 0.781);}
+
+        .box5{ background-color: rgba(0, 0, 255, 0.527);}
+
+        .box6{ background-color: rgba(0, 0, 0, 0.555);}
+
+        .box7{ background-color: rgba(255, 255, 0, 0.726);}
+
+        .box8{ background-color:rgba(0, 128, 0, 0.712);}
+
+        .box9{ background-color: rgba(255, 68, 0, 0.719);}
+
+        .box10{ background-color: royalblue;}
+
+        .box11{ background-color:rgba(255, 68, 0, 0.712);}
+
+        .box12{ background-color:rgba(255, 255, 0, 0.753);}
+
+        .box13{ background-color:rgba(0, 128, 0, 0.473);}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <i class="fa-solid fa-bars"></i>
+
+            <div class="btns">
+                <button id="btn0">Total Student : 65</button>
+                <button id="btn1">Active Student : 30</button>
+                <button id="btn2">Admission Fees Pending : 40</button>
+                <!-- <i class="fa-regular fa-bell"></i> -->
+                <i class="fa-solid fa-bell"></i>
+                <img src="../../web/images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="boxs">
+            <div class="box1">
+                <i class="fa-brands fa-slack"></i>
+                <br>
+                Dashboard</div>
+            <div class="box2">
+                <i class="fa-solid fa-user"></i>
+                <br>
+                Student</div>
+            <div class="box3">
+                <i class="fa-solid fa-book-open"></i>
+                <br>
+                Exam</div>
+            <div class="box4">
+                <i class="fa-solid fa-question"></i>
+                <br>
+                Add Question</div>
+            <div class="box5">
+                <i class="fa-regular fa-file-lines"></i>
+                <br>
+                Add Notice</div>
+            <div class="box6">
+                <i class="fa-solid fa-users"></i>
+                <br>
+                Add Users</div>
+            <div class="box7">
+                <i class="fa-solid fa-certificate"></i>
+                <br>
+                Genrate Certificate</div>
+            <div class="box8">
+                <i class="fa-solid fa-book"></i>
+                <br>
+                Books</div>
+            <div class="box9">
+                <i class="fa-regular fa-file-lines"></i>
+                <br>
+                Add Test</div>
+            <div class="box10">
+                <i class="fa-solid fa-plus"></i>
+                <br>
+                Add Student</div>
+            <div class="box11">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <br>
+                Fee Manegment</div>
+            <div class="box12">
+                <i class="fa-regular fa-address-card"></i>
+                <br>
+                Gentate AdmitCard</div>
+            <div class="box13">
+                <i class="fa-solid fa-headset"></i>
+                <br>
+                Enquiries</div>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

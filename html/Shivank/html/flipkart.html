@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            align-items: center;
+            /* border: 1px solid blue; */
+            height: 3.5rem;
+            /* width: 100vw; */
+            background-color: rgb(22, 104, 228);
+            display: flex;
+            color: white;
+             padding-top: 6px;
+             padding-left: 12rem; 
+        }
+     input[type=search]{
+        margin-left: 1rem;
+        height: 2.5rem;
+        width: 26rem;
+        outline: none;
+     }
+     .nav i{
+        color: skyblue;
+        position: absolute;
+        left: 54rem;
+        top: 1.7rem;
+     }
+     input[type=submit]{
+        margin-left: 1rem;
+        height: 1.7rem;
+        width: 5rem;
+     }
+     input::placeholder{
+        padding-left: 0.6rem;
+     }
+     .nav li a{
+        margin: 2rem;
+        color: white;
+     }
+   .hti{
+      border: 1px solid white;
+      height: 8rem;
+      /* padding-top: -2rem; */
+      align-items: center;
+      /* width: 100vw; */
+      display: flex;
+      padding-left: 6rem;
+      background-color: white;
+      }
+      .hti .box{
+         margin-top: -2rem;
+      }
+   .hti .box img{
+    /* border: 2px solid black; */
+    height: 4rem;
+    padding-top: 1rem;
+    border-radius: 4rem;
+   margin: 1.5rem;
+   }
+   .hti .box p{
+      margin-top: -1.8rem ;
+      margin-left: 2rem;
+   }
+   .hwl{
+      background-color: antiquewhite;
+      padding-left: 1rem;
+      /* border: 2px solid black; */
+      height: 18rem;
+      width: 97.5rem;
+   }
+  .hwl img{
+   padding-top: 1rem;
+   /* padding-left: 1rem; */
+   /* border: 2px solid black; */
+   height: 16rem;
+   width: 96rem;
+  }
+  .ptrd{
+   border: 2px solid black;
+   height: 20rem;
+   width: 98rem;
+   display: flex;
+   justify-content: space-between;
+  }
+  .ptrd .box2{
+   padding-top: 2rem;
+  }
+  .shk{
+   /* border: 2px solid black; */
+   height: 17rem;
+   width: 13rem;
+   /* background-color: antiquewhite; */
+   padding-left: 4px;
+   /* float: left; */
+  }
+  .shk p{
+   margin-right: 0.5rem;
+   margin-top: 2rem;
+   font-size: 40px;
+   text-align: center;
+  }
+  .shk input[type=submit]{
+   /* text-align: center; */
+  height: 2rem;
+   background-color: blue;
+   color: white;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  }
+
+  .shk img{
+   height: 8rem;
+   width: 13rem;
+   padding-top: 1rem;
+}
+.flight{
+   float: right;
+   height: 1rem;
+   /* position: absolute; */
+}
+.flight img{
+   height: 20rem;
+   width: 14rem;
+}
+.box2 .pro{
+   text-align: center;
+}
+.box2 img{
+   margin: 6px;
+   height: 150px;
+   max-width: 100%;
+}
+.etr{
+   /* border: 1px solid black; */
+   margin-top: 7.5rem;
+   height: 5rem;
+   width: 2.3rem;
+   background-color: rgb(187, 187, 187);
+   box-shadow: 2px 2px 1px  gray;
+   border-radius: 1rem 1rem;
+}
+.etr i{
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-right: 2.2rem;
+}
+.footor{
+   border: 1px solid black;
+   height: 30rem;
+   background-color: blue;
+   color: white;
+   width: 100vw;
+   display: flex;
+}
+.footor ul{
+   justify-content: space-between;
+   padding: 2rem;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>Flipkart</h1>
+       <li class="plus"> <a href="#">Explore Plus+</a></li>
+        <input type="search" placeholder="Search for products,brands and more">
+        <input type="submit" value="LOGIN">
+        <i class="fa-solid fa-magnifying-glass search"></i>
+        <li><a href="#">Become a Seller</a></li>
+        <li><a href="#">More</a></li>
+        <li><a href="#">Cart</a></li>
+    </div>
+    <div class="hti">
+      <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="">
+      <p>Grocery</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="">
+      <p>Mobiles</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt="">
+      <p>Fashion</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+      <p>Electronics</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+      <p>Home</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
+      <p>Appliances</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="">
+      <p>Travels</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+      <p>Top offers</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="">
+      <p>Beuty, Toys & More</p>
+   </div>
+   <div class="box">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100" alt="">
+      <p>Two wheelers</p>
+   </div>
+    </div>
+   <div class="hwl">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/f26d41521d424fec.jpg?q=50" alt="">
+   </div>
+   <div class="ptrd">
+   <div class="shk">
+      <div class="ptr">
+         <p>Best of Electronics</p>
+         <input type="submit" value="View All">
+         <img src="../../wallpapers/maller/bring-it-home.jpg" alt="">
+      </div>
+   </div>
+   <div class="etr">
+      <i class="fa-solid fa-chevron-left"></i>
+   </div>
+   
+   <div class="box2">
+      <img src="https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70" alt="">
+      <p>Top Microless Cameras</p>
+   </div>
+   <div class="box2">
+         <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/power-bank/j/i/v/power-bank-dx09-20000-mah-20000-dx09-20k-callmate-original-imagn22tuac3hqnz.jpeg?q=70" alt="">
+         <p>Premium PowerBanks</p>
+   </div>
+   <div class="box2">
+      <img src="https://rukminim1.flixcart.com/image/200/200/kactpjk0/shaver/m/6/z/philips-s1121-45-s1121-45-original-imafry2qgxcwnm9r.jpeg?q=70" alt="">
+      <p>Best of Shavers</p>
+   </div>
+   <div class="box2">
+      <img src="https://rukminim1.flixcart.com/image/200/200/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70" alt="">
+      <p class="pro">Projectors</p>
+   </div>
+   <div class="box2">
+      <img src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+      <p>Best of Hair Dryers</p>
+   </div>
+   <div class="box2">
+      <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/monitor/k/s/l/ls24ag300nwxxl-full-hd-24-ls24ag300nwxxl-samsung-original-imagzs3tebgzcftg.jpeg?q=70" alt="">
+      <p class="pro">Monitors</p>
+   </div>
+   <div class="etr">
+      <i class="fa-solid fa-chevron-left"></i>
+   </div>
+   <div class="flight">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/464/708/image/dc4ec6cc887ab17b.jpg?q=70" alt="">
+   </div>
+   
+</div>
+<div class="footor">
+   <ul>
+      <li>ABOUT </li>
+         <li>Contact Us</li>
+       <li>About Us</li>
+      <li>Careers</li>
+      <li>Flipkart Stories</li>
+      <li>Press</li>
+      <li>Flipkart Wholesale</li>
+      <li>Corporate Iformation</li>
+      </ul>
+      <ul>
+         <li>Help</li>
+         <li>Payments</li>
+         <li>Shipping</li>
+         <li>Cancellation & Returns</li>
+         <li>FAQ</li>
+         <li>Report Infringement</li>
+      </ul>
+      <ul>
+         <li>CONSUMER POLICY</li>
+         <li>Return Policy</li>
+         <li>Terms Of Use</li>
+         <li>Security</li>
+         <li>Privacy</li>
+         <li>Sitemap</li>
+         <li>Grievance Redressal</li>
+         <li>EPR Compliance</li>
+      </ul>
+      <ul>
+         <li>SOCIAL</li>
+         <li>Facebook</li>
+         <li>Twitter</li>
+         <li>Youtube</li>
+      </ul>
+</div>
+</body>
+</html>

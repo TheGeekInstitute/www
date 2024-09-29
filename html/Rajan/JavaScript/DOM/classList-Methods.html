@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container .para.change{
+        background-color: red;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <p class="para abcd xyz">Paragraph 1</p>
+        <p class="para">Paragraph 2</p>
+        <p class="para">Paragraph 3</p>
+        <p class="para">Paragraph 4</p>
+        <p class="para">Paragraph 5</p>
+    </div>
+
+    <script>
+        let para =  document.querySelectorAll(".para");
+
+        Array.from(para).forEach(function(e){
+            e.addEventListener("click",function(){
+                // e.classList.add("change")
+                // e.classList.remove("change")
+                e.classList.toggle("change")
+
+            })
+        })
+        // console.log(para[0].classList.contains("abcd"))
+        // console.log(para[0].classList.item(1))
+
+        console.log(para[0].classList.length)
+    </script>
+</body>
+</html>

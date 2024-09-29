@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animination</title>
+    <style>
+        #aero{
+            /* border: 1px solid black; */
+        }
+
+        @keyframes aero {
+            0%{
+                
+            }
+            
+            100%{
+                
+            left: 120vw;
+                
+            }
+            
+        } 
+        #aero{
+            height: 200px;
+            width: 400px;
+            position: relative;
+            margin-top: 160px;
+            animation-name:aero ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* filter: drop-shadow(4px 4px 10px black); */
+            left: -320px;         
+            
+        }
+
+     .buttons{
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        /* font-size: 50px; */
+     }
+
+     #btn{
+
+     }
+
+     .pause{
+        animation-play-state: paused;
+     }
+    </style>
+</head>
+<body>
+
+ <div class="ani">
+    <img src="https://clipart-library.com/2023/flying-airplane.gif" alt="" id="aero" >
+
+</div>
+
+<div class="buttons">
+<button id="btn">stop</button>
+<!-- <button id="btn" onclick="run()">run</button>
+<button id="btn" onclick="fast()">fast</button> -->
+</div>
+
+
+
+    <script>
+        // document.querySelector("btn").addEventListner('click',function(){
+        //     document.querySelector("aero").setAttribute("style"," ")
+        // })
+
+        // function stop(){
+        //     document.getElementById("aero").setAttribute("style","animation-play-state: paused;")
+        // }
+        // function run(){
+        //     document.getElementById("aero").setAttribute("style","animation-play-state: run;")
+        // }
+        // function fast(){
+        //     document.getElementById("aero").setAttribute("style"," animation-duration: 1s;")
+        // }
+
+        document.querySelector("#btn").addEventListener('click', function(){
+
+            let plane = document.querySelector("#aero");
+            plane.classList.toggle("pause");
+            // plane.outerHTML="play";
+            plane.style.backgroundColor="red";
+
+        });
+
+        document.querySelector("#btn").addEventListener('click', function(){
+            let play = document.querySelector("#btn");
+            // play.innerHTML="play";
+
+            if(this.innerHTML="stop"){
+                this.innerHTML="play";
+            }
+
+            else{
+                this.innerHTML="stop";
+            }
+        })
+
+    </script>
+
+</body>
+</html>

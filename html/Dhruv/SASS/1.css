@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid 0;
+  background-color: black;
+  height: 5vh;
+}
+nav img {
+  height: 20px;
+  margin-top: 10vh;
+}
+nav input[type=checkbox] {
+  display: none;
+}
+nav input[type=checkbox]:checked + li {
+  background-color: aqua;
+}
+nav li {
+  background-color: 0;
+  line-height: 5vh;
+  margin-left: 5px;
+  font-size: large;
+}
+nav a {
+  display: block;
+  width: 70px;
+  text-align: center;
+  color: white;
+}
+nav a:hover {
+  background-color: greenyellow;
+  color: red;
+  font-weight: 900;
+}
+
+.abcd, .new {
+  background-color: cyan;
+  font-weight: 900;
+  text-decoration: underline;
+  font-family: cursive,Arial;
+}
+
+.new {
+  text-decoration: none;
+  font-family: Arial;
+}/*# sourceMappingURL=1.css.map */

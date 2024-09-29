@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abcd</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 250px;
+            overflow: hidden;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        img{
+            height: 200px;
+            width: 250px;
+         
+            transition: all .3s;
+        }
+        input[type="checkbox"]{
+            display: none;
+            /* position: absolute; */
+        }
+        label{
+            position:absolute;
+            z-index: 41;
+            border: 5px solid red;
+            /* left: 0; */
+            background-color: red;
+        }
+        .left{
+            left: 200px;
+        }
+        .right{
+            left: 455px;
+        }
+
+        .box #x:checked ~ img{
+            transform: translateX(250px);
+        }
+
+        .box #y:checked ~ img{
+            transform: translateX(-250px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <label for="x" class="left">X</label>
+        <input type="checkbox" id="x">
+        <input type="checkbox" id="y">
+        <img src="../web/images/1.jpg" alt="">
+        <img src="../web/images/12.jpg" alt="">
+        <img src="../web/images/11.jpg" alt="">
+        <label for="y" class="right">Y</label>
+        
+    </div>
+</body>
+</html>

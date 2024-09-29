@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+    :root{
+        --my-color:red;
+        --my-second-color:cyan;
+    }
+  
+        ul li:first-child{
+            /* color: blue; */
+
+        }
+        ul li:last-child{
+            /* color: brown; */
+/
+        }
+        ul li:nth-child(odd){
+            /* color: red; */
+        }
+        ul li:nth-child(even){
+            /* color: blue; */
+        }
+        ul li:nth-last-child(2n){
+            /* color: red; */
+        }
+        div b:nth-last-of-type(1){
+            /* color: red; */
+        }
+        div p:only-of-type{
+            /* color: rgb(226, 43, 202); */
+        }
+div p:first-of-type{
+    /* color: red ; */
+}
+div p:last-of-type{
+    /* color: blue; */
+}
+div:empty{
+    border: 2px solid red;
+    height: 50px;
+    width: 600px;
+}
+div:not(:empty){
+    /* color: rgb(255, 0, 170); */
+}
+ul li:lang(english){
+    /* color: red; */
+}
+p:target{
+ /* background-color: rgb(46, 179, 231); */
+}
+div p{
+    /* border: 2px solid red; */
+}
+div p{
+    /* background-color:lightcoral; */
+}
+body{
+    /* background-color: rgb(8, 151, 151); */
+}
+body{
+    /* color: aliceblue; */
+}
+input:focus{
+    background-color: aqua;
+}   
+
+input:checked{
+    /* box-shadow: 2px 2px 3px red; */
+    /* accent-color: cyan; */
+
+}
+
+input:disabled{
+    /* background-color: red; */
+}
+
+input:enabled{
+    /* background-color: red; */
+}
+
+input:required{
+    /* background-color: red; */
+}
+input:optional{
+    /* background-color: red; */
+}
+
+input:in-range{
+    /* background-color: greenyellow; */
+}
+
+input:out-of-range{
+    /* background-color: orangered; */
+}
+
+input:read-only{
+    /* background-color: red; */
+}
+
+input:read-write{
+    /* background-color: red; */
+}
+
+input:valid{
+    /* background-color: blueviolet; */
+}
+    
+input:invalid{
+    /* background-color: red; */
+}
+input:default{
+    /* outline: 3px solid red; */
+}
+
+
+p{
+    /* color: var(--my-second-color); */
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, odio odit eos minus reprehenderit modi eum tempore magni ratione exercitationem enim, sunt aperiam asperiores reiciendis fuga nesciunt mollitia cum vitae.
+    </div>
+<ul>
+    <li lang="english">1</li>
+    <li lang="hindi">2</li>
+    <li lang="franch">3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <div>
+        <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quis dolor beatae molestiae ullam rerum alias minus similique perspiciatis, animi nisi magnam laboriosam maxime, tempora numquam delectus ipsa eligendi reprehenderit!</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam quibusdam rerum a autem optio atque obcaecati. Odio cupiditate incidunt similique quam amet, nulla quaerat corporis qui aliquam, modi minima.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod voluptate sit aliquid dicta, non officiis ut. Accusantium, facilis ab doloribus impedit corrupti veniam in consequatur, culpa illo soluta, ea dolorem!</p>
+
+    </div>
+    <div class="new">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio autem voluptas architecto numquam modi quisquam delectus magni, perspiciatis fugit, repellendus et nostrum facilis nulla temporibus corporis, animi obcaecati expedita!Lorem</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur iste perspiciatis pariatur ut adipisci error voluptates, commodi quam a repellendus alias repudiandae mollitia deserunt molestiae, dolorem dolore inventore nam.
+      </p>
+    </div>
+    <div></div>
+    <a href="#english">English</a>
+    <a href="#hindi">Hindi</a>
+    <a href="#franch">franch</a>
+    <p id="english">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellat explicabo voluptates odio dolorem accusantium consectetur recusandae, ratione aspernatur nisi, blanditiis doloremque? Est, magni? Atque dolore reiciendis consectetur aliquam earum.</p>
+    <p id="hindi">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vel illum, recusandae, enim officiis ipsa quo magnam ea nobis, expedita asperiores dolorum ex vero quae perspiciatis inventore architecto veritatis accusamus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sit vero laudantium? At ad beatae nihil fugiat! Ea ad perferendis fuga tempore fugiat modi architecto, dolorem quasi sed magni delectus.
+    </p>
+    <p id="franch">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus sunt esse natus corporis maxime eveniet enim architecto laborum aliquam dolore quia obcaecati, sint fugiat dolorem saepe. Veritatis nisi magni sequi!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, voluptas iure labore ab nulla unde reiciendis nihil praesentium rem commodi neque hic! Voluptatem dignissimos fuga, totam reprehenderit possimus unde libero!
+    </p>
+</ul>    
+
+
+
+<form>
+    <label>First Name :</label>
+    <input type="text" disabled>
+
+    <br> <br>
+
+    <label>Last Name :</label>
+    <input type="text" required readonly>
+
+    <br><br>
+
+    <label>Gender :</label>
+    <label>Male</label>
+    <input type="radio">
+    <label>Female</label>
+    <input type="radio">
+
+    <br><br>
+
+    <label>DOB :</label>
+    <input type="date">
+
+    <br><br>
+
+    <label>Phone :</label>
+    <input type="number" min="10" max="20">
+
+    <br><br>
+
+    <label>Email :</label>
+    <input type="email">
+
+    <br><br>
+
+    <label>Password :</label>
+    <input type="password">
+
+    <br><br>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox" checked>
+<input type="checkbox">
+<input type="checkbox">
+<input type="checkbox">
+
+
+    <br><br>
+    <input type="submit" value="Signup">
+    <input type="reset">
+
+    
+</form>
+
+
+</body>
+</html>

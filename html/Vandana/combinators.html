@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p{
+            /* color: red; */
+        }
+
+        .box > p{
+            /* color: red; */
+        }
+
+        .box + p{
+            /* color: red; */
+        }
+
+        .box ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis exercitationem laudantium alias deserunt molestias eum animi et quia fugit excepturi porro obcaecati sint, modi reprehenderit at provident rerum architecto? Nulla.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat suscipit odit ducimus ad dolor veniam, ab aut, necessitatibus eum quibusdam quas tempore. Accusamus labore ut ad sed, perferendis ipsam alias?</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore et voluptas beatae incidunt vel consequuntur, commodi deserunt laboriosam natus facilis obcaecati numquam cupiditate molestiae maxime ratione quae magnam dolor quod!</b>
+
+        <div class="child">
+            <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias nesciunt dolor, rerum dolores veniam praesentium consectetur commodi reprehenderit quos tenetur dicta eaque laborum expedita, quas explicabo! Libero, amet. Mollitia!</b>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, assumenda necessitatibus! Unde sit, doloremque debitis saepe laboriosam pariatur quisquam eveniet commodi voluptate itaque minus consequatur quibusdam asperiores velit, accusantium placeat.</p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus inventore, laudantium veniam dolor dolores sed eius? Consectetur saepe magni necessitatibus nemo nam sequi porro nihil ullam, minus autem. Iste.</b>
+        </div>
+    </div>
+    <p>Paragraph</p>
+    <p>Paragraph</p>
+    <b>Bold</b>
+</body>
+</html>

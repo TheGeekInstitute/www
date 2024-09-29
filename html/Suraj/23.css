@@ -1,0 +1,8 @@
+.main{
+    background-color:red;
+
+}
+.main {
+    background-image: -webkit-image-set(red);
+}
+div

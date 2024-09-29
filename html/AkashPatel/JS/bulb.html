@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+        }
+
+        .circle{
+            border-radius: 50%;
+            background-color: rebeccapurple;
+        }
+    </style>
+
+</head>
+<body>
+    <button onclick="off()">Off</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+    <button onclick="on()">On</button>
+    
+    
+    
+    <div class="box"></div>
+
+    <button onclick="circle()">Circle</button>
+    
+    <script>
+
+        function circle(){
+            document.querySelector(".box").classList.toggle("circle");
+        }
+
+
+        function off(){
+            document.getElementsByTagName("img")[0].setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif");
+
+        }
+
+        function on(){
+            document.getElementsByTagName("img")[0].setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif");
+        }
+
+
+    </script>
+</body>
+</html>

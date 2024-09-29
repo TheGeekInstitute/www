@@ -1,0 +1,7 @@
+$primary-color:green;
+$main-color:black;
+
+
+@mixin new-change-color($color){
+    color: $color;
+}

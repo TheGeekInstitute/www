@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .nav{
+            background-color: black;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav a{
+            color: white;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        .nav a:hover{
+            border-bottom: 2px solid white;
+           
+        }
+        .login{
+            color: white;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: linear 0.3s alternate;
+            font-family: cursive;
+        }
+        .login:hover{
+            background-color: gray;
+        
+        }
+        .Signup{
+            border: 2px solid none;
+            background-color: rgb(0, 119, 255);
+            padding: 10px;
+            color: white;
+            font-family: cursive;
+            border-radius: 5px;
+        }
+        .log2{
+            border: 2px solid black;
+            width: 200px;
+            padding: 15px;
+            font-family: cursive;
+            text-align: center;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+        .front h1{
+            text-align: center;
+            font-family: cursive;
+            
+        } 
+        .front{
+            text-align: center;
+        }
+        .front p{
+            text-align: center;
+            font-family: cursive;
+            margin-top: 25px;
+        }
+        .front input{
+            width: 800px;
+            padding-left: 20px;
+            font-family: cursive;
+            font-size: 25px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        .mid {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .mid b{
+           font-size: 15px;
+            font-family: cursive;
+            font-weight: 100;
+            
+        }
+        
+        .mid1:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+            
+
+        }
+        .mid2:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+
+        }
+        .mid3:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+
+        }
+        .mid4:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+            
+
+        }
+        .mid5:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+            
+
+        }
+        .mid6:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+
+            
+
+        }
+        
+        .mid7:hover{ 
+            transform: scale(1.1);
+            border-bottom: 2px solid rgb(15, 15, 15);
+            
+
+        }
+        
+        .mid1{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+        .mid2{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+        .mid3{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+        .mid4{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+
+        .mid5{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        } .mid6{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+        .mid7{
+            border: 2px solid none;
+            margin-left: 50px;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(8, 190, 181, 0.986);
+            transition: all 0.3s linear;
+            cursor: pointer;
+
+        }
+        .frontpage{
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190617/ourmid/pngtree-blue-technology-e-commerce-learning-education-business-poster-banner-image_123753.jpg);
+            height: 100vh;
+        }
+        .mid8{
+          /* margin-top: 100px; */
+          display: flex;
+          text-align: center;
+          /* align-items: center; */
+          justify-content: space-evenly;
+        }
+        .mid8 a{
+            border: 2px solid none;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: cursive;
+            background-color: darkturquoise;
+            /* transition: all 0.3s linear; */
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+           
+            
+        }
+        .mid8 a i{
+            font-size: 35px;
+
+        }
+        .mid8 b{
+            border: 2px solid none;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            background-color: rgb(30, 33, 226);
+            /* transition: all 0.3s linear; */
+            font-family: cursive;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 300px;
+            font-weight: 200;
+
+            
+        }
+        /* .mid8 a:hover{
+            transform: scale(1.1);
+
+        }
+        .mid8 b:hover{
+            transform: scale(1.1);
+        } */
+        /* .secondpage{
+            background-image: url(https://img.freepik.com/free-vector/disruptive-education-globe-background-vector-geography-digital-remix_53876-140586.jpg?size=626&ext=jpg&ga=GA1.1.1887574231.1711670400&semt=ais);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        } */
+        .secondpage{
+            display: flex;
+            justify-content: space-evenly;  
+
+           
+        }
+        .thirdpage{
+            display: flex;
+            justify-content: space-evenly;  
+
+           
+        }
+        .forthpage{
+            display: flex;
+            justify-content: space-evenly;  
+
+           
+        }
+        .fifthpage{
+            display: flex;
+            justify-content: space-evenly;  
+
+           
+        }
+        .secondpage img{
+            height: 350px;
+            border-radius: 10px;
+            width: 380px;
+             /* display:inline-block ; */
+            
+
+        }
+        .thirdpage img{
+            height: 350px;
+            border-radius: 10px;
+            width: 380px;
+             /* display:inline-block ; */
+            
+
+        }
+        .fifthpage img{
+            height: 350px;
+            border-radius: 10px;
+            width: 380px;
+             /* display:inline-block ; */
+            
+
+        }
+        .forthpage img{
+            height: 350px;
+            border-radius: 10px;
+            width: 380px;
+             /* display:inline-block ; */
+            
+
+        }
+        .page1 a img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            
+            
+        }
+        .page1{
+           
+        }
+
+        .alll img{
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="frontpage">
+        <div class="nav">
+        <ul class="logo">
+
+        </ul>
+        <a href="">Product</a>
+        <a href="">Marketplace</a>
+        <a href="">Learn </a>
+        <a href="">Resources</a>
+
+        <ul class="login">Log in</ul>
+        <ul class="Signup">Get Started</ul>
+        
+    </div>
+    <div class="front">
+        <ul class="log2">Made By Master-Mind</ul>
+        <h1>Discover Inspiring Website built by The Master-Mind Community </h1>
+        <p>Browse,clone,and customize the latest website #MadeinMaster-Mind.<a href="">Looking for Premium 
+        Templates?</a>  </p>
+        <input type="text" placeholder="Search....">
+
+    </div>
+    <div class="mid">
+        <div class="mid1"> <b>Animation</b></div>
+        <div class="mid2"><b>Button animation</b></div>
+        <div class="mid3"><b>Svg Animation</b></div>
+        <div class="mid4"><b>Loop Animation</b></div>
+        <div class="mid5"><b>Text Animation</b></div>
+        <div class="mid6"><b>Image Animation</b></div>
+        <div class="mid7">   <b>Show More</b></div>
+       
+        
+        
+        
+        
+        
+     
+    </div>
+   
+    
+    </div>
+    <div class="mid8">
+        <a href="">Most Liked <i class="fa-solid fa-angle-down"></i> </a>
+        <a href=""><i class="fa-solid fa-toggle-off"></i>Cloneable sites only <i class="fa-regular fa-circle-question"></i></a>
+        <b> <i class="fa-solid fa-plus"></i> Showcase your site</b>
+    </div>
+    <!-- <div class="alll"> -->
+        <div class="secondpage">
+
+    
+    <div class="page1">
+        <img src="https://templatemag.com/wp-content/uploads/pro-business-website-template.jpg" alt="">
+        <a href=""><img src="https://avatars.sched.co/8/90/1938608/avatar.jpg.320x320px.jpg?002" alt=""></a>
+        <h3></h3>
+        <i></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-comment"></i>
+    </div>
+    <div class="page2">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/express-free-template-353x278.jpg" alt="">
+        
+    </div>
+    <div class="page3">
+        <img src="https://cdn.dribbble.com/userupload/11621746/file/original-5551bc6b3768c3c42c33d5166e064a59.jpg?resize=400x0" alt="">
+        
+    </div>
+
+    </div>
+    <div class="thirdpage">
+        <div class="page4">
+        
+        <img src="https://assets-global.website-files.com/5e593fb060cf877cf875dd1f/649c5cc5847140c4e7db0431_thumbnail.png" alt="">
+    </div>
+    <div class="page5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwTYz4Y413Sy8P6AhBAANYGmpY3GqZdc9kvJgZWGKhA06GSOYYeZEsuLyevDts0YvIzY&usqp=CAU" alt="">
+        
+    </div>
+    <div class="page6">
+      
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/charitee-colorlib-template-408x322.jpg" alt="">
+    </div>
+    </div>
+    <div class="forthpage">
+
+        <div class="page7">
+       
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/coffee-free-template-1-408x322.jpg" alt="">
+    </div>
+    <div class="page8">
+      
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1-CVdVMuGcTf7-2sk4lV29a0IVODpGddGVgFVQvuZlFcmINd3mFL5XV1j4uPHuXXJwE&usqp=CAU" alt="">
+    </div>
+    <div class="page9">
+        <img src="https://images-wixmp-530a50041672c69d335ba4cf.wixmp.com/templates/image/0d373b57e250525e2556015c5ad6fe84f66f2f632357a97c5de6e73043c0e0d51628682335902.jpg" alt="">
+        
+    </div>
+    <br>
+    <div class="fifthpage">
+        <div class="page10">
+        <img src="https://assets.materialup.com/uploads/4639fbbe-0f37-4696-a758-f702e6e75330/preview.png" alt="">
+        
+    </div>
+    <div class="page11">
+        <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/cool-website-template-ideas.jpg" alt="">
+        
+    </div>
+    <div class="page12">
+        <img src="https://marketplace.canva.com/EAEvfjdIStk/1/0/1600w/canva-dark-blue-simple-dark-tech-and-gaming-bio-link-website-PIa07NDoI20.jpg" alt="">
+        
+    </div>
+
+    <!-- </div> -->
+
+   
+    
+    
+        
+    </div>
+    </div>
+    
+    
+</body>
+</html>

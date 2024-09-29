@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Overlay</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            background-image: url("https://media.istockphoto.com/id/996078816/photo/blue-background.jpg?b=1&s=612x612&w=0&k=20&c=tp-7y4ReEbCYtHjY1QN5UQIzUSjxAn-A9kcFNLDW3k0=");
+            position: absolute;
+            height: 50vh;
+            width: 20vw;
+            display: ;
+            /* background: rgb(0, 162, 255); */
+           right:calc(100% - 100vh);
+            top: calc(100% - 75vh);
+            border-radius: 15px;
+            backdrop-filter: blur(3px);
+        }
+        .box img{
+            height: 20vh;
+            width: 10vw;
+            border-radius: 10px;
+            margin: cal;
+            position: absolute;
+            left:calc(100% - 26.5vh) ;
+            top: calc(100% - 40vh);
+
+        }
+        .items{
+            text-align: center;
+            transition: transform .7s linear;
+            overflow: hidden;
+        }
+        .items:hover{
+            background-blend-mode: overlay;
+        }
+        .overlay{
+            /* border: 2px solid blue; */
+            height:50vh;
+           width: 20vw;
+            /* padding-top:3vh; */
+            transform: translateY(40vh);
+            transition: transform .3s;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(2px);
+
+        }
+        .overlay h1{
+            padding: 21px 0;
+            font-size: 40px;
+            border-bottom: 2px solid white;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190622/ourmid/pngtree-yellow-geometric-flattened-texture-banner-background-image_206934.jpg");
+            background-image: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            text-shadow: 2px 2px 2px  black;
+
+        }
+        .image img{
+            margin: 30px 15px;
+            height: 12vh;
+            width: 8vw;
+            border-radius: 501%;
+            box-shadow: 2px 2px 2px solid black;
+        }
+        .overlay p{
+            margin-top: 130px;
+            font-size: 19px;
+            font-family: cursive;
+
+        }
+        .items:hover  .overlay{
+            background-color: rgba(48, 48, 48, 0.534);
+            transform: translateY(0vh);
+        } 
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://images.macmerise.com/product/glass-case/ipc11mg4theamazingspiderman.jpg" alt="">
+        <div class="items">
+            <div class="overlay">
+            <h1>i Phone-X</h1>
+            <div class="image">
+                <img src="https://png.pngtree.com/template/20210107/ourmid/pngtree-natural-eco-electronic-logo-image_471899.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, debitis similique. Lorem ipsum, dolor sit amet   </p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

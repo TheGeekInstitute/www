@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #loader{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            display: none;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    
+<img src="../../img.gif" alt="" id="loader">
+
+    <div class="box">
+
+    </div>
+
+    <button onclick="show()">Show</button>
+
+
+    <script>
+        let box = document.querySelector(".box");
+        
+
+        function show(){
+            let xhr = new XMLHttpRequest();
+        // xhr.onload = function (){
+        //     console.log(this.responseText);
+        // }
+        xhr.onreadystatechange = function (){
+           if(this.readyState == 4 && this.status ==200){
+            document.querySelector("#loader").style.display="none"
+            box.innerHTML = this.responseText
+           }
+           else{
+                document.querySelector("#loader").style.display="block"
+           }
+        }
+        xhr.open("GET","data.php",true);
+        xhr.send();
+        }
+
+    </script>
+
+</body>
+</html>

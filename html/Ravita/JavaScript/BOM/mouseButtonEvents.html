@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, deserunt molestiae veniam id fugit mollitia facere inventore odit odio et vitae magnam ea tempora commodi! Sapiente pariatur perferendis fuga enim!</p>
+
+
+
+    <script>
+        document.body.addEventListener("mousedown",(e)=>{
+            // console.log(e.button)
+
+            if(e.button==0){
+                document.body.style.backgroundColor="pink"
+            }
+            else if(e.button==1){
+                document.body.style.backgroundColor="lightgreen"
+            }
+            else if(e.button==2){
+                document.body.style.backgroundColor="skyblue"
+            }
+            else{
+                document.body.style.backgroundColor="white"
+            }
+        })
+    </script>
+
+
+</body>
+</html>

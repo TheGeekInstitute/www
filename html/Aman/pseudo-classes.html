@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pseudo Classes</title>
+   <style>
+       ul li{
+           font-size: 20px;
+           font-weight: 900;
+           /* border: 2px solid red ; */
+       }
+
+       ul li:first-child{
+           /* color: red; */
+       }
+
+       ul li:last-child{
+           /* color: red; */
+       }
+
+       ul li:nth-child(3n){
+           /* color: red; */
+       }
+
+       ul li:nth-last-child(2n){
+           /* color: red; */
+       }
+
+       div p:first-of-type{
+           /* color: red; */
+       }
+
+       div p:last-of-type{
+           /* color: red; */
+       }
+
+       div p:nth-of-type(2n){
+           /* color: red; */
+       }
+
+       div p:nth-last-of-type(2n){
+           /* color: red; */
+       }
+
+       div p:only-child{
+           color: red;
+       }
+
+       div:empty{
+           border: 2px solid red;
+           height: 100px;
+       }
+       div:not(:empty){
+           border: 2px solid green;
+       }
+   </style>
+</head>
+<body>
+   <ul>
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+       <li>9</li>
+       <li>10</li>
+   </ul>
+
+
+
+   <div>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore eius deleniti eos animi earum illum praesentium cum accusantium dolorem, iusto explicabo tenetur nihil ratione enim doloremque itaque necessitatibus aut rem?</p>
+       <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum et nobis dignissimos asperiores quam natus unde officia commodi officiis hic incidunt magnam a, soluta similique fuga, inventore illum, dolore quos!</b>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias explicabo laboriosam, dignissimos accusantium voluptatum aperiam tempore dicta tempora officiis numquam atque illum odio iure quia dolorum, asperiores labore velit recusandae?</p>
+       <div>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, praesentium perspiciatis dignissimos corrupti dolorum sit at odio sapiente nisi vero inventore quo harum, debitis distinctio optio, officiis qui aliquam. In!</p>
+           <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cum fugit at mollitia tempore quibusdam accusamus officia ipsa aperiam dolorum eligendi ad ab alias reiciendis maxime maiores, provident praesentium quae.</b>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere optio ratione illum dolores natus corrupti! Autem accusamus, quo vero odio vel dolor natus consequatur officia, exercitationem fugiat doloremque? Soluta, excepturi?</p>
+       </div>
+   </div>
+
+   <div>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laudantium quasi cum laboriosam ex suscipit. Temporibus esse numquam dicta exercitationem quas eos rerum maxime odit, provident quod consectetur architecto repellendus.</p>
+
+   </div>
+
+   <div></div>
+</body>
+</html>

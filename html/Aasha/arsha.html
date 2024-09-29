@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        nav{
+            background-color: #36517C;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            height: 60px;
+        }
+        nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav .links li a{
+            color: white;
+            margin: 0 10px;
+        }
+        nav .links li:last-child a{
+            border: 2px solid cyan;
+            border-radius: 100px;
+            padding: 7px 12px;
+        }
+
+        main{
+            background-color: #36517C;
+            display:flex;
+            justify-content: center;
+            align-items: left;
+            height: 75vh;
+        }
+
+        main .hero-left{
+            /* text-align: center; */
+            color: white;
+            width: 55vw;
+            height: 45vh;
+            margin: 10px;
+            /* border: 1px solid red; */
+
+        }
+
+        main .hero-left h1{
+            width: 23rem;
+            /* border: 1px solid red; */
+            font-size: 38px;
+            margin: 5rem 5rem 10px 5rem;
+            /* text-align: left; */
+        }
+        main .hero-left p{
+            margin: 0rem 0rem 10px 5rem;
+            width: 23rem;
+            /* border: 1px solid red; */
+            font-size: larger;
+
+        }
+        main .hero-right{
+            width: 35vw;
+            height: 45vh;
+            margin: 10px;
+            /* border: 1px solid red; */
+
+        }
+        main .hero-right img{
+            height: 30vw;
+            width: 65vh;
+            margin: 70px;
+        }
+        main .hero-left .btn{
+            margin: 25px 0rem 10px 5rem;
+            width: 23rem;
+        }
+
+        main .hero-left .btn a:nth-child(1){
+            color: white;
+            background-color: cyan;
+            padding: 10px 1rem;
+            border-radius: 1000px;
+            font-weight: 900;
+        }
+
+
+        main .hero-left .btn a:nth-child(2){
+            color: white;
+            /* border: 2px solid cyan; */
+            /* background-color: cyan; */
+            padding: 10px 1rem;
+            border-radius: 1000px;
+            font-weight: 900;
+        }
+
+        .brands{
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 5rem;
+        }
+
+        .brands img{
+            height: 2.2rem;
+            filter: grayscale(1);
+            transition: all .5s;
+        }
+
+        .brands img:hover{
+            filter: grayscale(0);
+            transform: scale(1.2);
+        }
+        .about{
+            /* border: 1px solid red; */
+            height: 10rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: rgb(16, 16, 57);
+            
+
+        }
+        .contact{
+            /* border: 1px solid red; */
+            height: 25rem;
+            display: flex;
+
+            
+        }
+        .left, .right{
+            /* border: 2px solid red; */
+            height: 47vh;
+            width: 80%;
+
+
+        }
+        .left p{
+        font-size: 20px;
+        margin-top: 20px;
+        }
+        .left ul{
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: 20px;
+        }
+        .right h1{
+            /* border: 1px solid red; */
+            font-size: 30px;
+            margin-left: 100px;
+        }
+        .right p{
+            font-size: 15px;
+            margin-top: 20px;
+            margin-left: 100px;
+
+        }
+        .right a{
+            border: 1px solid rgb(47, 47, 216);
+            background-color: white;
+            color: rgb(65, 65, 207);
+            margin: 20px;
+            display: inline-block;
+            padding: 0 25px;
+            padding-top: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .home{
+            /* border: 1px solid red; */
+            height: 80vh;
+            width: 98vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box{
+          /* border: 1px solid red; */
+          height: 60vh;
+          width: 50vw;
+          margin: 10px;
+        }
+
+        .box h1{
+            font-size: xlarger;
+            color: rgb(7, 7, 53);
+            
+        }
+
+        .box p{
+            font-size: large;
+            
+
+        }
+        .box h2{
+            font-size: xlarger;
+            color: rgb(0, 174, 255);
+            background-color: rgb(247, 234, 234);
+        }
+       
+
+        .box h4{
+          font-size: x-large;
+          
+        }
+        
+        
+        .box h5{
+            font-size: x-large;
+        }
+        .grad img{
+            /* border: 1px solid red; */
+            height: 60vh;
+            width: 50vw;
+            margin-top: -50px;
+
+        }
+     
+        input[type="checkbox"]{
+            display: none;
+        }
+      
+       .accordion{
+        /* border: 1px solid red; */
+        background-color: rgb(212, 229, 230);
+        margin: 5px 0;
+       }
+
+       .accordion label{
+        user-select: none;
+        font-size: larger;
+        font-weight: 900;
+        padding: 0px 10px;
+        display: block;
+        /* background-color: beige; */
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+       }
+       .accordion label i{
+        margin-left: 190px;
+        transition: all .3s;
+       }
+       .accordion label span{
+        color: cyan;
+        margin: 0 5px;
+       }
+
+       .accordion p{
+        padding: 0 10px;
+        display: none;
+       }
+
+       .accordion label:hover{
+        color: rgb(3, 106, 106);
+       }
+       
+
+       #btn:checked ~ label i{
+        transform: rotate(180deg);
+       }
+
+       #btn:checked ~ p{
+        display: block;
+       }
+
+
+       #btn1:checked ~ label i{
+        transform: rotate(180deg);
+       }
+
+       #btn1:checked ~ p{
+        display: block;
+       }
+
+       #btn2:checked ~ label i{
+        transform: rotate(180deg);
+       }
+
+       #btn2:checked ~ p{
+        display: block;
+       }
+
+       .main{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+        width: 98vw;
+       }
+       .left img{
+        /* border: 1px solid red; */
+        height: 60vh;
+        width: 40vw;
+        margin-top: -46px;
+       }
+       .right{
+        /* border: 1px solid red; */
+        height: 60vh;
+        width: 40vw;
+       }
+       .aaa{
+        /* border: 1px solid red; */
+        display: block;
+        height: 10px;
+        width: 70%;
+      
+       }
+       .one,
+       .two,
+       .three,
+       .four{
+      
+        /* border: 1px solid red; */
+        display: block;
+        height: 10px;
+        width: 70%;
+        background-color: #36517C;
+        margin: 10px 0;
+       }
+       .one::after{
+        content: '';
+        display: block;
+        height: 10px;
+        width: 0;
+        background-color: red;
+        animation: fill-70 2s linear 0s 1 
+        alternate forwards ;
+       }
+       .two::after{
+        content: '';
+        display: block;
+        height: 10px;
+        width: 0;
+        background-color: red;
+        animation: fill-50 2s linear 0s 1 
+        alternate forwards ;
+       }
+
+       .three::after{
+        content: '';
+        display: block;
+        height: 10px;
+        width: 0;
+        background-color: red;
+        animation: fill-30  2s linear 0s 1 
+        alternate forwards ;
+       }
+
+       .four::after{
+        content: '';
+        display: block;
+        height: 10px;
+        width: 0;
+        background-color: red;
+        animation: fill-90 2s linear 0s 1 
+        alternate forwards ;
+       }
+
+       @keyframes fill-70{
+        from{
+            width: 0;
+        }
+        to{
+            width: 70%;
+        }
+       }
+
+       @keyframes fill-50{
+        from{
+            width: 0;
+        }
+        to{
+            width: 50%;
+        }
+       }
+
+       @keyframes fill-30{
+        from{
+            width: 0;
+        }
+        to{
+            width: 40%;
+        }
+       }
+       @keyframes fill-90{
+        from{
+            width: 0;
+        }
+        to{
+            width: 90%;
+        }
+       }
+
+       .aaa{
+        /* border: 1px solid red; */
+        height: 3rem;
+        margin-top: 150px;
+        margin-right: 9rem;
+        margin-left: -220px;
+       
+       }
+       .nav{
+        /* border: 1px solid red; */
+        text-align: center;
+        
+       }
+       .email{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap:wrap;
+        /* height: 60vh; */
+        /* width: 100vw; */
+        
+        
+       }
+      .email i{
+        
+        position: relative;
+        margin-right: 20px;
+        color: rgb(16, 100, 148);
+        font-size: x-large;
+        margin: 20px;
+      }
+      .email h2{
+        text-align: center;
+      }
+      .email h2:hover{
+        color:  rgb(16, 100, 148); 
+        /* font-size: xx-large; */
+        
+      }
+
+      .email p{
+        margin:10px;
+        font-size: large;
+        text-align: center;
+      }
+     .box1,.box2,.box3,.box4   {
+        /* border: 1px solid red; */
+        height:250px ;
+        width:300px ;
+        margin: 10px;
+        background-color: rgba(236, 217, 217, 0.884);
+        align-items: center;
+     }
+
+     .box h2{
+        background-color: transparent;
+     }
+     
+     .box{
+        transition: all .3s;
+     }
+
+     .box:hover{
+        transform: translateY(-8px);
+        box-shadow: 0px 0px 5px grey;
+     }
+
+     .chaild{
+        border: 1px solid white;
+       display:flex;
+       justify-content: space-evenly;
+        height: 20rem;
+        align-items: center;
+        background-image: url(../web/images/12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+       
+     }
+     .grad1{
+        padding-top: 4rem;
+        height: 10rem;
+        width: 100vw;
+        color: white;
+        font-size: large;
+        margin-bottom: 100px;
+        /* border: 1px solid white; */
+        margin-left: 130px;
+     }
+     .grad1 p{
+        /* border: 1px solid white; */
+        width: 500px;
+        
+     }
+     .grad2 a{
+        border: 2px solid white;
+        border-radius: 500000px;
+        background-color:rgb(17, 96, 160);
+        color: aliceblue;
+        /* margin-right: 50px; */
+        padding: 10px;
+        display: block;
+        width: 150px;
+        margin-right: 90px;   
+     }
+     .contact1{
+        /* border: 1px solid red; */
+        height:20rem ;
+        /* width: 100vw; */
+     }
+     .fast{
+        text-align: center;
+        height: 70px;
+        
+     }
+     .fast h2{
+        color: rgb(8, 8, 78); 
+        font-size: xx-large; 
+     }
+     .fast p{
+        font-size: larger;
+     }
+     .last{
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        
+        
+     }
+     .last a{
+        margin-left: 60px;
+        /* border: 1px solid red; */
+        padding: 6px;
+        border-radius: 50px;
+        width:70px ;
+        color: black;
+        text-align: center;
+        font-size: larger;
+        
+     }
+     .last a:hover{
+        background-color: rgb(14, 89, 139);
+        color: white;
+     }
+     .app .img{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+     }
+     .app img{
+        /* border: 1px solid red; */
+        height: 300px;
+        width: 300px;
+
+     
+     }
+     .team{
+         border: 1px solid red;
+         text-align: center;
+         font-size: larger;
+             
+    }
+
+
+     .teams{
+        background-color: rgb(202, 202, 202);
+        padding: 5rem 0;
+        text-align:center;
+    }
+
+     .teams h1{
+    padding-bottom: 1rem; 
+   
+     }
+
+     .teams h1::before{
+        content: '';
+        position: relative;
+        background-color: grey;
+        display: block;
+        width: 10rem;
+        height: 1px;
+        top: 2.3rem;
+        left: 47rem;
+     }
+     .teams h1::after{
+        content: '';
+        position: relative;
+        background-color: cyan;
+        display: block;
+        width: 2.5rem;
+        height: 4px;
+        z-index: 9999;
+        top: -2px;
+        left: 50rem;
+     }
+
+
+     .teams .card .left img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+     }
+
+     .teams .cards .card{
+        background-color: white;
+        width: 30rem;
+        height: 15rem;
+        display: flex;
+     }
+      
+     .teams .cards .card .left{
+         width: 10rem;
+         height: 15rem;
+        }
+        
+        .teams .cards .card .right{
+            width: 30rem;
+            height: 15rem;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+     .teams .cards .card h3{
+        border-bottom: 1px solid grey;
+     }
+     .teams .cards .card p{
+         position: relative;
+         left: -6rem;
+         right: 0;
+        }
+        
+        .teams .cards .card .links{
+         border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+     }
+     .teams .cards .card .links a{
+        border: none;
+        background-color: transparent;
+        display: inline;
+     }
+
+         
+     
+     
+
+
+    
+             
+     
+     
+
+   
+
+
+ 
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <h1>ARSHA</h1>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">DropDown</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero-left">
+            <h1>Better Solutions For Your Business</h1>
+            <p>We are team of talanted designers making wesbite with Bootstrap</p>
+
+            <div class="btn">
+                <a href="#">Get Started</a>
+                <a href="#"><i class="fa-regular fa-circle-play"></i>  Watch Videos</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="">
+        </div>
+    </main>
+    <div class="brands">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" alt="">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-3.png" alt="">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" alt="">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-5.png" alt="">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="">
+    </div>
+
+    <div class="about">
+        <h1>ABOUT US</h1>
+    </div>
+
+
+  <div class="contact">
+    <div class="left">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore illo qui quae quas at cum recusandae reprehenderit ea ullam libero sapiente, nisi magnam voluptate</p>
+        <ul>
+            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore culpa iste placeat porro, exercitationem mollitia inventore provident? Numquam esse sint velit neque accusamus praesentium natus, quia a similique illo!</p>
+        <a href="#">learn more</a>
+    </div>
+
+  </div>
+  <div class="home">
+      <div class="box">
+        <h1>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliqua. D</p>
+
+
+        <div class="accordion">
+            <input type="checkbox" name="" id="btn">
+            <label for="btn"><span>01</span>Non consectetur a erat nam at lectus urna duis?
+                <i class="fa-solid fa-angle-down"></i></h2>
+            </label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae maxime mollitia libero at quam commodi,ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  modi reprehenderit repellendus nemo labore</p>
+        </div>
+      
+      
+        <div class="accordion">
+            <input type="checkbox" name="" id="btn1">
+            <label for="btn1"><span>02</span>Non consectetur a erat nam at lectus urna duis?
+                <i class="fa-solid fa-angle-down"></i></h2>
+            </label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quae maxime mollitia libero at quam commodi, modi reprehenderit repellendus nemo labore</p>
+        </div>
+      
+
+        <div class="accordion">
+            <input type="checkbox" name="" id="btn2">
+            <label for="btn2"><span>03</span>Non consectetur a erat nam at lectus urna duis?
+                <i class="fa-solid fa-angle-down"></i></h2>
+            </label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae maxime mollitia libero at quam commodi, modi reprehenderit repellendus nemo labore</p>
+        </div>
+      
+ 
+      </div>
+  
+
+  <div class="grad">
+    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" alt="">
+   
+    
+  </div>
+</div> 
+  <div class="main">
+             <div class="left">
+             <img src="https://themewagon.github.io/arsha/assets/img/skills.png" alt="">
+       </div>
+       <div class="right">
+        <h1>Voluptatem dignissimos provident quasi corporis voluptates</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic commodi pariatur aliquam quaerat beatae ?</p>
+       </div>
+<div class="aaa">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+</div>
+    
+    </div>
+
+    <div class="nav">
+       <h1>SERVICES</h1> 
+       <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    <div class="email">
+    <div class="box box1">
+        <i class="fa-solid fa-face-smile"></i>
+       <h2>Lorem Ipsum</h2> 
+       <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+    </div>
+
+
+    <div class="box box2">
+        <i class="fa-solid fa-face-smile"></i>
+        <h2>Sed ut perspici</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+    </div>
+
+    <div class="box box3">
+        <i class="fa-solid fa-face-smile"></i>
+        <h2>Magni Dolores</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+    </div>
+
+    <div class="box box4">
+        <i class="fa-solid fa-face-smile"></i>
+      <h2>Nemo Enim</h2>
+      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>  
+    </div>
+</div>
+
+<div class="chaild">
+<div class="grad1">
+    <h2>Call To Action</h2>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit   
+</div>
+   <div class="grad2">
+    <a href="#">Call To Action</a>
+   </div>
+</div>
+
+<div class="contact1">
+    <div class="fast">
+        <h2>PORTFOLIO</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
+    <div class="last">
+        <a href="#">All</a>
+        <a href="#">App</a>
+        <a href="#">Card</a>
+        <a href="#">Web</a>
+
+    </div>   
+</div>
+<div class="app">
+    <div class="img">
+    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-1.jpg" alt="1">
+    
+    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-2.jpg" alt="2">
+     
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-4.jpg" alt="3">
+
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-3.jpg" alt="4">
+
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-6.jpg" alt="5">
+
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-5.jpg" alt="6">
+
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-8.jpg" alt="7">
+
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-7.jpg" alt="8">
+     <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/portfolio/portfolio-9.jpg" alt="9">
+
+    </div>
+</div>
+
+
+
+
+<div class="teams">
+    <h1>TEAM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ducimus voluptas. Neque mollitia eos debitis ullam incidunt blanditiis. Labore totam voluptates laboriosam magnam eos ab cupiditate optio, culpa maxime officia.</p>
+
+<div class="cards">
+    <div class="card">
+        <div class="left">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="">
+        </div>
+        <div class="right">
+            <h3>Walter White</h3>
+            <p>Chief Executive Officer</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="links">
+                <a href="">
+                <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-camera-retro"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

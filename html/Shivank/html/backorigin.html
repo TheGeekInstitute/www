@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Origin</title>
+    <style>
+        *{
+            /* margin: 0%; */
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main{
+            /* border: 5px solid rgba(255, 0, 0, 0.37); */
+            /* padding: 100px; */
+            /* height: 270px;
+            width: 300px; */
+            margin: auto;
+            background-image: url("../../wallpapers/animals/lachlan-dempsey-black-whales.jpg");
+            /* background-size: cover; */
+            background-repeat: no-repeat;
+            /* color: white; */
+            background-origin: padding-box;
+            resize: both;
+            overflow: hidden;
+            background-color: rgba(0, 255, 179, 0.411);
+        }
+        .one{
+            background-color: rgba(177, 16, 38, 0.767);
+            /* height: 100px;
+            width: 100px; */
+        }
+
+        .one img{
+            mix-blend-mode: overlay;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus hic facere nemo autem perspiciatis culpa libero unde commodi! Possimus, debitis nemo exercitationem eos ad ratione. Fugit obcaecati beatae minus?
+        Expedita ipsum ea nostrum recusandae eaque, illo nemo dolorum sit quaerat exercitationem doloremque repellat dolor iste in perferendis placeat culpa non totam dicta, unde aliquam cumque ratione quod quis. Deleniti.</p>
+        
+    </div>
+
+    <div class="one">
+        <img src="../../web/images/11.jpg" alt="">
+    </div>
+</body>
+</html>

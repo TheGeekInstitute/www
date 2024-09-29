@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .links{
+            display: flex;
+            justify-content: space-evenly;
+            height: 70px;
+            align-items: center;
+        }
+
+        .links a{
+            width: 10rem;
+            text-align: center;
+            display: block;
+            /* border: 1px solid red; */
+            color: black;
+            font-weight: 900;
+            padding: .5rem;
+            background-color: green;
+            border-radius: 10000px;
+        }
+
+        .main{
+            /* border: 1px solid red; */
+            height: 20rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .main .box{
+            height: 100px;
+            width: 100px;
+            background-color: grey;
+            margin: 10px;
+            transition: all .3s;
+        }
+
+        .main .box:target{
+            background-color: red;
+            transform: scale(1.5);
+            /* transform: rotate(360deg); */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="#web">Website</a>
+        <a href="#c">C</a>
+        <a href="#js">JS</a>
+    </div>
+
+    <div class="main">
+        <div class="box" id="web">sdsd</div>
+        <div class="box" id="c"></div>
+        
+        <div class="box" id="js" ></div>
+    </div>
+</body>
+</html>

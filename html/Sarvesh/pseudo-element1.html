@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+        }
+
+        .new::first-letter{
+            color: blue;
+        }
+
+        .para::first-line{
+            color: blue;
+        }
+
+        .para{
+            color: red;
+            font-size: larger;
+            font-family: cursive;
+        }
+
+        .new::first-line{
+            color: darkgoldenrod;
+        }
+
+        .new{
+            color: darkred;
+            font-size: larger;
+            font-family: cursive;
+        }
+
+        ul li::marker{
+            color: red;
+        }
+
+        .new::selection{
+            color: black;
+            background-color: red;
+        }
+
+        .new{
+            user-select: all;
+        }
+
+        h1::before{
+            content: 'Mr. ';
+            color: black;
+            font-family: cursive
+        }
+
+        h1::after{
+            content: ' Khare';
+            color: blue;
+            font-family: cursive;
+        }
+
+        h1:hover::after{
+            content: " " attr
+                 (data-myattr);
+            color: orange;
+        }
+
+        input::placeholder{
+            color: red;
+            opacity: 100%;
+        }
+
+        input{
+            caret-color: green;
+        }
+
+        .abcd{
+            color: red;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore quisquam nostrum consequatur! Porro illum vero cupiditate temporibus quia harum repellendus, nesciunt aliquam tenetur nostrum sequi itaque eveniet commodi recusandae.
+    </p>
+
+    <ul>
+        <li>Sunday</li>
+        <li>Monday</li>
+        <li>Tuesday</li>
+    </ul>
+
+    <p class="new">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quia illum ipsum deleniti similique dolorum explicabo sequi enim voluptates esse ut dolor aut, quasi libero sapiente molestiae, odio facilis facere!
+    </p>
+
+    <h1 class="abcd" data-myattr="My name">Sarvesh</h1>
+
+    <input type="text"
+          placeholder="abcd">
+
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider 2</title>
+    <style>
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+.container{ border: 2px solid black;
+height:600px;
+overflow: hidden;}
+
+.container .slider{ height: 600px;
+align-items: center;
+justify-content: center;
+display: flex;
+width: 500vw;
+animation:image-slider 12s ease-in-out 0s infinite alternate;
+}
+
+.container .slider .image{ background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+color:white}
+
+.container .slider .image .containt{ border: 2px solid black;
+height: 300px;
+width: 450px;
+border-radius: 50px 5px;
+background-color: rgba(0, 0, 0, 0.411);
+backdrop-filter: blur(2px);
+text-align: center;
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+@keyframes image-slider {
+    0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+            }
+
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+            }
+
+            30%{
+                transform: translateX(-100vw);
+            }
+
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+
+            65%{
+                transform: translateX(-300vw);
+            }
+
+            70%{
+                transform: translateX(-300vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-400vw);
+            }
+
+            85%{
+                transform: translateX(-400vw);
+            }
+
+            90%{
+                transform: translateX(-400vw);
+            }
+
+            95%{
+                transform: translateX(-400vw);
+            }
+
+            100%{
+                transform: translateX(-400vw);
+            }
+
+
+
+}
+
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://th.bing.com/th/id/OIP.Z_PIeIRDajXPmZHROt-T_QHaEK?rs=1&pid=ImgDetMain);">
+            <div class="containt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium voluptatem molestiae qui accusantium quibusdam doloremque quae et, voluptatum error fuga placeat unde, quo, officiis corporis cupiditate quas sed amet.
+            </div>
+            </div>
+
+            <div class="image" style="background-image: url(../Aasha/images/2.jpeg);">
+                <div class="containt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius iure ullam aspernatur rerum, tempora ratione magnam autem quam illo in pariatur obcaecati nisi? Tenetur debitis maxime dignissimos illum nemo!
+                </div>
+                </div>
+
+                <div class="image" style="background-image: url(../Aasha/images/3.jpeg);">
+                    <div class="containt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum facilis reiciendis repellendus minima repudiandae iure aut eum quod, fugit repellat, ipsam nisi perferendis ea! Placeat fuga quis expedita a. Porro!
+                    </div>
+                    </div>
+
+                    <div class="image" style="background-image: url(../Aasha/images/4.jpeg);">
+                        <div class="containt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure placeat perspiciatis minus voluptate, quasi sequi in cum veniam molestias impedit earum saepe libero totam, sint fuga quisquam dicta magnam expedita.
+                        </div>
+                        </div>
+
+                        <div class="image" style="background-image: url(../Aasha/images/5.webp);">
+                            <div class="containt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste dicta sequi sapiente voluptatem blanditiis consectetur laboriosam deserunt voluptas quaerat consequuntur repellat ipsa, et iure culpa? Labore atque rem assumenda.
+                            </div>
+                            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

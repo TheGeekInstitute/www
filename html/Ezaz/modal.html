@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .btn{
+            display: block;
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+            text-align: center;
+            font-size: large;
+            height: 35px;
+            line-height: 35px;
+            margin: 150px auto;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all .2s ease;
+        }
+
+        .btn:hover{
+            box-shadow: 3px 3px black;
+            background-color: blue;
+        }
+
+        .container{
+            position: absolute;
+            z-index: 9999;
+
+            background-color: rgba(0, 0, 0, 0.3);
+            inset: 0;
+            display: none;
+      
+        }
+
+        .container .modal{
+            background-color: white;
+            height: 300px;
+            width: 400px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 200px);
+            border-radius: 10px;
+            overflow: hidden;
+            transform: scale(0);
+            animation: show .3s ease-in-out 0s 1 alternate forwards;
+
+        
+        }
+
+        .container .modal .heading{
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            padding: 0 10px;
+            font-size: large;
+            user-select: none;
+        }
+
+        .container .modal .heading label{
+            cursor: pointer;
+        }
+
+        .container .modal .content{
+            padding: 10px;
+        }
+
+        #btn{
+            display: none;
+        }
+
+
+        #btn:checked + .container{
+            display:block;
+        }
+
+        @keyframes show {
+            0%{
+                transform: scale(0);
+            }
+
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="btn" class="btn">Open</label>
+
+
+    <input type="checkbox" id="btn">
+
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>What is Website Development ?</p>
+                <label for="btn">X</label>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime blanditiis iste dolores cumque maiores dolorum eligendi, nulla qui, rerum modi aliquid vitae saepe suscipit? Maxime magnam dignissimos architecto amet ipsa. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

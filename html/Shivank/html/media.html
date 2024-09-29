@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: cyan;
+        }
+
+        .mobile{
+            display: none;
+        }
+
+        @media screen and (max-width:500px) {
+            body{
+                background-color: red;
+            }
+
+            .desktop{
+                display: none;
+            }
+
+            .mobile{
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <h1>Computer Screen</h1>
+    </div>
+
+    <div class="mobile">
+        <h1>Mobile Screen</h1>
+    </div>
+</body>
+</html>

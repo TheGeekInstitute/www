@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            /* background:; */
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: blue;
+            height: 10vh;
+            color: white;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px black;
+        }
+        .logo{
+            border: 2px solid black;
+            border-radius: 30%;
+            background: red;
+            color: white(89, 0, 255);
+            text-shadow: 2px 2px 3px black;
+            
+        }
+        .img{
+            height: 60px;
+            border: 3px dotted red;
+            border-left: 3px dotted black;
+            border-right: 3px dotted black;
+            background: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .nav ul{
+            margin-right: 20px;
+        }
+        .nav ul li{
+            display: inline-block;
+            margin: 0px 15px;
+            /* text-size-adjust: ; */
+        }
+        .nav ul li a{
+            /* color: red; */
+            /* display: inline-block; */
+            font-size: large;
+            font-weight: 700;
+            padding: 5px;
+            color: black;
+            border: 2px solid white;
+            border-radius: 40%;
+            background: red;
+        }
+        .nav ul li a:hover{
+            background: blue;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">Blind <span>Day</span> </h1>
+        <img src="https://www.freeiconspng.com/thumbs/gaming-logo/red-and-black-wings-with-x-gaming-logo-png-21.png" alt="blind" class="img">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

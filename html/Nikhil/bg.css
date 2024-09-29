@@ -1,0 +1,21 @@
+body{
+    /* background-color: aqua; */
+    background-image: url("../web/images/1.jpg");
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main{
+    /* background-color: cyan; */
+}
+.main h1{
+    /* color: red; */
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/18/16/22/gradient-1336854_960_720.jpg");
+}
+
+.one{
+    color: white;
+    background-color: black;
+}

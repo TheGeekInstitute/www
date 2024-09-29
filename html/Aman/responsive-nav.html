@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        .nav{
+            background-color: black;
+            height: 3.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 1rem;
+            color: white;
+        }
+
+        input[type='checkbox']{
+            display: none;
+        }
+
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav ul li a{
+            margin: 0 .5rem;
+            color: white;
+            font-size: larger;
+        }
+
+        .nav .btn{
+            display: none;
+        }
+        .nav .btn span{
+            height: 5px;
+            width:2.5rem;
+            background-color: white;
+            display: block;
+            margin: 7px 0;
+            position: relative;
+            /* display: none; */
+            transition:all .3s;
+        }
+        
+ @media screen and (max-width:600px) {
+    .nav .btn{
+        display: block;
+    }
+    .nav #btn:checked ~ .btn span:nth-child(2){
+            /* animation: hide .3s linear 0 1 alternate forwards; */
+            display: none;
+        }
+
+        .nav #btn:checked ~ .btn span:nth-child(1){
+            transform: rotate(45deg);
+            top:5px;
+            right: -5px;
+        }
+
+        .nav #btn:checked ~ .btn span:nth-child(3){
+            transform: rotate(-45deg);
+            top:-4px;
+            right: -5px;
+        }
+
+
+        .nav ul{
+            /* display: block; */
+            position: absolute;
+            top: 3.5rem;
+            background-color: grey;
+            inset:3.5rem 0 0 0;
+            flex-direction: column;
+            justify-content: start;
+            padding: 1rem 0;
+      
+            z-index: 9000;
+            transform: translateX(100%);
+            transition: all .3s;
+        }
+        .nav ul li{
+            /* border: 1px solid white; */
+            display: block;
+        }
+
+        .nav ul li a{
+            position: relative;
+            left: 0;
+            right: 0;
+            display: block;
+            text-align: left;
+            /* border: 1px solid red; */
+            max-width: 600px;
+            /* width: 600px; */
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .nav #btn:checked ~ ul{
+            transform: translateX(0);
+        }
+
+ }
+        
+
+
+        /* .nav .btn span:nth-child(2){
+            display: none;
+        }
+        .nav .btn span:nth-child(1){
+            transform: rotate(45deg);
+            top:5px;
+            right: -5px;
+        }
+
+        .nav .btn span:nth-child(3){
+            transform: rotate(-45deg);
+            top:-4px;
+            right: -5px;
+
+        } */
+
+
+        @keyframes hide {
+            0%{
+                opacity: 1;
+                transform: translateX(0px);
+                background-color: red;
+            }
+
+            100%{
+                opacity: 0;
+                transform: translateX(-30px);
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            LOGO
+        </div>
+
+        <input type="checkbox" id="btn">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+
+        <label class="btn" for="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+    </div>
+</body>
+</html>

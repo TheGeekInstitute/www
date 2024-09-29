@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        :root{
+            --my-color:red;
+            --my-second:blue;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        input:focus{
+            background-color: var(--my-second);
+        }
+
+        input:checked{
+            /* outline: 2px solid red;
+            box-shadow: 4px 4px 4px black; */
+        }
+
+        input:disabled{
+            /* border: 1px solid red;
+            background-color: cyan; */
+        }
+        input:enabled{
+            /* background-color: cyan; */
+        }
+
+        input:required{
+            /* background-color: red; */
+            /* font-size: 32px; */
+        }
+
+        input:optional{
+            /* background-color: red; */
+        }
+
+        input:in-range{
+            background-color: green;
+        }
+
+        input:out-of-range{
+            background-color: orangered;
+        }
+        input:read-only{
+            /* color: red; */
+        }
+        input:read-write{
+            /* background-color: red; */
+        }
+
+        input[type=email]:valid{
+            background-color: greenyellow;
+        }
+        input[type=email]:invalid{
+            background-color: red;
+        }
+
+        input:default{
+            box-shadow: 4px 4px 4px red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 align="center">Regstration From</h1>
+<fieldset>
+    <legend>Form</legend>
+    <form>
+        <label>First Name : </label>
+        <input type="text" value="asdasd" disabled>
+    
+        <br><br>
+    
+        <label>Last Name : </label>
+        <input type="text" required>
+    
+        <br><br>
+    
+        <label>Gender : </label>
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label>
+        <input type="radio" name="gender">
+    
+        <br><br>
+        <label>DOB :</label>
+        <input type="date">
+    
+        <br><br>
+        <label>Phone Number :</label>
+        <input type="number"  required min="5" max="20">
+    
+        <br><br>
+    
+        <label>Email :</label>
+        <input type="email">
+    
+        <br><br>
+    
+        <label>Password</label>
+        <input type="password">
+    
+        <br><br>
+
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox">
+
+
+        <br><br><br>
+    
+        <input type="submit" value="Signup">
+        <input type="reset">
+    
+    
+     </form>
+</fieldset>
+</body>
+</html>

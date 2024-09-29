@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;           k
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .nav{
+            /* margin: .2em; */
+            height: 5vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100px repeat(1,1fr) 80px 80px 80px;
+            background-color: rgb(255, 17, 0);
+        }
+        .first{
+             /* background-color: aqua; */
+             text-align: center;
+            color: #ffff;
+
+        }
+        .second{
+            text-align: center;
+            color: #ffff;
+
+        }
+        .third{
+            text-align: center;
+            color: #ffff;
+
+        }
+        .four{
+            text-align: center;
+            color: #ffff;
+
+        }
+        .five{
+            text-align: center;
+            color: #ffff;
+
+        }
+        .first .second .third .four .five{
+            display: block;
+        }
+        .third:hover{
+            background-color: blue;
+            color: #ffff;
+        }
+        .four:hover{
+            background-color: blue;
+            color: #ffff;
+
+        
+        }
+        .five:hover{
+            color: #ffff;
+           background-color: blue;
+        }
+
+        div a{
+            line-height: 5vh;
+            color: #ffff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="first"><a href="#">KARAN</a></div>
+        <div class="second"><a href="#">THIS IS MY GRID NAVBAR WEBSITE</a></div>
+        <div class="third"><a href="#">Home</a></div>
+        <div class="four"><a href="#">Contact</a></div>
+        <div class="five"><a href="#">About</a></div>
+    </div>
+</body>
+</html>

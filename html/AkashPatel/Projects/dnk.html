@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        .dnk{
+            border: 2px solid red;
+            height: 100vh;
+            /* background-color: red; */
+            background-color: rgba(135, 207, 235, 0.377);
+            
+            background-image: url(.//ashley-piszek-ZQXnxGQ3JwA-unsplash.jpg);
+             
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: overlay;
+            
+        }
+        .card{
+            /* border: 2px solid red; */
+            height: 8rem;
+            background-color: rgba(0, 0, 255, 0.197);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            align-self: center;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        .card > img {
+            height: 3rem;
+            color: white;
+        }
+        .card > ul {
+            display: flex;
+            color: white;
+        }
+        .card > ul li {
+            padding: 10px;
+        }
+        .card > ul li a{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .card input {
+            display: none;
+        }
+        .card label{
+            display: none;
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1023px) {
+
+            .dnk{
+                border: 2px solid green;
+                max-height: 60vh;
+            }
+            .card{
+                background-color: purple;
+               /* background-color: green; */
+               max-width: 100%;
+               max-height: 4rem;
+               margin-top: 1rem;
+            }
+            .card > ul li a{
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            
+        }
+        .card ul {
+            padding: 0px 10px;
+
+        }
+        }
+        @media screen and (max-width:767px) {
+            .card ul {
+                /* display: none; */
+                position: absolute;
+                top: 120px;
+                height: 30vh;
+                border: 2px solid red;
+                display: flex;
+                flex-direction: column;
+            }
+            .
+
+            .card input{
+                /* display: block; */
+            }
+            .card label{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dnk">
+    <div class="card">
+        <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/logo1-free-img.png" alt="">
+        <input type="checkbox" checked id="btn">
+        <label for="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+        <ul>
+            <li><a href="#">EVERYTHING</a></li>
+            <li><a href="#">WOMEN</a></li>
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#"><i class="fa-solid fa-wallet"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>

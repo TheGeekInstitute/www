@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type]{
+            /* background-color: red; */
+        }
+        input[type="text"]{
+            /* background-color: cyan; */
+        }
+        div[class~="old"]{
+            /* color: red; */
+        }
+        div[class|="data"]{
+            /* color: green; */
+        }
+        div[class^="para"]{
+            /* color: red; */
+        }
+        div[class$="main"]{
+            /* color: blue; */
+        }
+        div[class*="a"]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="para old new paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab autem quae consequuntur aspernatur odit, dolorem repellendus ut voluptatum explicabo cumque, perspiciatis, maiores repellat praesentium? Blanditiis, fugit! Impedit inventore autem quam!
+    </div>
+
+    <div class="data-abcd main">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi laborum officiis? Velit tenetur mollitia similique sequi numquam molestias dolorem praesentium iure harum. Libero eum natus laboriosam ea quaerat non!
+    </div>
+    <input type="text">
+    <input type="password">
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      /* border: 2px solid black; */
+      height: 450px;
+      width: 550px;
+      position: absolute;
+      top: calc(50% - 225px);
+      left: calc(50% - 275px);
+      border-radius: 10px;
+      background-image: url(https://i.pinimg.com/474x/e7/f5/9e/e7f59ec4d1c07ec86ba96592abfc985b.jpg);
+      display: flex;
+      justify-content: center;
+      /* overflow: hidden; */
+      box-shadow: 0px 0px 10px black;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    .container .btns {
+      /* border: 1px solid black; */
+      height: 450px;
+      width: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-image: url(https://images5.alphacoders.com/354/thumb-1920-354602.jpg); */
+      background-image: url(https://e1.pxfuel.com/desktop-wallpaper/748/560/desktop-wallpaper-light-colour-abstract-mobile-mobile.jpg);
+      flex-direction: column;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+
+
+    }
+
+    .container .btns button {
+      height: 28px;
+      width: 8rem;
+      margin: 5px 0px;
+      /* background-color: rgba(110, 77, 58, 0.945); */
+      background-color: rgb(66, 66, 212);
+      color: white;
+      border: none;
+      box-shadow: 2px 2px white;
+      border-radius: 2px;
+      font-size: 15px;
+
+    }
+
+
+    .container .btns button:hover {
+      background-color: rgba(0, 0, 0, 0.486);
+
+    }
+
+    .container .content {
+      /* border: 1px solid black; */
+      width: 450px;
+      padding: 10px;
+      height: 450px;
+    }
+
+    .container .content h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .container .content p {
+      font-size: large;
+      /* margin-bottom:10px ; */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+
+    .container .content form {
+      /* border: 1px solid black; */
+margin-top: 3rem;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+
+    }
+
+    .container .content form .field {
+      width: 270px;
+      height: 30px;
+      margin: 1px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container .content form .field i {
+      height: 30px;
+      width: 30px;
+      display: block;
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 7px;
+      color: rgb(7, 41, 56);
+      /* margin-top: 5rem; */
+
+    }
+
+    .container .content form .field input {
+      height: 30px;
+      margin-left: 5px;
+      font-size: large;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid rgb(66, 66, 66);
+      outline: none;
+    }
+
+    .container .content .field input[type="submit"]{
+      background-color: rgb(56, 102, 240);
+      color: white;
+      padding: 3px 15px;
+      margin-top: 25px;
+      border-radius: 2px;
+      cursor: pointer;
+      border: none;
+      box-shadow: 2px 2px 0px 0px rgb(44, 44, 44);
+
+    }
+
+    .container .content .field input[type="submit"]:hover{
+      background-color: rgba(0, 0, 0, 0.767);
+    }
+
+    .container .content.signup{
+            display: none;
+      
+        }
+
+      .container .content.login{
+            display: none;
+            
+        }
+
+        .container .content.txt{
+           display: flex;
+           align-items: center;
+           flex-direction: column;
+           justify-content: center;
+           text-align: center;
+           /* transform: scale(0); */
+           /* animation: show .2s linear 0s 1 alternate forwards; */
+
+        }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="btns">
+      <button id=signup>SignUp</button>
+      <button id="signin">SignIn</button>
+    </div>
+
+    <div class="content signup">
+      <div class="text">
+        <h1>The Geek Institute of Cyber Security</h1>
+
+      </div>
+      <p>Our institute offers thoughtfully designed courses for diverse student abilities. </p>
+
+      <form>
+        <div class="field">
+          <i class="fa-solid fa-id-card-clip"></i>
+          <input type="text" placeholder="Full Name">
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" placeholder="Username">
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" placeholder="Email">
+        </div>
+
+        <div class="field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>
+
+        <div class="field">
+          <input type="submit" value="SignUp">
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="content login">
+      <div class="text">
+          <h1>The Geek Institute of Cyber Security</h1>
+      </div>
+      <p>Our institute offers thoughtfully designed courses for diverse student abilities. </p>
+
+      <form>
+          <div class="field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" placeholder="Email">
+          </div>
+          <div class="field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="Password" placeholder="Password">
+          </div>
+
+          <div class="field">
+              <input type="submit" value="Login">
+          </div>
+      </form>
+  </div>
+
+
+  <div class="content txt">
+      <div class="text">
+          <h1>The Geek Institute of Cyber Security</h1>
+      </div>
+      
+      <p>Our institute offers thoughtfully designed courses for diverse student abilities. </p>
+  </div>
+  </div>
+
+
+
+
+  <script>
+
+    let signup =document.querySelector("#signup");
+    let signin =document.querySelector("#signin");
+
+    let signupFrom = document.querySelector(".signup");
+    let signInForm = document.querySelector(".login");
+
+    let txt = document.querySelector(".txt")
+
+    signup.addEventListener("click",()=>{
+      signInForm.style.display="none"
+      txt.style.display="none"
+      signupFrom.style.display="block"
+    })
+
+
+    signin.addEventListener("click",()=>{
+      signInForm.style.display="block"
+      txt.style.display="none"
+      signupFrom.style.display="none"
+    })
+
+  </script>
+</body>
+
+</html>
+ 

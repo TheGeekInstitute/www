@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin:0%;
+            padding: 0%;
+            box-sizing: border-box;
+            
+        }
+        .content{
+            /* border: 2px solid red; */
+            height: 225px;
+            width: 180px;
+            position: absolute;
+            top: calc(50vh - 150px);
+            left: calc(50vw - 150px);
+        }
+        .main{
+            transition: all 1s;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+        }
+        .back{
+            background-color: aqua;
+            height: 225px;
+            width: 225px;
+            font-size: 90px;
+            text-align: center;
+            line-height: 225px;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+
+            <div class="back"> Back</div>
+            <div class="Front"> Front</div>
+        </div>
+    </div>
+    
+</body>
+</html>

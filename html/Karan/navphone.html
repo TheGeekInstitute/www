@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        
+        }
+        a{
+           color: white;
+           font-family: cursive;
+        }
+
+        .nav{
+            background-color: #004225;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+          
+         
+        }
+
+        .logo{
+            color: transparent;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 45px;
+           font-family: cursive;
+           background-image: linear-gradient(45deg,red,yellow,cyan,rgb(43, 253, 43),hotpink,rgb(255, 196, 0),orangered,rgb(33, 192, 255),#ff5c5c5c,lightblue,lightgreen);
+          
+           -webkit-background-clip: text;
+
+           animation: 1s linear 0s infinite alternate change-color;
+        
+            /* animation-name: change-color;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+        }
+
+        .nav .menu{
+            display: flex;
+        }
+
+        .nav .menu .links{
+            display: flex;
+            
+        }
+
+        .nav .menu .links li a{
+            margin: 0 10px;
+            font-family: cursive;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .nav .menu .links li a:hover{
+            background-color: #ffff;
+        }
+        .nav .menu .links a:hover{
+            color: red;
+        }
+
+        #btn,.btn{
+            display: none;
+        }
+
+        @keyframes change-color {
+            0%{
+                background-size: 0 ;
+            }
+
+            25%{
+                background-size: 100% ;
+            }
+
+            50%{
+                background-size: 150%;
+            }
+
+            75%{
+                background-size: 200%;
+            }
+
+            100%{
+                background-size: 0;
+            }
+        }
+
+
+        @media screen and (max-width:768px) {
+            
+            .nav{
+                height: 50px;
+            }
+            .logo{
+                font-size: 30px;
+            }
+            
+            .btn1{
+                display: block;
+            }
+            .btn1,.btn2{
+                color: white;
+                font-size: 30px;
+            }
+
+            .nav .menu .links{
+                position: absolute;
+                top: 50px;
+                left: 0;
+                text-align: center;
+                right: 0;
+                /* bottom: 0; */
+                height: 200px;
+                background-color:#068b52;
+                flex-direction: column;
+                
+                display: none;
+                /* transition: all .3s; */
+                /* transform: translateY(calc(-100% - 50px)); */
+                /* z-index: -1; */
+            }
+
+            .nav .menu .links a{
+                line-height: 60px;
+                /* text-decoration: underline; */
+                border-bottom: 2px solid white;
+            }
+
+            .nav .menu #btn:checked ~ .links{
+                display: block;
+                /* transform: translateY(0); */
+            }
+            .nav .menu #btn:checked ~ .btn1{
+                display: none;
+            }
+            .nav .menu #btn:checked ~ .btn2{
+                display: block;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+       <div class="nav">
+        <div class="logo">Logo</div>
+
+        <ul class="menu">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="btn btn1"><i class="fa-solid fa-bars"></i></label>
+        <label for="btn" class="btn btn2"><i class="fa-solid fa-xmark"></i></label>
+        
+   <div class="links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+   </div>
+    </ul>
+
+       </div> 
+
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nam harum eaque eligendi, tempore exercitationem, sit magni commodi atque debitis veniam, aperiam dolorem nulla ipsam voluptas odio quo. Libero, expedita!</p>
+
+
+
+    </body>
+</html>

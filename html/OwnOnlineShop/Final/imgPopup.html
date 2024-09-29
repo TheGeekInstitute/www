@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+        }
+
+        .productImagesContainer {
+            position: relative;
+        }
+
+        .product_images {
+            border: 1px solid red;
+            margin: 2em auto;
+        }
+
+        /* .product_images img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+        } */
+
+        .productImages {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            align-items: center;
+            gap: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="productImagesContainer">
+
+        <h1>Images</h1>
+        <a href="./product.html">Back To Page</a>
+        <div class="product_images">
+            <img src="./Images/Products/Samsung A73/002_Galaxy_A73_5G_gray_back​.jpg" alt="Oneplus Image">
+        </div>
+        <div class="productImages">
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+            <div class="box">
+                <img src="./Images/Products/camera.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

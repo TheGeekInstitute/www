@@ -1,0 +1,39 @@
+.icon{
+    width: 60px;
+    height: 60px;
+    background: #DA0037;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    border-radius: 50%;
+}
+.card:hover .card {
+    box-shadow: 0 0 10px red;
+}
+.icon i{
+    font-size: 1.5em;
+}
+.card p{
+    margin: 0.5em 0;
+    font: size 0.8em; ;
+    display: none;
+    opacity: 0;
+    transition: all.4s;
+}
+.card:hover p{
+    display: block;
+    opacity: 1;
+}
+.card h4{
+    margin-top: 0.5em;
+}
+
+
+
+
+
+
+.
+ 
+@import url("https://fonts.googleapis.com/css??
+family-Poppins&display=swap");

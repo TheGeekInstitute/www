@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+          body{
+            counter-reset: section;
+        }
+
+        h1::before{
+            content:counter(section) " ";
+            counter-increment: section;
+            background-color: darkkhaki;
+            padding: 5px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        h1{
+            counter-reset: section-one;
+        }
+        h2{
+            text-indent: 30px;
+            counter-reset:section-two;
+        }
+        h2::before{
+            content:counter(section) "." counter(section-one) " ";
+            counter-increment: section-one;
+            color: darkorange;
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 5px;
+           
+        }
+        h3::before{
+            content:counter(section) "." counter(section-one) " ";
+            counter-increment: section-one;
+            color: rgb(25, 14, 0);
+            background-color: rgb(178, 146, 209);
+            border-radius: 10px;
+            padding: 5px;
+           }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Website Development</h1>
+     <h2>HTML</h2>
+       <h3>Bold</h3>
+       <h3>Bordre</h3>
+       <h3>Heading</h3>
+     <h2>CSS</h2>
+       <h3>Code</h3>
+       <h3>Running</h3>
+       <h3>Deta</h3>
+     <h2>JS</h2>
+       <h3>Ram</h3>
+       <h3>Sonal</h3>
+       <h3>Sony</h3>
+    <h1>Cyber Security</h1>
+    <h2>Linux</h2>
+    <h3>Hindi</h3>
+    <h3>english</h3>
+    <h3>maths</h3>
+    <h2>Windows</h2>
+    <h2>WIFI</h2>
+    <h1>Programming</h1>
+    <h2>JAVA</h2>
+    <h2>Python</h2>
+    <h2>Ruby</h2>
+</body>
+</html>

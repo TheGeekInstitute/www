@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .form{
+            border: 3px solid black;
+            width: 20rem;
+            padding: 10px;
+            margin: 120px auto;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+
+        
+        }
+
+        .form label{
+           font-size: large;
+           font-weight: 600;
+
+        }
+        #sub{
+            font-weight: 500;
+            font-size: larger;
+            
+        }
+    </style>
+</head>
+<body>
+        <div class="form">
+            <h1>Resistration Form</h1>
+            <form action="">
+                <label for="">First Name </label>
+                <input type="text" name="firstname">
+                <br><br>
+                <label for="">Last Name </label>
+                <input type="text" name="lastname">
+                <br><br>
+                <label for="">Gender:</label>
+                <label for="">Male</label>
+                <input type="radio" name="gender" value="male">
+                <label for="">Femail</label>
+                <input type="radio" name="gender" value="Femail">
+                <label for="">Other</label>
+                <input type="radio" name="gender" value="other">
+                <br><br>
+                <label for="">Salary:</label>
+                <input type="number">
+                <br><br>
+                <input type="submit" value="Submit" id="sub">
+            </form>
+        </div>    
+</body>
+</html>

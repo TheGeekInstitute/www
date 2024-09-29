@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav .logo{
+            color: black;
+            font-weight: 700;
+            font-size: x-large;
+        }
+
+        .nav .signup{
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+
+        .hero{
+
+            height:600px;
+
+            padding-top: 150px;
+
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        .hero h1{
+            color: white;
+            width: 500px;
+            margin: auto;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .hero form input{
+            border: none;
+            font-size: x-large;
+            height: 55px;
+            width: 450px;
+            border-radius: 5px;
+            padding: 2px 5px;
+        }
+
+        .hero form .btn{
+            width: 100px;
+            background-color: royalblue;
+            color: white;
+        }
+        .services{
+            height: 300px;
+     
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .services .box{
+        
+            width: 300px;
+            height: 270px;
+            text-align:center;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .services .box i{
+            color: royalblue;
+            font-size: 90px;
+        }
+
+        .services .box h3{
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .services .box p{
+            font-size: large;
+            margin: 10px 0;
+        }
+
+        .features{
+
+        }
+
+        .features .content{
+            display: flex;
+        }
+
+        .features .content .box{
+            width: 50%;
+            height: 500px;
+            text-align: center;
+            padding: 5.l    0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+        .features .content img{
+            width: 50%;
+            height: 500px;
+        }
+
+        .members{
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .members h1{
+            margin: 50px 0;
+        }
+
+        .members .pepole{
+      
+          
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 400px;
+        }
+
+        .members .pepole .box{
+          
+            width: 250px;
+            height: 300px;
+            padding: 5px;
+        }
+
+        .members .pepole .box img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 3px 3px 5px black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">Start Bootstrap</a>
+        <a href="#" class="signup">Sign Up</a>
+    </div>
+
+    <div class="hero">
+        <h1>Generate more leads with a professional landing page!</h1>
+        <form action="">
+            <input type="email" placeholder="Email Address">
+            <input type="submit" class="btn" value="Submit">
+        </form>
+    </div>
+
+    <div class="services">
+        <div class="box">
+            <i class="fa-solid fa-window-maximize"></i>
+            <h3>Fully Responsive
+            </h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Bootstrap 5 Ready
+            </h3>
+            <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Easy to Use
+            </h3>
+            <!-- <p>Ready to use with your own content, or customize the source files!</p> -->
+        </div>
+    </div>
+
+
+    <div class="features">
+
+            <div class="content">
+                <div class="box">
+                    <h1>Fully Responsive Design</h1>
+                    <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                </div>
+        
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+            </div>
+        
+
+            <div class="content">
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-2.jpg" alt="">
+                <div class="box">
+                    <h1>Updated For Bootstrap 5</h1>
+    <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+     </div>
+        
+            </div>
+
+            <div class="content">
+                <div class="box">
+                    <h1>Easy to Use & Customize</h1>
+                    <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                </div>
+        
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-3.jpg" alt="">
+            </div>
+    </div>
+
+    <div class="members">
+        <h1>What people are saying...</h1>
+
+        <div class="pepole">
+            <div class="box">
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg" alt="">
+                <h3>Margaret E.</h3>
+                <p>"This is fantastic! Thanks so much guys!"</p>
+            </div>
+            <div class="box">
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg" alt="">
+                <h3>Fred S.</h3>
+                <p>"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+            <div class="box">
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg" alt="">
+                <h3>Sarah W.</h3>
+                <p>"Thanks so much for making these free resources available to us!"</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

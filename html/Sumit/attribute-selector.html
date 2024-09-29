@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute-selector</title>
+    <style>
+        input[id]{
+            background-color: red; */
+        }
+
+        input[type="text"]{
+         /*   background-color: cyan; */
+        }
+
+        div[class~="para"]{
+            /*
+             color: green; */
+        }
+
+        div[class|="data"]{
+            /* color: red; */
+        }
+
+        div[class^="data"]{
+            /* color: red; */
+        }
+
+        div[class$="abcd"]{
+             color: blue; */
+        }
+
+        div[class*="graph"]{
+            /*background-color: royalblue;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="data-value para paragraph old neo abcd" id="abcd" data-abcd="xyz">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non alias sapiente quisquam minima ratione! Officia, molestias maxime velit aperiam ullam consequatur, ducimus eos vitae doloribus non animi obcaecati ipsam a.</div>
+
+
+    <br>
+
+    <div class="data old new pwd paragraph">aaa Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum omnis hic recusandae mollitia, pariatur magni autem rem atque voluptatem, architecto sapiente odio consequuntur. Inventore, dolores. Pariatur aliquam delectus dolore minus!</div>
+
+
+    <input type="text" id="abcd">
+    <input type="password">
+</body>
+</html>

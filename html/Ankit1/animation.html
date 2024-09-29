@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 250px;
+            border: 2px solid black;
+            margin: 150px auto;
+
+            /* animation-name: circle; */
+            /* animation-duration: 3s; */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: linear; */
+            background-color: red;
+
+
+            animation: abcd 10s ease-in-out 0s infinite alternate;
+
+
+        }
+
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+
+        @keyframes circle {
+            form{
+                border-radius: 0;
+                
+            }
+
+            to{
+                border-radius: 50%;
+                background-color: red;
+            }
+        }
+
+
+        @keyframes abcd {
+            0%{
+                transform: rotate(0);
+            }
+            
+            25%{
+                transform: rotate(90deg);
+            }
+
+            50%{
+                transform: rotate(180deg);
+
+            }
+
+            75%{
+                transform: rotate(270deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

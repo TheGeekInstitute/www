@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blue;
+        }
+
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+         
+        }
+
+        #todo-list li {
+            margin-bottom: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 25px;
+            width: 12rem;
+            color: white;
+            background-color: black;
+            margin-left: 2rem;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+        .nav{
+            border: 1px solid black;
+            height: 30rem;
+            width: 20rem;
+            text-align: center;
+            margin: 5rem;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        #taskInput{
+            border: none;
+            border: 1px solid black;
+            height: 1.3rem;
+            outline: none;
+            padding-left: 5px;
+            border-radius: 5px;
+        }
+        #todo-list ul{
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task...">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="todo-list">
+    </ul>
+</div>
+    <script>
+        function addTask() {
+            var input = document.getElementById("taskInput").value;
+            if (input === "") {
+                alert("Please enter a task!");
+                return;
+            }
+
+            var listItem = document.createElement("li");
+            var textNode = document.createTextNode(input);
+            listItem.appendChild(textNode);
+
+            listItem.onclick = function () {
+                this.classList.toggle("completed");
+ 
+            };
+
+            document.getElementById("todo-list").appendChild(listItem);
+            document.getElementById("taskInput").value = "";
+
+
+            let todo = document.querySelector("#todo-list");
+            Array.from(todo.children).forEach((e)=>{
+                e.addEventListener("click",(a)=>{
+                    todo.removeChild(e)
+                })
+            })
+        }
+ 
+ 
+
+        
+
+ 
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .contianer{
+         
+            color: white;
+          
+
+
+          
+            height: 350px;
+            width: 350px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+        }
+        .contianer .card{
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all .3s ease-in-out;
+           
+
+        }
+        .contianer .card .front,
+        .contianer .card .back{
+            height: 350px;
+            width: 350px;
+            position: absolute;
+            backface-visibility: hidden;
+            text-align: center;
+
+
+
+
+            box-shadow: 0px 0px  20px gold;
+            border-radius: 10px;
+
+        }
+        .contianer .card .front{
+            background-image: url(https://th.bing.com/th/id/OIP.n0nvCEU6UC7p9J2uRoWJ_AHaEK?w=315&h=180&c=7&r=0&o=5&pid=1.7);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: red;
+        }
+        
+        .contianer .card .front h1{
+            font-size: 40px;
+            color: red;
+          
+            background-color: rgba(0, 255, 255, 0.281);
+            /* border-bottom-left-radius: 10px; */
+            position: relative;
+            top: 303px;
+        }
+
+        .contianer .card .back h1{
+            margin-top: 50px;
+            color: blue;
+        }
+        .contianer .card .back p{
+            margin-top: 30px;
+        }
+
+        
+
+        .contianer .card .back{
+            background-color: aqua;
+            transform: rotateY(180deg);
+        }
+        .contianer:hover .card{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="card">
+            <div class="front">
+                <h1>FF Kaly</h1>
+            </div>
+            <div class="back">
+                <h1>FF Kaly</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo atque quisquam, facere beatae aut quaerat accusamus sit odio consectetur facilis repellendus cumque, alias commodi illum, magni suscipit voluptas minus sed?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

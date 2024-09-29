@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    /* background-color: red; */
+}
+
+main center h1{
+    text-decoration: underline;
+    text-decoration-color: rgb(7, 7, 7);
+    text-shadow: 2px 2px 3px red;
+}
+
+header fieldset{
+    /* background-color: red; */
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/04/Best-Website-New-Wallpaper.jpg);
+}
+.body p{
+    border-top: 2px solid rgb(14, 13, 13);
+}
+.rose{
+    margin-left: 15%;
+    margin-right: 5%;
+    text-align: justify;
+}
+.footer{
+    background-color: rgb(155, 154, 154);
+    text-decoration: underline;
+}
+.icons{
+    color: black;
+    font-size: 27px;
+    margin: 15px;
+    margin-bottom: auto;
+}
+
+.icons i{
+    margin: 0 5px;
+}
+.rose p{
+    margin: 5%;
+    
+      
+}
+.nav ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    text-decoration: none; 
+}
+.nav{
+    border: 2px solid black;
+    border-radius: 1000px;
+    background-color: rgb(132, 150, 209);
+    text-align: center;
+}
+.nav ul li{
+    display: inline-block;
+    border: 2px solid rgb(206, 9, 9);
+    width: 60px;
+    line-height: 30px;
+    margin-right: 150px;
+}
+.nav ul li:hover{
+    background-color: black;
+    color: white;
+}
+.nav ul li:active{
+    color: green;
+}

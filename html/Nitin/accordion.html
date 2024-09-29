@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .accordion{
+            width: 400px;
+            margin: 10px auto;
+        }
+
+        .accordion .box{
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .accordion .box label{
+            display: block;
+            background-color: rgb(150, 113, 218);
+            width: 100%;
+            display: flex;
+            height: 40px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            font-size: x-large;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        .accordion .box .content{
+            background-color: rgba(127, 255, 170, 0.384);
+            padding: 0 10px;
+            display: none;
+        }
+
+
+
+        input[type="checkbox"]{
+                display: none;
+        }
+
+        #btn:checked ~ .content{ 
+            display: block;
+        }
+
+        #btn1:checked ~ .content{
+            display: block;
+        }
+
+
+        #btn:checked ~ label i{
+            transform: rotate(45deg);
+        }
+
+
+        #btn1:checked ~ label i{
+            transform: rotate(45deg);
+        } 
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="heading">
+                <p>What is HTML</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo ipsam unde. Voluptatum nulla, voluptatem quia earum quos dolorem sapiente quam molestias ad? Quos laudantium architecto eos, aut molestias harum!
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn1">
+            <label for="btn1" class="heading">
+                <p>What is HTML</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa illo ipsam unde. Voluptatum nulla, voluptatem quia earum quos dolorem sapiente quam molestias ad? Quos laudantium architecto eos, aut molestias harum!
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

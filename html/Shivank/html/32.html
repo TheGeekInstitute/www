@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Flex</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    .container{
+        border: 1px solid black;
+        height: 40vh;
+        width: 70vw;
+        margin: auto;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box{
+        height: 4vh;
+        width: 10vw;
+        background-color: aquamarine;
+        border: 1px solid red;
+        margin: 4px;
+
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

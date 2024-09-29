@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        :root{
+            --main-color:green;
+        }
+
+        .main{
+            background-color: var(--main-color);
+
+            width: calc(100% - 50px);
+        }
+
+ 
+
+        body{
+            background-color: cyan;
+        }
+
+        @media screen and (max-width:650px) {
+            body{
+                background-color: red;
+            }
+            .main{
+                border: 20px dotted red;
+            }
+            .main{
+                font-size:50px;
+            }
+            .main{
+                background-image: url(../../web/images/17.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit a quia quae quod nam totam aut architecto sunt cupiditate, dolores ipsum numquam tempore facilis, quaerat laudantium laboriosam quos in dicta.
+    </div>
+</body>
+</html>

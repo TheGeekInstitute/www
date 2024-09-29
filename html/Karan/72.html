@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow:0 5px 10px grey ;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .logo{
+            font-weight: bolder;
+            font-size: 25px;
+        }
+
+        header .navbar ul li{
+            position: relative;
+            float: left;
+        }
+        header .navbar ul li a{
+            font-size: 20px;
+            padding: 20px;
+            color: #333;
+            display: block;
+
+        }
+
+        header .navbar ul li a:hover{
+            background-color: black;
+            color: white;
+        }
+        header .navbar ul li ul{
+            position: absolute;
+            left: 0;
+            width: 200px;
+            background: #fff;
+        }
+        header .navbar ul li ul li{
+            width: 100%;
+            border-top: 1px solid rgba(0, 0, 0,.1 );
+
+        }
+        header .navbar ul li ul li ul{
+            left: 200px;
+            top: 0;
+        }
+
+        header  .navbar ul li :focus-within > ul,
+        header  .navbar ul li :hover > ul{
+            display: initial ;
+        }
+#my{
+    display: none;
+}
+
+pages:hover ,#my{
+    display: block;
+}
+
+
+
+</style>
+</head>
+<body onclick="hide()">
+    <header>
+        <a href="#" class="logo">Logo</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="" id="pages" class="pages">Pages+</a>
+
+                <ul id="my">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </li>
+                <li><a href="#">ABCd</a></li>
+                <li><a href="#">AA</a></li>
+
+                <li><a href="#">AAAAA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<script>
+    // let btn =document.getElementById("pages");
+    // let my = document.getElementById("my");
+    // btn.addEventListener('click',function(){
+    //     my.style.display="block";
+    // });
+
+</script>
+
+</body>
+</html>

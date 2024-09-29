@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 200px;
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .container p{
+            font-size: large;
+        }
+
+        .container input{
+            border: 2px solid black;
+            height: 35px;
+            width: 100%;
+            margin-top: 10px;
+            padding: 3px;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p id="txt"></p>
+        <input type="text"  id="field">
+    </div>
+
+
+    <script>
+        let container=document.querySelector(".container");
+        let data=`lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, iusto obcaecati. Maxime doloribus dolores aliquam cumque. Fugit tempore est cumque quo ipsam deserunt delectus, cupiditate dignissimos rerum natus expedita. Illum?`;
+
+        document.querySelector('#txt').innerHTML=data;
+        let index=0;
+        let field = document.querySelector('#field');
+
+        let dataArry = data.split("");
+        
+
+        field.addEventListener('input',(e)=>{
+      
+            
+            if(index<=data.length){
+
+                if(e.data==dataArry[index]){
+       
+                    index++;
+                    field.style.backgroundColor="green";
+                }
+                else if(e.data==null){
+                    --index;
+                  
+                }
+                else{
+                    field.style.backgroundColor="red";
+                }
+
+            }
+
+        })
+
+
+    </script>
+</body>
+</html>

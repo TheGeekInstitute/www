@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names=["Amit","Sumit","Ravi","Ankit",'Ganesh'];
+
+        // document.write(names[9])
+        // document.write(names.length)
+        // for(let i=0; i<names.length;i++){
+        //     document.write(names[i] + "<br>")
+        // }
+
+
+        document.write(names)
+        document.write("<br><br>")
+        names[0]="Ravita"
+        names[0]=""
+        names.push("Anmol") // appending value at the end of an array
+        names.pop() // delete last value of an array
+
+        names.shift() // deletes first index of an array
+        names.unshift("Anamika") // adding first index of an array
+        document.write(names)
+        let new_name=names.concat(["Anoml","vicky"]) // concats the value
+
+        let new_name =["Abhishek","Priya"].concat(names)
+        document.write(new_name)
+
+        let new_name = names.join() // converts an array into string
+        
+
+        document.write(typeof(new_name))
+
+    </script>
+</body>
+</html>

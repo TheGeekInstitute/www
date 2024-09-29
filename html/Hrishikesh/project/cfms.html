@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container{
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           height: 7rem;
+      }
+      .container .box{
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 1.5rem;
+        font-size: 1.8rem;
+      }
+      .container .box h1{
+        color: rgba(255, 0, 0, 0.901);
+      }
+      .container .box p{
+        background-color:rgba(76, 2, 2, 0.958);
+        /* font-size: large; */
+        color: white;
+        text-align: center;
+        margin-left: 1.1rem;
+      }
+      .container .box1{
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         padding-right: .9rem;
+         font-family: "Playwrite MX", cursive;
+         color: rgba(255, 0, 0, 0.901);
+         font-size: 1.5rem;
+        }
+      .container .box1 img{
+        height: 6rem;
+        padding-left: .9rem;
+
+      }
+      .container .box1 h1{
+        font-family: "Open Sans", sans-serif;
+        margin: .7rem;
+      }
+      .container .box1 p{
+        font-size: x-large;
+        font-family: "Playwrite US Trad", cursive;
+      }
+      .main{
+        background-color: rgba(248, 17, 17, 0.936);
+        color: white;
+        /* padding: 1.8rem; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .main .marquee{
+        margin-top: -1.2rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        /* text-align: center; */
+        font-size: 1.5rem;
+      }
+      .main .notice{
+        text-align: center;
+      }
+      .login{
+        /* text-align: center; */
+        height: 24rem;
+        width: 28rem;
+        background-color: rgba(188, 5, 5, 0.936);
+        /* display: flex; */
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* margin-top: 2rem; */
+        margin:5rem auto;
+        color: white;
+        padding: 2.5rem;
+      }
+      .login form{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 2rem; */
+        font-size: 1.15rem;
+      }
+      .login form label{
+        margin-top: 1rem;
+      }
+      .login form input{
+        margin-top: .5rem;
+        padding: 1rem;
+        font-size: x-large;
+      }
+      .login form .password{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+      .login form .password input{
+        background-color:rgba(255, 255, 255, 0.566);
+        color: white;
+        font-size: large;
+        border: transparent;
+        width: 8rem;
+        text-align: center;
+        height: 3rem;
+      }
+      .footer{
+        background-color: rgba(87, 5, 5, 0.822);
+        color: white;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        /* position: fixed; */
+        padding: .5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .abc{
+        display: flex;
+        align-items: center;
+        font-size: large;
+        margin-right: 1rem;
+        padding: .5rem;
+      }
+      .abc b{
+        padding-right: .5rem;
+        font-size: x-large;
+        font-weight: 900;
+        font-family: "Kanit", sans-serif;
+      }
+  
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="box">
+            <h1>CfMS</h1>
+            <p>BIHAR</p>
+        </div>
+           <div class="box1">
+            <h1>CFMS</h1>
+            <p><i>e</i>-Nidhi</p>
+            <img src="/state-health-society-bihar.png" alt="">
+           </div> 
+      </div>
+      <div class="main">
+        <div class="marquee">
+          <marquee behavior="alternate">Helpdesk   ☏ 0612-2211355   ✉ cfmshelpdesk@bihar.gov.in   ⚠ Application login single user session is enabled.   ☛ Click To Access Ticketing Tool </marquee>
+        </div>
+          <div class="notice">
+
+            <strong>Notice!!</strong>
+            "2-Factor Authentication (Login password + OTP ) is going to be activated soon. Kindly verify/ modify your mobile number at earliest."
+          </div>
+      </div>
+      <div class="login">
+        <h1>e-Nidhi Login</h1>
+        <form>
+            <label>Username :</label>
+            <input type="text" placeholder="Username">
+            <label for="">Password :</label>
+            <input type="password" placeholder="Password">
+            <div class="password">
+              <label for="">Forget password ?</label>
+              <input type="submit" value="Login" id="btn">
+            </div>
+        </form>
+      </div>
+      <div class="footer">
+        <h1>All Rights Reserved by Finance Department, Govt of Bihar</h1>
+       <div class="abc">
+        <b>TATA</b>
+        <p>CONSULTANCY SERVICES</p>
+       </div> 
+    </div>
+</body>
+</html>

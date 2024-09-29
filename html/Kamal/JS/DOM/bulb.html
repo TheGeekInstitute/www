@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="bulb_off()">OFF</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="aa" id="bulb">
+    <button onclick="bulb_on()">ON</button>
+
+    <script>
+        let bulb = document.getElementById("bulb");
+
+        function bulb_off(){
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif")
+        }
+
+
+        function bulb_on(){
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif")
+        }
+
+    </script>
+
+</body>
+</html>

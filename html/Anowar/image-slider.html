@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 40rem;
+          
+            overflow: hidden;
+        }
+
+        .container .slider{
+            height: 100%;
+            display: flex;
+            animation: image-slider 20s ease-in-out 0s infinite alternate;
+            
+        }
+
+        .container .slider .image{
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 100%;
+            
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .slider .image .content{
+            height: 15rem;
+            width: 30rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 3px solid black;
+            border-radius: 5rem 10px;
+        }
+
+        
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+            }
+
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+            }
+
+            30%{
+                transform: translateX(-100vw);
+            }
+
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+
+            65%{
+                transform: translateX(-300vw);
+            }
+
+            70%{
+                transform: translateX(-300vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-400vw);
+            }
+
+            85%{
+                transform: translateX(-400vw);
+            }
+
+            90%{
+                transform: translateX(-400vw);
+            }
+
+            95%{
+                transform: translateX(-400vw);
+            }
+
+            100%{
+                transform: translateX(-400vw);
+            }
+
+
+        }
+/* 
+        img{
+            filter: grayscale(100%);
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="slider">
+            <div class="image" style="background-image: url(../Aasha/images/1.jpeg);">
+                <div class="content"></div>
+            </div>
+            <div class="image" style="background-image: url(../Aasha/images/2.jpeg);">
+                <div class="content"></div>
+            
+            </div>
+            <div class="image" style="background-image: url(../Aasha/images/3.jpeg);">
+                <div class="content"></div>
+            
+            </div>
+            <div class="image" style="background-image: url(../Aasha/images/4.jpeg);">
+                <div class="content"></div>
+            
+            </div>
+            <div class="image" style="background-image: url(../Aasha/images/5.webp);">
+                <div class="content"></div>
+            
+            </div>
+        </div>
+
+    </div>
+
+
+    <img src="../web/images/10.jpg" alt="">
+</body>
+</html>

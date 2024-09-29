@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:  0 20px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: cursive;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a{
+            display: block;
+            color: white;
+            font-size: large;
+            margin:  0 10px;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+
+        .nav .links li a:hover{
+            background-color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+</body>
+</html>

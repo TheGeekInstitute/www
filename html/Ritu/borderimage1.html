@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border image</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border:30px solid red;
+            margin: auto;
+            margin-top: 20px;
+            border-image-slice:27 27 26 27;
+            border-image-width:20px 20px 20px 20px;
+            border-image-outset:0px 0px 0px 0px;
+            border-image-repeat:stretch stretch;
+            border-image-source:url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png");
+            border-style:solid;
+        
+        }
+        .box img{
+            height:300px;
+            width: 300px;
+        }
+        .box1{
+            margin: auto;
+            margin-top: 30px;
+            height: 300px;
+            width: 300px;
+            border: 30px solid black;
+            border-image-source: linear-gradient(45deg,red,yellow,aqua);
+            border-image-slice: 27;
+            
+        }
+        .box1 img{
+            height: 300px;
+            width: 300px;
+            border-image-source: linear-gradient(45deg,red,yellow);
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top:30px ;
+            border: 30px solid blue;
+            background-color: aqua;
+            /* display: flex; */
+            /* justify-content: space-evenly; */
+            text-align: center;
+            border-image-source: url("../web/images/3.jpg");
+            border-image-slice: 27;
+        }
+        .third{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .second{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .first{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .main{
+            text-align: center;
+            color: red;
+            text-shadow: 2px 2px 4px yellow, 2px 2px 3px green;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1>Border Images...</h1>
+    </div>
+<div class="first">
+    <div class="box">
+        <img src="../web/images/19.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="../web/images/19.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="../web/images/19.jpg" alt="">
+    </div>
+    <div class="box">
+        <img src="../web/images/19.jpg" alt="">
+    </div>
+
+ </div>
+    <div class="second">
+    <div class="box1">
+        <img src="../wallpapers/films/MEDIA-harry-potter-a.jpg"alt="">
+
+    </div>
+    <div class="box1">
+        <img src="../wallpapers/films/MEDIA-harry-potter-a.jpg"alt="">
+
+    </div>
+    <div class="box1">
+        <img src="../wallpapers/films/MEDIA-harry-potter-a.jpg"alt="">
+
+    </div>
+    <div class="box1">
+        <img src="../wallpapers/films/MEDIA-harry-potter-a.jpg"alt="">
+
+    </div>
+    </div>
+    <div class="third">
+    <div class="box2">
+        <h1>Lorem...</h1>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia deleniti officia quisquam neque est corporis, totam libero, aperiam, rem maiores quidem ipsam sed molestias? Alias beatae dicta magnam. Rem.
+        Ex qui dicta illo maxime iure in natus ipsum, doloremque debitis adipisci quas quod beatae rerum sit dolor officia veritatis, delectus mollitia eligendi eaque dolorem. Officiis illum ratione voluptatum eius?</p>
+    </div>
+    <div class="box2">
+        <h1>Lorem...</h1>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia deleniti officia quisquam neque est corporis, totam libero, aperiam, rem maiores quidem ipsam sed molestias? Alias beatae dicta magnam. Rem.
+        Ex qui dicta illo maxime iure in natus ipsum, doloremque debitis adipisci quas quod beatae rerum sit dolor officia veritatis, delectus mollitia eligendi eaque dolorem. Officiis illum ratione voluptatum eius?</p>
+    </div>
+    <div class="box2">
+        <h1>Lorem...</h1>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia deleniti officia quisquam neque est corporis, totam libero, aperiam, rem maiores quidem ipsam sed molestias? Alias beatae dicta magnam. Rem.
+        Ex qui dicta illo maxime iure in natus ipsum, doloremque debitis adipisci quas quod beatae rerum sit dolor officia veritatis, delectus mollitia eligendi eaque dolorem. Officiis illum ratione voluptatum eius?</p>
+    </div>
+    <div class="box2">
+        <h1>Lorem...</h1>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo mollitia deleniti officia quisquam neque est corporis, totam libero, aperiam, rem maiores quidem ipsam sed molestias? Alias beatae dicta magnam. Rem.
+        Ex qui dicta illo maxime iure in natus ipsum, doloremque debitis adipisci quas quod beatae rerum sit dolor officia veritatis, delectus mollitia eligendi eaque dolorem. Officiis illum ratione voluptatum eius?</p>
+    </div>
+    </div>
+        
+        
+        
+        
+    
+</body>
+</html>

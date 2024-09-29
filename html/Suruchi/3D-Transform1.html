@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgba(128, 128, 128, 0.5);
+            height: 300px;
+            width: 300px;
+            margin: 150px auto;
+            perspective: 600px;
+        }
+        .container .box{
+           background-color: cornflowerblue;
+            height: 300px;
+            width: 300px;
+            transition: all 1s linear;
+
+        }
+        .container:hover .box{
+            /* transform: translateX(150px); */
+            /* transform: translateY(150px); */
+            /* transform: translateZ(150px); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+            transform: rotateX(60deg);
+            /* transform: rotateY(60deg); */
+            /* transform: rotate3d(1,1,1,180deg); */
+            /* transform: rotateX(180deg); */
+
+        }
+        .container .box h1{
+            text-align: center;
+        }
+        .container .box p{
+            text-align: center;
+            margin: 20px;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, beatae voluptates iusto debitis quae consequuntur illum, corrupti repellendus, totam praesentium quasi architecto unde reprehenderit quaerat. Totam velit asperiores doloremque voluptates!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

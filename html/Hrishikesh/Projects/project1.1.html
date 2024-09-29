@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .main {
+            height: 38rem;
+            background-image: url("https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png");
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.733);
+            background-blend-mode: overlay;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            text-align: center;
+            /* font-size: 2rem; */
+        }
+
+        .main .box {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .main img {
+            height: 2.6rem;
+            margin-left: 4rem;
+        }
+
+        .main .box {
+            margin-right: 3rem;
+            /* width: 34rem; */
+        }
+
+        .main .box select {
+            margin-right: .8rem;
+            padding: .4rem;
+            width: 11rem;
+            font-size: large;
+            border: .5px solid rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.767);
+            background-color: transparent;
+            border-radius: .4rem;
+        }
+
+        .main .box1 a {
+            background-color: red;
+            padding: .6rem;
+            border-radius: .4rem;
+            color: white;
+            font-size: large;
+        }
+
+        .main h1 {
+            margin-top: 8rem;
+            font-size: 2.6rem;
+            margin-bottom: .4rem;
+        }
+
+        .main p {
+            font-size: 1.5rem;
+        }
+
+        .main #btn {
+            margin-top: .9rem;
+            margin-bottom: .7rem;
+        }
+
+        .main input {
+            padding: .9rem;
+            width: 20rem;
+            font-size: large;
+            border-radius: .3rem;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.486);
+        }
+
+        .main #btn1 {
+            background-color: red;
+            color: white;
+            width: 13rem;
+            border: transparent;
+            font-size: 1.3rem;
+        }
+
+        .container {
+            border: 1px solid red;
+            height: 30rem;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+
+        }
+
+        .container .content {
+            width: 45%;
+            height: 25rem;
+
+            margin-right: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container .content h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .container .content p {
+            font-size: large;
+            margin-top: 20px;
+        }
+
+        .container .media {
+            width: 45%;
+            height: 25rem;
+
+            margin-left: 20px;
+
+        }
+
+        .container .media img {
+            height: 350px;
+            position: relative;
+            z-index: 10;
+
+
+        }
+
+        .container .media video {
+            height: 200px;
+            position: relative;
+            z-index: 9;
+
+            top: -285px;
+            left: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="https://i2.wp.com/www.verifiedmom.com/wp-content/uploads/2014/07/Netflix_Logo_Print_OneColorPMS.png?fit=8685%2C2333&ssl=1"
+                alt="">
+            <div class="box1">
+                <select>
+                    <option> English </option>
+                    <option>Hindi</option>
+                </select>
+                <a href="#">Sing In</a>
+            </div>
+        </div>
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <p id="btn">Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" placeholder="Email address">
+        <input type="submit" value="Get Started    >" id="btn1">
+
+    </div>
+
+
+    <div class="container">
+        <div class="content">
+            <h1>Enjoy on your TV
+            </h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+
+            </p>
+        </div>
+
+        <div class="media">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <video src="../../video.mp4" autoplay></video>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

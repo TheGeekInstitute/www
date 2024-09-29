@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-image: url("https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: overlay;
+            height: 90vh;
+        }
+
+        .container .nav{
+         
+            height: 70px;
+
+        }
+
+        .container .nav h1{
+            line-height: 70px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0 20px;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            color: white;
+        }
+
+        .container .nav h1 i{
+            display: block;
+            font-size: 35px;
+            padding: 0 5px;
+            color: #06AE9F;
+            margin-top: -8px;
+        }
+
+
+       .box img{
+            height: 100px;
+        }
+
+        .content{
+          
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .content .box{
+          
+            margin: 5px 50px;
+            width: 400px;
+            height: 500px;
+        }
+
+        .content .form-box{
+            background-color: rgba(0, 0, 0, 0.603);
+            border-radius: 3PX;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+
+        .container .form-box h3{
+            font-size: 30px;
+        }
+
+        .container .form-box form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 90%;
+            
+        }
+
+        .container .form-box form input{
+            margin: 7px 0;
+            height: 40px;
+            width: 80%;
+            outline: none;
+            border: none;
+            font-size: large;
+            padding: 0 5px;
+        }
+
+        .container .form-box form #btn{
+            background-color: #06AE9F;
+            color: white;
+            width: 100px;
+            align-self: flex-start;
+            margin-left: 33px;
+        }
+
+        .content .img-box img{
+            height: 300px;
+            transform: rotate(40deg);
+        }
+
+        .content .img-box{
+            color: white;
+        }
+
+        .content .img-box h1{
+            font-size: 50px;
+            margin-top: -20px;
+        }
+
+        .container .img-box p{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="nav">
+            <h1>GR<i class="fa-brands fa-atlassian"></i>DIENT</h1>
+        </div>
+
+        <div class="content">
+            <div class="box form-box">
+               <h3>Download E-Book</h3>
+
+               <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Category">
+                <input type="text" placeholder="Email">
+                <input type="submit" id="btn" value="SUBMIT">
+               </form>
+
+            </div>
+
+            <div class="box img-box">
+                <img src="https://parspng.com/wp-content/uploads/2021/10/phone.parspng.com-3.png" alt="">
+                <h1>Landing Page</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis provident maxime iure laudantium hic autem voluptatibus placeat, laboriosam a voluptatem inventore amet totam cumque praesentium sunt sequi quibusdam adipisci ad!</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

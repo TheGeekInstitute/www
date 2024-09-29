@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+       
+            width: 300px;
+            text-align: center;
+            margin: 150px auto;
+            height: 300px;
+           
+            
+        }
+
+        .container .btns{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:7px;
+            grid-template-rows: repeat(4,1fr);
+            place-content:center ;
+            align-content: center;
+        }
+
+        .container .btns button{
+            border: 1px solid black;
+            height: 40px;
+            background-color: antiquewhite;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .container input{
+            border: 1px solid black;
+            height: 40px;
+            width: 100%;
+            margin: 10px 0;
+            border-width: 1px 1px 3px 1px;
+            font-size: large;
+            outline: none;
+        }
+
+        .container .btns button:hover{
+            background-color: black;
+            color: white;
+            transition: all .2s linear;
+        }
+
+
+
+        .container .btns .special{
+            background-color: royalblue;
+            color: white;
+            
+        } 
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <input type="text" id="field">
+
+        <div class="btns">
+            <button data-val="7">7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="special" >C</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="special" data-val="*">x</button>
+            
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="special">+</button>
+            
+            <button class="special">.</button>
+            <button>0</button>
+            <button class="special">/</button>
+            <button class="special">=</button>
+
+
+        </div>
+    </div>
+
+    <script>
+        let field = document.querySelector("#field");
+        let btns = document.querySelector(".btns");
+        let result="";
+        Array.from(btns.children).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                
+                console.log(e.getAttribute("data-val"));
+
+                if(e.innerHTML=="="){
+                    field.value = eval(field.value.toString().replace("x","*"));
+                }
+                else if(e.innerHTML=="C"){
+                    field.value="";
+                }
+                else{
+                        result +=e.innerHTML;
+                         field.value +=e.innerHTML;
+
+                    }
+            })
+        })
+
+    </script>
+
+</body>
+</html>
+
+<!-- https://cms.involve.me/blog/how-to-create-a-simple-price-calculator-and-capture-more-leads/calculator-L.png -->
+
+
+<!-- https://www.blogs.unicamp.br/zero/wp-content/uploads/sites/187/2022/04/calculator-gd4637ddb5_1280-757x1024.png -->

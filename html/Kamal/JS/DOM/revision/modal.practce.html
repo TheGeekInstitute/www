@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .open{
+        background-color: blueviolet;
+        color: white;
+        margin: 10px;
+    }
+    .box{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        inset: 0;
+       display: none;
+        border: 2px solid red;
+        background-color: rgba(0, 0, 0, 0.301);
+    }
+    .box2{
+        margin: 10px auto;
+        height: 300px;
+        width: 400px;
+        margin-top: 200px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .close{
+        margin-left: 200px;
+        font-size: x-large;
+        font-weight: 700;
+    user-select: none;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <button class="open">Open</button>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione sapiente, quo deleniti numquam fuga cumque. In, adipisci saepe. Placeat sit non asperiores commodi autem omnis enim rerum nam voluptatem impedit?</p>
+        <div class="box">
+            <div class="box2"><label for="">What is Modal</label>
+            <label class="close" for="">X</label>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolor voluptatem, ea omnis corrupti alias, eligendi aut laudantium voluptas repellat reprehenderit eveniet fugit rem nisi sequi quasi porro consequatur accusamus.</p>
+            </div>
+            
+        </div>
+    </div>
+    <script>
+        let box = document.querySelector(".box")
+        let open = document.querySelector(".open");
+        let close = document.querySelector(".close");
+        open.addEventListener("click",()=>{
+            box.style.display="block"
+        })
+        close.addEventListener("click",()=>{
+            box.style.display="none";
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        body{
+            counter-reset: section ;
+        }
+
+        h1::before{
+            /* content: counter(section, lower-alpha) " "; */
+            content: counter(section) ". ";
+            counter-increment: section;
+        }
+
+        h2{
+            text-indent: 100px;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2::before{
+            content: counter(section) "." counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: red;
+        }
+
+        h2{
+            counter-reset: sub-sub-section;
+        }
+
+        h3{
+            text-indent:150px;
+        
+        }
+
+        h3::before{
+            content: counter(section) "." counter(sub-section) "." counter(sub-sub-section) ". ";
+            counter-increment: sub-sub-section;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Web Development</h1>
+        <h2>HTML</h2>
+            <h3>Form</h3>
+            <h3>heading</h3>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Cyber Security</h1>
+        <h2>Black Arch</h2>
+        <h2>Pentoo</h2>
+        <h2>Kali Linux</h2>
+
+    <h1>Programming</h1>
+
+
+</body>
+</html>

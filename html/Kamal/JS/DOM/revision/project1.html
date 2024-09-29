@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            height: 200px;
+            padding: 10px;
+            display: flex;
+            
+        }
+        .add{
+            border: 2px solid red;
+            height: 40px;
+            width: 30px;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 600;
+        }
+        .box{
+            border: 2px solid red;
+            height: 40px;
+            width: 30px;
+            margin-inline: 5px;
+            text-align: center;
+            
+            font-size: large;
+            transition: all 2s linear;
+           
+        }
+        .label{
+            float: right;
+            margin-right: 2px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="add">
+            +
+        </div>
+
+    </div>
+    <script>
+        let container= document.querySelector(".container");
+        let add = document.querySelector(".add");
+        
+        add.addEventListener("click",()=>{
+            let box = document.createElement("div");
+            let label = document.createElement("label");
+            let count = container.childElementCount;
+            let para = document.createElement("para")
+            let element = document.createTextNode("x");
+            label.append(para)
+            para.append(element)
+            para.style.cursor="pointer";
+            box.append(label);
+            box.append(count)
+            box.classList.add("box")
+            label.classList.add("label")
+            container.insertBefore(box,add)
+           
+            para.addEventListener("click",()=>{
+                container.removeChild(label.parentElement)
+            })
+       
+        })
+        
+       
+    </script>
+</body>
+</html>

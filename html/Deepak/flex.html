@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            /* align-items: start; */
+            /* align-items: end; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* align-content: center; */
+            /* align-content: space-between; */
+
+    
+        }
+
+        .box{
+            border: 1px solid red;
+            width: 70px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            margin: 5px;
+            background-color: green;
+            color: white;
+
+        }
+
+
+        .box1{
+            /* align-self:start; */
+            flex-shrink: 0;
+            flex-grow: 0;
+
+
+
+        }
+
+        .box4{
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+        <div class="box box11">11</div>
+        <div class="box box12">12</div>
+        <div class="box box13">13</div>
+        <div class="box box14">14</div>
+        <div class="box box15">15</div>
+        <div class="box box16">16</div>
+
+    </div>
+</body>
+</html>
+
+https://www.codingnepalweb.com/wp-content/uploads/2021/03/Responsive2BPortfolio2BWebsite-jpeg.jpg

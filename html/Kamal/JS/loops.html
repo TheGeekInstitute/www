@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //while
+
+        let i=0;
+        // while(i<=10){
+        //     console.log(i + "<br>");
+        //     i++;
+        // }
+
+        // #do while
+        
+        // do{
+        //     document.write(i + "<br>");
+        //     i++;  
+        // }
+        // while(i<=10)
+        
+        //for
+        // for(let a=0;a<=10;a++){
+        //     document.write(a + "<br>")
+        // }
+
+let obj = {
+    "name":"Amit Singh",
+    "age":25,
+    "gender":"Male"
+}
+    // console.log(obj)
+
+let arry = ["Amit","Sumit","Ravi",'Ankit'];
+
+// for(let x=0; x< arry.length ; x++){
+//     document.write(arry[x] +"<br>")
+// }
+// for(x=0;x<arry.length;x++){
+//     console.log(arry[x]+"<br>")
+// }
+//#for of
+
+// for(x of arry){
+//     document.write(x + "<br>")
+// }
+
+//for in
+
+// for(x in arry){
+//     document.write(arry[x] + "<br>")
+// }
+
+
+// document.write(obj.name)
+
+
+// for(x in obj){
+//     document.write(x + " -> " + obj[x]+"<br>")
+// }
+
+
+let multiDim=[[1,1,1],[2,2,2],[3,3,3]];
+
+for(let i=0 ; i< multiDim.length ; i++){
+    for(let j=0 ; j<multiDim[i].length ; j++){
+        document.write(multiDim[i][j] + " ")
+    }
+
+    document.write("<br>")
+}
+
+
+// for(i of multiDim){
+//     for(j of i){
+//         document.write(j + " ")
+//     }
+//     document.write("<br>");
+// }
+
+//Parttern Printing
+
+let row=5;
+
+for(let a=1; a<=row;a++){
+    for(let b=1 ; b<=a ;b++){
+        document.write(b + " ")
+    }
+    document.write("<br>");
+}
+
+
+for(let a=1; a<=row;a++){
+    for(let b=1 ; b<=a ;b++){
+        document.write("* ")
+    }
+    document.write("<br>");
+}
+
+for(let a=1; a<=row;a++){
+    for(let b=1 ; b<=row ;b++){
+        document.write(a+" ")
+    }
+    document.write("<br>");
+}
+let col=1;
+for(x=5; x>=col; x--){
+    for(y=5; y>=col; y--){
+        document.write(y +" ")
+    }
+    document.write("<br>")
+}
+
+
+for(let a=1; a<=row;a++){
+    for(let b=1 ; b<=row ;b++){
+        document.write(b+" ")
+    }
+    document.write("<br>");
+}
+
+
+
+</script>
+</body>
+</html>

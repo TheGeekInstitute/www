@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+
+    <style>
+        .box{
+            margin-top: 20px;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+
+        .box:hover{
+            background-color: red;
+        }
+        .box:active{
+            background-color: cyan;
+        }
+
+        .link a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .google{
+            color: red;
+        }
+
+        .google:hover{
+            text-decoration: underline ;
+        }
+
+        .facebook{
+            border: 2px solid blue;
+            padding: 5px;
+            color: blue;
+            border-radius: 100px;
+        }
+
+        .facebook:hover{
+            background-color: blue;
+            color: white;
+        }
+
+        .twitter{
+            border: 2px solid red;
+            padding: 5px;
+            background-color: rgba(255, 0, 0, 0.418);
+            color: red;
+        }
+
+        .twitter:hover{
+            color: white;
+            background-color: red;
+        }
+
+        .twitter:active{
+            color: black;
+            background-color: yellow;
+        }
+
+        .gitlab{
+            color: black;
+        }
+
+        .gitlab:hover{
+            color: red;
+        }
+
+        .gitlab:active{
+            color: blue;
+        }
+
+        .github:visited{
+            color: cyan;
+        }
+
+        .gitlab:visited{
+            color: pink;
+        }
+
+
+        .btn{
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: larger;
+            background-color: red;
+            color: black;
+            font-weight: 900;
+            border: none;
+            border-radius: 5px;
+
+            transition: all .2s;
+        }
+
+        .btn:hover{
+            background-color: cyan;
+            box-shadow: 2px 2px 3px grey;
+        }
+
+        .btn:active{
+            transform: translate(2px,2px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="link">
+        <a href="https://www.google.com" class="google">Google</a>
+
+    <a href="https://www.facebook.com" class="facebook">facebook</a>
+
+    <a href="https://www.twitter.com" class="twitter">Twitter</a>
+
+    <a href="https://github.com" class="github">GitHub</a>
+
+    <a href="https://gitlab.com" class="gitlab">Gitlab</a>
+
+
+    </div>
+
+
+    <div class="box">
+
+    </div>
+
+<button class="btn">ABCD</button>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        
+        body{
+          background-color: rgb(125, 192, 234);
+        }
+      
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: cursive;
+         
+            
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        nav{
+            height: 60px;
+            background-color: rgb(172, 151, 225);
+            color: rgb(245, 242, 242);
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            box-shadow: 10px 10px 10px rgb(255, 255, 255);
+        }
+
+        .logo{
+            font-size: 32px;
+            font-weight: 900;
+            
+        }
+
+        .open,.close{
+            font-size: xx-large;
+            display: none;
+        }
+
+        .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* color: cornflowerblue; */
+        }
+
+        .links li{
+            margin: 0 10px;
+        }
+
+        .links li a{
+            color: rgb(179, 127, 97)11, 31, 31);
+        }
+
+        .links li a:hover{
+            text-shadow: 1px 1px 3px rgb(248, 193, 106);
+
+        }
+
+        @media screen and (max-width:600px) {
+          .links{
+            position: absolute;
+            top: 60px;
+            background-color: rgb(172, 151, 225);
+            left: 0;
+            right:0;
+            height: 150px;
+            flex-direction: column;
+            display: none;
+            text-align: center;
+            /* color:white ; */
+          }
+
+          .links li a{
+            line-height: 40px;
+          }
+
+          .open{
+            display: block;
+          }
+
+          #btn:checked ~ .links{
+            display: block;
+          }
+
+          #btn:checked ~ .open{
+            display: none;
+          }
+
+          #btn:checked ~ .close{
+            display: block;
+          }
+
+        }
+        .link a{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Logo
+        </div>
+
+        <input type="checkbox" id="btn">
+        <label for="btn" class="open">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <label for="btn" class="close">
+            <i class="fa-solid fa-x"></i>
+        </label>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <div class="front">
+
+            </div>
+            <div class="back">
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

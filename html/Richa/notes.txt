@@ -1,0 +1,7 @@
+What is Programming ?
+
+Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages.
+
+https://www.geeksforgeeks.org/language-processors-assembler-compiler-and-interpreter/
+
+                                                               

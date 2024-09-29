@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Selector</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .nav{
+            height: 3.5rem;
+            background-color: black;
+            color: white;
+        }
+
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav ul li{
+            display: block;
+            line-height: 3.5rem;
+            margin: 0 20px;
+            /* border: 2px solid red; */
+            padding:0 20px;
+            font-size: large;
+            user-select: none;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+
+        .nav ul li:hover{
+            background-color: red;
+        }
+
+
+        .container{
+            padding: 50px;
+         
+            display: grid;
+            grid-template-columns: repeat(10,50px);
+            grid-template-rows: repeat(10,50px);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .box{
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            margin:5px;
+        }
+
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .nav ul .active{
+            background-color: red;
+            /* animation: show .3s ease-in-out 0s 1 alternate forwards; */
+        }
+
+        @keyframes show {
+            0%{
+                transform: scale(2) rotate(0) translate(50px,50px);
+            }
+
+            100%{
+                transform: scale(1) rotate(360deg) translate(0px,0px);
+                border-radius: 50%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul id="btns">
+            <li data-color="all">All</li>
+            <li data-color="red">Red</li>
+            <li data-color="green">Green</li>
+            <li data-color="blue">Blue</li>
+            <li data-color="orange">Orange</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+
+        <div class="box blue"></div>
+        
+        <div class="box orange"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box orange"></div>
+        
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+
+        <div class="box blue"></div>
+        
+        <div class="box orange"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box orange"></div>
+        
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+
+        <div class="box blue"></div>
+        
+        <div class="box orange"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box orange"></div>
+        
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box red"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        
+        <div class="box green"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+
+        <div class="box blue"></div>
+        
+        <div class="box orange"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+        <div class="box orange"></div>
+        
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+    </div>
+
+
+    <script>
+        let btns =  document.querySelector("#btns").children;
+
+        Array.from(btns).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                var attr =  e.getAttribute("data-color");
+               
+                Array.from(btns).forEach((a)=>{
+                    a.classList.remove("active")
+                })
+                e.classList.add("active")
+                
+                //container
+                let container =  document.querySelector(".container")
+
+                Array.from(container.children).forEach((element) => {
+                    if(element.classList.contains(attr)){
+                        element.style.display="block"
+                        element.style.animation="show .5s ease-in-out 0s 1 alternate forwards"
+                    }
+                    else if(attr=="all"){
+                        element.style.display="block"
+                        element.style.animation="show .3s ease-in-out 0s 1 alternate forwards"
+                    }
+                    else{
+                        element.style.display="none"
+                    }
+                });
+
+
+
+            })
+        })
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hide{
+         opacity: 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <button onclick="bulboff()">Off</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Image" id="image">
+    <button onclick="bulbon()">On/OFF</button>
+
+
+    <script>
+        function bulboff(){
+            document.querySelector("#image").setAttribute("style","display:none;")
+        }
+
+        function bulbon(){
+            document.querySelector("#image").classList.toggle("hide");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function table(a){
+        //     // a = parseInt(a)
+        //    for(let a=1 ; a<=20; a++){
+        //     return a + "<br>";
+        //    }
+        // }
+        // document.write(a)
+
+        // function max(){
+        //     for(let a=1; a<=20; a++){
+        //          return a + "<br>"
+        //     }
+        // }
+        // document.write(max)
+        let a = 1
+        let sum=0;
+        for(let a=1; a<=20; a++ ){
+            if(a % 2 ==0 ){
+                sum+=a;
+                document.write(a + "<br>" )
+
+            }
+
+            
+        }
+        document.write("Sum of all Even Number :" + sum + "<br>")
+
+
+        
+
+        let b = 1
+        let plus=0;
+        for(let a=1; a<=20; a++){
+            if(a % 2 !=0){
+                plus+=a;
+                document.write(a + "<br>")
+            }
+        }
+        document.write("Sum of all Odd Number :" + plus + "<br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Making</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* border: 1px solid black; */
+            background: rgb(255, 205, 3);
+            
+        }
+        .form{
+            height: 20rem;
+            width: 20rem;
+            top: calc(50% - 10rem );
+            left: calc(50% - 10rem);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            /* border:2px solid black; */
+            background-image: linear-gradient(to top, red , yellow);
+            /* text-align: center; */
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius:2rem;
+            box-shadow: 4px 4px 2px black ;
+            border: 3px solid white;
+width: ;
+        }
+        .login{
+            text-align: center;
+            border: 3px solid white;
+            background-image: linear-gradient(to top ,rgb(6, 79, 96) ,rgb(9, 154, 245));
+            padding-top:  .5rem ;
+            padding-bottom:  .5rem ;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+            /* border-bottom-right-radius: 2rem;
+            border-bottom-left-radius:2rem; */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 2px 2px 2px white;
+
+
+        }
+        .form label{
+            padding: 1rem .4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        input{
+            padding: .4rem .3rem;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+            margin: 0px 3px;
+            border-radius: 100px;
+            background: white;
+            
+        }
+        input[type=submit]{
+            padding: 10px;
+            margin: 30px 90px;
+            border-radius: 100rem;
+            font-weight: bold;
+            font-size: 18px;
+            background: rgb(36, 66, 173) ;
+            color: white;
+            box-shadow: 1px 1px 2px black;
+
+        }
+        input[type=submit]:hover{
+            background: rgb(235, 14, 14);
+            box-shadow: 2px 2px 2px black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 class="login">Form Login</h1>
+        <label> <span>Username</span></label>
+        <input type="text" name="" id="">
+        <label for=""> <span>Password</span></label>
+        <input type="password">
+        <input type="submit" value="Login">
+    </div>
+    
+</body>
+</html>

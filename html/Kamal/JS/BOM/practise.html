@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <button class="open">open</button>
+    <button class="close">close</button>
+    <button class="move">move</button>
+    <button class="resize">resize</button>
+    <button class="upsize">size</button>
+    <div id="btn">
+        <button class="up">up</button>
+        <button class="down">down</button>
+    </div>
+    <div class="para">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatum cupiditate? Corporis ex consectetur necessitatibus expedita dicta minus tempore, nulla, ab totam reprehenderit perspiciatis commodi nisi obcaecati quod, itaque quibusdam.
+            Perspiciatis sequi temporibus eius delectus velit commodi unde, excepturi, iste placeat ducimus earum eos obcaecati itaque sit magni aut animi vitae iure repellendus nesciunt recusandae quasi ratione quibusdam suscipit. Corrupti.
+            Quasi natus commodi totam. Quaerat beatae, sapiente temporibus eius ut quos in culpa inventore voluptatum veniam provident enim obcaecati! Reprehenderit nesciunt qui illum voluptas illo a. Hic repellat recusandae tenetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consequuntur perferendis voluptate inventore nulla reprehenderit dicta vero temporibus? Iusto neque quis impedit beatae corrupti delectus sed expedita temporibus ipsum aspernatur.
+            Incidunt quia qui officia dolores ex iste labore accusamus deleniti consectetur distinctio perspiciatis, iure rerum, alias asperiores maxime maiores libero officiis! Repellendus, possimus beatae provident tenetur aliquam sunt ut voluptates!
+            Quaerat soluta voluptatem animi laboriosam, voluptas nobis. Ea laboriosam nostrum, rerum ducimus facilis vitae atque odit beatae earum at officiis ad pariatur dolor et asperiores aut illo possimus vero aliquid.
+            Placeat dolore quis quam, nam, eligendi exercitationem fuga aliquam adipisci animi assumenda a repudiandae commodi rem nisi eveniet nobis voluptas. Tenetur facilis quis sunt voluptates enim dolorum doloribus eveniet laborum.
+            Veritatis dolores a error, itaque perspiciatis enim quasi ea et magni reprehenderit, excepturi cumque repellat illum, impedit eveniet? Corrupti sunt, repellendus sed mollitia minima optio ratione quae sint cupiditate neque?
+            Sequi possimus quia rerum tenetur harum tempora laborum ipsa ipsum. Quam deserunt dolor nostrum tenetur error! Commodi, excepturi aperiam iste sequi nobis sit delectus cum, vero fuga animi quo maxime!
+            Laborum reprehenderit hic iusto magni facere natus fugiat nobis molestiae vel. Consequuntur tempore officiis nam pariatur provident nobis quaerat exercitationem illum iure suscipit, voluptatem excepturi ratione eligendi. Vel, sunt ipsa!
+            Possimus veritatis alias iusto corrupti blanditiis ipsa repellat sequi expedita doloribus dolore, quam quod quis iure. Incidunt suscipit nostrum unde neque. Nesciunt minus quae, debitis ipsa saepe natus quas magni?
+            Dicta fugit error exercitationem cumque dolores vel possimus officiis illo libero, in fugiat pariatur sequi quae, eligendi ipsa. Recusandae ex odio consequuntur, facere enim architecto iusto illo velit culpa eligendi!
+            Nulla tenetur laudantium eum at expedita et animi quas, facilis necessitatibus! Delectus consequatur recusandae quam ea aperiam inventore voluptatem exercitationem, et error earum unde, expedita, architecto officiis repudiandae accusamus ut! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed temporibus necessitatibus eveniet voluptate saepe molestiae molestias voluptatibus cumque. Veritatis quisquam animi ut, voluptatibus laborum exercitationem assumenda! Aspernatur neque ipsa id.
+            Officia accusamus at veritatis odio debitis. Dignissimos perspiciatis accusamus et amet a libero, iure saepe dolores ullam eum. Vel, pariatur optio? Repellat, a! Corporis eaque esse molestias corrupti, ullam ipsa.
+            Quo, voluptatem. Cupiditate maiores, possimus laudantium aut distinctio consequatur saepe accusantium debitis? Natus, optio incidunt corporis temporibus ipsum recusandae omnis soluta similique sint architecto voluptatum cupiditate eveniet, debitis ipsa iure.
+            Accusamus illum esse quos recusandae, veritatis veniam laborum provident minus ab expedita totam voluptas nulla illo natus nostrum saepe, mollitia maxime incidunt nam beatae, eaque eum? Reprehenderit odit ratione ab!
+            Veniam mollitia, minus ullam corporis velit eos hic sit, fugit, animi id nostrum. Aut doloribus adipisci magni repudiandae tenetur porro commodi, tempora, a, quo enim in omnis nam temporibus quidem?
+            Veritatis molestiae nisi non iusto atque magni praesentium fugiat harum eveniet, consectetur quisquam omnis qui saepe? At animi ad placeat quae quos incidunt veniam nam, est corporis. Exercitationem, doloremque recusandae!
+            Ducimus nesciunt nihil id perspiciatis tempore nobis atque minima cum quod eveniet quibusdam ullam, necessitatibus enim illo, odit impedit. Quibusdam voluptates quas mollitia qui quaerat eius tempore perspiciatis, iure esse!
+            Aut nihil, perferendis a non impedit facere dolorum asperiores totam laudantium dolor deserunt ipsa tempora in, ipsam, autem molestiae doloremque nesciunt. Cupiditate nihil sunt nam debitis consectetur, dolorem optio eligendi.
+            Dicta quisquam cum assumenda reprehenderit corrupti, perferendis, ab, libero voluptate consectetur expedita illo! Quasi sapiente quos libero ex quidem eaque architecto vel temporibus illum ducimus in quas, itaque et. Corporis?
+            Nobis quos recusandae officiis doloribus tempore aliquid, iste blanditiis praesentium labore dignissimos expedita explicabo ipsa reiciendis quidem sunt corrupti. Sit necessitatibus ducimus quo quia nobis esse recusandae similique laboriosam dolores.
+        </p>
+    </div>
+    
+    <script>
+        let win;
+        document.querySelector(".open").addEventListener("click",()=>{
+           win= window.open("http://10.10.10.10/Kamal/JS/BOM/1.html","_blank","height=400,width=400,top=200,right=100")
+        })
+        document.querySelector(".close",()=>{
+           win.close()
+        })
+        document.querySelector(".move").addEventListener("click",()=>{
+            win.focus();
+            win.moveBy(100,10)
+        })
+        document.querySelector(".resize").addEventListener("click",()=>{
+            win.resizeBy(-100,-100)
+            win.focus()
+        })
+        document.querySelector(".upsize").addEventListener("click",()=>{
+            win.resizeBy(100,100)
+            win.focus()
+        })
+        document.querySelector(".up").addEventListener("click",()=>{
+            window.scrollBy(0,-10)
+        })
+        document.querySelector(".down").addEventListener("click",()=>{
+            window.scrollBy(0,10)
+        })
+
+
+
+    </script>
+</body>
+</html>

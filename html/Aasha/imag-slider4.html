@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            /* border: 1px solid red; */
+            background-color: rgb(189, 149, 149);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+
+
+        }
+        .nav ul li a{
+            color: white;
+        }
+        .nav ul li{
+            display: inline;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .nav .Logo{
+            margin: 15px;
+            font-size: xx-large;
+            color: rgba(164, 189, 23, 0.781);
+
+        }
+
+        .container{
+            overflow: hidden;
+        }
+        .container .slider{
+            border: 1px red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70vh;
+            width: 500vw;
+            animation-name: slider;
+            animation-duration: 20s;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+         
+
+        }
+        .container .slider .image .content{
+            height: 40vh;
+            width: 70vw;
+            background-color: rgba(0, 0, 0, 0.459);
+            margin: auto;
+            margin-top: 100px;
+            padding: 10vh 5vw;
+            text-align: center;
+            border-top-left-radius:10vh ;
+            border-top-right-radius:2vh ;
+            border-bottom-left-radius:2vh ;
+            border-bottom-right-radius:10vh ;
+            backdrop-filter:blur(2px);
+
+
+
+
+            
+        }
+        .container .slider .image{
+            height: 70vh;
+            width: 100vw;
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+
+        }
+       @keyframes slider{
+        0%{
+          transform: translateX(0);
+        }
+        25%{
+            transform: translateX(-100vw);
+        }
+        50%{
+            transform: translateX(-200vw);
+        }
+        75%{
+            transform: translateX(-300vw);
+        }
+        100%{
+            transform: translateX(-400vw);
+        }
+       }
+
+
+       .logo{
+        font-size: 60px;
+        font-weight: 900;
+        background-image: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+        color: transparent;
+        -webkit-background-clip: text;
+        animation-name: change-color;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+       }
+
+       @keyframes change-color {
+        0%{
+            background-size: 0;
+        }
+
+        25%{
+            background-size: 200%;
+        }
+
+        50%{
+            background-size: 300%;
+        }
+        75%{
+            background-size: 400%;
+        }
+
+        100%{
+            background-size: 500%;
+        }
+       }
+     
+        
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+     <div class="logo">Logo</div>
+     <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">About</a></li>
+     </ul>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image :url(https://www.w3schools.com/css/img_5terre.jpg)" >
+     
+                <div class="content">
+                    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing </h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fuga pariatur, earum assumenda expedita ut tenetur, vitae voluptate possimus animi numquam laboriosam accusamus corrupti alias nihil. Modi accusamus odit autem!</p>
+                </div>
+            </div>
+            <div class="image"style="background-image :url(https://www.w3schools.com/html/img_5terre.jpg)" >
+
+                <div class="content">
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni doloribus quas expedita</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fuga pariatur, earum assumenda expedita ut tenetur, vitae voluptate possimus animi numquam laboriosam accusamus corrupti alias nihil. Modi accusamus odit autem!</p>
+              
+            
+                </div>
+            </div>
+
+            <div class="image"style="background-image :url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true)" >
+                <div class="content">
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni doloribus quas expedita</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fuga pariatur, earum assumenda expedita ut tenetur, vitae voluptate possimus animi numquam laboriosam accusamus corrupti alias nihil. Modi accusamus odit autem!</p>
+                
+
+                </div>
+            </div>
+
+            <div class="image"style="background-image :url(https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg)" >
+                <div class="content">
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni doloribus quas expedita</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fuga pariatur, earum assumenda expedita ut tenetur, vitae voluptate possimus animi numquam laboriosam accusamus corrupti alias nihil. Modi accusamus odit autem!</p>
+                
+
+                </div>
+            </div>
+            <div class="image"style="background-image :url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb7AKOQr5xSY7oUDeWOM-Df3itLdgpe-EPkjodgvZdJqq2kbr_6sTlGOcYMusLdb_VcFU&usqp=CAU)" >
+                <div class="content">
+                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem magni doloribus quas expedita</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, fuga pariatur, earum assumenda expedita ut tenetur, vitae voluptate possimus animi numquam laboriosam accusamus corrupti alias nihil. Modi accusamus odit autem!</p>
+                
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

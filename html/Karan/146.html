@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+<!--
+    @keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation
+-->
+
+<style>
+    @keyframes my-anim{
+        /* from{
+            border-radius: 0px;
+    }
+        to{
+            border-radius: 50%;
+            background-color: cyan;
+        } */
+
+    0%{
+        width: 200px;
+        background-color: red;
+    }
+
+    25%{
+        width: 300px;
+        background-color: aqua;
+    }
+
+    50%{
+        width: 400px;
+        background-color: bisque;
+    }
+
+    75%{
+        width: 500px;
+        background-color: blue;
+    }
+
+    100%{
+        width: 600px;
+        background-color: black;
+    }
+    
+    }
+
+    
+    .box{
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        animation-name: my-anim;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        /* animation-delay: 5s; */
+        /* animation-direction:alternate; */
+        /* animation-direction:reverse ; */
+        /* animation-direction: alternate-reverse; */
+        animation-timing-function: linear;
+        /* animation-fill-mode: both; */
+    }
+
+    .box:hover{
+        animation-play-state: paused;
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

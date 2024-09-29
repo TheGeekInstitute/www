@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        .main{
+            background-color: red;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px;
+            font-weight: 900;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">       
+        
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box main">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    
+    
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+        let main = document.querySelector(".main");
+
+        // console.log(main.parentElement)
+
+        // console.log(container.children)
+        // console.log(container.childElementCount)
+        // console.log(container.childNodes)
+
+
+        main.addEventListener("click",()=>{
+           main.parentElement.style.backgroundColor = "cyan";
+       })
+       container.addEventListener("click",(e)=>{
+        container.firstChild.style.color="green";
+       })
+
+        // console.log(container.firstChild)
+        // console.log(container.lastChild)
+
+        // console.log(container.firstElementChild)
+        // console.log(container.lastElementChild)
+
+        // console.log(main.nextSibling)
+        // console.log(main.nextElementSibling.nextElementSibling)
+        // console.log(main.previousElementSibling.previousElementSibling)
+
+    </script>
+</body>
+</html>

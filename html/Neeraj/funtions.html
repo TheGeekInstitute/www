@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            name:"neeraj",
+            age : 20,
+            roll_no:37,
+            gender:"male",
+            subject:["english","account","business","physicaleducation","math"],
+            aditional:{math:"computersecience",commarce:"hindi"},
+            buddy:function(){
+                document.write("Hello world")
+            },
+            
+            
+        };
+        obj.buddy();
+        document.write("<br>");
+        function lallan_tap(){
+            document.write("kya be jyadsi bole raha hai tu bataoo kya shemde");
+        }
+        lallan_tap();
+        document.write("<br>");
+    document.write(obj.aditional.commarce);
+    document.write("<br>");
+    function sum(){
+        let a =parseInt(prompt("put first value here"));
+        let b =parseInt(prompt("put secend value here"));
+        let c = a+b;
+        document.write(c);
+    }
+    sum();
+    </script>
+</body>
+</html>

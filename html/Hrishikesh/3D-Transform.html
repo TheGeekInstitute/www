@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .container{
+            background-color: rgba(128, 128, 128, 0.5);
+            height: 400px;
+            width:350px;
+            margin: 100px auto;
+            perspective: 600px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+        }
+
+        .container .box{
+            height: 400px;
+            width: 350px;
+            background-color: crimson;
+            transition: all .3s linear;
+
+            /* transform-origin: top left; */
+            backface-visibility: hidden;
+        }
+
+        .container:hover .box{
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            /* transform: perspective(600px) translateZ(200px); */
+
+           transform: rotateX(180deg);
+           /* transform: rotateY(60deg); */
+           /* transform: rotateZ(180deg); */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>ABCD XYZ</h1>
+        </div>
+    </div>
+</body>
+</html>

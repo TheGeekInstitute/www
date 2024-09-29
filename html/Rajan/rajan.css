@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.one{
+    background-image: url(https://images.unsplash.com/photo-1520338258525-606b90f95b04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-blend-mode:overlay ;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100vw;
+    height: 39rem;
+    /* border-bottom: 5px solid rgb(0, 74, 233); */
+}
+.one .word {
+    border-bottom: 2px solid white;
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+    /* text-align: center; */
+
+
+    animation-name: word;
+    animation-delay: 5s;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes word{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.one .word u{
+    color: black;
+}
+.one .box{
+    /* border: 3px solid black; */
+    clip-path: polygon(30% 0%, 51% 0, 100% 76%, 100% 75%, 62% 100%, 40% 100%, 58% 87%, 77% 74%);
+    width: 20rem;
+    height: 39rem;
+    background-color: lightblue;
+    animation-name: ooo;
+    animation-timing-function: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+}
+@keyframes ooo{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateX(70vw);
+    }
+}
+.one .icons{
+    /* border: 1px solid wheat; */
+    width: 80%;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+
+    animation-name: word;
+    animation-delay: 6s;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.one .icons h2{
+    font-size: 40px;
+    color: white;
+
+}
+.one .icons h1{
+    /* border: 1px solid white; */
+    font-size: 45px;
+    width: 50%;
+    color: white;
+    text-shadow: 1px 2px 5px royalblue;
+    position: absolute;
+    top: 5rem;
+    left: 19rem;
+
+}
+.two{
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQgNDQ0HBw0HDQ8IDQcNFREWFhURFRMYHTQgGBoxGxMTIT8iMSwrPjowFx8/RDM1NzQtOj0BCgoKDQ0NFQ8PFSsZFRkrKzctLSsrLS03LSsrNy0tNysrLSstNysrKysrNysrKysrKysrKystKysrKysrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABAcF/8QALBABAQEBAQABAwAHCQAAAAAAAAECERIDBAYhI1NigpLC0gUTIjFBQ3GBkf/EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAGhEBAQEBAQEBAAAAAAAAAAAAAAERAhIDMf/aAAwDAQACEQMRAD8A8NZmZmZmZmZhZmYZB4OAHB4PB4LBxuG4PBwC8Hg8Hg4BeDw3G4OMXjcPxuDjaTjcPxuNjaTjcPxuNjanxuH43Axk+Nw/AsDBJwOH4HAxicDh7A4AlA3ADBBmYGZmZmZmZmZmZmZmFmYZGkNIbACG43DSDgBweDIPDSAHB4bgyGwNLIPDSDIOBpeNw/B4ONpONw/B8jganxuKeW42NqfG4p5DjY2p8DinGsDB1PgcU4HAwdT4HD8CwuDqdgWKWF4GMQOHocLgksA1DhcErCACzMzMwgMFmNI3BkEGhpGkNIbACQ0jSGkNIGhIaQZDSHkLoSDIaQ0hpC6ThuG4PBwNLxuH4PDYxONxTjcHA1PjcU8t5bG1PjcU4HAxk+BxXgWBgpcCxTgcDG1KwLFbC2FsNqXAsUsLYWw2p2BT2BYWwdTsLVLC2FElgHpbCiVhAojDRoMhoDSGkaGkNIDSGkaQ0h5C2tIaRpDyHkLaEhpBkNIeQoSDIaQ0hpA0sybhpB4achpeDw8g+TeQ0nlvKnlvI+Q1Py3lTy3G8tqfkPKvkPLeW1LgWK8CwPI6lYWxawthbBlSsLYrYWwlgpWFsVsLYWw2pWFsVsJYSw0qdhbFLC2EsMnYFPS2EsEnANYHAEYeQIaQ0BpDyBIeQ0ha0hpGkPIpIW1pDSDIaQ8hWkNIMhpDyFtaQ0gyGmVJC2hIMh5BkPOQ0syPk8g+TeS6TyPD+R8j5bU+NxTy3lvIalxvKvkPLeR1Kwti1yW5LeR1GwLFbAuS2DqNhbFbC2EsNKjYWxWwthLDSo2FsVsJYnYMSsLYrYSwlPKlQp7C0lhoSlPYUgmhoEPIaQBkNI0h5FJC2jIaRpD5ikhGkPI0h5FJC2tIeRpDyKSFtaQ0gyHkUkJaWQ0hpDzJ5yW0kyaZPIPk85LpON5U8j5Hy2p8byp5byPkNS4Hla5C5DyOo3JblawLkt5HULC2LWFsJYaVGwli1hbCWGlQsLYtYnYnYaVKwliuoSxOw8SsJYrYSxOwyVhbFNQlTsNKnQPSkphh4EPIaQKMikhZDxSQlGRSQJD5ikhaMh5AzFMxWQlo5h5GkPIrIS1pk8g5h5FZyS0JDyDIeZUnJbSzJpk8yaZUnJLSTI+VJkfJ/BfSXlvK3kPI+G9I+QuV/JbkLw3pC5Lcr3JblO8mlQsJYvYSxO8nlQsJYvYnqJ2HlRsTsWsJYlYeVGwliuoSxKw8qOoSxWwliVh0qSxWxPUTponSKUqdhjQ+YWHkPApopmFh8qQhpFJC5UzFeYSmzFJC5imYtzCWjmKZgZimYrzCWjmKSBmKZi3PKdrZypMjmHzlbnlO0Jk0yeQ8ytOCWpzJvKkyPlScF9JeW8reW8j4D0h5C5XuS3JbwM6c9yW5XuSayn1yaVz3Keo6dRPUR65Ulc9ieovqJ6iHUUlQsJqLaieol1Dyo6ieotYnqI2KRHUJVanUuoeJUlimoSpWHiVhapolTsNDRSEyeGgU+VJCZUyrCU2YrkmVMq8kp8xTMJmK5i3MTtNmK5hcxTMX5hLTZiuYXMVzF+Yl1TZimYGYrmOjnlK0M5UmRkPIvzylaWZHyeQeKYXSeQ8q+W4PkNS8luVeBYF5GVC5JYvYTUS65PK59RLUdGonqOfrlWVz6iWo6NRHUc/UV5qOolqL6iWoh1FZUdROxbUS0j1Dyo6T0tpPSPSkS1E6rpPSVOnoh9ESp4bKkJk8NC1TJ8kimVeS0+Vcp5VytynVMqZJlXK3MTp8q5hMxXC/KdUzFcwmVcx1cRHqnzFcwuYrmOniI9UZDyNIeReRK0JDcGQ3D4S0vA4pxuNgalYWxWwtgWGlSsT1FrCahLFJUNRLUdGojqOfuK81z6iWo6NxHUcvcW5qGolpbUS1HN0rEdJaW1EtIdKRLSWltJaR6UidT0ppPSNUidJVKnU6aGh8swwKpFMsyvJKrlTIstynVMq5Fl+SVXKuGZ0cpdLYWzGZ1cI9LZiuYDOrhHpXJ4zLRGngyCxyVuNxmYoUtgMB4SwmozEqkS1EtQGc/avKWojpmcva3KOktMzm6WiW1f7O+g39V82Pg+O5nyb9WX5bc5zJLbbz/hmc30uSq8/r69+y/qb/ALvw/wDc+afyJ6+yvqf1vw/j9n5v6GZw36dOmcRLX2X9T+f0vxfjs/GPqL/l+4XX2R9T+t+H+H57/IzEvdN5hL9j/Vfj9N8P55Z/h+f/AF/c/Az7C+rv5nzfT8/a/vc3/wAuWYl6o4//2Q==);
+    background-size: cover;
+    background-blend-mode:overlay ;
+    background-color: rgba(36, 43, 75, 0.541);
+    width: 85rem;
+    height: 42rem;
+    /* border-bottom: 5px solid blue;    */
+}
+.two .head{
+    border-bottom: 1px solid white;
+    width: 17rem;
+    margin: auto;
+    color: white;
+    padding: 25px 0 5px 0;
+    font-size: 20px;
+}
+.two .hero{
+    /* border: 1px solid white; */
+    margin: 60px 10px 0 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.two .hero .photoshop{
+    /* border: 1px solid black; */
+    margin: 5px;
+    width: 25rem;
+    text-align: center;
+    background-image: url(https://petapixel.com/assets/uploads/2024/04/photoshop-update-april-2024-featured.jpg);
+    background-size: 27rem 28rem;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px white;
+}
+.two .hero .photoshop:hover{
+    position: relative;
+    transform: translatey(-10px);
+    transition: all 0.5s linear;
+}
+.two .hero .photoshop img{
+    border: 1px solid white;
+    width: 100px;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+}
+.two .hero .photoshop h2{
+    color: black;
+}
+.two .hero .photoshop p{
+    color: black;
+    padding: 10px 0;
+}
+.two .hero .illustrator{
+    /* border: 1px solid black; */
+    margin: 5px;
+    width: 25rem;
+    text-align: center;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/05e7be13887469.5a5d542a12c9b.png);
+    background-size: 27rem 28rem;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px white;
+}
+.two .hero .illustrator:hover{
+    position: relative;
+    transform: translatey(-10px);
+    transition: all 0.5s linear;
+}
+.two .hero .illustrator img{
+    border: 1px solid white;
+    width: 100px;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+}
+.two .hero .illustrator h2{
+    color: black;
+}
+.two .hero .illustrator p{
+    color: black;
+    padding: 10px 0;
+}
+.two .hero .coreldraw{
+    /* border: 1px solid black; */
+    margin: 5px;
+    width: 25rem;
+    text-align: center;
+    background-image: url(https://www.corelinsight.com/wp-content/uploads/2022/03/featured-image-1.webp);
+    background-size: 27rem 28rem;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px white;
+}
+.two .hero .coreldraw:hover{
+    position: relative;
+    transform: translatey(-10px);
+    transition: all 0.5s linear;
+}
+.two .hero .coreldraw img{
+    border: 1px solid white;
+    width: 100px;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+}
+.two .hero .coreldraw h2{
+    color: black;
+}
+.two .hero .coreldraw p{
+    color: black;
+    padding: 10px 0;
+}
+.two .nav h1{
+    color: lightblue;
+}
+.three{
+    background-image: url(https://w0.peakpx.com/wallpaper/312/864/HD-wallpaper-dark-blue-lines-background-abstract-blue-background-creative-blue-background-lines-background.jpg);
+    width: 85rem;
+    height: 90rem;
+    background-size: 47rem 85rem;
+}
+.three .head{
+    border-bottom: 1px solid white;
+    width: 11rem;
+    margin: auto;
+    color: white;
+    padding: 25px 0 5px 0;
+    font-size: 20px;
+}
+.three .hero{
+    /* border: 1px solid white; */
+    width: 65rem;
+    margin: 40px auto;
+}
+.three .hero img{
+    width: 20rem;
+}
+.four{
+    background-image: url(https://www.hdwallpapers.in/download/wallpaper_for_computer_white_flower_with_blue_background_4k_hd_desktop-3840x2160.jpg);
+    width: 85rem;
+    height: 30rem;
+    background-size: 85rem 30rem ;
+}
+.four .head{
+    border-bottom: 1px solid white;
+    width: 14rem;
+    margin: auto;
+    color: white;
+    padding: 25px 0 5px 0;
+    font-size: 20px;
+}
+.four .container{
+    /* border: 1px solid white; */
+    display: flex;
+    height: 20rem;
+    width: 60rem;
+    margin: 2rem auto;
+
+}
+.four .container .left{
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
+}
+.four .container .left h1{
+    color: white;
+    padding: 2px 0;
+}
+.four .container .left p{
+    font-size: 18px;
+    color: lightblue;
+    padding: 5px 0;
+}
+.four .container .left button{
+    margin: 15px 0;
+    background-color: orange;
+    border: none;
+    width: 8rem;
+    line-height: 2rem;
+    color: white;
+    border-radius: 5px;
+
+
+}
+.four .container .right{
+    /* border: 1px solid blue; */
+    width: 50%;
+    text-align: center;
+}
+.four .container .right img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 200px;
+    box-shadow: 35px 0px 0px 0px lightblue;
+}
+
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .one{
+        background-image: url(https://images.unsplash.com/photo-1520338258525-606b90f95b04?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-blend-mode:overlay ;
+        background-color: rgba(0, 0, 0, 0.507);
+        width: 600px;
+        height: 35rem;
+        /* border-bottom: 5px solid rgb(0, 74, 233); */
+    }
+    .one .word {
+        border-bottom: 2px solid white;
+        width: 15rem;
+        font-size: 20px;
+        color: white;
+        padding: 0 20px;
+    }
+    .one .word u{
+        color: black;
+    }
+    .one .box{
+        display: none;
+    }
+    .one .icons{
+        /* border: 1px solid wheat; */
+        width: 40%;
+        text-align: center;
+        position: relative;
+        top: 8rem;
+    }
+    .one .icons h2{
+        font-size: 40px;
+        color: white;
+    
+    }
+    .one .icons h1{
+        /* border: 1px solid white; */
+        font-size: 45px;
+        width: 50%;
+        color: white;
+        text-shadow: 1px 2px 5px royalblue;
+        position: absolute;
+        top: 8rem;
+        left: 15rem;
+    
+    }
+    .two{
+        background-image: url(data:image/jpeg;base64,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);
+        background-size: cover;
+        background-blend-mode:overlay ;
+        background-color: rgba(36, 43, 75, 0.541);
+        width: 85rem;
+        height: 42rem;
+        /* border-bottom: 5px solid blue;    */
+    }
+    .two .head{
+        border-bottom: 1px solid white;
+        width: 17rem;
+        margin: auto;
+        color: white;
+        padding: 25px 0 5px 0;
+        font-size: 20px;
+    }
+    .two .hero{
+        /* border: 1px solid white; */
+        margin: 60px 10px 0 10px;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+    .two .hero .photoshop{
+        /* border: 1px solid black; */
+        margin: 5px;
+        width: 25rem;
+        text-align: center;
+        background-image: url(https://petapixel.com/assets/uploads/2024/04/photoshop-update-april-2024-featured.jpg);
+        background-size: 27rem 28rem;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px white;
+    }
+    .two .hero .photoshop:hover{
+        position: relative;
+        transform: translatey(-10px);
+        transition: all 0.5s linear;
+    }
+    .two .hero .photoshop img{
+        border: 1px solid white;
+        width: 100px;
+        margin: 10px 0;
+        border-radius: 100px;
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+    }
+    .two .hero .photoshop h2{
+        color: black;
+    }
+    .two .hero .photoshop p{
+        color: black;
+        padding: 10px 0;
+    }
+    .two .hero .illustrator{
+        /* border: 1px solid black; */
+        margin: 5px;
+        width: 25rem;
+        text-align: center;
+        background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/05e7be13887469.5a5d542a12c9b.png);
+        background-size: 27rem 28rem;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px white;
+    }
+    .two .hero .illustrator:hover{
+        position: relative;
+        transform: translatey(-10px);
+        transition: all 0.5s linear;
+    }
+    .two .hero .illustrator img{
+        border: 1px solid white;
+        width: 100px;
+        margin: 10px 0;
+        border-radius: 100px;
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+    }
+    .two .hero .illustrator h2{
+        color: black;
+    }
+    .two .hero .illustrator p{
+        color: black;
+        padding: 10px 0;
+    }
+    .two .hero .coreldraw{
+        /* border: 1px solid black; */
+        margin: 5px;
+        width: 25rem;
+        text-align: center;
+        background-image: url(https://www.corelinsight.com/wp-content/uploads/2022/03/featured-image-1.webp);
+        background-size: 27rem 28rem;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px white;
+    }
+    .two .hero .coreldraw:hover{
+        position: relative;
+        transform: translatey(-10px);
+        transition: all 0.5s linear;
+    }
+    .two .hero .coreldraw img{
+        border: 1px solid white;
+        width: 100px;
+        margin: 10px 0;
+        border-radius: 100px;
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.664);
+    }
+    .two .hero .coreldraw h2{
+        color: black;
+    }
+    .two .hero .coreldraw p{
+        color: black;
+        padding: 10px 0;
+    }
+    .two .nav h1{
+        color: lightblue;
+    }
+    .three{
+        background-image: url(https://w0.peakpx.com/wallpaper/312/864/HD-wallpaper-dark-blue-lines-background-abstract-blue-background-creative-blue-background-lines-background.jpg);
+        width: 85rem;
+        height: 90rem;
+        background-size: 47rem 85rem;
+    }
+    .three .head{
+        border-bottom: 1px solid white;
+        width: 11rem;
+        margin: auto;
+        color: white;
+        padding: 25px 0 5px 0;
+        font-size: 20px;
+    }
+    .three .hero{
+        /* border: 1px solid white; */
+        width: 65rem;
+        margin: 40px auto;
+    }
+    .three .hero img{
+        width: 20rem;
+    }
+    .four{
+        background-image: url(https://www.hdwallpapers.in/download/wallpaper_for_computer_white_flower_with_blue_background_4k_hd_desktop-3840x2160.jpg);
+        width: 85rem;
+        height: 30rem;
+        background-size: 85rem 30rem ;
+    }
+    .four .head{
+        border-bottom: 1px solid white;
+        width: 14rem;
+        margin: auto;
+        color: white;
+        padding: 25px 0 5px 0;
+        font-size: 20px;
+    }
+    .four .container{
+        /* border: 1px solid white; */
+        display: flex;
+        height: 20rem;
+        width: 60rem;
+        margin: 2rem auto;
+    
+    }
+    .four .container .left{
+        /* border: 1px solid red; */
+        width: 50%;
+        text-align: center;
+    }
+    .four .container .left h1{
+        color: white;
+        padding: 2px 0;
+    }
+    .four .container .left p{
+        font-size: 18px;
+        color: lightblue;
+        padding: 5px 0;
+    }
+    .four .container .left button{
+        margin: 15px 0;
+        background-color: orange;
+        border: none;
+        width: 8rem;
+        line-height: 2rem;
+        color: white;
+        border-radius: 5px;
+    
+    
+    }
+    .four .container .right{
+        /* border: 1px solid blue; */
+        width: 50%;
+        text-align: center;
+    }
+    .four .container .right img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 200px;
+        box-shadow: 35px 0px 0px 0px lightblue;
+    }   
+}

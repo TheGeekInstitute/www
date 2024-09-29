@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>ABCD</title>
+  
+  <style>
+
+    :root{
+        --my-color:cyan;
+        --my-second:black;
+        --height:25px;
+    }
+
+
+
+    input:focus{
+        /* background-color: red; */
+    }
+
+    input:checked{
+        box-shadow: 4px 4px 4px var(--my-color);
+    }
+
+    input:disabled{
+        /* background-color: red; */
+        /* border: 3px solid black; */
+    }
+
+    input:enabled{
+        /* background-color: cyan; */
+    }
+
+    input:required{
+        /* background-color: red; */
+    }
+
+    input:optional{
+        /* background-color: green; */
+    }
+
+    input:in-range{
+        background-color: green;
+    }
+
+    input:out-of-range{
+        background-color: var(--my-color);
+    }
+
+    input:read-only{
+        /* color: red; */
+    }
+
+    input:read-write{
+        /* background-color: cyan; */
+        height: var(--height);
+    }
+
+
+    input:valid{
+        background-color: greenyellow;
+    }
+
+    input:invalid{
+        background-color: orangered;
+    }
+
+    input:default{
+        /* background-color: red; */
+        outline: 3px solid var(--my-color);
+    }
+
+  </style>
+    </head>
+    <body>
+        <h1>Form</h1>
+
+        <form>
+            <label>First Name :</label>
+            <input type="text" disabled>
+
+            <br><br>
+
+            <label>Last Name :</label>
+            <input type="text" required value="Verma" readonly>
+
+            <br><br>
+
+            <label>Gender :</label>
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+
+            <br><br>
+            <label>DOB :</label>
+            <input type="date">
+
+            <br><br>
+
+            <label>Email :</label>
+            <input type="email">
+
+            <br><br>
+
+            <label>Number :</label>
+            <input type="number" min="5" max="10">
+            <br><br>
+
+            <label>Password</label>
+            <input type="password">
+
+            <br><br>
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox" checked>
+            <input type="checkbox">
+            <input type="checkbox">
+
+            <br><br>
+            <input type="submit" value="Signup">
+            <input type="reset">
+
+        
+
+
+
+
+
+
+        </form>
+    </body>
+</html>

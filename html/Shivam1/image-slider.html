@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            overflow: hidden;
+        }
+        
+        .container .slider{
+            display: flex;
+            height: 70vh;
+            width: 400vw;
+            animation: slider 10s linear 0s infinite alternate ;
+        }
+
+        .image{
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .image .content{
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            border-radius: 1rem 5px;
+            color: white;
+        }
+
+        @keyframes slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+
+
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+
+            }
+
+            35%{
+                transform: translateX(-100vw);
+
+            }
+
+            40%{
+                transform: translateX(-100vw);
+            }
+            45%{
+                transform: translateX(-100vw);
+            }
+            
+            50%{
+                transform: translateX(-200vw);
+
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+            60%{
+                transform: translateX(-200vw);
+            }
+            65%{
+                transform: translateX(-200vw);
+            }
+            70%{
+                transform: translateX(-200vw);
+            }
+            
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-300vw);
+            }
+
+            85%{
+                transform: translateX(-300vw);
+            }
+
+            90%{
+                transform: translateX(-300vw);
+            }
+            95%{
+                transform: translateX(-300vw);
+            }
+
+            100%{
+                transform: translateX(-300vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+
+        <div class="slider">
+        
+            <div class="image" style="background-image: url(./images/1.jpeg);">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos quisquam esse magni inventore</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(./images/2.jpeg);">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos quisquam esse magni inventore</p>
+                </div>
+            </div>
+        
+
+            <div class="image" style="background-image: url(./images/3.jpeg);">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos quisquam esse magni inventore</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(./images/4.jpeg);"">
+                <div class="content">
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos quisquam esse magni inventore</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

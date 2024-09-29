@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prectice</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    .box{
+     
+    
+      width: 200px;
+      margin: 50px auto;
+     
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <button onclick="off()">Off</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="sdfs" id="image">
+ 
+    <button onclick="on()">on</button>
+  </div>
+  
+ <script>
+    function on(){
+      
+      // ("src","https://www.w3schools.com/js/pic_bulbon.gif")
+
+
+      console.log()
+
+      document.querySelector("#image").setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif");
+    }
+
+    function off(){
+      document.querySelector("#image").setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif");
+    }
+ </script>
+</body>
+</html>

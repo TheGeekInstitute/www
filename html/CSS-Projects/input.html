@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .main{
+            border: 1px solid black;
+            height: 100px;
+            width: 250px;
+            margin: auto;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main input{
+            width: 150px;
+            padding: 5px 2px;
+            outline: transparent;
+            border: 2px solid black;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .main label{
+            width: 150px;
+            font-weight: 700;
+            font-size: 18px;
+            position: relative;
+            bottom: 25px;
+            left: 5px;
+            z-index: -1;
+            /* opacity: 100%; */
+            /* visibility: hidden; */
+            transition: all .3s;
+            
+        }
+
+        .main input:focus + label{
+            transform: translateY(-25px);
+        }
+
+        .box{
+            /* border: 1px solid black; */
+            height: 100px;
+            width: 250px;
+            margin: auto;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box input{
+            width: 150px;
+            padding: 5px 2px;
+            outline: transparent;
+            border: 2px solid black;
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 700;
+          
+        }
+
+        .box input::placeholder{
+            color: transparent;
+        }
+        .box label{
+            width: 150px;
+            font-weight: 700;
+            font-size: 18px;
+            position: relative;
+            bottom: 25px;
+            left: 5px;
+            z-index: -1;
+            /* opacity: 100%; */
+            /* visibility: hidden; */
+            transition: all .3s;
+        }
+
+        .box input:not(:placeholder-shown) + label{
+            transform: translateY(-25px);
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+        <input type="text">
+        <label for="">Enter Name</label>
+   </div>
+
+<div class="box">
+    <input type="text" placeholder="abcd">
+    <label for="">Enter Name</label>
+
+    <input type="text" placeholder="abcd">
+    <label for="">Enter Name</label>
+
+    <input type="text" placeholder="abcd">
+    <label for="">Enter Name</label>
+</div>
+
+
+
+</body>
+</html>

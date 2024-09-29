@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Mode</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            background-color: rgba(0, 255, 255, 0.575);
+        }
+
+        .box img{
+            mix-blend-mode: overlay;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-image: url("../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color:red;
+            background-color: rgba(2, 36, 36, 0.74);
+            background-blend-mode: overlay;
+        }
+
+       
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../web/images/11.jpg" alt="">
+        <img src="../web/images/11.jpg" alt="">
+        <img src="../web/images/11.jpg" alt="">
+
+    </div>
+
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum aut dignissimos aperiam </h1>
+    </div>
+
+</body>
+</html>

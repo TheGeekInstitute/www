@@ -1,0 +1,466 @@
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: 2px 0px 10px red;
+}
+.box-row img{
+    width: 60px;
+    margin-left: 10px;
+}
+.box-row1 ul {
+display: flex;
+}
+.box-row1 ul li{
+    margin: 10px;
+    margin-top: 16px;
+    font-size: 20px;
+    color: aliceblue;
+
+}
+.box-row2{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.box-row2 button{
+    /* border: 2px solid red; */
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    /* border-style: none; */
+    background-color:  transparent;
+    box-shadow: 1px 1px 10px yellow; 
+}
+.gh{
+    font-size: 18px;
+    color: skyblue;
+    width: 70px;
+    /* background-color: bisque; */
+}
+.box1{
+    /* border: 2px solid red; */
+    background-color: black;
+    height: 100vh;
+}
+#one{
+/* border: 2px solid red; */
+height: 25vh;
+border-radius: 50%;
+position: relative;
+left: 100px;
+top: -300px;
+/* margin-left: 60px; */
+}
+#two{
+    /* border: 2px solid yellow; */
+    height: 90vh;
+    position: relative;
+     top: 20px;
+     left: 420px;
+}
+.img{
+color: white;
+margin-top: -298px;
+font-size: 40px;
+color: skyblue;
+position: relative;
+left: 60px;
+
+}
+.box1 h1{
+    color: rgb(238, 85, 85);
+    position: relative;
+    left: 60px;
+}
+.box1 h1 span{
+    color: rgb(240, 240, 137);
+    
+}
+#three{
+    /* border: 2px solid red; */
+    width: 400px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    left: 60px;
+}
+.box2{
+    /* border: 2px solid red; */
+    /* width:100%; */
+    height: 95vh;
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+}
+.box2-row1{
+/* border: 2px solid red; */
+width: 40%;
+height: 70vh;
+margin-top: 50px;
+}
+
+.box2-row2{
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 80vh;
+    margin-top: 20px;
+}
+.box2-row1 h1{
+    font-size: 50px;
+    color: white;
+}
+.box2-row1 p{
+    color: rgb(96, 206, 249);
+    font-size: 20px;
+}
+.box2-row1 button{
+    width: 110px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(126, 243, 216);
+    transition: all 1.6s;
+
+}
+.box2-row1 button:hover{
+    background-color: skyblue;
+}
+.box2-row1 button:hover .gh{
+    font-weight: bold;
+    color: white;
+}
+
+.box2-row2 img{
+    height: 80vh;
+   margin-left: -60px;
+   animation-name: anup;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   
+}
+@keyframes anup {
+     from{
+        transform: translatey(0px);
+     }
+      to{
+        transform: translatey(-50px);
+
+      }
+}
+.box3{
+    /* border: 2px solid red; */
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.sub-box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: -300px;
+}
+.ring{
+    border: 0px solid white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: absolute;
+}
+.ring:nth-child(1){
+    border-bottom-width: 10px;
+    border-color: rgb(238, 42, 238);
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(360deg);
+    }
+}
+.ring:nth-child(2){
+    border-right-width: 10px;
+    border-color: rgb(42, 238, 117);
+    animation: rotate1 2s linear infinite;
+}
+@keyframes rotate1 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+    }
+}
+.ring:nth-child(3){
+    border-top-width: 10px;
+    border-color: rgb(182, 238, 42);
+    animation: rotate3 2s linear infinite;
+}
+@keyframes rotate3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+.box-container{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -50px;
+    top: -110px;
+    background-image: url(https://imgs.search.brave.com/5E_3ouC-8qAebTs4ZAz6VouIwo7Wxr9yVTxBkFpcoh0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYxL0hUTUw1X2xv/Z29fYW5kX3dvcmRt/YXJrLnN2Zw.svg);
+    /* line-height: 30px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+.box-container:hover{
+    transform: scale(1.1);
+}
+
+.box-container p{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: rgba(122, 122, 122, 0.753);
+    font-size: 180px;
+    font-weight: 900;
+    color: white;
+    padding-left: 50px;
+}
+.box-container p:hover{
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+
+    }
+    75%{
+        opacity: 25%;
+
+    }
+    100%{
+        opacity: 0%;
+
+    }
+}
+
+.box-container0{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -240px;
+    top: 130px;
+    background-image: url(https://imgs.search.brave.com/gA-5ZFUL_BB4y1pgar_3MYD8rw9lM3Tjo2EfOQK9Dfk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzg5LzYxLzU0/LzM2MF9GXzQ4OTYx/NTQwNl83dWIzWE5j/SFpOTnNvdFg5aFpx/YkdsR0hXbFFxbDlx/Zi5qcGc);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+.box-container0:hover{
+    animation: portate 2s linear infinite;
+    
+}
+.box-container0:hover{
+    transform: scale(1.3);
+}
+.box-container0 p{
+    /* border: 2px solid red; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: rgba(122, 122, 122, 0.753);
+    font-size: 180px;
+    font-weight: 900;
+    color: white;
+    padding-left: 50px;
+}
+
+
+.box-container0 p:hover{
+    animation-name: hide;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes portate {
+ from{
+    transform: rotateZ(0deg);
+ }
+ to{
+    transform: rotateZ(180deg);
+
+ }
+}
+.box-container1{
+      /* border: 2px solid red; */
+      width: 270px;
+      height: 200px;
+      position: relative;
+      left: -190px;
+      top: -108px;
+      background-image: url(https://mirror.math.princeton.edu/pub/php/images/ele-running.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+}
+.box-container2{
+    /* border: 2px solid red; */
+    width: 340px;
+    height: 200px;
+    position: relative;
+    left: -450px;
+    top: 125px;
+   background-image: url(https://miro.medium.com/v2/resize:fit:3200/0*de0IdiUSoJTwgsys.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box4{
+    height: 95vh;
+    /* border: 2px solid red; */
+    text-align: center;
+    background-color: #000;
+}
+.box4 h1{
+    color: rgb(204, 48, 215);
+}
+.card{
+    /* border: 2px solid yellow; */
+    width: 300px;
+    height: 400px;
+    margin-top: 15px;
+    margin-left: 343px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    overflow: hidden;
+}
+.card1{
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 400px;
+    /* margin-top: 15px; */
+    /* margin-left: 343px; */
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: rgb(238, 42, 238);
+    animation-name: Round;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin:bottom right;
+    position: relative;
+    top: -160px;
+    left: -120px;
+}
+.card2{
+/* border: 2px solid red; */
+width: 285px;
+height: 380px;
+/* margin-top: 15px; */
+/* margin-left: 343px; */
+border-top-left-radius: 60px;
+border-bottom-right-radius: 60px;
+background-color: rgb(44, 44, 44);
+/* animation-name: Round; */
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+/* transform-origin:bottom right; */
+position: relative;
+top: -430px;
+left: 6px;
+}
+
+@keyframes Round {
+    from{
+    transform: rotateZ(0deg);
+    }
+    to{
+    transform: rotateZ(360deg);
+
+    }
+}
+form{
+    margin-top: 40px;
+    padding-top: 30px;
+}
+input{
+    height: 40px;
+    width: 16em;
+    border-radius: 6px;
+    margin: 10px;
+    border-style: none;
+    padding-left: 10px;
+    
+}
+ span{
+    color: rgb(21, 193, 202);
+    margin: 20px;
+    font-size: 25px;
+}
+i{
+    color: rgb(189, 223, 50);
+}
+button{
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 40px;
+    width: 18em;
+    background-color: rgb(215, 171, 39);
+    border-style: none;
+}
+a{
+    font-size: 25px;
+    color: white;
+
+}
+@media screen and (max-width:1024px){
+    .anup{
+        display: none;
+    }
+    input[type='checkbox']{
+        display: none;
+    }
+}
+
+
+
+
+    

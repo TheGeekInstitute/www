@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .head{
+            background-color: black;
+            height: 2.5rem;
+        }
+        .nav{
+            background-color: aquamarine;
+            height: 4rem;
+            text-align: center;
+            color: black;
+            text-decoration: solid;
+        }
+        .hero{
+            background-color: aqua;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .hero .box{
+            border: 2px solid brown;
+            height: 10rem;
+            width: 10rem;
+            margin: .3rem;
+        }
+        .hero .box img{
+            border: 2px solid brown;
+            height: 10rem;
+            width: 10rem;
+        }
+        .section{
+            background-color: rgba(71, 109, 235, 0.61);
+            height: 2rem;
+        }
+        .container{
+            background-color: rgb(255, 34, 34);
+            padding: .1rem;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .container .pt{
+            border: 2px solid red;
+            height: 10rem;
+            width: 10rem;
+            margin: .3rem;
+        }
+        .container .pt img{
+            border: 2px solid rgb(83, 80, 80);
+            height: 10rem;
+            width: 10rem;
+        }
+        .footer{
+            background-color: rgb(85, 250, 70);
+            height: 1.5rem;
+        }
+        @media screen and (max-width:500px) {
+            .head{
+                display: none;
+            }
+            .nav{
+                height: 4rem;
+            }
+            .hero{
+               padding: 1.5rem 0rem ; 
+            }
+            .hero .box{
+            height: 20rem;
+            width: 18rem;
+            margin: 1rem 0rem;
+            background-color: rgb(176, 228, 156);
+            }
+            .hero .box img{
+                height: 20rem;
+                width: 18rem;
+                }
+             .container{
+                padding: 1.5rem 0rem;   
+             }   
+             .container .pt{
+                height: 20rem;
+                width: 18rem;
+                margin: 1rem 0rem;
+             }
+             .container .pt img{
+                padding: 1.5rem ;
+                height: 20rem;
+                width: 18rem;
+             }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head"></div>
+    </header>
+    <nav>
+        <div class="nav">CSS WEb</div>
+    </nav>
+    <main>
+        <div class="hero">
+            <div class="box"><img src="../../wallpapers/maller/core.jpg" alt=""></div>
+            <div class="box"><img src="../../wallpapers/landscape/cameron-venti-big-fish.jpg" alt=""></div>    
+            <div class="box"><img src="../../web/images/17.jpg" alt=""></div>
+            <div class="box"><img src="../../wallpapers/people/sandersB.jpg" alt=""></div>
+        </div>
+    </main>
+    <section>
+        <div class="section"></div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="pt"><img src="../../wallpapers/win-mac/OSX-10-8-6k.jpg" alt=""></div>
+            <div class="pt"><img src="../../web/images/18.jpg" alt=""></div>
+            <div class="pt"><img src="../../wallpapers/maller/damhalla-ii.jpg" alt=""></div>
+            <div class="pt"><img src="../../wallpapers/psychedelic/JrdFmx3.jpg" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer"></div>
+    </footer>
+</body>
+</html>

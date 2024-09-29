@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Overlay</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            /* background-image: url("https://media.istockphoto.com/id/996078816/photo/blue-background.jpg?b=1&s=612x612&w=0&k=20&c=tp-7y4ReEbCYtHjY1QN5UQIzUSjxAn-A9kcFNLDW3k0="); */
+            background-image: linear-gradient(red, yellow, blue , green ,aqua);
+            position: absolute;
+            height: 50vh;
+            width: 20vw;
+            display: ;
+            /* background: rgb(0, 162, 255); */
+           right:calc(100% - 100vh);
+            top: calc(100% - 75vh);
+            border-radius: 15px;
+            backdrop-filter: blur(3px);
+            box-shadow: 0px 0px 300px 200px blue;
+        }
+        .box img{
+            height: 20vh;
+            width: 10vw;
+            border-radius: 10px;
+            margin: cal;
+            position: absolute;
+            left:calc(100% - 26.5vh) ;
+            top: calc(100% - 40vh);
+
+        }
+        .items{
+            text-align: center;
+            transition: transform .7s linear;
+            overflow: hidden;
+        }
+        .items:hover{
+            /* background-blend-mode: overlay; */
+        }
+        .overlay{
+            /* border: 2px solid blue; */
+            height:50vh;
+           width: 20vw;
+            /* padding-top:3vh; */
+            transform: translatex(40vh);
+            transition: transform .10s;
+            border-radius: 15px;
+            color: white;
+            backdrop-filter: blur(5px);
+
+        }
+        .overlay h1{
+            padding: 21px 0;
+            font-size: 40px;
+            border-bottom: 2px solid white;
+            /* background-image: url("https://www.sanantonio.gov/Portals/0/EasyDNNnews/21600/thumbs/15385/15001500cthumbTree-3.jpg"); */
+            background-image: linear-gradient(green, greenyellow);
+            background-image: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            /* text-shadow: 2px 2px 2px  black; */
+
+        }
+        .image img{
+            /* margin: 30px 15px; */
+            height: 20vh;
+            width: 13vw;
+            /* border-radius: 501%; */
+            box-shadow: 2px 2px 2px solid black;
+            align-items: center;
+            left: 70px;
+            top: 7em;
+        }
+        .overlay p{
+            margin-top: 230px;
+            font-size: 19px;
+            /* font-family: cursive; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .items:hover  .overlay{
+            background-color: rgba(48, 48, 48, 0.534);
+            transform: translatey(0vh);
+        }
+        /* .bigbox{
+            border: 5px solid black;
+            height: 40em;
+            width: 40em;
+            background-color: aqua;
+            margin-top: ;
+        }  */
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+            <div class="box">
+        <img src="https://easydrawingguides.com/wp-content/uploads/2017/02/How-to-draw-a-cartoon-tree-20.png" alt="">
+        <div class="items">
+            <div class="overlay">
+            <h1>Tree Save Life</h1>
+            <div class="image">
+                <img src="https://www.sanantonio.gov/Portals/0/EasyDNNnews/21600/thumbs/15385/15001500cthumbTree-3.jpg" alt="">
+            </div>
+            <p>n some usages, the definition of a tree may be specified height. In wider definitions, the taller palms, tree ferns, bananas, and bamboos are also trees.   </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>

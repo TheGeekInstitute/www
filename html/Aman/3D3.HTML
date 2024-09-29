@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doctoment</title>
+    <style>
+         
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       body{
+        background-image: linear-gradient(red ,green,yellow);
+       }
+        .container{
+            /* border: 2px solid red; */
+            height: 300px ;
+            width: 300px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+
+            
+        }
+        .card{
+            
+            position: relative;
+            height: 100% ;
+            width: 100% ;
+            transition: all 1s;
+            transform-style: preserve-3d;
+
+        }
+        .front,.back{
+            height: 300px;
+            width: 300px;
+            backface-visibility: hidden;
+
+
+        }
+        .back{
+            /* border: 2px solid red ; */
+            /* display: none; */
+            border: 20px;
+            text-align: center;
+            position: relative;
+             bottom: 300px ;
+             box-shadow: 2px 2px 5px gray;
+             background-image: linear-gradient(45deg,red,cyan,blue);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+             border-radius: 20px ;
+         
+        }
+
+        .back >h1{
+            height:40px ;
+            background-color: rgba(165, 42, 42, 0.662);
+            border-radius: 20px 20px  0px 0px ;
+
+        }
+
+        .back >p{
+               margin: 10px 10px  ;
+            color: black;
+
+        }
+        .back >img{
+            /* border: 1px solid black; */
+            height: 100px;
+            /* text-align: center; */
+            /* margin-right:80px; */
+            width: 100px;
+            border-radius: 50%;
+        }
+        .front{
+            text-align: center;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4WlorTeM1Y1rfdHHs19dkwt6tpJZjpKJjXA);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px ;
+        }
+        .front >h1{
+            /* border: 1px solid red ; */
+            height: 40px ;
+            background-color: rgba(128, 128, 128, 0.848);
+            border-radius: 20px 20px  0px 0px ;
+            /* width: 30px ; */
+        }
+        .back{
+            background-color: yellow;
+            transform: rotateY(180deg);
+        }
+
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+           <div class="front">
+            <h1>Doromon</h1>
+           </div>
+           <div class="back">
+            <h1>Doraemon</h1>
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/509/663/desktop-wallpaper-cute-doraemon-doraemon-and-shinchan.jpg" alt="">
+            <p> Doraemon is an anime series about a robotic cat who tries to be a good influence on a boy named Noby, who's prone to laziness and bad manners. Kids will like Doraemon's imaginative </p>
+           </div>
+        
+        </div>
+    </div>
+    
+</body>
+</html>

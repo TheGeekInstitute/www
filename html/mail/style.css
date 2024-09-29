@@ -1,0 +1,23 @@
+.main1{
+    background-color: aqua;
+    color: purple;
+}
+#main , #abcd{
+    color: palegreen;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.container{
+    background-color: blue;
+    width: 75%;
+
+}
+
+#main{
+    background-color: blueviolet;
+
+}
+.font{
+    font-weight: bolder;
+}

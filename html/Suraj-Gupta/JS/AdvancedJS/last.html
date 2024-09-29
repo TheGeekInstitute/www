@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //    "use strict";
+
+        // let a = Symbol(25);
+        // let b = Symbol(25);
+
+        // console.log(typeof(a))
+
+        // let a=15;
+
+        // a=25
+        // console.log(a)
+    
+        let data= ["One","Two","Three","Four",'Five'];
+
+        let ittr = data[Symbol.iterator]();
+        // console.log(ittr.next().value)
+        // console.log("data");
+        // ittr.next()
+      
+        // console.log(ittr.next().value)
+
+
+        // console.log(ittr.next())
+        // console.log(ittr.next())
+        // console.log(ittr.next())
+        // console.log(ittr.next())
+        // console.log(ittr.next())
+
+        // while(true){
+        //     let print_data = ittr.next();
+
+        //     if(print_data.done == true){
+        //         break;
+        //     }else{
+        //         console.log(print_data.value)
+        //     }
+
+        // }
+
+
+        try{
+            let age=10;
+
+            if(age>=18){
+                console.log("You can Vote");
+            }
+            else{
+                throw "You can Not Vote";
+            }
+            // let data="hello World";
+            // console.log(data);
+        }
+        catch(e){
+            // console.log(e);
+            console.log("sadasdas")
+        }
+
+    
+
+    
+    </script>
+</body>
+</html>

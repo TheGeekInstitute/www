@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new{
+            color: blue;
+            font-family: cursive;
+        }
+
+        .heading{
+            color: red;
+        }
+        
+        .abcd{
+            color: green;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1 class="heading abcd" onclick="change()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum quidem eius, non quae sapiente perferendis facere nostrum consectetur illum voluptate perspiciatis, ipsum vero est quo, optio laborum odio! Quod.</h1>
+
+    <button onclick="change()">AAA</button>
+
+
+
+    <script>
+        function change(){
+            let heading = document.querySelector(".abcd");
+            // heading.style.color="red";
+            // heading.style.backgroundColor = "black";
+            // console.log(heading.className)
+            // heading.className =heading.className + " " + "new"
+            // console.log(heading.className)
+
+            // heading.classList.remove("abcd")
+            heading.classList.toggle("new")
+
+
+        }
+
+    </script>
+</body>
+</html>

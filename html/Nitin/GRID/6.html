@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+          
+            border: 1px solid black;
+            width: 600px;
+            height: 600px;
+            display: grid;
+            margin: auto;
+
+            /* grid-template-columns:  min-content repeat(2,1fr); */
+            /* grid-template-columns:  max-content repeat(2,1fr); */
+            /* grid-template-columns:  minmax(min-content,100px) repeat(2,150px); */
+            grid-template-columns: repeat(3,150px);
+
+            grid-template-rows: repeat(3,150px);
+
+            /* grid-auto-flow: row;
+            grid-auto-rows: 150px; */
+      
+            grid-auto-flow: column;
+            grid-auto-columns: 150px;
+
+        }
+
+        .box{
+            font-weight: 900;
+            border: 1px solid black;
+            
+        }
+
+        .box1{
+            background-color: gray;
+        }
+        .box2{
+           background-color: rgb(132, 85, 85);
+    
+        }
+        .box3{
+            background-color: rgb(199, 199, 171);
+           
+        }
+        .box4{
+            background-color: crimson;
+          
+        }
+        .box5{
+            background-color: rgb(182, 153, 212); 
+        }
+        .box6{
+            background-color: orange;
+        
+        }
+       .box7{
+        background-color: yellow;
+       }
+
+       .box8{
+        
+        background-color: green;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">this sadadasdasdasdasdasd</div>
+        <div class="box box2"> </div>
+        <div class="box box3"></div>
+        <div class="box box4"> </div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+
+
+        <div class="box box2"> </div>
+        <div class="box box3"></div>
+        <div class="box box4"> </div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+
+        <div class="box box2"> </div>
+        <div class="box box3"></div>
+        <div class="box box4"> </div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

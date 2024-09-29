@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        .nav{
+            /* border: 2px solid black; */
+            height: 14vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            /* padding-right: 30rem; */
+            margin: 30px 20px;
+            background-color: rgb(232, 248, 248);
+          
+        }
+        .logo{
+            margin-left: 20px;
+            
+        }
+        .nav ul li{
+            display: inline;
+        }
+        .nav ul li a{
+            margin: 5px;
+            color: rgb(96, 95, 95);
+            font-size: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+
+
+        }
+        .nav [type=search]{
+            padding: 10px 40px;
+            border: 1px solid rgb(211, 210, 210);
+        }
+            .search{
+                /* border: 1PX solid rgb(241, 128, 128); */
+                background-color: rgb(252, 103, 128);
+                color: white;
+                padding: 10px 10px;
+                margin-left: -5px;
+            }   
+            
+            
+             .items img{
+                height: 100px;
+                /* border: 1px solid black; */
+              
+
+            }
+            .items p{
+                font-weight:700 ;
+                color: rgb(58, 58, 58);
+                margin: 10px ;
+            }
+
+            .container{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 25px;
+                background-color:white;
+            }
+            .nav .abcd{
+                /* color: red; */
+                font-size: 2rem;
+                margin-left:15px ;
+            }
+            .main {
+                margin: 2rem 2rem;
+                background-color: rgb(232, 248, 248);
+                width: 97vw;
+                /* height: 200vh; */
+            }
+            .main img{
+                height: 20rem;
+                width:85vw ;
+                margin: 3rem 5rem ;
+                border-radius: 30px;
+            }
+            .main h1{
+                font-size: x-large;
+                margin: 10px 30px;
+
+            }
+            .main p{
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(31, 30, 30);
+                margin: 10px 30px;
+            }
+            .main h1 i{
+                color: rgb(171, 170, 170);
+                margin: 1px 10px;
+            }
+            .box{
+                /* border: 1px solid black; */
+                height: 37vh;
+                width: 17vw;
+                /* margin:30px; */
+                border-radius: 10px;
+                background-color: white;
+                text-align: center;
+                box-shadow: 2px 2px 4px grey ;
+            }
+            .box img{
+                height: 100px;
+                width: 120px;
+                margin:40px;
+                margin-top:30px ;
+                margin-bottom: 10px;
+
+            }
+            .box h4{
+                display: inline-block;
+            
+            }
+            .add{
+                /* border: 1px solid rgb(90, 90, 235); */
+                background-color: rgb(30, 108, 254);
+                color: white;
+                padding: 2px 18px;
+                margin: 10px;
+                margin-right:2px ;
+                border-radius: 5px;
+            }
+            .buy{
+                border: 1px solid rgb(30, 108, 254);
+                border-radius: 5px;
+                padding: 2px ;
+
+            }
+            span{
+                color: rgb(238, 72, 177);
+            }
+            .card{
+                display: flex;
+                justify-content:space-evenly;
+                margin: 5px 20px;
+                
+            }
+            .footer{
+                /* column-count: 4; */
+                height: 350px;
+                background: black;
+                color: white;
+             
+            }
+            .wrapper{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .wrapper .p p{
+                width: 400px;
+            }
+            .copy{
+                text-align: center;
+                font-size: large;
+                margin-top: 9%;
+            }
+            .categories{
+                padding-top: 10px;
+            }
+            .service{
+                padding-top: 10px;
+            }
+            .contact{
+                padding-top: 10px;
+            }
+            .contact a i{
+                margin: 15px;
+                font-size: 25px;
+            }
+            .ig{
+                color: rgb(255, 145, 163);
+            
+            }
+            .fb{
+                color: white;
+                /* border: 1px solid blue; */
+                padding: 3px;
+                background-color: blue;
+                
+            }
+            .tw{
+                color: rgb(64, 195, 247);
+            
+            }
+            
+
+
+     </style>
+</head>
+<body>
+    <div class="nav">
+       <h1 class="logo">LOGO</h1>
+        <ul>
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li ><input type="search"></li>
+            <li class="search"><i class="fa fa-search" aria-hidden="true"></i></li>
+            <li><i class="fa fa-cart-arrow-down abcd"  aria-hidden="true"></i></li>
+            <li><i class="fa fa-user abcd" aria-hidden="true"></i></li>
+        </ul>
+        
+            
+        
+    </div>
+     <div class="container">
+        <div class="items">
+            <img src="https://png.pngtree.com/png-clipart/20230407/ourmid/pngtree-3d-laptop-original-design-png-image_6688925.png" alt=""> <p>Laptop</p>
+        </div>
+           
+            <div class="items">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-12-Transparent-Background.png" alt=""> <p>Apple iPhone</p>
+                </div>
+
+                <div class="items">
+                    <img src="https://www.pngmart.com/files/3/Video-Camera-Lens-Transparent-PNG.png
+                    " alt=""><p> video Camera</p>
+            </div>
+           
+            <div class="items">
+                <img src="https://www.freepnglogos.com/uploads/airpods-png/wireless-charger-case-for-apple-airpods-hyperjuice-13.png" alt=""><p>Airbuds</p>
+     
+            </div>
+           
+       <div class="items">
+        <img src="http://clipart-library.com/image_gallery2/Watch-PNG-Clipart.png" alt=""><p>Legend Watch</p>
+       </div>
+          
+       <div class="items">  
+        <img src="http://clipart-library.com/new_gallery/89-895242_beats-ep-on-ear-headphones-black.png" alt="">
+        <p>Headphones</p>
+       </div>
+        
+    </div>
+    <div class="main">
+        <img src="https://www.mensfashionmagazine.com/wp-content/uploads/2023/02/vadim-sherbakov-tCICLJ5ktBE-unsplash.jpg" alt="">
+        <h1>Most Viewed<i class="fa fa-long-arrow-right"></i> 
+        </h1>
+        <p>Checkout Our Most Viewed Products</p>
+        <div class="card">
+           <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone 12</h3>
+                <span>Rs.59,000</span>
+                <br> 
+                <h4 class="add">Add to Cart</h4>
+                <h4 class="buy">Buy Now</h4>
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone 12</h3>
+                <span>Rs.59,000</span>
+                <br> 
+                <h4 class="add">Add to Cart</h4>
+                <h4 class="buy">Buy Now</h4>
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone 12</h3>
+                <span>Rs.59,000</span>
+                <br> 
+                <h4 class="add">Add to Cart</h4>
+                <h4 class="buy">Buy Now</h4>
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone 12</h3>
+                <span>Rs.59,000</span>
+                <br> 
+                <h4 class="add">Add to Cart</h4>
+                <h4 class="buy">Buy Now</h4>
+            </div>
+            <div class="box">
+                <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                <h3>iPhone 12</h3>
+                <span>Rs.59,000</span>
+                <br> 
+                <h4 class="add">Add to Cart</h4>
+                <h4 class="buy">Buy Now</h4>
+            </div>
+        </div>
+
+        <div class="main2">
+            <h1>Latest Deals<i class="fa fa-long-arrow-right"></i> </h1>
+            <p>Checkout Our Latest Deals</p>
+            <div class="card">
+                <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+             </div>
+        </div>
+        
+        
+            
+        <div class="main3">
+            <h1>Shop By Category<i class="fa fa-long-arrow-right"></i> </h1>
+            <p>Choose the product that will not affects the budget</p>
+            <div class="card">
+                <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+                 <div class="box">
+                     <img src="https://www.pngmart.com/files/15/Apple-iPhone-11-PNG-HD.png" alt="">
+                     <h3>iPhone 12</h3>
+                     <span>Rs.59,000</span>
+                     <br> 
+                     <h4 class="add">Add to Cart</h4>
+                     <h4 class="buy">Buy Now</h4>
+                 </div>
+             </div>
+        </div>
+        
+        
+        
+
+    </div>
+    
+    <div class="footer">
+        <div class="wrapper">
+        
+        <div class="p">
+        <h1>Easter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequatur rerum eos corrupti? Sed, incidunt repellendus aut possimus fuga doloremque, voluptas facilis culpa, maxime et esse. Maxime culpa amet nulla?</p>
+            </div>
+            <div class="service">
+                <h1>Services</h1>
+                <p>Deals in Devices</p>
+                <p>Home Decor</p>
+                <p>Beauty</p>
+                <p>Health</p>
+            </div>
+
+            <div class="categories">
+                <h1>Categories</h1>
+                <p>Electronics</p>
+                <p>Refurbished Devices</p>
+                <p>Fashion</p>
+                <p>Accesories</p>
+                <p>Decoration</p>
+                <p>Beauty Products</p>
+                <p>Tickets</p>
+            </div>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <p>Email Us</p>
+                <p>Call Us </p>
+                <p>Kapashera New Delhi</p>
+                <a href="#"><i class="fa-brands fa-instagram ig"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f fb"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter tw " ></i></a>
+            </div>
+
+        </div>
+        <div class="copy">
+        <p>Copyright 2022 Created By <span>Gics</span></p>
+        </div>
+    </div>
+</body>
+</html>

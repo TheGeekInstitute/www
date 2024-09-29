@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = ["Amit","Sumit","Ravi","Ankit","Sonu","Ravi","Anshu"];
+
+        // document.write(data);
+        // document.write("<br><br>");
+        // data[0]=""
+        // delete(data[0]);
+
+        // data.pop();
+        // data.push("ABCD")
+        // data.shift()
+        // data.unshift('ABCD')
+
+        // let newData= data.concat("A","B")
+
+        // let newData = data.join("-")
+
+
+        // document.write(typeof(newData));
+
+        // let newData = data.slice(1 ,5)
+        // document.write(newData +"<br>")
+
+        // document.write(newData)
+        
+        // let newData = data.splice(0,2);
+
+        // document.write(data)
+        // data="dsadas";
+        document.write(Array.isArray(data))
+
+        document.write(data.indexOf('Ravi'))
+
+        document.write(data.lastIndexOf("Ravi"))
+
+        // document.write(data.includes("Ravi"))
+
+        // let num = [45,25,100,78,50,4,26];
+
+        // // document.write(num.some(check))
+        // // document.write(num.every(check))
+
+
+        function check(a){
+            return a>10;
+        }
+
+
+        // let abcd = num.filter(check)
+
+        // document.write(abcd)
+
+        // document.write(typeof(data.toString()))
+
+
+        // let newData = data.fill("A");
+
+        // document.write(newData)
+
+
+
+
+        function xyz(a){
+            return a*10;
+        }
+        console.log(a)
+
+        // document.write(num.map(xyz))
+        // document.write(num.forEach(xyz))
+
+        // num.forEach(function (a){
+        //     document.write(a + "<br>");
+        // })
+
+        num.map(function (a){
+            document.write(a + "<br>");
+        })
+    </script>
+</body>
+</html>

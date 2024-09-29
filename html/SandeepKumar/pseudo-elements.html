@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+            font-family: cursive;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para::selection{
+            color: red;
+            background-color: yellow;
+        }
+        .para{
+            user-select: none;
+        }
+
+        ul li:first-child::marker{
+            color: red;
+        }
+
+
+        #txt{
+            caret-color: red;
+        }
+
+        #txt::placeholder{
+            color: red;
+            opacity: 1;
+        }
+
+        input{
+            accent-color: green;
+        }
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button{
+            background-color: red;
+            border: 2px solid black;
+        }
+
+
+        .geek:hover::after{
+            content: ' Institute';
+            color: red;
+        }
+
+        .geek::before{
+            content: attr(data-myattr);
+            color: olive;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam repudiandae magni minima, accusamus eveniet voluptas accusantium saepe voluptatum, culpa placeat atque sit cupiditate, labore rem hic est? Quo, eum!
+    </p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <h1 class="geek" data-myattr="The">Geek</h1>
+
+    <input type="text"  id="txt" placeholder="ABCD">
+    <input type="checkbox" name="" id="">
+
+    <input type="file">
+</body>
+</html>

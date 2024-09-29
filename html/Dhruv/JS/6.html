@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr =[
+        //     [
+        //         ["A","B","C"],
+        //         [1,2,3],
+        //         ["I","II","III"]
+        //     ],
+
+        //     [
+        //         ["D","E","F"],
+        //         [4,5,6],
+        //         ["IV","V","VI"]
+        //     ],
+
+        //     [["G","H","I"],[7,8,9],["VII","VIII","IX","X"]]];
+
+            
+        //     for(let i =0 ; i < arr.length ; i++){
+        //         // console.log(arr[i]);
+        //         document.write("<br>");
+        //         for(let j=0 ; j< arr[i].length ; j++){
+        //             // console.log(arr[i][j])
+        //         document.write("<br>");
+
+        //             for(let k=0; k < arr[i][j].length ; k++ ){
+        //                 document.write(arr[i][j][k] + " ")
+        //             }
+        //         }
+        //     }
+
+
+    
+        function sr_no(){
+        let start = prompt("Enter Starting Number :");
+        let end = prompt("Enter Ending Number :");
+
+            let sum =0;
+            sum=parseInt(sum)
+            for(start; start<=end;start++){
+                 // sum = start + sum;
+                document.write(start + "<br>");
+                sum += parseInt(start) 
+            }
+            document.write("Sum of All Numbers :"+ sum);
+        }
+
+
+
+
+        function odd_even(){
+                let start = prompt("Enter Starting Number :");
+                let end = prompt("Enter Ending Number :");
+            start=parseInt(start);
+            end=parseInt(end);
+            let sum =0;
+            sum=parseInt(sum)
+            
+            if(start%2==0){
+                for(start; start<=end ; start+=2){
+                    document.write(start + "<br>")
+                    sum+=start;
+                }
+                document.write("Sum of All Even Numbers :"+ sum);
+            }
+            else{
+
+                for(start; start<=end ; start+=2){
+                    document.write(start + "<br>")
+                    sum+=start;
+
+                }
+                document.write("Sum of All Odd Numbers :"+ sum);
+
+            }
+
+        }
+
+
+    
+        // function table(){
+        //     let num = prompt("Enter a Number :");
+        //     let sum =0;
+        //     sum=parseInt(sum)
+        //     for(let i =1 ; i <= 10 ; i++){
+        //         let mul = i*num
+        //         mul = parseInt(mul)
+        //         i =parseInt(i);
+        //         sum+=mul
+        //         document.write(num + " x " + i + " = " + mul + "<br>") 
+        //     }
+
+        //     document.write("Sum of All Tables :" + sum)
+
+        // }
+
+
+        // sr_no()
+
+        odd_even()
+
+        // table()
+
+            // let i=0;
+            // let first = prompt("please enter a valid number");
+            //    let second = prompt("please enter a second number");
+            // function abcd(){
+          
+            //     let first = parseInt(first);
+            //     let second = parseInt(second);
+            // for(start; first<=second ;first++){
+            //     document.write("start")
+            // };
+
+
+            // }
+
+            // abcd()
+
+            
+    </script>
+</body>
+</html>

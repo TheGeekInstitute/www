@@ -1,0 +1,25 @@
+*{
+    /* background-color: red; */
+    /* color: blue; */
+}
+body{
+    /* background-color: blue; */
+}
+.div .main{
+    background-color: chartreuse;
+    color: aqua;
+}
+h2{
+    background-color: red;
+}
+p{
+    background-color: black;
+    color: azure;
+}
+.pera{
+    background-color: blueviolet;
+}
+
+#nav{
+    background-color: aqua;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #open{
+        background-color:black;
+        color: white;
+        padding: 5px;
+        display: block;
+        width: 7rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: large;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px green;
+      }
+
+      .modal{
+        background-color: orange;
+        background-image: url(https://www.pw.live/exams/wp-content/uploads/2024/01/Ram-Mandir-Ayodhya.jpg);
+        background-size: cover;
+        padding: 0;
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        top: calc(50% - 200px);
+        left: calc(50% - 300px);
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px orangered;
+        animation: show .5s linear 0s 1 alternate forwards;
+        display: none;
+        z-index: 1000;
+      }
+
+      .modal .heading{
+        font-size: larger;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 2px solid black;
+        user-select: none;
+        color: brown;
+      }
+
+      .modal .content{
+        padding: 1rem;
+      }
+
+      .modal .heading #close{
+        color: red;
+        font-size: x-large;
+        cursor: pointer;
+      }
+
+      #btn:checked + .modal{
+        display: block;
+      }
+
+      #btn{
+        display: none;
+      }
+
+      @keyframes show {
+        0%{
+            transform: scale(0);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+      }
+    
+
+    </style>
+
+
+</head>
+<body>
+    <label for="btn" id="open">Open Popup</label>
+    <input type="checkbox" id="btn">
+    <div class="modal">
+        <div class="heading">
+            <p>India's Ayodhya Temple Is a Huge Monument to Hindu Supremacy. Audrey Truschke is a professor of South Asian history at Rutgers University. On Jan. 22, Indian Prime Minister Narendra Modi will inaugurate a three-story monument made of marble, sandstone, and teak that features 44 gates and 392 intricately-carved pillars.</p>
+            <label for="btn" id="close">X</label>
+        </div>
+        <div class="content">
+            <p>The Ram Mandir is a Hindu temple under construction in Ayodhya, Uttar Pradesh, India. It is located at the site of Ram Janmabhoomi, the hypothesized birthplace of Rama, a principal deity of Hinduism.[6][7]
+
+                The site is the former location of the Babri Masjid which was built in 16th century CE after the demolition of an existing non-Islamic structure. The idols of Rama and Sita were placed in the mosque in 1949, before it was attacked and demolished in 1992.
+                "The temple has been made to last more than a thousand years," asserts Shri Nripendra Misra, chairperson of the temple construction committee of the Shri Ram Janmabhoomi Teerth Kshetra Trust, Ayodhya.
+
+                He says top Indian scientists have contributed to making it an iconic structure like never before. Even ISRO technologies have been suitably used in the temple.  
+                
+                 </p>
+        </div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
+   

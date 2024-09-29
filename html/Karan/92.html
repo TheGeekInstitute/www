@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        
+       .sub{
+        visibility: hidden;
+        background-color: #ccc;
+          }
+          .navbar, ul li a{
+            list-style: none;
+            text-decoration: none;
+            color: black;
+          }
+       .navbar ul li:hover .sub{
+        visibility: visible;
+        text-decoration: underline;
+       }
+    </style>
+</head>
+<body>
+   <nav class="navbar">
+    <ul>
+        <li><a href="#">HOME </a>
+        <ul>
+            <li><a href="#" class="sub">web deplopnments</a></li>
+            <li><a href="#" class="sub"> web logo</a></li>
+            <li><a href="#" class="sub">web fonts</a></li>
+            <li><a href="#" class="sub">web front pages</a></li>
+        </ul>
+        </li>
+    </ul>
+   </nav>
+</body>
+</html>

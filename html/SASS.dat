@@ -1,0 +1,100 @@
+Introduction to SASS & SCSS
+variables
+Nesting
+Partials & import
+@mixin
+@extend
+@function 
+Interpolation
+Oprators:
+    Equality:
+        ==
+        !=
+    Relational:
+        <
+        >
+        <=
+        >=
+    Numeric:
+            +,-,*,/
+    String:
+            + concat
+    Boolean:
+        true
+        false
+Functions:
+Color Functions:
+        lighten()
+        darken()
+        adjust-hue()
+        saturate()
+        desaturate()
+        mix()
+        transparentize()
+@use and @forward
+Number Functions
+        abs()
+        ceil()
+        floor()
+        round()
+        max()
+        min()
+        comparable()
+        percentage()
+        random()
+        unit()
+        unitless()
+String Functions:
+        quote()
+        str-index()
+        str-insert()
+        str-length()
+        str-slice()
+        to-upper-case()
+        to-lower-case()
+        unique-id()
+        unquote()
+List Functions:
+    length()
+    nth()
+    set-nth()
+    join()
+    append()
+    index()
+    list-separator()
+    is-bracketed()
+
+Selectors Functions:
+    selector-nest()
+    selector-append()
+    selector-replace()
+    is-superselector()
+    simple-selector()
+    selector-extend()
+
+Map Functions:
+    map-get()
+    map-merge()
+    map-remove()
+    map-keys()
+    map-values()
+    map-has-key()
+
+Introspection Functions:
+    variable-exists()
+    global-variable-exists()
+    mixin-exists()
+    functions-exists()
+    type-of()
+    inspect()
+
+@content Directive
+@media & @at-root
+
+@if and @else
+
+@for Directive
+
+@each Directive
+
+@while Directive

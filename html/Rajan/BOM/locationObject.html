@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="?abcd=sada#sddfas">asda</a>
+
+    <button id="btn">Click Me</button>
+
+
+    <script>
+        let a =  document.querySelector("a");
+        document.querySelector('#btn').addEventListener("click",()=>{
+            // console.log(window.location.hash)
+
+            // console.log(location.host)
+            // console.log(location.hostname)
+            // location.href="https://www.google.com"
+
+            // console.log(location.origin)
+            // console.log(location.pathname)
+            // console.log(location.port)
+            // console.log(location.protocol)
+            // console.log(location.search)
+
+            // location.assign("https://www.google.com")
+            // location.reload()
+            // location.replace("https://www.google.com")
+
+
+            console.log(window.location.hash);
+            console.log(location.host);
+            console.log(location.hostname);
+            // location.href="https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_37173186a17cfa533f8cfb6dc1b7c5c6fc807c90409118600f032d11&mfadid=adm"
+            console.log(location.origin);
+            console.log(location.pathname);
+            console.log(location.port)
+            console.log(location.protocol)
+            console.log(location.search)
+            // location.assign("https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_37173186a17cfa533f8cfb6dc1b7c5c6fc807c90409118600f032d11&mfadid=adm")
+            location.reload()
+            // location.replace("https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_37173186a17cfa533f8cfb6dc1b7c5c6fc807c90409118600f032d11&mfadid=adm")
+     
+        })
+    </script>
+</body>
+</html>

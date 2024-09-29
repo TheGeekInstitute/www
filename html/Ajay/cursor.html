@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        body{
+            cursor: url("https://csscursor.info/santahand.fbeeee9f.png"),auto;
+
+        }
+        .container{
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            margin: 5px;
+        }
+
+        .box1{
+            cursor: alias;
+        }
+
+        .box2{
+            cursor: pointer;
+        }
+
+        .box3{
+            cursor: all-scroll;
+        }
+
+        .box4{
+            cursor: cell;
+        }
+
+        .box5{
+            cursor: crosshair;
+        }
+
+        .box6{
+            cursor: url("https://csscursor.info/santahand.fbeeee9f.png"),auto;
+        }
+
+        .box7{
+            cursor: zoom-in;
+        }
+
+        .box8{
+            cursor: copy;
+        }
+
+        .box9{
+            cursor:not-allowed;
+        }
+
+        .box10{
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+        <div class="box box10"></div>
+    </div>
+</body>
+</html>
+
+
+<!-- https://csscursor.info/ -->

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            
+        }
+
+        .container{
+            /* border: 2px solid black; */
+            height: 100vh;
+            width: 98vw;
+            display: grid;
+            gap: 1vh;
+            margin: auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px repeat(2,1fr) 70px;
+            
+        }
+
+        .item1{
+            background-color: aqua;
+            grid-area: 1 / 1 / 2 /3;
+            text-align: center;
+
+        }
+        .item2{
+            background-color: red;
+        }
+        .item3{
+            background-color: aquamarine;
+            grid-area: 2 / 2 / 4 / 3;
+            text-align: center;
+        }
+        .item4{
+            background-color: green;
+        }
+        .item5{
+            background-color: black;
+            grid-area: 4 / 1 / 5 / 3;
+            text-align: center;
+        }
+
+        @media screen and (max-width:768px) {
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 50px repeat(2,1fr) 50px;
+                
+
+            }
+
+            .item4{
+                grid-area: 2/2/3/3;
+                grid-template-areas: ;
+            }
+            .item3{
+                grid-area: 3/1/4/3;
+            }
+              
+        }
+
+        @media screen and (max-width:480px){
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px repeat(3,1fr) 50px ;
+            }
+            
+            .item4{
+                grid-area: 3/1/4/2;
+            }
+
+            .item3{
+                grid-area: 4/1/5/2;
+            }
+
+            .item5{
+                grid-area: 5/1/6/2;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">nav</div>
+        <div class="item2">2</div>
+        <div class="item3">main</div>
+        <div class="item4">3</div>
+        <div class="item5">footer</div>
+    </div>
+</body>
+</html>

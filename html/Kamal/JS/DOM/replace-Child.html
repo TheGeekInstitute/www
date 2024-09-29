@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul class="one">
+        <li>Colors</li>
+        <li>Animals</li>
+        <li>Fruits</li>
+    </ul>
+
+    <ul class="two" data-myattr="ABCD" id="two">
+        <li>One</li>
+        <li>two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+        let one=document.querySelector(".one");
+        let two = document.querySelector(".two");
+
+
+
+        let oneChild=one.children[0];
+        let twoChild=two.children[0];
+
+
+        let newChild=document.createElement("li");
+        let txt=document.createTextNode("New Child");
+        newChild.append(txt);
+
+        two.replaceChild(newChild,twoChild)
+
+        // console.log(oneChild)
+
+        two.removeChild(twoChild);
+
+        // let cloneChild = oneChild.cloneNode(true)
+
+        // console.log(cloneChild);
+        // two.replaceChild(cloneChild,twoChild)
+
+        // let twoTwo=two.children[1];
+
+        // console.log(two.contains(twoTwo))
+
+        // console.log(two.hasAttribute("id"))
+        if(two.hasAttribute("id")){
+            console.log(two.getAttribute("id"))
+        }
+
+        // console.log(two.hasChildNodes(newChild))
+       
+
+        console.log(newChild.isEqualNode(newChild))
+    </script>
+
+</body>
+</html>

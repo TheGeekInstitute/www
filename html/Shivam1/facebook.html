@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in or sign up</title>
+    <link rel="icon" href="https://w7.pngwing.com/pngs/561/460/png-transparent-fb-facebook-facebook-logo-social-media-icon.png">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-between;
+            /* margin: 300px 150px; */
+            /* margin-top: 150px; */
+
+        }
+
+        .main .left{
+            width: 50vw;
+            border: 2px solid ;
+            padding-top: 150px;
+        }
+
+        .main .left > h1{
+            font-size: 48px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #1877F2;
+        }
+        
+        .main .left > p{
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;
+            
+        }
+
+        .main .right {
+            border: 2px solid red; 
+            display: flex;
+            flex-direction: column; 
+            height: 300px;
+            width: 400px;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        .main .right .text{
+            padding: 17px;
+            margin: 5px;
+            border: 1px solid rgb(221, 220, 220);
+            border-radius: 5px;
+            
+        }
+
+        .main .right #btn{
+            background-color: #1877F2;
+            color: white;
+            border: none;
+            margin: 5px;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+    
+        <div class="right">
+            
+                <input type="text" placeholder="Email address or phone number" class="text">
+                <input type="password" name="" id="" placeholder="Password" class="text">
+                <input type="submit" value="Log in" id="btn">
+                <a href="#">Forgotten password?</a>
+                <a href="#">Create new account</a>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

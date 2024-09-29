@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Website</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+             box-sizing: border-box;
+             list-style: none;
+             text-decoration: none;
+        }
+
+        nav{
+            height: 3rem;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px;
+        }
+
+        nav .navbar{
+            font-size: 1.1rem;
+        }
+
+        .navbar2{
+            display: flex;
+            color: white;
+            padding: 10px;
+        }
+        .navbar2 a{
+            padding: 5px;
+            color: black;
+            font-family: cursive;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+       
+        .main{
+            /* width: 90vw; */
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .main .child{
+            height: 300px;
+            width: 210px ;
+            border: 3px green;
+            margin: 15px 25px;
+            flex-wrap: wrap;
+            box-shadow: 0px 0px 10px grey;
+            padding: 10px;
+            text-align: center;
+            transition: all .3s linear;
+
+        }
+
+        .main .child:hover{
+            transform:scale(1.1);
+        }
+
+        .main .child .image{
+            height: 100px;
+            width: 150px;
+            text-align: center;
+        
+            
+        }
+
+        .main .child .image img{
+            height: 100% ;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1>Coder World!</h1>
+        </div>
+        <ul class="navbar2">
+            <li><a href="">HOME</a></li>
+            <li><a href="">CLASS</a></li>
+            <li><a href="">SECTION</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="child">
+            <div class="image">
+                <img src="./images/updated.jpeg" alt="" srcset="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam facere nesciunt, blanditiis illo est consequuntur molestias iusto earum aliquid modi officia labore explicabo delectus aliquam sit neque, ipsa reiciendis.</p>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="./images/updated.jpeg" alt="" srcset="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam facere nesciunt, blanditiis illo est consequuntur molestias iusto earum aliquid modi officia labore explicabo delectus aliquam sit neque, ipsa reiciendis.</p>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="./images/updated.jpeg" alt="" srcset="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam facere nesciunt, blanditiis illo est consequuntur molestias iusto earum aliquid modi officia labore explicabo delectus aliquam sit neque, ipsa reiciendis.</p>
+        </div>
+
+        <div class="child">
+            <div class="image">
+                <img src="./images/updated.jpeg" alt="" srcset="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam facere nesciunt, blanditiis illo est consequuntur molestias iusto earum aliquid modi officia labore explicabo delectus aliquam sit neque, ipsa reiciendis.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

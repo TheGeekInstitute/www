@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            background-color: cyan;
+            width: 100px;
+            height: 70px;
+            font-size: larger;
+            line-height: 70px;
+            text-align: center;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .box:hover{
+            /* transition-property: height,width,background-color; */
+            
+            /* transition-delay: 1s; */
+            transition-duration: 1s;
+            transition-property: all;
+            width: 600px;
+            /* height: 100px; */
+            background-color: red;
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: cubic-bezier(.5s,4s,.35s); */
+            transition-timing-function: steps(4,end);
+            
+            
+        }
+
+ 
+        img{
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+
+        img:hover{
+            transition: all .3s linear;
+            box-shadow: 2px 2px 100px red;
+            /* border-radius: 50%; */
+            height: 150px;
+            width: 150px;
+
+        }
+
+        .abc{
+            border: 1px solid red;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ABCD</div>
+    <img src="../web/images/10.jpg" alt="">
+
+    <div class="abcd"></div>
+</body>
+</html>          
+
+            
+        
+           

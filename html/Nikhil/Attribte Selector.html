@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribte Selector</title>
+    <style>
+        p[class]{
+            /* color: red; */
+        }
+
+        input[type="password"]{
+            background-color: red;
+        }
+
+        p[class|="my"]{
+            /* color: red; */
+        }
+
+        p[class~="new"]{
+            /* color: red; */
+        }
+
+        p[class^="para"]{
+            /* color: red; */
+        }
+
+        p[class$="old"]{
+            /* color: green; */
+        }
+
+        p[class*="graph"]{
+            color: red;
+        }
+
+        input[type="radio"]{
+            accent-color: red;
+        }
+        input[type="checkbox"]{
+            accent-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <p class="para paragraph new old">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae molestiae fugit doloremque sequi incidunt, numquam repudiandae placeat obcaecati distinctio explicabo architecto eaque recusandae optio consectetur, enim eligendi qui labore!</p>
+    
+    <p class="my-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempore voluptatum reprehenderit dignissimos. Debitis aut et officiis qui saepe ipsam illum autem, temporibus consectetur ipsum perferendis, possimus excepturi fugiat officia.</p>
+
+    <input type="text" name="" id="">
+    <input type="password">
+
+    <input type="radio" name="" id="">
+    <input type="checkbox">
+</body>
+</html>

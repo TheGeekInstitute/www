@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+            *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+            main{
+           overflow: hidden;
+        }
+        .main .hero{
+            width: 500vw;
+            height: 80vh;
+            display: flex;
+            animation-name: image-slider;
+            animation-duration: 40s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .main .hero .images{
+            width: 600vw;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main .hero .images .content{
+            box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.3);
+            width: 50vw;
+            height: 40vh;
+            padding: 5vw 4vw;
+            color: black;
+            border-top-left-radius: 8em;
+            border-bottom-right-radius: 9em;
+
+            box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.918);
+            background-color: chartreuse;
+        }
+
+         @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+
+            }
+
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+
+            }
+
+            30%{
+                transform: translateX(-100vw);
+
+            }
+
+            35%{
+                transform: translateX(-100vw);
+
+            }
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+
+            65%{
+                transform: translateX(-300vw);
+
+            }
+
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+
+            90%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="main">
+        <div class="hero">
+           
+           
+            <div class="images" style="background-image: url(https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);">
+                <div class="content">
+                    <h1>OUR COMPANY POLICY</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+            </div>
+    
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-james-wheeler-414612.jpg&fm=jpg);">
+                <div class="content">
+                    <h1>OUR COMPANY RULES</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+            </div>
+    
+            <div class="images" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/781/554/497/nature-scenery-wallpaper-thumb.jpg);">
+                <div class="content">
+                    <h1>OUR COMPANY VALUE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+            </div>
+    
+            <div class="images" style="background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg);">
+                <div class="content">
+                    <h1>OUR COMPANY ACT</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+            </div>
+            <div class="images" style="background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg);">
+                <div class="content">
+                    <h1>OUR COMPANY VALUE</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

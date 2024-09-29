@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abcd" class="xyz" style="color: red;">Heading <span>asdas</span>
+    </p>
+
+    <script>
+        let heading = document.getElementById("abcd");
+        // console.log(heading)
+        // console.log(heading.innerText)
+        // console.log(heading.innerHTML)
+        // document.write(heading.innerText)
+        console.log(heading.getAttribute("style"))
+        console.log(heading.getAttributeNode("class"))
+        // console.log(heading.attributes)
+
+        // heading.innerText="ABCD XYZ"
+        // heading.innerHTML="ABCD <br>XYZ"
+        heading.setAttribute("style","border: 2px solid red; height: 40px; fontFamily: arial; text-align: center; margin: 5px auto;")
+        // heading.removeAttribute("style")
+        // heading.removeAttribute("class")
+       
+       
+    </script>
+</body>
+</html>

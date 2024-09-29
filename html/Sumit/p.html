@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .abs{
+            border:2px solid red;
+            height: 200px;
+            width:200px;
+            background-color:crimson;
+
+            position: absolute;
+            top:20px;
+            right:50px
+        }
+
+        .container{
+            border: 2px solid black;
+            height:400px;
+            width:400px;
+            margin:50px auto;
+        }
+        .container .box{
+            background-color: red;
+            height: 50px;
+            width:50px;
+
+            position:relative;
+            top:2px;
+            left:50px;
+        }
+        .fixed{
+            background-color:green;
+            height:70px;
+            width:200px;
+            position:fixed;
+            bottom:20px;
+            right:20px;
+
+        }
+        .sticky{
+            height:50px;
+            background-color:rebeccapurple;
+            position:sticky;
+            top:0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="abs"></div>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <div class="fixed"></div>
+    <div class="sticky"></div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae commodi tempora unde reiciendis id animi amet dicta aliquid, distinctio quaerat itaque ratione doloribus assumenda numquam porro ipsam. Obcaecati, quae
+</p>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente cumque harum, enim rerum aliquam impedit libero consequuntur repudiandae? Accusantium explicabo dolore deleniti voluptas quod. Minima culpa nisi voluptas amet? Dolorem voluptatibus tenetur eligendi quaerat, quia eius unde a ullam delectus laudantium reprehenderit, porro reiciendis, dicta voluptatum velit? Aperiam corporis quod quibusdam commodi, repudiandae delectus quasi laudantium quia ea explicabo cupiditate aliquam nulla, tempora ad porro fugit ducimus placeat voluptate sunt veniam eum suscipit? Quae ipsam animi tempore molestiae veritatis corporis obcaecati, doloremque, explicabo incidunt quasi necessitatibus ipsum non ab aliquid dolor omnis nisi architecto suscipit totam cum porro! Nam, debitis!</p>
+</body>
+</html>

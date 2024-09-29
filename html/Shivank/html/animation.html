@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes my-animation {
+            /* from{
+                background-color: red;
+            }
+
+            to{
+                background-color: aqua;
+                border-radius: 50%;
+            } */
+        
+            0%{
+                background-color: red;
+                left: 0px ;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+            25%{
+                background-color: green;
+                left: 200px;
+                top: 0px;  
+            }
+            50%{
+                background-color: cyan;
+                left: 200px;  
+                top: 200px;
+            }
+            75%{
+                background-color: blueviolet;
+                top: 170px;
+                left: 0px;
+            }
+            100%{
+                background-color: greenyellow;
+                top: 0px;
+                left: 0px;
+                
+            }
+
+            
+        }
+        .main{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            /* border-radius: 50%; */
+            /* background-color: yellow; */
+            animation-name: my-animation;
+            animation-duration: 5s;
+            /* animation-delay:2s; */
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            /* animation-timing-function: steps(5); */
+            /* animation-direction:alternate; */
+            animation-timing-function: linear;
+            /* animation-fill-mode: backwards; */
+            position: relative;
+            /* border-radius: 50%; */
+           
+        }
+        .main:hover{
+            animation-play-state: running;
+        }
+
+      
+    </style>
+</head>
+<body>
+        <div class="main">ABCD</div>
+</body>
+</html>

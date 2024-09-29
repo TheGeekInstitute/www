@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createElement</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            height: 20rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .add{
+            /* border: 1px solid black; */
+            border-radius: 250px;
+            text-align: center;
+            width: 40px;
+            line-height: 40px;
+            background-color: royalblue;
+            box-shadow: 2px 2px 5px black;
+            margin: 5px;
+            display: inline;
+            padding: 10px 10px ;
+        }
+        p{
+            border: 1px solid black;
+            text-align: center;
+            width: 60px;
+            line-height: 60px;
+            /* background-color: royalblue; */
+            box-shadow: 2px 2px 5px black;
+            margin: 5px;
+            display: inline;
+            padding: 10px 15px ;
+        }
+        h2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="add">+</h1>
+    </div>
+    <script>
+        let box=document.querySelector(".box");
+        let add=document.querySelector(".add");
+        let p;
+        let one=1;
+        boxchild=box.children[1];
+        console.log(boxchild);
+        add.addEventListener("click",(e)=>{
+            p=document.createElement("p");
+         
+            let text=document.createTextNode(one)
+            p.append(text);
+            box.insertBefore(p,add);
+            one=one+1;
+            
+         
+            Array.from(p).forEach((a)=>{
+                a.addEventListener("click",()=>{
+                    a.replaceChild(p,h2);
+                })
+            })
+
+
+
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- view-source:http://10.10.10.10/Kamal/JS/DOM/revision/appen-box.html -->

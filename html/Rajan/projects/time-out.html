@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-out</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/502/827/762/clockwork-gears-gold-macro-wallpaper-thumb.jpg);
+            /* background-size: cover; */
+
+        }
+        .box{
+            border: 2px solid black;
+            width: 20rem;
+            margin: 10rem auto;
+            border-radius: 10px;
+            background-image: url(https://img.freepik.com/premium-vector/golden-abstract-technology-background-with-clock-concept-time-machine-can-rotate-clock-hands_4974-197.jpg);
+            background-size: 30rem;
+            color: white;
+            box-shadow: 2px 2px 5px black;
+        }
+        .box .time{
+            border: 1px solid black;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            width: 60%;
+            padding: 0 10px;
+            border-radius: 100px;
+        }
+        .butn{
+            /* border: 1px solid black; */
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            width: 50%;
+            padding: 0 10px;
+            border-radius: 100px;
+        }
+        .buton{
+            border: 1px solid black;
+            width: 45px;
+            line-height: 20px;
+            border-radius: 5px;
+            /* color: white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="time">
+            <h3 class="hours">00</h3>:
+            <h3 class="minutes">00</h3>:
+            <h3 class="seconds">00</h3>
+        </div>
+        <div class="butn">
+            <button class="start buton">Start</button>
+            <button class="stop buton">Stop</button>
+            <button class="reset buton">Reset</button>
+        </div>
+    </div>
+    <script>
+        let reset =document.querySelector('.reset');
+        let stops =document.querySelector('.stop');
+        let start = document.querySelector('.start');
+        let time = document.querySelector('.time');
+        let minutes = document.querySelector('.minutes');
+        let seconds = document.querySelector('.seconds');
+        let hour=document.querySelector('.hours');
+
+        let h=0;
+        let sec=0;
+        let min=0;
+
+        let hours ; 
+        let minute;  
+        let second;
+
+        start.addEventListener("click",()=>{
+
+            hours=setInterval(()=>{
+                hour.innerHTML = h++;
+            },3600000)
+             second=setInterval(()=>{
+                seconds.innerHTML=sec++;
+                if(sec==60){
+                    sec=0;
+                }
+            },1000)
+            minute=setInterval(()=>{
+                minutes.innerHTML=min++
+                if(min==60){
+                    min=0;
+                }
+            },60000)
+
+        })
+
+        stops.addEventListener("click",()=>{
+            clearInterval(hours);
+            clearInterval(minute);
+            clearInterval(second);
+            hour.innerHTML =h;
+            seconds.innerHTML=sec;
+            minutes.innerHTML=min;
+        })
+        reset.addEventListener("click",()=>{
+            clearInterval(hours);
+            clearInterval(minute);
+            clearInterval(second);
+            hour.innerHTML = ("000");
+            seconds.innerHTML=("00");
+            minutes.innerHTML=("00");
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 60px;
+        }
+        .image{
+            /* border: 2px solid red; */
+            width: 200px;
+            height: 200px;
+            background-image: url(..//AkashPatel/images/2.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        .image:hover{
+            transform: scale(1.1);
+            border-radius: 4px;
+            
+        }
+        .image:hover p{
+            animation-name: hide;
+            animation-timing-function: ease;
+            animation-duration: 0.5s;
+            /* animation-iteration-count: infinite; */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+        }
+        @keyframes hide {
+            0%{
+                opacity: 100%;
+            }   
+            25%{
+                opacity: 75%;
+            }   
+            50%{
+                opacity: 50%;
+
+            }   
+            75%{
+                opacity: 25%;
+
+            }   
+            100%{
+                opacity: 0%;
+
+            }
+        }
+        .image p{
+            position: relative;
+            top: -20px;
+            
+            width: 200px;
+            height: 200px;
+            font-size: 7rem;
+            text-align: center;
+            
+            font-weight: 900;
+            line-height: 200px;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.783);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="" alt="" >
+            <p>1</p>
+        </div>
+        <!-- <br> -->
+        <div class="image">
+            <img src="" alt="" >
+            <p>2</p>
+        </div>
+        <div class="image">
+            <img src="" alt="" >
+            <p>3</p>
+        </div>
+        <div class="image">
+            <img src="" alt="" >
+            <p>5</p>
+        </div>
+        <div class="image">
+            <img src="" alt="" >
+            <p>6</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+p {
+  height: 200px;
+  border: 5px solid green;
+  color: transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-stroke: 2PX red;
+  font-size: 30px;
+}/*# sourceMappingURL=if.css.map */

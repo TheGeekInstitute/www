@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body{
+            background-color: antiquewhite;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            height: 10vh;
+            box-shadow: 3px 3px 8px grey ;
+            border-radius: 20px;
+            margin: 5px;
+        }
+
+        .logo{
+            /* margin-left: 20px; */
+            color: white;
+        }
+        .logo span{
+            color: orangered;
+        }
+
+        .nav ul{
+            margin-right: 20px;
+        }
+
+        .nav ul li{
+            display: inline;
+            margin: 10px;
+        }
+
+        .nav ul li a{
+            color: white;
+            font-size: large;
+            font-weight: 700;
+        }
+
+        .nav img{
+            height: 9vh;
+            width: 9vh;
+            margin-left: 20px;
+            /* border-radius: 50%; */
+        }
+
+        .content{
+            font-size: 16px;
+            margin: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            /* border: 1px solid red; */
+            margin: 1rem;
+            height: 22em;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            background-color: rgb(43, 210, 232);
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px grey;
+        }
+        .box:nth-last-child(3n){
+            background-color: red;
+        }
+        .box:nth-child(3n){
+            background-color: rgb(0, 255, 136);
+        }
+        .box:nth-child(5n){
+            background-color: rgb(60, 0, 255);
+        }
+        .box:first-child{
+            background-color: rgb(255, 183, 0);
+        }
+        .box:last-child{
+            background-color: brown;
+        }
+        .box:first-of-type{
+            background-color: rgb(0, 162, 255);
+        }
+        .box img{
+            height: 6em;
+            width: 8em;
+            margin: 1em;
+            border-radius: 6px;
+            box-shadow: 2px 2px 3px grey;
+        }
+
+        .btn{
+            display: block;
+            background-color: cyan;
+            height: 2em;
+            width: 6em;
+            margin: auto;
+            padding: .4em;
+            margin-top: .4em;
+            border-radius: 5px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .btn:hover{
+            background-color: blue;
+            color: white;
+        }
+        .footer{
+         column-count: 3;
+        column-rule-style: solid;
+        column-rule-color: cyan;
+        column-rule-width: 2px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        /* column-width: 300px; */
+        height: 25vh;
+        
+        }
+
+        .footer .logo{
+            column-span: all;
+            color: white;
+        }
+ 
+        .links{
+            column-span: all;
+            margin: 20px;
+            text-align: center;
+
+        }
+        .links a{
+            color: red;
+        }
+
+.copy{
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 1, 70);
+    padding: 5px;
+    font-weight: 700;
+}
+        
+     
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjUrB1erbeMH3vGLRzkArt6GIF9LOq2qG2hescjz2czzkEugASd9Mq634w8ld6g11xSdwGt05WNpIVV30yP5oLArAtg0IeBfe9QUs76S7vzNC3KKSmZaKF_zvVAOMz12KPLY9tDXEaT4_TxCuzRtYiLbCGUB-V4cQCE7cLTyYRl-_gmJHX6lJ1R4jKp=s150" alt="Geek">
+        <h1 class="logo">Geek <span>Institute</span></h1>
+        <ul>
+            <li><a href="../html/985.html" target="_blank">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+    </div>
+
+<div class="content">
+    
+    <div class="box">
+        <img src="https://instagram.fdel10-1.fna.fbcdn.net/v/t51.2885-19/334794582_1372770436822269_4513289882719834362_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fdel10-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=12tYI2qQyFQAX_BbOlr&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfBDQV0dfMJytP6Ahpdx75rDn_Zu2Vqg_p338UGUpdFKQw&oe=645076C1&_nc_sid=8fd12b" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="../html/847.html" target="_blank" class="btn">Read More</a>
+    </div>
+
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+    <div class="box">
+        <img src="../../web/images/10.jpg" alt="Image">
+        <h3 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut totam tempore</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque omnis, nobis dolore eligendi necessitatibus alias odit unde, aperiam quae sint atque iure vitae nulla mollitia laboriosam, modi praesentium sunt reprehenderit!</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+    
+</div>
+<div class="footer">
+    
+    <h1 class="logo">Geek <span>Institute</span></h1>
+    
+    <div class="about">
+        <h2>About</h2>
+        <p>Lorem ipsua quaerat illo, veritatis repudiandae autem explicabo eum? Quasi</p>
+    </div>
+
+    
+    <div class="social">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cumque, quisquam provident dicta est earum dolorem, quo temporibus iure vero omnis iste animi commodi unde distinctio aut impedit nobis minima.
+    </div>
+    
+    <div class="links">
+            Important Links
+            <a href="#">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+    </div>
+</div>
+
+<div class="copy"><p>Copyright &copy; All Rights Reserved</p></div>
+
+</body>
+</html>

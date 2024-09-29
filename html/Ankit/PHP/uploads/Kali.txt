@@ -1,0 +1,13 @@
+Kali Linux ek open-source Linux distribution hai jo specially designed hai penetration testing, ethical hacking, and security auditing purposes ke liye. Ismein bahut se pre-installed tools hote hain jo hackers aur security professionals use karte hain vulnerabilities identify karne aur computer systems, networks, ya applications ko test karne ke liye. 
+
+Kali Linux powerful networking tools, forensic tools, reverse engineering tools, aur bhi bahut saare security-related utilities provide karta hai. Yah ek popular Oprating System hai cybersecurity field mein aur iska istemal security testing, digital forensics, aur security research mein hota hai. 
+
+Kali Linux ko developers, security researchers, aur professionals worldwide istemal karte hain.
+
+
+Kali Linux is an open-source Linux distribution specially designed for penetration testing, ethical hacking, and security auditing purposes. It includes various pre-installed tools that hackers and security professionals use to identify vulnerabilities and test computer systems, networks, or applications. Kali Linux provides powerful networking tools, forensic tools, reverse engineering tools, and many other security-related utilities. It is a popular Oprating System in the cybersecurity field and is used for security testing, digital forensics, and security research. Developers, security researchers, and professionals worldwide use Kali Linux.
+
+
+
+"Legal Disclaimer: 
+The information provided in this video is for educational purposes only. It is not intended to promote illegal activities or hacking in any form. The techniques demonstrated are meant to be used by ethical hackers, security professionals, and authorized individuals for legitimate security testing and research purposes. Any actions or activities performed based on the information provided in this video are solely at your own risk. The creator of this video shall not be responsible for any misuse of the information provided. Always ensure that you have appropriate authorization before attempting any security testing on systems, networks, or applications. Respect the privacy and security of others, and adhere to all applicable laws and regulations. By watching this video, you agree to use the information responsibly and in accordance with ethical standards."

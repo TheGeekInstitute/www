@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mera 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin: 150px;
+
+            /* margin: 50px; */
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(3, 50px);
+
+            gap: 5px;
+
+            /* align-items: center; */
+            /* justify-content: end; */
+            
+            place-items: center  end;
+
+            align-content: space-between;
+
+            /* justify-content: center; */
+
+            justify-content: space-between;
+        }
+
+        .box{
+            text-align: center;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            /* align-self: center; */
+               /* justify-self: center; */
+               /* place-self: center end; */
+        }
+
+        .box2 {
+            background-color: green;
+
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+        }
+
+        .box4 {
+            background-color: cyan;
+
+        }
+
+        .box5 {
+            background-color: plum;
+
+        }
+
+        .box6 {
+            background-color: crimson;
+
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div><div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+    
+</body>
+</html>

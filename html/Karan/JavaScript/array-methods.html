@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+    <script>
+        let array=["Amit",'Sumit','Ravi',"Ankit",'Bablu',"Sumit"];
+
+        document.write(array);
+        document.write('<br>');
+
+        // document.write(array[1])
+        // array[0]='Ganesh';
+
+        // delete(array[0])
+        // array[0]=undefined
+        // array[0]="";
+
+        // document.write(array);
+
+        // array.pop();   //POP Deletes last element of an array
+
+        // document.write(array);
+
+        // array.push('hello'); //appends the elemet at the end of an array
+
+
+        // array.shift(); // Deletes the first Element of an array
+
+        // array.unshift('Hello'); // Add a new Element in the beggining of an array
+
+
+        let newArray= ["Mohan","Shyam","Shalu"]
+        // let data = array.concat(newArray); //join an array with array
+        
+        // document.write(data);
+
+        // let str = array.join() // Convers an array into String
+
+        // console.log(str);
+        // console.log(typeof(str))
+
+
+        //# Next Class
+
+        // let newAry = array.slice(1,4)
+        // document.write(newAry)
+
+        // array.splice(1,2,newArray)
+
+        // document.write(array)
+
+        let data="This is a String";
+
+        // document.write(Array.isArray(newArray))
+
+        // document.write(Array.isArray(data))
+
+        // document.write(array.indexOf("Sumit"));
+        // document.write(array.lastIndexOf("Sumit"))
+
+        // document.write(array.includes('Ravita'))
+
+        let age=[10,15,25,78,36,96,45,25];
+
+        let newAge=[100,120,150];
+
+        // document.write(newAge.some(checkAge))
+
+        // document.write(age.some(checkAge))
+
+        // document.write(newAge.every(checkAge))
+
+        // document.write(array.toString())
+
+        // document.write(array.valueOf())
+
+        // document.write(array.fill("A"))
+
+
+        function checkAge(age){
+            return age>=18;
+        }
+
+
+        // array.forEach(function(e){
+        //     document.write("Hi, " + e + "<br>");
+        // })
+
+        array.map(function(e){
+            document.write("Hi, " + e + "<br>");
+        })
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+<style>
+    .box{
+        border:15px solid black ;
+        height:400px ;
+        width:400px ;
+        margin:150px auto ;
+
+        border-image-source: url("https://www.w3schools.com/cssref/border.png");
+
+        /* border-image-source: linear-gradient(45deg red,blue,yellow,green); */
+        /* border-image-width:20px ; */
+        /* border-image-slice:27 ; */
+        /* border-image-repeat:repeat ; */
+        /* border-image-repeat:stretch ; */
+        /* border-image-repeat:stretch round ; */
+        background-color:aqua ;
+        /* border-image-outset:20px ; */
+
+        border-image-slice: 15 14 19 12;
+border-image-width: 13px 13px 13px 13px;
+border-image-outset: 13px 13px 13px 13px;
+border-image-repeat: repeat repeat;
+border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+border-style: solid;
+
+
+    }
+
+
+</style>
+</head>
+<body>
+   
+    <div class="box">
+        <h1>The earth</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, illo accusantium itaque voluptas vel animi soluta, expedita, quae rem ab illum. Voluptate repudiandae, fuga eius tempore ex sint veritatis. Repellendus.</p>
+    </div>
+</body>
+</html>

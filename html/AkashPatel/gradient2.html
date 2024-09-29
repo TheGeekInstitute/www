@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       h1{
+        background-image: linear-gradient( red , yellow , green, blue , pink , aqua);
+        font-size: 90px;
+        width: 50%;
+        color: transparent;
+        -webkit-background-clip: text;
+        animation-name: change;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+       }
+       @keyframes change {
+        0%{
+            background-size: 0%;
+        }
+        25%{
+            background-size: 100%;
+
+        }
+        75%{
+            background-size: 150%;
+
+        }
+        100%{
+            background-size: 100%;
+
+        }
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="akash">
+        <h1>
+            AKASH
+        </h1>
+    </div>
+</body>
+</html>

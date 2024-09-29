@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: none;
+        }
+        .container{
+            width: 300px;
+            height: 430px;
+            color: black;
+            padding: 5px;
+            margin:150px auto;
+            box-shadow: 0px 0px 10px black;
+            text-align: center;
+            border-radius: 5px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Kb0HIaw2-DzVIsN6f-Ixp4PWIi0Jh9I63Q&s);
+
+        }
+        .container h1{
+            margin: 10px 0;
+        }
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container form label{
+            width: 250px;
+            text-align: left;
+            margin: 5px 0;
+            font-size: large;
+        }
+        .container form input{
+            width: 240px;
+            height:35px ;
+            margin: 5px 0;
+            padding: 0 3px;
+            outline: none;
+            
+        }
+        .container form #btn{
+            background-color: royalblue;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign up</h1>
+        <form>
+            <label for="">Full name</label>
+            <input type="text">
+            <label for="">Username</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="Email">
+            <label for="">Password</label>
+            <input type="password">
+            <input type="submit" id="btn" value="Signup">
+        </form>
+    </div>
+</body>
+</html>

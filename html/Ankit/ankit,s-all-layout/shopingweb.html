@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+
+        html{
+            /* font-size: 62.5%; */
+        }
+        body{
+            background-image: url(https://img.freepik.com/free-photo/black-friday-elements-assortment_23-2149074076.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705622400&semt=ais);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            background-color: rgb(56, 56, 56);
+            height:75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 5px 5px black;
+
+        }
+        .logo{
+            color:rgb(0, 132, 255);
+            font-size: 40px;
+            font-weight: bold;
+            font-family: cursive;
+            cursor: pointer;
+
+        }
+        .nav a{
+            color: white;
+            font-size: 25px;
+            padding: 15px 15px;
+            transition: all 0.3s linear;
+            border-radius: 15px;
+            
+        }
+        .nav a:hover{
+            background-color: black;
+            transform: scale(1.2);
+        }
+        .mid{
+            text-align: center;
+
+        }
+        .mid img{
+            /* height: 450px; */
+            /* position: relative;
+            bottom: 50vw; */
+           
+        }
+        .cate{
+          margin-left: 10px;
+          margin-top: 0px;
+          padding-bottom: 0px;
+          height: 400px;
+          
+          
+            
+        }
+        .cate a{
+            text-align: center;
+            display:block;
+            width: 200px;
+            /* position:relative;
+            right: 40vw; */
+            color: white;
+            padding: 18px;
+            border-radius: 20px 0 20px 0;
+            border: 2px solid black;
+            font-size: larger;
+            font-family: cursive;
+            transition: all 0.5s linear;
+            box-shadow: 5px 5px 5px black ;
+        }
+        .cate a:hover{
+            background-color: aqua;
+            color: black;
+            transform: scale(1.1);
+        }
+        .cate2{ 
+            border: 2px solid rgb(0, 102, 255);
+            border-radius: 10px ;
+            width: 300px;
+            height: 480px;
+            text-align: center;
+            background-color: white;
+            transition: all 0.5s linear;
+            display:inline-block;
+            margin-left: 175px;margin-top: 20px;
+            box-shadow: 10px 10px 10px black;
+            cursor: pointer;
+            
+
+        }
+        .cate2:hover{
+            transform: scale(1.1);
+
+        }
+        .cate2 img{
+            height: 300px;
+            width: 250px;
+            
+           
+        }
+        .cate2 h3{
+            color: gray;
+            font-weight: bold;
+            font-family: cursive;
+            
+        }
+
+        .cate2 b {
+            color: green;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .cate2 h2 i {
+            color: green;
+            display: flex;
+            font-size: 45px;
+            justify-content: flex-end;
+            /* padding-top: 5px ;
+            padding-right: 5px; */
+            position:relative;
+            top: 30px;
+            left: -20px;
+            z-index: 999;
+            /* border: 10px solid black; */
+
+            
+            
+        }
+        .cate2 a{
+            border: 1px solid black;
+            padding: 5px ;
+            background-color: purple;
+            color: black;
+            font-size: larger;
+            border-radius: 5px;
+            margin-top: 5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-weight: bold;
+            font-family: cursive;
+            
+        }
+        .cate2 h5{
+            padding-bottom: 10px;
+            font-size: larger;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .cate2 a:hover{
+            background-color: rgb(0, 26, 255);
+            color: white;
+
+        }
+        .cate2 h4{
+            font-weight: bold;
+            font-family: cursive;
+        }
+        .model{
+            /* border: 2px solid black; */
+            transition: all 0.5s linear;
+            position: absolute;
+            bottom: 400px;
+            left: 350px;
+            top: 220px;
+            padding: 40px;
+            /* right: 60px; */
+            border-radius: 10px ;
+            
+            
+        }
+        .model img{
+            height: 150px ;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+        .model a{
+            padding-right: 20px;color: black;
+        }
+        .model h3{
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            transition: all 0.5s linear;
+            cursor: pointer; box-shadow: 10px 10px 10px black;
+            border-radius: 10px;
+           
+            
+           
+           
+        }
+        .model h3:hover{
+            transform: scale(1.1);
+             background-color: aqua;
+            
+        }
+        .model img:hover{
+            transform: scale(1.1);
+
+        }
+        .footer{
+            background-color: black;
+            padding: 60px;
+            color: white;
+            column-count: 2;
+        }
+        .show{
+            border: 2px solid black;
+            text-align: center;
+            /* /* height: 50px; */
+            width: 170px;
+            padding: 15px;
+            margin: 50px auto;
+            border-radius: 10px ;
+            cursor: pointer;
+            transition: all 0.5s linear;
+            
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 5px 5px 5px black;
+        }
+        .show:hover{
+            background-color:cyan;
+            transform: scale(1.2);
+           
+        }
+        .mid2 input{
+            height: 38px;
+            width: 300px;
+            border-radius: 40px;
+            padding-left: 10px;
+            margin-top: 70px;
+            font-family: cursive;
+        }
+        .mid2 a{
+            color: black;
+            position: absolute;
+            right: 42vw;
+            font-size: large;
+            top: 153px;
+            cursor: pointer;
+        }
+        .footer a{
+            color: white;
+            /* text-align: end; */
+            font-size: 30px;
+            transition: all 0.5s linear;
+
+        }
+        .footer a:hover{
+            color: cyan;
+            transform: scale(1.2);
+            font-size: 35px;
+        }
+        #open{
+            display: block;
+            margin: 100px auto;
+            text-align: center;
+            border: 2px solid black;
+            width: 130px;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px ;
+            box-shadow: 0px 0px 10px black;
+            background-color: cyan;
+            font-size: larger;
+            font-family: cursive;
+            user-select: none;
+            transition: all 0.4s linear;
+
+        }
+        #open:active{
+            transform: scale(0.9);
+        }
+        
+        .modal{
+            border: 2px solid black;
+            background-color: rgb(25, 235, 165);
+            height: 700px;
+            display: none;
+            border-radius: 10px ;
+            /* text-align: center; */
+        }
+        .modal p {
+            border: 2px solid black;
+            padding: 15px;
+           border-radius: 10px;
+            font-size: 40px;
+            margin-top: 5px ;
+            margin-left: 5px;
+        }
+        .modal label{
+            text-align: end;
+            padding: 15px;
+            font-size: 40px;
+            position: relative;
+            left: 95%;
+            bottom: 65px;
+            cursor: pointer;
+            user-select: none;
+            
+        }
+        #btn{
+            display: none;
+
+        }
+        #btn:checked + .modal{
+            display: block;
+
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="logo">SHOPNOW</ul>
+        <a href=""><i class="fa-solid fa-house"></i></a>
+        <a href=""><i class="fa-solid fa-address-card"></i></a>
+        <a href=""><i class="fa-solid fa-phone"></i></a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-regular fa-circle-user"></i></a>
+    </div>
+    <div class="mid">
+        <div class="mid2"><input type="text" placeholder="Search...">
+        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        
+        <div class="cate">
+            
+            <a href="">Electronices</a>
+            
+            <a href="">Fashion</a>
+            <a href="">Kids Toys</a>
+            <a href="">Furnitures</a>
+            <a href="">beauty</a>
+            <a href="">Mobile Phones</a>
+        
+        </div>
+
+        <div class="model">
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" alt=""></a>
+        <a href=""><img src="https://static.vecteezy.com/system/resources/previews/020/336/425/non_2x/oppo-logo-oppo-icon-free-free-vector.jpg" alt=""></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Vivo_mobile_logo.png/800px-Vivo_mobile_logo.png" alt=""></a>
+        <a href=""><img src="https://media.designrush.com/inspiration_images/134802/conversions/_1511456315_653_apple-mobile.jpg" alt=""></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/2048px-Xiaomi_logo_%282021-%29.svg.png" alt=""></a>
+        <a href=""><img src="https://static.vecteezy.com/system/resources/previews/020/927/583/original/lava-brand-logo-phone-symbol-name-white-design-india-mobile-illustration-with-pink-background-free-vector.jpg" alt=""></a>
+        
+        <h3><a href="">More</a></h3>
+        
+    </div>
+    </div>
+    
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+    <div class="cate2">
+        <h2><i class="fa-solid fa-tag"></i></h2><img src="https://media.ldlc.com/r1600/ld/products/00/06/06/41/LD0006064109_0006064149_0006064178.jpg" alt="">
+        <h4>Iphone 15 Pro Max</h4>
+        
+        <h3>Price 1,25,499 <b>1,15,999  12%</b></h3>
+        <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+        <a href="">Buy Now</a>
+    </div>
+
+
+    <label for="btn" id="open">Show More</label>
+
+    <input type="checkbox" id="btn">
+    <div class="modal">
+        <div class="heading">
+            <p>Here is some other Mobile Phones</p>
+           <label for="btn" id="close">X</label>
+        </div>
+        <div class="cate2">
+            <h2><i class="fa-solid fa-tag"></i></h2><img src="https://m.media-amazon.com/images/I/61amb0CfMGL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <h4>One Plus 11 5G</h4>
+            
+            <h3>Price,59,499 <b>49,999  12%</b></h3>
+            <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+            <a href="">Buy Now</a>
+        </div>
+        <div class="cate2">
+            <h2><i class="fa-solid fa-tag"></i></h2><img src="https://m.media-amazon.com/images/I/61amb0CfMGL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <h4>One Plus 11 5G</h4>
+            
+            <h3>Price,59,499 <b>49,999  12%</b></h3>
+            <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+            <a href="">Buy Now</a>
+        </div>
+        <div class="cate2">
+            <h2><i class="fa-solid fa-tag"></i></h2><img src="https://m.media-amazon.com/images/I/61amb0CfMGL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <h4>One Plus 11 5G</h4>
+            
+            <h3>Price,59,499 <b>49,999  12%</b></h3>
+            <h5> Fast Delivary<i class="fa-solid fa-truck"></i></h5>
+            <a href="">Buy Now</a>
+        </div>
+        
+
+
+    </div>
+
+
+
+    <div class="footer">
+        <h3></h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dicta quis id, natus cumque aut itaque officiis in dolorem aliquid rem nihil blanditiis recusandae earum quos sit reiciendis a excepturi?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime pariatur, quo nostrum magni aut sapiente enim, excepturi vero aperiam veniam odio, saepe eos numquam corrupti nemo deserunt commodi cupiditate ducimus.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas eos assumenda laboriosam nam vitae quae voluptate reprehenderit doloribus, minus fugiat, quis obcaecati pariatur deleniti beatae accusamus dicta, facere numquam modi?
+        <div class="font">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

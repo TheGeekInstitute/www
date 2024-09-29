@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"]{
+            display:none;
+        }
+
+        .container{
+            /* border: 1px solid red; */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container .accordion{
+            /* border: 1px solid green; */
+            margin: 5px 0;
+            width: 45rem;
+            cursor: pointer;
+        }
+
+        .accordion label{
+            display: block;
+            background-color: aquamarine;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 900;
+            user-select: none;
+            /* border-radius: 20px; */
+            
+        }
+
+        .accordion label i{
+            display: block;
+            transition: all .3s;
+            
+          
+        }
+
+        .accordion .content{
+            background-color: cyan;
+            padding: .5rem 1rem;
+            font-size: larger;
+            display: none;
+        }
+
+        .accordion #btn:checked ~ .content{
+            display:block;
+        }
+        .accordion #btn:checked + label i{
+           transform: rotate(45deg);
+        }
+
+        .accordion #btn1:checked ~ .content{
+            display:block;
+        }
+        .accordion #btn1:checked + label i{
+           transform: rotate(45deg);
+        }
+
+        .accordion #btn2:checked ~ .content{
+            display:block;
+        }
+        .accordion #btn2:checked + label i{
+           transform: rotate(45deg);
+        }
+        .accordion #btn3:checked ~ .content{
+            display:block;
+        }
+        .accordion #btn3:checked + label i{
+           transform: rotate(45deg);
+        }
+        .accordion #btn4:checked ~ .content{
+            display:block;
+        }
+        .accordion #btn4:checked + label i{
+           transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="accordion">
+            <input type="checkbox"  id="btn">
+            <label for="btn">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox"  id="btn1">
+            <label for="btn1">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox"  id="btn2">
+            <label for="btn2">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox"  id="btn3">
+            <label for="btn3">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox"  id="btn4">
+            <label for="btn4">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+        
+        </div>
+
+   
+
+   
+</body>
+</html>

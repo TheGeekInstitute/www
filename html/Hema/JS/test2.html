@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="numbre1" id="num1">
+  
+
+    <input type="numbre2" id="num2">
+  
+    <input type="numbre3" id="num3">
+    <button onclick="max()">Find Max</button>
+    <p id="result"></p>
+
+    <script>
+         function sr_no(){
+            let = a,b,c;
+            let data="";
+            let num = document.querySelector("#num").value;
+
+            for(i=1; i <=num ; i++){
+                data += i + "<br>";
+            }
+         
+
+        if(a>b && a>c){
+            document.write(a + " is Grater Than " + b +" and " +c);
+        }
+        else if(b>c && b>a){
+            document.write(b + " is Grater Than " + a +" and " +c);
+        }
+        else if(c>a && c>b){
+            document.write(c + " is Grater Than " + a +" and " +b);
+        }
+        else{
+            document.querySelector("#result").innerHTML = data;
+          
+        }
+    }
+
+
+
+
+    function max(){
+        let a = document.querySelector("#num1").value;
+        let b = document.querySelector("#num2").value;
+        let c = document.querySelector("#num3").value;
+
+        a = parseInt(a)
+        b= parseInt(b)
+        c= parseInt(c)
+
+        let msg = "";
+
+        if(a>b && a>c){
+           msg = a + " is Grater Than " + b +" and " +c;
+        }
+        else if(b>a && b>c){
+            msg = b + " is Grater Than " + a +" and " + c;
+        }
+        else if(c>a && c>b){
+            msg  = c + " is Grater Than " + a +" and " +b;
+        }
+        else{
+            // document.querySelector("#result").innerHTML = data;
+            msg = " All Numbers are equals";
+        }
+
+        document.querySelector("#result").innerText = msg
+
+    }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

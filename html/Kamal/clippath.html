@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-path</title>
+    <style>
+        img{
+            /* float: right; */
+            /* clip-path: circle(50%); */
+            /* clip-path: polygon(51% 83%, 97% 41%, 50% 100%, 9% 38%); */
+            /* clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%); */
+            /* shape-outside:polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%) ; */
+            height: 200px;
+            width: 200px;
+            /* object-fit: cover; */
+
+            /* -webkit-box-reflect: below  10px linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.5),rgba(0,0,0,.5),rgba(0,0,0,1)); */
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            color: red;
+        }
+        .abcd{
+            height: 50px;
+            width: 50px;
+            border: 1px solid red;
+            background-color: currentColor;
+        }
+
+        .para{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            color: blue;
+        }
+
+        #para{
+            color: green !important;
+        }
+
+        p{
+            color: rebeccapurple ;
+        }
+        h1{
+            font-size: 200px;
+            -webkit-text-stroke: 2px  red;
+            color: transparent;
+        }
+        input::-webkit-file-upload-button{
+            border: 2px solid red;
+        }
+        input::file-selector-button{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <input type="file">
+    <h1>ABCD</h1>
+    <input type="text">
+    <p class="para" style="color: red" id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates quibusdam temporibus quos, numquam molestias tempore illo modi, incidunt doloremque dolorem deserunt sapiente, cum sit nulla nostrum vel accusamus omnis.
+    Quia iure necessitatibus modi molestias! In illo odio hic numquam porro. Harum, dolorem neque. Cupiditate eos, reiciendis voluptatibus deserunt laboriosam voluptas magnam. Aut, autem dolores labore corporis asperiores reprehenderit eos.
+    Eveniet est facilis et, magnam quidem doloribus voluptates nulla accusantium officiis placeat! Vero cupiditate hic ut, tempore nam eaque quia. Dolorem magnam quos animi cum, fuga ipsam similique eaque aspernatur.</p>
+    <img src="../web/images/11.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta culpa harum excepturi consequatur saepe sapiente optio, maxime corporis tempora unde atque aliquid velit consequuntur molestias praesentium laboriosam rem deserunt.
+    Natus non adipisci quos explicabo eos, ipsum dignissimos velit mollitia ipsam aliquam deleniti odit ad, magni, doloribus culpa porro nesciunt perspiciatis vitae neque id officia! Eos totam ratione architecto consequuntur.
+    Eius ullam deserunt quisquam esse quas amet, ipsum maiores, cupiditate, rerum quasi ipsam molestias ratione? Vitae laudantium, doloribus nesciunt, earum dolorem aspernatur debitis a culpa possimus quo suscipit commodi placeat.
+    Officia quaerat nostrum asperiores maiores quae laboriosam modi repellat repellendus sint id voluptate doloremque neque eius illo ex debitis enim expedita, commodi sequi deserunt! Ducimus porro ut illo sunt molestias?
+    Voluptatibus, dolores amet? Sint maxime soluta cum eos accusantium consequuntur eius unde aliquam earum quod dignissimos tempora animi dolor odio sed, quaerat, consectetur tenetur, quo qui perspiciatis molestiae at amet?</p>
+
+    <div class="box">
+        <div class="abcd"></div>
+    </div>
+</body>
+</html>

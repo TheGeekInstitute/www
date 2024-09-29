@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        /* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.stopwatch {
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.time-display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.laps {
+    margin-top: 20px;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="time-display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start-stop">Start</button>
+            <button id="reset">Reset</button>
+            <button id="lap">Lap</button>
+        </div>
+        <div class="laps">
+            <h3>Laps</h3>
+            <ul id="lap-list"></ul>
+        </div>
+    </div>
+    <script>
+        // script.js
+        let timer;
+        let isRunning = false;
+        let elapsedTime = 0; // Time in milliseconds
+        let lapCount = 0;
+
+        const minutesDisplay = document.getElementById('minutes');
+        const secondsDisplay = document.getElementById('seconds');
+        const millisecondsDisplay = document.getElementById('milliseconds');
+        const lapList = document.getElementById('lap-list');
+        const startStopButton = document.getElementById('start-stop');
+        const resetButton = document.getElementById('reset');
+        const lapButton = document.getElementById('lap');
+
+        function formatTime(ms) {
+            const minutes = String(Math.floor(ms / 60000)).padStart(2, '0');
+            const seconds = String(Math.floor((ms % 60000) / 1000)).padStart(2, '0');
+            const milliseconds = String(Math.floor(ms % 1000 / 10)).padStart(2, '0');
+            return { minutes, seconds, milliseconds };
+        }
+
+        function updateDisplay() {
+            const time = formatTime(elapsedTime);
+            minutesDisplay.textContent = time.minutes;
+            secondsDisplay.textContent = time.seconds;
+            millisecondsDisplay.textContent = time.milliseconds;
+        }
+
+        function startStopwatch() {
+            if (isRunning) {
+                clearInterval(timer);
+                startStopButton.textContent = 'Start';
+            } else {
+                timer = setInterval(() => {
+                    elapsedTime += 10; // Increase by 10ms
+                    updateDisplay();
+                }, 10);
+                startStopButton.textContent = 'Stop';
+            }
+            isRunning = !isRunning;
+        }
+
+        function resetStopwatch() {
+            clearInterval(timer);
+            elapsedTime = 0;
+            updateDisplay();
+            lapList.innerHTML = '';
+            lapCount = 0;
+            isRunning = false;
+            startStopButton.textContent = 'Start';
+        }
+
+        function addLap() {
+            if (isRunning) {
+                lapCount++;
+                const lapTime = formatTime(elapsedTime);
+                const lapItem = document.createElement('li');
+                lapItem.textContent = `Lap ${lapCount}: ${lapTime.minutes}:${lapTime.seconds}:${lapTime.milliseconds}`;
+                lapList.appendChild(lapItem);
+            }
+        }
+
+        startStopButton.addEventListener('click', startStopwatch);
+        resetButton.addEventListener('click', resetStopwatch);
+        lapButton.addEventListener('click', addLap);
+
+    </script>
+</body>
+</html>
+

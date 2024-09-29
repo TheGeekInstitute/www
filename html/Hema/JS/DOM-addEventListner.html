@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listner </title>
+</head>
+<body onresize="change()" >
+    <h1 id="heading">Hello World</h1>
+
+
+    <script>
+        // let heading = document.querySelector("#heading");
+
+        // heading.addEventListener('click',change_color);
+        // heading.addEventListener('click',change_text);
+
+        // heading.addEventListener('click',function(){
+        //     heading.style.color="red";
+        // });
+
+        // document.querySelector("#heading").addEventListener('click',function(){
+        //     this.innerHTML = "hello";
+        // });
+
+
+        
+        document.body.addEventListener('click',function(){
+           this.style.backgroundColor="green"
+        })
+
+
+        // document.querySelector("#heading").addEventListener('scroll',function(){
+        //     this.innerHTML = "hello";
+        // });
+
+        function change(){
+            document.body.style.backgroundColor="red"
+        }
+
+        // function change_color(){
+        //     heading.style.color="red";
+        // }
+
+        // function change_text(){
+        //     heading.innerHTML = "Red Text";
+        // }
+
+    </script>
+</body>
+</html>

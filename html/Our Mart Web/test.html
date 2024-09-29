@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCd</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .main{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            overflow: hidden;
+        }
+        
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            transform: translateX(100%);
+            transition: all .3s;
+        }
+
+        .main:hover .box{
+            transform: translateX(0);
+        }
+
+        .wrapper{
+            /* border: 1px solid red; */
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            overflow: hidden;
+        }
+        .wrapper img{
+            height: 200px;
+            width: 200px;
+        }
+        .wrapper .sub{
+            background-color: rgba(0, 255, 255, 0.411);
+            height: 100%;
+            width: 100%;
+            /* position: relative; */
+            /* top: -100%; */
+        transform: translateY(0);
+        transition: transform .3s;
+        }
+        .sub h1{
+            text-align: center;
+            line-height: 200px;
+            color: black;
+        }
+
+        .wrapper:hover .sub{
+            transform: translateY(-204px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">asdasdasda</div>
+    </div>
+
+<br><br><br><br>
+
+<a href="#">
+<div class="wrapper">
+<img src="../web/images/11.jpg" alt="">
+<div class="sub">
+    <h1>abcd</h1>
+</div>
+</div>
+</a>
+
+</body>
+</html>

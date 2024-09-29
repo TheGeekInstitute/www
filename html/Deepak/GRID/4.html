@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            width: 600px;
+            height: 800px;
+            margin: 20px auto;
+
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: repeat(3,100px); */
+            /* grid-template-columns: min-content repeat(2,1fr); */
+            /* grid-template-columns: max-content repeat(2,1fr); */
+            /* grid-template-columns: minmax(min-content,150px) repeat(2,1fr); */
+
+
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,50px);
+
+            /* row-gap: 5px; */
+            /* column-gap: 10px; */
+
+            /* gap: 5px 10px; */
+            gap: 5px;
+
+            /* grid-auto-flow: column; */
+            grid-auto-flow: row;
+            /* grid-auto-columns: 150px; */
+            grid-auto-rows: 150px;
+        }
+
+        .box1{
+    
+             background-color:yellowgreen;
+            
+          order: 5;
+            
+             
+        }
+
+
+           .box2{
+            background-color: green;
+         
+        }
+
+        .box3{
+            background-color:rebeccapurple;
+
+    
+        }
+        .box4{
+            background-color: cyan;
+            
+        }
+        .box5{
+            background-color: plum;
+    
+        }
+        .box6{
+            background-color: crimson;
+            order: -1;
+        }
+        .box7{
+            background-color: orange;
+        }
+        .box8{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1 </div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">port</div>
+        <div class="box box5">5</div>  
+        <div class="box box6">6</div>   
+        <div class="box box7">7</div>   
+        <div class="box box8">8</div>  
+        
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>  
+        <div class="box box6">6</div>  
+          
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>  
+        <div class="box box6">6</div>  
+          
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>  
+        <div class="box box6">6</div> 
+        
+    </div>
+    <div class="min">
+
+    </div>
+</body>
+</html>

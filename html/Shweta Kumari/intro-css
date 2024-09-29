@@ -1,0 +1,6 @@
+#bold{
+ backgroud-color: red;
+   color: white;
+}
+
+#heading2{ }

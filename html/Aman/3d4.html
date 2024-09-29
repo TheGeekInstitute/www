@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d cards </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+    nav{
+        /* border: 1px solid red ; */
+        height: 50px  ;
+        text-align: center;
+        background-color: black;
+        transform-style: preserve-3d;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0 20px ;
+    }
+    nav ul li a{
+        /* margin-top: 30px ; */
+        display: inline-block;
+        line-height: 50px ;
+        color: white;
+        line-height: 50px;
+        font-weight: 900px ;
+        padding: 0 10px ;
+        font-size: 30px ;
+      
+    }
+    nav ul li a:hover{
+        background-color: grey;
+    }
+    main{
+        text-align: center;
+        /* transform: rotateY(180deg); */
+        backface-visibility: hidden;
+        transition: all 3s;
+    }
+    main .box img{
+        height: 100px ;
+        width: 150px ;
+      border-radius: 10px ;
+        
+    }
+    main .box{
+        /* border: 1px solid red ; */
+        width: 250px ;
+        padding: 10px ;
+        margin: 20px ;
+        background-image: linear-gradient(red , yellow , black);
+        box-shadow: 0px 0px 10px black;
+        display: inline-block;
+        /* transform: rotateY(180deg); */
+        transition: all 3s;
+    }
+    main:hover .box {
+        transform: perspective(600px) rotateY(180deg);
+    }
+    </style>
+</head>
+<body>
+   <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+   </nav>
+   <main>
+
+   </div>
+
+    <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div>
+    <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div> <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div> <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div> <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div> 
+    <div class="box">
+        <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="">
+        <p>
+            The Geek Institute of Cyber Security
+Our institute offers thoughtfully designed courses for diverse student abilities. With up-to-date curricula, we equip learners with essential skills for leading-edge industrial roles and prioritize excellent job placements in prominent companies, ensuring students excel in their careers in the dynamic job market.
+
+ 
+        </p>
+    </div>
+    
+   </main>
+       
+</body>
+</html>

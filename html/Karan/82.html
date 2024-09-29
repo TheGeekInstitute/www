@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Orgin</title>
+
+    <style>
+        .box{
+            width: 600px;
+            border: 3px solid red;
+            padding: 100px;
+            background-color: #ccc;
+            background-image: url("/web/images/11.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+
+        h1{
+            border: 1px solid black;
+        }
+
+        .box1{
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            /* background-color: aqua; */
+            background: linear-gradient(red,yellow);
+
+            background: linear-gradient(150deg,red,orange,yellow,green,blue,indigo,violet);
+
+            background: radial-gradient(red 2%,yellow 5%,green); 
+            /* background: radial-gradient(circle,red,yellow,green);
+
+            /* background: radial-gradient(closest-side at 10% 10%,red,yellow,green); */
+
+            /* background: radial-gradient(farthest-side at 100% 100%,red,yellow,green); */
+
+            /* background:repeating-radial-gradient(circle,red 5%,yellow 10%,green 15%); */
+
+            /* background: conic-gradient(red 45deg,yellow 10deg,green 95deg); */
+
+            /* background: conic-gradient( at 45% 10%,red,yellow,green); */
+
+            /* background: repeating-conic-gradient(at 10% 20%,rgba(221, 37, 37, 0.616) 10%,yellow 20%,green 30%); */
+
+            /* border-radius: 50%; */
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <!-- <h1>Heading</h1> -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, necessitatibus autem voluptatum aut voluptate odit voluptatem fugiat corporis, magni iste, accusamus laborum assumenda quasi tempora aspernatur. Ex exercitationem quod in! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aut qui cupiditate architecto laudantium eligendi rerum dicta labore harum magnam fugiat tempore modi repellat error esse quas vero quia delectus.
+        Id nesciunt laborum optio obcaecati excepturi dignissimos, quas rem ipsa corporis sint! Quisquam accusantium et provident, placeat tempora sint in eum fuga possimus nam molestiae at commodi vero deserunt voluptatem.
+        Ea, quas accusantium quasi unde quis facilis odio velit aspernatur officia minima doloremque exercitationem sequi harum neque beatae cum eius et atque incidunt voluptas aliquam sunt illo. Explicabo, libero itaque?
+        Minus quisquam ducimus blanditiis expedita, cum corrupti nobis, totam exercitationem nesciunt harum laboriosam, similique facere officia possimus consequatur voluptates illum. Nam natus labore sit ducimus, tenetur iusto quia quasi nihil!</p>
+    </div>
+
+
+<div class="box1">
+    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+
+    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+    P
+</div>
+
+</body>
+</html>

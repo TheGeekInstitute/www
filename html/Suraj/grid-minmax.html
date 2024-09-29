@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        body{
+            /* background-color: rgb(250, 216, 0); */
+        }
+        .container{
+            border: 2px solid black;
+            /* height: 400px; */
+            width: 500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 150px repeat(2,1fr);
+            grid-template-rows:minmax(200px,min-content) 200px repeat(2,1fr);
+        
+            gap: 5px 5px;
+            
+        }
+        .item{
+          
+            
+        }
+
+        .item1{
+            background-color: aqua;
+   
+        }
+
+        .item2{
+            background-color: brown;
+     
+        }
+
+        .item3{
+            background-color: green;
+       
+        }
+
+        .item4{
+            background-color: greenyellow;
+            
+        }
+        .item5{
+            background-color: bisque;
+           
+        }
+        .item6{
+            background-color:grey ;
+            
+        }
+
+        .item7{
+            background-color: aquamarine;
+           
+        }
+
+        .item8{
+            background-color: red;
+           
+        }
+
+
+        .item9{
+            background-color: orangered;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos pariatur distinctio porro ipsa quisquam temporibus obcaecati atque sequi provident nam. Eum ea consequatur praesentium doloremque necessitatibus quasi odit quo eligendi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, repellat? Obcaecati, architecto nemo. Eum beatae laboriosam aut tempore necessitatibus sequi, fugit voluptatem atque unde! Cumque laborum incidunt iusto ea suscipit.</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+
+
+    </div>
+</body>
+</html>

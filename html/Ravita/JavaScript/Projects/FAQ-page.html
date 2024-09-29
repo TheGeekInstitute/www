@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-page</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: rgba(226, 225, 225, 0.829);
+            box-shadow: 0px 0px 2px black;
+
+            border: 1px solid rgba(243, 241, 241, 0.979)
+        }
+
+        .container h1 {
+            /* font-size: 16px; */
+            width: 400px;
+            color: rgb(175, 129, 11);
+            font-style: italic;
+            text-align: center;
+            margin-left: 3rem;
+            margin-top: 1.5rem;
+            padding: 2px;
+
+            /* justify-content: center; */
+
+        }
+
+
+
+        .container .accordion {
+            /* border: 1px solid black; */
+            background-color: white;
+            border-radius: 6px;
+            box-shadow: 0px 0px 2px black;
+            width: 300px;
+            margin: 20px auto;
+
+        }
+
+        .container .accordion .heading {
+            background-color: white;
+            /* color:goldenrod; */
+            height: 40px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            /* font-size: large; */
+            user-select: none;
+            cursor: pointer;
+        }
+
+
+
+        .container .accordion .content {
+            padding: 10px;
+            display: none;
+        }
+
+        .container .accordion .content p{
+            background-color: rgba(128, 128, 128, 0.808);
+        }
+
+        .container .accordion .content.active {
+            display: block;
+        }
+
+        .container .accordion .heading .rotate {
+            transition: all .2s linear;
+            transform: rotate(45deg);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Gereral Questions</h1>
+        <div class="accordion">
+            <div class="heading">
+                <p>Do you accept All major credit cards ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae quod in esse modi
+                    doloremque voluptates nisi, dignissimos blanditiis quam doloribus quo necessitatibus? Non
+                    repudiandae corrupti alias itaque expedita pariatur.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="heading">
+                <p>Do you support local farmer ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae quod in esse modi
+                    doloremque voluptates nisi, dignissimos blanditiis quam doloribus quo necessitatibus? Non
+                    repudiandae corrupti alias itaque expedita pariatur.</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="heading">
+                <p>Do you Use organic ingredients ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae quod in esse modi
+                    doloremque voluptates nisi, dignissimos blanditiis quam doloribus quo necessitatibus? Non
+                    repudiandae corrupti alias itaque expedita pariatur.</p>
+            </div>
+        </div>
+
+        <script>
+
+            let accordion = document.querySelectorAll(".accordion");
+            accordion.forEach((e) => {
+                e.children[0].addEventListener("click", () => {
+
+                    accordion.forEach(e => {
+                        e.children[1].classList.remove("active")
+                    })
+
+                    e.children[1].classList.toggle("active");
+
+
+
+
+                })
+            })
+
+
+        </script>
+</body>
+
+</html>

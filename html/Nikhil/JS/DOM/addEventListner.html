@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid quo, eveniet repellendus ab voluptatibus delectus quae voluptatum inventore, soluta aspernatur dolore natus tenetur iusto in itaque, magni aut ratione!</h1>
+
+    <button id="btn">Change</button>
+
+    <script>
+        let heading = document.querySelector("#heading");
+
+       let btn= document.getElementById("btn");
+
+    //    btn.addEventListener("click",data);
+
+    btn.addEventListener("click",function(){
+        // heading.style.backgroundColor="red";
+
+    });
+
+    
+    btn.addEventListener("click",()=>{
+        heading.style.backgroundColor="red";
+
+    });
+
+
+    //    function data(){
+    //     heading.style.backgroundColor="red";
+    //    }
+
+    </script>
+
+</body>
+</html>

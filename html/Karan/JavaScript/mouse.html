@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        document.body.addEventListener("mousedown",(e)=>{
+            // console.log(e.button)
+
+            switch(e.button){
+                case 0 : document.body.style.backgroundColor="red";
+
+                break;
+
+                case 1 : document.body.style.backgroundColor="green";
+
+                break;
+
+                case 2 : document.body.style.backgroundColor="yellow";
+
+                break;
+
+                default : document.body.style.backgroundColor="white";
+            }
+        })
+    </script>
+</body>
+</html>

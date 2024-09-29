@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        border: 2px solid black;
+
+        display: grid;
+        grid-template-rows: [row1-start] 100px [row1-end row2-start] 50px [row2-end row3-start] 1fr [row3-end row4-start] 70px [row-4-end];
+            grid-template-columns: [col1-start] 150px [col1-end col2-start] 1fr [col2-end col3-start] 150px [col3-end];
+
+        gap: 5px;
+
+    }
+
+
+
+    .box1{
+        background-color: aqua;
+        grid-area: row1-start /col1-start / row1-end / col3-end;
+    }
+    .box2{
+        background-color: rgb(0, 0, 0);
+       grid-area: row2-start / col1-start / row2-end / col3-end ;
+    }
+    .box3{
+        background-color: brown;
+
+    }
+    .box4{
+        background-color: chartreuse;
+        color: red;
+
+    }
+    .box5{
+        background-color: coral;
+
+    }
+    .box6{
+        background-color: chartreuse;
+        grid-area:  row4-start / col1-start / row4-end / col3-end;
+
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box box1">Headar</div>
+        <div class="box box2">Nevigation Menu</div>
+        <div class="box box3">contant</div>
+        <div class="box box4">Main content</div>
+        <div class="box box5">Content</div>  
+        <div class="box box6">footer</div
+</body>
+</html>

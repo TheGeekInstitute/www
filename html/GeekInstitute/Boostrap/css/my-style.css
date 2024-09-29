@@ -1,0 +1,25 @@
+.top-nav{
+    background-color: rgb(70, 0, 0);
+    height: 4vh;
+    color: white;
+}
+
+.my-header{
+    background-color: yellow;
+    height: 8vh;
+}
+
+.my-sidebar{
+    background-color: blue;
+    height: 80vh;
+}
+
+.my-main{
+    background-color: bisque;
+}
+
+.my-footer{
+    height: 8vh;
+    background-color: grey;
+    color: white;
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0% ;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .main{
+            height: 100vh;
+            background-color: rgb(228, 218, 206);
+        }
+        .image img{
+            height: 30px;
+            shape-outside: margin-box;
+        }
+        h1{
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Satisfy', cursive;
+        }
+        .nav{
+            /* background-color: black; */
+            height: 6vh;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+
+        }
+        .nav ul li{
+            display: inline-block;
+            margin: 8px;
+        }
+        span{
+            color: rgb(255, 25, 0);
+        }
+        .nav ul li a{
+            color: #fff;
+            cursor: pointer;
+        }
+        .nav ul li a:hover{
+            color: black;
+            padding: 7px;
+        }
+        .new{
+            background-color: blue;
+            margin-top: 50px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 4px 4px green;
+        }
+        .manish h2{
+            font-family: 'Dancing Script', cursive;
+            font-size: 40px;
+            margin-top: 150px;
+        }
+        .manish{
+            display: flex;
+            justify-content: space-around;
+        }
+        .image img{
+            height: 350px;
+            width: 600px;
+            margin-top: 150px;
+            mix-blend-mode: darken;
+            background-color:red ;
+        }
+        .sir p{
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .sir h3{
+            margin-top: 40px;
+        }
+        .sir li{
+            color: blue;
+        }
+        .india{
+            height: 80vh;
+            background-color: rgb(214, 228, 228);
+        }
+        .england{
+            justify-content: space-around;
+            display: flex;
+        }
+        .pak{
+            margin-top: 90px;
+            margin-left: 50px;
+        }
+        .england img{
+            box-shadow: 2px 4px 3px #fff;
+            margin-top: 50px;
+            height: 350px;
+            width: 600px;
+            margin-left: 30px;
+        }
+        .pak h4{
+            color: blue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .pak p{
+            color: black;
+            word-spacing: 20px;
+        }
+        .uk{
+            height: 190vh;
+            background-color: rgb(253, 251, 251);
+        }
+        .uk01 a{
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin: 20px;
+            color: black;
+            padding: 15px;
+        }
+        .uk01 a:hover{
+            background-color: black;
+            color: #fff;
+        }
+        .uk01 h2{
+            text-align: center;
+            font-size: 40px;
+            font-family: cursive;
+            color: rgb(24, 253, 3);
+        }
+        .syalde{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .chamoli{
+            border-radius: 5px;
+            border: 1px solid  rgb(226, 218, 218);
+            box-shadow: 6px 6px 6px  rgb(163, 123, 123);
+        }
+        .almora{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            border-radius: 10px;
+
+        }
+        .chamoli img{
+            height: 30vh;
+            width: 40vh;
+        }
+        .chamoli h2{
+            text-align: center;
+        }
+        .chamoli p{
+            height: 30vh;
+            width: 40vh;
+            /* text-align: justify; */
+        }
+        div.haridhwar{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+        .html{
+            height: 70vh;
+            background-color: rgb(223, 220, 215);
+        }
+        .python p{
+            width: 300px;
+            text-align: center;
+        }
+        .python{
+            display: flex;
+            margin-top: 50px;
+        }
+        .python img{
+            height: 250px;
+            box-shadow: 4px 4px 4px grey;
+        }
+        .social{
+            font-size: 30px;
+            
+        }
+        .fb{
+            color: blue;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .ig{
+            color: rgba(253, 2, 253, 0.973);
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .tw{
+            color: cyan;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .li{
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .social i:hover{
+            padding: 5px;
+            background-color:rgb(207, 183, 183);
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black      
+        }
+        .social i{
+            margin: 12px;
+        }
+        .css h1{
+            text-align: center;
+        }
+        .php{
+            border: 1px solid #fff;
+            box-shadow: 4px 4px 4px grey;
+            background-color: #fff;
+        }
+        .jawa{
+            display: flex;
+            justify-content: space-around;
+        }
+        .php h2{
+            margin-top: 20px;
+        }
+        @media only screen and (max-width:600px) {
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+            .nav{
+                display: none;
+            }
+            .manish{
+                display: block;
+            }
+            .hero{
+                height: auto;
+            }
+            .hero img{
+                background-image: url("https://img.freepik.com/free-vector/cyber-security-concept_23-2148532223.jpg?w=2000");
+                margin-top: 30px;
+                height: 300px;
+                width: 360px; 
+            }
+            .sir li{
+                font-size: 30px;
+            }
+            .sir h2{
+                font-size: 35px;
+                color: green;
+            }
+            .india{
+                height: auto;
+            }
+            .england{
+                display: block;
+            }
+            .england img{
+                height: 300px;
+                width: 300px;
+            }
+            .pak h1{
+                font-size: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .pak{
+                margin-top: 20px;
+            }
+            .pak p{
+                word-spacing: 0%;
+            }
+            .syalde{
+                display: flex;
+                font-size: 6px;
+                padding: 0%;
+                text-align: center;
+            }
+            .uk{
+                height: auto;
+            }
+            .almora{
+                display: block;
+                width: 300px;
+                margin-left: 30px;
+            }
+            .haridhwar{
+                display: inline-block;
+            }
+            .jawa{
+                display: block;
+                width: 300px;
+            }
+            .python{
+                width: 300px;
+            }
+
+        }
+            </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>GEEK <SPAN>INSTITUTE</SPAN></h1>
+            <div class="new">
+                <ul>
+                    <li><a href="#"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>CONTACT US</a></li>
+                    <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>
+                        ABOUT US</a></li>
+                    <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        COURSES</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero">
+                <div class="manish">
+                    <div class="sir">
+                    <h2>GEEK INSTITUTE OF <BR><li>CYBER SECURITY </li></h2>
+                        <p>adipisicing elit. Quos, libero repellat, impedit quod ullam alias illo <br> No one shall be held in slavery or servitude; slavery and the slave trade shall be <br> prohibited in all their forms.</p>
+                        <h3>Cyber Security Web Devlopment</h3>
+                    </div>
+                        <div class="image">
+                            <img src="https://th.bing.com/th/id/OIP.hBI3vAtpA9qMMOwF-G7JxAHaEK?pid=ImgDet&rs=1" alt="">
+                        </div>
+                </div>
+    </div>
+    <div class="india">
+        <div class="england">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <div class="pak">
+            <h4>Why to Chooes Us</h4>
+            <h1>We are making <br> <span>Deplopment creative </span>  <br> and easy for you.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam quod corporis nisi vel praesentium labore hic blanditiis aperiam quae, sint voluptates aut sequi odio optio laudantium cumque corrupti aliquam dolores!</p>
+        </div>
+        </div>
+    </div>
+    <div class="uk">
+        <div class="uk01">
+        <h2>Techonologies <span>We're are </span> dealing with <i class="fa fa-arrow-right" aria-hidden="true"></i> </h2>
+        <div class="syalde">
+        <a href="#">All</a>
+        <a href="#">Web Devloper</a>
+        <a href="#">Cyber security</a>
+        <a href="#">System Administration</a>
+    </div>
+    </div>
+    <div class="almora">
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>HTML</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>PHP</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>PYTHON</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        </div>
+        <div class="haridhwar">
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>SQL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>BRUSH</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>MALWARE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        <div class="chamoli">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+            <h2>CYBER SECURITY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum incidunt blanditiis accusantium recusandae, fuga a soluta quasi. Deserunt atque totam dolorem qui ullam aut porro repellendus dolorum eius impedit?</p>
+        </div>
+        </div>
+    </div>
+    <div class="html">
+         <div class="css">
+            <h1>OUR <SPAN> EXPERT </SPAN> TECHONOLIEST HERE</h1>
+         </div>
+         <div class="jawa">
+            <div class="python">
+                <img src="https://lh3.googleusercontent.com/a/AAcHTtdNW15TK9_M7fIGSOt-dOssyx2k0gLsW1TwW4Bo5w=s288-c-no" alt="">
+                <div class="php">
+                <h2>KARAN CHANDRA</h2>
+                <p>Cybersecurity is the protection of internet-connected systems such as hardware, software and data from cyberthreats.corporis nisi vel praesentium labore hic blanditiis aperiam quae, sint voluptates aut sequi odio optio laudantium cumque corrupti aliquam dolores!</p>
+                <div class="social">
+                    <a href="https://www.facebook.com">
+                        <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                        <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com">
+                        <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://in.linkedin.com">
+                      <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="jawa">
+                <div class="python">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQEOPIeDxx42nA/profile-displayphoto-shrink_800_800/0/1680606881588?e=2147483647&v=beta&t=4iR-dOB258O1Iwp9qQKBeDasNyEGa5f-J6zIr9Xh1Dc" alt="">
+                    <div class="php">
+                    <h2>MANISH CHANDRA</h2>
+                    <p>Cybersecurity is the protection of internet-connected systems such as hardware, software and data from cyberthreats.corporis nisi vel praesentium labore hic blanditiis aperiam quae, sint voluptates aut sequi odio optio laudantium cumque corrupti aliquam dolores!</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com">
+                            <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                            <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://in.linkedin.com">
+                          <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+         </div>
+    </div>
+</body>
+</html>

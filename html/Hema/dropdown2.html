@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        body{
+            background-color: rgb(181, 231, 231);
+            background-image: url("..//wallpapers/people/sandersA.jpg");
+            background-repeat: no-repeat;
+            background-size:cover ;
+        }
+        .nav{
+            /* border: 2px solid red; */
+            height: 70px;
+            justify-content: space-between;
+            display:flex ;
+            background-color: darkcyan;
+            color: rgb(90, 14, 141);
+            padding-top: 4px;
+
+        }
+        .nav ul{
+         display: flex;
+         justify-content: center;
+         align-items:center ;
+         
+        }
+        .nav ul li{
+            margin: 0 10px;
+            /* text-align: center; */
+            text-transform: uppercase;
+            
+        }
+        .nav ul li a{
+            display: block;
+            /* border: 2px solid red; */
+            height: 70px;
+            width: 80px;
+            line-height: 50px; 
+            color: black;
+        }
+        .nav ul li a:hover{
+            background-color: rgb(216, 10, 154);
+        }
+        .nav .main{
+            /* border: 2px solid red; */
+            background-color: tomato;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80px;
+            visibility: hidden;
+            z-index: 1000;
+            top: 70px;
+        }
+        .nav main li{
+            /* border:  2px solid red; */
+
+        }
+        .nav ul li:hover .main{
+            visibility: visible;
+        }
+        p{
+            /* position: absolute; */
+        }
+        .nav .box{
+            /* border: 2px solid red; */
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 80px;
+            background-color: rgb(28, 123, 206);
+            top: 150px;
+            left: 70px;
+            /* visibility: hidden; */
+            
+
+        }
+        .nav ul li:hover .main li:hover .main-box{
+    visibility: visible;
+        }
+        h2{
+            text-align: center;
+            padding-top:6rem;
+            text-transform: uppercase ;
+            color: chocolate;
+            word-spacing: 2px;
+            letter-spacing: 2px;
+
+                }
+                p{
+                    /* border: 2px solid red; */
+                    text-align: center;
+                    color: rgb(211, 146, 173);
+                    text-transform: uppercase;
+                    word-spacing: 3px;
+                    letter-spacing: 2px;
+                    width: 270px;
+                    margin:auto;
+                    padding-top: 4rem;
+                    
+
+
+                    
+
+                }
+                .footer{
+                    border: 2px solid red;
+                    
+                }
+    </style>
+<body>
+    <div class="nav">
+        <h1>LOGO</h1>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">About</a>
+            <ul class="main">
+                <li><a href="#">page 1</a></li>
+                <li><a href="#">page 2</a></li>
+                <li><a href="#">page 3</a>
+                    <ul class="box">
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </li>
+            <li><a href="#">contect</a></li>
+            <li><a href="#">email</a></li>
+            <li><a href="#">butten</a>
+                
+            
+            </li>
+        </ul>
+       
+    </div>
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem dicta illo, expedita ipsum quasi ut veniam omnis et vel quis repellendus iusto nulla commodi? In cum culpa tenetur quo.</p>
+
+
+    <div class="footer">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga recusandae molestiae in debitis nostrum nemo eos magni voluptates architecto, tempore, reprehenderit error soluta, delectus id repellendus blanditiis cupiditate voluptatum fugit!</p>
+    </div>
+
+
+
+
+ 
+    </div>
+</body>
+
+</html>

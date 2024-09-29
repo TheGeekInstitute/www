@@ -1,0 +1,31 @@
+$main-color:red;
+
+.main{
+    border: 2px solid $main-color;
+
+    #head1{
+        background-color: black;
+        color:white;
+    }
+
+    #head2{
+        background-color: $main-color;
+        color: white;
+    }
+}
+
+ul{
+    li{
+        background-color: green;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        &::marker{
+            color: $main-color;
+        }
+    }
+
+    
+}

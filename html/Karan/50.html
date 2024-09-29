@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .nav{
+        background-color: blue;
+        color: white;
+        font-weight: 700;
+        height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    .nav ul li {
+        display: inline;
+        /* float: both; */
+        /* padding: 3px; */
+    }
+
+ .btn,.nav_items{
+        /* float: right; */
+        text-decoration: none;
+        color: white;
+        /* padding: 6px; */
+    }
+    .nav_items{
+        margin-left: 6px;
+        margin-right: 6px;
+        /* border: 1px solid red; */
+        /* background-color: #cccc; */
+        padding: 6px;}
+        .btn{
+        float: right;
+        /* clear:left;         */
+        margin-left: 6px;
+        margin-right: 6px;
+        border: 1px solid green;
+        background-color:red;
+        padding: 6px;
+    }
+
+    #heading{
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 3px;
+
+
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li id="heading">Registration form</li>
+            <li><a href="#"  class="nav_items">Home</a></li>
+            <li><a href="#" class="nav_items">About</a></li>
+            <li><a href="#" class="nav_items">Contact</a></li>
+            <li><a href="#" class="nav_items">Services</a></li>
+            <li><a href="#" class="btn" id="signup">Signup</a></li>
+            <li><a href="#" class="btn" id="login">Login</a></li>
+    
+        </ul>
+    </div>
+    
+</body>
+</html>

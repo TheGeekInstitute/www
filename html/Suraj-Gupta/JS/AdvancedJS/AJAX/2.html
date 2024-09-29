@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .container .box{
+            margin: 5px;
+            border: 2px solid red;
+        }
+
+        .container .box img{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+       <div class="container">
+      
+        </div>
+       </div> 
+
+    <script>
+        let container = document.querySelector(".container");
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(this.readyState==4 && this.status==200){
+               let josn_data=JSON.parse(this.responseText);
+               let count=1;
+               for(data of josn_data.products){
+                // console.log(data.title)
+                let abcd = `
+                <div class="box">
+                    <p>${data.id}</p>
+                    <h1>${data.title}</h1>
+                    <p>${data.price}</p>
+                 <img src="${data.thumbnail}" alt="">
+                </div>
+                `;
+                
+                if(count<=5){
+                    container.insertAdjacentHTML("beforeend",abcd);
+                }
+                count++;
+               }
+
+               
+            }
+            else{
+                console.log("loading")
+            }
+        }
+
+        xhr.open("GET","https://dummyjson.com/product",true);
+        xhr.send();
+
+    </script>
+</body>
+</html>

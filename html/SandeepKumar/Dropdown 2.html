@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown 2</title>
+    <style>
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;}
+
+.nav{ height: 50px;
+background-color: black;
+color: red;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 50px;}
+
+.nav > .logo{  font-size: xx-large;
+color: white;}
+
+.nav > .links{display: flex;
+align-items: center;
+justify-content: space-between;
+padding-inline: 20px;}
+
+.nav > .links > li > a{ display: block;
+color: white;
+font-size: large;
+margin: 0 7px;
+padding: 0 10px;
+line-height: 50px;
+}
+
+.nav > .links > li > a:hover{background-color: aqua;}
+
+.nav > .links > li .sub{position: absolute;
+background-color: rgba(0, 0, 0, 0.753);
+display: none;
+top:50px;
+width: 100px;
+text-align: center;
+}
+
+.nav > .links > li .sub > li > a{
+    color: red;
+    line-height: 40px;
+    display: block;
+}
+
+.nav > .links > li .sub > li > a:hover{ background-color:royalblue;}
+
+.nav > .links > li:hover > .sub{
+    display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+      <div class="logo">Logo</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a>
+            <ul class="sub">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Conatct</a>
+                <ul class="sub">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </li>
+        </ul>
+    
+    </div>
+
+    </div>
+</body>
+</html>

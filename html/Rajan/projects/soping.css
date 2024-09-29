@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration-line: none;
+}
+.heading{
+    border: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+.heading h1{
+    color: white;
+}
+.heading h1 span{
+    color: rgb(7, 221, 7);
+}
+.heading i{
+    color: white;
+    font-size: 25px;
+    margin: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.heading .search input{
+    width: 28rem;
+    line-height: 25px;
+    border-radius: 100px;
+}

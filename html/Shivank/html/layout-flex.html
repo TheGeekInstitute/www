@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+       *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+       }
+       .container{
+        border: 1px solid black;
+        margin: auto;
+        height: 40rem;
+        width: 40rem;
+        margin-top: 2rem;
+       }
+       .container h1{
+         text-align: center;
+         padding-top: 4rem;
+       }
+       .container input[type="text"]{
+        /* background: transparent; */
+         height: 4rem;
+         width: 27rem;
+         margin-top: 4rem;
+         margin-left: 4rem;
+       }
+       .container input[type="password"]{
+         height: 4rem;
+         width: 27rem;
+         margin-top: 4rem;
+         margin-left: 4rem;
+       }
+       .container input[type="submit"]{
+         height: 3rem;
+         width: 5rem;
+         margin-top: 2rem;
+         margin-left: 9rem;
+       }
+       .container input[type="reset"]{
+         height: 3rem;
+         width: 5rem;
+         margin-top: 2rem;
+         margin-left: 2rem;
+       }
+       label{
+        /* border: 1px solid black; */
+        position: relative;
+        right: 25rem;
+        display: inline-block;
+        /* z-index: -1; */
+        background-color: white;
+        size: 20px;
+       }
+       .container input:focus + label{
+         transform: translateY(-34px);
+       }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1>LoGin</h1>
+    <input type="text" required>
+    <label for="">Enter Username</label>
+   <input type="password" required>
+   <input type="submit" value="LoGin">
+   <input type="reset" value="ReSet">
+   </div>
+</body>
+</html>

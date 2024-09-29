@@ -1,0 +1,40 @@
+$color1:"green";
+$color2:"orangered";
+$color3:"blue";
+$color4:"gray";
+$color5:"red";
+
+@mixin h1{
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 30px;
+    margin: 5px 10px;
+    font-weight: 900;
+    color: white;
+}
+
+@mixin img{
+    display:inline-block;
+    height:150px;
+    width:150px;
+    // margin: 0px 10px;
+    margin-left:1px;
+    margin-right: 5px;
+}
+
+@mixin nav{
+    display: flex;
+    height: 50px;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin anchor{
+
+    color:#{$color5};
+    padding: 5px;
+    margin: 0px 5px;
+    font-size: 20px
+       
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            align-items: center;
+        }
+
+        .phone,.tab{
+            display: none;
+        }
+
+
+        
+        
+        @media screen and (max-width: 768px) {
+            .tab{
+                display: block;
+            }
+            .laptop,.phone{
+                display: none;
+            }
+     
+            
+        }
+        
+        
+        @media screen and (max-width: 480px) {
+         
+            body{
+                background-color: red;
+            } 
+
+            
+            .tab,.laptop{
+                display: none;
+            }
+
+            .phone{
+                display: block;
+            }
+            
+            
+        
+        
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="laptop">laptop</h1>
+        <h1 class="tab">tablet</h1>
+        <h1 class="phone">phone</h1>
+    </div>
+</body>
+</html>

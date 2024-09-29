@@ -1,0 +1,54 @@
+                                                                                       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        p[class]{
+            /* color: red; */
+        }
+
+        p[class~="new"]{
+            /* color:red; */
+        }
+
+        p[class|="data"]{
+            /* background-color: cyan; */
+        }
+
+        input[type="text"]{
+            background-color: red;
+        }
+
+        p[class^="new"]{
+            /* border: 2px solid red; */
+        }
+
+        p[class$="old"]{
+            /* background-color: red; */
+        }
+
+        p[class*="graph"]{
+            /* background-color: cyan; */
+            font-size: large;
+            font-family: cursive;
+            text-shadow: 0px 0px 5px red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="new para paragraph old" id="new">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse aliquam ipsam sapiente? Rerum culpa aut doloribus cum dicta optio unde eos possimus ut aspernatur voluptates vitae assumenda, natus laboriosam sit!
+    </p>
+
+    <p class="data-new newpara para oldpara">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati suscipit similique et dolores nesciunt recusandae veniam iusto veritatis quisquam corrupti consequuntur, accusantium accusamus doloremque eius soluta odit dolore magnam ad?
+    </p>
+
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+</body>
+</html>

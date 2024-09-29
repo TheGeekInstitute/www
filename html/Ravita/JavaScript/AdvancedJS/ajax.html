@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <style>
+        #loader{
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            width: 100vw;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="hello">Hello World</h1>
+    
+    <button id="btn">Show</button>
+
+    <!-- <img src="https://loading.io/assets/mod/spinner/double-ring/lg.gif" id="loader" alt=""> -->
+
+    <img src="https://cdn.dribbble.com/users/68398/screenshots/3687284/loader_800.gif" id="loader" alt="">
+
+    <script>
+        let loader = document.querySelector('#loader');
+        let hello = document.querySelector("#hello")
+    document.querySelector('#btn').addEventListener("click",()=>{
+        let xhr = new XMLHttpRequest();
+        // xhr.onload = function(){
+        //     // console.log(this.status)
+        
+        // }
+
+        xhr.onreadystatechange  = function(){
+            loader.style.display="block"
+            
+            // console.log(this.readyState)
+            if(this.readyState==4 && this.status==200){
+                // console.log(this.responseText)
+                hello.innerHTML = this.responseText
+                loader.style.display="none"
+            }
+            
+
+        }
+
+        xhr.open("GET","http://10.10.10.10/Ravita/JavaScript/AdvancedJS/data.php",true);
+        xhr.send();
+    })
+
+
+       
+    </script>
+
+</body>
+</html>

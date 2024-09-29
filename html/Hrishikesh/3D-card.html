@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgba(0, 255, 255, 0.5);
+        }
+        .container{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            transform-style: preserve-3d;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+        }
+        .card{
+            height: 250px;
+            width: 250px;
+            transition: all 1.2s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 250px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px blueviolet;
+            position: absolute;
+            /* transform: rotateX(180deg); */
+            backface-visibility: hidden;
+            text-align: center;
+            perspective: 600px;
+
+        }
+        .container .card .front{
+           background-image: url(../wallpaper.jpg);
+           background-size: cover;
+           background-position: center;
+           border-radius: 10px;
+        }
+        
+        .container .card .front h1{
+            /* padding-top: 50px; */
+            background-color: rgba(128, 128, 128, 0.575);
+            position: relative;
+            top: 199px;
+            border-radius: 0 0 10px 10px;
+        }
+        .container .card .back{
+            background-color: teal;
+            transform: rotateY(180deg);
+            padding: 20px;
+        }
+        .container .card h1{
+            padding-bottom: 20px;
+        }
+        .container .card a{
+            font-size: 30px;
+            padding: 10px;
+            line-height: 50px;
+            /* margin-top: 20px; */
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                
+                <h1>Mani Kumar</h1>
+            </div>
+            <div class="back">
+                <h1>Mani Kumar</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque explicabo, sit eligendi voluptas incidunt ducimus quia, consectetur quasi ipsum, perferendis cupiditate iure pariatur.</p>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        h1,p,b,i,a,div,span{
+            border: 1px solid red;
+            margin: 5px;
+            height: 100px;
+        }
+        h1,p{
+            /* display: inline; */
+        }
+
+        b{
+            display: block;
+        }
+
+        
+        .one{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+        }
+
+        .two{
+            display: none;
+            /* opacity: 0; */
+        }
+
+
+        .one:hover + .two{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+      
+
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>paragraph</p>
+    <b>Bold text</b>
+    <i>Italic text</i>
+    <a href="#">Links</a>
+
+    <div>DIV</div>
+    <span>span</span>
+
+
+    <div class="one">One</div>
+    <div class="two">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti id fugit commodi ratione esse assumenda enim, eveniet perspiciatis fugiat illo soluta, ipsam aspernatur, sapiente ad ipsum? Quas eius fugiat sunt.
+    </div>
+
+</body>
+</html>

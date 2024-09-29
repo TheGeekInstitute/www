@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responisve Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a{
+            display: block;
+            font-size: large;
+            line-height: 50px;
+            padding: 0 10px;
+            color: white;
+        }
+
+        .nav .links li a:hover{
+            background-color: green;
+        }
+
+
+        .nav .btns{
+            font-size: 40px;
+        }
+
+        .nav .btns,
+        .nav .btns .open .cut{
+            display: none;
+        }
+
+
+        @media screen and (max-width:600px){
+            .nav .btns,
+            .nav .btns .open{
+                display: block;
+            }
+
+            .nav .links{
+                position: absolute;
+                text-align: center;
+                inset: 50px 0 0 0;
+                background-color: grey;
+                flex-direction: column;
+                display: none;
+            }
+
+            .nav .links.show{
+                display: block;
+            }
+            .cut{
+                display: none;
+            }
+            .cut.show{
+                display: block;
+            }
+            .open{
+                display: block;
+            }
+            .open.hidden{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <li><a href="##">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="btns">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark cut"></i>
+        </div>
+    </div>
+
+    <script>
+        let links = document.querySelector(".links");
+        let btns =  document.querySelector(".btns");
+        let cut = document.querySelector(".cut");
+        let open = document.querySelector(".open");
+
+        btns.addEventListener("click",()=>{
+            links.classList.toggle("show")
+            open.style.display="none"
+
+            if(links.classList.contains("show")){
+                cut.style.display="block"
+            }
+            else{
+                cut.style.display="none"
+                open.style.display="block"
+
+            }
+
+
+            
+
+        })
+    </script>
+</body>
+</html>

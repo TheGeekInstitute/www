@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 300px;
+            margin: 100px auto;
+            text-align: center;
+            border-radius: 20px 5px;
+            padding: 10px 0;
+            background-image: url("https://img.freepik.com/premium-photo/blurred-colorful-wallpaper-background_976742-179.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0px 0px 10px black;
+        }
+        .container h1{
+            font-size: 40px;
+            color: royalblue;
+            text-shadow: 2px 2px 3px black;
+        }
+        .container form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container form input,
+        .container form select{
+            border: none;
+            outline: none;
+            border: 1px solid black;
+            border-width: 1px 1px 4px 1px;
+            font-size: large;
+            padding: 0 5px;
+            height: 35px;
+            width: 70%;
+            border-radius: 3px;
+            background-color: transparent;
+            margin: 5px 0;
+        }
+        .container form label{
+            display: block;
+            font-size: x-large;
+            width: 70%;
+            text-align: left;
+            margin-top: 5px;
+        }
+        .container form #btn{
+            background-color: blueviolet;
+            color: white;
+            width: 150px;
+        }
+        .container form #btn:hover{
+            background-color: red;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form action="">
+            <label for="">Full Name</label>
+            <input type="text">
+            <label for="">Username</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="text">
+            <label for="">Gender</label>
+            <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Others</option>
+                </select>
+                <label for="">password</label>
+                <input type="password">
+                <input type="submit" value="Signup" id="btn">
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video background</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* border: 1px solid black; */
+            width: 100vw;
+        }
+        .box video{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .box .nav{
+            /* border: 1px solid black; */
+            margin: 10px auto;
+            text-align: center;
+            z-index: 1;
+        }
+        .box .nav p{
+            width: 40rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laborum laudantium repellat, culpa quasi ab? Non repellendus, nisi magnam veniam officiis numquam soluta facilis expedita, quo suscipit nihil, porro aut.</p>
+        </div>
+        <video id="#video" autoplay loop muted src="../video/12087974_1920_1080_30fps.mp4"></video>
+    </div>
+    <script>
+        console.log(window.innerHeight)
+        console.log(window.innerWidth)
+        console.log(window.outerHeight)
+    </script>
+</body>
+</html>

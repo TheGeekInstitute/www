@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        :root{
+            --main-color:cyan;
+            --second-color:red;
+        }
+
+        input:focus{
+            /* background-color: red; */
+            background-color: var(--main-color);
+            outline: 2px solid var(--second-color);
+        }
+
+        input:checked{
+            /* outline: 2px solid red; */
+        }
+        input:disabled{
+            /* background-color: red; */
+        }
+        input:enabled{
+            /* background-color: green; */
+        }
+
+        input:required{
+            /* background-color: red; */
+        }
+        input:optional{
+            /* background-color: cyan; */
+        }
+
+        input:in-range{
+            background-color: green;
+        }
+
+        input:out-of-range{
+            /* background-color: orangered; */
+        }
+
+
+        input:read-only{
+            /* background-color: red; */
+        }
+
+        input:read-write{
+            /* background-color: green; */
+        }
+
+        input:valid{
+            /* background-color: green; */
+        }
+        input:invalid{
+            /* background-color: crimson; */
+        }
+
+        input:default{
+            /* background-color: crimson;
+             */
+
+             /* outline: 2px solid red; */
+        }
+
+        .box{
+            border: 2px solid red;
+
+            width: calc(100% - 20px);
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Regstration Form</h1>
+
+    <form>
+        <label>First Name :</label>
+        <input type="text" disabled readonly>
+        
+        <br><br>
+        <label>Last Name :</label>
+        <input type="text" required>
+        <br><br>
+        <label>Gender :</label>
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label>
+        <input type="radio" name="gender">
+        <br><br>
+        <label>DOB :</label>
+        <input type="date">
+        <br><br>
+        <label>Phone :</label>
+        <input type="number" min="5" max="10">
+        <br><br>
+        <label>Email :</label>
+        <input type="email">
+        <br><br>
+        <input type="submit" value="Signup">
+        <input type="reset" value="Reset">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox">
+        <input type="checkbox">
+
+    </form>
+
+    <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, doloremque aut accusamus qui modi sint error tempore quo ab vitae harum omnis unde, sed laboriosam cupiditate alias velit deserunt adipisci.</div>
+
+</body>
+</html>

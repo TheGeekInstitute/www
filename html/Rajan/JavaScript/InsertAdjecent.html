@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="h">This is Heading</h1>
+    </div>
+    <script>
+        let element = document.createElement('h1');
+        let text = document.createTextNode("Hello World");
+        element.append(text);
+
+
+        let box = document.querySelector(".box");
+        let heading = document.querySelector(".h");
+
+
+        // box.insertAdjacentElement("beforebegin",element)
+        // box.insertAdjacentElement("afterbegin",element)
+        // box.insertAdjacentElement("beforeend",element)
+        // box.insertAdjacentElement("afterend",element)
+
+        let txt = "This is Simple text";
+
+        // box.insertAdjacentText("afterbegin",txt)
+
+        // let htmlContent = `<h1 style="color:red;">Color Red</h1>`;
+
+
+        let content=`
+        <h1>This is Heading 1</h1>
+	<h2>This is Heading 2</h2>
+	<h3>This is Heading 3</h3>
+	<h4>This is Heading 4</h4>
+	<h5>This is Heading 5</h5>
+	<h6>This is Heading 6</h6>
+
+<h1>The Earth</h1>
+
+<p>This is a simple paragraph</p>
+
+<b>This is bold text</b>
+<br><br><br>
+<strong>This is also Bold text</strong>
+<br>
+<i>This is Italic text</i>
+<br>
+<em>This is Also Italic text</em>
+<br>
+<u>This is Underlined text</u>
+<br>
+<ins>This is Also Underlined text</ins>
+<br>
+<s>This is striked text</s>
+<br>
+<del>This is Also Striked text</del>
+<br>
+
+<h1>1<sup>st</sup></h1>
+        
+        `;
+
+        box.insertAdjacentHTML("afterbegin",content)
+
+
+
+
+    </script>
+</body>
+</html>

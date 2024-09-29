@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+        .para{
+            /* user-select: all; */
+            user-select: none;
+        }
+
+        ul li::marker{
+            color: red;
+            /* font-size: 40px; */
+        }
+
+        .geek::before{
+            content: 'The ';
+            color: red;
+            font-family: cursive;
+        }
+
+        .geek::after{
+            /* content: attr(data-myattr); */
+            content: ' Institute';
+        }
+
+        #text::placeholder{
+            color: red;
+        }
+
+        #text{
+            caret-color: cyan;
+        }
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button
+        {
+            border: 2px solid red;
+            background-color: crimson;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="file">
+
+    <input type="text" name="" id="text" placeholder="ABCD XYZ">
+
+
+    <h1 class="geek" data-myattr=" Institute Of Cyber Security">GEEK</h1>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <div class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad optio nulla esse tenetur distinctio consequuntur quo mollitia fuga ea? Repudiandae nobis rem facilis eius! Aut repellat ullam itaque modi cumque.
+    </div>
+</body>
+</html>

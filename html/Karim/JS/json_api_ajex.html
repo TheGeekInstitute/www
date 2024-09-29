@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+       
+       let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(this.readyState==4 && this.status==200){
+                // console.log(this.responseText)
+                for(x of JSON.parse(this.responseText).products){
+                for(index in x){
+                    var abcd =`
+                    <div class="box">
+                        <img src="${x.thumbnail}" alt="">
+                        <h2>${x.title}</h2>
+                        <h3>${x.price}</h3>
+                    </div>
+                    `;
+                }
+                container.insertAdjacentHTML("beforeend",abcd)
+            }
+            }
+        }
+
+       xhr.open("GET","https://dummyjson.com/products",true);
+       xhr.send();
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: .5em;
+        }
+
+        input,
+        select {
+            padding: .3em .5em;
+            font-size: 1em;
+            font-weight: 600;
+            color: crimson;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            padding: .5em 1.5em;
+            cursor: pointer;
+        }
+
+        .reminders-first-row form {
+            z-index: -1;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .total-container {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #66cd8e;
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+            padding: .5em;
+            color: #fff;
+            border-radius: 5px;
+            gap: .5em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="total-container">
+        <p>Total -</p>
+        <p>2</p>
+    </div>
+    <!-- total section -->
+    <h1 style="padding: .51em;">Reminders</h1>
+    <header style="display: flex;gap: 1em; margin: .51em 0;padding: 0 1em;">
+        <section>
+            <label for="">State</label>
+            <select name="" id="">
+                <option value="">Delhi</option>
+                <option value="">Haryana</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Manipur</option>
+                <option value="">Sikkim</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Meghalaya</option>
+                <option value="">Tamilnadu</option>
+                <option value="">Assam</option>
+                <option value="">Jharkhand</option>
+                <option value="">Mizoram</option>
+                <option value="">Telangana</option>
+                <option value="">Bihar</option>
+                <option value="">Karnataka</option>
+                <option value="">Nagaland</option>
+                <option value="">Tripura</option>
+                <option value="">Chattisgarh</option>
+                <option value="">Kerala</option>
+                <option value="">Odisha</option>
+                <option value="">Uttarakhand</option>
+                <option value="">Goa</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Punjab</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Gujarat</option>
+                <option value="">Maharashtra</option>
+                <option value="">Rajasthan</option>
+                <option value="">West Bengal</option>
+            </select>
+        </section>
+        <section>
+            <label for="">City</label>
+            <select name="" id="">
+                <option value="">Delhi</option>
+                <option value="">Haryana</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Manipur</option>
+                <option value="">Sikkim</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Meghalaya</option>
+                <option value="">Tamilnadu</option>
+                <option value="">Assam</option>
+                <option value="">Jharkhand</option>
+                <option value="">Mizoram</option>
+                <option value="">Telangana</option>
+                <option value="">Bihar</option>
+                <option value="">Karnataka</option>
+                <option value="">Nagaland</option>
+                <option value="">Tripura</option>
+                <option value="">Chattisgarh</option>
+                <option value="">Kerala</option>
+                <option value="">Odisha</option>
+                <option value="">Uttarakhand</option>
+                <option value="">Goa</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Punjab</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Gujarat</option>
+                <option value="">Maharashtra</option>
+                <option value="">Rajasthan</option>
+                <option value="">West Bengal</option>
+            </select>
+        </section>
+
+        <section>
+            <label for="">Shop Number</label>
+            <input type="text">
+        </section>
+    </header>
+    <div class="reminders-first-row" style="margin: .5em 0; padding: 1em;">
+        <form action="">
+            <div class="firstrow_firstrow" style="display: flex;gap: 1em;">
+                <section>
+                    <label for="">
+                        In Date OR MFG Date
+                    </label>
+                    <input type="date" name="" id="">
+                </section>
+                <section>
+                    <label for="">Expiry Date</label>
+                    <input type="date" name="" id="">
+                </section>
+                <section>
+                    <label for="">Product Name / Number</label>
+                    <input type="text">
+                </section>
+
+                <section>
+                    <label for="">Remind Me On</label>
+                    <input type="date" name="" id="">
+                </section>
+            </div>
+
+            <div class="secondrow_firstrow">
+                <textarea style="padding: .5em; font-weight: 600; outline: none; margin: 1em 0;" name="" id="" cols="70"
+                    rows="10"></textarea>
+                <br>
+                <button type="submit">Add Reminder</button>
+            </div>
+        </form>
+    </div>
+    <div class="reminders-second-row" style="display: flex; gap: 1em; margin: 1em 0; padding: .5em;">
+        <button>Tomorrow</button>
+        <section>
+            <label for="">From</label>
+            <input type="date">
+        </section>
+        <section>
+            <label for="">To</label>
+            <input type="date">
+        </section>
+        <section>
+            <label for="">Product Name / Number</label>
+            <input type="text">
+        </section>
+        <button type="submit">Search</button>
+    </div>
+
+
+    <div class="all-reminders" style="padding: .5em;margin: 1em 0;">
+        <h2>Reminders</h2>
+        <table border="1px solid black">
+            <tr>
+                <th>S. No</th>
+                <th>MFG Date</th>
+                <th>Expiry Date</th>
+                <th>Product Name / Number</th>
+                <th>Reminder</th>
+            </tr>
+            <tr>
+                <td> <a href="./popup.html">1 </a></td>
+                <td> <a href="./popup.html">10 June 2022</a></td>
+                <td> <a href="./popup.html">12 June 2023</a></td>
+                <td> <a href="./popup.html">Apple Airpod Pro</a></td>
+                <td> <a href="./popup.html">Lorem ipsum dolor sit amet.</a></td>
+            </tr>
+            <tr>
+                <td> <a href="./popup.html">1 </a></td>
+                <td> <a href="./popup.html">10 June 2022</a></td>
+                <td> <a href="./popup.html">12 June 2023</a></td>
+                <td> <a href="./popup.html">Apple Airpod Pro</a></td>
+                <td> <a href="./popup.html">Lorem ipsum dolor sit amet.</a></td>
+            </tr>
+            <tr>
+                <td> <a href="./popup.html">1 </a></td>
+                <td> <a href="./popup.html">10 June 2022</a></td>
+                <td> <a href="./popup.html">12 June 2023</a></td>
+                <td> <a href="./popup.html">Apple Airpod Pro</a></td>
+                <td> <a href="./popup.html">Lorem ipsum dolor sit amet.</a></td>
+            </tr>
+            <tr>
+                <td> <a href="./popup.html">1 </a></td>
+                <td> <a href="./popup.html">10 June 2022</a></td>
+                <td> <a href="./popup.html">12 June 2023</a></td>
+                <td> <a href="./popup.html">Apple Airpod Pro</a></td>
+                <td> <a href="./popup.html">Lorem ipsum dolor sit amet.</a></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

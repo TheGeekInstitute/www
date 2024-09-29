@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            background-color: black;
+            margin-left: 200px;
+            color: white;
+            text-align: center;
+            font-weight: 900;
+            font-size: xx-large;
+            
+            
+        }
+        .nav li{
+            display: inline-block;
+            padding: 1px;
+            margin:0 30px;
+            
+        }
+
+        .sidebar{
+            background-color: bisque;
+            width: 200px;
+            height: 100vh;
+            margin-top: -50px;
+            
+            /* padding:5px 5px; */
+            font-weight: 900;
+            /* font-size:20px; */
+        }
+
+        .sidebar ul{
+            /* padding-top: 30px; */
+        }
+
+        .sidebar ul li{
+            border-bottom: 2px solid red;
+            width: 100%;
+            height: 40px;
+        }
+
+        .sidebar ul li a{
+            display: block;
+            /* border: 1px solid black; */
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+        
+        }
+        .sidebar ul li:hover{
+            background-color: grey;
+        }
+
+        .sub{
+            /* border: 1px solid green; */
+            position: absolute;
+            left: 201px;
+            top: 75px;
+            background-color: green;
+            width: 100px;
+            display: none;
+        }
+
+        .main{
+            background-color: cyan;
+            height: calc(100vh - 50px);
+            margin-left: 200px;
+            margin-top: calc(-100vh + 50px);
+        }
+        .footer{
+            background-color: rgb(0, 0, 0);
+            height: 50px;
+            margin-left: 200px;
+            margin-top: -50px;
+        }
+
+        .abcd{
+            background-color: rgba(0, 0, 0, 0.788);
+            height: 50px;
+            width: 200px;
+            /* position: absolute; */
+            margin-top: -50px;
+        }
+
+        
+        .sidebar ul li:hover .sub{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Contact</li>
+            <li><a href="#"></a>About</li>
+            
+        </ul>
+    </div>
+    <div class="sidebar">
+        <a href="#"><h1>LOGO</h1></a>
+        <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pages</a>
+            <ul class="sub">
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </ul>
+    </li>
+    </ul></div>
+    <div class="main"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequatur nobis dignissimos accusantium repudiandae at itaque impedit obcaecati, consequuntur totam dolore molestias suscipit quam exercitationem illum eius ratione, in maxime.
+    Est, sed cupiditate! Tempora soluta dolores vitae inventore maxime magni ex nesciunt. Expedita ratione error et perspiciatis! Ducimus animi incidunt voluptas neque dolorum excepturi, perferendis itaque, totam eligendi, voluptatum ut?
+    Libero eligendi minima commodi sed ex tempora asperiores praesentium fuga vero sapiente, eveniet nemo nihil neque, magnam sint cum non voluptate ea aliquam voluptates quod velit, tempore sequi in? Quasi!
+    Dolorum nostrum, fugiat totam deleniti ut non praesentium optio cum voluptatibus facilis eligendi earum blanditiis, nesciunt error numquam omnis dignissimos illo maxime quam modi, recusandae similique animi. Ducimus, nemo sunt!
+    Asperiores ea corrupti, tempore quam sunt quae dolorem numquam fugiat? Magnam porro eos, laboriosam, minima, ad ipsam sequi exercitationem sunt quis mollitia enim vel dolorum animi deleniti ullam nemo! Odio!</p></div>
+    <div class="footer">Thank You</div>
+    <div class="abcd">Ankit Raj</div>
+
+</body>
+</html>

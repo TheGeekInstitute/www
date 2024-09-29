@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            max-height: 200px;
+            min-height: 100px;
+            /* min-width: 600px; */
+            max-width: 600px;
+            /* box-decoration-break: ; */
+            color: red;
+        }
+
+
+        span {
+            border: 5px solid red;
+            padding: 0em 1em;
+            border-radius: 16px;
+            font-size: 24px;
+            line-height: 2;
+        }
+
+        span.ex1 {
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+
+        span.ex2 {
+            -webkit-box-decoration-break: slice;
+            box-decoration-break: slice;
+        }
+
+        input{
+            caret-color: red;
+            accent-color: green;
+        }
+
+     .box   p{
+            /* color: white; */
+            background-color: currentColor;
+        }
+
+    input::-webkit-file-upload-button,
+    input::file-selector-button{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+
+        <p>abcd</p>
+    </div>
+
+
+
+
+
+
+<h1>The box-decoration-break Property</h1>
+
+<h2>box-decoration-break: clone:</h2>
+<span class="ex1">CSS<br>is<br>easy<br>to learn</span>
+
+<h2>box-decoration-break: slice (default):</h2>
+<span class="ex2">CSS<br>is<br>easy<br>to learn</span>
+</body>
+
+<input type="text">
+<input type="checkbox">
+<input type="radio">
+
+<input type="file">
+</html>

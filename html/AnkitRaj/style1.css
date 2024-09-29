@@ -1,0 +1,18 @@
+body{
+    /* background-color: antiquewhite; */
+    background-image: url("../web/images/12.jpg");
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-attachment:fixed;
+    background-size: cover;
+    color: white;
+}
+
+.main{
+    /* background-color: aqua; */
+}
+
+.main h1{
+    /* background-image: url("../wallpapers/abstract/Acrylic\ Paint\ 1.jpg"); */
+    
+}

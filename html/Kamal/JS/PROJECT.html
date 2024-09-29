@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .screen{
+        border: 2px solid black;
+        height: 50px;
+        width: 300px ;
+        margin: 0px auto;
+    }
+    .input{
+        width: 290px;
+        height: 45px;
+        margin-left: 1px;
+    }
+    input::placeholder{
+        line-height: 45px;
+    }
+    .box{
+        border: 2px solid black;
+        height: 50px;
+        width: 300px ;
+        margin: 0px auto;
+    }
+    #output{
+        width: 290px;
+        height: 45px;
+        margin-left: 1px;
+    }
+    
+</style>
+<body>
+    <div class="screen">
+        <input type="text" class="input">
+    </div>
+    <div class="drop">
+
+        <select name="" id="type">
+            <option value="srno">sr no</option>
+            <option value="odd">odd</option>
+            <option value="even">even</option>
+        </select>
+        <button class="show">show</button>
+    </div>
+    <div class="box">
+        
+    </div>
+
+
+    <script>
+
+
+        let output = document.querySelector(".box")
+
+        document.querySelector(".show").addEventListener('click',()=>{
+            let inp = document.querySelector(".input").value
+            let type = document.querySelector("#type").value
+      
+           if(type="odd"){
+            for(x=1;x<=inp;x++){
+                if(x%2!=0){
+                let data=`<p>${x}</p>` 
+                output.insertAdjacentHTML("beforeend",data)    
+
+                    
+                }
+            }
+           }
+        })
+
+    </script>
+
+</body>
+</html>

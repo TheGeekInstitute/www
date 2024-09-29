@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list1" id="abcd">
+        <li>Colors</li>
+        <li>Animals</li>
+        <li>Fruits</li>
+    </ul>
+
+
+    <ul class="list2">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <script>
+        let list1 = document.querySelector(".list1")
+        let list2 = document.querySelector(".list2")
+
+
+        list1Child = list1.children[0];
+        list2Child = list2.children[0];
+
+
+
+        let element = document.createElement("li");
+        let text = document.createTextNode("ABCD");
+        element.append(text);
+
+
+        // console.log(element)
+
+        // list1.replaceChild(element,list1Child)
+     
+        // list2.removeChild(list2Child)
+
+    //   let newChild=  list1Child.cloneNode(true)
+
+    //   console.log(newChild)
+
+    // list2.replaceChild(newChild,list2Child)
+
+    // console.log(list1.contains(list1Child))
+
+    // console.log(list1.hasChildNodes())
+        // console.log(list1.hasAttribute("style"))
+
+
+
+        console.log(list1.isEqualNode(list1))
+
+
+    </script>
+
+</body>
+</html>

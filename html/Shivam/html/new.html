@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+
+    <style>
+        input[type="text"]::placeholder{
+            /* color: red; */
+            opacity: 100%;
+        }
+
+        input{
+            caret-color: red;
+        }
+
+        input[type="radio"],input[type="checkbox"]{
+            accent-color: green;
+        }
+
+        .container{
+            color: green;
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: currentColor;
+        }
+
+        .container a{
+            color: currentColor;
+        }
+
+        h1{
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 15px;
+            text-decoration-color: red;
+        }
+
+        ul{
+            list-style: "😀	 ";
+        }
+
+        ul li::marker{
+            /* color: red; */
+        }
+        
+
+        input[type="file"]::-webkit-file-upload-button{
+           color: red;
+           background-color: orange;
+           border: 2px solid red;
+           padding: 5px;
+           border-radius: 5px;
+           cursor: pointer;
+        }
+
+        input[type="file"]::-webkit-file-upload-button:hover{
+           color: white;
+           background-color: orangered;
+           border: 2px solid red;
+           padding: 5px;
+           border-radius: 5px;
+        }
+        #heading{
+            color: yellow;
+        }
+
+        h1{
+            color: green ;
+        }
+
+        .heading{
+            color: red !important;
+        }
+
+
+        .new{
+            background-image: url("../1.png");
+            height: 400px;
+            width: 400px;
+        }
+
+        .circle{
+           position: relative;
+           top: calc(50% - 100px);
+           left: calc(50% - 100px);
+
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        
+        @supports (backdrop-filter:blur(2px)){
+            .circle{
+                backdrop-filter: blur(2px);
+            }
+        }
+        
+        @supports  not (backdrop-filter:blur(2px)){
+            .circle{
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            }
+    </style>
+
+</head>
+<body>
+    <input type="text" placeholder="ABCD">
+    <input type="radio">
+    <input type="checkbox">
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus neque consequatur, alias odio reiciendis fugiat porro eum obcaecati nostrum consectetur rerum nam repudiandae placeat vitae corrupti at dicta architecto velit.
+
+        <div class="box">
+
+        </div>
+        <a href="#">BACDERFF</a>
+    </div>
+
+    <h1>ABCDE</h1>
+
+    <ul>
+        <li>sdad</li>
+        <li>asdasda</li>
+        <li>asfasdf</li>
+    </ul>
+
+
+    <input type="file">
+
+
+    <h1 class="heading" id="heading" style="color: rebeccapurple;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem! Voluptas facere porro reiciendis est recusandae ex eveniet debitis non optio? Vel modi voluptates praesentium totam, enim repellat culpa. At.</h1>
+
+    <div class="new">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

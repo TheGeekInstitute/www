@@ -1,0 +1,131 @@
+ cls --> clear screen
+dir --> listing files and directories
+cd --> change directory
+mkdir tecls -> make directory
+rmdir test --> remove directory
+rmdir /s /q test  --> delete  directory with all the data
+ren test abc --> rename directory or file
+echo test > aa.txt --> create a text file named aa.txt
+echo abcd >> aa.txt --> appending text into text file
+del aa.txt --> delete file
+type data.txt --> reading content of file
+
+copy aa.txt test\bb.txt --> coping aa.txt as bb.txt inside test dir
+
+move bb.txt test --> moving file inside test dir
+
+prompt abcd --> changing title of prompt
+title test --> changing title of cmd
+systeminfo --> information of system
+
+color /? --> colors help
+color 0A --> 0 -> background  A--> text
+
+netsh wlan show profiles "Geek Institute" key=clear  --> displaying the stored password
+
+administrator
+
+net user ---> listing users
+
+net user <username> * ---> setting up new password
+
+net user <username> /add --> adding a New User
+net user <username> /del --> deleting a User
+
+net localgroup administrators <username> /add --> adding a user in administrator group
+net localgroup administrators <username> /del --> removing user from administrators group
+
+#cipher
+cipher /e --> encripting files and directory
+cipher /d  --> dec files and directory
+
+# making disk read only or write proctected
+diskpart
+
+list disk
+select disk <disk no>
+
+attribute disk set readonly
+attribute disk clear readonly
+
+.................................
+
+
+
+#LS Command
+ls --> listing the files and directories
+man ls --> checking the man page of ls
+ls -l --> listing the file as long list
+ls -a --> listing the file with all files and directories
+ls -s --> listing the file with size
+ls -las ---> listing the files with some basic param
+
+pwd --> print Working Directories
+      u       g	       o	
+-   - - -   - - -    - - -
+1	2	3	4	
+
+#1
+- -->  raw file
+d --> directory
+l --> link
+no permission --> 0
+execute --> 1 --> x  
+write   --> 2 --> w
+read	--> 4 --> r
+
++ --> adding permission
+- --> removing permission
+
+      u g o
+chmod - - -
+
+
+chmod ugo+wrx file.txt
+
+chmod 777 file.txt
+
+
+sudo is used to access root privilege
+
+sudo apt update --> updating repos
+
+sudo apt upgrade --> upgrading system
+
+sudo apt install figlet --> installng a package
+
+sudo apt remove figlet --> removing a package
+
+
+
+
+Reading file
+
+wc file.txt --> word count
+
+head file.txt --> reading few lines from top of the file
+tail file.txt --> reading few lines from last of the file
+
+head -n 5 file.txt --> reading 5 lines form the top of file
+tail -n 5 file.txt --> reading 5 lines form the bottom of the file
+ 
+
+
+ #users
+sudo adduser test --> adding test user
+sudo deluser test --> deleting test user
+
+sudo addgroup abcd --> adding abcd group
+sudo delgroup abcd --> deleting abcd group
+
+
+sudo usermod -aG abcd test --> appending abcd group for test or adding test in "abcd" Group
+sudo usermmod -G test test --> deleting all group of test except "test" group
+
+sudo chown test a.txt --> changing owner of a.txt file
+
+sudo chgrp test a.txt --> changing group of a.txt file
+
+sudo chown geek:test a.txt  --> changing owner to geek and group with test
+
+sudo chown -R geek:test a.txt --> changing owner with geek and group with test of a dir with their all files and dir

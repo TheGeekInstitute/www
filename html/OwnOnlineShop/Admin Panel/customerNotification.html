@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Notification</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 1em;
+    }
+
+    h2 {
+      margin-top: 1em;
+      margin-bottom: .5em;
+    }
+
+    table {
+      margin: 1em 0;
+    }
+
+    table th {
+      padding: 0.5em 1em;
+      text-align: center;
+      background: mediumseagreen;
+    }
+
+    table td {
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    table tr {
+      background: #d4d1d1;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #d6eeee;
+    }
+
+    .notification_section {
+      width: 450px;
+      position: fixed;
+      right: 150px;
+      top: 100px;
+      padding: 1em;
+      box-shadow: 0 0 10px #ddd;
+      border-radius: 8px;
+    }
+
+    .notification_section h2 {
+      margin-bottom: 1em;
+    }
+
+    .notification_section textarea {
+      padding: .5em;
+      font-weight: 600;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .notification_section input {
+      margin: 1em 0;
+      padding: .5em 1.5em;
+      background: royalblue;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Customer Notification</h2>
+  <form action="">
+    <div class="fix_section">
+      <!-- <h2>Fix</h2> -->
+      <!-- <input type="text"> -->
+      <label for="State">State</label>
+      <select name="" id="">
+        <option value="">Select</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Gujrat">Gujrat</option>
+      </select>
+
+      <label for="ShopNumber">Shop No</label>
+      <input type="text" />
+    </div>
+
+    <div class="search_section">
+      <h2>Search By</h2>
+      <label for="orderId">Order ID</label>
+      <input type="text" />
+      <span> or </span>
+      <label for="Barcode ID">Barcode ID</label>
+      <input type="text" /> <span> Or </span>
+      <label for="Mobile Number"> Mobile Number</label>
+      <input type="number" />
+      <button>Search</button>
+      <!-- date range search starts -->
+      <br />
+      <h2 for="">Search By Day Or Date Range</h2>
+      <button>Today</button>
+      <button>Yesterday</button>
+      <button>All</button>
+      <label for="fromdaterange">From</label>
+      <input type="date" />
+      <label for="todaterange">To</label>
+      <input type="date" />
+      <button>Search</button>
+    </div>
+
+    <div class="result_section">
+      <h2>Results</h2>
+      <table>
+        <tr>
+          <th>Serial Number</th>
+          <th>Order ID</th>
+          <th>Barcode ID</th>
+          <th>Product Name</th>
+          <th>Product Image</th>
+          <th><span>Select/Deselect All</span><input type="checkbox" /></th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123456</td>
+          <td>456789AA23AS</td>
+          <td>Macbook Pro</td>
+          <td>
+            <img src="../Images/Products/laptop.jpg" alt="Product Image" width="150px" />
+          </td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123456</td>
+          <td>456789AA23AS</td>
+          <td>Macbook Pro</td>
+          <td>
+            <img src="../Images/Products/laptop.jpg" alt="Product Image" width="150px" />
+          </td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123456</td>
+          <td>456789AA23AS</td>
+          <td>Macbook Pro</td>
+          <td>
+            <img src="../Images/Products/laptop.jpg" alt="Product Image" width="150px" />
+          </td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123456</td>
+          <td>456789AA23AS</td>
+          <td>Macbook Pro</td>
+          <td>
+            <img src="../Images/Products/laptop.jpg" alt="Product Image" width="150px" />
+          </td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>123456</td>
+          <td>456789AA23AS</td>
+          <td>Macbook Pro</td>
+          <td>
+            <img src="../Images/Products/laptop.jpg" alt="Product Image" width="150px" />
+          </td>
+          <td><input type="checkbox" /></td>
+        </tr>
+      </table>
+    </div>
+    <div class="notification_section">
+      <h2>Your Notification</h2>
+      <textarea name="notification" id="" cols="50" rows="10">
+        </textarea>
+      <br>
+      <input type="submit" value="Send Notification">
+    </div>
+  </form>
+
+  <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+
+  <script>
+      window.onload = function() {
+          CKEDITOR.replace('notification');
+       
+
+      };
+    </script>  
+</body>
+
+</html>

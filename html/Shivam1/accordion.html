@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .name{
+            /* border: 1px solid green; */
+            background-color: aqua;
+            height: 50px;
+            padding: 10px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 600;
+            
+        }
+
+        .query{
+            width: 600px;
+            margin: 2px 0;
+        }
+
+        .ans{
+            padding: 3px 16px;
+            background-color: rgba(235, 233, 115, 0.884);
+            color: blue;
+            font-weight: 600;
+            display: none;
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        
+        #btn1:checked ~ .ans{
+            display: block;
+        }
+        
+        #btn2:checked ~ .ans{
+            display: block;
+        }
+        
+        #btn3:checked ~ .ans{
+            display: block;
+        }
+        
+        #btn4:checked ~ .ans{
+        display: block;
+        }
+
+
+        
+        #btn1:checked + .name  .open {
+            transform: rotate(45deg);
+            
+        }
+        
+        #btn2:checked + .name  .open {
+            transform: rotate(45deg);
+            
+        }
+        
+        #btn3:checked + .name  .open {
+            transform: rotate(45deg);
+            
+        }
+        
+        #btn4:checked + .name  .open {
+        transform: rotate(45deg);
+        
+        }
+
+        i{
+            transition: all .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="query">
+            <input type="checkbox" id="btn1">
+            <div class="name">
+                <p>What is html ?</p>
+                <label for="btn1" class="btn">
+                    <i class="fa-solid fa-plus open"></i>
+                </label>
+            </div>
+
+            <div class="ans">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi, voluptates excepturi impedit omnis molestias voluptas quaerat vero assumenda, repudiandae similique dolore et doloremque perferendis placeat recusandae praesentium iusto error.</p>
+            </div>
+            
+        </div>
+
+        <div class="query">
+            <input type="checkbox" id="btn2">
+            <div class="name">
+                <p>What is html ?</p>
+                <label for="btn2" class="btn">
+                    <i class="fa-solid fa-plus open"></i>
+                </label>
+            </div>
+
+            <div class="ans">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi, voluptates excepturi impedit omnis molestias voluptas quaerat vero assumenda, repudiandae similique dolore et doloremque perferendis placeat recusandae praesentium iusto error.</p>
+            </div>
+            
+        </div>
+
+        <div class="query">
+            <input type="checkbox" id="btn3">
+            <div class="name">
+                <p>What is html ?</p>
+                <label for="btn3" class="btn">
+                    <i class="fa-solid fa-plus open"></i>
+                </label>
+            </div>
+
+            <div class="ans">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi, voluptates excepturi impedit omnis molestias voluptas quaerat vero assumenda, repudiandae similique dolore et doloremque perferendis placeat recusandae praesentium iusto error.</p>
+            </div>
+            
+        </div>
+
+        <div class="query">
+            <input type="checkbox" id="btn4">
+            <div class="name">
+                <p>What is html ?</p>
+                <label for="btn4" class="btn">
+                    <i class="fa-solid fa-plus open"></i>
+                </label>
+            </div>
+
+            <div class="ans">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi, voluptates excepturi impedit omnis molestias voluptas quaerat vero assumenda, repudiandae similique dolore et doloremque perferendis placeat recusandae praesentium iusto error.</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

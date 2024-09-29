@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Nav</title>
+    <style> 
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 11vh;
+            width: 100vw;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 2rem;
+        }
+        nav .menu{
+            position: absolute;
+            left: 70vw;
+          
+        }
+        .menu a{
+           margin-right: 15px;
+           text-decoration: none;
+           list-style-type: none;
+           color: white;
+           font-size: 1.2rem;
+           font-weight: 900;
+        }
+      
+        nav input[type="checkbox"]{
+            display: none;
+        }
+        
+        nav label span{
+            transition: all .8s;
+            display: none;
+        }
+        .logo{
+            font-size: 2.3rem;
+            font-weight: 900;
+        }
+        .one, .three{
+            position: relative;
+        }
+
+        #btn:checked ~ label .two{
+            display: none;
+        }
+        #btn:checked ~ label .one{
+            transform: rotate(45deg);
+            width: 2rem;
+            top: 5px;
+        }
+        #btn:checked ~ label .three{
+            transform: rotate(-45deg);
+            width: 2rem;
+            bottom: 5px;
+
+        }
+        @media  screen and (max-width:600px) {
+            nav{
+            height: 8vh;
+            width: 100vw;
+            background-color: teal;
+            color: rgb(250, 191, 41);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 2rem;
+            }
+            .logo{
+                font-size: 1.8rem;
+            }
+            nav .menu{
+                display: none;
+            }
+            nav label span{
+                background-color: white;
+                border-radius: 25px;
+                height:4px;
+                width:1.8rem;
+                margin: 0.3rem 0rem;
+                display: block;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </div>
+            
+        <input type="checkbox" id="btn">
+        <label for="btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </label>
+
+
+
+
+    </nav>
+    
+</body>
+</html>

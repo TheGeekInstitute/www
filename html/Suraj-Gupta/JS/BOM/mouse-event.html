@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non fuga placeat provident, dolorem eveniet quibusdam sequi velit libero perspiciatis ab accusamus consequuntur vero delectus quam est eius voluptate a ea!
+    Neque dolore aliquid nulla, corporis, doloremque consequuntur, cum cumque non aspernatur illo quasi? Voluptatem fugiat aliquam rerum assumenda possimus exercitationem quasi repudiandae? Nemo hic cumque quasi explicabo sint eius reiciendis!
+    Sint voluptate nobis tempora nisi sit eius dolore iure magni, voluptatum optio quasi eligendi accusamus quaerat pariatur explicabo nihil inventore repellendus cumque similique id saepe. Odit repellat mollitia culpa perferendis.
+    Laborum, aut ex rem ut natus libero voluptas, tenetur incidunt at temporibus vel atque, dolorum quis aliquid numquam! Harum facere hic illum dolorem explicabo ipsum fugiat ab porro quos cupiditate.
+    Nulla, incidunt accusantium! Unde molestias fugit voluptatem sequi officiis voluptas fuga natus dolor optio itaque perspiciatis tenetur eum laudantium excepturi recusandae repudiandae ipsum reprehenderit cupiditate nihil quam eos, ducimus odio?
+    Minima natus aut veritatis corrupti excepturi illum est eveniet consectetur totam, nesciunt molestiae officiis, accusamus porro quasi nisi eligendi reprehenderit ab nemo. Qui velit deleniti repellendus, vel labore odio reprehenderit.
+    Culpa beatae similique a magni odio neque praesentium ipsam ut error vel, ab voluptates modi ipsum eum laboriosam. Atque reiciendis, ullam amet ea aspernatur eos tempora nobis eum beatae in.
+    Voluptas in earum animi officiis. Numquam voluptates magnam quaerat aliquid blanditiis cum libero hic, corrupti eligendi atque quibusdam ipsam dicta repellat architecto commodi earum repudiandae sit delectus deleniti error corporis!
+    In itaque neque doloribus rem saepe atque doloremque, dolores quae nihil explicabo nemo fugiat velit pariatur beatae ullam tempore sequi necessitatibus quo ad amet cupiditate corrupti ex! Perferendis, eaque officia!
+    Nam eum explicabo consequuntur neque eligendi velit temporibus. Voluptas, sit blanditiis. Blanditiis debitis at rerum expedita, nulla error. Deleniti perspiciatis recusandae expedita veritatis cumque at iusto porro, doloribus omnis culpa?</p>
+
+    <script>
+        let para = document.querySelector(".para");
+        document.body.addEventListener('mousedown',(e)=>{
+            console.log(e.button)
+            if(e.button == 0){
+                document.body.style.backgroundColor = "red";
+            }
+            
+            if(e.button == 1){
+                document.body.style.backgroundColor = "yellow";
+                document.body.style.color = "white";
+            }
+
+            
+            if(e.button == 2){
+                document.body.style.backgroundColor = "black";
+                document.body.style.backgroundColor = "white";
+            }
+        })
+        
+    </script>
+
+</body>
+</html>

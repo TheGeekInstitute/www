@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var - Calc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            --color1:green;
+            --mywidth:150px;
+            --color2:yellow;
+        }
+
+        div{
+            border: 2px solid black;
+            height: 100px;
+            /* width: 50%; */
+            width: 100px;
+        }
+
+        .box{
+            background-color: cyan;
+            /* width: calc(50% + 100px); */
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        }
+
+        .box2{
+            background-color: var(--color2);
+        }
+
+        .box3{
+            background-color: var(--color1);
+        }
+
+        .box1{
+            background-color: var(--color2);
+        }
+        .box4{
+            background-color: var(--color1);
+            color: yellow;
+        }
+
+        .abcd{
+            border: 2px solid currentColor;
+            height: 50px;
+            width: 20px;
+            /* background-color: currentColor; */
+            
+        }
+
+        .abcd p{
+            color: red;
+        }
+
+
+        p{
+            color: red;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4">
+
+        <div class="abcd">
+            <p>asdad</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim fuga saepe totam id exercitationem laborum quaerat ab quia! Ex omnis laborum dolorum sed facere repudiandae dignissimos fuga quisquam incidunt inventore.</p>
+
+</body>
+</html>

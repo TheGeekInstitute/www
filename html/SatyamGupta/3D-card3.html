@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+ 
+        }
+
+        .main{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            transform-style: preserve-3d;
+
+        }
+
+        .main .box{
+            height: 100%;
+            width: 100%;
+            margin: 150px auto;
+            transform-style: preserve-3d;
+
+        }
+
+        .main .box .front ,
+        .main .box .back
+        {
+            position: absolute;
+            backface-visibility: hidden;
+
+
+
+        }
+
+        .main .box .front {
+            background-color: gray;
+        }
+        .main .box .back {
+            background-color: rgb(194, 134, 134);
+            transform: rotateY(180deg);
+        }
+        .main:hover .box{
+            transform: rotateY(180deg);
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="box">
+            <div class="front">
+               <h1>Visiting Card</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione ea corporis quod, quas accusantium a neque fugiat voluptatibus amet eveniet mollitia provident nihil placeat dolor possimus quos, assumenda quam obcaecati. Maxime obcaecati autem cupiditate? Voluptas in placeat soluta perspiciatis?</p> 
+            </div>
+            <div class="back">
+                <h2>Welocme in our Marriage</h2>
+                <p>Come along with your family</p>
+                <p>Lorem ipsum dolor, sit a sunt beatae fuga doloribus.</p>
+                <p>Contact no</p>
+                <p>Email id:</p>
+                <p>Address: Kapashera New Delhi 110037</p>
+                <p>Thank you:</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

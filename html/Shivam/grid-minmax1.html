@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Min Max</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 10px;
+            border: 2px solid red;
+            height: 70vh;
+            display: grid;
+            grid-template-columns: 150px  min-content repeat(2,1fr);
+            grid-template-rows: 10px minmax() 150px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: aqua;
+        }
+        /* .box{
+            background-color: blueviolet;
+        } */
+        .box4{
+            background-color: green;
+        }
+        .box5{
+            background-color: brown;
+        }
+        .box6{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">Lm temporibus quisquam consequatur. Harum?</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, provident. Libero dolorum non minus voluptatem vel dolorem temporibus! Consequuntur repudiandae in quod ipsum unde excepturi quibusdam corporis quia delectus eveniet.</div>
+        <div class="box box6">6</div>
+
+        
+    </div>
+    
+</body>
+</html>

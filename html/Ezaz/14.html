@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            list-style: none;
+            
+        }
+        .container{
+            height: 302px;
+            width: 350px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 150px;
+            border: 2px solid red;
+            text-align: center;
+            /* overflow: hidden; */
+            z-index: 1;
+         
+
+        }
+       
+        .container .card{
+            border: 2px solid green;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transform: translatey(-80%);
+            transition: all .5s;
+            position: absolute;
+            z-index:-1;
+           
+        }
+       
+        .container:hover .card{
+            transform: translateY(0);
+            
+        }
+        .container .card img{
+            height: 250px;
+            width: 300px;
+            
+        }
+        .container .card .content h1{
+            /* display: block; */
+            background-color: aqua;
+            border: 2px solid cyan;
+            height: 42px ;
+            justify-content: center;
+            align-items: center;
+            text-align: center;}
+        .container .card .content
+        ul{
+            /* border: 2px solid black;   */
+            height: 150px; 
+            width: 350px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column; 
+            padding: 5px 10px ; 
+            
+        }
+        .container .card .content
+        ul li{
+            /* border: 2px solid green; */
+            justify-content: space-evenly;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: larger;
+            font-weight: 600;
+            color:palevioletred;
+            background-color: cyan;
+            border-radius: 5px ;
+            margin-top: 5px;
+            padding: 0 10px ;
+
+            
+        }
+        .container .card .content
+        ul li span{
+
+         
+        }
+        .container img{
+            height: 250px;
+            width: 300px;
+            
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://meetanders.com/wp-content/uploads/2022/08/make-triangle-illustrator-05-1.jpg" alt="">
+        <div class="card">
+            <!-- <img src="https://meetanders.com/wp-content/uploads/2022/08/make-triangle-illustrator-05-1.jpg" alt=""> -->
+       
+        <div class="content">
+            <h1>triangle</h1>
+            <ul>
+                <li>corner <span>3</span></li>
+                <li>sides <span>3</span></li>
+                <li>right angle <span>0</span></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

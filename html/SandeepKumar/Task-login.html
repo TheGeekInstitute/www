@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: rgba(0, 0, 0, 0.048); */
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            height: 350px;
+            width: 300px;
+            margin: 150px auto;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.103);
+            backdrop-filter:blur(20px);
+            
+        }
+
+        .heading {
+            text-align: center;
+            margin-top:10px;
+        }
+
+        label {
+            display: block;
+            margin-left: 30px;
+            margin-top: 25px;
+        }
+
+        .input {
+            margin-left: 30px;
+            margin-top: 5px;
+            height: 28px;
+            width: 230px;
+            border-radius: 5px;
+        }
+
+        .login {
+            height: 30px;
+            width: 230px;
+            margin-left: 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+
+        }
+
+        .icons {
+            padding:5px;
+            margin-left:30px;
+            margin-top:10px;
+        }
+        .icon {
+            padding:5px;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        .circle1{ border: 2px solid black;
+            height:100px;
+            margin-left:-40px;
+            width: 100px;
+            margin-top:25px ;
+            position: relative;
+            top:60px;
+            background-image: linear-gradient(45deg,orange yellow);
+        border-radius:50%;}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Log in </h1>
+        </div>
+
+        <form action="">
+
+            <label for="Username">Username</label>
+            <input type="text" class="input">
+            <label for="Password">Password</label>
+            <input type="password " class="input">
+
+            <input type="submit" value="Login Up" class="login">
+        </form>
+        <div class="icons">
+            <input type="button" value="Facebook" class="icons">
+
+            <input type="button" value="Googel" class="icon">
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Mode</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(255, 30, 0, 0.555);
+        }
+        img{
+            mix-blend-mode: overlay;
+            height: 500px;
+            width: 300px;
+
+        }
+        .main{
+            border: 2px solid red;
+        }
+
+        .box{
+            border: 2px solid red;
+            height: 300px;
+            width: 100%;
+            background-image: url("../wallpapers/animals/anna-wangler-_GqwoiT7QY8-unsplash.jpg");
+            background-size: cover;
+            background-color: blue;
+            background-blend-mode: lighten;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="../wallpapers/landscape/alex-perez-pontoon-boat-marco-island.jpg">
+    </div>
+
+    <div class="box">
+        <h1>Heading</h1>
+    </div>
+</body>
+</html>

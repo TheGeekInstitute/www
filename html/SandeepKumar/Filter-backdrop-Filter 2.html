@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> filter-backdrop-filter 2</title>
+    <style>
+.conatiner{border: 2px solid black;
+height: 300px;
+width: 300px;
+display: flex;
+background-size: cover;
+background-position: center;
+justify-content: center;
+background-repeat: no-repeat;
+align-items: center; 
+background-image: url(../wallpapers/landscape/alex-perez-wooden-pier-marco-island.jpg);
+}
+.conatiner .box{
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 119, 255, 0.295);
+    border-radius: 10%;
+    text-align: center;
+    backdrop-filter: blur(2px) brightness(150%) saturate(200%);
+
+
+}
+
+    
+    </style>
+</head>
+<body>
+    
+    <div class="conatiner">
+       
+        <div class="box"><h1>HELLO</h1></div>
+    </div>
+    
+</body>
+</html>

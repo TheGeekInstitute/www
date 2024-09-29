@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+            background-size: cover;
+            background-image: linear-gradient(black,grey transparent);
+            background-repeat: no-repeat;
+            /* width: ; */
+            height: auto;
+        }
+        .netflix img{
+            height: 80px;
+            margin-left: 100px;
+        }
+        .nav{
+            /* background-color: aqua; */
+            margin-left: 60em;
+            display: flex;
+            margin-top: -60px;
+            filter: contrast(-50%);
+        }
+        .nav ul li{
+            /* border: 1px solid black; */
+            display: inline-block;
+            /* margin-top: -10em; */
+        }
+        .nav ul li a{
+            font-size: 17px;
+            color: white;
+            /* border: 1px solid black; */
+            margin: 10px;
+            padding: 6px 20px;
+            /* background-color: aqua; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 10px;
+        }
+        .nav ul  li:last-of-type a{
+            background-color: red;
+            font-weight: 700;
+        }
+        .nav ul li:first-of-type a{
+            position: relative;
+            /* background-color: gray; */
+            padding: 8px 30px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .nav ul li:first-of-type{
+            border: 1px solid white;
+            padding: 7px 5px;
+            background-color: rgba(0, 0, 0, 0.644);
+            border-radius: 10px;
+        }
+        .nav ul li i{
+            margin-top: 4px;
+            font-size: 17px;
+            margin-left: 15px;
+            color: white;
+            position: absolute;
+        }
+        .main{
+            /* border: 1px solid black; */
+            /* background-color: white; */
+            text-align: center;
+            margin-top: 13em;
+            color: white;
+        }
+        .main h1{
+            font-size: 45px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main h2{
+            margin-top: 10px;
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main h3{
+            margin-top: 10px;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        input[type=text]{
+            /* padding: 15px 100px; */
+            margin-top: 50px;
+            /* text-align: start; */
+            padding-left: -50px;
+            padding: 10px;
+            margin-left: 17em;
+            width: 18em;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.336);
+            color: white;
+        }
+        input::placeholder{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="netflix">
+        <img src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png" alt="">
+        <div class="nav">        <ul>
+            <li><i class="fa-solid fa-earth-americas"></i><a href="#">English</a>
+            <select name="" id="">
+                <option value="">
+
+                </option>
+            </select>
+            </li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="main">
+        <h1>Unlimited movies, TV shows and more</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+    </div>
+<div class="box">
+    <input type="text" placeholder="Email Address">
+        <ul>
+            <li><a href="#">Get Started</a></li>
+        </ul>
+</div>        
+
+</body>
+</html>

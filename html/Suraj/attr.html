@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+    <style>
+        a[href="#"]{
+            color: rgb(13, 218, 13);
+        }
+
+        /* #aaa[type]{
+            background-color: cyan;
+        } */
+
+        input[type="text"]{
+            background-color: red;
+        }
+
+        /* p[title~="para"]{
+            color: red;
+        } */
+
+
+        p[title^="my"]{
+            color: red;
+        }
+
+        p[title$="ra"]{
+            /* background-color: cyan; */
+        }
+
+        p[title*="para"]{
+            background-color: grey;
+        }
+
+        input[type="button"]{
+            border: 5px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <a href="#">Google</a>
+    <a href="https://www.instagram.com" target="_blank">Facebook</a>
+    <a href="#">instagram</a>
+
+    <p title="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti error iste earum ex ipsa ullam eius dolore. Eaque, ullam recusandae! Atque error cupiditate assumenda illo, porro blanditiis quibusdam. Sint, blanditiis!</p>
+
+    <p title="paragraph" type="sd"  >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui doloremque quisquam, modi itaque odio unde optio aliquid accusamus earum hic, minus beatae perspiciatis? Et deserunt blanditiis molestiae illum ipsam nostrum.</p>
+
+    <p title="my paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore eius veniam atque reprehenderit officia, architecto fugit, pariatur mollitia eaque ab dolor voluptatibus ipsa doloremque quasi incidunt corporis natus necessitatibus.</p>
+
+    <p title="my old para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum consequatur expedita perspiciatis earum eaque nisi distinctio provident officia aliquid ut sunt deleniti hic maxime voluptatem, molestiae explicabo accusamus quae?</p>
+
+    <input type="text" id="aaa">
+    <input type="button" value="123">
+    <input type="password" name="" id="">
+</body>
+</html>

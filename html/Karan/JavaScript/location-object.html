@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Change</button>
+
+    <a href="http://10.10.10.10/Karan/JavaScript/location-object.html?cmd=ls&asdas#asdasd"></a>
+
+    <script>
+
+        let link = document.querySelector("a");
+
+        // console.log(link.hash)
+
+        // console.log(window.location.host)
+        // console.log(window.location.hostname)
+
+        // console.log(link.href)
+        // console.log(window.location.origin)
+        // console.log(window.location.pathname)
+        // console.log(window.location.protocol)
+        // console.log(window.location.port)
+
+        // console.log(link.search)
+
+
+
+        document.querySelector("#btn").addEventListener("click",()=>{
+            // window.location.href="https://www.geekinstitute.org"
+            // window.location.assign("https://www.geekinstitute.org")
+            window.location.replace("https://www.geekinstitute.org")
+
+        })
+
+
+
+    </script>
+</body>
+</html>

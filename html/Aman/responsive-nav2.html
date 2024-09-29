@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navwar</title>
+  
+    <style>
+          @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            /* border: 1px solid red ; */
+            height: 3.5rem;
+            background-color: black;
+            color:white;
+            padding: 0 1rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 2.5rem;
+        }
+        #btn{
+            display: none;
+        }
+        .nav label{
+
+            font-size: 40px ;
+        }
+        label{
+            display: none;
+        }
+        .open,.close{
+            display: none;
+        }
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav .links >li >a{
+            color: white;
+            padding: 10px ;
+            font-size: xx-large;
+            line-height: 3.5rem;
+           
+        }
+        @media screen and (max-width:600px) {
+            .nav .links {
+                /* border: 2px solid red; */
+                position: absolute;
+                background-color: grey;
+                top: 3.5rem;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                flex-direction: column;
+                display: none;
+                text-align: center;
+                z-index: 15;
+            }
+            .nav ul li a{
+            display: block;
+            height: 2rem;
+        }
+        .open{
+            display: block;
+        }
+        label{
+            display: block;
+        }
+        
+
+        #btn:checked + .links{
+            display: block;
+        }
+        #btn:checked ~ label .open{
+            display: none;
+        }
+        #btn:checked ~ label .close{
+            display: block;
+        }
+
+
+        }
+        @keyframes hide{
+            0%{
+                   opacity: 1;
+                   transform: translateX(0px);
+                   background-color: orangered;
+
+            }
+            100%{
+                opacity: 0;
+                transform: translateX(-30px);
+                display: none;
+
+            }
+        }
+      .logo span{
+        color: orangered;
+       }
+       .links > li > a:hover{
+        background-color: grey;
+        
+       }
+       .main h1{
+        /* border: 1px solid red ; */
+        margin-top: 30px ;
+        background-color: black;
+        color: white;
+       }
+       .main p{
+        /* border:dotted green; */
+        margin: 20px ;
+       }
+     
+       .container{
+        /* border: 1px solid red ; */
+        height: 300px ;
+        width: 350px ;
+        position: absolute;
+        top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px ;
+            transform-style: preserve-3d;
+            z-index: 8;
+       }
+       .card{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: all 1s;
+       }
+       .front,.back{
+        font-size: 50px ;
+        line-height: 300px ;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        backface-visibility: hidden;
+        border-radius: 20px ;
+        box-shadow:0px 0px 20px black  ;
+        border-image-source: linear-gradient(red,blue,yellow,pink );
+        
+        
+       }
+       .front{
+        background-image: linear-gradient(red,blue,yellow,pink,black);
+       }
+       .back{
+        background-image: linear-gradient(orangered,lightpink,yellow,black,red,white);
+        transform: rotateY(180deg);
+       }
+       .container:hover .card{
+        transform: rotateY(180deg);
+       }
+       .h1{
+       font-size: 50px ;
+
+
+       }
+
+       .h1 marquee{
+        border: 2px solid black;
+        text-transform: capitalize;
+        text-decoration:line-through;
+       }
+       main{
+        text-align: center;
+        /* transform: rotateY(180deg); */
+        backface-visibility: hidden;
+        transition: all 3s;
+    }
+    main .box img{
+        height: 100px ;
+        width: 150px ;
+      border-radius: 10px ;
+        
+    }
+    main .box{
+        /* border: 1px solid red ; */
+        width: 250px ;
+        padding: 10px ;
+        margin: 20px ;
+        background-image: linear-gradient(red , yellow , black);
+        box-shadow: 0px 0px 10px black;
+        display: inline-block;
+        /* transform: rotateY(180deg); */
+        transition: all 3s;
+    }
+    main:hover .box {
+        transform: perspective(600px) rotateY(180deg);
+    }
+      
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            LO<span>GO</span>
+        </div>
+        <input type="checkbox" id="btn">
+        <ul class="links">
+            <li><a href="">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+           
+        </ul>
+       
+
+        <label for="btn" class="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+ </div>
+
+  
+   
+    </div>
+    
+    
+    <div class="h1">
+    <marquee bgcolor="red " width="100%">
+        WELCOME TO MY YOUTUBE CHANNEL FULL WATCH VIDEO I THINKS I LIKE MY VIDEO AND FUNNY MY MOMENTS AND WITH FAMILY AND MORE VIDEOS SUBSCRIBE MY CHANNEL 
+    
+    </marquee>
+    <main>
+
+    </div>
+ 
+   
+  
+        
+ </body>
+ </html>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main{
+            margin: auto;
+            width: 50vw;
+            height: 60vh;
+        }
+        table,th,td{
+            border: 1px solid rgb(185, 176, 176);
+            padding: 6px;
+        }
+
+        .heading{
+            font-size: large;
+        }
+        .main table tr td{
+          font-weight: 700;
+        }
+
+        input[type=text]{
+            padding: 3px;
+            width: 120px;
+            border-radius: 3px;
+            border: 1px solid rgb(199, 191, 191);
+        }
+        label{
+            font-weight: 900;
+            color: blue;
+            font-size: larger;
+        }
+
+        span{
+            color: red;
+        }
+
+        select{
+            width: 90px;
+            background-color: #edf3f3;
+            border: 1px solid rgb(221, 218, 218);
+            padding: 4px;
+        }
+        .btn{
+            background-color: rgb(76, 76, 228);
+            padding: 6px;
+            border: 1px solid blue;
+            border-radius: 4px;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            margin: 0px 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <table>
+            <tr>
+                <th class="heading" colspan="2">Directorate of Education, Govt. of NCT of Delhi Annual Result Academic Session 2022-23</th>
+            </tr>
+            <tr>
+                <td>Student Id <span>*</span></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Class <span>*</span></td>
+                <td>
+                    <select>
+                    <option value="">Select</option>
+                    <option value="">I</option>
+                    <option value="">II</option>
+                    <option value="">III</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>DOB (dd/mm/yy) <span>*</span></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Visual Code</td>
+                <td><label>ABCDEFGHI</label></td>
+            </tr>
+            <tr>
+                <td>Type The Code Shown</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" class="btn">
+                    <input type="button" value="Back" class="btn">
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

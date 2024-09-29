@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car animation</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+        body{
+            background-image: url("https://www.shutterstock.com/image-illustration/picture-highway-that-passing-through-260nw-1837837225.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y:hidden;
+            z-index: -1;
+            
+        }
+        @keyframes car {
+            0%{
+                
+            }
+            
+            100%{
+                
+            left: 120vw;
+                
+            }
+            
+        } 
+        @keyframes car2 {
+            0%{
+                
+            }
+            
+            100%{
+                
+            right: 120vw;
+                
+            }
+            
+        } 
+        @keyframes plane{
+            0%{
+                bottom: 0%;
+                right:-10%;
+
+
+            }
+            10%{
+                right: 0%;
+                bottom: 20px;
+                transform: rotate(20deg);
+
+            }
+            20%{
+                right: 10%;
+                bottom: 60px;
+                transform: rotate(20deg);
+                
+            }
+
+            30%{
+                right: 30%;
+                bottom: 100px;
+                transform: rotate(20deg);
+
+            }
+            40%{
+                right: 40%;
+                bottom: 140px;
+                transform: rotate(0deg);
+
+            }
+
+
+            50%{
+                right: 50%;
+                bottom: 160px;
+                transform: rotate(0deg);    
+
+            }
+            60%{
+                right: 60%;
+                bottom: 180px;
+                transform:rotate(10deg);
+
+
+            }
+            75%{
+                right: 70%;
+                bottom: 220px;
+                transform: rotate(10deg);
+
+            }
+            90%{
+                right: 80%;
+                bottom: 220px;
+                transform: rotate(10deg);
+            }
+            
+            
+            100%{
+                right: 100%;
+                bottom:280px;
+                transform: rotate(20deg);
+
+            }
+            
+        }
+        .car{
+            height: 600px;
+            /* width: 400px; */
+            position: relative;
+            z-index: 150;
+            right: -800px;
+            left: -400px;
+            animation-name: car;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(6px 6px 10px blac
+            );
+        }
+        .plane{
+            position: absolute;
+            height: 400px;
+            bottom: 0;
+            right:-400px;
+            animation-name: plane;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            /* animation-direction: alternate; */
+            filter: drop-shadow(4px 4px 10px black);
+        }
+           
+
+        
+        .car2{
+            
+            position: absolute;
+            height: 400px;
+            width: 600px;
+            bottom: 60px;
+            right: -320px; 
+             animation-name:car2 ;
+             animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black); 
+
+
+        }
+        #main{
+            height: 150px;
+            margin-top: 450px;
+        }
+        #pl{
+            height: 200px;
+            width: 250px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="road">
+        <div class="car">
+            <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" id="main">
+        </div>
+        <div class="car2">
+            <img src="https://media2.giphy.com/media/UtiGKkOh1xyo9Ix8V0/giphy.gif?cid=6c09b9522zmg84bbloclraz9pejrwvyimttvlt83202b0x80&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="">
+        </div>
+        <div class="plane">
+            <img src="https://i.giphy.com/media/U29iRRUrtx1wjD4GR4/giphy.webp" id="pl">
+        </div>
+    </div>
+
+    
+</body>
+</html>

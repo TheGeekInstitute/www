@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        body{
+            height: 150vh;
+        }
+        .box{
+            /* border: 1px solid red; */
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+            font-size: large;
+            line-height: 100px;
+            text-align: center;
+            text-shadow: 2px 2px 4px blue;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 50%;
+            transition: all 2s;
+
+        }
+
+        .box:hover{
+            /* height: 200px;
+            width: 200px;
+            line-height: 200px; */
+            background-color: red;
+            box-shadow: 0px 0px 100px red;
+        }
+
+        img{
+            /* height: 150px;
+            width: 150px; */
+            /* border-radius: 50%; */
+            transition: all .3s;
+            border: 2px solid red;
+            box-shadow: 0px 0px 50px red;
+        }
+        img:hover{
+            height: 200px;
+            width: 200px;
+            box-shadow: 0px 0px 100px green;
+        }
+        .abc{
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            color: aliceblue;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 100px;
+            line-height: 100px;
+            text-align: center;
+            box-shadow: 2px 2px 50px blueviolet;
+            transition: all 2s;
+            
+        }
+        .abc:hover{
+            background-color: gold;
+            box-shadow: 0px 0px 100px red;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">ABCD</div>
+    
+    <img src="https://pbs.twimg.com/profile_images/1662192376654491648/b4EdoXQs_400x400.jpg" alt="">
+    
+    <div class="abc">Rama</div>
+</body>
+</html>

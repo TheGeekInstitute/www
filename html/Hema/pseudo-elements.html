@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para{
+            /* width: 100px; */
+            color: blue;
+        }
+
+        .geek::after{
+            content: " Institute";
+            color: red;
+        }
+
+        .geek::before{
+            /* content: "The "; */
+            content: attr(class);
+            color: blue;
+        }
+   
+   ul li{
+    color: red;
+   }
+   
+   ol li{
+    color: blue;
+   }
+
+   ul li::marker{
+    color: green;
+   }
+
+   ol li::marker{
+    color: cyan;
+   }
+
+   .new::selection{
+    color: red;
+    background-color: greenyellow;
+
+   }
+
+
+   .new{
+    /* user-select: all; */
+    user-select: auto;
+   }
+
+input{
+    font-size: 32px;
+    caret-color: red;
+    color: blue;
+}
+
+input::placeholder{
+    color: greenyellow;
+}
+
+</style>
+</head>
+<body>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis iure maiores fuga veritatis? Fugit obcaecati sunt voluptatibus non magnam sint, sed quod id debitis ratione labore ut saepe deserunt exercitationem.
+    </p>
+
+
+    <h1 class="geek" title="The Geek Institute" data-myattr="abcd">Geek</h1>
+
+
+<ul>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ul>
+
+
+<ol>
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+</ol>
+
+
+<p class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt eos asperiores? In temporibus officiis exercitationem velit voluptatum quas, esse facere, mollitia accusamus reprehenderit fugiat hic iste maxime, atque ea!</p>
+
+
+<input type="text" placeholder="Enter Name">
+
+
+
+</body>
+</html>

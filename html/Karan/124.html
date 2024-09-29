@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .cnt{
+            height: 100vh;
+            background-color: rgb(189, 216, 224);
+        }
+        .nav, .nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav ul li a {
+            margin: 8px;
+            margin-right: 40px;
+            color: black;
+        }
+        .nav ul li a:hover{
+            text-decoration: underline;
+        } 
+        input,[text=type]{
+            width:30vw;
+            padding: 1vw;
+        }
+        .login{
+            margin: auto;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 2px 2px 4px rgb(163, 160, 160);
+            padding: 6px;
+            width: 35vw;
+            height: 55vh;
+            border: 1px solid #fff;
+            background-color: #fff;
+            margin-top: 20vh;
+        }
+        .btn{
+            width: 30vw;
+            padding: 8px;
+            background-color: black;
+            color: #fff;
+            border-radius: 3px;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media only screen and (max-width:600px) {
+            .login{
+                background-color: red;
+                margin: auto;
+                width: auto;
+            }
+            .button{
+                color: green;
+                width: auto;
+            }
+
+            input[type=text]{
+                width: auto;
+                background-color: aqua;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cnt">
+        <div class="nav">
+        <h1>Easter.in</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+           <a href="#"><i class="fa fa-lock" aria-hidden="true"></i></a>
+        </ul>
+    </div>
+    <div class="login">
+        <h2>Let's Create An <br> Account!</h2>
+        <div class="input">
+            <input type="text" placeholder="Enter your username"><br><br>
+            <input type="text" placeholder="Enter your Email"><br><br>
+            <input type="text" placeholder="Enter your Password"><br><br>
+            <button class="btn">Sign Up</button><br>
+            <a href="#">Already Have an account?Login</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

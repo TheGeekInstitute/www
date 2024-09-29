@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container .circle{
+            margin: auto;
+            margin-top: 100px;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            border: 1px solid rgb(226, 218, 218);
+            background-color: rgba(226, 218, 218, 0.835);
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 1px 1px 5px;
+        }
+
+        .container img{
+            /* border: 1px solid red; */
+            rotate: 25deg;
+            margin-top: 290px;
+            animation: rocket 10s linear 0s 1 alternate forwards;
+        }
+
+        @keyframes rocket {
+            0%{
+                transform: translate(0px,0px);
+            }
+
+            100%{
+                transform: translate(70px,-510px);
+
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="circle"></div> 
+
+   <img src="https://cdn.pixabay.com/animation/2022/07/31/06/27/06-27-17-124_512.gif" alt="" height="150px">
+   </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHA </title>
+    
+    <style>
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+.container{background-color:rgba(0, 0, 255, 0.411);
+font-size:25px;
+height: 800px;
+width: 100%;
+}
+
+.nav{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.nav .logo{
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.nav .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .links li a{
+    display: block;
+    color: white;
+    margin: 0 10px;
+}
+
+.nav .links li #btn{
+    /* background-color: cyan; */
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 1000px;
+}
+.container .box { height:500px;
+width:500px; }
+
+.container .box .left{}
+.container .box .right{
+ 
+
+}
+.image{
+    height: 600px;
+    margin-left: 38rem;
+    position: absolute;
+    z-index: 99;
+    margin-top: -200px;
+}
+.text{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 150px;
+}
+.text p:first-child{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">ARSHA  </div>
+
+           
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Partfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Drop Down</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a  id="btn" href="#">Get Start</a></li>
+            </ul>
+          
+      </div>
+        <div class="box">
+            <div class="text">
+                <p>Best Solutions For <br> Your Business</p>
+                <p>We are team of talented desigeners making website with boostrap</p>
+                <a href="#">Get Started </a>
+                <a href="#">Watch Video</a>
+            </div>
+        </div>
+            <div class="right"></div>
+            <img class="image" src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

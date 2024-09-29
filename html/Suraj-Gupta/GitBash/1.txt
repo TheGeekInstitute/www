@@ -1,0 +1,184 @@
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~
+$ ls -l
+total 23885
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  AppData/
+lrwxrwxrwx 1 Geek-Institute 197121       39 Mar 31 16:54 'Application Data' -> /c/Users/Geek-Institute/AppData/Roaming/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Contacts/
+lrwxrwxrwx 1 Geek-Institute 197121       67 Mar 31 16:54  Cookies -> /c/Users/Geek-Institute/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 Geek-Institute 197121        0 Apr 13 18:44  Desktop/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Documents/
+drwxr-xr-x 1 Geek-Institute 197121        0 Apr 13 19:36  Downloads/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Favorites/
+drwxr-xr-x 1 Geek-Institute 197121        0 Apr 13 17:32  IntelGraphicsProfiles/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Links/
+lrwxrwxrwx 1 Geek-Institute 197121       37 Mar 31 16:54 'Local Settings' -> /c/Users/Geek-Institute/AppData/Local/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Music/
+lrwxrwxrwx 1 Geek-Institute 197121       33 Mar 31 16:54 'My Documents' -> /c/Users/Geek-Institute/Documents/
+-rw-r--r-- 1 Geek-Institute 197121 14417920 Apr 13 13:19  NTUSER.DAT
+-rw-r--r-- 1 Geek-Institute 197121    65536 Mar 31 21:39  NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+-rw-r--r-- 1 Geek-Institute 197121   524288 Mar 31 21:39  NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 Geek-Institute 197121   524288 Mar 31 16:54  NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+lrwxrwxrwx 1 Geek-Institute 197121       75 Mar 31 16:54  NetHood -> '/c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 17:12  OneDrive/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54  Pictures/
+lrwxrwxrwx 1 Geek-Institute 197121       75 Mar 31 16:54  PrintHood -> '/c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 Geek-Institute 197121       64 Mar 31 16:54  Recent -> /c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 Geek-Institute 197121        0 Mar 31 16:54 'Saved Games'/
+drwxr-xr-x 1 Geek-Institute 197121        0 Apr 12 09:34  Searches/
+lrwxrwxrwx 1 Geek-Institute 197121       64 Mar 31 16:54  SendTo -> /c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 Geek-Institute 197121       68 Mar 31 16:54 'Start Menu' -> '/c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 Geek-Institute 197121       67 Mar 31 16:54  Templates -> /c/Users/Geek-Institute/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 Geek-Institute 197121        0 Apr  4 10:24  Videos/
+-rw-r--r-- 1 Geek-Institute 197121  3145728 Mar 31 16:54  ntuser.dat.LOG1
+-rw-r--r-- 1 Geek-Institute 197121  3407872 Mar 31 16:54  ntuser.dat.LOG2
+-rw-r--r-- 1 Geek-Institute 197121       20 Mar 31 16:54  ntuser.ini
+-rw-r--r-- 1 Geek-Institute 197121        0 Apr  5 18:33  style.css
+-rw-r--r-- 1 Geek-Institute 197121  2346796 Apr  5 17:15  test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~
+$ ls -a
+ ./                       NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+ ../                      NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+ .cache/                  NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+ .ssh/                    NetHood@
+ .vscode/                 OneDrive/
+ AppData/                 Pictures/
+'Application Data'@       PrintHood@
+ Contacts/                Recent@
+ Cookies@                'Saved Games'/
+ Desktop/                 Searches/
+ Documents/               SendTo@
+ Downloads/              'Start Menu'@
+ Favorites/               Templates@
+ IntelGraphicsProfiles/   Videos/
+ Links/                   ntuser.dat.LOG1
+'Local Settings'@         ntuser.dat.LOG2
+ Music/                   ntuser.ini
+'My Documents'@           style.css
+ NTUSER.DAT               test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~
+$ cd Desktop/
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ pwd
+/c/Users/Geek-Institute/Desktop
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ ls
+ 1.docx                       Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg  'Visual Studio Code.lnk'*
+ 1.html                       Excel.lnk*                                                        Word.lnk*
+ 2.docx                       GeekInstitute_flyer.pdf                                           desktop.ini
+ 4545.txt                     Marksheet.xlsx                                                    electro-v3.3.14/
+ Access.lnk*                 'Microsoft Edge.lnk'*                                              keac101.pdf
+'Adobe Photoshop 2024.lnk'*   PPT/                                                              keac102.pdf
+'All Excel Formulas.xlsx'     PowerPoint.lnk*                                                   keac103.pdf
+'Computer Fundamentals.pdf'   Publisher.lnk*                                                    list.xlsx
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ mkdir test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ ls
+ 1.docx                                                            Excel.lnk*                 desktop.ini
+ 1.html                                                            GeekInstitute_flyer.pdf    electro-v3.3.14/
+ 2.docx                                                            Marksheet.xlsx             keac101.pdf
+ 4545.txt                                                         'Microsoft Edge.lnk'*       keac102.pdf
+ Access.lnk*                                                       PPT/                       keac103.pdf
+'Adobe Photoshop 2024.lnk'*                                        PowerPoint.lnk*            list.xlsx
+'All Excel Formulas.xlsx'                                          Publisher.lnk*             test/
+'Computer Fundamentals.pdf'                                       'Visual Studio Code.lnk'*
+ Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg   Word.lnk*
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ cd test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ ls
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ pwd
+/c/Users/Geek-Institute/Desktop/test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ touch index.html
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ ls -la
+total 8
+drwxr-xr-x 1 Geek-Institute 197121 0 Apr 13 19:40 ./
+drwxr-xr-x 1 Geek-Institute 197121 0 Apr 13 19:40 ../
+-rw-r--r-- 1 Geek-Institute 197121 0 Apr 13 19:40 index.html
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ cd ..
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ cd test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ cd ..
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ rmdir test
+rmdir: failed to remove 'test': Directory not empty
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ rm test
+rm: cannot remove 'test': Is a directory
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ rm -rf test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ ls
+ 1.docx                       Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg  'Visual Studio Code.lnk'*
+ 1.html                       Excel.lnk*                                                        Word.lnk*
+ 2.docx                       GeekInstitute_flyer.pdf                                           desktop.ini
+ 4545.txt                     Marksheet.xlsx                                                    electro-v3.3.14/
+ Access.lnk*                 'Microsoft Edge.lnk'*                                              keac101.pdf
+'Adobe Photoshop 2024.lnk'*   PPT/                                                              keac102.pdf
+'All Excel Formulas.xlsx'     PowerPoint.lnk*                                                   keac103.pdf
+'Computer Fundamentals.pdf'   Publisher.lnk*                                                    list.xlsx
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ mkdir test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop
+$ cd test
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ touch a.txt b.txt c.txt d.txt one.html 2.html 3.css 4.pdf
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ ls
+2.html  3.css  4.pdf  a.txt  b.txt  c.txt  d.txt  one.html
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ mkdir html_files
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ cp 2.html html_files/
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ ls -la html_files/
+total 4
+drwxr-xr-x 1 Geek-Institute 197121 0 Apr 13 19:42 ./
+drwxr-xr-x 1 Geek-Institute 197121 0 Apr 13 19:42 ../
+-rw-r--r-- 1 Geek-Institute 197121 0 Apr 13 19:42 2.html
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ mv 4.pdf html_files/
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ rm -rf *.txt
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ rm -rf *.*
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$ rm -rf *
+
+Geek-Institute@GeekInstitute-Node01 MINGW64 ~/Desktop/test
+$

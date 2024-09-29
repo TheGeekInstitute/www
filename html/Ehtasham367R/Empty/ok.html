@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .container{
+        border: 2px solid black;
+        height: 100vh;
+        display: flex;
+        padding: 100px ;
+    }
+    .container .box1{
+        height: 200px ;
+        width: 200px;
+        border: 3px solid red;
+        overflow: hidden;
+
+
+    }
+    .container .box1 .one{
+        height: 100%;
+        width: 100%;
+
+    }
+    .container .box1 .a{
+        height: 100%;
+        width: 100%;
+        border: 1px solid green;
+        transition: all .2s linear;
+        background-color: green;
+
+        
+    }
+    /* .container:hover .box1 {
+        transform: all 2s line
+;
+        
+    } */
+    .box1:hover .a{
+        transform: translateY(-100%);
+        
+    }
+
+    .container .box2{
+        height: 200px ;
+        width: 200px;
+        border: 3px solid red;
+        margin-left: 20px;
+        overflow: hidden;
+
+    }
+
+
+
+.container .box2 .two{
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+}
+
+.container .box2 .b{
+    height: 100%;
+    width: 100%;
+    transition: all .2s linear;
+    background-color: purple;
+
+}
+
+.box2:hover .b{
+    transform: translateY(-100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+    .container .box3{
+        height: 200px ;
+        width: 200px;
+        border: 3px solid red;
+        margin-left: 20px;
+        overflow: hidden;
+
+
+    }
+    .container .box3 .three{
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .container .c{
+        height:100%;
+        width: 100%;
+        background-color: yellow;
+        transition: all .2s linear;
+    }
+    .box3:hover .c{
+        transform: translateY(-100%);
+
+    }
+
+   
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+<div class="box1">
+    <div class="one">
+        one
+    </div>
+    <div class="a">
+    Ajjnn
+    </div>
+
+</div>
+<div class="box2">
+    <div class="two">
+        two
+    </div>
+    <div class="b">
+        BB
+    </div>
+
+</div>
+
+<div class="box3">
+    <div class="three">
+        Three
+    </div>
+<div class="c">
+    c
+</div>
+</div>
+
+
+
+    </div>
+</body>
+</html>

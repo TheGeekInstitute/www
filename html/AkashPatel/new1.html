@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url("new1.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+    @import url("./mobile.css");
+    
+
+    @font-face {
+            font-family: "Aakash-Hand";
+            src: url("./Winter\ Wind.ttf");
+        }
+
+        .box{
+            color: green;
+        }
+
+        .box p{
+            font-family: "Aakash-Hand";
+            font-size: 20px;
+        }
+
+        input{
+            caret-color: red;
+            accent-color:green;
+        }
+
+        .box .new{
+            
+            background-color: currentColor;
+        }
+
+        input[type="file"]::-webkit-file-upload-button{
+            border: 2px solid red;
+            background-color: green;
+        }
+
+        h1{
+            color: green ;
+            -webkit-text-stroke: red 2px;
+        }
+
+        #heading{
+            color: blue;
+        }
+
+        .heading{
+            color: aqua  !important;
+        }
+
+
+        @supports(backdrop-filter:blur(10px)){
+            .box{
+                background-color: pink;
+                backdrop-filter: blur(2px);
+            }
+        }
+
+        @supports not (backdrop-filter: blur(10px)){
+            .box{
+                background-color: grey;
+            }
+        }
+
+
+        .data{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nesciunt magnam itaque explicabo error nihil natus delectus recusandae? Quos libero aspernatur dignissimos ipsam autem vitae necessitatibus assumenda corporis corrupti at.</p>
+
+        <i class="fa-solid fa-house"></i>
+    
+        <div class="new">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit vitae animi cupiditate magni blanditiis doloribus alias sunt deserunt adipisci velit ducimus, beatae quis amet a assumenda. Voluptates ea quia voluptatem.</div>
+
+
+        <input type="text">
+        <input type="radio">
+        <input type="checkbox">
+
+        <input type="file">
+    </div>
+
+
+    <h1 class="heading" id="heading" style="color: red;">Heading</h1>
+
+
+
+    <div class="data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsa vitae voluptas nisi tempora explicabo ex repudiandae, obcaecati dolorum magnam inventore, doloremque temporibus recusandae nam, blanditiis aspernatur ab quo animi.
+    </div>
+
+</body>
+</html>

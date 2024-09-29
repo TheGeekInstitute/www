@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        body{
+            overflow: hidden;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav{
+            height: 50px;
+            /* border: 1px solid red; */
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            /* overflow: hidden; */
+         
+            user-select: none;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        .open,.close{
+            display: none;
+        }
+        nav label{
+        font-size: 35px;
+        }
+
+        nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+        nav .links li a{
+            margin: 0 .7rem;
+            font-size: larger;
+            color: white;
+        }
+        main{
+           position: absolute;
+           top: 50px;
+        }
+
+        @media screen  and (max-width:600px){
+            nav{
+                padding: 0 2rem;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            }
+            nav .links{
+                position: absolute;
+                background-color: rgba(223, 67, 67, 0.534);
+                top: 50px;
+                left: 0;
+                right:0;
+              height: 10rem;
+               /* border: 1px solid red; */
+                flex-direction: column;
+                text-align: center;
+                transform: translateX(100%);
+                backdrop-filter: blur(3px);
+            }
+
+            nav .links li a{
+                line-height: 3rem;
+            }
+
+            .open{
+                display: block;
+            }
+
+            #btn:checked  ~ .links{
+                transform: translateX(0);
+            }
+
+            #btn:checked  ~ label .open{
+              display: none;
+            }
+            #btn:checked  ~ label .close{
+              display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            LOGO
+        </div>
+        <input type="checkbox" id="btn">
+        <label for="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-x close"></i>
+        </label>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>asdasdas
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda expedita perspiciatis eligendi doloremque sequi in autem ipsam porro blanditiis illum ipsa voluptate aspernatur repellendus quas quidem illo minima, et aliquam?
+    </main>
+</body>
+</html>

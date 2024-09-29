@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color:rgba(255, 255, 255, 0.545);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:arial,sans-serif;
+
+        }
+        .container{
+            width: 400px;
+            background-color:rgba(255, 255, 255, 0.789);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.83);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header{
+            background-color: rgba(0, 128, 0, 0.51);
+            color:black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box{
+            padding: 10px;
+            height: 300px;
+            overflow-y: auto;
+            border-bottom:2 px solid rgba(0, 0, 0, 0.421);
+        }
+        .massage1{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+            text-align: left;
+        }
+        .massage2{
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: skyblue;
+            text-align:right;
+            
+        }
+        .send{
+            background-color: greenyellow;
+            color: black;
+            text-align: right;
+
+        }
+        .text input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.37);
+            border-radius: 5px;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .text button {
+            padding: 10px 20px;
+            background-color:rgba(0, 128, 0, 0.51);
+            color:black;
+            border: none;
+            align-items: right;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Chat with Us</h1>
+        </div>
+        <div class="box">
+            <div class="massage1">Hello! How can I help You</div>
+            <div class="massage2">I need some information</div>
+        </div>
+        <div class="text">
+            <input type="text" placeholder="Type your massege...">
+            <button>Send</button>
+        </div>
+    </div>
+</body>
+</html>

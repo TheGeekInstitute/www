@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loding</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 10rem;
+            margin-top: 10rem;
+            background-color: #EAE9EE;
+        }
+        .container .slider{
+            height: 10rem;
+            padding: calc(1rem - 5px) ;
+            white-space:nowrap;
+            animation: move 30s linear 0s infinite forwards;
+           
+        }
+        
+        .box{
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            height: 8rem;
+            width: 9.7rem;
+            margin:  5px;
+            border-radius: 7px;
+            overflow: hidden;
+            text-align: center;
+            padding: 5px;
+            
+           
+        }
+        .box img {
+            position: relative;
+            height: 35%;
+            width: 35%;
+            object-fit: cover;
+            top: 20px;
+            right: 35px;
+            
+        }
+        
+        .box p{
+            position: relative;
+            font-size: 20px;
+            font-weight: 900;
+            left: -15px;
+            top: 35px;
+        }
+        @keyframes move {
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(-100%);
+            }
+        }
+
+        .slider:hover{
+            animation-play-state: paused;
+        }
+
+        .slider .box:hover{
+            background-color: #5F2DED;
+            transition: all 0.3s;
+            cursor: pointer;
+            transform: translatey(-8px);
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="slider">
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png" alt="img">
+            <p>HTML</p>
+        </div>
+        <div class="box">
+            <img src="https://www.pngitem.com/pimgs/m/198-1985012_transparent-css3-logo-png-css-logo-transparent-background.png" alt="">
+            <p>CSS</p>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="">
+            <p>Java Script</p>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" alt="">
+            <p>Sass</p>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" alt="">
+            <p>PHP</p>
+        </div>
+        <div class="box">
+            <img src="https://w7.pngwing.com/pngs/841/331/png-transparent-mysql-database-phpmyadmin-postgresql-innodb-mysql-orange-logo-area-thumbnail.png" alt="">
+            <p>MySQL</p>
+        </div>
+        <div class="box">
+            <img src="https://e7.pngegg.com/pngimages/768/167/png-clipart-mongodb-nosql-document-oriented-database-nosql-icon-leaf-grass.png" alt="">
+            <p>MongoDB</p>
+        </div>
+        <div class="box">
+            <img src="https://p7.hiclipart.com/preview/856/564/839/react-logo-javascript-front-and-back-ends-user-interface-others.jpg" alt="">
+            <p>React.js</p>
+        </div>
+        <div class="box">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+            <p>GitHub</p>
+        </div>
+        <div class="box">
+            <img src="https://cdn.imgbin.com/1/17/21/imgbin-python-javascript-logo-soloist-My4ZUgqAGSkQQ5qtiN1TUYzV5.jpg" alt="">
+            <p>Python</p>
+        </div>
+        <div class="box">
+            <img src="https://e7.pngegg.com/pngimages/562/868/png-clipart-java-robocode-programming-language-jar-jar-text-logo.png" alt="">
+            <p>Java</p>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bash_Logo_Colored.svg/1200px-Bash_Logo_Colored.svg.png" alt="">
+            <p>BASH</p>
+        </div>
+        <div class="box">
+            <img src="https://seeklogo.com/images/L/Linux-logo-CFCA1C571C-seeklogo.com.png" alt="">
+            <p>Linux</p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

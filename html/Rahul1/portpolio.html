@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+      *{
+        margin: 0px;
+        text-decoration: none;
+        padding: 0px;
+        list-style: none;
+    }  
+    
+    body{
+          background-color: skyblue;
+
+      }
+      .nav{
+        height: 55px;
+        background-color: rgb(24, 139, 255);
+        color: white;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        position: sticky;
+        top: 0px;
+      }
+      .nav #btn{
+        background-color: rgba(15, 230, 44, 0.966);
+        color: white;
+        font-size: large;
+        padding: 0 7px;
+        margin: 10px 20px;
+        position: sticky;
+        top: 0px;
+      }
+      .nav #btn :hover{
+        background-color: blue;
+      }
+      .nav .logo{
+        font-size:40px;
+        font-weight: 800px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+      }
+      .nav .link{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .nav .link li a {
+        display: block;
+        color: white;
+        font-size: large;
+        margin: 0 10px;
+        padding: 0 10px;
+        line-height: 45px;
+        position: sticky;
+
+      } 
+      .nav .link li a:hover{
+        background-color: blue;
+      }
+      .nav .link li .sub{
+            position:   absolute;
+            background-color: grey;
+            width:100px;
+            text-align: center;
+
+            display: none;
+        }
+
+        .nav .link li .sub li a{
+            display: block;
+            line-height: 40px;
+            color: white;
+
+            &:hover{
+                background-color: black;
+
+            }
+    
+        }
+
+        /* .nav .links li .sub li a:hover{
+            background-color: black;
+        } */
+
+        .nav .link li:hover .sub{
+            display: block;
+        }
+       .ashu h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 800px;
+        color: white);
+        font-family: cursive;
+
+       } 
+       .container{
+            width: 300px;
+            height: 460px;
+            color: black;
+            padding: 5px;
+            margin:150px auto;
+            box-shadow: 0px 0px 10px black;
+            text-align: center;
+            border-radius: 5px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Kb0HIaw2-DzVIsN6f-Ixp4PWIi0Jh9I63Q&s);
+
+        }
+        .container h1{
+            margin: 10px 0;
+        }
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container form label{
+            width: 250px;
+            text-align: left;
+            margin: 5px 0;
+            font-size: large;
+        }
+        .container form input{
+            width: 240px;
+            height:35px ;
+            margin: 5px 0;
+            padding: 0 3px;
+            outline: none;
+            
+        }
+        .container form #btn{
+          background-color: royalblue;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+        }
+        .container > h1{
+          color: rgba(233, 129, 228, 0.925);
+        }
+            
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Your Logo</div>
+        <ul class="link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team +</a>
+              <ul class="sub">
+                <li><a href="#">Team a</a></li>
+                <li><a href="#">Team b</a></li>
+                <li><a href="#">Team c</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="" id="btn">Sign Up</a>
+            
+            
+        </ul>
+       </div>   
+       <div class="ashu">
+        <h1>Your Website</h1>
+        <div class="container">
+          <h1>Sign up</h1>
+          <form>
+              <label for="">Full name</label>
+              <input type="text" placeholder="Full name">
+              <label for="">Username</label>
+              <input type="text" placeholder="Name">
+              <label for="">Email</label>
+              <input type="Email" placeholder="Enter email">
+              <label for="">Password</label>
+              <input type="password" placeholder="Password">
+              <input type="submit" id="btn" value="Signup">
+            
+          </form>
+      </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            border: 2px solid black;
+            display: flax;
+            align-items: center;
+
+        }
+
+        .container .box {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+
+
+        .container .box:nth-child(odd) {
+            background-color: skyblue;
+        }
+
+        .container .box:nth-child(even) {
+            background-color: pink;
+        }
+
+
+        .container .box.add {
+            cursor: pointer;
+            order: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box  add">Add</div>
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+        let add = document.querySelector(".add");
+        let i = 1;
+
+
+
+        add.addEventListener("click", () => {
+
+
+            let box = `<div class="box">${i}</div>`;
+            container.insertAdjacentHTML("beforeend", box)
+            i++;
+
+
+            var AllBox = document.querySelectorAll(".box");
+
+            Array.from(AllBox).forEach((e) => {
+                e.addEventListener("click", () => {
+                    container.removeChild(e)
+                })
+                console.clear()
+
+            })
+
+
+            console.clear()
+
+
+        })
+
+
+
+
+    </script>
+
+</body>
+
+</html>

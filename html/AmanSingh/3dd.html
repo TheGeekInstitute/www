@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+           
+            box-sizing: border-box;
+          
+            
+        }
+        .container{
+            margin: 80px ;
+            border: 2px solid red ;
+            height: 200px ;
+            width: 200px ;
+            perspective: 400px ;
+        }
+        .face{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            transform: translateZ(-100px);
+            transition: transform 2s;
+        }
+        .box{
+            position: absolute;
+            height: 200px;
+            width: 200px ;
+            text-align: center;
+            border: 2px solid red ;
+            line-height: 200px ;
+            transform: translate3d(360);
+            transform-origin: center;
+            transition: all 2s;
+
+        }
+        .box1{
+        transform:translateZ(-100px) rotateY(0);
+        background-color: red;
+        /* z-index: 100; */
+    }
+    .box2{
+        background-color: green;
+        transform:translateZ(-100px) rotateY(90deg);
+    }
+    .box3{
+        background-color: cyan;
+        transform:translateZ(-100px) rotateY(-90deg);
+    }
+    .box4{
+        background-color: purple;transform:translateZ(-100px) rotateY(180);
+    }
+    .box5{
+        background-color: chartreuse;
+        transform:translateZ(-100px) rotateX(-90);
+    }
+    .box6{
+        background-color: aqua;
+        transform:translateZ(-100px) rotateX(90);
+    }
+    .container:hover .box{
+        transform: rotate(360deg);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="face">
+           <div class="box box 1"><h1>1</h1></div>
+           <div class="box box 2"><h2>2</h2></div>
+           <div class="box box 3"><h3>3</h3></div>
+           <div class="box box 4"><h4>4</h4></div>
+           <div class="box box 5"><h5>5</h5></div>
+           <div class="box box 6"><h6>6</h6></div>
+
+           
+        </div>
+    </div>
+</body>
+</html>

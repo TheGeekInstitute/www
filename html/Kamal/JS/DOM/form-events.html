@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<h1>Regstration Form</h1>
+<form>
+    <label>First Name :</label>
+    <input type="text" placeholder="Enter First Name">
+    <br><br>
+    
+    <label>Last Name :</label>
+    <input type="text" placeholder="Enter Last Name" >
+    <br><br>
+
+    <label>Gender :</label>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <br><br>
+
+    <label>DOB : </label>
+    <input type="date">
+    <br><br>
+
+    <label>Email :</label>
+    <input type="Email">
+    <br><br>
+
+    <label>Phone Number :</label>
+    <input type="number" value="45545">
+    <br><br>
+
+    <label>Password :</label>
+    <input type="password">
+
+    <br><br>
+
+    <input type="submit" value="Register Now">
+    <input type="reset">
+
+    <input type="file" id="file">
+
+    
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+
+    <p id="para"></p>
+
+    <script>
+        let input = document.querySelectorAll("input");
+
+        input.forEach(e=>{
+            // e.addEventListener("focus",()=>{
+            //     showMsg();
+            // })
+
+            // e.addEventListener("blur",()=>{
+            //     showMsg();
+            // })
+
+            // e.addEventListener("keypress",()=>{
+            //     showMsg();
+            // })
+
+            //      e.addEventListener("change",()=>{
+            //     showMsg();
+            // })
+
+            // e.addEventListener("select",()=>{
+            //     // showMsg();
+            // })
+
+              e.addEventListener("invalid",()=>{
+                // showMsg();
+            })
+
+
+
+        })
+
+        // document.body.addEventListener("keydown",()=>{
+        //     showMsg();
+        // })
+
+        // document.body.addEventListener("keyup",()=>{
+        //     showMsg();
+        // })
+        document.querySelector('#file').addEventListener("change",()=>{
+            // showMsg()
+        })
+
+        function showMsg(){
+            alert("Hello Form Function");
+        }
+
+
+        
+
+
+        // document.querySelector("form").addEventListener("submit",()=>{
+        //     showMsg();
+        // })
+
+
+
+        let txt = document.querySelector("#txt");
+        let para  = document.querySelector("#para");
+        txt.addEventListener("input",()=>{
+             if((txt.value).length<=10){
+                para.innerHTML=txt.value
+             }
+             else{
+                alert("Max Limit reached")
+             }
+        })
+
+
+    </script>
+
+</form>
+</body>
+</html>

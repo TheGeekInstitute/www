@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <style>
+        .box {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            line-height: 50px;
+            text-align: center;
+            font-size: large;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+        // let abcd =1;
+
+        // while(abcd<=100){
+        //     document.write('<div class="box">'+abcd+'</div>');
+        //     abcd++
+        // }
+
+
+        // let abcd = 100;
+
+        // while (abcd >= 1) {
+        //     document.write('<div class="box">' + abcd + '</div>');
+        // //     abcd--
+        // // }
+
+
+
+        // for(let i=1 ; i<=100 ; i++){
+        //     // document.write(i + "<br>")
+        //     // document.write('<div class="box">' + i + '</div>');
+        // }
+
+
+        let names=["AMit","Sumit",'Ravi','Ankit',"Bablu",'Raju']
+
+            // document.write(names.length)
+
+            // for(let i=0; i< names.length ; i++){
+                // document.write(names[i] + "<br>")
+            // }
+
+            //     let i=0;
+            // while(i<names.length){
+            //     document.write(names[i] + "<br>")
+            //     i++;
+            // }
+
+            // for(let index of names){
+            //     document.write(index + "<br>")
+            // }
+
+
+            // for(let index in names){
+            //     document.write(names[index] + "<br>")
+            // }
+
+
+            let obj ={
+                name :"ABCD",
+                gender : "Male",
+                age : 25
+            }
+
+            for(let index in obj){
+                document.write(index +  " --> " +obj[index] + "<br>")
+            }
+
+    </script>
+
+</body>
+
+</html>

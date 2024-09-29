@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+body{
+    border: 5px;
+ 
+}
+.box img{
+    width: 100px;
+}
+.box{
+    /* background-image: url(); */
+    border: 2px solid black;
+    width: 261px;
+    height: 300px;
+    margin: 150px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url(https://th.bing.com/th/id/OIP.FLUj_JKACSKGHQ37zSOZnAHaEo?pid=ImgDet&w=474&h=296&rs=1);
+    color: aliceblue;
+    box-shadow: 0px 0px 30px black;
+}
+.per{
+    border: 1px solid black;
+    /* border-radius: 100px; */
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: rgb(39, 38, 38);
+}
+.icon{
+    font-size: 35px;
+    margin: 20px;
+
+}
+.one{
+    color: rgb(104, 65, 243);
+}
+.two{
+    color:blue;
+}
+.three{
+    color: aqua;
+}

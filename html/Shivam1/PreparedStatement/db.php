@@ -1,0 +1,26 @@
+<?php
+
+if(!defined("abcd")){
+    header("location:index.php");
+}
+
+
+
+$host="localhost";
+$username='root';
+$password="toor";
+$database="Shivam";
+
+$connection=new mysqli($host,$username,$password,$database);
+
+function input_filter($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
+?>
+
+
+
+

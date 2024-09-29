@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter & backdrop Filter</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            /* object-fit: cover; */
+
+            /* filter: blur(3px); */
+            /* filter: brightness(200%); */
+            /* filter: contrast(200%); */
+
+            /* box-shadow: 2px 2px red; */
+
+            /* filter: drop-shadow(-2px -2px red); */
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(300deg); */
+            /* filter:invert(0); */
+            /* filter: opacity(.5); */
+            /* filter: saturate(200%) brightness(200%) contrast(200%); */
+            /* filter: sepia(100%); */
+
+            
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-image: url("../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box .a{
+            /* border: 1px solid red; */
+            height: 200px;
+            width: 200px;
+            /* backdrop-filter: blur(2px); */
+            /* background-color: rgba(255, 255, 255, 0.1); */
+        }
+
+        @supports (backdrop-filter:blur(2px)){
+            .box .a{
+            backdrop-filter: blur(2px);
+
+            }
+        }
+
+     
+        @supports  not (backdrop-filter:blur(2px)){
+            .box .a{
+                background-color: red;
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <img src="../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg" alt="">
+
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/625px-Apple_logo_black.svg.png" alt=""> -->
+
+
+    <div class="box">
+        <div class="a">
+            <h1>asd</h1>
+        </div>
+    </div>
+
+
+</body>
+</html>

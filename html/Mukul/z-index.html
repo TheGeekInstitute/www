@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        img{
+            height: 200px;
+            width: 300px;
+            position: absolute;
+        }
+
+        .one{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index:10;
+          border: 2px solid red;
+        }
+
+        .two{
+            left: 150px;
+            top: 150px;
+            border: 2px solid cyan;
+        
+        }
+
+        .three{
+         z-index: 11;
+         border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="../web/images/1.jpg" alt="" class="one">
+    <img src="../web/images/10.jpg" alt="" class="two">
+    <img src="../web/images/13.png" alt="" class="three">
+
+
+
+</body>
+</html>

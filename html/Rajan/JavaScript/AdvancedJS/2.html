@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let obj = {
+        //     name :"Amit Kumar",
+        //     colors : ["Red","Green","Yellow","Cyan"],
+        //     hello : ()=>{
+        //         return ("Hello World");
+        //     }
+        // }
+
+
+        // console.log(obj.hello())
+
+
+        class Students{
+            // name="ABCD";
+            constructor(name,age){
+               this.name = name;
+               this.age = age;
+
+
+            }
+
+            abcd(){
+                return("ABCD");
+            }
+        }
+
+
+        class Child extends Students{
+            xyz(){
+                return('XYZ')
+            }
+        }
+
+
+
+
+        let obj = new Child("AMit",45);
+
+
+
+    
+
+        console.log(obj.xyz())
+
+</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            overflow: hidden;
+        }
+        
+        .container .slider{
+            height: 40rem;
+            display: flex;
+            align-items: center;
+            transition: all .5s ease-in-out;
+        }
+        
+        .container .slider .image{
+            /* border: 1px solid red; */
+            height: 100%;
+            width:100vw;
+            background-size: cover;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 100%;
+       
+
+        }
+
+        .container .slider .image.show{
+            transform: translateX(0);
+        }
+        .container  .btn{
+            position: absolute;
+            top: 35rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        .container .btn button{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            outline: transparent;
+            border: transparent;
+            padding: 5px;
+            width: 7rem;
+            font-size: large;
+            height: 2rem;
+            cursor: pointer;
+            transition: all .2s linear;
+        }
+
+        #next{
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+        }
+
+        #prev{
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        }
+
+        .container .btn button:active{
+            transform: scale(.9);
+        }
+
+        .container .dots{
+          
+            height: 40px;
+            margin-top: -40px;
+            z-index: 10;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container .dots .circle{
+            height: 20px;
+            width: 20px;
+            border: 2px solid yellow ; 
+            border-radius: 50%;
+            margin: 0 5px;
+            transition: all 1s ease-in-out;
+        }
+
+        .container .dots .circle.active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image show" style="background-image: url(../JS/ImageSlider/images/img-1.jpg);"></div>
+            <div class="image" style="background-image: url(../JS/ImageSlider/images/img-2.jpg);"></div>
+            <div class="image" style="background-image: url(../JS/ImageSlider/images/img-3.jpg);"></div>
+            <div class="image" style="background-image: url(../JS/ImageSlider/images/img-4.jpg);"></div>
+            <div class="image" style="background-image: url(../JS/ImageSlider/images/img-5.jpg);"></div>
+        </div>
+
+        <div class="btn">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+
+        <div class="dots">
+            
+        </div>
+
+    </div>
+
+    <script>
+        let next = document.querySelector('#next');
+        let prev = document.querySelector('#prev');
+        let slider = document.querySelector(".slider");
+        let image = document.querySelectorAll(".image");
+
+        let dots = document.querySelector(".dots");
+
+        let data=`<div class="circle"></div>`;
+
+        for(let i=1 ; i<= image.length ; i++){
+            dots.insertAdjacentHTML("beforeend",data)
+        }
+
+        let circle =  document.querySelectorAll(".circle");
+        circle[0].classList.add("active") 
+       
+
+
+        image[0].classList.add("show");
+        let index=0;
+
+        next.addEventListener("click",()=>{
+            image[index].classList.remove("show");
+            circle[index].classList.remove("active")
+            if(index >= image.length-1){
+                index=0;
+            }
+            else{
+                index+=1;
+            }
+
+            image[index].classList.add("show");
+            circle[index].classList.add("active")
+
+            slider.style.transform = "translateX(-"+(index*100)+"%)"
+        })
+
+        prev.addEventListener("click",()=>{
+            image[index].classList.remove("show");
+            circle[index].classList.remove("active");
+            if(index <=0){
+                index=image.length-1;
+            }
+            else{
+                index-=1;
+            }
+
+            image[index].classList.add("show");
+            circle[index].classList.add("active");
+            slider.style.transform = "translateX(-"+(index*100)+"%)"
+        })
+
+
+
+        // let index=0;
+        // next.addEventListener('click',()=>{
+        //     image[index].classList.remove("show");            
+
+        //     if(index >= image.length-1){
+        //         index=0;
+           
+
+        //     }
+        //     else{
+        //         index+=1;
+                
+        //     }
+        //     image[index].classList.add("show"); 
+        //     slider.style.transform = `translateX(-${index*100}%)`   
+        // })
+
+        // prev.addEventListener('click',()=>{
+        //     image[0].classList.remove("show");            
+
+        //     if(index <= 0){
+        //         index=image.length-1;
+        //     }
+        //     else{
+        //         index-=1;
+        //     }
+
+        //     slider.style.transform = `translateX(-${index*100}%)`  
+        // })
+
+
+
+
+    </script>
+</body>
+</html>

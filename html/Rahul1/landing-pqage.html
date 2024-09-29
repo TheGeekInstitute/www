@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            text-decoration: none;
+        }
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .nav a{
+            color: black;
+        }
+        .nav .logo{
+            font-size: x-large;
+        }
+        .nav #btn{
+            background-color: royalblue;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+            font-size: large;
+            border-radius: 5px;
+        }
+        .nehal{
+            border: 2px solid transparent;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            background-image: url(https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 600px;
+
+
+        }
+        .nehal h1{
+            margin-top: 200px;
+            padding-bottom: 20px;
+            font-size: 45px;
+            text-align: center;
+        }
+        .nehal form input{
+            height: 50px;
+            width: 450px;
+            font-size: large;
+            outline: none;
+            border: none;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+        .nehal form #submit{
+            width: 100px;
+            border: none;
+            background-color: royalblue;
+            color: white;
+        }
+        .services{
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .services .box{
+            height: 270px;
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+        }
+        .services .box i{
+            color:royalblue;
+            font-size: 90px;
+        }
+        .services .box h3{
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        .services .box p{
+            font-size: large;
+            margin: 10px 0;
+
+        }
+        .features{
+
+        }
+        .features .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .features .container box{
+            height: 500px;
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .features .container img{
+            height: 100px;
+            width: 50%;
+            height: 500px;
+        }
+        .teams{
+            height: 450px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .teams h1{
+            margin-bottom: 30px;
+        }
+        .teams .mamber{
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        .teams .mamber .box{
+            height: 300px;
+            width: 300px;
+        }
+        .teams .mamber .box img{
+            height: 200px;
+            border-radius: 50%;
+            border: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+       <a href="#" class="logo">startbootstrap</a>
+       <a href="#" id="btn">Sing up</a>
+    </div>
+    <div class="nehal">
+        <h1>Generate more leads with a professional landing page!</h1>
+        <form action="">
+            <input type="Email" placeholder="Email Address">
+        <input type="submit" id="submit" value="submit">
+        </form>
+
+    </div>
+    <div class="services">
+        <div class="box">
+            <i class="fa-solid fa-window-maximize"></i>
+            <h3>Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Bootstrap 5 Ready</h3>
+            <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Easy to Use</h3>
+            <p>Ready to use with your own content, or customize the source files!</p>
+        </div>
+
+    </div>
+       <div class="features">
+           <div class="container">
+            <div class="box">
+                <h1>Fully Responsive Design</h1>
+                When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!
+            </div>
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+
+
+           </div>
+
+          <div class="container">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+            <div class="box">
+                <h1>Fully Responsive Design</h1>
+                When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!
+            </div>
+
+
+          </div>
+          <div class="container">
+            <div class="box">
+                <h1>Fully Responsive Design</h1>
+                When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!
+            </div>
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+          </div>
+
+
+       </div>
+
+
+       <div class="teams">
+        <h1>What people are saying</h1>
+        <div class="mamber">
+            <div class="box">
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg" alt="">
+                <h3>Margaret E.</h3>
+                <p>"This is fantastic! Thanks so much guys!"</p>
+                  </div>
+
+                  <div class="box">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg" alt="">
+                    <h3>Fred S.</h3>
+
+                    <p> "Bootstrap is amazing. I've been using it to create lots of super nice landing pages."
+
+                    </p>
+                  </div>
+
+                  <div class="box">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg" alt="">
+                    <h3>Sarah W.</h3>
+                    <p>"Thanks so much for making these free resources available to us!"</p>
+                  </div>
+
+
+        </div>
+       </div>
+</body>
+</html>

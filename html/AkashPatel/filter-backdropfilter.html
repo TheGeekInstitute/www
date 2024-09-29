@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter & Backdrop-filter</title>
+    <style>
+        img{
+            height: 250px;
+            /* filter: blur(5px); */
+            /* filter: brightness(300%); */
+            /* filter: contrast(200%); */
+            /* filter: drop-shadow(2px 2px 3px red); */
+            /* box-shadow: 2px 2px 3px red; */
+            /* filter: grayscale(50%); */
+            /filter: hue-rotate(40deg); */
+            /* filt* er: invert(40%); */
+            /* filter: none; */
+            /* filter: opacity(45%); */
+            /* filter: saturate(400%) brightness(250%) contrast(300%); */
+            /* filter: sepia(100%); */
+        }
+
+        .container{
+            background-image: url("https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg");
+            height: 400px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .box{
+            height: 250px;
+            width: 300px;
+            /* border: 2px solid red; */
+            padding: 0 10px;
+            background-color: rgba(0, 0,0, .3);
+            backdrop-filter: blur(2px);
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" alt="">
+
+
+
+    <div class="container">
+        <div class="box">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam itaque dicta, cum culpa voluptatum nobis quibusdam. Sunt numquam amet in ad assumenda ex dicta rerum architecto ut neque, libero similique.</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

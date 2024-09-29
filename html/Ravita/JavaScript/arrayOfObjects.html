@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+<body>
+    
+    <script>
+        let arrObj =[
+            {name:"Amit",age:25,gender:"Male"},
+            {name:"Ravi",age:26,gender:"Male"},
+            {name:"Ankit",age:22,gender:"Male"}
+        ];
+
+        // console.log(arrObj[0])
+
+        for(let obj of arrObj){
+            for(let x in obj){
+                document.write(x + " = " + obj[x] + "<br>");
+            }
+
+            document.write("<br>");
+        }
+
+    </script>
+</body>
+</html>

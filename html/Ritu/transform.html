@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: beige;
+        }
+/*         
+        rotate(angle)
+        translate(x,y)
+        translateX(x)
+        translateY(y)
+        scale(x,y)
+        scaleX(x)
+        scaleY(y)
+        skew(x,y)
+        skewX(x)
+        skewY(y)
+        matrix(scaleX(),skewY(),scaleY(),translateX(),traslateY())
+        none
+        
+        */
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 250px;
+            background-color: aquamarine;
+            /* margin: 100px; */
+            transition: all 1s;
+            /* transform-origin:  50% , 0%; */
+            /* transform-origin: -80% -90%; */
+            margin: auto;
+            text-align: center;
+        }
+
+        .box:hover{
+            /* transform: rotate(30deg); */
+            /* transform: translateX(-30%); */
+            /* transform: translateY(100px); */
+            /* opacity: 40%; */
+            /* transform: translate(30%,50%); */
+            /* transform: scaleX(3); */
+            /* transform: scaleY(3); */
+            /* transform: scale(2); */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            transform: skew(10deg ,30deg) rotate(360deg) scale(2);
+            /* transform: rotate(30deg); */
+
+        }
+        h1{
+            text-align: center;
+            text-decoration: overline ;
+            transition: all 1s;
+        }
+        h1:hover{
+            transform: skew(5deg,5deg) scaleX(2) rotate(360deg);
+        }
+        h2{
+            border: 2px solid black;
+            height: 100px;
+            width: 200px;
+            margin: auto;
+            background-color: brown;
+            color: aliceblue;
+            padding: 10px;
+            transition: all 1s;
+
+
+        }
+        h2:hover{
+            transform: skew(5deg,5deg);
+            border-radius: 10px;
+            height: 90px;
+            width: 100px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Transform</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, ea non? Voluptates eaque maiores facere dignissimos possimus consequatur, expedita sequi provident recusandae, labore totam deserunt tempore quia nam voluptatum aut!lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim vitae culpa quas cum itaque hic cumque maxime pariatur est quibusdam eligendi nobis illum quod, aut nesciunt eum aliquid deleniti tempore?
+    Rerum minima quos, beatae ex illo dicta odit nulla incidunt id libero ipsam labore magni non? Laboriosam deserunt aliquid ipsa pariatur voluptatem dicta quam debitis hic repellat, tenetur, delectus rerum.    </p>
+
+    <div class="box">This is A Box</div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium error nam quis, odio accusamus soluta ut? Eligendi iusto, iste tempora, reprehenderit voluptates deleniti dignissimos voluptas autem, necessitatibus itaque sunt dolore.
+        Asperiores earum dignissimos, deleniti eum magni ratione exercitationem consectetur sit aspernatur, error pariatur aliquam minus qui labore veniam laboriosam magnam in amet quia soluta? Architecto pariatur animi repudiandae sint nemo.
+        Atque reprehenderit porro soluta unde minima! Sit quam asperiores quas iure nemo saepe ipsum aperiam laboriosam molestias odio porro assumenda aliquam laudantium, tempora atque soluta veritatis. Magnam error ad quae.
+        Architecto saepe atque provident ab repellendus placeat, minima veritatis nesciunt vitae in? Repellat aliquid doloremque rem dolorem tempore magni provident aliquam, debitis totam ad officia laborum quos deserunt perferendis voluptate!</p>
+        <h2>This is another box</h2>
+</body>
+</html>

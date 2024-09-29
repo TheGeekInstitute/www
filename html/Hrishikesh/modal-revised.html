@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #btn{
+            display: none;
+        }
+        #btn:checked ~ .container{
+            display: block;
+        }
+        #open{
+            display: block;
+            height: 40px;
+            width: 110px;
+            font-size: x-large;
+            text-align: center;
+            color: white;
+            padding-top: 5px;
+            background-color: blueviolet;
+            margin: 150px auto;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 2px 2px  black;
+        }
+        .container{
+            position: absolute;
+            background-color: white;
+            height: 300px;
+            width: 350px;
+            inset: 0;
+            /* z-index: 10; */
+            top: calc(50%  - 150px);
+            left: calc(50% - 170px);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 0, 64, 0.692);
+            box-shadow: 0px 0px 10px rgb(162, 0, 255),  0px 0px 20px rgb(162, 0, 255),0px 0px 30px aqua;
+            display: none;
+            
+        }
+        .container .modal{
+           display: flex;
+           justify-content: space-between;
+           background-color: rgb(57, 30, 210);
+           height: 40px;
+           align-items: center;
+           font-size: large;
+           font-weight: 600;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           color: white;
+           padding: 17px;
+           border-radius: 10px 10px 0px 0px;
+        }
+        .container .para{
+            padding: 10px 15px;
+            text-align: center;
+        }
+        
+
+
+        
+
+    </style>
+</head>
+<body>
+    <label for="btn" id="open">OPEN</label>
+    <input type="checkbox" name="" id="btn">
+    <div class="container">
+           <div class="modal">
+            <div class="heading">
+
+                <p>Heading</p>
+            </div>
+            <label for="btn">X</label>
+           </div>
+           <div class="para">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis tempore, ipsa dolore eos nobis veritatis. A quas beatae qui commodi earum, voluptas veritatis at velit. Modi veritatis animi pariatur voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum repudiandae, dolor quidem delectus perspiciatis iure. Ratione blanditiis aperiam ad optio. Dolore neque quae eveniet, incidunt maiores ipsa et saepe quos.</p>
+           </div>
+    </div>
+    
+</body>
+</html>

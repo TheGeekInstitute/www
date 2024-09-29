@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter me</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+
+        h1::before{
+            /* content: counter(section,lower-alpha); */
+            content: counter(section) ". ";
+            counter-increment: section;
+        }
+
+        h2{
+            text-indent: 100px;
+        }
+
+        h1{
+            counter-reset: sub-sention;
+        }
+
+        h2::before{
+            content: counter(section) ". " counter(sub-section);
+            color: red;
+        }
+
+        h2{
+            counter-reset: sub-sub-section;
+        }
+
+        h3{
+            text-indent: 150px;
+        }
+
+        h3::before{
+            content: counter(section) ". ";
+            counter: (sub-sub-section) ". "  counter-increment: sub-sub-section ; 
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>web development</h1>
+    <h2>HTML</h2>
+    <h3>form</h3>
+    <h3>heading</h3>
+ <h2>css</h2>
+ <h2>js</h2>
+
+    <h1>Cyber security</h1>
+         <h2>black Arch</h2>
+         <h2>pentoo</h2>
+         <h2>Kali linux</h2>
+
+ <h1>programming</h1>
+    
+</body>
+</html>

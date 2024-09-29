@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counters</title>
+    <style>
+        .good{
+            counter-reset: count;
+        }
+        h1::before{
+            content: counter(count)".";
+            counter-increment: count;
+            color: blue;
+            
+        }
+        h1{
+            counter-reset: sub;
+        }
+        h2{
+            text-indent: 60px;
+            counter-reset: sub-sub;
+        }
+        h2::before{
+            content: counter(count)"."counter(sub)".";
+            counter-increment: sub;
+            color:aqua;
+
+        }
+        h3::before{
+            content: counter(count)"." counter(sub) "."counter(sub-sub)".";
+            counter-increment: sub-sub;
+            color: blueviolet;
+        }
+        h3{
+            text-indent: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="good">
+        <h1>Programming</h1>
+            <h2>Java</h2>
+                <h3>OOPs</h3>
+                <h3>Class</h3>
+                <h3>Objects</h3>
+            <h2>Python</h2>
+                <h3>OOPs</h3>
+                <h3>Class</h3>
+                <h3>Objects</h3>
+            <h2>Rust</h2>
+                <h3>Oops</h3>
+                <h3>Class</h3>
+                <h3>Objects</h3>
+        <h1>Hacking</h1>
+            <h2>Kali Linux</h2>
+            <h2>BlackArch</h2>
+            <h2>Parrot Security</h2>
+        <h1>WebDev</h1>
+            <h2>HTML</h2>
+            <h2>DCA</h2>
+            <h2>CODE</h2>
+
+    </div>
+    
+</body>
+</html>       

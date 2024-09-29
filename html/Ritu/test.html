@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            background-color: red;
+            position: relative;
+            z-index: 10;
+            top: -100px;
+        }
+        .box1{
+            display: block;
+            position: relative;
+            content: '';
+            height: 200px;
+            width: 300px;
+            z-index: 0;
+            top: -290px;
+            left: 230px;
+            transform: translate(-10px,10px);
+            background-color: green;
+        }
+
+        .container{
+            background-color: blue;
+        }
+
+        h1{
+            background-color: greenyellow;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>asdad</h1>
+<div class="container">
+    <div class="box"></div>
+    <div class="box1"></div>
+
+</div></body>
+</html>

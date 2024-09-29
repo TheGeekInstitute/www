@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT</title>
+    <style>
+        *{
+
+        }
+
+        div h1{
+            color: red;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        div h2{
+            color: green;
+            text-align: right;
+            text-transform: capitalize;
+        }
+        div h3{
+            border: 2px solid green;
+            color: pink;
+            text-align: justify;
+        }
+        .con{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+            text-align-last: right;
+        }
+        img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+    vertical-align: super; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Heading 1</h1>
+        <h2>heading 2</h2>
+        <h3>Heading 3</h3>
+        <p class="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, kdhsjhdjkshdjkstenetur perspiciatis </p>
+    </div>
+    <p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+<h2>vertical-align: text-bottom:</h2>
+<p>An <img class="c" src="sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+<h2>vertical-align: sub:</h2>
+<p>An <img class="d" src="sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+<h2>vertical-align: sup:</h2>
+<p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+    
+</body>
+</html>

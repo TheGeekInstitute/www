@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+        .para::first-line{
+            color: green;
+        }
+        ul{
+            list-style-type: square;
+        }
+        ul li{
+            color: green;
+        }
+        ul li::marker{
+            color: red;
+            font-size: xx-large;
+
+        }
+        .new::selection{
+            color: red;
+            background-color: yellow;
+        }
+        .new{
+            /* user-select: all; */
+            /* user-select: none; */
+
+        }
+        h1::before{
+            content:"The";
+            color: red;
+        }
+        h1::after{
+            content: attr(data-myattr);
+            color: orangered;
+
+        }
+        input::placeholder{
+            color: red;
+            opacity: 20%;
+
+        }
+        #file::-webkit-file-upload-button,
+        #file::file-selecter-bottom
+        {
+            background-color: red;
+            padding: 5px;
+            border: 2px solid black;
+
+        }
+        #file::-webkit-file-upload-button:hover,
+        #file::file-selecter-bottam{
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <input type="File" id="File">
+    <ul>
+        <li>One</li>
+        <li>two</li>
+        <li>Three</li>
+    </ul>
+    <h1>Geek</h1>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse accusamus facilis assumenda. Commodi suscipit laudantium placeat vitae non ut soluta ipsum laboriosam? Non laudantium porro quod iste, eius in?</p>
+    <p class="new">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est incidunt modi perspiciatis repudiandae at obcaecati accusantium illum quia sequi animi voluptas commodi maxime, dignissimos sunt praesentium laboriosam. Earum, quos reiciendis!
+    </p>
+    <h1 align="center" data-myattr="Institute of cyber Security">Geek</h1>
+    <input type="text" placeholder="ABCD">
+</body>
+</html>

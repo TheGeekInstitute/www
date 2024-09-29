@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Orders | OwnOnlineShop</title>
+    <link rel="shortcut icon" href="../Images/Assets/Orders.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Images/Brands/Logo.png" alt="logo image">
+            </div>
+            <div class="nav-menu">
+                <a href="./index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Pages</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="cart-navigation">
+                <form action="">
+                    <input type="text" onclick="show()">
+                    <button id="searchbtn" type="submit">
+                        <i class="fa-light fa-magnifying-glass"></i></button>
+                </form>
+                <div class="suggestion-box">
+                    <div class="suggestion_list">
+                        <a href="#">Samsung Galaxy Ultra Pro Max Legendry</a>
+                        <a href="#">iphone 14 Pro</a>
+                        <a href="#">Motorola Edge</a>
+                        <a href="#">Samsung Galaxy S22 Ultra Pro Max</a></li>
+                        <a href="#">Macbook Air</a>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                    <a href="./cart.html"><i class="fa-light fa-cart-shopping"></i></a>
+                    <p class="items-count">3</p>
+                </div>
+                <div class="user-profile">
+                    <a class="user-icon" href="./login.html"><i class="fa-light fa-user"></i></a>
+
+                    <div class="profile-dropdown">
+                        <ul class="profile-dropdown_list">
+                            <li>Hi Neeraj</li>
+                            <li><a href="./profile.html">Profile Setting</a></li>
+                            <li><a href="./account.html">Change Password</a></li>
+                            <li><a href="./login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="orders-container">
+            <h2>My Orders</h2>
+            <div class="orders_status">
+                <button class="orders-status-active">All</button>
+                <button>Delivered</button>
+                <button>Shipped</button>
+                <button>Cancelled</button>
+                <button>Processing</button>
+            </div>
+            <div class="orders">
+                <!-- order starts -->
+                <div class="order">
+                    <section class="order-image">
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <button>ownload Invoice</button>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+                <!-- order starts -->
+                <div class="order">
+                    <section>
+                        <p>ID:1234567899999999</p>
+                        <img src="../Images/Products/laptop.jpg" alt="">
+                    </section>
+                    <section>
+                        <h3>Samsung Galaxy Notebook</h3>
+                        <p>Qty : 2</p>
+                        <p>Rs. 68959</p>
+                    </section>
+                    <section>
+                        <h3>Status</h3>
+                        <p class="green">Delivered</p>
+                    </section>
+                    <section>
+                        <h3>Delivery Date</h3>
+                        <p class="timestamp">17:15:52 PM</p>
+                        <p>24 September 2022</p>
+                        <!-- cancel section starts -->
+                        <form action="">
+                            <button type="submit" class="cancel_btn">Cancel Order</button>
+                        </form>
+                        <!-- cancel section ends -->
+                    </section>
+                </div>
+                <!-- order ends here -->
+            </div>
+        </div>
+    </main>
+    <!-- Footer  Starts-->
+    <footer>
+        <div class="footer-hero">
+            <div class="about-footer">
+                <h2>Easter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus adipisci nostrum voluptatibus
+                    porro dignissimos qui doloremque, fugit minima id voluptate?</p>
+            </div>
+            <div class="service-footer">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Deals in Devices</a></li>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Health</a></li>
+                </ul>
+            </div>
+            <div class="Cateogaries-footer">
+                <h2>Cateogaries</h2>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Refurbished Devices</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Decoration</a></li>
+                    <li><a href="#">Beauty Products</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <ul>
+                    <h2>Contact Us</h2>
+                    <li><a href="mailto:mrabraham@thegics.in"> <i class="fa-solid fa-envelope"></i> Email US</a></li>
+                    <li><a href="tel:8447377952"> <i class="fa-solid fa-phone"></i> Call Us</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-house-chimney-crack"></i> Kapashera New Delhi</a></li>
+                </ul>
+                <div class="contact-social">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://wa.me/8447377952"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <p>Copyright &copy; 2022 | Created By <a href="https://www.thegics.in/" target="_blank">Gics</a></p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+    <script>
+        const suggbox = document.querySelector('.suggestion-box');
+        function show() {
+            suggbox.classList.toggle('active-box');
+        }
+        const userIcon = document.querySelector('.user-icon');
+        const profileDropdown = document.querySelector('.profile-dropdown');
+        userIcon.addEventListener('mouseover', () => {
+            profileDropdown.classList.add('active-profile-dropdown');
+        })
+        document.body.addEventListener('click', () => {
+            profileDropdown.classList.remove('active-profile-dropdown');
+        })
+
+    </script>
+</body>
+
+</html>

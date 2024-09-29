@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain{
+            margin: auto;
+            display: flex;
+            height: 500px;
+            /* width: 1200px; */
+            overflow: hidden;
+            border: 2px solid black;
+        }
+
+        img{
+            width: 400px;
+        }
+        
+       
+    </style>
+</head>
+<body id="body">
+    <button id="btn"><</button>
+    <button id="btn2">></button>
+    <div class="contain">
+        <img src="https://m.media-amazon.com/images/I/71+17bVYHxL.jpg" alt="" class="image1" style="width: 650px;">          
+        <img src="https://i.pinimg.com/originals/6e/7d/7d/6e7d7d9e8ec562183536cf409c786058.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/51jIvKOEZeL.jpg" alt="" class="heart">
+        <!-- <img src="../../web/images/11.jpg" alt=""> -->
+
+        <img src="https://m.media-amazon.com/images/I/71+17bVYHxL.jpg" alt="" class="image1">          
+        <img src="https://i.pinimg.com/originals/6e/7d/7d/6e7d7d9e8ec562183536cf409c786058.jpg" alt="">
+        <!-- <img src="https://m.media-amazon.com/images/I/51jIvKOEZeL.jpg" alt=""> -->
+        <img src="../../web/images/11.jpg" alt="">
+
+
+    </div>
+
+    <script>
+        let btn1 = document.querySelector("#btn")
+        let btn2 = document.querySelector("#btn2")
+        let contain = document.querySelector(".contain")
+        let body = document.querySelector("#body")
+        let heart = document.querySelector("heart")
+        btn1.addEventListener('click',()=>{
+            contain.scrollBy(-3500,0)
+            body.style.backgroundColor="orangeRed"
+            if(contain.classList==contain.children){
+                console.log("hello")
+            }
+
+        })
+
+        btn2.addEventListener('click',()=>{
+            contain.scrollBy(500,0)
+            body.style.backgroundColor="lightGreen"
+            // heart.style.width="650px";
+
+
+
+        })
+
+    </script>
+</body>
+</html>

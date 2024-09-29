@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p::first-letter{
+            color: aqua;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        
+        .box h1::after{
+            content: " name" ;
+            font-size: 80px;
+            color: red;
+        }
+
+        .box h1::before{
+            content: "instuite ";
+            color: aqua;
+            font-size: 80px;
+            /* user-select: all; */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae repellat error voluptas, officia similique corrupti accusantium odit sit! Ratione tempora quo dignissimos nihil, ipsum repudiandae consectetur expedita omnis aliquam labore!
+        </p>
+        <h1>geek</h1>
+        
+    </div>
+</body>
+</html>

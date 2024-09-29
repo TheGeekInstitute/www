@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Object</title>
+
+</head>
+<body>
+    
+    <script>
+        let array=["Amit",'Sumit','Ravi',"Ankit",'Bablu',"Sumit"];
+        
+        
+        let obj={
+            name:"Amit",
+            age:25,
+            gender:"Male",
+            salary:4500.00
+        }
+
+
+        // for(data of array){
+        //     document.write(data + "<br>");
+        // }
+
+        // for(index in obj){
+        //     document.write(index + " -> " + obj[index] +"<br>")
+        // }
+
+
+        let aryObj=[
+            {name:"Amit",age:25,gender:"Male"},
+            {name:"Ravi",age:26,gender:"Male"},
+            {name:"Sumit",age:27,gender:"Male"}
+        ];
+
+        // console.table(aryObj)
+
+        for(obj of aryObj){
+            for(index in obj){
+                // console.log(index)
+                document.write(index + " -> " + obj[index] + "<br>")
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>moving word</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            list-style-type: none;
+            text-decoration: none;
+        }
+        body {
+            background-image: url(https://th.bing.com/th/id/OIP.8FvtoZhBBVjVFp-MwzuXigHaEo?pid=ImgDet&w=1600&h=1000&rs=1);
+        }
+        .nav{
+            color: #fff;
+            height: 10vh;
+        }
+        a{
+            color: #fff;
+            margin-left: 70px;
+        }
+        span{
+            color: rgb(5, 250, 37);
+            font-size: 30px;
+             font-family: 'DynaPuff', cursive;
+            
+        }
+        .nav, .nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav ul li a{
+            margin: 6px;
+            color: #ffff;
+            margin-right: 30px;
+        }
+        .nav ul li a:hover{
+            color: rgb(4, 245, 4);
+        }
+
+        .read{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px;
+        font-size: 15px;
+        background-color:  #ccbebe;
+        margin-left: -20px;
+      }
+    .read li a {
+        /* border: 1px solid black; */
+        border-radius: 6px;
+        padding: 15px;
+       list-style: none;
+       color: black;
+       background-color:#ffff;
+       transition: all .5s linear;
+    }
+    .read li a:hover{
+        box-shadow: 2px 2px 4px green;
+        background-color: black;
+        color: #fff;
+    }
+   .code{
+        color: red;
+        font-size: 25px;
+        align-items: center;
+        cursor: pointer; 
+    }
+     .linux{
+        color: rgb(253, 3, 128);
+         font-size: 25px;
+    }
+    .windo{
+        color: blue;
+         font-size: 25px;
+    }
+    .google{
+        color: rgb(253, 28, 3);
+         font-size: 25px;
+    }
+    .apple{
+        color:rgb(2, 253, 2) ;
+         font-size: 25px;
+    }
+    .gol{
+        color: rgb(4, 173, 240);
+         font-size: 25px;
+    }
+        .hero{
+            opacity: 0.7;
+            color: #fff;
+            padding: 70px;
+            margin-bottom: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero h1{
+            font-size: 50px;
+            padding: 10px;
+        }
+        p{
+            padding: 15px;
+        }
+        .btn{
+            padding: 11px;
+            width: 130px;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: rgb(2, 250, 35);
+            border-radius: 9px;
+            transition: all linear 5s;
+        }
+        .btn:hover{
+            box-shadow: 2px 2px 4px green;
+            background-color: black;
+            color: red;
+        }
+
+        .services{
+            background-color: black;
+            color: #fff;
+            height: 70vh;
+            cursor: grab;
+        }
+        .app{
+            display: flex;
+        }
+        .three{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 35px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(49, 46, 46, 0.658);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all .5s linear;
+        }
+        .three p{
+            text-align: justify;
+        }
+        .head h1{
+            color: #fff;
+        }
+        .head{
+            color: black;
+            padding: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .three:hover{
+            background-color: rgb(197, 58, 58);
+            box-shadow: 4px 4px 6px white;
+        }
+        .app i{
+            color: rgb(11, 245, 69);
+            font-size: 45px;
+            cursor: not-allowed;
+
+        }
+        .main{
+            height: 70vh;
+            background-color: rgb(186, 247, 226);
+            display: flex;
+
+
+        }
+        .heading{
+            text-align: center;
+        }
+        .card{
+            width: 300px;
+            height: 55vh;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(0, 255, 34);
+            border-radius: 2vh;
+            box-shadow: 3px 3px 4px gray;
+            transition: all .5s linear;
+        }
+        .card:hover{
+            box-shadow: 4px 4px 6px red;
+        }
+        .social i:hover{
+            background-color:#fff;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black      }
+        .img{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            margin: 4vh 4vh 1vh 4vh;
+            box-shadow: 2px 2px 3px grey;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+            transition: all .5s linear;
+            
+        }
+        .img:hover{
+            box-shadow: 2px 2px 2px red;
+        }
+        .name{
+            font-family: 'DynaPuff', cursive;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px ,2px 2px 3px grey ;
+            font-size: 4vh;
+            margin-bottom: 1vh;
+        }
+
+        .about{
+            font-family: 'Chivo Mono', monospace;
+            letter-spacing: -1px;
+            word-spacing: -3px;
+            font-weight: 600;
+            /* text-shadow: 1px 1px 1px grey; */
+            margin-bottom: 2vh;
+            text-align: justify;
+            margin: 1vh 3vw;
+        }
+        .social{
+            display: flex;
+        }
+        .card .social a i{
+            font-size: xx-large;
+            padding: 4px;
+            font-size: 2.6rem;
+        }
+        .social .fb{
+            color: blue;
+            margin-left: -60px;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+
+        }
+        .social .ig{
+            color: rgb(184, 14, 184);
+            margin-left: -60px;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .social .tw{
+        color: rgba(0, 255, 255, 0.842);
+        margin-left: -60px;
+        cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+
+        .social .li{
+            color: rgb(49, 49, 235);
+            margin-left: -60px;
+            cursor: not-allowed;
+        }
+        .social{
+            text-shadow: 1px 1px 2px grey;
+            /* font-weight: 900; */
+        font-style: italic;
+    }
+        .cnt{
+            background-color:rgba(255, 255, 255, 0.753);;
+            height: 70vh;
+        }
+        .karan{
+            padding: 15px;
+            display: flex;
+        }
+         input[type=text]{
+            padding: 10px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+        }
+          .box .sub{
+            width: 670px;
+        }
+        .box .mg{
+            width: 650px;
+            padding: 30px;
+        }
+        .box{
+            margin-left: 270px;
+        }
+        .bottom i{
+            color: black;
+            padding: 10px;
+            font-size: 25px;
+        }
+        .bottom{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .box a{
+            background-color: rgb(12, 145, 34);
+            border: 1px solid  rgb(12, 145, 34);
+            color: black;
+            padding: 10px;
+            margin-left: 20px;
+            border-radius: 5px;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .box a:hover{
+            background-color: rgb(3, 252, 36);
+        }
+        .footer{
+            height: 8vh;
+            background-color: navy;
+        }
+        .last{
+            color: #fff;
+            text-align:center ;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .last span{
+            font-size: 20px;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: greenyellow;
+        }
+        .orange{
+            color: orangered;
+        }
+        .blue{
+            color: blue;
+        }
+        .full:hover{
+            box-shadow: 3px 3px 3px red;
+        }
+        .email:hover{
+            box-shadow: 3px 3px 3px red;
+        }
+        .sub:hover{
+            box-shadow: 3px 3px 3px red;
+        }
+        .mg:hover{
+            box-shadow: 3px 3px 3px red;
+        }
+    </style>
+<body>
+    <div class="top">
+        <marquee  direction="left" scrolldelay="0.5"><h1><span class="red">Congratulations on getting placed in Hexaware Technologies:</span> <span class="green">Present the main subject of the website to kyour xisitors.</span>. <span class="orange">A collection of web pages and raleated contect that is identified by a common domain name .</span><span class="blue">Published on at least one web server.</span></h1></marquee>
+    </div>
+    <nav>
+    <div class="nav">
+        <a href="#">+<span>+</span></a>
+        <ul>
+            <li><a href="#" class="sub">LANGUAGES</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">TEST</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="hero">
+        <h3>Hello, my name is</h3>
+        <h1>KARAN CHANDRA <BR>POKHRIYAL</BR></h1>
+        <P>Trust me, I'm user friendly.<span>Are you an error? Let me catch you.</span></P>
+        <button class="btn">Hire me</button> <input type="text" placeholder="Eg.Linux" class="box">
+    </div>
+    <div class="read">
+        <li><a href="#"><i class="fa fa-code code" aria-hidden="true"></i>programming</a></li>
+        <li><a href="#"><i class="fa fa-linux linux" aria-hidden="true"></i> Linex</a></li>
+        <li><a href="#"><i class="fa fa-windows windo" aria-hidden="true"></i> windows</a></li>
+        <li><a href="#"><i class="fa fa-google-plus-square google" aria-hidden="true"></i> Networking</a></li>
+        <li><a href="#"><i class="fa fa-check-circle gol" aria-hidden="true"></i> cyber security</a></li>
+        <li><a href="#"><i class="fa fa-android apple" aria-hidden="true"></i>   Android</a></li>
+        </div>
+    
+
+    <section1>
+        <div class="services">
+            <div class="head">
+            <h1>My Services</h1>
+            <span>what i provide</span>
+        </div>
+        <div class="app">
+            <div class="three">
+                <i class="fa fa-users us" aria-hidden="true"></i>
+                <h1>Web App Penetration Testing</h1>
+                <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+            </div>
+            <div class="three">
+                <i class="fa fa-android an" aria-hidden="true"></i>
+            <h1>Android App Penetration testing</h1>
+                <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+            </div>
+            <div class="three">
+                <i class="fa fa-apple ap" aria-hidden="true"></i>
+            <h1>IOS App penetration testing</h1>
+                <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+            </div>
+        </div>
+        </div>
+    </section1>
+    <section>
+        <section>
+            <div class="main">
+                <!-- <div class="heading">
+                    <h1>My Services</h1>
+                    <span>what i provide</span>
+                </div> -->
+                <div class="card">
+
+                    <img src="https://nihal-priyadarshi.github.io/My_Links/type%201/images/GeeksForGeeks.jpg" alt="Image" class="img">
+                    <h1 class="name">KARAN CHANDRA</h1>
+                    <p class="about">Security Analyst I Penetration tester and Ethical Hacker</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/@karanpokhriyal5">
+                            <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                            <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                            <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://in.linkedin.com">
+                            <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                    </div>
+                                    
+                    <div class="card">
+                        <img src="https://yt3.ggpht.com/a/AATXAJxQKhmniaiZAcTFIka6Xn80x3d9e1uteOB4uQ=s900-c-k-c0xffffffff-no-rj-mo" alt="Image" class="img">
+                        <h1 class="name">MANISH CHANDRA </h1>
+                        <p class="about">Security Analyst I Penetration tester and Bugs finder.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com">
+                                <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                                <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com">
+                                <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://in.linkedin.com">
+                                <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://yt3.ggpht.com/a/AATXAJx-9Na-6tq91QbfQsY0G-D56MiqrZ8VWKr9SA=s900-c-k-c0xffffffff-no-rj-mo" alt="Image" class="img">
+                            <h1 class="name">KRISHAN CHANDRA </h1>
+                            <p class="about">Security Analyst I Penetration tester Malware Anallyst.</p>
+                            <div class="social">
+                                <a href="https://www.facebook.com">
+                                    <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                                    <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com">
+                                    <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://in.linkedin.com">
+                                  <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </section>
+    <div class="cnt">
+        <div class="karan">
+            <div class="bottom">
+                <h2>Get in Touch</h2>
+                <i class="fa fa-user" aria-hidden="true"></i><br>
+                Name:Karan chandra Pokhriyal <br>
+                <i class="fa fa-map-marker" aria-hidden="true"></i><br>
+                Address:Almora Uttarakhand <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i><br>
+                Email:karanchandra256@gmail.com
+            </div>
+        <div class="box">
+            <div class="input">
+                <h4>Massage me</h4>
+                <input type="text" class="full " placeholder="Full Name" >
+            <!-- <input type="text" class="name" placeholder="Name"> -->
+            <input type="text" class="email" placeholder="Email"><br>
+            <input type="text" class="sub" placeholder="Subject"><br>
+            <input type="text" class="mg" placeholder="Massage...."> <br><br>
+            <a href="./124.html">Send Massage</a>
+        </div>
+        </div>
+    </div>
+    <section4>
+    <div class="footer">
+        <div class="last">
+            <p>Created By <span>Team SudoFLAWS</span> | 2021 All right reserved.</p>
+        </div>
+    </div>
+</section4>
+</body>

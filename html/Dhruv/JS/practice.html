@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+
+    .box{
+        display: flex;
+        height: 300px;
+        border: 2px solid red;
+        justify-content: space-between;
+        /* background-color: black; */
+    }
+
+    .boxes,.icon{
+        border: 2px solid red;
+        height: 150px;
+        width: 150px;
+    }
+    .check{
+        font-size: 40px;
+    }
+
+</style>
+
+</head>
+<body>
+    
+<div class="box">
+    <div class="boxes">A</div>
+    <div class="boxes">B</div>
+    <div class="boxes">C</div>
+    <div class="boxes">D</div>
+    <div class="icon"><i class="fa-solid fa-check check"></i></div>
+</div>
+
+<script>
+    let add = document.createElement("div")
+    let text = document.createTextNode("E")
+    add.setAttribute("class","boxes")
+    add.appendChild(text)
+
+
+    let box = document.querySelector(".box");
+    box.appendChild(add);
+
+    add.insertBefore(boxes)
+
+    document.querySelectorAll(".icon").addEventListener('click',function(){
+
+
+
+    })
+
+</script>
+
+
+</body>
+</html>

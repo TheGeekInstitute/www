@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            height: 90vh;
+            width: 100vw;
+            background-color: yellow;
+            /* grid-area: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr; */
+            grid-template-columns:  1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+
+        }
+        .items{
+            text-align: center; 
+            transition: transform .7s linear;
+            overflow: hidden;
+        }
+        .items:hover{
+            background-blend-mode: overlay;
+            
+        }
+        .caption-wr{
+           height: 150%;
+           width: 100%;
+            padding-top:20vh;
+            transform: translateY(-60vh);
+            transition: transform .3s;
+            /* font-size: 2.3em; */
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .caption-wr h1{
+            margin: .6em;
+        }
+        
+         .items:hover  .caption-wr{
+            background-color: rgba(73, 74, 80, 0.534);
+            transform: translateY(-10vh);
+        } 
+        .items1{
+            /* background-color: aqua; */
+            background-image: url(https://5.imimg.com/data5/NK/QD/MY-7688301/combo-offer-for-house-hold-items-500x500.jpg);
+
+        }
+        .items2{
+            grid-row: 1 / span 2;
+            /* background-color: #000; */
+            grid-column: 2;
+            background-image: url(https://rukminim2.flixcart.com/image/450/500/xif0q/shoe/z/n/r/6-410-boot-for-men-waan-black-original-imagnzdhns4heugy.jpeg?q=90&crop=false);
+        }
+        .items3{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBt3OJRkMfEl2cV4ELNmx-3yxmiKoIyQg8xg&usqp=CAU);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .items4{
+            grid-row: 1 / span 2;
+            /* background-color: green; */
+            grid-column: 4;
+            background-image: url(./grocery.png);
+            background-size: 105%;
+            background-repeat: no-repeat;
+        }
+        .items5{
+            grid-row: 2 / span 2;
+            /* background-color: red; */
+            grid-column: 1;
+            background-image: url(https://img.freepik.com/free-vector/realistic-gold-silver-jewelry-display-black-mannequins-stands-grey-surface_1284-9644.jpg?w=740&t=st=1688216169~exp=1688216769~hmac=b1361b8d0b993e2ff4078f5b20e81f2a07128bcdaad85fd33866703e9f33dc6b);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .items6{
+            grid-row: 2 / span 2;
+            /* background-color: blue; */
+            grid-column: 3;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/638/601/313/lipstick-shadows-black-background-brush-cosmetics-hd-wallpaper-preview.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .items7{
+            background-image: url(https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/edu/art/5c9deaf2549db.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .items8{
+           background-image: url(https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">
+            <div class="caption-wr">
+                <h1>Electronics</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items2"  >
+            <div class="caption-wr">
+                <h1>Foot wear's</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items3">
+            <div class="caption-wr">
+                <h1>Dress's</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items4">
+            <div class="caption-wr">
+                <h1>Grocery's</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items5">
+            <div class="caption-wr">
+                <h1>Jwellery's</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items6">
+            <div class="caption-wr">
+                <h1>Beauty Products</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items7">
+            <div class="caption-wr">
+                <h1>Stationary</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+        <div class="items items8">
+            <div class="caption-wr">
+                <h1>Toys's</h1>
+                <p>Click here for our recommendation</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

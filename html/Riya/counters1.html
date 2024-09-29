@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .counters{
+            counter-reset: section;
+        }
+        h1::before{
+            /* content: counter(section,lower-greek) " "; */
+            content: counter(section) " ";
+            counter-increment: section;
+            color: white;
+            background-color: blueviolet;
+            border-radius: 10px;
+            margin-right: 10px;
+
+        }
+        h1{
+            counter-reset: sub-section;
+        }
+        h2{
+            text-indent: 100px;
+            counter-reset: sub-sub-section;
+        }
+        h2::before{
+            content:counter(section) "." counter(sub-section) " ";
+            color: blueviolet;
+            counter-increment: sub-section;
+        }
+        h3{
+            text-indent: 150px;
+        }
+        h3::before{
+            content:counter(section) "." counter(sub-section) "." counter(sub-sub-section) " " ;
+            color: blue;
+            counter-increment: sub-sub-section;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="counters">
+        <h1>Web Development</h1>
+        <h2>HTML</h2>
+        <h3>Table</h3>
+        <h3>Sementic</h3>
+        <h3>Forms</h3>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+        <h1>Programming</h1>
+        <h2>Java</h2>
+        <h2>Python</h2>
+        <h2>C/C++</h2>
+        <h1>Ethical Hacking</h1>
+        <h2>Black Arch</h2>
+        <h2>Pentoo</h2>
+        <h2>Kali Linux</h2>
+    </div>
+    
+</body>
+</html>

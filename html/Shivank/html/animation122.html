@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        @keyframes car {
+            0%{
+                
+            }
+            
+            100%{
+                
+            left: 120vw;
+                
+            }
+            
+        } 
+        @keyframes car2 {
+            0%{
+                
+            }
+            
+            100%{
+                
+            right: 120vw;
+                
+            }
+            
+        } 
+        
+        
+        body{
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            overflow-x: hidden;
+            background-image: url("https://media.istockphoto.com/id/1159550975/photo/new-asphalt-roads-trees-under-blue-sky-and-white-clouds.jpg?s=612x612&w=0&k=20&c=COfOy7GPu_azjLaDe2rKhPpKn_NOCfMYpc49L23SVsQ=");
+            background-size: cover;
+        }
+        /* .road {
+            
+        } */
+        .car{
+            height: 200px;
+            width: 400px;
+            position: relative;
+            z-index: 150;
+            /* bottom: 100px; */
+            margin-top: 500px;
+            animation-name:car ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black);
+            left: -320px;         
+            
+        }
+        .car2{
+            /* transform: rotatey(180deg); */
+            position: absolute;
+            height: 500px;
+            width: 600px;
+            /* margin-top: 700px; */
+            bottom: 200px;
+            right: -320px; 
+             animation-name:car2 ;
+             animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black);
+
+
+        }
+
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="road">
+        
+        <!-- <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="" class="newcar"> -->
+
+        <img src="https://cdnb.artstation.com/p/assets/images/images/045/373/169/original/chutney-glaze-plane.gif?1642566562f" alt="" class="car">
+        <!-- <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="" class="car2"> -->
+        <div class="car2">
+            <img src="https://media2.giphy.com/media/UtiGKkOh1xyo9Ix8V0/giphy.gif?cid=6c09b9522zmg84bbloclraz9pejrwvyimttvlt83202b0x80&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

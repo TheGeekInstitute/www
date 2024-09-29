@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+<style>
+.box{
+    counter-reset: section;
+}
+
+h1::before{
+    content: counter(section) ". ";
+    color: red;
+    counter-increment: section;
+}
+
+
+h2{
+    text-indent: 30px;
+    counter-reset: sub-sub-section;
+}
+
+
+
+h1{
+    counter-reset: sub-section;
+}
+
+h2::before{
+    content:counter(section) "." counter(sub-section) " ";
+    color: blue;
+    counter-increment: sub-section;
+}
+
+h3{
+    text-indent: 60px;
+}
+
+h3::before{
+    content: counter(section) "." counter(sub-section) "." counter(sub-sub-section) ". ";
+    color: green;
+    counter-increment: sub-sub-section;
+}
+</style>
+
+</head>
+
+<body>
+<div class="box">
+    <h1>One</h1>
+        <h2>One.one</h2>
+            <h3>One.One.One</h3>
+            <h3>One.One.Two</h3>
+            <h3>One.One.Three</h3>
+        <h2>One.Two</h2>
+        <h2>One.Three</h2>
+    <h1>Two</h1>
+        <h2>Two.one</h2>
+            <h3>Two.One.One</h3>
+            <h3>Two.One.Two</h3>
+            <h3>Two.One.Three</h3>
+        <h2>Two.Two</h2>
+        <h2>Two.Three</h2>
+    <h1>Three</h1>
+        <h2>Three.one</h2>
+        <h2>Three.Two</h2>
+        <h2>Three.Three</h2>
+</div>
+
+</body>
+</html>

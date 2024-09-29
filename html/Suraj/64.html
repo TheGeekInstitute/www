@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            height: 70px;
+        }
+        .nav ul{
+            list-style-type: none;
+            float: right;
+            padding-top: 20px ;
+        }
+        .nav ul li{
+            display: inline;
+        }
+        .nav ul li a{
+            margin-right: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: x-large;
+        }
+
+        .nav ul li a:hover{
+            color: aqua;
+        }
+        
+
+        .sidebar{
+            background-color: rgb(159, 159, 255);
+            width: 250px;
+            height: 705px;
+        }
+
+        .sidebar a{
+            text-decoration: none;
+            color: blue;
+            display: block;
+            height: 30px;
+            font-size: x-large;
+        }
+
+        .sidebar a:hover{
+            background-color: rgb(142, 250, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar">
+        <a href="#">New</a>
+        <a href="#">Latest</a>
+        <a href="#">Old</a>
+        <a href="#">History</a>
+    </div>
+</body>
+</html>

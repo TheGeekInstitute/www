@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            width: 350px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 175px);
+            transform-style: preserve-3d;
+        }
+        .container .card{
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all.3s linear;
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 100%;
+            width: 100%;
+            /* line-height: 200px; */
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px black;
+        }
+        .container .card .front{
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/158/122/422/anime-anime-boys-jujutsu-kaisen-yuji-itadori-sakuna-hd-wallpaper-preview.jpg);
+            font-size:80px;
+            text-align: center;
+            color:darkred;
+            -webkit-text-stroke: 1px black;
+        }
+        .container .card .back{
+            transform: rotateY(180deg);
+            font-size: 80px;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/830/235/595/jujutsu-kaisen-gojo-satoru-hd-wallpaper-preview.jpg);
+            background-size: cover;
+            color:black;
+            -webkit-text-stroke: 1px white;
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card"><div class="front">SAKUNA</div>
+        <div class="back">GOJO</div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            
+                 
+            }
+            .container{
+            border: 1px solid black;
+            width: 20rem;
+            margin: 150px auto;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 3px;
+            box-shadow: 3px 3px black;
+            background-image:url(https://i.stack.imgur.com/jGlzr.png);
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form label{
+            /* border: 1px solid black; */
+            display: block;
+            width: 75%;
+            text-align: left;
+            font-size: large;
+            margin: 3px 0;
+        }
+
+        .container form input,
+        .container form select{
+            width: 75%;
+            margin: 2px 0;
+            border: 1px solid darkblue;
+            padding: 2px 5px;
+            height: 2rem;
+            border-radius: 3px;
+            outline: transparent;
+            border-width: 1px 1px 3px 1px;
+            box-shadow: 3px 3px black;
+
+        }
+
+        .container form input[type="submit"]{
+            width: 10rem;
+            margin-top: 10px;
+            background-color:black;
+            color: white;
+            font-size: large;
+            font-weight: 300;
+            cursor: pointer;
+        }
+
+        .container .error{
+        
+            height: 2rem;
+            
+        }
+
+        .error p{
+            font-size: large;
+            line-height: 2rem;
+            color: red;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Registration</h1>
+        <div class="error">
+
+        </div>
+        <form action="" method="POST">
+            <label for="">FullName</label>
+            <input type="text" name="fullname">
+            <label>Username</label>
+            <input type="text" name="username">
+
+            <label for="">Gender</label>
+            <select name="gender" id="">
+                <option value="">Choose</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label>Email</label>
+            <input type="email" name="email">
+
+            <label for="">Password</label>
+            <input type="password" name="password" id="">
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index me</title>
+    <style>
+        img{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+        }
+
+         #one{
+          top: 0px;
+          left: 0px;
+          z-index: 10;
+        }
+
+        #two{
+            top: 50px;
+            left: 50px;
+            z-index: 9;
+            
+        }
+
+        #three{
+            top: 100px;
+            left: 100px;
+            z-index: 11; 
+        }
+    </style>
+</head>
+<body>
+    <img src="../web/images/13.png" id="one">
+    <img src="../web/images/14.jpg" id="two">
+    <img src="../web/images/15.jpg" id="three">
+    
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+ ul{
+    font-size: 20px;
+    font-weight: 900;
+
+}
+    
+ul li:first-child{
+    /* color: red; */
+
+}
+ul li:last-child{
+    /* color: purple; */
+
+}
+ul li:first-of-type{
+    /* color: green; */
+}
+ul li:last-of-type{
+    /* color: orange; */
+}
+ul li:nth-child(8){
+    /* color: red; */
+}
+ul li:nth-last-child(4){
+    /* color: purple; */
+
+}
+ul li:nth-last-of-type(3){
+
+    /* color: brown; */
+
+}
+ul li:nth-of-type(5){
+    /* color: blue; */
+
+}
+ul li:nth-last-child(4){
+    /* color: orange; */
+}
+div p:first-of-type{
+    /* color: blue; */
+    
+}
+div p:last-of-type{
+    /* color: green; */
+
+}
+div p:last-child{
+    /* color: purple; */
+}
+div p:first-of-type{
+    /* color: red; */
+}
+div:empty{
+    border: 2px solid orangered;
+    height: 20px;
+
+
+}
+div:not(:empty){
+    border: 2px solid red;
+}
+    
+:root{
+--my-color:rgb(255, 71, 47);
+--width:100px;
+}
+:target{
+    background-color: var(--my-color);
+}
+
+   </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+<div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est harum eaque natus, dolores eveniet doloremque maiores ipsam aliquam dolorem, temporibus,</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda ipsa illum, minus repellendus nostrum alias voluptates deleniti ipsum eum </p>
+        <p> 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde officiis fugit ducimus adipisci necessitatibus perspiciatis? Soluta provident velit nulla, reprehenderit mollitia voluptas libero ullam est, temporibus commodi repellendus laudantium id.</p>
+
+
+    </div>
+    <br>
+    <div></div> 
+    <br>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eaque labore necessitatibus commodi aliquid eos voluptas nobis provident tenetur inventore odio, a, fugiat officiis veniam obcaecati velit! Ipsam, explicabo iure.</div>
+  <ul>
+<li><a href="#ch1">Chapter1</a></li>
+<li><a href="#ch2">Chapter2</a></li>
+<li><a href="#ch3">chapter3</a></li>
+<li><a href="#ch4">chapter4</a></li>
+  </ul>
+  <p id="ch1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae molestias iste numquam! Tempore earum nesciunt culpa dignissimos atque accusamus at, dicta cupiditate, vitae odit vel officia sapiente dolores itaque! </p>
+
+  <p id="ch2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae molestias iste numquam! Tempore earum nesciunt culpa dignissimos atque accusamus at, dicta cupiditate, vitae odit vel officia sapiente dolores itaque! </p>
+
+  <p id="ch3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae molestias iste numquam! Tempore earum nesciunt culpa dignissimos atque accusamus at, dicta cupiditate, vitae odit vel officia sapiente dolores itaque! </p>
+
+  <p id="ch4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae molestias iste numquam! Tempore earum nesciunt culpa dignissimos atque accusamus at, dicta cupiditate, vitae odit vel officia sapiente dolores itaque! </p>
+
+</body>
+
+</html>

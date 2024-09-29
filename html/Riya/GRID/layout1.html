@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+
+            display: grid;
+            grid-template-columns: [col1-start] 150px [col1-end col2-start] 1fr [col2-end col3-start] 150px [col3-end];
+            grid-template-rows: [row1-start] 70px [row1-end row2-start] 40px [row2-end row3-start]  1fr [row3-end row4-start] 50px [row4-end] ;
+            gap: 5px;
+
+        }
+
+        .box {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+       
+            grid-area: row1-start / col1-start / row1-end / col3-end;
+
+        }
+
+
+        .box2 {
+            background-color: green;
+            grid-area: row2-start / col1-start / row2-end / col3-end;
+
+          
+
+         
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+       
+        }
+
+        .box4 {
+            background-color: cyan;
+
+        }
+
+        .box5 {
+            background-color: plum;
+        
+
+        }
+
+        .box6 {
+            background-color: crimson;
+            grid-area: row4-start / col1-start / row4-end / col3-end;
+         
+
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+
+        .box9{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Navigation Menu</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">Footer</div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

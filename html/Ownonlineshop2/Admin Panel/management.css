@@ -1,0 +1,19 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: red; */
+}
+.row-second table tr td image{
+    width: 150px;
+}
+.product-image{
+    transition: .5s ease;
+}
+.product-image:hover{
+    transform: scale(2);
+}
+

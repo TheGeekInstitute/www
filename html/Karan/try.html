@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main::first-letter{
+            color: cyan;
+            font-size: 50px;
+        }
+        .main::first-line{
+            color: red;
+        }
+        h1::after{
+            content: " CHANDRA";
+            color: rgb(0, 255, 34);
+        }
+        H1::BEFORE{
+            content: "MR. ";
+            color: blue;
+        }
+        P{
+            user-select: NONE;
+        }
+        h2::after{
+            content: attr(my-data);
+            color: red;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <p class="main">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam provident odio, placeat sequi inventore dolorem commodi omnis blanditiis, amet illo alias facilis quibusdam quidem. Exercitationem sed autem eius deleniti magni?</p>
+    <h1>KARAN</h1>
+    <H2 my-data="who is this ">i am karan </H2>
+</body>
+</html>

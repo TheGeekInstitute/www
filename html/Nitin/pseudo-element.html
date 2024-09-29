@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        .para::first-letter{
+            font-size: x-large;
+            color: red;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: rgb(0, 98, 128);
+        }
+
+        ul li::marker{
+            color: red;
+        }
+
+        .para::selection{
+            background-color: black;
+            color: rgba(86, 194, 202, 0.623);
+        }
+
+        ul li::selection{
+            background-color: black;
+            color: rgba(86, 194, 202, 0.623);
+        }
+
+        
+        
+        
+        .para{
+            /* user-select: all; */
+            /* user-select: none; */
+        }
+
+        h1::before{
+            content: 'The ';
+            color: red;
+        }
+
+        h1:hover::after{
+            content: ' Institute';
+            color: red;
+        }
+
+        input::placeholder{
+            color: red;
+            opacity: 1;
+        }
+
+        input{
+            caret-color: red;
+            accent-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Geek</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nostrum, consequatur animi minus illum ipsam esse minima aliquid enim? Ex eligendi necessitatibus illo sunt recusandae dolores voluptate nobis iste alias!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum ea suscipit veniam provident earum deleniti at, quis iste recusandae unde nam molestiae nobis, id velit cupiditate sapiente? Consequatur, nulla.
+    </p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <input type="text" placeholder="abc123@gmail.com" name="" id="">
+
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+</body>
+</html>

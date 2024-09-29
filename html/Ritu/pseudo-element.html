@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo Element</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .new::first-letter{
+            font-size: 32px;
+            color: red;
+        }
+
+        .new::first-line{
+            color: blue;
+        }
+        .new{
+            color: green;
+            /* width: 100px; */
+            user-select:none;
+
+        }
+
+        h1::after{
+            content: attr(data-myval);
+            color: orangered;
+        }
+        h1::before{
+            content: "The ";
+            color: aqua;
+        }
+
+ul li{
+    color: red;
+}
+
+ul li::marker{
+    color: blue;
+}
+
+ol li{
+    color: red;
+}
+
+ol li::marker{
+    color: blue;
+}
+
+.para::selection{
+    color: yellow;
+    background-color: green;
+}
+
+input::placeholder{
+    color: blue;
+}
+
+input{
+    caret-color: red;
+    /* color: red; */
+}
+
+.box{
+    border: 5px solid black;
+    display: flow-root;
+}
+
+.box img{
+    float: right;
+}
+
+.ne{
+    border: 1px solid red;
+    background-color: red;
+    height: 300px;
+    width: 100px;
+    float: right;
+}
+
+.old{
+    border: 1px solid red;
+    background-color: green;
+    height: 300px;
+    width: 900px;
+    clear: both;
+    
+}
+
+
+    </style>
+</head>
+<body>
+
+    
+    <p class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis excepturi quisquam neque placeat provident deleniti consequuntur. Quibusdam possimus in consequatur minima officia nihil. Molestias illo molestiae dignissimos ad mollitia dolorum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem optio labore odio quod a praesentium tempore et sint. Modi repellat velit, vero ratione consequuntur expedita mollitia adipisci necessitatibus corporis labore.
+    </p>
+
+    <h1 data-myval=" Institute" title="Geek Institute">Geek</h1>
+    <i class="fa-solid fa-comment"></i>
+
+    <ul>
+        <li>Abcd</li>
+        <li>asdas</li>
+        <li>asdas</li>
+    </ul>
+
+    <ol>
+        <li>asd</li>
+        <li>sda</li>
+        <li>asd</li>
+    </ol>
+
+<p class="para">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quibusdam quis tenetur laboriosam enim hic omnis! Eos sed nulla reprehenderit repellendus labore doloribus aperiam a eaque asperiores maiores! Nihil, dolorum?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero harum necessitatibus assumenda rem voluptates labore, aliquid optio porro totam et accusantium velit repellendus ratione laborum, atque tempora ipsum ad iste.
+</p>
+<input type="text" placeholder="Name">
+
+
+<div class="box">
+    <img src="../web/images/1.jpg" alt="">
+</div>
+
+<div class="ne"></div>
+<div class="old"></div>
+</body>
+</html>

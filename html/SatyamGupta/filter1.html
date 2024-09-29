@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter </title>
+
+    <style>
+
+        .main {
+            background-image: url(./images/burger.jpg);
+            border: 2px solid red;
+            margin: 150px auto;
+            height: 20rem;
+            width: 16rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px;
+            color: white;
+            /* filter: blur(2px); */
+        }
+
+ 
+        .main .container{
+            border: 2px solid yellow;
+            backdrop-filter: 2px;
+            height: 5rem;
+            width: 10rem;
+            /* background-color: green; */
+            backdrop-filter: blur(15px);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus velit sed voluptas ex dolorem illo sequi unde dicta, delectus ipsam!</p>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>

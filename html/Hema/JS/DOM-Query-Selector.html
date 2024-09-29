@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+        div.box{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas autem a voluptatum aut, provident officia accusamus temporibus qui repudiandae reiciendis id expedita quaerat quisquam earum consequuntur aliquid laudantium, quo eius.</div>
+
+    <b class="box"> 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quia repudiandae voluptates esse voluptas aperiam quod dolores error atque ex natus nobis quas vero magnam ratione nemo quae velit ullam!</b>
+
+    <p class="box">3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae accusamus in asperiores impedit incidunt similique deserunt esse doloribus dolorem vel, architecto labore facilis aut, vero perferendis laborum repudiandae at velit?</p>
+    <h1 id="heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam modi harum a dolorem voluptate pariatur tenetur hic, quasi doloremque voluptates, illum dolor atque, inventore distinctio rerum. Fugiat molestiae deleniti quia.</h1>
+
+
+    <script>
+        // let heading= document.getElementById("heading").innerText
+        // let heading = document.querySelector("#heading").innerHTML
+
+        // let heading = document.querySelector(".box")
+        let heading = document.querySelectorAll(".box")
+
+
+        console.log(heading)
+    </script>
+</body>
+</html>

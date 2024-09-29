@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .static{
+            border: 2px solid red;
+            position: static;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+        }
+
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: relative;
+            top: 70px;
+            left: 50px;
+        }
+
+        .abs{
+            background-color: green;
+    
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        .fixed{
+            background-color: red;
+            height: 100px;
+            width: 150px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .sticky{
+            background-color: greenyellow;
+            position: sticky;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid velit vero suscipit neque hic praesentium magni nam nostrum magnam ab, veritatis id, exercitationem quae amet fugiat beatae reprehenderit minima consectetur.</div>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <div class="abs">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptas illo. Magnam illum rem autem unde. Earum provident reiciendis, veniam voluptatem eligendi sequi quis animi, facere, voluptatibus sapiente debitis blanditiis?
+    </div>
+
+    <div class="sticky">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur optio quis odit molestiae expedita voluptatem laborum. Officia officiis adipisci, laudantium in, quibusdam eius maxime incidunt, impedit ut consequatur ex repellat.</div>
+
+    <div class="fixed">
+        Fixed DIV
+    </div>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repellat qui officiis corporis animi omnis voluptas amet mollitia illum pariatur aliquam, aliquid odio voluptatum, debitis itaque, modi maxime quos.
+        
+    </p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Animation</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+        }
+
+
+
+        .main::after{
+            content: "";
+            display: inline-block;
+            background-color: red;
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            
+            
+            background-image: linear-gradient(45deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            filter: blur(1000000px);
+            z-index: -1;
+            
+            animation-name: colors;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+        }
+
+        .main{
+        
+            position: absolute;
+      inset: 0;
+            height: 100vh;
+            width: 100vw;
+     
+     
+     
+        }
+
+
+        @keyframes colors {
+            0%{
+                background-position: 10%;
+            }
+
+            25%{
+                background-position: 150%;
+            background-image: linear-gradient(90deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+
+            }
+
+            50%{
+                background-position: 200%;
+                background-image: linear-gradient(135deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+
+            }
+
+            75%{
+                background-position: 250%;
+            background-image: linear-gradient(180deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+
+            }
+
+            100%{
+                background-position: 0%;
+            background-image: linear-gradient(45deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi quas distinctio, excepturi neque sunt reprehenderit voluptas cum, accusamus optio nesciunt adipisci accusantium delectus error quod. Deserunt quia aperiam beatae.
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        }
+
+        .dog{
+            height: 50px;
+            width: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <img src="https://media0.giphy.com/media/Rk2vpkjp446amkIwIz/giphy.gif?cid=6c09b9522tmziner6b998fvgewcxzo2l6o81773dyt00p4u5&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" class="dog">
+
+
+    <script>
+        document.addEventListener("mousemove",(e)=>{
+            let dog=document.querySelector(".dog");
+            // console.log(e.clientX)
+            // console.log(e.clientY)
+            let x = e.clientX;
+            let y = e.clientY;
+
+            dog.style.top = y-(10) +"px";
+            dog.style.left = x-(10) +"px";
+
+
+
+        })
+    </script>
+</body>
+</html>

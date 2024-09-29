@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+     @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   .container{
+            /* border: 1px solid red; */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+
+        }
+        .container .accordion{
+            /* border: 1px solid green; */
+            margin: 5px 0;
+            width: 45rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 1rem;
+            
+        }
+        .accordion label{
+            display: block;
+            background-color: firebrick;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            font-size: 1.5rem;
+            font-weight: 900;
+            user-select: none;
+            /* border-radius: 20px; */
+            
+        }
+        .accordion label i{
+            display: block;
+            transition: all .3s;
+            
+          
+        }
+        .accordion .content{
+            background-color: cyan;
+            padding: .5rem 1rem;
+            font-size: larger;
+            display: none;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="accordion">
+            <label for="btn"  class="heading">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+       
+            <label for="btn1" class="heading">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+        
+            <label for="btn2" class="heading">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+ 
+            <label for="btn3" class="heading">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+   
+            <label for="btn4" class="heading">
+                <p>What is Html ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>  
+            
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste eos quia omnis assumenda debitis cupiditate velit ea dolorum neque iusto enim, accusamus pariatur animi aut perferendis fuga fugit voluptate temporibus?</p>
+            </div>
+        </div>
+        
+        </div>
+</body>
+</html>

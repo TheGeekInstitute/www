@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+<body>
+    <script>
+        let str="This is string";
+
+        console.clear()
+
+        console.log(str.length)
+        console.log(str);
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+        console.log(str.includes("is"))
+        console.log(str.startsWith("T"))
+        console.log(str.endsWith("g"))
+        console.log(str.search("string"))
+        console.log(str.match("s","t"))
+        console.log(str.indexOf("string"))
+        console.log(str.lastIndexOf("string"))
+        console.log(str.replace('string',"rose",str))
+        let r="                  rajan            "
+        console.log(r)
+        console.log(r.trim())
+        console.log(str.charAt(5))
+        console.log(str.charCodeAt(5))
+        console.log(String.fromCharCode(70,71,72,73,74,75))
+        console.log(str.concat(r))
+        console.log(str.split(""))
+        console.log(str.repeat(100))
+        console.log(str.slice(0,8))
+        console.log(str.substring(0,8))
+        console.log(str.substr(0,8))
+        let a=11;
+        console.log(typeof(a.toString()))
+        console.log(str.valueOf())
+
+    </script>
+</body>
+</html>
+
+<!-- 
+String methods:
+    length()
+    toLowerCase()
+    toUpperCase()
+    includes()
+    startsWith()
+    endsWith()
+    search()
+    match()
+    indexOf()
+    lastIndexOf()
+    replace()
+    trim()
+
+
+    
+    charAt()
+    charCodeAt()
+    fromCharCode()
+    concat()
+    split()
+    repeat()
+    slice()
+    substr()
+    substring()
+    toString()
+    valueOf() -->

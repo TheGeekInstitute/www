@@ -1,0 +1,156 @@
+div.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            /* background-color: red; */
+            caret-color: red;
+            outline: transparent;
+            border: 2px solid green;
+        }
+        input[type="text"]::placeholder{
+            color:red;
+        }
+
+        input[type="text"]:placeholder-shown{
+            border: 2px solid red;
+        }
+
+        input[type="checkbox"],input[type="radio"]{
+            accent-color: green;
+        }
+
+        .box{
+            color: green;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+        }
+
+        .abcd{
+         border: 2px solid black;
+         height: 100px;
+         width: 100px;
+         background-color: currentColor;
+        }
+
+        h1{
+            text-decoration: underline overline;
+            text-decoration-color: red;
+            text-decoration-thickness: 10px;
+            /* text-underline-offset: 100px; */
+         
+            color: red ;
+        }
+        
+        .heading{
+            color: blue;
+        }
+        
+        #heading{
+            color: green !important;
+        }
+
+        ul{
+            /* list-style-type: lower-alpha; */
+            /* list-style-image: url(); */
+            list-style-type:"😀 ";
+        }
+
+        ul li::marker{
+            color: red;
+        }
+  
+        /* @supports not (backdrop-filter: blur(2px)){
+            body{
+                background-color: red;
+            }
+        } */
+
+
+        .main{
+            height: 400px;
+            width: 400px;
+            background-image: url("images/1.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .main .a {
+            height: 200px;
+            width: 200px;
+            /* margin: auto; */
+            position: relative;
+            top: 100px;
+            left: 70px;
+            /* margin-top: 200px; */
+            border: 2px solid black;
+            
+        }
+
+        @supports (backdrop-filter: blur(5px)) and (background-color: red){
+            .main .a{
+            backdrop-filter: blur(5px);
+            }
+        }
+        
+        @supports not  (backdrop-filter: blur(5px)){
+            .main  .a{
+                background-color: rgba(0, 0, 0, 0.476);
+            }
+        }
+
+        input[type="file"]{
+            margin-top: 100px;
+        }
+
+        input[type="file"]::file-selector-button{
+            background-color: orange;
+            border: 2px solid red;
+            padding: 5px;
+            border-radius: 5px;
+            transition: all .3s;
+            color: white;
+            font-weight: 900;
+        }
+        input[type="file"]::file-selector-button:hover{
+            background-color: orangered;
+            border: 2px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="dasdad">
+    <input type="radio">
+    <input type="checkbox" name="" id="">
+
+
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aliquam quam ea, distinctio fuga provident id expedita debitis dolor iure! Nihil nemo cum repellat voluptates magni maxime, sint aliquid. Minus?</p>
+        <div class="abcd"></div>
+        <a href="#">ABCD</a>
+    </div>
+
+    <h1 style="color: blueviolet;" class="heading" id="heading">HEadinbg</h1>
+
+
+    <ul>
+        <li>Home</li>
+        <li>about</li>
+        <li>Contact</li>
+    </ul>
+
+
+
+    <div class="main">
+        <div class="a"></div>
+    </div>
+
+    <input type="file">
+
+
+</body>
+</html>

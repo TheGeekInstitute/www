@@ -1,0 +1,39 @@
+<!-- https://jsonplaceholder.typicode.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function(){
+            if(this.status == 200 && this.readyState == 4){
+              let json_data = JSON.parse(this.responseText);
+
+              for(let x of json_data.products){
+                        // console.log(x)
+                        document.write('<img src="'+x.thumbnail+'">')
+
+                // for(let e in x){
+                //     //    document.write(e  + " : " + x[e] + "<br>")
+                //     // console.log(x.thumbnail)
+                    
+                        
+                // }
+              }
+             
+            }
+
+        }
+
+        xhr.open("GET","https://dummyjson.com/products",true);
+        xhr.send();
+    </script>
+</body>
+</html>

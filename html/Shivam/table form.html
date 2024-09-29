@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table forms...</title>
+    <style>
+        *{
+            margin: auto;
+            
+        }
+       input[type=text]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+        transition: width 0.5 ease-in-out;
+       }
+       input[type=date]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        height: 25px;
+        width:165px;
+       }
+       input[type=email]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        height: 25px;
+       }
+       input[type=number]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        height: 25px;
+
+       }
+       input[type=submit]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        font-weight: bold;
+
+       }
+       input[type=reset]{
+        background-color: lightgray;
+        border-style: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        font-weight: bold;
+
+       }
+
+       input[type=text]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+       }
+       input[type=radio]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+       }
+       input[type=email]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+        /* font-weight: bold ; */
+       }
+       input[type=date]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+       }
+       input[type=number]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        /* width: 500px; */
+        height: 25px;
+       }
+       input[type=submit]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+
+       }
+       input[type=reset]:focus{
+        background-color: rgb(120, 120, 120);
+        border-style: none;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+
+       }
+
+
+       /* input{
+        background-color: red;
+
+       } */
+    </style>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <table>
+        <form>
+            <tr>
+                <td>
+                    <label for="first">
+                        First Name :
+                    </label>
+                </td>
+                <td> <input type="text" class="first" >
+                </td>
+            </tr>
+            <tr>
+                <td><label for="last">
+                    Last Name :
+                </label>
+                </td>
+                <td><input type="text" class="last">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date">
+                    Date of Birth :
+                </label>
+                </td>
+                <td><input type="date" class="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="email">
+                    Email :
+               </label>
+            </td>
+            <td><input type="email" class="email">
+            </td>
+            </tr>
+            <tr>
+                <td><label for="number">
+                    Phone NO. :
+                </label>
+            </td>
+            <td><input type="number"  class="number"></td>
+            </tr>
+            <tr><td><br><br>
+                <input type="submit">
+            </td>
+            <td><br><br><input type="reset"></td>
+        </tr>
+        </form>
+    </table>
+   
+</body>
+</html>

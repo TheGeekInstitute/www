@@ -1,0 +1,18 @@
+.dotted{
+
+    border-style: dotted ;
+    border-color: red;
+    
+}
+.solid{
+
+    border:  solid green 
+}
+
+.inset{
+    border-style: inset;
+    
+    border-width: 10px;
+
+    border-color: a0e600;
+}

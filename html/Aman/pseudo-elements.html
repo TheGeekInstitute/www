@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para{
+            color: blue;
+        }
+
+        .para::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+::selection{
+    background-color: red;
+    font-size: xx-large;
+}
+        ul{
+            list-style: lower-alpha;
+        }
+
+        ul li::marker{
+            color: blue;
+        }
+
+        input::placeholder{
+            color: red;
+            opacity: 100%;
+        }
+
+        h1::before{
+            content: 'The ';
+            color: red;
+        }
+
+        h1:hover::after{
+            content: ' Institute Cyber Securty';
+            color:orangered;
+        }
+        .peragraph::first-letter{
+             color: greenyellow;
+             font-size: xx-large;
+        }
+        .peragraph::first-line{
+            color: aqua;
+        }
+        ul li::backdrop{
+            color: red;
+        }
+        ul ol:hover::after{
+            content: 'Addition';
+            /* animation-duration: 2s; */
+            color: orangered;
+
+        }
+    </style>
+</head>
+<body>
+    <p class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, sint eos nostrum consequatur voluptate et id, soluta harum quo ea nulla nesciunt? Ab animi consectetur vel consequuntur ipsum, sint modi.
+    </p>
+
+    <ul>
+      <ol>Aman</ol>
+    </ul>
+
+    <input type="text" placeholder="safsdfsdf">
+
+    <h1>Geek</h1>
+
+ <p class="peragraph">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sunt reprehenderit soluta deleniti quae illo, sapiente, facere tempora aliquid temporibus magni voluptates alias! Asperiores, dolore cum laudantium quos magni incidunt?
+</p>
+    <ul class="new">
+    <ol>Aman</ol>
+    </ul>
+ 
+</body>
+</html>

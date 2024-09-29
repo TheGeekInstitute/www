@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-    width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 250px;
+            margin: auto;
+            margin-top: calc(50vh - 100px);
+            padding: 10px;
+
+        }
+
+        form > label{
+            font-size: large;
+            font-family:'Courier New', Courier, monospace;
+            
+        }
+
+        form > input{
+            border: .1rem solid black;
+            height: 2rem;
+            margin-bottom: 10px;
+            /* outline: 2px; */
+            outline-offset: 2px;
+            
+        }
+
+        form > button{
+            height: 2rem;
+            width: 5rem;
+            background-color: black;
+            color: white;
+            font-size: large;
+            font-family: monospace;
+            outline: none;
+            border: none;
+            margin-top: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Username</label>
+        <input type="text">
+
+        <label for="">Password</label>
+        <input type="password">
+
+        <button id="btn">Sing in</button>
+    </form>
+</body>
+</html>

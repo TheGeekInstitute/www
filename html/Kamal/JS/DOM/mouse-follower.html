@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .pointer{
+            height: 50px;
+            width: 50px;
+            /* display: none; */
+            position: absolute;
+            /* transition: all .1s linear; */
+        }
+    </style>
+</head>
+<body">
+
+    <img src="https://i.pinimg.com/originals/5b/aa/c1/5baac1ceb2e0837e5d9ba8fd8c2320d4.gif" alt="" class="pointer">
+
+    <script>
+        let pointer = document.querySelector(".pointer")
+        document.body.addEventListener("mousemove",(e)=>{
+           let x = e.clientX;
+           let y = e.clientY;
+
+           pointer.style.top=(-30)+y+"px"
+           pointer.style.left=(-50)+x+"px"
+
+           console.log(y)
+
+        })
+    </script>
+
+</body>
+</html>

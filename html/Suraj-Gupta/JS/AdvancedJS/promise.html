@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let myPromise = new Promise((resolve,reject)=>{
+            
+            let a=11;
+            if(a==10){
+                resolve("Done");
+            }
+            else{
+                reject("Failed");
+            }
+
+        });
+
+
+        // myPromise.then((e)=>{
+        //     console.log(e);
+        // }).catch((a)=>{
+        //     console.log(a);
+        // })
+
+        // myPromise.then((e)=>{
+        //     console.log(e);
+        // },(a)=>{
+        //     console.log(a)
+        // })
+
+        // console.log(myPromise)
+
+
+        // myPromise.then((e)=>{
+        //     console.log(e);
+        // }).catch((a)=>{
+        //     console.log(a);
+        // })
+
+        // myPromise.then((e)=>{
+        //     console.log(e);
+        // },(a)=>{
+        //     console.log(a);
+        // })
+
+
+        let promise1 = new Promise((resolve,reject)=>{
+            let a=11;
+            if(a==10){
+                resolve("Promise1 Success");
+            }
+            else{
+                reject("Promise1 Failed");
+
+            }
+        })
+
+
+        let promise2 = new Promise((resolve,reject)=>{
+            let a=11;
+            if(a==10){
+                resolve("Promise2 Success");
+            }
+            else{
+                reject("Promise2 Failed");
+
+            }
+        })
+
+
+        let pAll = Promise.all([promise1,promise2]);
+
+        pAll.then((e)=>{
+            console.log(e[0] + "\n" + e[1]);
+        }).catch((a)=>{
+            console.log(a)
+        })
+
+        // pAll.then((e)=>{
+        //     console.log(e[0] +  "\n" + e[1]);
+        // },(a)=>{
+        //     console.log(a);
+        // })
+    </script>
+
+</body>
+</html>

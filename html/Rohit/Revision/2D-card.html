@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for h1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <!-- h1 end -->
+
+    <!-- for p -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <!-- p end -->
+
+
+    <style>
+        body{
+            background-image: url(../f411220e9991a9136dac24efce084aa9.jpg);
+        }
+        .card{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 350px;
+        height: 400px;
+        margin: 150px auto;
+        text-align: center;
+        background-image: url("https://wallpapercave.com/wp/wp9554899.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        overflow: hidden;
+        }
+
+        .card .box{
+            transform: translateY(400px);
+            transition: all 2s linear;
+        }
+
+        .card .box img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 10px;
+            box-shadow: 0px 0px 600px rgb(0, 0, 0);
+            border: 3px solid black;
+        }
+
+        .box h1{
+            align-items: center;
+            margin-left: auto;
+            color: black;
+            font-family: "Jaro", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 1000;
+            font-style: normal;
+            margin-top: 1px;
+
+        }
+
+        .box p{
+            margin-left: 5px;
+            font-family: "Nanum Myeongjo", serif;
+            font-weight: 900;
+            font-style: normal;
+            text-align: left;
+            color: #071e22;
+        }
+
+        .card:hover .box{
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="box">
+            <img src="https://wallpapercave.com/wp/wp9554945.jpg" alt="mikey">
+            <h1>Mikey Kun</h1>
+            <p>Manjiro Sano (佐野 (さの) 万 (まん) 次 (じ) 郎 (ろう)   Sanō Manjirō?) or Mikey (マイキー,  Maikī?), is a founding member and the former leader (総長, Sōchō?) of the Tokyo Manji Gang Nobody thinks delinquents are cool these days, right? In my big bro's time, there were tons of biker gangs around here. They'd rip through the city on their super-loud motorcycles. They were all bold as hello </p>
+        </div>
+    </div>
+</body>
+</html>

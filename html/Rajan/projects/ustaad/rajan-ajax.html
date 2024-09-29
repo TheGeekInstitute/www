@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+    <style>
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h1{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="word"></h1>
+    <button class="but">show</button>
+    <script>
+        document.querySelector('.but').addEventListener("click",()=>{
+            let xhr=new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4  && this.status == 200){
+                    document.querySelector('.word').innerHTML=this.responseText
+                }
+            }
+            xhr.open("GET","data.php");
+                xhr.send();
+        })
+    </script>
+</body>
+</html>

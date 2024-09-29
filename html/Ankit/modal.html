@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal With CSS</title>
+    <style>
+
+            #open{
+                background-color: royalblue;
+                color: white;
+                font-size: large;
+                padding: 5px;
+                display: block;
+                width: 5rem;
+                text-align: center;
+                border: 3px;
+                margin: 50% auto;
+                transform: translateY(-50%);
+                box-shadow: 0px 0px 10px black;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: all .3s linear;
+                user-select: none;
+            }
+            #open:active{
+                transform: scale(.9);
+            }
+
+
+        .modal{
+            background-color: rgb(198, 243, 228);
+            padding: 10px;
+            position: absolute;
+            height: 400px;
+            width: 600px;
+            z-index: 999;
+            top: calc(50% - 200px);
+            left: calc(50% - 300px);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            display: none;
+        }
+
+        .modal .heading{
+            
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+            border-bottom: 2px solid black;
+            user-select: none;
+        }
+
+        .modal .heading #close{
+            font-weight: 900;
+            color: red;
+            cursor: pointer;
+           
+        }
+
+        .modal .content{
+            padding: 10px;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        #btn:checked + .modal{
+           display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <label for="btn" id="open">Open</label>
+
+
+
+    <input type="checkbox" id="btn">
+    <div class="modal">
+        <div class="heading">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <label for="btn" id="close">X</label>
+        </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus distinctio nemo quidem sint optio consequatur ipsa laborum ipsum perferendis deleniti sunt ab, odit sapiente tenetur magnam? Culpa dolorum provident et?
+                Excepturi magni culpa placeat ipsam omnis dolorum! Ipsam itaque, soluta eveniet corrupti, suscipit necessitatibus delectus similique nihil fuga iste, laboriosam repellendus. Atque eligendi non magni placeat ad aliquid iusto veniam?</p>
+                <img src="../web/images/10.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

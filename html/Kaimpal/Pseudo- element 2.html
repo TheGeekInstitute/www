@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo -element</title>
+    <style>
+        P::first-letter{
+            font-size: xx-large;
+            color: blue;
+            font-weight: 900;
+        }
+        P::first-line{
+            color: aqua;
+            
+        }
+        ol li{
+            color:orangered;
+        }
+        ol li::marker{
+            color: blueviolet;
+        }
+        P::selection{
+            background-color: yellow;
+
+
+        }
+        input{
+            caret-color:orange;
+        }
+        P{
+            /* user-select: all; */
+            /* user-select: none; */
+        }
+        input::placeholder{
+            color: chartreuse;
+            opacity: 1;
+        }
+        input{
+            accent-color: red;
+
+        }
+        h1::before{
+            content: "The";
+            color: crimson;
+        }
+        h1::after{
+            content: "Institude";
+            color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, blanditiis? Rem ipsa quisquam qui eveniet animi quos possimus, impedit quod soluta. Eligendi voluptate nulla rerum consectetur officiis placeat possimus laboriosam.</P>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ol>
+
+    <input type="checkbox" name="" id="">
+    <input type="radio" name="" id="">
+    <input type="text" name="" placeholder="xyz">
+
+    <h1>Geek</h1>
+</body>
+</html>

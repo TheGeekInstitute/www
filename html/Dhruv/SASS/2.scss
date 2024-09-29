@@ -1,0 +1,64 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import "mixin";
+// @import "./media2.scss";
+
+
+
+nav{
+
+    @include nav;
+
+    a{
+        @include anchor;
+    }
+
+}
+
+.body{
+    border:2px solid red;
+    padding: 5px 10px;
+    h1{
+        @include h1;
+    }
+
+    p{
+        @extend h1;
+        background-color: black;
+        font-size: 20px;
+    }
+
+    img{
+        @include img;
+        left: 20px;
+    }
+
+}
+
+
+@function half($val){
+
+
+    $data : $val/2;
+
+    @return $data;
+}
+
+p{
+  width: half(20px);
+    // color: red;
+}
+
+@use "colors";
+@use "fonts";
+
+p{
+    color:  colors.$primary-color;
+}
+

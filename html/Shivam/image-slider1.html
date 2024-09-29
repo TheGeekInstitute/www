@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 17em;
+            width: 100vw;
+            /* overflow: hidden; */
+            
+        }
+        .box img{
+            height: 17em;
+            max-width: 100vw;
+            /* display: flex; */
+            
+        }
+        .main .box{
+            height: 17em;
+            animation-name: simage;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            display: flex;
+        }
+        @keyframes simage {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+            45%{
+                transform: translateX(-200vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+            65%{
+                transform: translateX(-300vw);
+            }
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+            90%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+        }
+            
+            
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/0ec99b461d4e3de8.jpg?q=50" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/4cc800e2c650ea85.jpg?q=50" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/be6e628fab409b89.png?q=50" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/50/50/image/f3310f39b569d628.jpg?q=50" alt="">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/844/140/image/4cd6690ef44564f3.jpg?q=50" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

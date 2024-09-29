@@ -1,0 +1,42 @@
+.box{
+    /* border: 1px solid black; */
+    width: 20rem;
+    height: 20rem;
+    margin: auto;
+    transition: all;
+    transition-duration: 1s;
+    background-image: url(https://i.pinimg.com/736x/f2/c8/4d/f2c84ded4e19f843a09609fc7316fda7.jpg);
+    background-size: 20rem 20rem;
+}
+.box:hover{
+    background-size: 21rem 21rem;
+}
+.box{
+    /* background-image: url(https://cdn.wallpapersafari.com/73/28/CgcqY0.jpg); */
+
+}
+.box img{
+    width: 0rem;
+    height: 0rem;
+    transition: all;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    /* border: 1px solid black; */
+}
+.box:hover img{
+    border-radius: 200px;
+    width: 20rem;
+    height: 20rem;
+}
+
+.box:hover .abcd{
+    backdrop-filter: blur(2px);
+    transition: all;
+    transition-delay: 1s;
+    transition-duration: 1s;
+}
+
+.box .abcd{
+    height: 20rem;
+    width: 20rem;
+}

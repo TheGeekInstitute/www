@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        .nav{
+            border: 1px solid black;
+            width: 15rem;
+            height: 15rem;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .box{
+            margin-left: 18rem;
+            padding: 10px;
+            margin-top: 10px;
+
+        }
+        .loder{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img class="loder" src="https://i.gifer.com/ZZ5H.gif" alt="">
+    </div>
+    <button class="box">Send Request</button>
+    <script>
+        let box = document.querySelector(".box")
+        let loder = document.querySelector(".loder");
+        let nav = document.querySelector(".nav");    
+        box.addEventListener("click",function(){
+            let xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200 ){
+                    nav.innerHTML = this.responseText
+                }
+                else{
+                    loder.style.display = "block";
+                }
+            }
+            xhr.open("GET","data.php",true);
+            xhr.send()
+        })
+
+
+        
+    </script>
+</body>
+</html>

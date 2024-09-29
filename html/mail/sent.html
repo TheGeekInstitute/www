@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3-Mail | Sent</title>
+    <link rel="shortcut icon" href="images/email.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="m3-mail">
+
+        <div class="side-bar" id="side-bar">
+            <header>
+                <img src="images/email.png" alt="">
+                <label for="logo">M3-Mail</label>
+            </header>
+            <ul>
+                <li><a href="inbox.html"><i class="material-icons">inbox</i>Inbox</a></li>
+                <li class="active"><a href="sent.html"> <i class="material-icons">email</i>Sent</a></li>
+                <li><a href="trash.html"> <i class="material-icons">delete</i>Trash</a></li>
+                <li><a href="spam.html"> <i class="material-icons">delete_sweep</i>Spam</a></li>
+            </ul>
+            <footer>
+                <label for="footer">Dev. <span>@GICS</span></label>
+            </footer>
+        </div>
+        <div id="slide-open">
+            <div class="slide-border" onclick="side_bar_open()">
+
+                <i class="material-icons">chevron_right</i>
+            </div>
+        </div>
+        <div id="slide-close">
+            <div class="slide-border" onclick="side_bar_close()">
+
+                <i class="material-icons">chevron_left</i>
+            </div>
+        </div>
+
+        <div class="main-bar" id="main-bar">
+            <div class="style" id="sent">
+<div class="top">
+
+    <label for="type">Sent</label>
+    <div class="mailname">
+
+        <h3>moan@gmail.com</h3>
+    </div>
+    <div class="search-bar">
+
+        <input type="text" placeholder="Search Mail Here">
+        <i class="material-icons">search</i>
+        <button onclick="logout()">LOGOUT</button>
+
+    </div>
+</div>
+
+                <div class="inbox-content">
+                    <section>
+                        <input type="checkbox">
+                        <p class="to" onclick="mail()">to</p>
+                        <p class="by" onclick="mail()">john@gmail.com</p>
+                        <p class="heading" onclick="mail()" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, fuga!
+                        </p>
+                        <p class="date" onclick="mail()">20 Jul 2022</p>
+                        <a href="">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </section>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

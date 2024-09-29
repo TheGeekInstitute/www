@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   
+        .box{
+            margin: auto;
+            margin-top: 200px;
+            height: 300px;
+            width: 200px;
+            border: 2px solid red;
+            /* overflow: hidden; */
+        }
+
+        input[type="text"]{
+            width: 200px;
+            padding: 5px;
+            height: 70px;
+            outline: transparent;
+            background-color: aquamarine;
+            border: 1px solid grey;
+            border-radius:50px;
+            
+            transition: all .3s linear;
+        }
+
+        input[type="text"]:focus{
+          width: 200px;
+          background-color: hotpink;
+          /* transform: scale(1.1); */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <input type="text" placeholder="ABCD">
+</div>
+</body>
+</html>

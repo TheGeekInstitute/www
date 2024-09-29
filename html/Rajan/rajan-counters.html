@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counters</title>
+
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1::before{
+            content: counter(section)'. ';
+            color: red;
+            counter-increment: section;
+
+        }
+        h1{
+            counter-reset: section;
+        }
+        h2{
+            text-indent: 50px;
+        }
+        h2::before{
+            content: counter(section)'. ' counter(sub-section)'. ';
+            counter-increment: sub-section;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Development</h1>
+        <h2>HTML</h2>
+            <h3>Table</h3>
+            <h3>Form</h3>
+            <h3>Sementic Elements</h3>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Software Development</h1>
+        <h2>JAVA</h2>
+            <h3>Data Types</h3>
+        <h2>Python</h2>
+        <h2>Ruby</h2>
+        <h2>C/C++</h2>
+        <h2>Julia</h2>
+    <h1>Ethical Hacking</h1>
+        <h2>Kali Linux</h2>
+        <h2>Black Arch</h2>
+        <h2>Backbox</h2>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+        *{
+            margin: 0px;
+        }
+
+        .accordion{
+            width: 400px;
+            margin: 20px auto;
+        }
+        
+        .accordion .box{
+            margin: 5px 0;
+        }
+
+        .accordion .box .heading{
+            background-color: aqua;
+            color: white;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            font-size: x-large;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .accordion .box .heading i{
+            transition: all .2s linear;
+        }
+        
+        .accordion .box .content{
+            padding: 10px;
+            background-color: antiquewhite;
+            display: none;
+        }
+
+        #btn:checked ~ .content{
+            display: block;
+        }
+        #btn1:checked ~ .content{
+            display: block;
+        }
+        #btn2:checked ~ .content{
+            display: block;
+        }
+
+
+        #btn:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+        #btn1:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+        #btn2:checked ~ .heading i{
+            transform: rotate(45deg);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="accordion">
+
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+                
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore necessitatibus expedita voluptatem aliquam, quia numquam dicta, maiores eum voluptas vel molestias vero sit perferendis incidunt officia placeat dignissimos reiciendis impedit!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn1" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+                
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore necessitatibus expedita voluptatem aliquam, quia numquam dicta, maiores eum voluptas vel molestias vero sit perferendis incidunt officia placeat dignissimos reiciendis impedit!</p>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn2" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+                
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore necessitatibus expedita voluptatem aliquam, quia numquam dicta, maiores eum voluptas vel molestias vero sit perferendis incidunt officia placeat dignissimos reiciendis impedit!</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

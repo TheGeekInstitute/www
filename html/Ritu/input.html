@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;            
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+        }
+       .container input[type=text]{
+            padding: 5px ;
+            height: 30px;
+            width: 150px;
+            border: 2px solid black;
+            outline: transparent;
+           background-color: transparent;
+           font-size: 18px;
+            font-weight: 700;
+            font-family: cursive;
+        }
+        .container input::placeholder{
+            color: transparent;
+        }
+        .container label{
+            position: relative;
+            width: 150px;
+            bottom: 28px;
+            left: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: cursive;
+            z-index: -1;
+            transition: all .3s;
+        }
+
+        .container input:focus + label{
+            transform: translateY(-27px);
+        }
+
+        .box{
+
+            border: 2px solid black;
+            height: 200px;
+            width: 300px;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;            
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+        }
+
+        .box input[type=text]{
+            padding: 5px ;
+            height: 30px;
+            width: 150px;
+            border: 2px solid black;
+            outline: transparent;
+           background-color: transparent;
+           font-size: 18px;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        .box input::placeholder{
+            color: transparent;
+        }
+        .box label{
+            position: relative;
+            width: 150px;
+            bottom: 28px;
+            left: 5px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: cursive;
+            z-index: -1;
+            transition: all .3s;
+        }
+
+        .box input:not(:placeholder-shown) + label{
+            transform: translateY(-27px);
+        }
+    </style>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+</div>  
+   
+
+
+<div class="box">
+    <input type="text" placeholder="Enter Name">
+    <label for="">Enter Name</label>
+
+    <input type="text" placeholder="Enter Name">
+    <label for="">Enter Name</label>
+
+    <input type="text" placeholder="Enter Name">
+    <label for="">Enter Name</label>
+</div>  
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* border: 1px solid black; */
+            margin: 20px auto;
+            width: 65rem;
+            padding: 5px;
+
+            display: grid;
+            gap: 7px;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(6,1fr);
+
+        }
+        .box{
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            line-height: 6rem;
+            width: 10rem;
+            text-align: center;
+        }
+        .box:hover{
+            transform: translatey(-6px);
+            transition: all 0.5s linear ;
+        }
+        .box01{
+            background-color: darkgreen;
+        }
+        .box02{
+            background-color: red;
+        }
+        .box03{
+            background-color: blueviolet;
+        }
+        .box04{
+            background-color: yellow;
+        }
+        .box05{
+            background-color: blue;
+        }
+        .box06{
+            background-color: grey;
+        }
+        .box07{
+            background-color: yellow;
+        }
+        .box08{
+            background-color: darkgreen;
+        }
+        .box09{
+            background-color: red;
+        }
+        .box010{
+            background-color: blueviolet;
+        }
+        .box011{
+            background-color: darkgreen;
+        }
+        .box012{
+            background-color: red;
+        }
+        .box013{
+            background-color:yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box01"><p>Dashboard</p></div>
+        <div class="box box02">
+            <p>Students</p>
+        </div>
+        <div class="box box03">
+            <p>Exam</p>
+        </div>
+        <div class="box box04">
+            
+            <p>
+                Add Question 
+            </p>
+        </div>
+        <div class="box box05">
+            <p>Add Notice</p>
+        </div>
+        <div class="box box06">
+            <p>Add Users</p>
+        </div>
+        <div class="box box07">
+            <p>Generate Certificates</p>
+        </div>
+        <div class="box box08">
+            <p>Books</p>
+        </div>
+        <div class="box box09">
+            <p>Add Test</p>
+        </div>
+        <div class="box box010">
+            <p>Add Student</p>
+        </div>
+        <div class="box box011">
+            <p>Fees Management</p>
+        </div>
+        <div class="box box012">
+            <p>Generate Admit Card</p>
+        </div>
+        <div class="box box013">
+            Enquiries
+        </div>
+    </div>
+</body>
+</html>

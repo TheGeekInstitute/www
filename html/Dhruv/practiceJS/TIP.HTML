@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            width: 350px;
+            /* text-align: center; */
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+        .main input{
+            width: 200px;
+        }
+
+.result h2{
+    text-align: center;
+}
+.result label{
+    background-color: rgba(180, 174, 174, 0.459);
+    padding: 3px;
+}
+#ran{
+    width: 80%;
+}
+
+.tip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip_amt{
+    display: flex;
+}
+
+.total{
+    display: flex;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="main">
+        <h1>Tip canculator</h1>
+        <label for="">$</label>
+        <input type="text" id="amt">
+        <br>
+        <div class="tip">
+            <label for="">Tip</label>
+            <input type="range" id="ran" min="0" max="100" value="1">
+            <label id="result">0%</label>
+        </div>
+    </div>
+
+    <div class="result">
+        <h2>result</h2>
+        <div class="tip_amt">
+            <label for="">Tip amount</label>
+            <input type="text" id="tip">
+        </div>
+        <br>
+<div class="total">
+    <label for="">Total bill with Tip</label>
+    <input type="text" id="total">
+</div>
+    </div>
+
+</div>
+
+
+<script>
+    let range = document.querySelector("#ran");
+    range.addEventListener('change',()=>{
+        let  per = parseFloat(range.value);
+        document.querySelector("#result").innerHTML = per + "%" 
+
+        let amt = parseFloat(document.querySelector("#amt").value);
+
+        let tip_amt = amt/100*per;
+
+        document.querySelector('#tip').value = tip_amt
+
+        document.querySelector("#total").value = (amt + tip_amt)
+
+
+    })
+</script>
+
+</body>
+</html>

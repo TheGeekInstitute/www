@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../Aasha/image/back.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        animation: car 10s linear 0s infinite;
+    }
+
+    .car{
+        height: 200px;
+        position: absolute;
+        bottom: 20px;
+        left: -40vw;
+        
+    }
+
+
+    @keyframes car {
+        0%{
+            transform: translateX(-40vw);
+        }
+
+        100%{
+            transform: translateX(140vw);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <img src="../Aasha/image/car.gif" class="car" alt="">
+
+    
+</body>
+</html>

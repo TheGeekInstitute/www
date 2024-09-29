@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Iso&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik+Iso&family=Titan+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .books{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+            font-size: 30px;
+            color: skyblue;
+            background-color: black;
+            position: fixed;
+            width: auto;
+            height: 15vh;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 10;
+
+        }
+        .books p{
+            font-family: 'Lobster', cursive;
+            font-family: 'Rubik Iso', cursive;
+            font-family: 'Titan One', cursive;
+            font-size: 40px;
+            background-image: linear-gradient( 45deg ,  skyblue , yellow , red , Green , blue , brown);
+            /* border: 2px solid black; */
+            align-items: center;
+            text-align: center;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            /* background-position: 300% 300%; */
+            animation-name: position;
+            animation-timing-function: inherit;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes position {
+            0%{
+            background-size: 0%;
+                
+            }
+            100%{
+            background-size: 300%;
+
+            }
+        }
+        .books label span{
+            border: 1px solid white;
+            display: block;
+            margin: 2px;
+            width: 38px;
+            height: 6px;
+            background-color: white;
+            display: none;
+        }
+        .books p span{
+            color: brown;
+            font-family: 'Lobster', cursive;
+            font-family: 'Rubik Iso', cursive;
+            font-family: 'Titan One', cursive;
+        }
+        .books > ul{
+            display: flex;
+        }
+        .books > ul li{
+            padding:10px;
+            color: white;
+        }
+        .books > ul li a {
+            color: pink;
+            font-family: 'Lobster', cursive;
+            font-family: 'Rubik Iso', cursive;
+            font-family: 'Titan One', cursive;
+        }
+        .books > ul li a:hover{
+            color: skyblue;
+            text-shadow: 0px 0px 10px red;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        .container{
+            overflow: hidden;
+            position: relative;
+            z-index: -2;
+        }
+        .book-card{
+            /* border: 2px solid red; */
+            height: 65vh;
+            margin-top: 12.9vh;
+            width: 500.4vw;
+            display: flex;
+            flex-wrap: wrap;
+            /* overflow: hidden; */
+            animation-name: slider;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+            /* animation-delay: ; */
+        }
+        @keyframes slider {
+            0%{
+                transform: translateX(0vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+
+            }
+            50%{
+                transform: translateX(-200vw);
+
+            }
+            75%{
+                transform: translateX(-300vw);
+
+            }
+            100%{
+                transform: translateX(-400vw);
+
+            }
+
+
+        }
+        .box1{
+            /* border: 2px solid red; */
+            height: 65vh;
+            /* margin-top: 12.9vh; */
+            width: 100vw;
+            background-image: url(https://cdn.marvel.com/u/prod/marvel/i/mg/c/f0/64f3fd7077cde.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.662);
+        }
+        .box2{
+            /* border: 2px solid red; */
+            height: 65vh;
+            /* margin-top: 12.9vh; */
+            width: 100vw;
+            background-image: url(https://cdn.marvel.com/u/prod/marvel/i/mg/f/d0/64f3fc8ac6e8a.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.52);
+        }
+        .box3{
+            /* border: 2px solid red; */
+            height: 65vh;
+            /* margin-top: 12.9vh; */
+            width: 100vw;
+            background-image: url(https://cdn.marvel.com/u/prod/marvel/i/mg/f/70/64f3fec3cec16.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.577);
+        }
+        .box4{
+            /* border: 2px solid red; */
+            height: 65vh;
+            /* margin-top: 12.9vh; */
+            width: 100vw;
+            background-image: url(https://cdn.marvel.com/u/prod/marvel/i/mg/3/90/64f400d6e7068.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.542);
+        }
+        .box5{
+            /* border: 2px solid red; */
+            height: 65vh;
+            /* margin-top: 12.9vh; */
+            width: 100vw;
+            background-image: url(https://cdn.marvel.com/u/prod/marvel/i/mg/2/04/64f3ff7fe0af9.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.568);
+        }
+
+        .first{
+            /* border: 2px sold yellow; */
+            color: white;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .first h3{
+            font-size: 25px;
+        }
+        .first h1{
+            font-size: 40px;
+        }
+        .first a{
+            color: yellow;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 40px;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .second{
+             /* border: 2px sold yellow; */
+             color: white;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .second h3{
+            font-size: 25px;
+        }
+        .second h1{
+            font-size: 40px;
+        }
+        .second a{
+            color: yellow;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 40px;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .third{
+             /* border: 2px sold yellow; */
+             color: white;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .third h3{
+            font-size: 25px;
+        }
+        .third h1{
+            font-size: 40px;
+        }
+        .third a{
+            color: yellow;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 40px;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .four{
+             /* border: 2px sold yellow; */
+             color: white;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .four h3{
+            font-size: 25px;
+        }
+        .four h1{
+            font-size: 40px;
+        }
+        .four a{
+            color: yellow;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 40px;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .five{
+             /* border: 2px sold yellow; */
+             color: white;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+        .five h3{
+            font-size: 25px;
+        }
+        .five h1{
+            font-size: 40px;
+        }
+        .five a{
+            color: yellow;
+            border: 2px solid white;
+            padding: 20px;
+            margin-top: 40px;
+            display: block;
+            width: 150px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .contianer1{
+            display: flex;
+            /* border: 2px solid red; */
+            width: 90vw;
+            height: 210vh;
+            margin-top: 20px;
+            margin-left: 60px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .dibba img{
+            transition: all 0.4s;
+            border-radius: 6px;
+            z-index: -10;
+        }
+        .dibba h3{
+            color: brown;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .dibba p{
+            color: darkorchid;       
+            font-size: 20px;
+            font-weight: bold;     
+        }
+        .dibba img:hover{
+            transform: translateY(-10px);
+            box-shadow: 5px 4px 20px gray;
+        }
+        .container2{
+            /* border: 2px solid red; */
+            height: 50vh;
+            width: 100%;
+            background-color: rgb(43, 43, 43);
+            display: flex;
+        }
+        .about{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 26px;
+            font-weight: bold;
+            color: wheat;
+            padding: 10px;
+            border-right: 1px solid white;
+            height: 30vh;
+        }
+        .about li {
+            padding: 10px;
+        }
+        .help{
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 26px;
+            font-weight: bold;
+            color: wheat;
+            padding: 10px;
+            border-right: 1px solid white;
+            height: 30vh;
+        }
+        .help li{
+            padding: 10px;
+        }
+
+
+        @media screen and (max-width:600px) {
+            .books{
+                /* border: 2px solid #ff0000; */
+                height: 17vh;
+                display: flex;
+            }
+            .books p{
+                margin-top: 20px;
+                font-size: 50px;
+            }
+            .books label span{
+            border: 1px solid white;
+            display: block;
+            margin: 2px;
+            width: 58px;
+            height: 10px;
+            background-color: white;
+            transition: all 0.5s;
+        }
+        .books label{
+            margin-top: 39px;
+            margin-left: -100px;
+        }
+            .books ul{
+                /* border: 2px solid black ; */
+                display: block;
+                position: absolute;
+                top: 120px;
+                left: -300px;
+                background-color: gray;
+                height: 92vh;
+                z-index: 10;
+            }
+            #btn:checked ~ label .two{
+                display: none;
+            }
+            #btn:checked ~ label .One{
+                transform: rotate(45deg);
+            }
+            #btn:checked ~ label .three{
+                transform: rotate(-45deg);
+            }
+            #btn:checked ~ label + ul {
+                animation-name: move;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes move {
+                0%{
+                    left: -300px;
+                }
+                100%{
+                    left: 0px;
+                }
+            }
+            .books ul li  {
+                color: white;
+                margin: 20px;
+            }
+            .books ul li a {
+                color: white;
+                /* margin: 10px; */
+            }
+            .container{
+                margin-top: -44px;
+                width: 100%;
+            }
+            .book-card{
+            /* border: 2px solid red; */
+            height: 65vh;
+            margin-top: 12.9vh;
+            width: 500.4vw;
+            display: flex;
+            }
+            .contianer1{
+                margin-left: 25px;
+                display: grid;
+                /* grid-template-rows: 1; */
+                grid-template-columns: 1fr 1fr;
+            }
+            .dibba img{
+                width: 250px;
+            }
+            .container2{
+                margin-top: 155vh;
+                overflow: hidden;
+                height: 40vh;
+            }
+            .container2 >img{
+                height: 80px;
+                position: relative;
+                top: -40px;
+
+            }
+            .container2 > .about{
+                font-size: 15px;
+            }
+            .container2 > .help{
+                font-size: 16px;
+            }
+            .container2 > .owner{
+                height: 50px;
+            }
+         
+        }
+    </style>
+    <title>Store-Book</title>
+</head>
+<body>
+    <div class="books">
+        <p>
+            Book <span>Store</span>
+        </p>
+        <input type="checkbox"  id="btn">
+        <label for="btn">
+            <span class="One"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </label>
+        <ul>
+            <li>
+                <a href="#">Books</a>
+            </li>
+            <li>
+                <a href="#">Comics</a>
+            </li>
+            <li>
+                <a href="#">
+                    Nobels
+                </a>
+            </li>
+            <li>
+                <a href="#">Toons-Story</a>
+            </li>
+            <li>
+                <a href="#">Cartoon-story</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+   <div class="container">
+    <div class="book-card">
+        <Div class="box1">
+            <div class="first">
+                <h3>'WHITE WIDOW' #1</h3>
+                <br>
+                <h1>GET TRAPPED IN YELENA BELOVA'S WEB</h1>
+                <a href="#">Read Now!</a>
+            </div>
+        </Div>
+        <Div class="box2">
+          <div class="second">
+            <h3>'INVINCIBLE IRON MAN' #10</h3>
+            <br>
+            <h1>PREPARE FOR THE WEDDING OF EMMA FROST AND TONY STARK</h1>
+            <a href="#">Read Now!</a>
+          </div>
+        </Div>
+        <Div class="box3">
+           <div class="third">
+            <h3>G.O.D.S. SPOTLIGHT
+            </h3>
+            <br>
+            <h1>MEET DIMITRI THE SCIENCE BOY</h1>
+            <a href="#">Read Now!</a>
+           </div>
+        </Div>
+        <Div class="box4">
+           <div class="four">
+            <h3>CHARACTER CLOSE-UP</h3>
+            <br>
+            <h1>THE CRIMES OF COLOSSUS</h1>
+            <a href="#">Read Now!</a>
+           </div>
+
+        </Div>
+        <Div class="box5">
+           <div class="five">
+            <h3>FIRST LOOK</h3>
+            <br>
+            <h1>2023'S MARVEL UNLIMITED PLUS MEMBER KIT</h1>
+            <a href="#">Read Now!</a>
+           </div>
+        </Div>
+    </div>
+   </div>
+   <div class="contianer1">
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/30/64ecad5ca960c/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/50/64ecad783da4b/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/c0/64ecad78bce92/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/30/64ecad7904061/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/64ecad9541c8c/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/f/30/64ecad5c3e60e/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/a0/64ecad96a453f/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/5/80/64ecad78baede/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/5/80/64ecad78baede/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/2/60/64ecad663afce/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/7/30/64ecad9777940/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+    <div class="dibba">
+        <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/c/90/64ecad59d06b7/portrait_uncanny.jpg" alt="">
+        <h3> Sider-Man #1</h3>
+        <p>Akash patel</p>
+    </div>
+   </div>
+   <div class="container2">
+    <img src="https://www.geekinstitute.org/img/logo/LOGO.png" alt="" height="150px" width="150px" style="margin-top: 100px;">
+    <ul class="about">
+        <li>ABOUT GEEK</li>
+        <li>HELP/FAQS</li>
+        <li>CAREERS</li>
+        <li>INTERNSHIPS</li>
+    </ul>
+    <ul class="help">
+        <li>ADVERTISING</li>
+        <li>DISNEY+</li>
+        <li>DISNEY+</li>
+        <li>REDEEM DIGITAL COMICS</li>
+    </ul>
+    <div class="owner">
+        <img src="https://yt3.googleusercontent.com/ytc/AOPolaR1AYhmdnFWq409qeeDnsUO5Eq7qOlMs6AAeVkS=s900-c-k-c0x00ffffff-no-rj" alt="" height="80px" width="80px" style="margin-left: 50px; margin-top: 50px; margin-right: 39px;">
+    </div>
+   </div>
+</body>
+</html>

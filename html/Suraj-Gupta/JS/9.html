@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+   <script>
+    alert("Hello How are you?");
+
+    let user = confirm("Are you Happy ?");
+    document.write(user);
+    if(user==true){
+        alert("😀")
+    }
+    else{
+        alert("😢");
+    }
+
+    let name = prompt("What is Your Name ?");
+    document.write("Hello, " + name)
+
+    function print_name(){
+        document.write('Hello abcd');
+    }
+
+    print_name();
+
+    
+    function print_name(name){
+        document.write("Hello, " +name);
+    }
+
+    print_name("ABCD")
+
+
+    function print_name(name){
+        return "Hello, " +name;
+    }
+
+   document.write( print_name("ABCD"))
+
+
+function sum(a,b){
+    return a+b;
+}
+
+document.write(sum(10,45)) 
+
+
+function name(name){
+    if(name!=null){
+        return "Hi, " + name;
+    }
+    else{
+        return "Please Provide a Name";
+    }
+}
+
+document.write(name());
+
+
+   </script> 
+</body>
+</html>

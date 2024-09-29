@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid black;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: [col1-start]150px[col1-end col2-start] 1fr [col2-end col3-start] 150px[col3-end];
+            grid-template-rows: [row1-start]30px[row1-end row2-start] 60px [row2-end row3-start] 1fr[row3-end row4-start] 60px [row4-end];
+            /* padding: 10px; */
+            gap: 3px;
+
+          
+        }
+
+        .box1{
+            background-color: aqua;
+            grid-area: row1-start / col1-start / row1-end / col3-end; 
+        }
+
+        .box2{
+            background-color: red;
+            grid-area: row2-start / col1-start / row2-end / col3-end; 
+        
+            
+        }
+
+        .box3{
+            background-color: yellow;
+          
+
+        }
+
+        .box4{
+            background-color: pink;
+        
+
+        }
+
+        .box5{
+            background-color: blue;
+          
+          
+        }
+
+        .box6{
+            background-color: black;
+         
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+</body>
+</html>

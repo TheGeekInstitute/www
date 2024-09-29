@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @font-face {
+            font-family: abcd;
+            src: url(SuperSalad-qZgvV.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-transform: capitalize;
+            font-weight: 900;
+
+
+        }
+
+
+        .nav {
+            color: aliceblue;
+            height: 60px;
+            background-color: rgb(42, 164, 180);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .nav h3 span {
+            padding-left: 8px;
+
+        }
+
+        .nav ul {
+            display: flex;
+
+        }
+
+        .nav ul li {
+            padding: 0 20px;
+        }
+
+        /* navbar-end */
+        /* hero-section */
+        .container {
+            background-color: black;
+            color: white;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .container .hero h3 {
+            padding-bottom: 20px;
+        }
+
+        .container .hero h3 span {
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        .container .hero h1 {
+            /* padding-bottom: 10px; */
+            margin-bottom: 10px;
+        }
+
+        .container .hero .social i {
+            margin-top: 20px;
+            padding: 20px;
+            font-size: 30px;
+            color: cyan;
+
+        }
+
+        .container .hero .btn button {
+            height: 50px;
+            width: 200px;
+            background-color: cyan;
+            border-color: cyan;
+            border-radius: 10px;
+            box-shadow: 0 0 15px cyan;
+            margin-top: 40px;
+            margin-left: 50px;
+
+
+        }
+
+        .image img {
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            box-shadow: 0 0px 30px cyan;
+        }
+
+
+
+        .about {
+            height: 700px;
+            /* border: 2px solid red; */
+            background-color: rgb(56, 71, 71);
+            color: white;
+            padding-top: 100px;
+        }
+
+        .about h2 {
+            text-align: center;
+        }
+
+        .about h2 span {
+            color: cyan;
+        }
+
+        .about #uiux {
+            color: aqua;
+        }
+
+        .about #uiux span {
+            color: white;
+            display: inline-block;
+        }
+
+        .box {
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about .img img {
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            box-shadow: 0 0 50px gray;
+        }
+
+        .about-me {
+            line-height: 25px;
+        }
+
+        .about .btn button {
+            height: 50px;
+            width: 150px;
+            background-color: cyan;
+            border-radius: 10px;
+            border: cyan;
+            margin-top: 50px;
+
+        }
+
+        .box2 {
+            height: 600px;
+            background-color: black;
+            color: white;
+            padding-top: 150px;
+        }
+
+
+        .service h2 {
+            text-align: center;
+            padding-bottom: 30px;
+
+        }
+
+        .service h2 span {
+            color: cyan;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .items {
+            background-color: rgb(56, 71, 71) ;
+            text-align: center;
+            border: 2px solid white;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 200px;
+            border-radius: 10px;
+
+        }
+
+        .items img {
+            height: 100px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .items button {
+            height: 40px;
+            width: 100px;
+            background-color: cyan;
+            border: cyan;
+            border-radius: 10px;
+            box-shadow: 0 0 20px cyan;
+        }
+       .box3{
+        height: 600px;
+        background-color: rgb(56, 71, 71);
+        padding-top: 100px;
+        
+       }
+       .box3 .project h2{
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+       }
+       .box3 .project h2 span{
+        color: cyan;
+       }
+     
+       .img-container .images img {
+        height: 150px;
+        border: 2px solid;
+        width: 250px;
+      
+       }
+       .img-container  .img1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .img-container .img2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       }
+       .img-container  .img1 img{
+        margin:10px 10px ;
+        border-radius: 10px;
+       }
+       .img-container  .img2 img{
+        margin:10px 10px ;
+        border-radius: 10px;
+       }
+       .contact{
+        height: 600px;
+        background-color: black;
+        color: white;
+       }
+       .contact .login h2{
+        text-align: center;
+       }
+       .contact .login h2 span{
+        color: cyan;
+       }
+       .contact .form{
+         border: 2px solid red
+         ;
+      
+       }
+       .contact .form .detail{
+        border: 1px solid green;
+        
+        height: 30px;
+        width: 300px;
+        padding: 0 20px;
+        background-color: gray;
+       
+       }
+       #comments{
+        height: 300px;
+        width: 600px;
+        background-color: gray;
+        text-align:start;
+       }
+       
+      
+         
+    
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar -->
+
+    <div class="nav">
+
+        <h3>
+            <i class="fa-solid fa-house"></i><span>Ezaz_Portfolio.</span>
+        </h3>
+
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Education</li>
+            <li><a href="#"></a>services</li>
+            <li><a href="#"></a>Contacts</li>
+        </ul>
+    </div>
+    <!-- navbar-end -->
+    <div class="container">
+        <div class="hero">
+            <h3>Hello It's Me</h3>
+            <h1>MD EZAZ</h1>
+            <h3>And I'm a <span>UI/UX DESIGNER</span></h3>
+            <p>Crafting Digital Experinence That Blend Beauty with <br> Functionality,Passionately Sculpting Digital
+                Journeys, One <br> Pixel At A Time. </p>
+            <div class="social">
+                <i class="fa-brands fa-instagram fa-bounce"></i>
+                <i class="fa-brands fa-snapchat fa-beat-fade"></i>
+                <i class="fa-brands fa-twitter fa-bounce"></i>
+                <i class="fa-brands fa-facebook fa-beat-fade"></i>
+            </div>
+            <div class="btn"><button>Download Resume</button></div>
+        </div>
+        <div class="image">
+            <img src="./WhatsApp Image 2024-09-10 at 9.48.23 AM(1).jpeg" alt="">
+        </div>
+    </div>
+
+    <!-- about-section -->
+    <div class="about">
+        <h2>About <span>Me</span></h2>
+        <div class="box">
+            <div class="img"><img src="./WhatsApp Image 2024-09-10 at 9.48.23 AM.jpeg" alt=""></div>
+            <div class="about-me">
+                <h2 id="uiux">Ui/Ux <span>
+                        <h6>Designer</h6>
+                    </span></h2>
+                <p>a passing Ui/Ux designer with a flair for <br>creating delightful digita experiences. my <br>journey
+                    in design is driven by a deep <br>fascination with the intersection of <br>aesthetics and usability.
+                    i bleave that great <br> design isn't just about making things look <br> pretty; it's about making
+                    them work <br>beautifully. </p>
+                <div class="btn"><button>see more.....</button></div>
+            </div>
+        </div>
+    </div>
+    <!-- services-section -->
+    <div class="box2">
+        <div class="service">
+            <h2>Our <span>services</span></h2>
+        </div>
+        <div class="section">
+            <div class="items">
+                <h4>user research <br>
+                    and analysis</h4>
+                <img src="https://ux247.com/wp-content/uploads/2022/10/What-are-the-best-tools-for-user-research.jpg"
+                    alt="">
+                <button>
+                    see more...
+                </button>
+            </div>
+            <div class="items">
+                <h4>user interface <br>
+                    (Ui) design</h4>
+                <img src="https://cdn.prod.website-files.com/6630b470cdf4c237d9928488/6630b77a3ee7c5a4915f3c78_65f615e96725eda4634d2712_Depositphotos_394740998_L.webp"
+                    alt="">
+                <button>
+                    see more...
+                </button>
+            </div>
+            <div class="items">
+                <h4>user experience <br>
+                    (ux) design</h4>
+                <img src="https://media.licdn.com/dms/image/D4D12AQGEAOyR27jajw/article-cover_image-shrink_720_1280/0/1675176814687?e=2147483647&v=beta&t=jC5wuVQvgfJ9BYbkwt7949cABlF_aGwnSUcbFbgRqyk"
+                    alt="">
+                <button>
+                    see more...
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="project">
+        <h2>
+            our <span>project</span>
+        </h2></div>
+      <div class="img-container">
+    
+    <div class="img1">
+        <div class="images"><img src="https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2020/08/07000648/UI-UX-Design.png" alt=""></div>
+    <div class="images"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l3O6R4nlNddMRBNXwhcFSn9gfeJHuXVVvO3tC7czSMYUWoco8zJgGdl8j_Z4GkBA8YI&usqp=CAU" alt=""></div>
+    <div class="images"><img src="https://metiersdelamode.com/wp-content/uploads/2019/01/UX-Designer.jpg" alt=""></div>
+    </div>
+  <div class="img2">
+    <div class="images"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdQfPPjcMiQEEl0_MA9Z_guOWOoONh47A_RmMNuRcQ9cc2FxgTloRVFJW3Rlt5-szEkcM&usqp=CAU" alt=""></div>
+    <div class="images"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkTE5xJc22DIxy5AuaTnZzQKBPKLc6rkohqA&s" alt=""></div>
+    <div class="images"><img src="https://hackernoon.com/hn-images/0*Tx455wq8kzH1rFXX.jpg" alt=""></div>
+  </div>
+</div>
+</div>
+
+    <div class="contact">
+        <div class="login">
+            <h2>contact <span>me</span></h2>
+        </div>
+        <div class="form">
+            <label for="first name" ></label>
+            <input type="text" value="first name" required class="detail">
+            <label for="last name"></label>
+            <input type="text"
+            value="last name" class="detail" required>
+            <br><br>
+            <label for="mob.number"></label>
+            <input type="text" value="mob.number"
+            required class="detail">
+            <label for="email"></label><input type="email" value="email"
+            required class="detail">
+            <br><br>
+            <label for=""></label>
+            <input type="text"
+            value="your message"
+            id="comments">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

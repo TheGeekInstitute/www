@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loader {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            object-fit: cover;
+            display: none;
+
+        }
+        h1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid green;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://loading.io/assets/mod/spinner/spinner/lg.gif" alt="" id="loader">
+
+    <form action="" method="POST" id="form">
+        <input type="text" name="name" id="name">
+        <input type="submit">
+    </form>
+
+    <h1 id="result"></h1>
+
+    <a href="https://www.google.com" id="a">ABCD</a>
+    <script>
+        document.forms[0].addEventListener('submit',(e)=>{
+            e.preventDefault()
+           let name = document.querySelector("#name").value;
+            let result = document.querySelector('#result')
+            let loader = document.querySelector("#loader");
+            loader.style.display="block"
+fetch("http://10.10.10.10/Dhruv/AdvancedJS/json.php", {
+     method: "POST",
+     body: JSON.stringify({
+         "id":1,
+         "name": `${name}`,
+     }),
+     headers: {
+         "Content-type": "application/json; charset=UTF-8"
+     }
+ })
+  
+ // Converting to JSON
+ .then(response => response.json())
+  
+ // Displaying results to console
+ .then(json => {
+    loader.style.display="none"
+
+    result.innerHTML = json.message
+ });
+
+           
+ })
+
+       
+
+
+        document.querySelector("#a").addEventListener("click",(e)=>{
+            e.preventDefault()
+        })
+    </script>
+</body>
+</html>

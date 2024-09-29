@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            /* background: rgb(201, 220, 247); */
+            background: linear-gradient(60deg, skyblue, pink, #eee);
+        }
+
+        .userLoginContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 380px;
+            height: 350px;
+            padding: 1.5em;
+            background: #fff;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px 1px grey;
+        }
+
+        .userLoginContainer h2 {
+            margin-bottom: .5em;
+            color: hsl(212, 60%, 30%);
+            font-size: 2.5em;
+        }
+
+        .userLoginContainer input {
+            padding: .5em;
+            margin: .7em 0;
+            width: 250px;
+            border-radius: 5px;
+            outline: none;
+            background: none;
+            border: 1px solid #ddd;
+            font-size: .9em;
+        }
+
+        .userLoginContainer input[type="submit"] {
+            background: hsl(212, 60%, 30%);
+            color: #fff;
+            border: none;
+            outline: none;
+            text-align: center;
+            width: 200px;
+            margin: 1.5em 0;
+            cursor: pointer;
+            transition: .5s ease;
+        }
+
+        .userLoginContainer input[type="submit"]:hover {
+            background: #000;
+        }
+
+        .userLoginContainer #forgetBtn {
+            background: rgb(131, 205, 196);
+            padding: .5em 1.5em;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #000;
+            margin-top: .51em;
+            transition: .5s ease;
+        }
+
+        .userLoginContainer #forgetBtn:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .forgetpwd {
+            display: none;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 1px grey;
+        }
+
+        .forgetpwd .close-forgetpwd {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            padding: .2em;
+            cursor: pointer;
+        }
+
+        .forgetpwd h2 {
+            color: hsl(212, 60%, 30%);
+            font-size: 2.5em;
+            margin-bottom: .5em;
+        }
+
+        .forgetpwd label {
+            display: inline-block;
+            width: 200px;
+            margin: .35em .2em;
+        }
+
+        .forgetpwd input {
+            border: 1px solid #ddd;
+            width: 180px;
+            padding: .2em .5em;
+            background: none;
+            outline: none;
+            border-radius: 5px;
+            margin: .5em 0;
+            font-size: 1em;
+        }
+
+        .forgetpwd button {
+            background: #fff;
+            color: #000;
+            padding: .5em 1.5em;
+            border: none;
+            border: 1px solid #000;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: .5s ease;
+        }
+
+        .forgetpwd button:hover {
+            background: hsl(212, 60%, 30%);
+            color: #fff;
+            border: none;
+        }
+
+        .forgetpwd button[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            margin-top: 1em;
+            width: 200px;
+            text-align: center;
+            padding: 1em 1.5em;
+            border: none;
+            outline: none;
+        }
+
+        .forgetpwd button[type="submit"]:hover {
+            background-color: hsl(212, 60%, 30%);
+        }
+
+        /* when forget pwd button clicked  */
+        .active-forgetpwd {
+            display: block;
+        }
+
+        .deactivate-userLoginContainer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="userLoginContainer">
+        <h2>Sign In </h2>
+        <form action="">
+            <input type="text" placeholder="User Id Or Number">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="submit" value="Log In">
+        </form>
+        <button id="forgetBtn">Forget Password</button>
+    </div>
+
+    <div class="forgetpwd">
+        <div class="close-forgetpwd">
+            <img src="../Images/Assets/close.png" alt="" width="25px">
+        </div>
+        <h2>Forget Password</h2>
+        <form action="">
+            <label for="userid">User ID </label>
+            <input type="text" placeholder="User Id">
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date" name="" id="">
+            <br>
+            <label for="adharCard">Adhar Card</label>
+            <input type="text" placeholder="Adhar Card">
+            <!-- <br> <span>Or</span> -->
+            <label for="panCard">Pan Card</label>
+            <input type="text">
+            <br>
+            <label for="RegMobNum">Registered Mobile Number</label>
+            <input type="number" name="" id="">
+            <br>
+            <label for="password">Enter New Password</label>
+            <input type="password">
+            <br>
+            <label for="confirmPassword">Re-Enter Password</label>
+            <input type="password"> <button>Generate OTP</button>
+            <br>
+            <label for="OTP">Enter OTP</label>
+            <input type="text">
+            <br>
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+    <script>
+        const forgetBtn = document.getElementById('forgetBtn');
+        const forgetpwdSection = document.querySelector('.forgetpwd');
+        const userLoginContainer = document.querySelector('.userLoginContainer');
+        const closeBtn = document.querySelector('.close-forgetpwd');
+        forgetBtn.addEventListener('click', () => {
+            forgetpwdSection.classList.add('active-forgetpwd');
+            userLoginContainer.classList.add('deactivate-userLoginContainer');
+        })
+
+        closeBtn.addEventListener('click', () => {
+            forgetpwdSection.classList.remove('active-forgetpwd');
+            userLoginContainer.classList.remove('deactivate-userLoginContainer');
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.box{
+    /* background-color: red; */
+}
+
+.box h1{
+    /* background-color: red; */
+}
+
+.box p{
+    /* background-color: yellow; */
+}
+
+body{
+    /* background-color: green; */
+    background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+    background-position:top center;
+    /* background-size: contain; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}

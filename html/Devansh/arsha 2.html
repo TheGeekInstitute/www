@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSHA</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+        *{
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .wrapper{
+            background-color: #37517E;
+            color: white;
+            height: 650px;
+        }
+        .wrapper .nav{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+        .wrapper .nav .logo{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .wrapper .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper .nav .links li a{
+            display: block;
+            margin: 0 15px;
+            font-size: 18px;
+            color: white;
+        }
+        .wrapper .nav .links li #btn{
+            border-radius: 1000px;
+            padding: 5px 15px;
+            border: 2px solid #47B2E4;
+        }
+        .wrapper .nav .links li #btn:hover{
+            background-color: #47B2E4;
+        }
+        .wrapper .hero{
+            display: flex;
+            margin-top: 100px;
+            padding: 0px 10px;
+        }
+        .wrapper .hero .right img{
+            height:  600px;
+        }
+        .wrapper .hero .left{
+            width: 60vw;
+        }
+        .wrapper .hero .left h1{
+            font-size: 50px;
+            width: 80%;
+            line-height: 50px;
+        }
+        .wrapper .hero .left p{
+            font-size:x-large;
+            width: 70%;
+            line-height: 25px;
+            font-weight: 500;
+            color:  rgb(221, 216, 216);
+        }
+        .wrapper .hero .left .btn{
+            height: 50px;
+            display: flex;
+            margin-top: 50px;
+        }
+
+        .wrapper .hero .left .btn a:first-child{
+            background-color: #47B2E4;
+            color: white;
+            font-size: large;
+            padding: 0 30px;
+            border-radius: 1000px;
+        }
+
+
+        .wrapper .hero .left .btn a:last-child{
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            padding: 0 30px;
+            border-radius: 100px;
+            line-height: 50px;
+            margin-left: 10px;
+        }
+        .wrapper .hero .left .btn a:last-child i{
+            display: block;
+            font-size: 30px;
+            margin-right: 5px;
+        }
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">ARSHA</div>
+            <ul class="links">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">DropDown</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="" id="btn">Get Started</a></li>
+                
+            </ul>
+        </div>
+        <div class="hero">
+            <div class="box left">
+                <h1>Better Solutions For Your Business</h1>
+                <p>We are team of talented designers making websites with Bootstrap</p>
+                <div class="btn">
+                    <a href="">Get Started</a>
+                    <a href=""><i class="fa-regular fa-circle-play"></i>Watch Video</a>
+                </div>
+            </div>
+            <div class="box right">
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="">
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

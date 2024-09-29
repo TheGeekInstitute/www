@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            border: 2px solid black;
+            height: 250px;
+            width: 200px;
+            margin: 200px auto;
+            padding: 10px;
+            align-items: center;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 10%;
+        }
+
+        .pagee {
+            border: 2px solid black;
+            height: 250px;
+            width: 200px;
+            margin: 200px auto;
+            padding: 10px;
+            align-items: center;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 10%;
+            background-color: rgb(6, 6, 57);
+            color: white;
+        }
+
+        .log {
+            text-align: center;
+        }
+
+        label {
+            font-size: larger;
+            font-weight: 500;
+            margin: 10px;
+        }
+
+        input {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .login {
+            margin-inline: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .dark {
+            background-color: black;
+        }
+
+        .btn {
+            border-radius: 50%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            width: 80px;
+            font-size: x-large;
+        }
+
+        .btn.dark {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .pagee.dark{
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagee">
+        <h1 class="log">Login Form</h1>
+        <label for="" class="user">Username</label><br>
+        <input type="text" name="Username" id=""><br>
+        <label for="">password</label><br>
+        <input type="text" name="" id="">
+        <button class="login">login</button>
+    </div>
+    <button class="btn">Dark</button>
+    <script>
+
+        let page=document.querySelector(".pagee")
+        let btn =document.querySelector(".btn"); 
+        btn.addEventListener("click", () => {
+            document.body.classList.toggle("dark")
+            btn.classList.toggle("dark")
+            if(btn.classList.contains("dark")){
+                btn.innerHTML="Light"
+            }
+            else{
+                btn.innerHTML="Dark"
+            }
+
+            page.classList.toggle("dark")
+
+          
+        })
+    </script>
+</body>
+
+</html>

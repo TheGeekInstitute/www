@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Courgette&family=Geologica:wght@600&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            /* box-sizing: border-box;
+             */
+             box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            /* border: 1px solid red; */
+            height: 60px;
+            background-color: black;
+            color: rgb(236, 19, 19);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        .nav h1{
+            font-family: 'Courgette', cursive;
+        }
+        .nav h1 span{
+            color: rgb(168, 54, 235);
+        } 
+        
+        .nav ul {
+            display: flex;
+        }
+        .nav ul li{
+            /* border: 1px solid black; */
+            font-size: larger;
+            font-weight: 700;
+            margin: 0 5px;
+            padding: 19px 10px;
+        }
+        .nav ul li a{
+            color: white;
+        }
+        .nav ul li:hover{
+            background-color: gray;
+            color: blue;
+        }
+        .main{
+            background-color: rgb(208, 208, 103);
+            padding: 1px 0px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            /* border: 1px solid red; */
+            height: 240px;
+            width: 230px;
+            text-align: center;
+            padding: 0 10px;
+            background-color: rgb(154, 214, 195);
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px grey;
+            margin: 60px 10px;
+        }
+
+        .box img{
+            height: 80px;
+            width: 100px;
+            margin-top: -40px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px grey;
+        }
+        .box h3{
+            color: red;
+        }
+        .box p{
+            text-align: justify;
+            font-weight: 400;
+            /* text-shadow: .5px .5px 1px black; */
+        }
+        .box .btn{
+            background-color: darkblue;
+            display: block;
+            color: white;
+            text-transform: capitalize;
+            width: 80px;
+            padding: 4px;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 3px;
+
+        }
+        .box .btn:hover{
+            background-color: blue;
+        }
+
+
+        .footer{
+            background-color: black;
+            color: white;
+            height: 50px;
+        }
+        .footer p{
+            text-align: center;
+            font-weight: 700;
+            line-height: 50px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <!-- <img src="" alt="123" width="50px"> -->
+        <h1>Shi<span>Zone</span></h1>
+        <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Pages</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="../web/images/10.jpg" alt="Image">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt laudantium voluptatum a repellendus, illo nobis aspernatur quaerat itaque</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Copyrights &copy; All Rights Reserved</p>
+    </div>
+</body>
+</html>

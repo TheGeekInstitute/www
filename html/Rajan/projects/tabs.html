@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabs</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            /* border: 1px solid royalblue; */
+            padding: 10px 0;
+        }
+        .container{
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        .container .box{
+            /* border: 1px solid red; */
+            width: 50%;
+        }
+        .container .box .tabs{
+            display: flex;
+            /* border: 1px solid black; */
+            justify-content: space-between;
+            padding: 5px;
+            background-color: rgb(185, 185, 185);
+        }
+        .container .box .tabs h2{
+            padding: 0 10px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .container .box .tabs h2:hover{
+            border: 1px solid royalblue;
+            background-color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        .container .box .contante{
+            text-align: center;
+            padding-top: 5rem;
+        }
+        .container .box .contante p{
+            display: none;
+        }
+        .html.show{
+            border: 1px solid royalblue;
+            background-color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        .css.show{
+            border: 1px solid royalblue;
+            background-color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        .jv.show{
+            border: 1px solid royalblue;
+            background-color: white;
+            padding: 0 10px;
+            border-radius: 5px;
+        }
+        .container .box img{
+            width: 100%;
+            height: 25rem;
+            display: none;
+        }
+        .container .box .ihtml.show{
+            display: block;
+        }
+        .container .box .icss.show{
+            display: block;
+        }
+        .container .box .ijv.show{
+            display: block;
+        }
+        .container .box .container{
+            background-color: rgb(156, 178, 243);
+        }
+        .container .box .contante .phtml.show{
+            display: block;
+        }
+        .container .box .contante .pcss.show{
+            display: block;
+        }
+        .container .box .contante .pjv.show{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        website development
+    </h1>
+    <div class="container">
+        <div class="box">
+            <img src="https://w3camps.com/wp-content/uploads/2023/01/what-is-js-cover-1024x576.jpg" alt="01" class="ijv">
+            <img src="https://ksra.eu/wp-content/uploads/2021/05/Vp9WvV7YKdH4k8sKRePcE8-1200-80.jpeg" alt="02" class="icss">
+            <img src="https://www.ionos.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/html-tagst.jpg" alt="03" class="ihtml show">
+        </div>
+        <div class="box">
+            <div class="tabs">
+                <h2 class="html show">HTML</h2>
+                <h2 class="css">CSS</h2>
+                <h2 class="jv">JavaScript</h2>
+            </div>
+            <div class="contante">
+                <p class="phtml show">
+                    Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript. 
+                </p>
+                <p class="pcss">
+                    Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript
+                </p>
+                <p class="pjv">
+                    JavaScript is a lightweight, cross-platform, single-threaded, and interpreted compiled programming language. It is also known as the scripting language for webpages. It is well-known for the development of web pages, and many non-browser environments also use it.
+                    JavaScript is a weakly typed language (dynamically typed). JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript is both an imperative and declarative type of language. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let html=document.querySelector('.html');
+        let css=document.querySelector('.css');
+        let jv=document.querySelector('.jv');
+        let phtml=document.querySelector('.phtml');
+        let pcss=document.querySelector('.pcss');
+        let pjv=document.querySelector('.pjv');
+        let ihtml=document.querySelector('.ihtml');
+        let icss=document.querySelector('.icss');
+        let ijv=document.querySelector('.ijv');
+
+        html.addEventListener("click",()=>{
+            phtml.classList.add("show");
+            pcss.classList.remove("show");
+            pjv.classList.remove("show");
+
+            ihtml.classList.add("show");
+            icss.classList.remove("show");
+            ijv.classList.remove("show");
+
+            html.classList.add("show");
+            css.classList.remove("show");
+            jv.classList.remove("show");
+        })
+
+        css.addEventListener("click",()=>{
+            phtml.classList.remove("show");
+            pcss.classList.add("show");
+            pjv.classList.remove("show");
+
+            ihtml.classList.remove("show");
+            icss.classList.add("show");
+            ijv.classList.remove("show");
+
+            html.classList.remove("show");
+            css.classList.add("show");
+            jv.classList.remove("show");
+        })
+
+        jv.addEventListener("click",()=>{
+            phtml.classList.remove("show");
+            pcss.classList.remove("show");
+            pjv.classList.add("show");
+
+            ihtml.classList.remove("show");
+            icss.classList.remove("show");
+            ijv.classList.add("show");
+
+            html.classList.remove("show");
+            css.classList.remove("show");
+            jv.classList.add("show");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            text-align: center;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+        }
+
+        .container .card{
+            height: 300px;
+            width: 300px;
+          
+        }
+
+        .container .card .front,
+        .container .card .back{
+height: 300px;
+width: 300px;
+font-size: 60px;
+line-height: 300px;
+position: absolute;
+backface-visibility: hidden;
+        }
+
+        .container .card .front{
+background-color: red;
+        }
+
+        .container .card .back{
+background-color: yellow;
+        }
+        .container:hover .card{
+            transform: rotate3d(1,1,1,180deg);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="front">XYZ
+                <img src="../images/10.jpg" alt="">
+            </div>
+
+            <div class="back">ABCD
+                <img src="../web/images/12.jpg" alt="">ABCD</div>
+        </div>
+    </div>
+    
+</body>
+</html>

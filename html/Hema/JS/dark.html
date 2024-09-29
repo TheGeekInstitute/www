@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 400px;
+            bottom: 2px solid red;
+            background-color: antiquewhite;
+            color: black;
+            font-size: x-large;
+            padding: 20px;
+        }
+
+        .container.dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at eum atque voluptas nam, quasi minima adipisci, modi praesentium odit veritatis repellendus! Obcaecati consectetur cumque ea. Autem a adipisci inventore?</p>
+        </div>
+
+        <button id="btn">Dark</button>
+
+        <script>
+            let container = document.querySelector(".container");
+            document.querySelector('#btn').addEventListener("click",()=>{
+                container.classList.toggle("dark")
+            })
+        </script>
+</body>
+</html>

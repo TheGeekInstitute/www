@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Min Max</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            /* margin: 10px; */
+            height: 400px;
+            /* width: 600px; */
+            margin: auto;
+            display: grid;
+            /* grid-template-columns: 150px 150px; */
+            /* grid-template-rows: minmax(150px max-content) 200px; */
+            /* gap: 20px; */
+            grid-template-columns: repeat(auto-fit,minmax(100px,min-content));
+            grid-template-rows: 50px 50px 50px;
+            /* align-items: start; */
+            /* justify-items: end; */
+            /* place-items: center center; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* grid-auto-flow: row dense; */
+        }
+
+
+        .box1{
+        background-color: red;
+        order: 3;
+        }
+        .box2{
+            background-color: green;
+            /* align-self: end; */
+            /* justify-self: center; */
+            /* place-self: end center; */
+            order: 2;
+        }
+        .box3{
+            background-color: yellow;
+            /* align-self: center; */
+            order: 1;
+        }
+        .box4{
+            background-color: blue;
+        }
+        .box5{
+            background-color: purple;
+        }
+        .box6{
+            background-color: orangered;
+        }
+        .box7{
+            background-color: cyan;
+        }
+        .box8{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+
+
+
+
+        
+    </div>
+</body>
+</html>

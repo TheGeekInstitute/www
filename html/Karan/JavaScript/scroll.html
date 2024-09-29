@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 300px;
+            overflow: scroll;
+            /* padding: 5px; */
+            margin: auto;
+        }
+
+        .box{
+            height: 950px;
+            width: 900px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+
+    <script>
+        let container= document.querySelector(".container");
+        let box= document.querySelector(".box");
+
+
+        container.addEventListener("scroll",()=>{
+            // console.clear()
+            // console.log("Top : " + container.scrollTop)
+            // console.log("Left : " + container.scrollLeft)
+
+        })
+
+
+        // console.log(box.scrollWidth)
+        // console.log(box.scrollHeight)
+
+        // console.log("Width :" + container.offsetWidth)
+        // console.log("Height :" + container.offsetHeight)
+
+
+        // console.log("Width :" + container.clientWidth)
+        // console.log("Height :" + container.clientHeight)
+
+        container.addEventListener("click",(e)=>{
+            // console.log(e.clientX)
+            // console.log(e.clientY)
+
+            // console.log(e.pageX)
+            // console.log(e.screenX)
+
+            // console.log(e.offsetX)
+
+        })
+
+    </script>
+
+
+
+
+
+</body>
+</html>
+
+
+<!-- 
+Property	            Relative to
+The screenX Property	The Screen area
+The screenY Property	The Screen area
+The clientX Property	The Window area
+The clientY Property	The Window area
+The pageX Property	The Page (Document)
+The pageY Property	The Page (Document)
+The offsetX Property	The target Element
+The offsetY Property	The target Element -->

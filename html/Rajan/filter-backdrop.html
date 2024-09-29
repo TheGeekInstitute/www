@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter -  Backdrop-Filter</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+
+            /* filter: blur(5px); */
+            /* filter: brightness(200%); */
+            /* filter: contrast(120%); */
+            /* filter: drop-shadow(3px 3px red); */
+            /* box-shadow: 2px 2px red; */
+            /* filter: grayscale(1); */
+            /* filter: hue-rotate(30deg); */
+            /* filter: invert(1); */
+            /* filter: saturate(300%) brightness(150%) contrast(180%); */
+            /* filter: sepia(100%); */
+        }
+
+        img:hover{
+            /* filter: none; */
+
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container .box{
+            height: 300px;
+            width: 300px;
+            /* border: 2px solid black; */
+            color: white;
+            padding: 5px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            /* box-shadow: 0px 0px 10px white; */
+        }
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg" alt="">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/814px-Apple_logo_black.svg.png" alt=""> -->
+
+
+    <div class="container">
+        <div class="box">
+            <h1>ABCD XYZ</h1>
+        </div>
+    </div>
+</body>
+</html>

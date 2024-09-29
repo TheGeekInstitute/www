@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+
+        }
+
+        .container{
+            height: 320px;
+            width: 250px;
+            border: 1px solid red;
+            margin: auto;
+            margin-top: 200px;
+            background-color: #808080a4;
+            overflow: hidden;
+        }
+        .card .adidas{
+            position: absolute;
+            height: 270px;
+            width: 250px;
+         
+        }
+        .card .ooo{
+            display: inline-block;
+            height:110px;
+            width: 180px;
+            background-color: rgb(151, 22, 22);
+            border-radius: 50%;
+            position: relative;
+            left:  100px;
+            top: -7px;
+            transition: all 1s;
+            overflow: hidden;
+        }
+        .card:hover .ooo{
+            height:180px;
+            width: 280px;
+            border-radius: 50%;
+            position: relative;
+            /* right: 25px; */
+            top: -15;
+            right: 25px;
+            overflow: hidden;
+        }
+        .card img{
+            position: absolute;
+            height: 100px;
+            z-index:2 ;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="ooo"></span>
+            
+            <img src="./nikhil123.png" alt="">
+            
+            
+            
+            <div class="imgbx">
+          
+            
+            </div>
+            <div class="content">
+                <h2>Nike Shoes</h2>
+                <div class="size">
+                    <h3>Size :</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>11</span>
+                </div>
+                <div class="color">
+                    <h3>Color</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#">Buy Now</a>
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>

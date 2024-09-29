@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+            background-color: palevioletred;
+        }
+
+        .container {
+            height: 300px;
+            width: 300px;
+            margin: 150px auto;
+            border-radius: 50%;
+
+
+        }
+
+        .container .box {
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+
+            transition: all 1s ease-in-out;
+            border-end-end-radius: 100px;
+            border-radius: 50%;
+
+
+
+        }
+
+        .container .box .front {
+            background-color: red;
+            line-height: 300px;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 50%;
+
+
+        }
+
+        .container .box .back {
+            background-color: purple;
+            line-height: 300px;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black;
+            border-radius: 50%;
+
+        }
+
+
+        .container .box .back {
+            height: 300px;
+            width: 300px;
+            transform: rotateY(180deg);
+            background-image: url(https://th.bing.com/th?id=OIP.gCTkiSOlJbz3aNwvKe-mywHaHk&w=247&h=252&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+
+        }
+
+        .container .box .front {
+            height: 300px;
+            width: 300px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/015/577/226/original/smiling-face-with-smiling-eyes-and-three-hearts-large-size-of-yellow-emoji-smile-free-vector.jpg);
+
+        }
+
+
+        .container:hover .box {
+            transform: rotateY(180deg);
+        }
+
+
+        .container .box .back {
+            background-position: center;
+            background-repeat: no repeat;
+            background-size: cover;
+        }
+
+        .container .box .front {
+            background-position: center;
+            background-repeat: no repeat;
+            background-size: cover;
+        }
+
+
+
+
+
+
+
+
+
+        .container1 {
+            height: 400px;
+            width: 400px;
+            margin: 150px auto;
+            border-radius: 50%;
+
+
+        }
+
+        
+        .container1 .box1 {
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+
+            transition: all 1.5s ease-in-out;
+            border-end-end-radius: 100px;
+            border-radius: 50%;
+
+
+
+        }
+
+        .container1 .box1 .front1 {
+            background-color: red;
+            line-height: 300px;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 50%;
+
+
+        }
+
+        .container1 .box1 .back1 {
+            background-color: purple;
+            line-height: 300px;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black;
+            border-radius: 50%;
+
+        }
+
+
+        .container1 .box1 .back1 {
+            height: 300px;
+            width: 300px;
+            transform: rotateY(180deg);
+            background-image: url(https://cdn3.iconfinder.com/data/icons/emoji-81/48/6-1024.png);
+
+        }
+
+        .container1 .box1 .front1 {
+            height: 300px;
+            width: 300px;
+            background-image: url(https://th.bing.com/th/id/OIP.04mOAufETCT3-QcqRr-tEgHaHk?rs=1&pid=ImgDetMain);
+
+        }
+
+
+        .container1:hover .box1 {
+            transform: rotateY(180deg);
+        }
+
+
+        .container1 .box1 .back1 {
+            background-position: center;
+            background-repeat: no repeat;
+            background-size: cover;
+        }
+
+        .container1 .box1 .front1 {
+            background-position: center;
+            background-repeat: no repeat;
+            background-size: cover;
+        }
+    </style>
+
+
+
+
+
+
+    <div class="container">
+
+        <div class="box">
+
+            <div class="front"></div>
+
+            <div class="back"></div>
+
+            
+        </div>
+
+        <div class="container1">
+            <div class="box1">
+                <div class="front1"></div>
+
+            <div class="back1"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

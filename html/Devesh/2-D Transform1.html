@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            
+        }
+        .container{
+            /* border: 2px solid black; */
+            height: 300px;
+            width: 250px;
+            margin: auto;
+            margin-top: 150px;
+            background-image: url("https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg");
+            box-shadow: 0px 0px 20px black, 0px 0px 30px grey;
+            border-radius: 20px;
+            overflow: hidden;
+            background-blend-mode: overlay;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            border-radius: 12px;
+            background-size: cover;
+            
+            
+        
+        }
+
+        .container:hover .card{
+            transform: translateY(0) ;
+            border-radius: 12px;
+        }
+
+        .card{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 250px;
+            position: relative;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            transform: translateY(80%);
+            transition: all .3s;
+            text-align: center;
+
+        }
+
+        .card h1{
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            text-shadow: 0px 0px 5px rgba(5, 48, 190);
+            border-bottom: 2px solid white;
+            line-height: 50px;
+        }
+        .card img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            margin: 10px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 20px white, 0px 0px 10cyan;
+        }
+
+        .card p{
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            font-family: cursive;
+        }
+
+        .card .star{
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Devesh</h1>
+            <img src="../web/images/11.jpg" alt="">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, cum. Lorem ipsum dolor sit  </p>
+           <br>
+           <div class="star">
+
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+
+            <a href="#"><i class="fa-regular fa-star"></i></a>
+
+           </div>
+        </div>
+       
+    </div>
+</body>
+</html>

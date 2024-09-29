@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        First name :
+        <input type="text" name="firstname">
+
+        <br><br>
+
+        Last Name :
+
+        <input type="text" name="lastname">
+
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <?php
+    if($_SERVER['REQUEST_METHOD']=="POST"){
+        if(isset($_POST['firstname']) && !empty($_POST['firstname'])){
+            $firstname=$_POST['firstname'];
+
+            if(isset($_POST['lastname']) && !empty($_POST['lastname'])){
+                $lastname=$_POST['lastname'];
+
+                echo "Firstname : " . $firstname  . "<br>";
+                echo "Lastname : " . $lastname  . "<br>";
+
+
+            }
+            else{
+                echo "Please Enter Last Name";
+            }
+        }
+        else{
+            echo "Please Enter First Name";
+        }
+    }
+
+
+    ?>
+
+
+
+</body>
+</html>

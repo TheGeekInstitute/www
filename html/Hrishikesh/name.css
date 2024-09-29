@@ -1,0 +1,30 @@
+#heading1{
+    background-color: aqua ;
+    color: red;
+    border: solid;
+    border-color: black ;
+}
+h1{
+    background-color: blueviolet;
+    color: white;
+    border: dotted;
+    border-color: blue;
+}
+#heading2{
+    background-color: tomato;
+    color: rgb(11, 76, 133);
+    border: double;
+    border-color: springgreen;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 35px;
+    border-width: 7px;
+}
+.about{
+    background-color: blue;
+    color: rgb(187, 22, 22);
+    border: dashed;
+    border-color: yellow;
+    border-radius: 20px 10px;
+}

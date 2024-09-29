@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check_num(num){
+            if(num!=null &&  Number.isInteger(num)==true){
+                if(num%2==0){
+                    return num + " is an Even Number";
+                }
+                else{
+                    return num + " is a Odd Number";
+                }
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // document.write(check_num(101))
+
+        function sr_no(num){
+            let sr_no="";
+            let sum =0;
+            if(num!=null &&  Number.isInteger(num)==true){
+                for(let i=1 ; i<=num ; i++){
+                    sum+=i;
+                    sr_no += i + "<br>";
+                }
+                return sr_no + "Sum of All Above : " + sum;
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // document.write(sr_no(10));
+
+        function table(num){
+            let table="";
+            let sum =0;
+            if(num!=null &&  Number.isInteger(num)==true){
+                for(let i=1 ; i<=num ; i++){
+                    sum+=i*num;
+                    table += num + " x " +  i +" = " + num*i + "<br>";
+                }
+                return table + "Sum of All Above : " + sum;
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+       
+
+        // document.write(table(10))
+    </script>
+</body>
+</html>

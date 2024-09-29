@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+         overflow: hidden;
+        }
+
+        .container .slider{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            transition: all .5s ease-in-out;
+   
+        }
+
+        .container .slider .image{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 100%;
+           
+        }
+
+        .container .slider .image.active{
+            transform: translateX(0);
+           
+        }
+
+        .btn{
+            position: absolute;
+            top: 90vh;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .btn button{
+            display: block;
+            margin: 0 10px;
+            width:7rem;
+            height: 2rem;
+            border: transparent;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-weight: 900;
+            font-size: large;
+            transition: all .3s linear;
+            cursor: pointer;
+            border-radius: .5rem;
+        }
+
+        .btn button:active{
+            transform: scale(.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(./images/1.jpeg);"></div>
+            <div class="image"  style="background-image: url(./images/2.jpeg);"></div>
+            <div class="image"  style="background-image: url(./images/3.jpeg);"></div>
+            <div class="image"  style="background-image: url(./images/4.jpeg);"></div>
+            <div class="image"  style="background-image: url(./images/5.webp);"></div>
+        </div>
+
+        <div class="btn">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector(".slider");
+        const image = document.querySelectorAll(".image");
+        const next= document.querySelector("#next");
+        const prev = document.querySelector("#prev");
+
+        image[0].classList.add("active");
+
+        var index=0;
+
+
+
+    next.addEventListener("click",()=>{
+        image[index].classList.remove("active");
+        if(index >= image.length-1){
+            index = 0;
+        }
+        else{
+            index++;
+        }
+        image[index].classList.add("active");
+        slider.style.transform = "translateX(-"+(index*100)+"%)";
+    })
+
+    prev.addEventListener("click",()=>{
+        image[index].classList.remove("active");
+        if(index <= 0){
+            index = image.length-1;
+        }
+        else{
+            index--;
+        }
+        image[index].classList.add("active");
+        slider.style.transform = "translateX(-"+(index*100)+"%)";
+    })
+
+    </script>
+</body>
+</html>

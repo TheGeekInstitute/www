@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["akash", "khustra" ,"major" ,"house"]
+        let object = {
+            "name" : "Rohit",
+            "class" : "x",
+            "age" : "28",
+            "occupation" : "cs student"
+        }
+
+        // for(value of arr){
+        //     document.write(value + "<br>")
+        // }
+         
+        // for in
+        // for(value in arr){
+        //     document.write(value + ".) " + arr[value]+"<br>")
+        // }
+        // for(key in arr){
+        //     document.write(key + ".) "+ arr[key]+ "<br>")
+        // }
+
+        // for(uno in object){
+        //     document.write(uno +".) ;. "+object[uno]+ "<br>")
+        // }
+
+        // arr.forEach(function(value,key)
+        // {
+        //     document.write(  key+".); "+value + "<br>")
+        // })
+
+        let a = prompt("ENETER ANY TABLE NUMBER")
+        a = parseInt(a)
+        if(a!=null && a>0){
+            for(let i=1; i<=10; i++){
+            document.write(a+" x "+ i+ "=" + a*i + "<br>")
+        }
+        }
+        else{
+            document.write("PLEASE ENTER POSITIVE NUMBER")
+        }
+       
+
+
+
+    </script>
+</body>
+</html>

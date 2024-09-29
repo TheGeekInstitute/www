@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes me</title>
+    <style>
+        ul li{
+			font-size: 40px;
+			font-weight: 900;
+        }   
+
+        ul li:nth-last-child(2){
+            /* color: red; */
+        }
+
+        div p:first-of-type{
+            /* color: red; */
+        }
+
+        div p:last-of-type{
+            /* color: red; */
+        }
+
+        div p:nth-of-type(2){
+            /* color: red; */
+        }
+
+        div p:nth-last-of-type(1){
+            /* color: red; */
+        }
+
+        div p:only-child{
+            /* color: red; */
+        }
+
+        
+
+        div p:only-of-type{
+            color: red;
+        }
+
+        div:empty{
+            border: 2px solid red;
+            height: 100px;
+        }
+
+        div:not(:empty){
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <ul>
+        <li lang="en">1</li>
+        <li lang="hi">2</li>
+        <li lang="fr">3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <div>
+        <b>vikas</b>
+        <p>para</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, deserunt ducimus aspernatur iusto veritatis voluptates beatae quae delectus, sit ipsa at facere. Qui quae quod, quam harum magnam quia placeat?</p>
+
+        <p>sagar</p>
+    </div>
+
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum repellendus, iusto ullam cupiditate quaerat libero earum numquam se</p>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, facilis minima! Aliquam, porro. Veniam rerum maxime dignissimos quo id dicta, adipisci at numquam tempore autem error dolore minima sequi commodi.</p>
+
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatem, ducimus a perferendis neque officia maxime adipisci minima voluptas, aliquid provident impedit? Quisquam fuga veniam incidunt ab. Nisi, accusantium eos!</p>
+
+         <div>
+            <p>sahil</p>
+            <b>vishal</b>
+            
+         </div>
+
+
+         <a href="">Chapter</a>
+         <a href="">Chapter</a>
+         <a href="">Chapter</a>
+
+         <p id="ch1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex doloribus repudiandae nemo. Inventore quibusdam, odio veniam qui nostrum, excepturi culpa hic obcaecati, explicabo enim velit animi non</p>
+         <p id="ch2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, praesentium nulla voluptatibus dolorem nemo aliquam culpa, aperiam, sint suscipit quos impedit? Sequi assumenda consequuntur doloribus u</p>
+
+         <p id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, deleniti amet cumque sapiente mollitia quisquam asperiores a illum reiciendis fugit rem. Expedita fugit consequatur eligendi possimus laudantium quam? Iste, omnis.</p>
+    
+</body>
+</html>

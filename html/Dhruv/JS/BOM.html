@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1 id="show"></h1>
+    <button onclick="abcd()">ABCD</button>
+    <button onclick="closes()">close</button>
+
+</head>
+<body>
+    <script>
+        let innerHeight = window.innerHeight;
+        let innerWidth = window.innerWidth;
+
+        let outerHeight= window.outerHeight;
+        let outerWidth = window.outerWidth;
+
+        
+        // setInterval(()=>{
+        //     if(outerWidth<=600){
+        //         document.body.style.backgroundColor = "red";
+                
+        //     }
+        //     document.getElementById("show").innerHTML = outerWidth
+       
+        // },1000)
+        let win;
+        function abcd(){
+           win= window.open("https://www.w3schools.com/js/js_window.asp","_blank","height=200px,width=200px,top=250px,left=700px")
+            
+        }
+        
+        function closes(){
+            win.close(win)
+            
+        }
+
+    </script>
+</body>
+</html>

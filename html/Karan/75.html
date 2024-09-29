@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            /* font-style: italic; */
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        body{
+            border: 1px solid red;
+        }
+        .navbar{
+            background-color: black;
+            box-shadow: 2px 2px 3px black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 10vh;
+        }
+        .navbar, .logo{
+            margin-top: 10px;
+            height: 1vh;
+            font-size: 40px;  
+        }
+        .navbar, .google1, .google2{
+            height: 80px;
+        }
+        .navbar ul li{
+            float: left;
+        }
+
+        .navbar ul li a{
+            color: #fff;
+            display: block;
+            /* margin: 0 5px; */
+            padding: 30px 15px;
+        }
+
+        .navbar ul li ul{
+            position:absolute;
+            /* left:0; */
+            /* width: 200px; */
+        }
+
+       .navbar ul li ul li{
+        width: 100%;
+       }
+
+       .navbar ul li ul li a{
+        padding: 10px 5px;
+       }
+
+
+        .navbar ul li a:hover{
+            background-color: #fff;
+            color: blue;
+
+        }
+        @media only screen and (max-width:600px) {
+            .navbar{
+                background-color: red;
+                margin: auto;
+                width: auto;
+            }
+            .navbar ul li a{
+                width: auto;
+            }
+            .navbar, .logo{
+                background-color: red;
+                width: auto;
+            }
+            .navbar, .google1 .google2{
+                width: auto;
+                background-color: green;
+                padding-left: 5px;
+            }
+        }
+       
+        .items{
+            background-color: blue;
+            color: red;
+            visibility: hidden;
+            width: 140px;
+        }
+
+        .navbar ul li:hover .items{
+            visibility: visible;
+        }
+        .karan{
+            color: red;
+            background-color: blue;
+            visibility: hidden;
+            width: 160px;
+        }
+
+        .navbar ul li:hover .karan{
+            visibility: visible;
+            color: red;
+        }
+      
+        
+        .hero{
+            /* background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&w=1000&q=80");
+            */
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 80vh;
+            
+        }
+        .hereo, h1{
+            text-align: center;
+            margin-top:150px;
+            margin-bottom: 40px;
+            font-weight: 900;
+            margin-right: 50PX;
+            
+        }
+        .hero, .btn{
+            border: 1px solid black;
+            padding: 10px 25px;
+            text-decoration: none;
+            color: black;
+            background-color: #fff; 
+            text-align: center;    
+            /* margin-top: 30px; */
+        }
+        .button,.btn{
+            margin-bottom: 15px;
+        }
+        .hero, .btn:hover{
+            background-color: red;
+            color: balck;
+        }
+    .eng, ol{
+      display: flex;
+       width: 80px;
+      justify-content: space-around;
+      margin: 6px;
+      margin-left: 1500px;
+      padding-right: 15px;
+      
+  
+}
+.eng, ol a{
+    
+    margin: 5px;
+    padding: 5px;
+    color: black; 
+
+}
+ a:hover{
+    text-decoration: underline;
+    background-color: grey;
+}
+ .eng, span{
+ margin-right: 50px;
+ font: 900;
+ font-size: 18px;
+ }
+/* .hero{
+  display:flex;
+  font-size: 11px;
+  margin-top: 3%;
+  margin-right: 50px;
+  margin-bottom: 230px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+button:hover{
+  border: 1px solid black;
+}
+.hero, span{
+ margin-right: 5px;
+ font: 900;
+ font-size: 12px;
+
+} */
+        .footer{
+           display: flex;
+           height: 10vh;
+           color: white;
+           background-color: black;
+            
+        }
+    .footer, .links, ul a{
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk34ElOno76ithBGdvmagoOz3LBc4u4HJSw&usqp=CAU" class="google2">
+            <h1 class="logo">LOGO</h1>
+
+            <ul>
+                <li><a href="#" class="sub">LANGUAGES</a>
+                <ul class="items">
+                    <li><a href="./38.html">JAWA</a></li>
+                    <li><a href="./63.html">PYTHON</a></li>
+                    <li><a href="./63.html">C</a></li>
+                    <li><a href="./63.html">HTML</a></li>
+                    <li><a href="./63.html">C<sup>++</sup></a></li>
+                </ul>
+            </li>
+                <li><a href="#">COURSES</a>
+                    <ul class="karan">
+                        <li><a href="./10.html">DCA</a></li>
+                        <li><a href="./10.html">HACKING</a></li>
+                        <li><a href="./10.html">NETWORKING</a></li>
+                        <li><a href="./35.html">WEB DEVLOPMENT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SERVICES</a>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk34ElOno76ithBGdvmagoOz3LBc4u4HJSw&usqp=CAU" class="google1">
+    
+            
+        </nav>
+        <div class="hero">
+       <h1>THIS IS MY OFFCIAL WEBSITE ON GOOGLE</h1>
+       <div class="button">
+        <a href="#" class="btn">WATCH VIDEOS</a>
+        <a href="#" class="btn">LEARN MORE</a>
+        <div class="eng">
+            <ol class="languages">
+                <span>Google offered in:</span>
+                <li><a href="#">हिन्द</a></li>
+                <li><a href="#">বাংলা</a></li>
+                <li><a href="#">తెలుగు</a></li>
+                <li><a href="#">मराठी</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">ગુજરાતી</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">ਪੰਜਾਬੀ</a></li>
+              </ol>
+            </div>
+            
+    </div>
+       
+        </div>
+          
+        <div class="footer">
+            <h4>Menubar google</h4>
+            <div class="links">
+        <ul>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">Setting</a>
+            </ul>
+        
+            <ul>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

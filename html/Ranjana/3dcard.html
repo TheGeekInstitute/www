@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+        }
+        
+        .box{
+            /* border: 1px solid red; */
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+            transition: all 2s;
+            /* transition-delay: 1s; */
+            transform-style: preserve-3d;
+
+            /* transform-origin: top left; */
+            
+            animation: rotate 3s linear 0s forwards infinite;
+        }
+        
+        .front,.back{
+            /* border: 1px solid green; */
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            font-size:60px;
+            text-align: center;
+            line-height: 300px;
+            backface-visibility: hidden;
+            border-radius: 20px;
+        }
+
+        .front{
+            background-color: red;
+
+        }
+
+        .back{
+            background-color: yellow;
+            transform: rotate3d(1,1,1,180deg);
+        }
+
+
+        .container:hover .box{
+            transform: rotate3d(1,1,1,180deg);
+        }
+
+        @keyframes rotate {
+            0%{
+                transform: rotate3d(1,1,1,0deg) rotate(0);
+            }
+            100%{
+            transform: rotate3d(1,1,1,180deg) rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="front">FRONT</div>
+            <div class="back">BACK</div>
+        </div>
+    </div>
+</body>
+</html>

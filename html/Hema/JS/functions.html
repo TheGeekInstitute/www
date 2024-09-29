@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>   
+
+              //**function**//
+
+
+
+            // function print_name(){
+            //     document.write("ABCD");
+            // }
+
+
+            // print_name()
+
+
+            // function print_name(name){
+            //     return 'hi, ' + name;
+            // }
+
+
+            // document.write(print_name())
+
+
+            function print_name(name,age){
+                if(name!=null && age !=null){
+                    return "Hi, " + name + " You are " + age + " Yeard Old.";
+                }
+                else{
+                    return "Please Provide name and age";
+                }
+            }
+
+
+            // document.write(print_name("AMit",25));
+
+            function print_name(name,age){
+                if(name!=null && age !=null){
+                    return "Hi, " + name + " You are " + age + " Years Old.";
+                }
+                else{
+                    return " Please provide name and age";
+                }
+            }
+            // document.write(print_name("amit",26));
+
+
+        
+
+        function max(){
+        // let a = 10 , b=10 , c=100;
+
+        let a  = prompt("Enter First Number");
+        let b  = prompt("Enter Second Number");
+        let c  = prompt("Enter third Number");       
+                
+        if(a>b && a>c){
+            alert(a + " is Grater Than " + b +" and " +c);
+        }
+        else if(b>c && b>a){
+            alert(b + " is Grater Than " + a +" and " +c);
+        }
+        else if(c>a && c>b){
+            alert(c + " is Grater Than " + a +" and " +b);
+        }
+        else{
+            alert('All Numbers Are Equal')
+        }
+            }
+max()
+
+
+function table(num){
+    
+    if(num!=null && num > 0){
+        let table="";
+        for(let i =1 ; i<=10 ; i++ ){
+           table += num + " x " + i + " = " + num*i + "<br>";
+        }
+        return table;
+    }
+    else{
+        return "Please Provide a Positive Number";
+    }
+}
+
+document.write(table(1337))
+
+document.write("<br><br>")
+
+document.write(table(13))
+
+
+
+
+</script>
+</body>
+</html>

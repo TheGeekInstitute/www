@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            height: 900px;
+            width: 100%;
+        }
+       
+        .box{
+            border: 2px solid yellow;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 30px;
+            position: relative;
+            top: calc(50% - 100px );
+            margin: auto;
+            font-weight: bold;
+        }
+        .html{
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            top: 400px;
+            left: 550px;
+            transform: rotate(-45deg);
+            animation-name: mouse;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: -1s;
+
+        }
+        .css{
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            top: 400px;
+            left: 600px;
+            transform: rotate(-45deg);
+            animation-name: mouse;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: -2s;
+
+
+        }
+        .js{
+            width: 250px;
+            height: 160px;
+            position: absolute;
+            top: 400px;
+            left: 500px;
+            transform: rotate(-45deg);
+            animation-name: mouse;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: -3s;
+
+
+        }
+        .php{
+            width: 250px;
+            height: 160px;
+            position: absolute;
+            top: 400px;
+            left: 680px;
+            transform: rotate(-45deg);
+            animation-name: mouse;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* animation-delay: -1s; */
+        }
+        @keyframes mouse {
+            from { transform: rotate(0deg) translateX(290px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(290px) rotate(-360deg); }
+        }
+       
+        </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7hWu-N5eW5iFhzGfSkKLrw4lGxCuMNomdA&usqp=CAU" alt="image"
+         class="html">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxvYfpWKHSf8KeoqeMx-uyQ8HkWDzdvQFxg&usqp=CAU" alt="image" class="css">
+
+        
+        <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png" alt="image" class="js">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdNha4ELloKWaIxFpAcvRKG3Ip6b2enEv2iQ&usqp=CAU" alt="" class="php">
+
+
+        <div class="box">
+            The best HTML and CSS project for beginers
+        </div>
+    </div>
+</body>
+</html>

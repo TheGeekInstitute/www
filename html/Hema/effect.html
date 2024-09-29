@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #field{
+            display: block;
+            border: none;
+            outline: transparent;
+           border-bottom: 3px solid royalblue;
+           height: 25px;
+           width:150px; 
+           background-color: bisque;
+           margin: 150px auto;
+           border-radius: 100000px;
+           padding: 0 8px;
+
+        }
+
+        .image{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .image img{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all .3s linear;
+        }
+
+        .image:hover img{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="field">
+
+
+    <div class="image">
+        <img src="../web/images/11.jpg" alt="">
+    </div>
+</body>
+</html>

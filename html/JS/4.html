@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let arr_obj=[
+    {"name" : "amit", "age":25,"gender": "male"},
+    {"name" : "Sumit", "age":26,"gender": "male"},
+    {"name" : "Ganesh", "age":27,"gender": "male"},
+    {"name" : "Ravi", "age":28,"gender": "male"},
+    {"name" : "Ravita", "age":28,"gender": "female" , "class" : "XII"},
+    {"name" : "amit", "age":25,"gender": "male"}
+];
+
+
+// document.write(arr_obj[1].age)
+    for(index of arr_obj){
+        for(key in index){
+            document.write(key + " : " + index[key] + "<br> ")
+        }
+        document.write("<br>");
+    }
+
+let num=[10,12,6,5,8];
+
+let data=num.filter((val)=>{
+    return val>5;
+})
+
+
+// function check(val){
+//     return val>5;
+
+// }
+
+document.write(data)
+
+    </script>
+</body>
+</html>

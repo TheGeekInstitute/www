@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            border: 5px solid black;
+            height: 50vh;
+            width: 100vw;
+          
+        }
+    </style>
+</head>
+<body>
+<p id="para"></p>  
+
+<script>
+    let para = document.querySelector("#para");
+
+    document.body.addEventListener("keydown",(e)=>{
+        // console.log(e)
+        // console.log(e.ctrlKey)
+        // console.log(e.altKey)
+        // console.log(e.metaKey)
+        // console.log(e.key);
+        // para.innerHTML +=e.key
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <style>
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav{
+    /* border: 1px solid red; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    margin: 0 10px;
+    text-align: center;
+}
+.nav ul li a{
+    display: block;
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 70px;
+    line-height: 50px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav ul li a:hover{
+    background-color: grey;
+}
+
+.nav .sub{
+    /* border: 1px solid red; */
+    background-color: green;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    visibility: hidden;
+    z-index: 1000;
+    
+
+}
+.nav .sub li{
+    border-bottom: 2px solid white;
+}
+
+.nav  li:hover .sub{
+    visibility: visible;
+}
+
+p{
+    position: relative;
+}
+
+.sub-sub{
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    background-color: cyan;
+    top: 105px;
+    left: 72px;
+  
+}
+
+.nav ul li:hover .sub li:hover .sub-sub{
+    visibility: visible;
+}
+    </style>
+</head>
+<body>
+<div class="nav">
+        <h1 class="logo">LOGO</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pages +</a>
+            <ul class="sub">
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">page 3</a>
+                    <ul class="sub-sub">
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Page</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate fugit officiis veritatis ab distinctio dicta dolorem excepturi explicabo velit. Facilis doloremque dolore maiores aliquam at, molestias vitae repellat ullam.</p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+
+        }
+        .center{
+            margin: 100px;
+        }
+       
+        input{
+            caret-color: rgb(15, 233, 15);
+            outline: none;
+        }
+
+        input:first-of-type:focus{
+            background-color: red;
+            outline: none;
+            
+        }
+
+        input:third-of-type:focus{
+            background-color: green;
+        }
+        input:required{
+            border-radius: 5%;
+            padding-left: 10px;
+        }
+        .reg:focus{
+            background-color: aqua;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+   <fieldset>
+        <center>
+        <form  class="center" >
+            <h2>Registeration Form</h2>
+            <br><br>
+            <label for="">Name:</label>
+            <input type="text" placeholder="Name" b>
+            <br><br>
+            <label for="">Gender:</label>
+            <label for="">Male:</label>
+            <input type="radio" name="Male">
+            <label for="">Female:</label>
+            <input type="radio" name="Male">
+            <br><br>
+            <label for="" >Regstration no:</label>
+            <input class="reg" type="number" required>
+            <br><br>
+            <label for="">Roll no:</label>
+            <input type="number">
+            <br><br>
+            <label for="">Contact no:</label>
+            <input type="number">
+            <br><br>
+            <label for="">Email id:</label>
+            <input type="Email">
+            <br><br>
+            <label for="">Password</label>
+            <input type="password" point>
+            <br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="reset">
+            
+        </form>
+    </center>
+</fieldset>
+    
+</body>
+</html>

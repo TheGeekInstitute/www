@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        .container{
+            counter-reset: section;
+        }
+
+        h1::before{
+            /* content: counter(section,lower-alpha) ". "; */
+            content: counter(section) ". ";
+            counter-increment: section;
+            color: red;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2{
+            text-indent: 50px;
+            counter-reset: sub-sub-section;
+        }
+
+        h2::before{
+            content:counter(section) "." counter(sub-section) ". ";
+            color: blue;
+            counter-increment: sub-section;
+        }
+
+
+
+        h3{
+            text-indent: 60px;
+        }
+        h3::before{
+            content:counter(section) "." counter(sub-section) "." counter(sub-sub-section,lower-alpha) ". ";
+            color: blue;
+            counter-increment: sub-sub-section;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1> COMPUTR </h1>
+        <h2> Html</h2>
+        <h3>Heading</h3>
+        <h3>Table</h3>
+        <h3>Sementic</h3>
+        <h3>Form</h3>
+    
+
+    <h2>COMPUTER . SYSTEM </h2>
+    
+        <h2>  Html</h2>
+        <h3>Heading</h3>
+        <h3>Table</h3>
+        <h3>Sementic</h3>
+        <h3>Form</h3>
+    <h2>CSS</h2>
+
+    <h1> COMPUTER . PROGRAMING</h1>
+    <h1> Html</h1>
+
+        <h3>Heading</h3>
+        <h3>Table</h3>
+        <h3>Sementic</h3>
+    </div>
+</body>
+</html>

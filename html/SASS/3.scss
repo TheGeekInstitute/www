@@ -1,0 +1,64 @@
+$main-color:blue;
+$my-font:"Arial, Cursive";
+
+$abcd:weight;
+
+@mixin abcd(){
+    border:2px solid black;
+    padding: 20px;
+    color: $main-color;
+    font-#{$abcd}: 900;
+    font-family: cursive;
+}
+
+.box1{
+@include abcd;
+}
+
+@mixin abcd($val){
+    padding:$val;
+}
+
+
+
+
+
+@mixin border($top-style,$top-color,$right-style,$right-color,$bottom-style,$bottom-color,$left-style,$left-color){
+
+    border: 10px;
+    border-top-style: $top-style;
+    border-top-color: $top-color;
+
+    border-right-style: $right-style;
+    border-right-color: $right-color;
+
+
+}
+
+
+
+
+@mixin padding($direction,$value){
+    padding-#{$direction}: $value;
+}
+
+
+
+.box2{
+    font-family: $my-font;
+    color: red;
+ 
+    // @include border(solid,red,dotted,dotted,yellow,solid,black);
+
+
+    @include padding(top,100px );
+    @include padding(left,200px );
+
+}
+
+.box2{
+    // padding: Arial != "Arial";
+
+    padding: 10px >= 0px;
+    
+}

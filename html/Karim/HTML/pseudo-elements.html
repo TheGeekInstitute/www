@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para span{
+            /* text-align-last: right; */
+            color: red;
+        }
+        .para::first-letter{
+            color: red;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+        .para{
+            color: blue;
+        }
+
+        ol li{
+            color: red;
+        }
+
+        ul li{
+            color: red;
+        }
+
+        ol li::marker{
+            color: green;
+        }
+
+        
+        ul li::marker{
+            color: blue;
+        }
+
+
+        .new::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+        .new{
+            user-select: auto;
+        }
+
+        input::placeholder{
+            color: blue;
+            font-weight: 700;
+        }
+
+        input{
+            caret-color: red;
+        }
+
+        .name::before{
+            content: "The ";
+            color: red;
+        }
+
+        .name::after{
+            /* content: " Institute Of Cyber Security"; */
+            /* content: " " attr(data-name); */
+            /* content: url("../../web/images/11.jpg"); */
+            
+            color: orangered;
+        }
+
+        .name:hover::after{
+            content: " Institute Of Cyber Security";
+            /* content: " " attr(data-name); */
+            /* content: url("../../web/images/11.jpg"); */
+            
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa porro temporibus sapiente quas perspiciatis, impedit earum laboriosam fugit sint distinctio voluptates labore quibusdam voluptatem id ad <span> esse beatae commodi?</span> </p>
+
+    <ol>
+        <li>Abcd</li>
+        <li>asd</li>
+        <li>asda</li>
+    </ol>
+    <ul>
+        <li>Abcd</li>
+        <li>asd</li>
+        <li>asda</li>
+    </ul>
+
+
+    
+    <p class="new">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit architecto cumque voluptas recusandae expedita eum, ipsam natus velit quam delectus beatae maxime pariatur esse officiis nesciunt provident fuga nulla qui?</p>
+    <input type="text" placeholder="ABCD">
+
+
+    <h1 class="name" align="center" data-name="ABCD">Geek</h1>
+</body>
+</html>

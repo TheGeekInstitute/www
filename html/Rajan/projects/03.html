@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match-3 Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            gap: 2px;
+            margin: 20px auto;
+            width: max-content;
+        }
+
+        .candy {
+            width: 50px;
+            height: 50px;
+            background-color: #eee;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .candy-1 { background-color: #ff6666; }
+        .candy-2 { background-color: #66ff66; }
+        .candy-3 { background-color: #6666ff; }
+        .candy-4 { background-color: #ffff66; }
+        .candy-5 { background-color: #ff66ff; }
+        .candy-6 { background-color: #66ffff; }
+
+    </style>
+</head>
+<body>
+    <h1>Match-3 Game</h1>
+    <div id="game-board"></div>
+    <script>
+
+
+        const rows = 8;
+        const cols = 8;
+        const candyTypes = 6;
+        const board = document.getElementById('game-board');
+
+        let candies = [];
+        let selectedCandy = null;
+        let selectedCandyIndex = null;
+
+        
+        function initializeBoard() {
+            candies = [];
+            board.innerHTML = '';
+            for (let r = 0; r < rows; r++) {
+                candies[r] = [];
+                for (let c = 0; c < cols; c++) {
+                    let candyType = Math.floor(Math.random() * candyTypes) + 1;
+                    candies[r][c] = candyType;
+                    const candy = document.createElement('div');
+                    candy.className = `candy candy-${candyType}`;
+                    candy.dataset.row = r;
+                    candy.dataset.col = c;
+                    candy.addEventListener('click', handleCandyClick);
+                    board.appendChild(candy);
+                }
+            }
+        }
+
+        
+        function handleCandyClick(event) {
+            const row = parseInt(event.target.dataset.row);
+            const col = parseInt(event.target.dataset.col);
+
+            if (selectedCandy === null) {
+                selectedCandy = { row, col };
+                selectedCandyIndex = event.target;
+            } else {
+                const targetCandy = { row, col };
+                if (canSwap(selectedCandy, targetCandy)) {
+                    swapCandies(selectedCandy, targetCandy);
+                    if (!checkMatches()) {
+                        
+                        swapCandies(selectedCandy, targetCandy);
+                    }
+                }
+                selectedCandy = null;
+                selectedCandyIndex = null;
+            }
+        }
+
+        
+        function swapCandies(candy1, candy2) {
+            const temp = candies[candy1.row][candy1.col];
+            candies[candy1.row][candy1.col] = candies[candy2.row][candy2.col];
+            candies[candy2.row][candy2.col] = temp;
+
+            const candy1Element = board.children[candy1.row * cols + candy1.col];
+            const candy2Element = board.children[candy2.row * cols + candy2.col];
+
+            candy1Element.className = `candy candy-${candies[candy1.row][candy1.col]}`;
+            candy2Element.className = `candy candy-${candies[candy2.row][candy2.col]}`;
+        }
+
+        // Check for matches
+        function checkMatches() {
+            let hasMatches = false;
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    if (checkMatch(r, c)) {
+                        hasMatches = true;
+                        removeMatch(r, c);
+                    }
+                }
+            }
+            return hasMatches;
+        }
+
+        // Check for a match
+        function checkMatch(row, col) {
+            const candyType = candies[row][col];
+            return (checkDirection(row, col, candyType, 1, 0) ||
+                    checkDirection(row, col, candyType, 0, 1));
+        }
+
+        // Check in a specific direction
+        function checkDirection(row, col, candyType, rowStep, colStep) {
+            let count = 0;
+            for (let i = 0; i < 3; i++) {
+                let r = row + i * rowStep;
+                let c = col + i * colStep;
+                if (r < rows && c < cols && candies[r][c] === candyType) {
+                    count++;
+                } else {
+                    break;
+                }
+            }
+            return count >= 3;
+        }
+
+        // Remove matched candies
+        function removeMatch(row, col) {
+            const candyType = candies[row][col];
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < cols; j++) {
+                    if (candies[i][j] === candyType && checkDirection(i, j, candyType, 1, 0) ||
+                        candies[i][j] === candyType && checkDirection(i, j, candyType, 0, 1)) {
+                        candies[i][j] = 0;
+                        board.children[i * cols + j].className = 'candy';
+                    }
+                }
+            }
+        }
+
+        // Check if a swap is valid
+        function canSwap(candy1, candy2) {
+            const dRow = Math.abs(candy1.row - candy2.row);
+            const dCol = Math.abs(candy1.col - candy2.col);
+            return (dRow === 1 && dCol === 0) || (dRow === 0 && dCol === 1);
+        }
+
+        // Initialize the game
+        initializeBoard();
+
+    </script>
+</body>
+</html>

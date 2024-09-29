@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+
+            /* filter: blur(5px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(150%) brightness(150%); */
+            /* filter: drop-shadow(2px 2px red); */
+            /* filter: grayscale(50%); */
+            /* filter: hue-rotate(200deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%); */
+            /* filter: sepia(100%); */
+        }
+
+        .container{
+            border: 2px solid black;
+            height:400px;
+            width:400px;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 200px;
+        }
+
+        @supports(backdrop-filter: saturate(200%)){
+            .container .box{
+                backdrop-filter: saturate(200%) blur(3px);
+
+            }
+        }
+
+        @supports not (backdrop-filter: saturate(200%)){
+            .container .box{
+                background-color: rgba(156, 66, 66, 0.582);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg" alt="">
+
+    <!-- <img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" alt=""> -->
+
+
+
+    <div class="container">
+        <div class="box">
+            <h1>Hello</h1>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+           
+            height: 300px;
+            width: 250px;
+            margin:200px auto;
+            text-align: center;
+            background-image: url("../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .container .card{
+           
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            color: white;
+            transition: all .3s linear;
+            transform: translate(0,85%);
+            backdrop-filter: blur(2px);
+        }
+
+        .container .card h1{
+           margin: 5px 0;
+
+        }
+
+        .container .card img{
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+        .container:hover .card{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>ABCD XYZ</h1>
+            <img src="../web/images/11.jpg" alt="asd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore cumque necessitatibus minus expedita,</p>
+        </div>
+    </div>
+</body>
+</html>

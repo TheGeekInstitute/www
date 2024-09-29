@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+
+<body>
+    <input type="number" class="num">
+    <button class="enter">Enter</button>
+    <script>
+        let num=document.querySelector('.num');
+        let enter=document.querySelector('.enter');
+        let roll=num.value;
+        console.log(roll);
+
+        enter.addEventListener("click",()=>{
+            let promise1=new prompt((reject,resolve)=>{
+                if(roll >= 30){
+                    resolve('Success1');
+                }
+                reject("Failed1");
+            })
+            promise1.then((e)=>{
+                console.log(e);
+            },(a)=>{
+                console.log(a);
+            })
+            let promise2=new prompt((reject,resolve)=>{
+                if(roll >= 30){
+                    resolve('Success2');
+                }
+                reject("Failed2");
+            })
+            promise2.then((e)=>{
+                console.log(e);
+            },(a)=>{
+                console.log(a);
+            })
+        })
+
+    </script>
+</body>
+</html>

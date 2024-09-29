@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loader{
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            width: 100vw;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="one"></h1>
+
+    <button id="btn">Show</button>
+
+    <img src="https://cdn.dribbble.com/users/2787442/screenshots/11857631/media/08f6802d668c84020f98b3f3a0c81bf0.gif"  id="loader" alt="">
+
+    <script>
+        let heading = document.querySelector("#one");
+        let loader =  document.querySelector("#loader")
+        document.querySelector('#btn').addEventListener("click",()=>{
+            let xhr = new XMLHttpRequest();
+    
+            // xhr.onload = function(){
+                // console.log(xhr.responseText)
+            // }
+
+            loader.style.display = "block"
+
+
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 4  && this.status == 200){
+                    heading.innerHTML=this.responseText
+                    loader.style.display = "none"
+        
+                }
+
+        
+            }
+
+
+            xhr.open("GET","data.php");
+                xhr.send();
+        })
+
+   
+    </script>
+</body>
+</html>

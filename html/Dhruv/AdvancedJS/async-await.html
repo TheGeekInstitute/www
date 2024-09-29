@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       async  function data(){
+            // console.log("data");
+            // return "data";
+            // return Promise.resolve("Hello");
+
+            console.log("1");
+            console.log("2");
+
+        // await console.log("3");
+
+        await fetch("data.php").then((a)=> a.text()).then((x)=>console.log(x));
+        
+            console.log("4");
+            console.log("5");
+
+        }
+
+
+        data();
+
+        console.log("next")
+
+
+
+
+
+        // data().then((e)=>{
+        //     console.log(e);
+        // },(a)=>{
+        //     console.log(a)
+        // })
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+Microsoft Windows [Version 10.0.22631.3296]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Geek-Institute>ssh geek@10.10.10.10
+geek@10.10.10.10's password:
+Linux CodeServer 6.1.0-18-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.76-1 (2024-02-01) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Tue Mar 26 16:47:59 2024 from 10.10.10.50
+geek@CodeServer:~$ mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 276
+Server version: 10.11.6-MariaDB-0+deb12u1 Debian 12
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use Akash;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [Akash]> show tables;
++-----------------+
+| Tables_in_Akash |
++-----------------+
+| emp             |
+| empdb           |
+| img             |
+| notepad         |
+| user_table      |
+| users           |
+| voting          |
++-----------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [Akash]> update emp set emp_no=1 where emp_no=4;
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [Akash]> select * from emp;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      1 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> update emp set name="Golu" , gender="Male", salary=10500.00;
+Query OK, 7 rows affected (0.002 sec)
+Rows matched: 7  Changed: 7  Warnings: 0
+
+MariaDB [Akash]> select * from emp;
++--------+------+--------+----------+----------------------------------+
+| emp_no | name | gender | salary   | image                            |
++--------+------+--------+----------+----------------------------------+
+|      1 | Golu | Male   | 10500.00 |                                  |
+|      5 | Golu | Male   | 10500.00 |                                  |
+|      6 | Golu | Male   | 10500.00 |                                  |
+|     12 | Golu | Male   | 10500.00 |                                  |
+|     14 | Golu | Male   | 10500.00 |                                  |
+|     15 | Golu | Male   | 10500.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | Golu | Male   | 10500.00 | uploads/ffee23e74f806c460877.gif |
++--------+------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> truncate table emp;
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [Akash]> select * from emp;
+Empty set (0.001 sec)
+
+MariaDB [Akash]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| Aasha              |
+| Akash              |
+| Dhruv              |
+| Karim              |
+| Nikhil             |
+| OwnOnlineShop      |
+| Ritu               |
+| Shivam             |
+| Shivank            |
+| abcd               |
+| chat               |
+| information_schema |
+| khushbu            |
+| mysql              |
+| new                |
+| performance_schema |
+| phpmyadmin         |
+| sandeep            |
+| sys                |
+| users              |
+| wordpress          |
++--------------------+
+21 rows in set (0.001 sec)
+
+MariaDB [Akash]> use Nikhil;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [Nikhil]> show tables;
++------------------+
+| Tables_in_Nikhil |
++------------------+
+| New User         |
+| data             |
+| form             |
+| images           |
+| sheet            |
+| sheet1           |
+| student          |
+| students         |
+| users            |
++------------------+
+9 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> select * from data;
++---------+-----------+---------------+------------+-------+--------+---------+
+| Name    | Last Name | Date Of Birth | Phone      | Class | Gender | Address |
++---------+-----------+---------------+------------+-------+--------+---------+
+| fdgd    | dfgfd     | 2024-01-10    | 5555555555 | six   | male   | gdfgfdg |
+| gfhfgh  | fghgf     | 2024-01-09    |      64645 | nine  | choose | hfgh    |
+| asdasda | sdfsd     | 2024-01-03    | 7896541230 | six   | male   | sdfsd   |
++---------+-----------+---------------+------------+-------+--------+---------+
+3 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> select * from users;
++-----------+----------+-----------------------------+------------+------------+------------------+
+| firstname | lastname | email                       | phone      | username   | password         |
++-----------+----------+-----------------------------+------------+------------+------------------+
+| Mani      | Kumar    | manikumar@geekinstitute.org | 8882618533 | mani       | mani             |
+| ABCD      | ABCD     | abcd@gmail.com              | 7894561230 | abcd       | abcd             |
+| Vinod     | Kumar    | skja2312@gmail.com          | 8974526312 | nikhill00  | nikhilkumar@123# |
+| Suraj     | Sing     | Surajsing2345@gmail.com     | 8887496587 | Suraj112   | Surabfh          |
+| dfhhh     | hghghg   | gfhff@gmail.com             | 9910517159 | nikhiill00 | ghghhgh          |
+| nikhil    | kumar    | skjha234@gmail.com          | 8076933556 | nikhil00   | 12345            |
+| ABCD      | XYZ      | xyz@xyz.com                 | 7777777777 | xyz        | xyz              |
++-----------+----------+-----------------------------+------------+------------+------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> update users set firstname="Amit",lastname="Singh" where username="xyz";
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [Nikhil]> select * from users;
++-----------+----------+-----------------------------+------------+------------+------------------+
+| firstname | lastname | email                       | phone      | username   | password         |
++-----------+----------+-----------------------------+------------+------------+------------------+
+| Mani      | Kumar    | manikumar@geekinstitute.org | 8882618533 | mani       | mani             |
+| ABCD      | ABCD     | abcd@gmail.com              | 7894561230 | abcd       | abcd             |
+| Vinod     | Kumar    | skja2312@gmail.com          | 8974526312 | nikhill00  | nikhilkumar@123# |
+| Suraj     | Sing     | Surajsing2345@gmail.com     | 8887496587 | Suraj112   | Surabfh          |
+| dfhhh     | hghghg   | gfhff@gmail.com             | 9910517159 | nikhiill00 | ghghhgh          |
+| nikhil    | kumar    | skjha234@gmail.com          | 8076933556 | nikhil00   | 12345            |
+| Amit      | Singh    | xyz@xyz.com                 | 7777777777 | xyz        | xyz              |
++-----------+----------+-----------------------------+------------+------------+------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> delete from emp where username="nikhiill00";
+ERROR 1146 (42S02): Table 'Nikhil.emp' doesn't exist
+MariaDB [Nikhil]> delete from users where username="nikhiill00";
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [Nikhil]> select * from users;
++-----------+----------+-----------------------------+------------+-----------+------------------+
+| firstname | lastname | email                       | phone      | username  | password         |
++-----------+----------+-----------------------------+------------+-----------+------------------+
+| Mani      | Kumar    | manikumar@geekinstitute.org | 8882618533 | mani      | mani             |
+| ABCD      | ABCD     | abcd@gmail.com              | 7894561230 | abcd      | abcd             |
+| Vinod     | Kumar    | skja2312@gmail.com          | 8974526312 | nikhill00 | nikhilkumar@123# |
+| Suraj     | Sing     | Surajsing2345@gmail.com     | 8887496587 | Suraj112  | Surabfh          |
+| nikhil    | kumar    | skjha234@gmail.com          | 8076933556 | nikhil00  | 12345            |
+| Amit      | Singh    | xyz@xyz.com                 | 7777777777 | xyz       | xyz              |
++-----------+----------+-----------------------------+------------+-----------+------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> select * from emp;
+ERROR 1146 (42S02): Table 'Nikhil.emp' doesn't exist
+MariaDB [Nikhil]> show tables;
++------------------+
+| Tables_in_Nikhil |
++------------------+
+| New User         |
+| data             |
+| form             |
+| images           |
+| sheet            |
+| sheet1           |
+| student          |
+| students         |
+| users            |
++------------------+
+9 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> select * from data;
++---------+-----------+---------------+------------+-------+--------+---------+
+| Name    | Last Name | Date Of Birth | Phone      | Class | Gender | Address |
++---------+-----------+---------------+------------+-------+--------+---------+
+| fdgd    | dfgfd     | 2024-01-10    | 5555555555 | six   | male   | gdfgfdg |
+| gfhfgh  | fghgf     | 2024-01-09    |      64645 | nine  | choose | hfgh    |
+| asdasda | sdfsd     | 2024-01-03    | 7896541230 | six   | male   | sdfsd   |
++---------+-----------+---------------+------------+-------+--------+---------+
+3 rows in set (0.000 sec)
+
+MariaDB [Nikhil]> alter table data add city varchar(30);
+Query OK, 0 rows affected (0.013 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [Nikhil]> desc data;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Name          | varchar(50) | NO   |     | NULL    |       |
+| Last Name     | varchar(50) | NO   |     | NULL    |       |
+| Date Of Birth | varchar(50) | NO   |     | NULL    |       |
+| Phone         | bigint(10)  | NO   |     | NULL    |       |
+| Class         | varchar(50) | NO   |     | NULL    |       |
+| Gender        | varchar(50) | NO   |     | NULL    |       |
+| Address       | text        | NO   |     | NULL    |       |
+| city          | varchar(30) | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+8 rows in set (0.001 sec)
+
+MariaDB [Nikhil]> alter table data drop city;
+Query OK, 0 rows affected (0.014 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [Nikhil]> desc data;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Name          | varchar(50) | NO   |     | NULL    |       |
+| Last Name     | varchar(50) | NO   |     | NULL    |       |
+| Date Of Birth | varchar(50) | NO   |     | NULL    |       |
+| Phone         | bigint(10)  | NO   |     | NULL    |       |
+| Class         | varchar(50) | NO   |     | NULL    |       |
+| Gender        | varchar(50) | NO   |     | NULL    |       |
+| Address       | text        | NO   |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+7 rows in set (0.001 sec)
+
+MariaDB [Nikhil]> alter table data modify Gender char(30);
+Query OK, 3 rows affected (0.020 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [Nikhil]> desc data;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Name          | varchar(50) | NO   |     | NULL    |       |
+| Last Name     | varchar(50) | NO   |     | NULL    |       |
+| Date Of Birth | varchar(50) | NO   |     | NULL    |       |
+| Phone         | bigint(10)  | NO   |     | NULL    |       |
+| Class         | varchar(50) | NO   |     | NULL    |       |
+| Gender        | char(30)    | YES  |     | NULL    |       |
+| Address       | text        | NO   |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+7 rows in set (0.002 sec)
+
+MariaDB [Nikhil]> alter table data change Class class char(10);
+Query OK, 3 rows affected (0.020 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [Nikhil]> desc data;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| Name          | varchar(50) | NO   |     | NULL    |       |
+| Last Name     | varchar(50) | NO   |     | NULL    |       |
+| Date Of Birth | varchar(50) | NO   |     | NULL    |       |
+| Phone         | bigint(10)  | NO   |     | NULL    |       |
+| class         | char(10)    | YES  |     | NULL    |       |
+| Gender        | char(30)    | YES  |     | NULL    |       |
+| Address       | text        | NO   |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+7 rows in set (0.002 sec)
+
+MariaDB [Nikhil]>

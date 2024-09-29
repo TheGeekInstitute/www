@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+
+    <button id="btn">Fetch</button>
+
+    <script>
+     
+     async function data(){
+        return "abcd";
+     }
+
+
+    //  data().then((e)=>{
+    //     console.log(e)
+    //  })
+
+    //  console.log(data());
+
+
+    async function abcd(){
+        let p1 = new Promise(function(resolve){
+            setTimeout(()=>{
+                resolve("Hello")
+            },2000)
+        })
+
+        document.querySelector("#a").innerHTML= await p1
+       
+    }
+
+    console.log("A")
+
+    abcd()
+
+    console.log("b")
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

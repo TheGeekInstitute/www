@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardlayout</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            /* border: 1px solid black; */
+            height: 350px;
+            width: 250px;
+            margin: auto;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+            border-radius: 20px;
+        }
+        .main img{
+            width: 150px;
+             padding: 5px 2px;
+            outline: transparent;
+           
+            background-color: transparent;
+            font-size: 16px;
+            font-weight: 700;
+            transition: all .5s;
+            border-radius: 20px; 
+
+        }
+      
+
+        .main:hover img{
+            transform: translateY(-100%);
+        }
+        .main a{
+            background-color: bisque;
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+   <div class="main">
+       <img src="https://img.freepik.com/premium-photo/funny-childish-female-young-character-light-color-background-generative-ai_58409-29585.jpg" alt="">
+
+       <a href="#">More</a>
+    </div>
+    
+</body>
+</html>

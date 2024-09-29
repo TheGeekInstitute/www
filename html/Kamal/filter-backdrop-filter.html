@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width:300px;
+            object-fit: cover;
+            
+            /* filter: blur(4px); */
+            /* filter: brightness(200%); */
+            /* filter: contrast(150%) brightness(200%); */
+            /* filter: drop-shadow(2px 2px 3px red); */
+            /* box-shadow: 2px 2px 3px red; */
+            
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(0deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%) brightness(150%); */
+            /* filter: sepia(50%); */
+        }
+
+        .container{
+            border: 1px solid black;
+            height: 400px;
+            width:400px;
+            background-image: url(../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg);
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2px) saturate(300%);
+        }
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg" alt="">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple-logo.png/600px-Apple-logo.png?20200509031052" alt=""> -->
+
+    <div class="container">
+        <div class="box">
+            <h1>Heading</h1>
+        </div>
+    </div>
+</body>
+</html>

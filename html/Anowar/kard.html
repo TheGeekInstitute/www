@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>kard</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAQh0Io4OFp57-9quTnH8KE0J0zEvCa5OdQ&usqp=CAU">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }.box marquee{
+            border: 2px solid aqua;
+            border-style: hidden;
+            /* background-color: red; */
+            
+        }
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin: 100px auto;
+            /* color: aqua; */
+            background-color: aqua;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            box-shadow: 0px 0px 10px greenyellow;
+            border: 5px dotted silver;
+            /* transition-property: border radius width; */
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 1s;
+
+
+            /* transition-timing-function: steps(10s); */
+        }
+        .box h1{
+            font-family: cursive;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+        .box:hover{
+            border-radius: 50%;
+            width: 500px;
+            background-color: yellow;
+
+        }
+        .box img:hover{
+            border-radius: 50%;
+            width: 500px;
+            background-color: aqua;
+        }
+        .box .card img{
+            height: 100px;
+            width: 100px;
+            /* align-items: center; */
+            /* margin-left: 150px; */
+            /* text-align: center; */
+        }
+        .card{
+            text-align: center;
+            padding: 10px;
+            border-radius: 50%;
+            /* box-shadow: 0px 0px 10px greenyellow; */
+            /* border: 5px solid silver; */
+        }
+        .icons{
+            /* height: 100px; */
+            font-size: 50px;
+            text-align: center;
+        }
+        .icons .fa-phone:hover{
+            /* background-color: aqua; */
+            color: green;
+
+        }
+        .icons .fa-instagram:hover{
+            /* background-color: blue; */
+            color: brown;
+        }
+        .icons .fa-comment:hover{
+            /* background-color: azure; */
+            color: yellow;
+        }
+        i{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    
+        <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAQh0Io4OFp57-9quTnH8KE0J0zEvCa5OdQ&usqp=CAU" alt="abcd">
+        <marquee direction=""><h1>background-image</h1></marquee>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni nam, dolorem assumenda fugiat omnis velit laborum eveniet impedit tempora, asperiores, nulla deserunt! Ut tempora id officia quas et iusto.</p>
+        </div>
+        <div class="icons">
+        <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=06eaa6fe2699486c&q=hue+rotate+css&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjRirrt15uEAxVgwjgGHSVoBMAQ0pQJegQIDhAB&biw=670&bih=916&dpr=1#imgrc=OvkIeUZ9oD7VwM"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://youtu.be/yd091Ph0RPk"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtu.be/5oH9Nr3bKfw"><i class="fa-solid fa-comment"></i></a>
+
+        </div>
+       
+    </div>
+    
+    
+
+</body>
+</html>

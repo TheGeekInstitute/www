@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">BOx</div>
+    <h1 id="heading" style="background-color: crimson;" class="a">Heading</h1>
+    <p class="para">Paragraph  <b>abcd</b> </p>
+    <p>asdasd</p>
+    <a href="#">ads</a>
+
+
+    <button id="btn" onclick="clickMe()">Click me</button>
+
+    <script>    
+    // console.log(document)
+    // console.log(document.all)
+
+
+    let para= document.getElementsByTagName("p")
+
+    // console.log(para[0])
+
+    let heading = document.getElementById("heading");
+
+    // console.log(heading)
+
+    let abcd =  document.getElementsByClassName("box");
+
+    // console.log(abcd[0])
+
+    // console.log(para[0].innerText)
+    // console.log(para[0].innerHTML)
+
+
+    // console.log(heading.getAttribute("style"))
+    // console.log(heading.getAttributeNode("style"))
+    // console.log(heading.attributes)
+
+
+    function clickMe(){
+        // heading.innerText="ABCD"
+        // heading.innerHTML="ABCD <i>asdasd</i>"
+
+        // heading.setAttribute("style","background-color:yellow;")
+        // heading.removeAttribute("style");
+
+       
+    }
+
+
+    </script>
+</body>
+</html>
+<!-- 
+document
+document.all
+document.documentElement
+document.head
+document.title
+document.body
+document.images
+document.anchor
+document.links
+document.forms
+document.doctype
+document.URL
+document.baseURI
+document.domain
+document.getElementByID
+document.getElementsByClassName
+document.getElementsByTagName -->

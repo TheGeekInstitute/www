@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a{
+            display: block;
+            margin: 0 5px;
+            padding: 0 10px;
+            line-height: 50px;
+            color: white;
+            font-size: large;
+        }
+
+        .nav .links li a:hover{
+            background-color: green;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: cursive;
+            text-shadow: 2px 2px 3px cyan;
+        }
+
+        .nav .logo span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LO<span>GO</span></div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+</body>
+</html>

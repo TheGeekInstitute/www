@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            /* border: 2px solid black; */
+        }
+
+        .container h1{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            width: 500px;
+            /* text-align: center; */
+        }
+
+        .container #btn{
+            padding: 5px 20px;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: large;
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 5px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Background Color : <span id="color">#456852</span></h1>
+        <button id="btn">Click Me</button>
+    </div>
+
+    <script>
+        let color = document.querySelector('#color')
+        var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+		  '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
+		  '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+		  '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
+		  '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
+		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
+		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+
+          let colorInterval= setInterval(()=>{
+            let randIndex =  (Math.floor(Math.random()*(colorArray.length-1)))
+            color.innerHTML=colorArray[randIndex]
+            document.body.style.backgroundColor = colorArray[randIndex]
+          },500)
+          
+          
+          let time = setTimeout(() => {
+                console.log("hello")
+          }, 5000);
+
+          
+          
+          document.querySelector('#btn').addEventListener("click",()=>{
+            clearTimeout(time)
+            clearInterval(colorInterval)
+          })
+
+
+
+
+
+          
+    </script>
+
+</body>
+</html>

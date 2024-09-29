@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .box h1{
+            /* border: 1px solid red; */
+            height: 50px;
+            text-align: center;
+            background-color: red;
+        }
+
+        .box1,.box2{
+            display: none;
+        }
+
+        @media screen and (max-width:768px) {
+            .box1{
+                height: 50px;
+                text-align: center;
+                background-color: aqua;
+                display: block;
+            }
+
+            .box{
+                display: none;
+            }
+            
+        }
+
+        @media screen and (max-width:400px) {
+            .box2{
+                height: 50px;
+                text-align: center;
+                background-color: blue;
+                display: block;
+            }
+
+            .box,.box1{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="box">
+            <h1>Desktop Screen</h1>
+        </div>
+
+        <div class="box1">
+            <h1>Tab Screen</h1>
+        </div>
+
+        <div class="box2">
+            <h1>Mobile screen</h1>
+        </div>
+</body>
+</html>

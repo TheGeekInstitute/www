@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+
+        .box{
+            /* display: flex; */
+            /* flex-direction: column; */
+            margin: auto;
+            height: 30vh;
+            width: 20vw;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            padding: 10px;
+            filter: blur(5);
+            background-image: linear-gradient(45deg,white,yellow);
+            box-shadow: 3px 4px yellow;
+
+        }
+
+        h1{
+            text-align: center;
+            /* webki */
+        }
+        #inputs{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+        <form action="" class="form">
+            <div class="box">
+                <h1>Login</h1>
+                <label for="">Username</label>
+                <br>
+                <input type="text" placeholder="XYZ" id="text">
+                <br>
+                <label for="" style="margin-right: 4px;">Password</label>
+                <br>
+                <input type="password" placeholder="XYZ" id="password">
+                <br>
+
+                <div id="inputs">
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </div>
+            </div>
+
+
+
+
+        </form>
+
+        <script>
+            let form = document.querySelector(".form")
+            let submit = document.querySelector("#submit")
+            let reset = document.querySelector("#reset")
+            let box = document.querySelector(".box")
+            
+            let text = document.querySelector("#text");
+            text.addEventListener('input',()=>{
+                // this.style.backgroundColor = "green";
+               text.style.backgroundColor = "lightgreen";
+                // alert("dsad")
+
+                // text.setAttribute('style','background-color:red;')
+                console.log(text);
+            })
+
+            let password = document.querySelector("#password");
+            password.addEventListener('input',()=>{
+                password.style.backgroundColor = "lightgreen";
+            })
+
+
+
+            submit.addEventListener('click',()=>{
+                alert("successfully")
+                password.style.backgroundColor = "white"
+
+            })
+            
+
+            
+
+
+
+        </script>
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        .container{
+          
+            border: 1px solid transparent;
+            height: 400px;
+            width: 350px;
+            margin: 150px auto;
+            border-radius: 30px 5px;
+            background-image: linear-gradient(45deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua);
+            animation: color-change .5s ease-in-out 0s infinite alternate;
+            
+            box-shadow: 0px 0px 2px orange;
+
+        }
+
+        .container .box{
+            
+            height: 98%;
+            width: 98%;
+            margin-top: 1%;
+            margin-left: 1%;
+            
+            background-color: black;
+            border-radius: 30px 5px;
+            color: white;
+            padding: 20px;
+            
+
+
+        }
+
+
+        @keyframes color-change {
+            0%{
+                background-size: 100%;
+             
+            }
+
+            25%{
+                background-size: 200%;
+          
+            }
+            
+            50%{
+                background-size: 300%;
+               
+            }
+
+            75%{
+                background-size: 400%;
+        
+            }
+
+            100%{
+                background-size: 500%;
+            
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores culpa at libero nisi dicta? Cum nostrum commodi aperiam. Accusantium sunt quisquam possimus! Consectetur incidunt recusandae magnam atque tenetur debitis expedita.</p>
+        </div>
+    </div>
+</body>
+</html>

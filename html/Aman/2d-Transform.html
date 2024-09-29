@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width:150px;
+            background-color: red;
+            transition: all 1s linear;
+            margin: auto;
+        }
+
+        .box:hover{
+            /* transform: translate(0,-200px);
+             */
+ 
+            /* transform: rotate(360deg); */
+            /* transform: scale(2,1.5);     */
+            /* transform: skew(30deg,60deg);
+             */
+
+             transform: translate(100px,0) rotate(360deg);
+
+        }
+ 
+        .container{
+            border:1px solid black;
+            height: 400px;
+            width: 300px;
+            background-color: red;
+            overflow: hidden;
+        }
+        .container .card{
+            background-color: green;
+           position: relative;
+           height:100%;
+           width:100%;
+           transform: translateY(100%);
+           transition: all 1s;
+        }
+
+        .container:hover .card{
+            transform: translateY(0);
+        }
+        h1{
+            border: 1px solid black;
+            border-width: 25px ;
+            font-size: 100px ;
+            background-image: linear-gradient( red , yellow,black);
+           color: transparent;
+           background-clip: text;
+           -webkit-background-clip: text;
+           transition: all 2s;
+           height: 100px ;
+           
+        }
+        h1:hover{
+            transform: translate(100%,0)rotate(360deg);
+            
+
+        }
+
+
+ </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium sunt, quidem pariatur non reprehenderit rerum recusandae facilis eum officia, omnis quod! Ratione rem blanditiis nemo cumque voluptatem beatae ab ipsa.</p>
+    <div class="box"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, perspiciatis fugiat beatae provident dolore recusandae voluptatibus sit accusamus neque illum cum sapiente ea quae enim, ab ullam esse aliquam doloremque!</p>
+
+
+    <div class="container">
+        <div class="card">
+            dfgd
+        </div>
+    </div>
+    <H1>free Fire </H1>
+
+
+
+</body>
+</html>

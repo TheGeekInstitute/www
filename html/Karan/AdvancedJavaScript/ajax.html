@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loader{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            object-fit: cover;
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">heading</h1>
+
+    <button id="btn">Fetch</button>
+
+    <img src="https://loading.io/assets/mod/spinner/spinner/lg.gif" alt="" id="loader">
+
+    <script>
+
+        let heading = document.querySelector("#heading")
+        let btn = document.querySelector("#btn");
+        let loader = document.querySelector("#loader");
+
+        btn.addEventListener("click",()=>{
+            loader.style.display="block"
+            let xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+                // console.log(this.readyState)
+
+                if(this.readyState == 4 && this.status==200){
+                    loader.style.display="none"
+
+                    heading.innerHTML = this.responseText;
+                }
+            }
+
+            xhr.open("GET","data.php",true);
+            xhr.send();
+
+
+        })
+    </script>
+</body>
+</html>

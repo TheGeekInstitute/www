@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        :root{
+            --main-color:red;
+            --second-color:blue;
+        }
+        /* div:first-child{
+            color:var(--main-color);
+        } */
+        /* div::last-child{
+            background: blue ;
+        } */
+        
+       .list1 li:first-child{
+            color: red;
+        }
+
+        .list1 li:last-child a{
+            color: green;
+            text-decoration: none;
+            font-weight: 900;
+
+        }
+        ul li:nth-child(4){
+            color: yellow;
+        }
+        ul li:only-child{
+            background: orange;
+        }
+
+        .call p:nth-child(2) {
+            background: orangered;
+        }
+        /* p:first-child{
+            background: pink;
+        } */
+
+        p:first-of-type{
+            background: blue;
+        }
+        p:first-child{
+            background: pink;
+        }
+        /* div:first-child{
+            background: yellow;
+        } */
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+
+<ul class="list1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li><a href="#">4</a></li>
+</ul>
+
+
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ul>
+    <li>1</li>
+</ul>
+
+
+    <div class="call">
+        <span>sduhsdfjh </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nihil, vitae voluptatum veniam perferendis temporibus sequi cupiditate numquam esse et aliquid inventore eaque delectus blanditiis molestias enim cum consequuntur exercitationem!</p>
+
+
+    <hr>
+    
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laudantium distinctio eum modi fuga minima magnam facere harum consectetur quas sint laborum omnis iste dolore, nobis magni exercitationem autem? Doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+        <h1>Ready to fIght</h1>
+    </div>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laudantium distinctio eum modi fuga minima magnam facere harum consectetur quas sint laborum omnis iste dolore, nobis magni exercitationem autem? Doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laudantium distinctio eum modi fuga minima magnam facere harum consectetur quas sint laborum omnis iste dolore, nobis magni exercitationem autem? Doloremque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorem et laudantium accusamus debitis. Ducimus cum harum fuga? Nostrum quos molestias quam ex. Rerum iure alias nostrum autem possimus nam.</p>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex perspiciatis dolorum consequatur reprehenderit rerum cumque quaerat, nemo, dicta maxime laborum voluptatem nulla explicabo at eligendi dolorem provident labore. Excepturi, ullam?</p>
+    <hr>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus temporibus dolore praesentium cum qui illo quis odio exercitationem corporis id eius laboriosam accusamus facilis repudiandae, earum iure eveniet hic ducimus?</span>
+</body>
+</html>

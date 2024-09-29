@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accrodion</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .accordion{
+          
+            width: 400px;
+            margin: 100px auto;
+        }
+
+        .accordion .box{
+          
+            margin: 2px;
+            
+        }
+
+        .accordion .box .heading{
+            background-color: rebeccapurple;
+            font-size: large;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            height: 40px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .accordion .box .content{
+            padding: 0 10px;
+            background-color: bisque;
+            display: none;
+        }
+
+        .accordion .box .content.show{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="box">
+            <div class="heading">
+                <p>What is Abcd ?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit facere repellat cupiditate at quasi sint nihil inventore nam sapiente
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <p>What is Abcd ?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit facere repellat cupiditate at quasi sint nihil inventore nam sapiente
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <p>What is Abcd ?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit facere repellat cupiditate at quasi sint nihil inventore nam sapiente
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <p>What is Abcd ?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit facere repellat cupiditate at quasi sint nihil inventore nam sapiente
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="heading">
+                <p>What is Abcd ?</p>
+                <p>+</p>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit facere repellat cupiditate at quasi sint nihil inventore nam sapiente
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".box").forEach((e)=>{
+            e.children[0].addEventListener('click',()=>{
+                e.children[1].classList.toggle("show")
+            })
+        })
+    </script>
+</body>
+</html>

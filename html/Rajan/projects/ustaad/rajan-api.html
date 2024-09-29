@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+</head>
+<body>
+    <script>
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function(){
+            if(this.status==200 && this.readyState==4){
+                let json_data= JSON.parse(this.responseText);
+                // console.log(json_data)
+
+                for(let data of json_data){
+                    console.log(data)
+                    document.write("<h1>"+data.title+"</h1>"+"<br>");
+                    document.write(data.body+"<br><br>");
+                }
+            
+            }
+        }
+        xhr.open("GET","https://jsonplaceholder.typicode.com/posts");
+        xhr.send();
+    </script>
+</body>
+</html>

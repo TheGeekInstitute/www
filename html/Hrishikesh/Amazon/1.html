@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-color: rgba(128, 128, 128, 0.282); */
+            /* overflow: hidden; */
+        }
+
+        .slider{
+            overflow: hidden;
+            width: 100vw;
+        }
+        .amazon{
+            height: 4.3rem;
+            width: 100vw;
+            /* width: 100vw; */
+            background-color: rgba(0, 0, 0, 0.805);
+            display: flex;
+            align-items: center;
+            /* justify-content: space-evenly; */
+        }
+        .amazon .image{
+            height: 3.7rem;  
+            /* width: 7.3rem;   */
+            /* line-height: 7rem;    */
+            border: 1px solid transparent;
+            /* padding: .5rem; */
+            margin: .5rem 0rem .8rem .1rem;
+        }
+        .amazon .image img{
+            height: 2rem;
+            margin: 1rem 0rem 0rem 1rem;
+            width: 5.5rem;
+        }
+        .amazon .image .a{
+            color: white;
+            margin: -2.4rem 0.5rem 0rem 6.5rem;
+            font-size: x-large;
+        }
+        .image:hover{
+            border: 1px solid white;
+
+        }
+    
+        .amazon .location{
+             height: 3.7rem;
+             width: 13.7rem;
+             /* display: flex; */
+             /* align-items: center; */
+             margin: 0rem 0rem .3rem .4rem;
+             border: 1px solid transparent;
+             /* padding: .6rem; */
+             
+        }
+        .location a{
+            color: white;
+            display: flex;
+            align-items: center;
+            font-size: large;
+            text-decoration: none;
+            
+            margin-top: 1.2rem;
+            margin-left: .3rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .location .delivery{
+            font-size: medium;
+            margin-top: -1.5rem;
+            margin-left: .5rem;
+            color: rgba(255, 255, 255, 0.89);
+        }
+        .location .bold{
+            font-weight: 700;
+            margin-bottom: -.9rem;
+            margin-left: -11.9rem;
+        }
+        .location:hover{
+            border: 1px solid white;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 1rem; */
+            border:1px solid transparent ;
+            height: 2.7rem;
+        }
+        .search form {
+            display: flex;
+            align-items: center;
+            margin-left: 2.9rem;
+        }
+        .search form select{
+            outline: none;
+            border-radius: .5rem 0rem 0rem .5rem;
+            color: rgba(45, 43, 43, 0.905);
+            padding: .9rem;
+            background-color: rgba(255, 255, 255, 0.632);
+        }
+        .search form input{
+            padding: .9rem;
+            width: 32rem;
+            color: rgba(45, 43, 43, 0.905);
+            /* border: 6px solid red; */
+            outline: none;
+            
+        }
+        .search a{
+            background-color: rgb(247, 165, 58);
+            padding: .8rem;
+            border-radius: 0rem .5rem 0.5rem 0rem;
+            font-size: large;
+
+        }
+        .language{
+            display: flex;
+            align-items: center;
+            height: 3.6rem;
+            border: 1px solid transparent;
+            margin-left: .7rem;
+            padding: .3rem;
+        }
+        .language img{
+            height: 1.8rem;
+            width: 2.2rem;
+        }
+        .language form select{
+            background-color: transparent;
+            color: white;
+            font-size: large;
+            font-weight: 700;
+            border: 1px solid transparent;
+        }
+        .language:hover{
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .sign{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 3.6rem;
+            padding: .5rem;
+            margin-left: .7rem;
+            border: 1px solid transparent;
+        }
+        .sign:hover{
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .return{
+           color: white;
+           padding: .3rem .7rem .3rem .7rem;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: large;
+           margin-left: .7rem;
+           border: 1px solid transparent;
+        }
+        .return:hover{
+            border: 1px solid white;
+            cursor: pointer;
+            
+        }
+        .icon1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: .3rem .5rem .3rem .3rem;
+            border: 1px solid transparent;
+        }
+        .icon1 a{
+            color: white;
+            margin-left: .7rem;
+            font-size: 2.5rem;
+            text-decoration: none;
+            /* width: 18rem; */
+
+        }
+        .icon1 p{
+            font-size: 1.4rem;
+            margin-left: -.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .amazon .icon1:hover{
+            border: 1px solid white;
+           
+        }
+        .icon{
+            height: 2.3rem;
+            width: 100vw;
+            background-color: rgba(1, 21, 62, 0.838);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: .4rem;
+        }
+        .icon .all{
+            margin-left: .1rem;
+            border: 1px solid transparent;
+            margin-right: .2rem;
+            color: white;
+            padding: .3rem;
+        }
+        .icon a{
+            color: white;
+        }
+        .icon .all:hover{
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+        .icon form {
+            border: 1px solid transparent;
+            padding: .2rem;
+            margin-right: .2rem;
+            /* height: 2rem; */
+        }
+        .icon form select{
+            background-color: transparent;
+            color: white;
+            border: 1px solid transparent;
+
+            font-size: 1rem;
+        }
+        .icon form:hover{
+            border: 1px solid white;
+            cursor: pointer;
+
+        }
+        .icon p{
+            border: 1px solid transparent;
+            padding: .2rem;
+            margin-right: .3rem;
+            height: 2rem;
+            font-size: 1rem;
+
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .icon p:hover{
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .icon .abc img{
+            position: relative;
+             left: 6.05rem;
+            border: 1px solid transparent;
+            
+        }
+        .icon .abc img:hover{
+            border: 1px solid white;
+            cursor: pointer;
+            
+        }
+        .images{
+            overflow: hidden;
+            height: 600px;
+             width: 500vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: slider 10s linear 0s infinite alternate ;
+            
+        }
+        .images  img{
+            height: 600px;
+            width: 100vw;
+        }
+        @keyframes slider{
+            0%{
+                transform : translateX(0)
+            }
+            5%{
+                transform : translateX(0)
+
+            }
+            10%{
+                transform : translateX(0)
+
+            }
+            15%{
+                transform : translateX(0)
+
+            }
+
+            20%{
+                transform : translateX(-100vw)
+
+            }
+            25%{
+                transform : translateX(-100vw)
+
+            }
+            30%{
+                transform : translateX(-100vw)
+
+            }
+            35%{
+                transform : translateX(-100vw)
+
+            }
+            40%{
+                transform : translateX(-200vw)
+
+            }
+            45%{
+                transform : translateX(-200vw)
+
+            }
+            50%{
+                transform : translateX(-200vw)
+
+            }
+            55%{
+                transform : translateX(-200vw)
+
+            }
+            60%{
+                transform : translateX(-300vw)
+            }
+            65%{
+                transform : translateX(-300vw)
+
+            }
+            70%{
+                transform : translateX(-300vw)
+
+            }
+            75%{
+                transform : translateX(-300vw)
+            }
+            80%{
+                transform : translateX(-400vw)
+            }
+            85%{
+                transform : translateX(-400vw)
+            }
+            90%{
+                transform : translateX(-400vw)
+            }
+            95%{
+                transform : translateX(-400vw)
+            }
+            100%{
+                transform : translateX(-400vw)
+            }
+            
+        }
+        .box{
+            height: 27.7rem;
+            width: 100vw;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.282);
+            position: absolute;
+            top: 25rem;
+        }
+        .box .box1{
+            height: 25rem;
+            width: 23rem;
+            background-color: white;
+            text-align: start;
+            padding: .8rem;
+            /* display:inline-block; */
+            /* justify-content: space-evenly; */
+            margin: 1.8rem;
+        
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box1 h1{
+            /* font-weight: 700; */
+            font-family: 'Times New Roman', Times, serif;
+            /* padding: .8rem; */
+            margin-left: .9rem;
+            margin-bottom: .5rem;
+        }
+        .box1 a{
+            text-decoration: none;
+            margin-bottom: .7rem;
+        }
+        .box1 .a1{
+             display: flex;
+             /* align-items: center; */
+             justify-content: space-evenly;
+             margin-bottom: .5rem;
+        }
+        .box1 .a1 img{
+            width: 8.5rem;
+        }
+        .box1 .a1 a {
+            color: black;
+            text-decoration: none;
+            /* width: 9rem; */
+        }
+        .box1 .a1 a p{
+            width: 9rem;
+        }
+        .box1 .a2 img{
+            width: 8.5rem;
+        }
+        .box1 .a3{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: -.5rem;
+        }
+        .box1 .a3 a img{
+            width: 8.5rem;
+            margin-left: -.1rem;
+        }
+        .box1 .a3 a{
+            text-decoration: none;
+            color: black;
+        }
+        .box1 .a4 a{
+            margin-left: .3rem;
+        }
+        .box .box2{
+            height: 25rem;
+            width: 23rem;
+            background-color: white;
+            text-align: start;
+            padding: .8rem;
+            /* display:inline-block; */
+            /* justify-content: space-evenly; */
+            margin: 1.8rem;
+        
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box2 h1{
+            /* font-weight: 700; */
+            font-family: 'Times New Roman', Times, serif;
+            /* padding: .8rem; */
+            margin-left: .9rem;
+            margin-bottom: .5rem;
+        }
+        .box2 a{
+            text-decoration: none;
+            margin-bottom: .7rem;
+        }
+        .box2 .b5{
+             display: flex;
+             /* align-items: center; */
+             justify-content: space-evenly;
+             margin-bottom: .5rem;
+        }
+        .box2 .b5 img{
+            width: 8.5rem;
+        }
+        .box2 .b5 a {
+            color: black;
+            text-decoration: none;
+            width: 9rem;
+        }
+        .box2 .b6 a p{
+            width: 9.9rem;
+        }
+        .box2 .b6 img{
+            width: 8.5rem;
+        }
+        .box2 .b7{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: -.8rem;
+            margin-bottom: -.2rem;
+            margin-top: -.4rem;
+        }
+        .box2 .b7 a img{
+            width: 8.5rem;
+            /* margin-left: -.1rem; */
+        }
+        .box2 .b7 a{
+            text-decoration: none;
+            color: black;
+            width: 8.5rem;
+        }
+        .box2 .b8 {
+            margin-left: -.3rem;
+            /* margin-top: -.4rem; */
+        }
+        .box .box3{
+            height: 25rem;
+            width: 23rem;
+            background-color: white;
+            text-align: start;
+            padding: .8rem;
+            /* display:inline-block; */
+            /* justify-content: space-evenly; */
+            margin: 1.8rem;
+        
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box3 h1{
+            /* font-weight: 700; */
+            font-family: 'Times New Roman', Times, serif;
+            /* padding: .8rem; */
+            margin-left: .9rem;
+            margin-bottom: .5rem;
+        }
+        .box3 a{
+            text-decoration: none;
+            margin-bottom: 1.9rem;
+        }
+        .box3 .b9{
+             display: flex;
+             /* align-items: center; */
+             justify-content: space-evenly;
+             margin-bottom: .5rem;
+        }
+        .box3 .b9 img{
+            width: 8.5rem;
+        }
+        .box3 .b9 a {
+            color: black;
+            text-decoration: none;
+            width: 9rem;
+        }
+        .box3 .b10 a p{
+            width: 9.9rem;
+        }
+        .box3 .b10 img{
+            width: 8.5rem;
+        }
+        .box3 .b11{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: .8rem;
+            margin-bottom: -.2rem;
+            margin-top: -.4rem;
+        }
+        .box3 .b11 a img{
+            width: 8.5rem;
+            /* margin-left: -.1rem; */
+        }
+        .box3 .b11 a{
+            text-decoration: none;
+            color: black;
+            width: 8.5rem;
+        }
+        .box3 .b12 {
+            margin-left: 1.4rem;
+            /* margin-top: -.4rem; */
+        }
+        
+        .box .box4{
+            height: 25rem;
+            width: 23rem;
+            background-color: white;
+            text-align: start;
+            padding: .8rem;
+            /* display:inline-block; */
+            /* justify-content: space-evenly; */
+            margin: 1.8rem .9rem 1.8rem 1.3rem ;
+            /* margin-left: .1rem; */
+        
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box4 h1{
+            /* font-weight: 700; */
+            font-family: 'Times New Roman', Times, serif;
+            /* padding: .8rem; */
+            margin-left: .9rem;
+            margin-bottom: .5rem;
+        }
+        .box4 a{
+            text-decoration: none;
+            margin-bottom: 1.9rem;
+        }
+        .box4 .b13{
+             display: flex;
+             /* align-items: center; */
+             justify-content: space-evenly;
+             /* margin-bottom: .5rem; */
+            }
+            .box4 .b13 img{
+                width: 8.5rem;
+            }
+            .box4 .b13 a {
+                color: black;
+                text-decoration: none;
+                width: 9rem;
+            }
+            .box4 .b14 a p{
+                width: 9.9rem;
+                margin-left: .7rem;
+            }
+            .box4 .b14 img{
+            margin-left: .9rem;
+            width: 8.5rem;
+        }
+        .box4 .b15{
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: -.7rem;
+            margin-bottom: -.2rem;
+            margin-top: -.4rem;
+        }
+        .box4 .b15  img{
+            width: 8.5rem;
+            /* margin-left: -.1rem; */
+        }
+        .box4 .b15 a{
+            text-decoration: none;
+            color: black;
+            width: 8.5rem;
+        }
+        .box4 .b16 {
+            margin-left: .3rem;
+            /* margin-top: -.4rem; */
+        }
+        .scooter{
+            height: 20rem;
+            background-color: rgba(128, 128, 128, 0.285);
+            position: absolute;
+            top: 52.7rem;
+        }
+        .scooter .electric{
+            height: 16.5rem;
+            background-color: white;
+            width: 96.3vw;
+            /* margin-top: -2.5rem; */
+            margin: 1.8rem;
+            /* text-decoration: none; */
+            /* margin-top: 6.9rem; */
+            /* display: inline-block; */
+        }
+        .scooter .electric h1{
+            top: .9rem;
+            margin-left: .9rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline-block;
+            position: relative;
+        }
+        .scooter .electric a{
+            margin-left: .9rem;
+            font-size: x-large;
+            text-decoration: none;
+            position: relative;
+            top: .9rem;
+        }
+        .scooter .electric .img{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.4rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="amazon">
+        <div class="image">
+
+            <a href="#"><img src="./Amazon-Logo-White@zeevector.png" alt="">
+                <div class="a">.in</div></a>
+        </div>
+        <div class="location">
+
+            <a href="#"><i class="fa-solid fa-location-dot"> </i>
+                <div class="delivery">
+                    Delivering to mumbai 400001
+                </div>
+                <div class="bold">Update location</div> </a>
+            </div>
+            <div class="search">
+                <form action="">
+                    <select>
+                        <option>All</option>
+                    </select>
+                    <input type="text" placeholder="Search Amazon.in">
+                </form>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          <div class="language">
+                <img src="./Indian-flag105-300x228.png" alt="">
+                <form action="">
+                    <select name="" id="">
+                        <option value="">Eng</option>
+                    </select>
+                </form>
+          </div>
+          <div class="sign">
+            <p>Hello,sign in</p>
+            <b>Account & Lists </b>
+          </div>
+          <div class="return">
+            <p>Returns</p>
+            <b>& Orders</b>
+          </div>
+          <div class="icon1">
+            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            <p>cart</p>
+                
+          </div>
+    </div>
+    <div class="icon">
+        <div class="all">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <b>All</b>
+        </div>
+        <form action="">
+            <select name="" id="">
+                <option value="">Fresh</option>
+            </select>
+        </form>
+            <p>Amazon MiniTV</p>
+           <p> Sell</p>
+            <p>Best Seller</p>
+            <p>Mobiles</p>
+            <p>Today's Deals</p>
+        <p>Customer Services</p>
+        <form action="">
+            <select name="" id="">
+                <option value="">Prime</option>
+            </select>
+        </form>
+        <p>Fashion</p>
+        <p>Electronics </p>
+        <p>Amazon Pay</p>
+        <div class="abc">
+            <img src="./PD24_SWM_Dates_V2._CB569503763_.jpg" alt="">
+        </div>
+    </div>
+<div class="slider">
+    <div class="images">
+        <div class="a">
+           <img src="./5300-Kitchen---PD24---Hero.jpg_3000X1200._CB570222210_.jpg" alt="">
+        </div>
+        <div class="b">
+            <img src="./D132995370_Homepage_DesktopHeroTemplate_3000x1200._CB557152260_.jpg" alt="">
+        </div>
+        <div class="c">
+            <img src="./PC-hero-new-kv_-3000x1200_2._CB570221731_.jpg" alt="">
+        </div>
+        <div class="d">
+            <img src="./PC_hero_1_2x_1._CB582889946_.jpg" alt="">
+        </div>
+        <div class="e">
+            <img src="./PC_Hero_3000x1200._CB570221335_.jpg" alt="">
+        </div>
+    </div>
+</div>
+    <div class="box">
+        <div class="box1">
+            <h1>Revamp your home in style</h1>
+            <div class="a1">
+                <a href="#">
+               <img src="./1.jpg" alt="">
+                <p>Cushion covers, bedsheets & more</p></a>
+                <div class="a2">
+                    <a href="#">
+                        <img src="./2.jpg" alt="">
+                        <p>Figurines, vases & more</p></a>
+                </div>
+            </div>
+            <div class="a3">
+                <a href="#">
+                <img src="./3.jpg" alt="">
+                    <p>Home storage</p></a>
+                    <div class="a4">
+                        <a href="#">
+                            <img src="./4.jpg" alt="">
+                            <p>Lighting solutions</p></a>
+                    </div>
+            </div>
+            <a href="#">Explore all</a>
+        </div>
+            <div class="box2">
+                <h1>Get Prime Day ready | 20 - 21 Jul</h1>
+                <div class="b5">
+                    <a href="#">
+                        <img src="./5.jpg" alt="">
+                        <p>Only for Prime members</p>
+                    </a>
+                        <div class="b6">
+                            <a href="#"><img src="./6.jpg" alt="">
+                                <p>Early deals up to 55% off | Alexa & Fire Tv</p>
+                            </a>
+                        </div>
+                </div>
+                <div class="b7">
+                    <a href="#"><img src="./7.jpg" alt="">
+                    <p>Exciting deals are coming soon</p></a>
+                    <div class="b8">
+                        <a href="#">
+                            <img src="./8.jpg" alt="">
+                            <p>Join Prime now</p></a>
+                    </div>
+                </div>
+                <a href="#">See all offers</a>
+            </div>
+            <div class="box3">
+                <h1>Prime day is live | July 20 - 21</h1>
+                <div class="b9">
+                    <a href="#">
+                    <img src="./9.jpg" alt="">
+                    <p>Join Prime now</p></a>
+                    <div class="b10">
+                        <a href="#">
+                        <img src="./10.jpg" alt="">
+                        <p>Unlimited 5% cashback </p></a>
+                    </div>
+                </div>
+                    <div class="b11">
+                        <a href="#">
+                        <img src="./11.jpg" alt="">
+                        <p>Prime offers</p></a>
+                        <div class="b12">
+                            <a href="#">
+                            <img src="./12.jpg" alt="">
+                            <p>Free same-day, 1-day delivery</p></a>
+                        </div>
+                    </div>
+                    <a href="#">Join now ></a>
+            </div>
+            <div class="box4">
+                <h1>Up to 60% off | Styles for women</h1>
+                <div class="b13">
+                    <a href="#">
+
+                        <img src="./13.jpg" alt="">
+                        <p>Women's Clothing </p>
+                    </a>
+                    <div class="b14">
+                        <a href="#">
+
+                            <img src="./14.jpg" alt="">
+                            <p>Footwear+Handbags</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="b15">
+                    <a href="#">
+
+                        <img src="./15.jpg" alt="">
+                        <p>Watches</p>
+                    </a>
+                    <div class="b16">
+                        <a href="#">
+
+                            <img src="./16.jpg" alt="">
+                            <p>Fashion jewellery</p>
+                        </a>
+                    </div>
+                </div>
+                <a href="#">End of season sale</a>
+            </div>
+    </div>
+    <div class="scooter">
+        <div class="electric">
+
+            <h1>Electric scooters & two wheelers from stores nearby</h1>
+            <a href="#">See all offers</a>
+            <div class="img">
+                <img src="./scooter1.jpg" alt="">
+                <img src="./scooter2.jpg" alt="">
+                <img src="./scooter3.jpg" alt="">
+                <img src="./scooter4.jpg" alt="">
+                <img src="./scooter5.jpg" alt="">
+                <img src="./scooter6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

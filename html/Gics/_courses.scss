@@ -1,0 +1,96 @@
+@import './variables';
+
+.course-container{
+    background: hsl(212,25%,95%);
+    padding: 1.5em 0;
+    h1{
+        font-size: 2.2em;
+        color: #000;
+        margin: .65em;
+        i{
+            position: relative;
+            top: 4px;
+            color: #ccc;
+            margin-left: .3em;
+        }
+    }
+    .btn-container{
+        display: none;
+        button{
+            background: none;
+            outline: none;
+            margin: .5em 0;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: .7em;
+            border: 2px solid #000;
+            font-weight: 600;
+            width: 100%;
+            &:first-of-type{
+                width: 50%;
+            }
+        }
+        .active-btn{
+            background: #000;
+            color: #fff;
+        }
+    }
+    .courses{
+        padding: 1em;
+        .course{
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px 5px #ddd;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 1s ease;
+            margin: 2em 0;
+            figure{
+                img{
+                    width: 100%;
+                }
+                figcaption{
+                    padding: 1em;
+                    h2{
+                        margin-bottom: .5em;
+                    }
+                    p{
+                        line-height: 1.5;
+                        color: hsl(212,15%,50%);
+                    }
+                }
+            }
+        }
+        .active-course{
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width:580px){
+    .course-container{
+        padding:3em;
+        h1{
+            text-align: center;
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5em;
+            padding: 0;
+            width: 50%;
+            margin: 3em auto;
+        }
+.courses{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2em;
+    align-items: flex-start;
+    }
+
+    }
+}

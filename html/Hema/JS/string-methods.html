@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="Hello My name is abcd im a good name boy";
+        // document.write(str.length) // used for counting length of string including space
+    
+        // document.write(str.toLowerCase())
+        // document.write(str.toUpperCase())
+        // document.write(str.includes("good")) //checking a word exist in string or not
+        // document.write(str.startsWith("H"))
+        // document.write(str.endsWith('p'))
+
+        // document.write(str.search("abcd"))
+
+        let data=["Amit Verma","Sumit Singh","Ankit Sharma","Bablu Verma","Anmol Verma","Zoya","Anupama Verma"];
+
+        let name = [];
+
+        for(index of data){
+            
+          if(index.startsWith("A")==true){
+            name.push(index);
+          }
+        
+        if(index.endsWith("Verma")==true){
+            name.push(index);
+          }
+    
+    }
+
+        document.write(name)
+       
+
+        // document.write(str.indexOf("name",10))
+
+        // document.write(str.lastIndexOf("name"))
+
+        // document.write(str.replace("abcd","AMit")) // it ise used for replacing text in string.
+
+        // let mystr = "    Hello     ";
+        
+        // alert(mystr.trim()) // Trim is use for removing spaces form string
+
+        let hello="Hello1";
+
+        // document.write(hello.charAt(1)) // finding characters with the help of index .
+
+
+        // document.write(hello.charCodeAt(1)) // it is used for finding character code of string index.
+
+        // document.write(String.fromCharCode(72,101,108,108,111)) // converting character code into ASCII 
+
+    // document.write(hello.concat(str,hello))
+
+    // console.log(str.split(" ")) // used for converting a string into array with the help of delimeter
+
+    // document.write(hello.repeat(2))
+
+    // document.write(str.slice(0,10))
+    // document.write(str.substr(0,10))
+    // document.write(str.substring(0,10))
+
+    // let num=10;
+
+
+    // document.write(typeof(data.toString())) // Converting into string
+
+
+    
+    </script>
+</body>
+</html>

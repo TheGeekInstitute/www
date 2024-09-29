@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: cursive;
+}
+
+nav{
+    /* border: 1px solid red; */
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: blue;
+    color: white;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu .links{
+    display: flex;
+    align-items: center;
+}
+
+.links li{
+    margin: 0 .5rem;
+}
+
+.links li a{
+color: white;
+font-size: 1.1rem;
+}
+
+.links li a:hover{
+    color: red;
+}
+
+#btn,.open,.close{
+    display: none;
+}
+
+@media  screen and (max-width:600px) {
+    nav{
+        background-color: black;
+    }
+    .links{
+        /* border: 1px solid red; */
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 4rem;
+        background-color: rgb(4, 77, 52);
+        height: 10rem;
+        flex-direction: column;
+        visibility: hidden;
+        
+    }
+
+    .links li{
+        margin: .5rem 0;
+    }
+
+    .open{
+        display: block;
+        font-size: 2rem;
+    }
+    .close{
+        font-size: 2rem;
+
+    }
+
+    #btn:checked ~ .links{
+        visibility: visible;
+    }
+
+    #btn:checked ~ .open{
+        display: none;
+    }
+    #btn:checked ~ .close{
+        display: block;
+    }
+
+   
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+        <div class="menu">
+            <input type="checkbox"  id="btn">
+        <label for="btn" class="open"><i class="fa-solid fa-bars"></i></label>
+        <label for="btn" class="close"><i class="fa-solid fa-xmark"></i></label>
+
+        
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+    </div>
+
+    </nav>
+</body>
+</html>

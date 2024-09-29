@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+
+        }
+        .container{
+            border: 2px solid black;
+            display: grid;
+            
+            height: 500px;
+            /* width: 700px; */
+            width: 80vw;
+            margin: auto;
+            grid-template-columns:repeat(3,1fr);
+            
+            grid-template-rows: 50px 2fr 2fr 1fr  30px;
+          
+        }
+        .nav{
+            border: 1px soldi black;
+            background-color: aqua;
+        }
+        .sidebar{
+            background-color: red;
+        }
+        .rightsidebar{
+            background-color: blue;
+        }
+        .lawout{
+            background-color: black;
+        }
+        .footer{
+            background-color: yellow;
+        }
+        .live{
+            background-color: greenyellow;
+        }
+        .main{
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">Nav</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="rightsidebar">rightsidebar</div>
+        <div class="lawout">Rightsidebar2</div>
+        <div class="footer">footer</div>
+        <div class="live">live</div>
+        <div class="main">main</div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* border: 1px solid red; */
+            text-align: center;
+        }
+
+        .container .review{
+            /* border: 2px solid green; */
+            height:400px;
+            width: 400px;
+            margin-inline: auto;
+            overflow: hidden;
+
+
+        }
+
+        button{
+            padding: 2px 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .container .review .slider{
+            /* border: 1px solid red; */
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition:all 1s ease-in-out ;
+
+     
+        
+        }
+
+        .container .review .box{
+            height: 400px;
+            width: 400px;
+       
+        }
+
+
+        .box1{
+             background-image: linear-gradient(pink , blue); 
+        }
+
+        .box2{
+            background-image:linear-gradient(orange,white, green);
+        }
+
+        .box3{
+            background-image: linear-gradient(rgb(85, 84, 84),rgb(204, 150, 159));
+        }
+
+        .box4{
+            background-image:linear-gradient( silver,gold);
+        }
+
+        .box5{
+            background-image: linear-gradient( rebeccapurple,skyblue);
+        }
+
+        .box6{
+            background-image: linear-gradient(rgb(207, 80, 80),rgb(83, 83, 184),pink);
+        }
+
+
+        .container .review .box.active{
+          transform: translate(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="review">
+            <div class="slider">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+                <div class="box box6"></div>
+            </div>
+        </div>
+
+        <div class="btns">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+    </div>
+
+    <script>
+        let slider =  document.querySelector(".slider");
+        let next = document.querySelector("#next");
+        let prev = document.querySelector("#prev");
+
+        let index = 0;
+
+        slider.style.width = (slider.childElementCount * 400) +"px"
+
+           
+
+        next.addEventListener("click",()=>{
+            slider.children[index].classList.remove("active");
+
+            if(index<slider.childElementCount -1){
+                index+=1;
+            }
+            else{
+                index=0;
+            }
+            slider.children[index].classList.add("active");
+            slider.style.transform = "translateX(-"+(index*400)+"px)"; 
+
+            // console.log(index)
+
+        })
+
+
+
+        prev.addEventListener("click",()=>{
+            slider.children[index].classList.remove("active");
+
+            if(index<=0){
+                index=slider.childElementCount-1;
+            }
+            else{
+                index-=1;
+            }
+            slider.children[index].classList.add("active");
+            slider.style.transform = "translateX(-"+(index*400)+"px)"; 
+        })
+
+    </script>
+</body>
+</html>

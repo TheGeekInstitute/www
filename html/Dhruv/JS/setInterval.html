@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hour{
+            color: red;
+        }
+        #minutes{
+            color: yellowgreen;
+        }
+        #seconds{
+            color: blue;
+        }
+        #miliseconds{
+            color: rebeccapurple;
+        }
+
+        #time{
+            border: 2px solid red;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="time">
+        <span id="hour"></span>:
+        <span id="minutes"></span>:
+        <span id="seconds"></span>:
+        <span id="miliseconds"></span>
+    </h1>
+    <button onclick="stop()">ABCD</button>
+
+    <script>
+
+        // let data = setInterval(abcd,1000)
+
+        // let a=1;
+        // function abcd(){
+        //     console.log(a++);
+        //     if(a>5){
+        //         clearInterval(data);
+        //     }
+       
+        // }
+
+        setInterval(time,1)
+
+        function time(){
+            let date = new Date();
+            document.querySelector("#time").innerHTML = date.getHours() + ":" + date.getMinutes() +":"+date.getSeconds() + ":" + date.getMilliseconds(); 
+        }
+
+        // let abcd = setInterval(()=>{
+        //     let date = new Date();
+        //     document.querySelector("#hour").innerHTML = date.getHours(); 
+        //     document.querySelector("#minutes").innerHTML = date.getMinutes();
+        //     document.querySelector("#seconds").innerHTML = date.getSeconds();
+        //     document.querySelector("#miliseconds").innerHTML = date.getMilliseconds();
+        //     if(date.getSeconds()==60){
+        //         clearInterval(abcd)
+        //     }
+
+        // },1)
+
+        // let data = setTimeout(() => {
+        //     document.querySelector("#time").style.display = "none"
+        // }, 10000);
+
+
+        // function stop(){
+        //     clearTimeout(data);
+        // }
+    </script>
+</body>
+</html>

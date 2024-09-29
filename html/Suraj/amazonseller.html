@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://media.istockphoto.com/id/155138281/photo/driving-into-the-unknown.jpg?s=612x612&w=0&k=20&c=GYavdagAQO-SQVVvLQfFekj2JIQPZ5dlx0QKHTHsbm4=");
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+        }
+        .man img{
+            margin-top: 450px;
+            animation-name: move;
+            height: 25em;
+            transition: all 5s ease;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* transform: translatex(180deg); */
+        }
+        @keyframes move {
+            0%{
+                transform: translatex(0px);
+            }
+            10%{
+                transform: translatex(15%);
+            }
+
+            20%{
+                transform: translateX(30%);
+            }
+            40%{
+                transform: translateX(50%);
+
+            }
+            60%{
+                transform: translatex(70%);
+            }
+            80%{
+                transform: translatex(85%);
+            }
+            100%{
+                transform: translatex(100%);
+            }
+
+        }
+        .second img{
+            mix-blend-mode: luminosity;
+            mix-blend-mode: color;
+        }
+    </style>
+</head>
+<body>
+    <div class="man">
+        <img src="https://media3.giphy.com/media/GL4o8H0NUfNEsk5Ws5/giphy.gif?cid=6c09b952f8os0mxq7nk4sohpuzjjqk70cuc3724zp0o50oar&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="">
+        
+    </div>
+    <div class="second">
+        <img src="https://openseauserdata.com/files/5c99f8b697ffeb9f01a80dfc98d8c5f0.gif" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                font-size: 62.5%;
+            }
+            header{
+                position: static;
+            background-image: url("http://192.168.1.4/GEEK/img/carousel-1.jpg");
+            /* height: 100vh; */
+            width: 100vw;
+            background-size: cover;
+            background-color: rgba(65, 29, 150, 0.966);
+            background-blend-mode: overlay;
+            
+        }
+        .top{
+            height: 4vh;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px groove  rgba(255, 255, 255, 0.514);
+
+        }
+        .adrs{
+            display: flex;
+            margin-left: 3vw;
+            font-size: 1.6em;
+            align-items: center;
+        }
+        .adrs h6{
+            margin-left: 10px;
+            color:  rgba(255, 255, 255, 0.514);
+            /* align-items: center; */
+        }
+        .media{
+            margin-right: 3px;
+            align-items: center;
+            /* border: 1px solid red; */
+            padding: .2em 0em;
+        }
+        .media ul li{
+            display: inline-block;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 3px;
+            font-size: 1.6em;
+            color: aliceblue;
+        }
+        .media ul li a{
+            color: rgba(255, 255, 255, 0.514);
+        }
+        
+        .adrs i{
+            font-size: 1.6em;
+            /* color: aliceblue; */
+        }
+        .nav{
+            height:12em;
+            border: 1px solid  rgb(0, 183, 255);
+            display: flex;
+            /* justify-content: space-evenly; */
+            width: 100vw;
+            padding: ;
+            align-items: center;
+        }
+        .nav img{
+            height: 12em ;
+            margin-right: -2em;
+            width: 35em;
+            border: 10px solid  rgb(0, 183, 255);
+            border-radius: 100%;
+
+        }
+        .abt {
+            height: 8vh;
+            background:  rgb(0, 183, 255);
+            /* outline: 2px solid ; */
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0em 3em;
+            
+        }
+        .nav ul li{
+            display: inline;
+            color: white;
+            margin: .5em;
+            font-size: 1.7em;
+            
+        }
+        .btn , .btn1{
+            /* border: 1px solid red; */
+            /* margin-right:5em ; */
+            padding: .4em .6em;
+            border-radius: 4px;
+            /* margin-right: 5em; */
+        }
+        .btn{
+            background: blue;
+        }
+        .btn1{
+            background: red;
+        }
+        .sec{
+            padding: 3em 0em;
+            height: 70vh;
+            border: 2px solid green;
+            background: rgb(27, 27, 27);
+        }
+        .sec h1{
+            
+            font-size: 5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white; 
+            text-align: center;
+        }
+        .cards{
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 1px solid red; */
+            padding: .6em 4em;
+            box-shadow: 2px 2px 4px gray;
+            background: gray;
+            height: 20vh;
+            align-items: center;
+            margin: 5em 10em;
+        }
+       
+        .box{
+
+            text-align: center;
+        }
+        .box a{
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            margin: 2.8em;
+            font-size: 1.4em;
+            
+        }
+        .box img{
+            height: 10em;
+            width: 10em;
+            
+        }
+        .cards p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            font-size: 1.6em;
+        }
+        .arleft{
+            left: .3em;
+        }
+        .arleft ,.arright{
+            background: white;
+            font-size: 3em;
+            position: absolute;
+            padding: 1rem 1.6rem;
+            top: 12.5em;
+            align-items: center;
+            border-radius: .2rem;
+            box-shadow: .5px .5px 4px gray;
+            border-radius: 50%;
+            
+        }
+        .arright{
+            right: .3em;
+        }
+        .third{
+            /* position: relative */
+            /* text-align: center; */
+        }
+        .third a{
+            display: inline-block;
+            text-decoration: none;
+            /* color: black; */
+        }
+        .caption img{
+            height: 60vh;
+            width: 32.95vw;
+            /* border: 4px solid green; */
+        }
+        
+        
+         .caption{
+            /* position: absolute; */
+            /* top: 0%; */
+            /* border: 1px solid red; */
+            height: 60vh;
+            width: 32.9vw;
+            text-align: center; 
+            transition: transform .7s linear;
+            overflow: hidden;
+            
+        }
+        .caption:hover{
+            background-blend-mode: overlay;
+            
+        }
+        .caption-wr{
+            /* border: 1px solid blue; */
+            height: 100%;
+            width:100%;
+            font-size: 2em;
+            color: black;
+            /* padding: 0em 1em ; */
+            padding-top:20vh;
+            /* line-height: 60vh; */
+            transform: translateY(0);
+            transition: transform .3s;
+            font-size: 2.3em;
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .caption-wr h1{
+            margin: .6em;
+        }
+        
+        .third a .caption:hover  .caption-wr{
+            background-color: rgba(73, 74, 80, 0.534);
+            transform: translateY(-60vh);
+        } 
+        .footer{
+        height: 50vh;
+        background-color:rgb(6, 39, 71);
+      }
+      .foot{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3rem;
+        border-bottom: 1px solid grey;
+        margin-top: 1rem;
+        /* width: 100vw; */
+      }
+      .mail{
+        /* margin-left: 5rem ; */
+      }
+      .foot ul li a{
+        color: #fff;
+        font-size: 1.6em;
+        padding: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 1.3rem;
+
+      }
+      .foot ul{
+        color: #fff;
+        text-align: center;
+        margin-top: .5rem;
+      }
+      
+      .social{
+        border-right: 1px solid grey;
+      }
+      .foot h2{
+        color:gray;
+        font-size: 2em;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .last{
+          font-size: 1.6em;
+          /* height: 30vh; */
+          position: static;
+          bottom: 0%;
+
+      }
+      .end{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.6rem;
+      }
+      .end i{
+        color: rgb(255, 196, 0);
+        /* font-size: 1.6em; */
+
+      }
+      .end p{
+        color: #fff;
+      }
+      .end img{
+        width: 35em;
+      }
+      .container{
+            display: grid;
+            height: 90vh;
+            width: 100vw;
+            background-color: yellow;
+            /* grid-area: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr; */
+            grid-template-columns:  1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr ;
+
+        }
+        .items{
+            text-align: center; 
+            transition: transform .7s linear;
+            overflow: hidden;
+        }
+        .items:hover{
+            background-blend-mode: overlay;
+            
+        }
+        .caption-wr{
+           height: 150%;
+           width: 100%;
+            padding-top:20vh;
+            transform: translateY(-60vh);
+            transition: transform .3s;
+            /* font-size: 2.3em; */
+            color: white;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .caption-wr h1{
+            margin: .6em;
+        }
+        
+         .items:hover  .caption-wr{
+            background-color: rgba(73, 74, 80, 0.534);
+            transform: translateY(-10vh);
+        } 
+        .items1{
+            /* background-color: aqua; */
+            background-image: url(https://5.imimg.com/data5/NK/QD/MY-7688301/combo-offer-for-house-hold-items-500x500.jpg);
+
+        }
+        .items2{
+            grid-row: 1 / span 2;
+            /* background-color: #000; */
+            grid-column: 2;
+            background-image: url(https://rukminim2.flixcart.com/image/450/500/xif0q/shoe/z/n/r/6-410-boot-for-men-waan-black-original-imagnzdhns4heugy.jpeg?q=90&crop=false);
+        }
+        .items3{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBt3OJRkMfEl2cV4ELNmx-3yxmiKoIyQg8xg&usqp=CAU);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .items4{
+            grid-row: 1 / span 2;
+            /* background-color: green; */
+            grid-column: 4;
+            background-image: url(./grocery.png);
+            background-size: 105%;
+            background-repeat: no-repeat;
+        }
+        .items5{
+            grid-row: 2 / span 2;
+            /* background-color: red; */
+            grid-column: 1;
+            background-image: url(https://img.freepik.com/free-vector/realistic-gold-silver-jewelry-display-black-mannequins-stands-grey-surface_1284-9644.jpg?w=740&t=st=1688216169~exp=1688216769~hmac=b1361b8d0b993e2ff4078f5b20e81f2a07128bcdaad85fd33866703e9f33dc6b);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .items6{
+            grid-row: 2 / span 2;
+            /* background-color: blue; */
+            grid-column: 3;
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/638/601/313/lipstick-shadows-black-background-brush-cosmetics-hd-wallpaper-preview.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .items7{
+            background-image: url(https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/edu/art/5c9deaf2549db.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .items8{
+           background-image: url(https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="adrs">
+                <h6><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,India</h6>
+               <h6> <i class="fa fa-envelope-o" aria-hidden="true"></i>contect@gmail.com.org</h6>
+            </div>
+            <div class="media">
+                <ul>
+                    <li>Follow us:</li>
+                    <li><a href=""><i class="fa fa-facebook fb" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter tx" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin in" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram ig" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+    </header>
+    
+    <nav>
+        <div class="nav">
+            <img src="./our mart1.png" alt="">
+           <div class="abt">
+            <ul>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Services</li>
+                <li><a href="#"></a>Privacy</li>
+                <li><a href="#"></a>Contect Us</li>
+                <li class="btn"><a href="#" ></a> Sign Up</li>
+                <li class="btn1"><a href="#" ></a>Login</li>
+
+            </ul>
+           </div>
+        </div>
+    </nav>
+    <div class="sec">
+        <h1>Let's Choose our Choice 
+            <br>& Enjoy Daily Deals</h1>
+            <div class="cards">
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100" alt="">
+                    <a href="#">Offer</a>
+                </div>
+                
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100" alt="">
+                    <a href="#">Electronics</a>
+                </div>
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100" alt="">
+                    <a href="#"> Appliances</a>
+                </div>
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100" alt="">
+                    <a href="#">Fashion</a>
+                </div>
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100" alt="">
+                    <a href="#">Cars</a>
+                </div>
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100" alt="">
+                    <a href="#"> Homes </a>
+                </div>
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100" alt="">
+                    <a href="#">Furtuner</a>
+                </div>
+                
+                <div class="box">
+                    <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                    <a href="#">Grocery</a>
+                </div>
+         </div>
+         <div class="arleft">
+            <i class="fa-solid fa-angle-left"></i>
+    
+        </div>
+
+        <div class="arright">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+ </div>
+ <div class="container">
+    <div class="items items1">
+        <div class="caption-wr">
+            <h1>Electronics</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items2"  >
+        <div class="caption-wr">
+            <h1>Foot wear's</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items3">
+        <div class="caption-wr">
+            <h1>Dress's</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items4">
+        <div class="caption-wr">
+            <h1>Grocery's</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items5">
+        <div class="caption-wr">
+            <h1>Jwellery's</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items6">
+        <div class="caption-wr">
+            <h1>Beauty Products</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items7">
+        <div class="caption-wr">
+            <h1>Stationary</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+    <div class="items items8">
+        <div class="caption-wr">
+            <h1>Toys's</h1>
+            <p>Click here for our recommendation</p>
+        </div>
+    </div>
+
+</div>
+ 
+</body>
+</html>

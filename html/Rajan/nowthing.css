@@ -1,0 +1,11 @@
+.box{
+    border: 1px solid black;
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto ;
+    background-image: url( https://wallpapers.com/images/featured/anime-girl-pictures-t7rj97cpxsunxus8.jpg);
+    background-size: 25rem 25rem;
+}
+.box:hover{
+    transform: rotate('60deg');
+}

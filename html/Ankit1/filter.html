@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        img{
+            height: 400px;
+            width: 600px;
+
+            /* filter: blur(6px); */
+            /* filter: brightness(200%); */
+            /* filter: contrast(200%) brightness(200%); */
+            /* filter: drop-shadow(2px 2px 3px red); */
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(330deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%); */
+            filter: sepia(100%);
+        }
+
+        .box{
+            height: 400px;
+            width: 400px;
+            border: 25px solid black;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+           
+        }
+
+        .abcd{
+            height: 200px;
+            width: 200px;
+            margin: 100px auto;
+          
+         backdrop-filter: blur(1px);
+         background-color: rgba(240, 248, 255, 0.1);
+         border-radius: 10px;
+         box-shadow: 0px 0px 5px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg" alt="">
+
+    <!-- <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt=""> -->
+
+    <div class="box">
+        <div class="abcd">
+            <h1>ABCDBA</h1>
+        </div>
+    </div>
+</body>
+</html>

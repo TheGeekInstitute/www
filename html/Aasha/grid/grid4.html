@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid4</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .about{
+            border: 1px solid black;
+            height: 100vh;
+            width: 100vw;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 70px 50px 1fr 70px ;
+            grid-template-areas: "header header header"
+                                "nav nav nav"
+                                "content-left main content-right"
+                                "footer footer footer"
+                                ;
+          grid-gap: 10px;
+         
+
+        }
+
+       
+        
+        .box1{
+            background-color: rgb(175, 141, 208);
+             grid-area: header;
+             
+          
+
+        }
+        .box2{
+            background-color: rgb(38, 32, 43);
+            grid-area: nav;
+        }
+        .box3{
+            background-color: rgb(26, 4, 46);
+            grid-area: content-left;
+        }
+        .box4{
+            background-color: rgb(33, 2, 62);
+            grid-area: main;
+        }
+        .box5{
+            background-color: blueviolet;
+            grid-area: content-right;
+        }
+        .box6{
+            background-color: rgb(18, 115, 100);
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="about">
+        <div class="box box1">Header</div>
+        <div class="box box2">Navigation Menu</div>
+        <div class="box box3">content</div>
+        <div class="box box4">main content</div>
+        <div class="box box5">content</div>
+        <div class="box box6">footer</div>
+
+    </div>
+    
+</body>
+</html>

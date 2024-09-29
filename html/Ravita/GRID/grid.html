@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            width: 100vw;
+            height: 100vh;
+            margin:50px auto;
+            display: grid;
+            grid-template-rows: 100px  55px 1fr 60px ;
+               
+            grid-template-columns:100px 1fr 100px ;
+
+            gap: 10px;
+
+
+        }
+
+        
+
+        .box{
+            align-items: center;
+            text-align: center;
+        }
+
+        .box1{
+            background-color: gray;
+            grid-column: 1/4;
+            padding-top:2.7rem;
+            
+        }
+
+        .box2{
+            background-color: gray;
+            grid-column: 1/4;
+            padding-top:1.2rem;
+
+        }
+
+        .box3{
+            background-color: gray;
+            padding-top:10rem;
+
+            
+        }
+
+        .box4{
+            background-color: gray;
+            padding-top:10rem;
+
+        }
+
+        .box5{
+            background-color: gray;
+            padding-top:10rem;
+
+        }
+
+        .box6{
+            background-color: gray;
+            grid-column: 1/4;
+            padding-top:1.5rem;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box  box1">Header</div>
+        <div class="box  box2">Navigation Menu</div>
+        <div class="box  box3">Content</div>
+        <div class="box  box4">Main Content</div>
+        <div class="box  box5">Content</div>
+        <div class="box  box6">Footer</div>
+         
+
+    </div>
+</body>
+</html>

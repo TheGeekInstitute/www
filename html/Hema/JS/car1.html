@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+       .car{
+        /* border: 2px solid red; */
+        height: 150px;
+        width: 160px;
+        position:absolute;
+        bottom: 15px;
+        animation-name: car;
+        animation-duration: 5s;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+       }
+
+       .anim{
+        animation-play-state: paused;
+       }
+      @keyframes car{
+        from{
+            transform: translateX(0);
+
+        }
+        to{
+            transform: translateX(160vw);
+
+        }
+        
+      }
+
+      button{
+        margin: 10px;
+        width: 50px;
+        cursor: pointer;
+      }
+      .box{
+        width: 100vw;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+    <button id="btn">Pause</button>
+    <div class="box">
+       
+            <img src="../images/car.gif" class="car" alt="images" id="car">
+        
+    </div>
+
+    <script>
+    document.querySelector("#btn").addEventListener('click',function(){
+        let car = document.querySelector("#car");
+        car.classList.toggle("anim");
+
+    });
+
+
+
+
+    </script>
+</body>
+</html>

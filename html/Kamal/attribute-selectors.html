@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-color: red;
+        }
+
+        input[type="password"]{
+            background-color: yellowgreen;
+        }
+
+        p[class~="para"]{
+            /* color: red; */
+        }
+
+        p[class|="my"]{
+            /* color: red; */
+        }
+
+        p[class^="para"]{
+            /* color: red; */
+        }
+
+        p[class$="info"]{
+            /* color: red; */
+        }
+
+        p[class*="graph"]{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para paragraph new old data">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et perspiciatis nesciunt pariatur. Fugit molestias officia eveniet sint quisquam aliquam a quis reiciendis, quam expedita est ab ea accusantium saepe!
+    </p>
+
+    <p class="my-para old new data info">
+       -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quisquam commodi qui culpa quasi perspiciatis, minus eius reiciendis itaque cum quia ad accusamus repudiandae suscipit! Optio, quisquam nemo. Repudiandae, nobis?
+    </p>
+
+    <input type="text">
+    <input type="password">
+</body>
+</html>

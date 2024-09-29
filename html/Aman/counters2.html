@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Counter App</title>
+	<style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .container{
+            border: 1px solid red ;
+            height: 100vh ;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .container .h1{
+            margin: 30px ;
+            margin-bottom: 30px ;
+        }
+        .counter{
+            width: 30px ;
+            display: flex;
+            justify-content: center;
+        }
+       #btn, #btn2, #reset{
+        height: 40px ;
+            width: 150px ;
+            padding: 0 30px ;
+            border-radius: 10px ;
+            font-size: 30px ;
+            background-color:  #2e8d46;
+            color: black;
+            border: 2px solid #2e8d46;
+            /* margin: 20px ; */
+            margin: 20px 50px;
+            text-align: center;
+
+       }
+       #reset{
+        font-size: 30px ;
+       }
+
+       .counter, #value{
+        height: 40px ;
+        width: 60px ;
+        border-radius: 10px ;
+        background-color:  rgba(255, 0, 76, 0.438);
+        margin-top: 20px ;
+        font-size: 30px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+       body{
+        background-color: aqua;
+       }
+         
+
+    </style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Counter App</h1>
+		<div class="counter">
+			<button id="btn">+</button>
+			<div id="counter-value">0</div>
+			<button id="btn2">-</button>
+		</div>
+		<button id="reset">Reset</button>
+	</div>
+
+</body>
+
+</html>

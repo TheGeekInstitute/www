@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .box{
+            height: 50px;
+            width: 50px;
+            /* background-color: black; */
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: all .05s linear;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/Droopy_dog.png" alt="" class="box">
+
+    <script>
+        let box= document.querySelector(".box");
+
+        document.body.addEventListener("mousemove",(e)=>{
+           let left=e.screenX;
+           let top = e.clientY;
+           box.style.top=(top+5)+"px";
+           box.style.left=(left+5)+"px";
+
+        })
+    </script>
+</body>
+</html>

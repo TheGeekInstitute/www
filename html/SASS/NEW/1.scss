@@ -1,0 +1,54 @@
+// @import "abcd";
+
+@use "color" as c;
+
+// $abcde="20px";
+@mixin border($val,$color){
+    border: $val solid $color;
+}
+
+
+
+p{
+    color: c.$main-color;
+    background-color:c.$primary-color;
+
+    // @include change-color(newColor.$main-color);
+   
+
+    @include border(20px,c.$main-color )
+
+}
+
+@function half($val){
+    $calc : $val/2;
+    @return $calc;
+
+}
+
+
+@function oneThird($val){
+    $calc : $val/3;
+    @return $calc;
+
+}
+
+@function oneFourth($val){
+    $calc : $val/6;
+    @return $calc;
+}
+
+
+h1{
+    width: half(100px);
+    height: oneThird(150px);
+}
+
+div{
+    width: onesix(100px);
+}
+
+
+
+
+

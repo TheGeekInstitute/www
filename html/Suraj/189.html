@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Login form</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(191, 211, 11);
+            
+            
+        }
+        .con{
+            /* border: 2px solid black; */
+            height:40rem ;
+            width: 20rem;
+            position: absolute;
+            top: calc(50% - 20rem) ;
+            left: calc(50% - 10rem);
+            display: flex;
+            flex-direction: column;
+            /* background-image: transparent; */
+
+        
+        }
+        .name{
+            text-align: center;
+            height: 30rem;
+            padding: .2rem;
+            width: 15rem;
+            position: relative;
+            margin-bottom: 2rem;
+            left: 2.5rem;
+            /* border: 1px solid red; */
+        }
+        .con label span{
+            display: block;
+            font-weight: 700;
+            padding: .3rem;
+            /* text-align: center; */
+            font-size:x-large;
+        }
+        input{
+            padding: .5rem .2em;
+            margin: 0 .2rem;
+            margin-top: .4rem;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black ;
+            background-color: rgb(238, 255, 255);
+            border-radius: .2rem;
+            font-size: large;
+            background-color: transparent;
+        }
+        input[type=submit]{
+            background-color: black;
+            color: white;
+            font-weight: 900;
+            margin: 1rem .3rem;
+            border-radius: .5rem;
+            transition: all .3s;
+        }
+
+        input[type=go]:hover{
+            background-color: rgb(216, 186, 17);
+            box-shadow: 2px 2px 3px grey;
+            color:black;
+        }
+        .end{
+            text-align: center;
+            font-size: 18px;
+        }
+        p{
+            text-align: center;
+            font-size: small;
+            margin-top: 5px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h1 class="name">Login Account</h1>
+        <label ><span>Name</span></label>
+        <input type="text"><br><br>
+        <label ><span>Email</span></label>
+        <input type="text"><br><br>
+        <label ><span>Password</span></label>
+        <input type="text"><br><br>
+        <label><span>Retype Password</span></label>
+        <input type="text"><br><br>
+        <input type="Go" value="GO">
+
+    </div>
+    
+</body>
+</html>
+</body>
+</html>

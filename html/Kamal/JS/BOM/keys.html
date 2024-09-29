@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            transition: all .3s linear;
+        }
+    </style>
+</head>
+<body>
+ <div class="box"></div>
+
+    <script>
+        let Left=0;
+        let Right=0;
+        let box = document.querySelector('.box');
+        document.body.addEventListener("keyup",(e)=>{
+            console.log(e)
+            // console.log(e.metaKey)
+            // console.log(e.ctrlKey)
+            // console.log(e.altKey)
+            
+           
+                Left+=50;
+                
+            
+            
+
+            switch(e.key){
+                case "ArrowRight" :  box.style.left=Left+"px"
+                break;
+                case "ArrowRight" :  box.style.left=left-50+"px"
+
+            }
+        })
+    </script>
+</body>
+</html>

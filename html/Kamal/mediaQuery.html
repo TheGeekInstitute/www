@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box{
+            border: 20px solid red;
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+        }
+
+        @media print {
+            .box p{
+                color: red;
+
+            }
+
+            .box{
+                border: 2px solid green;
+            }
+        }
+
+
+        @media screen and (max-width:768px){
+            .box{
+                border: 10px solid blue;
+                padding: 10px;
+
+            }
+
+            .box p{
+                color: blue;
+            }
+        }
+
+
+
+
+        @media screen and (max-width:500px){
+            .box{
+                border: 10px solid magenta;
+                padding: 0;
+            }
+
+            .box p{
+                color: blue;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quae. Dolorem amet fugiat, nesciunt cumque, suscipit perferendis repellendus odio officiis error excepturi doloremque deserunt sunt accusantium dolore impedit consequatur delectus.</p>  
+    </div>
+
+</body>
+</html>

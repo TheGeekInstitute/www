@@ -1,0 +1,36 @@
+r2 -d ./crackme1 
+a
+aaa --> analyze binary
+afl --> functions list
+
+db main --> debug breakpoint main
+dc --> debugging continue
+pdf --> view assembly code
+
+V --> visual mode
+p --> next Visual Mode
+
+q --> quit / Normal Mode
+
+VV --> Visual Graph Mode
+
+R -->Change Color
+
+S --> Next Instructions
+: --> to run cmd
+
+:> px@rbp-0x34 --> view the register value 
+
+[Enter] for Visual Mode
+
+: ood sdfgh --> re run program with args
+
+: drr --> readable format extra Info 
+
+
+
+GDB :- Command
+
+1. Info Functions
+2. 
+

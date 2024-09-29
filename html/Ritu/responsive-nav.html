@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: rgb(12, 161, 161);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .links{
+            display: flex;
+        }
+        .links .menu{
+            display: flex;
+        }
+
+        .menu a{
+            margin: 0 10px;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        .menu a:hover{
+            color: blue;
+        }
+.btn,#btn{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .btn{
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+    .nav{
+        padding: 0 20px;
+        
+    }
+    .logo{
+        color: white;
+        font-size: 35px;
+        font-weight: 900;
+        font-family: cursive;
+    }
+
+    .menu{
+        padding: 20px;
+        position: absolute;
+        /* border: 2px solid red; */
+        top: 50px;
+        left: 0;
+        right: 0;
+        height: 10rem;
+        background-color: chocolate;
+        flex-direction: column;
+        align-items: center;
+        /* visibility: hidden; */
+        transform: translateY(calc(-100% - 50px)) rotate(360deg);
+        transition: all .3s;
+        z-index: -1;
+    }
+    .menu a{
+        line-height: 35px;
+    }
+
+    .nav .links #btn:checked ~ .menu{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+    </style>
+</head>
+<body>
+ <div class="nav">
+    <div class="logo">LOGO</div>
+    <ul class="links">
+        <label for="btn" class="btn"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="btn">
+        
+        <div class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+    </ul>
+</div>
+</body>
+</html>

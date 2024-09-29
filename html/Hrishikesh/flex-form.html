@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Duniya</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 8.7rem ;
+            /* border: 2px solid; */
+            padding: .7rem;
+            width: 18.6rem;
+            align-items: center;
+            background-image: url("https://img.freepik.com/premium-photo/abstract-background-design-images-wallpaper-ai-generated_643360-241219.jpg");
+            border-radius: 1.5rem;
+            box-shadow: 0px 0px 10px black;
+            
+        }
+        .container h1{
+           margin: .8rem 0;
+           /* padding: .7rem; */
+        }
+        .container form {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .container form label{
+            width: 16rem;
+            text-align: center;
+            margin-top: .3rem;
+            font-size: large;
+            
+        }
+        .container form input, .container form select{
+            width: 15rem;
+            height: 2rem;
+            margin: .3rem;
+            text-align: center;
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: .8rem;
+            outline: none;
+            /* color: rgb(230, 14, 14); */
+            background-color: transparent;
+            border: 1px solid black;
+            
+        }
+        .container form #btn{
+              margin-bottom: .5rem;
+              background-color: blue;
+              color: white;
+              width:  7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form >
+            <label>Fullname</label>
+            <input type="text">
+            <label >Username</label>
+            <input type="text">
+            <label >Password</label>
+            <input type="password">
+            <label>Gender</label>
+            <select>
+                <option value="">Choose</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+            </select>
+            <label >Email</label>
+            <input type="Email">
+            <input type="submit" value="Signup" id="btn">
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        ul li{
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        ul li:first-child{
+            /* color: red; */
+        }
+
+        ul li:last-child{
+            /* color: red; */
+        }
+
+        ul li:nth-child(2n+1){
+            /* color: red; */
+        }
+
+        ul li:nth-last-child(2n+1){
+            /* color: red; */
+        }
+
+        ul li:nth-child(5){
+            /* color: red; */
+        }
+
+        .parent p:first-of-type{
+            /* color: red; */
+        }
+
+        .parent p:last-of-type{
+            /* color: red; */
+        }
+
+        .parent p:nth-of-type(2){
+            /* color: red; */
+        }
+
+
+        div:empty{
+            border: 5px solid rgb(0, 255, 0);
+            height: 20px;
+        }
+
+        div:not(:empty){
+            border: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <div class="parent">
+        <b>Second Child</b>
+        <p>First Child</p>
+        <p>Third Child</p>
+            <p>asda</p>
+
+            <div class="child">
+                <p>First Child1</p>
+                <b>Second Child1</b>
+                <p>Third Child1</p>
+            </div>
+    </div>
+
+
+    <div></div>
+</body>
+</html>

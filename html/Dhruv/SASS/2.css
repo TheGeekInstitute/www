@@ -1,0 +1,50 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  background-color: black;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  color: red;
+  padding: 5px;
+  margin: 0px 5px;
+  font-size: 20px;
+}
+
+.body {
+  border: 2px solid red;
+  padding: 5px 10px;
+}
+.body h1, .body p {
+  background-color: greenyellow;
+  text-align: center;
+  font-size: 30px;
+  margin: 5px 10px;
+  font-weight: 900;
+  color: white;
+}
+.body p {
+  background-color: black;
+  font-size: 20px;
+}
+.body img {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin-left: 1px;
+  margin-right: 5px;
+  left: 20px;
+}
+
+p {
+  width: 10px;
+}/*# sourceMappingURL=2.css.map */

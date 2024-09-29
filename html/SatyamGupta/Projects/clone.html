@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: cursive;
+            text-align: center;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav .box{
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .nav .links li a{
+            color: white;
+            padding: 10px;
+           
+        }
+
+        .nav .links li a:hover{
+            background-color: brown;
+            border-radius: 15px; 
+            height: 50px;
+        }
+
+        .main{
+            margin: 25px;
+           
+
+        }
+
+        .main .box{
+            height: 320px;
+            width: 250px;
+            border: solid rgb(243, 238, 228);
+            display: inline-block;
+            margin: 20px;
+         
+            
+            
+            
+        }
+        .main .box .btn{
+            color: black;
+            background-color: yellow;
+            font-weight: 700;
+            padding: 3px;
+            margin: 10px;
+            border-radius: 12px;
+
+        }
+
+        .main .box img{
+            height: 120px;
+            width: 160px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .main .box:hover{
+            box-shadow: 0px 0px 20px  brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+
+        <div class="box"><p style="padding-left: 15px;">Trading </p>
+        </div>
+
+            <ul class="links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">DEMO</a></li>
+                <li><a href="#">METHOD</a></li>
+            </ul>
+        
+    </div>
+    <br>
+
+  
+        <h2 style="text-decoration: underline;">Trading Courses</h2>
+
+        <div class="main">
+            <div class="box">
+
+         
+            <img src="trading.jpg" alt="" srcset="">
+             <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam? consectetur adipisicing elit. Porro, doloremque.</p>
+             <button class="btn">Buy Now..</button>
+
+            </div>
+
+            <div class="box">
+
+         
+                <img src="./images/trade2.jpg" alt="" srcset="">
+                 <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam? consectetur adipisicing elit. Porro, doloremque.</p>
+                 <button class="btn">Buy Now..</button>
+    
+                </div>
+
+
+                <div class="box">
+
+         
+                    <img src="trading.jpg" alt="" srcset="">
+                     <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam? consectetur adipisicing elit. Porro, doloremque.</p>
+                     <button class="btn">Buy Now..</button>
+        
+                    </div>
+
+                    <div class="box">
+
+                    <img src="trading.jpg" alt="" srcset="">
+                    <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, ipsam? consectetur adipisicing elit. Porro, doloremque.</p>
+                    <button class="btn">Buy Now..</button>
+       
+                   </div>
+
+
+    </div>
+    
+</body>
+</html>

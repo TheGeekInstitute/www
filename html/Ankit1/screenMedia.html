@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Media</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            line-height: 280px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: yellow;
+
+            margin: 150px auto;
+        }
+
+        .tablet,.mobile{
+            display: none;
+        }
+
+        @media screen  and (max-width:768px){
+            .tablet{
+                display: block;
+            }
+
+            .mobile,.pc{
+                display: none;
+            }
+
+            .box{
+                background-color: crimson;
+                color: white;
+            }
+        }
+
+        @media screen and (max-width:480px){
+            .mobile{
+                display: block;
+            }
+
+            .pc,.tablet{
+                display: none;
+            }
+
+            .box{
+                background-color: cyan;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1 class="pc">PC Screen</h1>
+        <h1 class="tablet">Tablet Screen</h1>
+        <h1 class="mobile">Mobile Screen</h1>
+    </div>
+
+</body>
+</html>

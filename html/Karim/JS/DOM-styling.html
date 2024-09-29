@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Styling</title>
+    <style>
+        .abc{
+            color: red;
+            font-family: cursive;
+        }
+
+        .heading{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="new old heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque fuga atque eius asperiores libero optio rem dolorum molestiae vel iste reprehenderit facilis officia sequi doloremque suscipit, magni incidunt sint quisquam.</h1>
+    <p class="new">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque enim est, unde dolorum sunt dignissimos, fuga laudantium nam ipsa, optio suscipit reprehenderit dolor facilis deleniti. Quas reprehenderit vitae excepturi tenetur!</p>
+    <h1 id="heading">This is Heading</h1>
+
+    
+    <button onclick="myfunction()">Change</button>
+
+
+    <script>
+       function myfunction(){
+            let data = document.querySelectorAll(".new")[0];
+            data.style.color="red"
+            data.style.backgroundColor="black";
+            data.style.fontFamily="cursive"
+
+            data.className = "alfa"
+
+            data.classList.add("abc")
+
+            data.classList.remove("heading")
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    .container{
+        margin: auto;
+            /* margin-left: 12rem; */
+            background-color: rgb(88, 204, 21);
+            height:600px;
+            width: 600px;
+            max-height: auto;
+            max-width: auto;
+            /* border: 1px solid black; */
+
+        }
+    
+        .box{
+            /* left: 100px; */
+            margin: auto;
+            display: grid;
+            grid-template-columns:250px 250px;
+            grid-template-rows: auto auto auto;
+            padding: 2em 1em;
+            gap:.8em;
+            box-shadow: 8px 4 px aqua;
+            
+        }
+
+        .box .items{
+            /* display: inline-block; */
+            /* margin-left: 10px; */
+            border: 1px solid red;
+            height:250px;
+            background-color: lightgreen;
+            text-align: center;
+            
+        }
+
+        img{
+            border-radius: 30px;
+            margin-left: 10px;
+            margin: auto;
+        }
+        
+        
+</style>
+</head>
+<div class="container">
+    <div class="box">
+        <a href="#">
+            <div class="items">
+                <i class="fa fa-users" aria-hidden="true"></i>
+
+                <img src="../web/images/13.png" alt="">
+                <p>student</p>
+
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="items">
+                <i class="fa fa-users" aria-hidden="true"></i>
+
+                <p>Students</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="items">
+                <i class="fa fa-users" aria-hidden="true"></i>
+
+                <p>Students</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="items">
+                <i class="fa fa-users" aria-hidden="true"></i>
+
+                <p>Students</p>
+            </div>
+        </a>
+
+
+
+    </div>
+</body>
+</html>

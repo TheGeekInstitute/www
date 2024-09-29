@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing pages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .bg{
+            /* border: 1px solid gray; */
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-color: rgba(34, 47, 63, 0.931);
+            background-blend-mode: overlay;
+
+        }
+        .top{
+            border-bottom: 1px solid gray;
+            position: relative;
+            height: 3vh;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top ul{
+            list-style-type: none;
+            float: left;
+            font-size: .7em;
+            
+        }
+        
+        .follow{
+            
+        }
+        .adr{
+            
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            width: 34vw;
+            /* border: 1px solid blue; */
+            margin-left: 1.6em;
+            margin-top: .2em;
+        }
+        .adr li a{
+            
+            color: rgb(182, 182, 182);
+        }
+        .follow{
+            display: flex;
+            color: white;
+            font-size: 1.5em;
+            /* border: 1px solid whitesmoke; */
+            justify-content: space-evenly;
+            width: 20vw;
+        }
+        .follow li{
+            font-size: 1.2em;
+
+        }
+        .follow li a {
+            color: rgb(152, 152, 153);
+        }
+        .nav{
+            /* border: 1px solid rgb(216, 12, 97); */
+            display: flex;
+            justify-content: space-between;
+            padding: .5em 0 .5em 1.5em ;
+            overflow: auto;
+            
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 1px solid white; */
+            width: 60vw;
+            height: 4vh;
+        }
+        .nav ul li a{
+            color: white;
+            font-size: .8em;
+            
+        }
+        .vari{
+            border: 1px solid orangered;
+            padding: 0em 1em;
+            border-radius: .4em;
+        }
+        .vari i{
+            /* border: 1px solid white; */
+            padding: .4em;
+            border-radius: 50%;
+            background-color: white;
+            color: orangered;
+            margin-left: .2em;
+        }
+        span{
+            color: rgb(197, 92, 54);
+        }
+
+        .contain{
+            position: relative;
+            top: 35vh;
+            /* border: 1px solid red; */
+            color: white;
+            height: 30vh;
+            width: 80vw;
+            margin: auto;
+            font-size: 1.6em;
+            text-align: center;
+
+        }
+        .lern{
+            position: relative;
+            top: 45vh;
+            color: white;
+            border: 1px solid white;
+            padding:.1em .2em;
+            border-radius:.4em;
+            margin: auto;
+            width: 30vw;
+            background-color: rgb(231, 136, 58);
+        }
+        .lern a{
+            color: white;
+        }
+        .lern i{
+            color: rgb(231, 136, 58);
+            font-size: .8em;
+            padding: .1em;
+            border-radius: 50%;
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="top">
+            <ul class="adr">
+                <li><a href=""><i class="fa-solid fa-location-dot"></i>New Delhi,India</a></li>
+                <li><a href=""><i class="fa-solid fa-envelope"></i>contect@gmail.com.org</a></li>     
+            </ul>
+            <ul class="follow">
+                <li>Follow us:</li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="nav">
+            <h2><span>Geek</span>Institute</h2>
+            <ul>
+                <li><a href=""><span>Home</span></a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Pages+</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="vari"><a href=""><span>Verify certificate</span><i class="fa-duotone fa-solid fa-book"></i></a></li>
+
+            </ul>
+
+        </div>
+        <div class="contain">
+            <h1>Let's change The World <br>
+                with Humanity</h1>
+        </div>
+        <div class="lern">
+            <h1><a href="" >Learn more<i class="fa-solid fa-arrow-right"></i></a></h1>
+        </div>
+    </div>
+    
+</body>
+</html>

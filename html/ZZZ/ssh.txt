@@ -1,0 +1,166 @@
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ ssh-keygen -t rsa -b 4096
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/geek/.ssh/id_rsa):
+Created directory '/home/geek/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/geek/.ssh/id_rsa
+Your public key has been saved in /home/geek/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:2keNK4L966Sql3oU4exNiISaW1qgJRdXgFHI6CDRJ4U geek@Geek-Institute
+The key's randomart image is:
++---[RSA 4096]----+
+|.*oO=o.          |
+|B E.o            |
+|*B * o           |
+|+.+ = .    o     |
+| = . +  S o .    |
+|o   oo.o . .     |
+|   ...+ + o      |
+|    +  = o       |
+|  o=....+.       |
++----[SHA256]-----+
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ cd .ssh
+
+┌──(geek㉿Geek-Institute)-[~/.ssh]
+└─$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCuP9N1arGOsFI7wun+kjOwRPGlimXMVoNbmNwdlglh0dqBkcEpMK6XPYmauIgMUGhx0lRPTWGszAU175piNafOX2NLlZfpIJYoL/Qy1jx25XBIQQDS2WIOZnMCxU8ATkwyciQZWVTgf04EB6JGaiU+SJeKg8FA7H3E1Z8DUTr+xWPWwmWD3xk7oAkJKmTjHr57jcD7U/bZMlD3hC+ZDorNxEty2TkPRBiUfAPLv3z/XUJpFWnXhWfwxPlZQtTdbnl4JRyUK9owAsDy7gapRFa0OyTMQ2JpRUShh/4vXljJ1jvVzk/jZ3aPoqbJF0u0DHCJ3IQRCv04GkTDRQNQejOafGsVn4xDn/4QCepeQrO5S9fqRTFHuIrjOJDG3I0xHCH0sfn/kfVVQnH2wJt/ESe7xpfnAXXYTTB78xOmujG0vM0Nm47qCWQIW2ogGdyRELt/vQv1F8XCHmvlQRIeP16B6thrwwzD6qSMAeJ65HbGjnUzxv5h/QBX7oknN7MSctE0bb62vzkb/ow5JN+ZAm6j25djAl4QnbiSMShMxa+qsDzHRqs9McpHiK0fWfB5fKgsPBm+mtHmA6V2rj62xeU0KaVURFMsacK+Qy8yssOrN4J+XggiHoOG1oPpmmxkXjQCU09FjgYgV0rdOc/eqxmcVr74SWZYXsboCPrAi9EwYw== geek@Geek-Institute
+
+┌──(geek㉿Geek-Institute)-[~/.ssh]
+└─$ ssh admin@10.10.10.35
+The authenticity of host '10.10.10.35 (10.10.10.35)' can't be established.
+ED25519 key fingerprint is SHA256:TlQ/8YhvVFcZNtwSzLoFj5Hoz3RnefH1a5JpYZ8Ma7w.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.10.35' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 23.10 (GNU/Linux 6.5.13-5-pve x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Tue Apr 30 04:45:22 2024 from 10.10.10.50
+admin@TestingLab:~$ exit
+logout
+Connection to 10.10.10.35 closed.
+
+┌──(geek㉿Geek-Institute)-[~/.ssh]
+└─$ cd
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ nano id_rsa
+
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ chmod 600 id_rsa
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ ssh admin@10.10.10.35
+admin@10.10.10.35's password:
+
+
+┌──(geek㉿Geek-Institute)-[~]
+└─$ ssh admin@10.10.10.35 -i id_rsa
+Welcome to Ubuntu 23.10 (GNU/Linux 6.5.13-5-pve x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Tue Apr 30 04:46:52 2024 from 10.10.10.52
+admin@TestingLab:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+admin@TestingLab:~$ rm -rf .ssh
+admin@TestingLab:~$ mkdir .ssh
+admin@TestingLab:~$ cd .ssh
+admin@TestingLab:~/.ssh$ nano authorized_keys
+admin@TestingLab:~/.ssh$ rm -rf *
+admin@TestingLab:~/.ssh$ ls
+admin@TestingLab:~/.ssh$ cd
+admin@TestingLab:~$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/admin/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/admin/.ssh/id_rsa
+Your public key has been saved in /home/admin/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:3Go/YB/+C4cEXZWKqmxOApnUBLDCgOJipqsHkFCJfPI admin@TestingLab
+The key's randomart image is:
++---[RSA 3072]----+
+|=+oo.       .... |
+|B+.+     . .  .  |
+|*o= .   . .. .   |
+|== E   . o. .    |
+|* +     S.o      |
+|o  .    +o..     |
+| o  ...oo+o..    |
+|. .  o+. .+o     |
+|o.   o.   .oo.   |
++----[SHA256]-----+
+admin@TestingLab:~$ cd .ssh
+admin@TestingLab:~/.ssh$ cat id_rsa.pub > authorized_keys
+admin@TestingLab:~/.ssh$ cat id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+admin@TestingLab:~/.ssh$

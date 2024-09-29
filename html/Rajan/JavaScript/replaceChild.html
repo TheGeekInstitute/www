@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="colors">
+        <li>Purple</li>
+        <li>Green</li>
+        <li>Yellow</li>
+    </ul>
+
+    <ul class="animals">
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Cow</li>
+    </ul>
+
+
+
+    <script>
+        let myLi= document.createElement("li");
+        let text =  document.createTextNode("Black");
+        myLi.append(text);
+
+        let colors=document.querySelector(".colors");
+        let animals = document.querySelector(".animals");
+
+        let ColorChild = colors.children[0];
+       
+        let animalChid = animals.children[0];
+
+        // colors.replaceChild(myLi,ColorChild)
+
+        // colors.removeChild(ColorChild)
+
+        let Colne = ColorChild.cloneNode(true);
+
+        // console.log(Colne)
+
+        // animals.replaceChild(Colne,animalChid)
+
+        // console.log(colors.contains(ColorChild))
+
+        // console.log(colors.hasAttribute("class"))
+
+        // console.log(colors.hasChildNodes())
+
+       console.log( ColorChild.isEqualNode(Colne))
+
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- replaceChild() & removeChild()
+cloneNode()
+contains()
+hasAttribute() & hasChildNodes()
+isEqualNode() -->

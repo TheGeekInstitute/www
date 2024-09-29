@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            background-color: aqua;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+
+        }
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: cursive;
+
+
+        }
+        .nav > .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav > .links > li > a{
+            display: block;
+            color: white;
+            margin: 0 10px;
+            padding: 0 10px;
+            font-size: large;
+            line-height: 50px;
+            font-family: cursive;
+        }
+        .nav >.links li > a:hover{
+            /* color: blue; */
+            background-color: blue;
+        }
+
+        .nav > .links li .sub{
+            background-color: silver;
+            position: absolute;
+            top: 50px;
+            width: 100px;
+            text-align: center;
+
+
+            display: none;
+
+
+        }
+        .nav > .links li .sub li  a{
+            display: block;
+            color: white;
+            line-height: 50px;
+            
+
+        }
+        .nav > .links li .sub li a:hover{
+
+            background-color: blueviolet;
+
+
+        }
+        .nav > .links > li:hover .sub{
+            display: block;
+        }
+        .nav > .links >  li .sub1{
+            background-color: gold;
+            position: absolute;
+            top: 50px;
+            width: 100px;
+            text-align: center;
+            /* line-height: 50px; */
+
+            display: none;
+        }
+
+        
+        
+        .nav > .links li .sub1 li a{
+            display: block;
+            color: red;
+            line-height: 50px;
+
+        }
+        .nav > .links li .sub1 li a:hover{
+            background-color: blue;
+        }
+        .nav > .links li:hover .sub1{
+            display: block;
+           
+
+        }
+            
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a>
+
+            <ul class="sub">
+                <li><a href="#">page1</a></li>
+                <li><a href="#">page2</a></li>
+                <li><a href="#">page3</a></li>
+               </ul>
+            
+        </li>
+
+          
+
+           <li><a href="#">Page</a>
+            <ul class="sub1">
+                <li><a href="#">tarik</a></li>
+                <li><a href="#">tarik</a></li>
+                <li><a href="#">tarik</a></li>
+            </ul>
+        
+        </li>
+
+           <li><a href="#">content</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

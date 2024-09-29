@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media querry</title>
+    <style>
+
+        #tablet,#mobile{
+            display: none;
+        }
+
+
+
+
+        @media screen and (max-width:768px) {
+            #desktop,#mobile{
+                display: none;
+            }
+            #tablet{
+                display: block;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+            #desktop,#tablet{
+                display: none;
+            }
+
+            #mobile{
+                display: block;
+                font-weight: b;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h1 id="desktop">Desktop screen</h1>
+        <h1 id="tablet">Tablet screen</h1>
+        <h1 id="mobile">Moblie screen</h1>
+    </div>
+
+
+</body>
+
+</html>

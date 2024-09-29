@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            /* margin: 10px; */
+            /* border: 1px solid black; */
+            height: 70px;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 80px repeat(1,1fr) 70px 70px 70px;
+            grid-template-rows: 70px;
+        }
+        .box1 img{
+            height: 100%;
+            position: relative;
+            width: 100%;
+            /* border-radius: 80px; */
+        }
+        .box2 h1{
+            color: white;
+            text-align: center;
+            line-height: 9vh;
+        }
+        .box3{
+            line-height: 8vh;
+            text-align: center;
+        }
+        .box3 a{
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .box3 a:hover{
+            background-color: blue;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1" style="background-color: rgb(255, 255, 255);">
+        <img src="../../wallpapers/art/ARTWORK-echo-and-narcassias.jpg" alt="">
+        </div>
+        <div class="box box2" style="background-color: black;">
+        <h1>The Whole World</h1></div>
+        <div class="box box3" style="background-color: red;">
+            <a href="#">Home</a>
+        </div>
+        <div class="box box3" style="background-color:red;">
+            <a href="#">Contact</a>
+        </div>
+        <div class="box box3" style="background-color: red;">
+            <a href="#">About</a>
+        </div>
+    </div>
+</body>
+</html>

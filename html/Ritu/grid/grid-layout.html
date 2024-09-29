@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px  1fr 150px ;
+            grid-template-rows: 50px repeat(2,1fr)  50px;
+        }
+
+        .nav,.footer{
+            background-color: black;
+        }
+
+        .nav{
+            grid-column: 1 / -1;
+        }
+
+        .hero{
+            background-color: greenyellow;
+            /* grid-row: 2 / ; */
+            grid-row: 2 / -2;
+            grid-column: 2 / -3;
+        }
+
+        .footer{
+            grid-column: 1/ -1;
+        }
+        .sidebar{
+            background-color: cyan;
+            grid-row: 2 / 4;
+            grid-column: 1 / 2;
+        }
+
+        .right-top-bar{
+            background-color: red;
+        }
+        .right-bottom-bar{
+            background-color: yellow;
+        }
+        .right-top-bar{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav"></div>
+        <div class="sidebar"></div>
+        <div class="hero"></div>
+        <div class="right-top-bar"></div>
+        <div class="right-bottom-bar"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

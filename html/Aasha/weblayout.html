@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .nav{
+            background-color: rgb(5, 163, 163);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding: 0 20px;
+        }
+        .nav .left{
+            width: 60vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .nav .left a{
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .logo{
+            color: white;
+        }
+        .right{
+            display: flex;
+        }
+        .right a{
+            display: block;
+            margin: 0 10px;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .right a:first-child{
+            height: 35px;
+            width: 80px;
+            color: black;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 2px;
+            background-color: white;
+        }
+
+        .right a:last-child{
+            height: 35px;
+            width: 80px;
+            
+            text-align: center;
+            line-height: 31px;
+            border-radius: 2px;
+            border: 2px solid white;
+        }
+        
+        .hero{
+            
+            height: 70vh;
+            background-color: rgb(6, 190, 190);
+            padding: 3vw;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .hero-left,.hero-right{
+            /* border: 1px solid red; */
+            width: 45vw;
+            height: 35vh;
+            color: white;
+            text-align: left;
+            padding: 5px;
+        }
+        .hero-left h3{
+            /* border: 1px solid black; */
+        }
+        .hero-left p{
+            margin-bottom: 30px;
+        }
+
+        .hero-left a:nth-last-child(2){
+            color: white;
+            font-size: 18px;
+
+
+        }
+
+     
+
+        img{
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <h1 class="logo">Logo</h1>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="right">
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-left">
+            <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos doloremque, natus vitae ducimus fuga quibusdam architecto illum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint tempore omnis ab consequatur aliquam nihil illum dignissimos ex qui velit! Ab nesciunt iste possimus fugiat a sequi, rem error recusandae!</p>
+            <a href="#">Download</a>
+            <a href="#">Show More</a>
+        </div>
+        <div class="hero-right">
+            <img src="https://plus.unsplash.com/premium_photo-1664299941780-e8badc0b1617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fHww&w=1000&q=80" alt="">
+        </div>
+
+    </div>
+
+
+</body>
+</html>

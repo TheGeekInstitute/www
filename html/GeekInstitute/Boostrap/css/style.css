@@ -1,0 +1,55 @@
+.top-bar{
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding: 2px 30px;
+}
+
+
+.center-info-top{
+    text-align: center;
+}
+.center-info-top a{
+    text-decoration: none;
+    color: white;
+}
+.contact-info-top{
+    text-align: left;
+}
+.social-icon-top{
+    text-align: right;
+
+}
+
+.social-icon-top a{
+    text-decoration: none;
+    padding: 0px 3px;
+    color: white;
+}
+
+.social-icon-top svg,.top-bar svg{
+    height: 20px;
+    width: 20px;
+}
+
+.top-phone{
+    font-weight: bold;
+    
+}
+
+
+.fb-social-icon-top:hover{
+    color: blue;
+}
+
+.insta-social-icon-top:hover{
+    color: rgb(231, 15, 220)
+}
+
+.twitter-social-icon-top:hover{
+    color: rgb(0, 152, 253);
+}
+
+.yt-social-icon-top:hover{
+    color: red;
+}

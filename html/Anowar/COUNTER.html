@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contianer{
+            counter-reset: section;
+        }
+        h1::before{
+            content: counter(section) ". ";
+            counter-increment: section;
+            color: red;
+
+        }
+        H1{
+            counter-reset: sub-section;
+        }
+        h2{
+            text-indent: 50px;
+            counter-reset: sub-sub-section;
+        }
+        h2::before{
+           content: counter(section) "."
+           counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data</h1>
+        <h2>html</h2>
+        <h2>css</h2>
+        <h2>lsg</h2>
+        <h1>From</h1>
+        <h1>Left</h1>
+
+    </div>
+</body>
+</html>
+
+ <!-- <h2>html</h2>
+        <h2>css</h2>
+        <h2>lsg</h2> -->
+       
+        <!-- <h2>hfc</h2>
+        <h2>jkda</h2>
+        <h2>ksnfk</h2> -->

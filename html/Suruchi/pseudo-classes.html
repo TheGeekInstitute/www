@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+
+ul li{
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+ul li:first-child{
+    /* color: red; */
+}
+
+ul li:last-child{
+    /* color: red; */
+}
+
+ul li:nth-child(5){
+    /* color: red; */
+}
+
+ul li:nth-last-child(2){
+    color: blue;
+}
+
+div p:first-of-type{
+    /* color: red; */
+}
+
+div p:last-of-type{
+    /* color: green; */
+}
+
+div p:nth-of-type(2){
+    /* color: red; */
+}
+
+div p:only-of-type{
+    /* color: blue; */
+}
+
+div p:only-child{
+    /* color: red; */
+}
+
+div:empty{
+    border: 3px solid red;
+    height: 100px;
+}
+
+div:not(:empty){
+    /* border: 2px solid blue; */
+}
+
+p:target{
+    background-color: crimson;
+    color: yellow;
+}
+
+:lang(hi){
+    background-color: yellow;
+}
+
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li lang="en">1</li>
+        <li lang="hi">2</li>
+        <li lang="fr">3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia culpa, repudiandae reiciendis ab iure repellat officia! Ullam repellat doloremque minima neque cupiditate provident omnis nostrum, esse, dolorum voluptates aut rerum!</p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur similique tenetur molestiae sapiente alias, animi vitae perspiciatis harum dolor natus voluptatibus unde eum voluptate magnam rem, laboriosam eligendi impedit! Explicabo?</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nisi! Neque, dolorem quam quidem sed ipsa asperiores error adipisci, commodi incidunt delectus voluptate eaque assumenda libero! Rerum modi provident odit.</p>
+    </div>
+
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos esse consequatur harum? Dolores aut ipsa in harum obcaecati soluta molestias asperiores aliquid maiores, ducimus ea possimus sapiente dicta, illo nemo!</span>
+        <b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate earum nemo aut dolorum, ea cum, soluta magni sint rem inventore nisi officia esse quae adipisci modi, expedita ducimus dolor quaerat!</b>
+        <p>111Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium ab illum nesciunt repellendus ex adipisci unde, labore hic alias cupiditate consequuntur inventore dolorem excepturi aspernatur vero voluptates? Dolore, nam!</p>
+
+       
+    </div>
+
+<div>
+    <p>asdsaLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor unde iure corrupti explicabo alias. Illum tenetur molestias ad sint, earum quo quidem excepturi nemo perferendis soluta, rerum alias molestiae unde.</p>
+</div>
+
+<div></div>
+
+<a href="#ch1">Ch1</a>
+<a href="#ch2">Ch2</a>
+<a href="#ch3">Ch3</a>
+
+
+
+
+<p id="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis non nisi mollitia minus? Vel dolorum quod perspiciatis eos soluta quam, maiores quas placeat? Quos unde iste deleniti quo veniam.</p>
+
+<p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut pariatur aliquam cumque dignissimos quas fuga amet maxime libero molestias nihil, recusandae velit incidunt ipsam similique porro temporibus itaque odio ipsum?</p>
+<p id="ch3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, necessitatibus placeat! Similique suscipit animi iure iusto ea aliquam aspernatur illo officia dolorem, tempora maxime doloribus perspiciatis rerum ducimus molestiae sunt.</p>
+
+
+
+
+
+
+</body>
+</html>

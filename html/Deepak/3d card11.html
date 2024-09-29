@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+        }
+        .box{
+            border: 1px solid red;
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            backface-visibility: hidden;
+            transition: all 2s;
+            transition-delay: 1s;
+            transform-style: preserve-3d;
+            transform-origin: ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="front">front</div>
+            <div class="back">back</div>
+        </div>
+    </div>
+</body>
+</html>

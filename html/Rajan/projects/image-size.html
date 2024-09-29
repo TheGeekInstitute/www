@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image size</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            overflow: hidden;
+            margin: 12rem 0;
+            background-color: black;
+        }
+        .container .box{
+            /* border: 1px solid rgb(175, 23, 23); */
+            height: 20rem;
+            width: 20rem;
+            background-size: cover;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 10px;
+        }
+        .size{
+            /* border: 1px solid red; */
+            height: 50vw;
+            width: 50vw;
+            position: absolute;
+            top: 10px;
+            left: 20rem;
+            background-size: cover;
+            display: none;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .size.show{
+            display: block;
+        }
+        .size .butn{
+            position: relative;
+            top: 20rem;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            margin: 0 5px;
+            line-height: 2rem;
+            width: 2rem;
+            border-radius: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-image: url(https://i.pinimg.com/originals/9d/15/a2/9d15a2f4645e5a6fd701bb75e03f2812.jpg);"></div>
+        <div class="box" style="background-image: url(https://i.pinimg.com/originals/89/39/a3/8939a3f77359c061870e1a3eea736637.jpg);"></div>
+        <div class="box" style="background-image: url(https://wallpapers.com/images/featured/dark-digital-art-3oxcys2965ibywwi.jpg);"></div>
+        <div class="box" style="background-image: url(https://images5.alphacoders.com/133/1331867.jpeg);"></div>
+        <div class="box" style="background-image: url(https://w0.peakpx.com/wallpaper/149/258/HD-wallpaper-dark-vertical-portrait-display.jpg);"></div>
+        <div class="box" style="background-image: url(https://wallpaperaccess.com/full/4123199.jpg);"></div>
+        <div class="box" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/381/344/5/2560x1440-px-dark-souls-dark-souls-ii-dark-souls-iii-aircraft-space-hd-art-wallpaper-preview.jpg);"></div>
+    </div>
+    <div class="size">
+        <div class="butn">
+            <button class="prev btn"><</button>
+            <button class="next btn">></button>
+        </div>
+    </div>
+
+
+    <script>
+        let next=document.querySelector('.next');
+
+        let size=document.querySelector('.size');
+        let box=document.querySelectorAll('.box');
+        Array.from(box).forEach((e)=>{
+         
+            e.addEventListener("click",()=>{
+                size.setAttribute("style",e.getAttribute("style"));
+                if(e.getAttribute("style")){
+                    size.classList.add("show");
+
+                    next.addEventListener("click",()=>{
+                  
+                    })
+
+
+
+                }
+                else{
+                    size.classList.remove("show");
+                }
+            })
+        })
+        // size.addEventListener("click",()=>{
+        //     size.classList.remove("show");
+        // })
+        let index=0;
+      
+    </script>
+</body>
+</html>

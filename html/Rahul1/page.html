@@ -1,0 +1,112 @@
+<!-- https://startbootstrap.com/previews/landing-page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .nav{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav a{
+            font-size: x-large;
+            color: black;
+        }
+
+        .nav #btn{
+            background-color: royalblue;
+            color: white;
+            font-size: large;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .main{
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 600px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            background-blend-mode: overlay;
+        }
+
+        .main h1{
+            font-size: 40px;
+            /* border: 1px solid red; */
+            padding-top: 200px;
+            width: 600px;
+            margin: 0  auto;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .main form input{
+            border: none;
+            height: 55px;
+            padding: 2px 5px;
+            font-size: x-large;
+            width: 450px;
+            border-radius: 7px;
+        }
+
+        .main form #submit{
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="">Start Bootstrap</a>
+        <a href="" id="btn">Sign Up</a>
+    </div>
+
+    <div class="main">
+        <h1>Generate more leads with a professional landing page!</h1>
+
+        <form>
+            <input type="email" placeholder="Email Address">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <div class="features">
+        <div class="box">
+            <i class="fa-solid fa-window-maximize"></i>
+            <h3>Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Bootstrap 5 Ready</h3>
+            <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h3>Easy to Use</h3>
+            <p>Ready to use with your own content, or customize the source files!</p>
+        </div>
+    </div>
+
+</body>
+</html>

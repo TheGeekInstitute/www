@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let name="Ravita";
+        // name="XYZ";
+        // let name = "asdas"
+
+        // var abcd = "asdas";
+        // var abcd ="dasdas";
+        // abcd="weqw";
+
+        // const age=45;
+
+        document.write(`<h1>Hello....${name}</h1>`)
+
+        // let data = ()=>{
+        //     return ("Welcome");
+        // }
+        // console.log(data())
+
+
+        // let data = e => e;
+
+        // console.log(data("Ravita"))
+
+
+
+        // function data(){
+        //     for(let i=0; i< arguments.length ; i++){
+        //         console.log(arguments[i])
+        //     }
+        // }
+
+
+        // data("Deepa","Laxmi","Amit","Sumit",'Ravita');
+
+
+
+        function data(name,...args){
+            let sum=0;
+            for(let i=0; i< args.length ; i++){
+                sum+=args[i];
+            }
+
+            console.log(name + " "+sum)
+        }
+
+
+data("ABCD",4,5,6,9,8,2)
+
+
+let arry1=[1,2,3,4];
+let arry2=[1,2,3,4];
+ 
+let arry3=[...arry1,...arry2];
+
+console.log(arry3)
+
+
+// function data(arry){
+//     for(let i=0; i< arry.length ; i++){
+//         console.log(arry[i])
+//     }
+// }
+
+// data([...arry1,...arry2])
+
+
+</script>
+
+
+</body>
+</html>

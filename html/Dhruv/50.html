@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg");
+        background-repeat: no-repeat;
+        height: 400px;
+        background-size: cover;
+
+    }
+    div{
+   
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        margin-top: 300px;
+        padding: 30px;
+        /* background-image: -webkit-repeating-radial-gradient(2); */
+        border-radius: 20px;
+        box-shadow: 5px 5px 100px 10px black;
+        transition: all 1s;
+    }
+    label{
+        display: block;
+        /* margin: auto; */
+        color: black;
+        font-weight: 800;
+        font-size: larger;
+    }
+
+    input{
+        border: none;
+        border-bottom: 2px solid black;
+        height: 25px;
+        width: 200px;
+        padding: 5px;
+        /* text-align: center; */
+        font-weight: 300;
+        font-size: 200;
+        background-color: rgba(232, 248, 233, 0.918);
+        border-radius: 4px;
+        outline: none;
+        transition: all .3s;
+    }
+
+
+
+    button{
+        display: block;
+        border: none;
+        background-color: rgb(103, 16, 143);
+        width: 80px;
+        height: 40px;
+        color: white;
+        padding: 7px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 8px;
+        font-weight: 700;
+        transition: all 1s;
+
+    }
+
+    h1{
+        text-align: center;
+        margin-left: 0px;
+        /* border: 1px solid green; */
+        /* width: 30vw; */
+        margin-bottom: 20px;
+        color: rgb(228, 92, 14);
+        text-shadow: 4px 2px 1px rgb(247, 14, 14);
+        /* font-size: 33px; */
+        transition: all 1s;
+        
+    }
+
+    button:hover{
+        background-color: rgb(189, 39, 114);
+        cursor: pointer;
+        font-size: 15px;
+        
+    }
+
+    h1:hover{
+        background-color:rgb(195, 81, 218);
+    }
+
+    /* .div:hover{
+        height: 260px;
+        width: 260px;
+        background-color: rgb(250, 94, 159);
+        box-shadow: 10px 5px 2px rgb(192, 16, 60);;
+    } */
+
+    input:focus{
+        height: 29px;
+       scale: 1.1;
+    }
+</style>
+</head>
+<body>
+    <div class="div">
+        <h1>LOGIN</h1>
+        <label for="">Username</label>
+        <input type="text" placeholder="ABC">
+        <label for="">Password</label>
+        <input type="password" placeholder="*********">
+        <button>LOGIN</button>
+    </div>
+</body>
+</html>

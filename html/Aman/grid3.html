@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    border: 1px solid black;
+            height: 100vh;
+            /* width: 100vw; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: 160px 1fr 160px;
+            grid-template-rows: 40px 60px 1fr  40px ;
+            gap: 5px;
+            text-align: center;
+            grid-template-areas: "header header header "
+                                 "nav nav nav"
+                                "left-sidebar main right-sidebar"
+                                "footer footer ."
+            ;
+
+    }
+
+    .item1{
+        background-color: cyan;
+       grid-area: header;
+
+    }
+    .item2{
+        background-color: rebeccapurple;
+       grid-area: nav;
+    }
+    .item3{
+        background-color: blue;
+        grid-area: left-sidebar;
+    
+    
+    }
+    .item4{
+        background-color: chartreuse;
+        grid-area: main;
+        
+    }
+    .item5{
+        background-color: brown;
+        grid-area: right-sidebar;
+    }   
+
+    .item6{
+        background-color: crimson;
+        grid-area: footer;
+    }
+
+    </style>
+    
+        
+    
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">Header</div>
+        <div class="items item2">Navigation menu </div>
+        <div class="items item3">contact</div>
+        <div class="items item4">main contact</div>
+        <div class="items item5">contact</div>
+        <div class="items item6">footer</div>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for h1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- h1 end -->
+
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* border: 2px solid black; */
+            height: 400px;
+            width: 400px;
+            margin-top: 200px;
+            margin-left: 80px;
+            border-radius: 30px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            text-align: center;
+            transform-style: preserve-3d;
+            perspective: 600px;
+        }
+
+        .container .card{
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            backface-visibility: hidden;
+            transition: all 1s ease-in-out;
+            transform-style: preserve-3d;
+        }
+
+        .container .card .font,
+        .container .card .back{
+            font-size: 80;
+            /* height: 400px; */
+            width: 400px;
+            position: absolute;
+            text-align: center;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            box-shadow: 0px 0px 30px black;
+        }
+
+        .container .card .font{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/622/344/original/beautiful-background-of-lines-with-gradients-vector.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            
+        }
+
+        .container .card .back{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/001/218/583/original/background-in-gradient-colors-vector.jpg);
+
+            transform: rotateY(180deg);
+        }
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+
+
+        .container .card .font h1{
+            font-size: 50px;
+            font-family: "Anton", sans-serif;
+            font-weight: 4000px;
+            font-style: normal;
+            color: white;
+            /* box-shadow: 0px 0px 30px red; */
+        }
+        .container .card .font img{
+            height: 300px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px red;
+        }
+
+        .container .card .back .img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 30px black;
+        }
+        
+        /* icon start */
+        .container .card .back .insta{
+            height: 50px;
+            width: 50px;
+            margin-top: 110px;
+            /* align-items: center; */
+        }
+        .container .card .back .face{
+            height: 40px;
+        }
+        .container .card .back .twit{}
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="font">
+                <h1>ROHIT-INDIA</h1>
+                <img src="../image/mikey.jpg" alt="">
+            </div>
+
+            <div class="back">
+                <img src="../image/Mikey Kun (hii).jpg" alt="" class="img">
+                <h1>Mikey Kun</h1>
+                <p>Manjiro Sano (佐野 (さの) 万 (まん) 次 (じ) 郎 (ろう)   Sanō Manjirō?) or Mikey (マイキー,  Maikī?), is a founding member and the former leader (総長, Sōchō?) of the Tokyo Manji Gang</p>
+               <div class="png">
+                <a href="https://www.instagram.com/?hl=en"> <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-2.png" alt="" class="insta"></a>
+
+               <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" class="face" alt=""></a>
+
+               <a href=""><img src="https://th.bing.com/th/id/R.b757f2bca8039d4a08882d38f4c1b8f0?rik=ghH7DAGg25Eeew&riu=http%3a%2f%2fpluspng.com%2fimg-png%2ftwitter-png-logo-logo-twitter-in-png-2500.png" class="twit" alt=""></a>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- https://bootstrapmade.com/demo/Arsha/ -->

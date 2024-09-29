@@ -1,0 +1,31 @@
+union base sqli
+command injection
+authentication byass
+injection with sqlmap
+
+broken auth and session management
+4login bruteforce
+5user enumeration
+
+sesitve data exposure
+8 sensitive data exposure
+9 secret administrative pages
+
+
+xxe
+9 xml external entities(xxe)
+
+broken access control
+10 lfi
+11 text file viewer
+
+12 missing function lavel access control
+13privilege esclation
+
+security misconfiguration
+14. directory browsing
+
+xss
+15. xss-dom based
+16. xss reflected 
+17. stored xss

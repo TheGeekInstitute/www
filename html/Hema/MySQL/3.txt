@@ -1,0 +1,161 @@
+
+Setting environment for using XAMPP for Windows.
+Geek-Institute@DESKTOP-HDAC0NG c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use mydb;
+Database changed
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      1 | Amit    | M      | 40000.00 | Delhi | 1234567890 |
+|      2 | Sumit   | M      | 73000.00 | Delhi | NULL       |
+|      3 | Ravi    | M      | 47000.00 | Delhi | NULL       |
+|      4 | Geeta   | F      | 30000.00 | Delhi | NULL       |
+|      5 | Sarita  | F      | 69000.00 | Delhi | NULL       |
+|      6 | Deepika | F      | 30000.00 | Delhi | NULL       |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | NULL       |
+|      9 | ravi    | M      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+9 rows in set (0.040 sec)
+
+MariaDB [mydb]> select * from emp where gender="M";
++--------+--------+--------+----------+-------+------------+
+| emp_no | name   | gender | salary   | city  | phone      |
++--------+--------+--------+----------+-------+------------+
+|      1 | Amit   | M      | 40000.00 | Delhi | 1234567890 |
+|      2 | Sumit  | M      | 73000.00 | Delhi | NULL       |
+|      3 | Ravi   | M      | 47000.00 | Delhi | NULL       |
+|      8 | Nikhil | M      | 40882.00 | Delhi | NULL       |
+|      9 | ravi   | M      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh | M      |  1000.00 | Delhi | 9999999999 |
++--------+--------+--------+----------+-------+------------+
+6 rows in set (0.001 sec)
+
+MariaDB [mydb]> update emp set name="Ravita", gender="F" where emp_no=9;
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      1 | Amit    | M      | 40000.00 | Delhi | 1234567890 |
+|      2 | Sumit   | M      | 73000.00 | Delhi | NULL       |
+|      3 | Ravi    | M      | 47000.00 | Delhi | NULL       |
+|      4 | Geeta   | F      | 30000.00 | Delhi | NULL       |
+|      5 | Sarita  | F      | 69000.00 | Delhi | NULL       |
+|      6 | Deepika | F      | 30000.00 | Delhi | NULL       |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | NULL       |
+|      9 | Ravita  | F      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+9 rows in set (0.001 sec)
+
+MariaDB [mydb]> update emp set phone="7896541230" where phone is NULL;
+Query OK, 6 rows affected (0.004 sec)
+Rows matched: 6  Changed: 6  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      1 | Amit    | M      | 40000.00 | Delhi | 1234567890 |
+|      2 | Sumit   | M      | 73000.00 | Delhi | 7896541230 |
+|      3 | Ravi    | M      | 47000.00 | Delhi | 7896541230 |
+|      4 | Geeta   | F      | 30000.00 | Delhi | 7896541230 |
+|      5 | Sarita  | F      | 69000.00 | Delhi | 7896541230 |
+|      6 | Deepika | F      | 30000.00 | Delhi | 7896541230 |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | 7896541230 |
+|      9 | Ravita  | F      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+9 rows in set (0.001 sec)
+
+MariaDB [mydb]> update emp set city="Pune" where emp_no=1 and name="Sumit";
+Query OK, 0 rows affected (0.001 sec)
+Rows matched: 0  Changed: 0  Warnings: 0
+
+MariaDB [mydb]> update emp set city="Pune" where emp_no=1 OR name="Sumit";
+Query OK, 2 rows affected (0.003 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      1 | Amit    | M      | 40000.00 | Pune  | 1234567890 |
+|      2 | Sumit   | M      | 73000.00 | Pune  | 7896541230 |
+|      3 | Ravi    | M      | 47000.00 | Delhi | 7896541230 |
+|      4 | Geeta   | F      | 30000.00 | Delhi | 7896541230 |
+|      5 | Sarita  | F      | 69000.00 | Delhi | 7896541230 |
+|      6 | Deepika | F      | 30000.00 | Delhi | 7896541230 |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | 7896541230 |
+|      9 | Ravita  | F      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+9 rows in set (0.001 sec)
+
+MariaDB [mydb]> delete from emp where city="Pune";
+Query OK, 2 rows affected (0.004 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      3 | Ravi    | M      | 47000.00 | Delhi | 7896541230 |
+|      4 | Geeta   | F      | 30000.00 | Delhi | 7896541230 |
+|      5 | Sarita  | F      | 69000.00 | Delhi | 7896541230 |
+|      6 | Deepika | F      | 30000.00 | Delhi | 7896541230 |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | 7896541230 |
+|      9 | Ravita  | F      | 50000.00 | Delhi | 1236547890 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+7 rows in set (0.000 sec)
+
+MariaDB [mydb]> delete from emp where emp_no=9;
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      3 | Ravi    | M      | 47000.00 | Delhi | 7896541230 |
+|      4 | Geeta   | F      | 30000.00 | Delhi | 7896541230 |
+|      5 | Sarita  | F      | 69000.00 | Delhi | 7896541230 |
+|      6 | Deepika | F      | 30000.00 | Delhi | 7896541230 |
+|      8 | Nikhil  | M      | 40882.00 | Delhi | 7896541230 |
+|     10 | Ganesh  | M      |  1000.00 | Delhi | 9999999999 |
++--------+---------+--------+----------+-------+------------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> delete from emp where city="Pune" or gender="F";
+Query OK, 3 rows affected (0.003 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+--------+--------+----------+-------+------------+
+| emp_no | name   | gender | salary   | city  | phone      |
++--------+--------+--------+----------+-------+------------+
+|      3 | Ravi   | M      | 47000.00 | Delhi | 7896541230 |
+|      8 | Nikhil | M      | 40882.00 | Delhi | 7896541230 |
+|     10 | Ganesh | M      |  1000.00 | Delhi | 9999999999 |
++--------+--------+--------+----------+-------+------------+
+3 rows in set (0.001 sec)
+
+MariaDB [mydb]> truncate table emp;
+Query OK, 0 rows affected (0.021 sec)
+
+MariaDB [mydb]> select * from emp;
+Empty set (0.001 sec)
+
+MariaDB [mydb]>

@@ -1,0 +1,114 @@
+
+HTML CSS JAVASCRIPT SQL PYTHON JAVA PHP HOW TO W3.CSS C C++ C# BOOTSTRAP REACT MYSQL JQUERY EXCEL XML DJANGO NUMPY PANDAS NODEJS R TYPESCRIPT ANGULAR GIT POSTGRESQL MONGODB ASP AWS AI GO KOTLIN SASS VUE GEN AI SCIPY CYBERSECURITY DATA SCIENCE
+JavaScript Fetch API
+Examples
+fetch(file)
+.then(x => x.text())
+.then(y => myDisplay(y));
+
+Fetch is based on async and await. The example might be easier to understand like this:
+async function getText(file) {
+  let x = await fetch(file);
+  let y = await x.text();
+  myDisplay(y);
+}
+
+Use understandable names instead of x and y:
+async function getText(file) {
+  let myObject = await fetch(file);
+  let myText = await myObject.text();
+  myDisplay(myText);
+}
+Description
+
+The fetch() method starts the process of fetching a resource from a server.
+
+The fetch() method returns a Promise that resolves to a Response object.
+
+😀 No need for XMLHttpRequest anymore.
+Syntax
+fetch(file)
+Parameters
+Parameter 	Description
+file 	Optional.
+The name of a resource to fetch.
+Return Value
+Type 	Description
+Promise	A Promise that resolves to a Response object.
+Browser Support
+
+fetch() is an ECMAScript6 (ES6) feature.
+
+ES6 (JavaScript 2015) is supported in all modern browsers:
+				
+Chrome 	Edge 	Firefox 	Safari 	Opera
+Yes 	Yes 	Yes 	Yes 	Yes
+
+fetch() is not supported in Internet Explorer 11 (or earlier).
+
+Get Certified
+COLOR PICKER
+colorpicker
+SPACES
+UPGRADE
+AD-FREE
+NEWSLETTER
+GET CERTIFIED
+REPORT ERROR
+Top Tutorials
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+How To Tutorial
+SQL Tutorial
+Python Tutorial
+W3.CSS Tutorial
+Bootstrap Tutorial
+PHP Tutorial
+Java Tutorial
+C++ Tutorial
+jQuery Tutorial
+Top References
+HTML Reference
+CSS Reference
+JavaScript Reference
+SQL Reference
+Python Reference
+W3.CSS Reference
+Bootstrap Reference
+PHP Reference
+HTML Colors
+Java Reference
+Angular Reference
+jQuery Reference
+Top Examples
+HTML Examples
+CSS Examples
+JavaScript Examples
+How To Examples
+SQL Examples
+Python Examples
+W3.CSS Examples
+Bootstrap Examples
+PHP Examples
+Java Examples
+XML Examples
+jQuery Examples
+Get Certified
+HTML Certificate
+CSS Certificate
+JavaScript Certificate
+Front End Certificate
+SQL Certificate
+Python Certificate
+PHP Certificate
+jQuery Certificate
+Java Certificate
+C++ Certificate
+C# Certificate
+XML Certificate
+    FORUM ABOUT
+W3Schools is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using W3Schools, you agree to have read and accepted our terms of use, cookie and privacy policy.
+
+Copyright 1999-2023 by Refsnes Data. All Rights Reserved. W3Schools is Powered by W3.CSS.
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        body{
+            counter-reset: section ;
+        }
+
+        h1::before{
+            content: counter(section) '. ';
+            /* content: counter(section,lower-alpha) '. '; */
+
+            color: red;
+            counter-increment: section;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2{
+            text-indent: 50px;
+        }
+
+        h2::before{
+            content: counter(section) '.' counter(sub-section) '. ';
+            counter-increment: sub-section;
+            color: blue;
+        }
+
+        h2{
+            counter-reset: sub-sub-section;
+        }
+
+        h3{
+            text-indent: 100px;
+        }
+
+        h3::before{
+            content:counter(section) '.' counter(sub-section) '.' counter(sub-sub-section) '. ';
+            color: green;
+            counter-increment: sub-sub-section;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Web Development</h1>
+        <h2>HTML</h2>
+            <h3>Table</h3>
+            <h3>Form</h3>
+            <h3>Sementic Elements</h3>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Software Development</h1>
+        <h2>JAVA</h2>
+            <h3>Data Types</h3>
+        <h2>Python</h2>
+        <h2>Ruby</h2>
+        <h2>C/C++</h2>
+        <h2>Julia</h2>
+    <h1>Ethical Hacking</h1>
+        <h2>Kali Linux</h2>
+        <h2>Black Arch</h2>
+        <h2>Backbox</h2>
+</body>
+</html>

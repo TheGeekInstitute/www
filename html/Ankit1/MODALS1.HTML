@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODALS</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            display: none;
+
+            box-shadow: 0px 0px 3px black;
+
+        }
+
+        .container .modalP{
+            height: 300px;
+            width: 400px;
+            background-color: aliceblue;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 200px);
+        }
+
+        .container .modal .heading{
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            color:black;
+            padding:  0 10px;
+            font-size:xx-large ;
+        }
+
+        .container .modal .heading label{
+            display: block;
+            font-size:50px ;
+        margin: -7px;
+        cursor: pointer;
+        }
+
+        .container .modal .container{
+            padding:10px;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        #open{
+            display: block;
+            margin: 50px;
+            background-color: brown;
+            width: 70px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            color: aqua;
+            font-size: large;
+        }
+
+        #btn:checked + .container{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <label for="btn" id="open">Open</label>
+
+    <input type="checkbox" name="" id="btn">
+
+    <div class="ciontener">
+        <div class="modal">
+            <div class="heading">
+                <p> THE DADY</p>
+                <label for="btn">-</label>
+            </div> 
+            <div class="container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero provident, exercitationem animi quas autem repudiandae fuga saepe eveniet alias incidunt, blanditiis harum! Pariatur repellendus officia veritatis amet ipsa quod iste!</p>
+            </div>
+
+    </div>
+</body>
+</html>

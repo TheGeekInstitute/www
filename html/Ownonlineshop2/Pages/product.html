@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OwnOnlineShop</title>
+  <link href="https://kit-pro.fontawesome.com/releases/v5.12.1/css/pro.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="shortcut icon" href="../Images/Assets/favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- header starts -->
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- <h2>LOGO</h2> -->
+        <img src="../Images/Brands/Logo.png" alt="logo image">
+
+      </div>
+      <div class="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="cart-navigation">
+        <form action="">
+          <input type="text" onclick="show()">
+          <button id="searchbtn" type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
+
+        </form>
+        <div class="suggestion-box">
+          <div class="suggestion_list">
+            <a href="#">Samsung Galaxy Ultra Pro Max Legendry</a>
+            <a href="#">iphone 14 Pro</a>
+            <a href="#">Motorola Edge</a>
+            <a href="#">Samsung Galaxy S22 Ultra Pro Max</a></li>
+            <a href="#">Macbook Air</a>
+          </div>
+        </div>
+        <div class="cart-icon">
+          <a href="./cart.html"><i class="fa-light fa-cart-shopping"></i></a>
+          <p class="items-count">3</p>
+        </div>
+        <div class="user-profile">
+          <a class="user-icon" href="./login.html"><i class="fa-light fa-user"></i></a>
+
+          <div class="profile-dropdown">
+            <ul class="profile-dropdown_list">
+              <li>Hi Neeraj</li>
+              <li><a href="./orders.html">My Orders</a></li>
+              <li><a href="./profile.html">Profile Setting</a></li>
+              <li><a href="./account.html"> Change Password</a></li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="./login.html">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header ends here -->
+  <div class="product-container">
+    <div class="product-slider">
+      <div class="swiper mySwiper producct-slider_container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure>
+              <img src="../Images/Products/Oneplus 6/1.png" alt=" ownOnlineshopProduct image" />
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="../images/Products/Oneplus 6/7.png" alt=" ownOnlineshopProduct image" />
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="../images/Products/Oneplus 6/5.png" alt=" ownOnlineshopProduct image" />
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="../images/Products/Oneplus 6/3.png" alt=" ownOnlineshopProduct image" />
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="../images/Products/Oneplus 6/4.png" alt=" ownOnlineshopProduct image" />
+            </figure>
+          </div>
+        </div>
+        <!-- <div class="swiper-button-next"></div> -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="product-description">
+      <h1 class="product-heading">Oneplus 6</h1>
+      <p class="product__detail">
+        Oneplus 6 Black | 16GB Ram - 512GB ROM | 18.5 Snapdragon Processor |
+        5G
+      </p>
+
+      <div class="product-price-container">
+        <h2 class="product__price">
+          <span style="color: royalblue;font-size:1em; margin-right: 10px;" id="actprice"><del>39999</del></span> <i
+            class="fa-solid fa-indian-rupee-sign"></i> 35940
+        </h2>
+        <div class="discount-banner">
+          <label for="">10%</label>
+          <i class="fa-duotone fa-badge"></i>
+        </div>
+      </div>
+      <div class="product-color-container" style="display: flex; gap: .3em; ">
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+        <div class="color" style="border: 2px solid #000; border-radius: 5px;">
+          <img src=" ../Images/Products/Oneplus 6T/2.png" alt="" width="100px">
+        </div>
+      </div>
+
+      <div class="product__highlights">
+        <h2>Product Highlights -</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          ullam? Sequi sed veniam sunt cupiditate. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Est, odit?
+        </p>
+        <a href="../Pages/search.html">DL102C</a>
+      </div>
+
+      <form class="purchase__options">
+        <button class="addtocartbtn purchase__optionsBtn">Add To Cart</button>
+        <button class="buynowbtn purchase__optionsBtn">Buy Now</button>
+        <p style="font-size: 1.4em;"> <b> 5 Left </b></p>
+      </form>
+      <div class="other-details">
+        <h2>Other Details - </h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At numquam possimus, minima sunt accusamus
+          voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. At numquam possimus, minima sunt
+          accusamus voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. At numquam possimus, minima
+          sunt accusamus voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. At numquam possimus,
+          minima sunt accusamus voluptatem.Lorem ipsum dolor sit amet consectetur, adipisicing elit. At numquam
+          possimus, minima sunt accusamus voluptatem.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comments section starts -->
+  <div class="comments">
+    <div class="comments-container">
+      <form action="">
+        <!-- <input type="textarea"> -->
+        <textarea name="" id="" cols="30" rows="5" placeholder="Share Your Feedback Here"></textarea>
+        <br>
+        <input type="submit" value="Leave Reply">
+      </form>
+    </div>
+  </div>
+  <!-- Comments section ends -->
+  <!-- rseview setion starts-->
+
+  <div class="reviews">
+    <h1>Our Customer Reviews</h1>
+    <div class="reviews-container">
+      <!-- Review starts -->
+      <div class="review">
+        <!-- user review starts -->
+        <div class="user_review">
+          <div class="user__profile">
+            <img class="user-image" src="../Images/Assets/customer.jpg" alt="User Image">
+            <h2>Mr Abraham</h2>
+          </div>
+          <div class="user__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cum vel exercitationem mollitia voluptatibus
+              sapiente repellat quasi ratione fugit placeat.</p>
+          </div>
+        </div>
+        <!-- user review ends -->
+        <!-- Owner review starts -->
+        <div class="owner_review">
+          <div class="owner__profile">
+            <img class="owner-image" src="../Images/Assets/customer3.jpg" alt="Owner Image">
+            <h3>Owner</h3>
+          </div>
+          <div class="owner__reply">
+            <p>Thank You So Much. We are pleased to serve better.</p>
+          </div>
+        </div>
+        <!-- Owner review ends -->
+      </div>
+      <!-- review end -->
+      <div class="review">
+        <!-- user review starts -->
+        <div class="user_review">
+          <div class="user__profile">
+            <img class="user-image" src="../Images/Assets/customer2.jpg" alt="User Image">
+            <h2>Mr Abraham</h2>
+          </div>
+          <div class="user__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cum vel exercitationem mollitia voluptatibus
+              sapiente repellat quasi ratione fugit placeat.</p>
+          </div>
+        </div>
+        <!-- user review ends -->
+        <!-- Owner review starts -->
+        <div class="owner_review">
+          <div class="owner__profile">
+            <img class="owner-image" src="../Images/Assets/customer3.jpg" alt="Owner Image">
+            <h3>Owner</h3>
+          </div>
+          <div class="owner__reply">
+            <p>Thanks ! Its great to have such customer</p>
+          </div>
+        </div>
+        <!-- Owner review ends -->
+      </div>
+      <!-- review end -->
+      <div class="review">
+        <!-- user review starts -->
+        <div class="user_review">
+          <div class="user__profile">
+            <img class="user-image" src="../Images/Assets/customer.jpg" alt="User Image">
+            <h2>Mr Abraham</h2>
+          </div>
+          <div class="user__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cum vel exercitationem mollitia voluptatibus
+              sapiente repellat quasi ratione fugit placeat.</p>
+          </div>
+        </div>
+        <!-- user review ends -->
+        <!-- Owner review starts -->
+        <div class="owner_review">
+          <div class="owner__profile">
+            <img class="owner-image" src="../Images/Assets/customer3.jpg" alt="Owner Image">
+            <h3>Owner</h3>
+          </div>
+          <div class="owner__reply">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequuntur magni placeat eius,
+              inventore totam.</p>
+          </div>
+        </div>
+        <!-- Owner review ends -->
+      </div>
+      <!-- review end -->
+      <div class="review">
+        <!-- user review starts -->
+        <div class="user_review">
+          <div class="user__profile">
+            <img class="user-image" src="../Images/Assets/customer4.jpg" alt="User Image">
+            <h2>Mr Abraham</h2>
+          </div>
+          <div class="user__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, cum vel exercitationem mollitia voluptatibus
+              sapiente repellat quasi ratione fugit placeat.</p>
+          </div>
+        </div>
+        <!-- user review ends -->
+        <!-- Owner review starts -->
+        <div class="owner_review">
+          <div class="owner__profile">
+            <img class="owner-image" src="../Images/Assets/customer3.jpg" alt="Owner Image">
+            <h3>Owner</h3>
+          </div>
+          <div class="owner__reply">
+            <p>Thanks</p>
+          </div>
+        </div>
+        <!-- Owner review ends -->
+      </div>
+      <!-- review end -->
+    </div>
+    <div class="showmore">
+      <div class="showmore_container">
+        <button class="showmore__btn">
+          Show More
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--review setion ends  -->
+
+  <!-- similar products slidert starts -->
+  <div class="similar-product-slider">
+    <h1>Similar Products - </h1>
+    <p>Also Have a look at similar Products</p>
+    <div class="swiper mySwiper similar">
+      <div class="swiper-wrapper">
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Oneplus 6T/1.png" alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Oneplus 6T</h2>
+            <p> Rs 389950 </p>
+            <div class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </div>
+          </div>
+          <!-- Discont banner starts -->
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Oneplus5.png" alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Oneplus 9 PRo</h2>
+            <p> Rs 489950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung S22/001_galaxys22ultra_front_burgundy.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung S22 Ultra</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung S10/Samsung-Galaxy-S10-5G-_-Crown-Silver1-2.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy S10+</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung Buds/001_galaxybudslive_mysticbronze_front-1.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Buds</h2>
+            <p> Rs 89950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A73/001_Galaxy_A73_5G_gray_front.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A73</h2>
+            <p> Rs 289950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A53/010_Galaxy_A53_5G_blue_back.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A53</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A53/021_Galaxy_A53_5G_peach_back_l30.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A53 Peach</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+      </div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- similar products ends -->
+  <div class="similar-product-slider">
+    <h1>Similar Products - </h1>
+    <p>Also Have a look at similar Products</p>
+    <div class="swiper mySwiper similar">
+      <div class="swiper-wrapper">
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Oneplus 6T/1.png" alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Oneplus 6T</h2>
+            <p> Rs 389950 </p>
+            <div class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </div>
+          </div>
+          <!-- Discont banner starts -->
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Oneplus5.png" alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Oneplus 9 PRo</h2>
+            <p> Rs 489950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung S22/001_galaxys22ultra_front_burgundy.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung S22 Ultra</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung S10/Samsung-Galaxy-S10-5G-_-Crown-Silver1-2.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy S10+</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung Buds/001_galaxybudslive_mysticbronze_front-1.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Buds</h2>
+            <p> Rs 89950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A73/001_Galaxy_A73_5G_gray_front.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A73</h2>
+            <p> Rs 289950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A53/010_Galaxy_A53_5G_blue_back.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A53</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+        <!-- slide starts -->
+        <div class="swiper-slide">
+          <div class="similar-product__img">
+            <img src="../Images/Products/Samsung A53/021_Galaxy_A53_5G_peach_back_l30.jpg"
+              alt="Similar Product Image OwnOnlineshop">
+          </div>
+          <div class="similar-product__description">
+            <h2>Samsung Galaxy A53 Peach</h2>
+            <p> Rs 989950 </p>
+            <form class="purchase-options">
+              <button>Add To Cart</button>
+              <button>Buyt Now</button>
+            </form>
+          </div>
+          <div class="discount-banner">
+            <label for="">10%</label>
+            <i class="fa-duotone fa-badge"></i>
+          </div>
+          <!-- Discont banner ends -->
+        </div>
+        <!-- slide ends -->
+      </div>
+      <!-- <div class="swiper-button-next"></div> -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- Footer  Starts-->
+  <footer>
+    <div class="footer-hero">
+      <div class="about-footer">
+        <h2>Easter</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+          adipisci nostrum voluptatibus porro dignissimos qui doloremque,
+          fugit minima id voluptate?
+        </p>
+      </div>
+      <div class="service-footer">
+        <h2>Services</h2>
+        <ul>
+          <li><a href="#">Deals in Devices</a></li>
+          <li><a href="#">Home Decor</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Health</a></li>
+        </ul>
+      </div>
+      <div class="Cateogaries-footer">
+        <h2>Cateogaries</h2>
+        <ul>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Refurbished Devices</a></li>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Accesories</a></li>
+          <li><a href="#">Decoration</a></li>
+          <li><a href="#">Beauty Products</a></li>
+          <li><a href="#">Tickets</a></li>
+        </ul>
+      </div>
+      <div class="contact-footer">
+        <ul>
+          <h2>Contact Us</h2>
+          <li>
+            <a href="mailto:mrabraham@thegics.in">
+              <i class="fa-solid fa-envelope"></i> Email US</a>
+          </li>
+          <li>
+            <a href="tel:8447377952">
+              <i class="fa-solid fa-phone"></i> Call Us</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house-chimney-crack"></i> Kapashera New
+              Delhi</a>
+          </li>
+        </ul>
+        <div class="contact-social">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="https://wa.me/8447377952"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-footer">
+      <p>
+        Copyright &copy; 2022 | Created By
+        <a href="https://www.thegics.in/" target="_blank">Gics</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper(".similar", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    function myFunction(x) {
+      if (x.matches) { // If media query matches
+        var swiper2 = new Swiper(".similar", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+
+    function myFunction2(y) {
+      if (y.matches) { // If media query matches
+        var swiper2 = new Swiper(".similar", {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+    function myFunction3(z) {
+      if (z.matches) { // If media query matches
+        var swiper2 = new Swiper(".similar", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          autoplay: {
+            delay: 2500,
+            // disableOnInteraction : false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 450px)");
+    myFunction(x);
+    x.addListener(myFunction)
+
+    var y = window.matchMedia("(min-width: 451px)");
+    myFunction2(y);
+    y.addListener(myFunction2)
+
+    var z = window.matchMedia("(min-width: 901px)");
+    myFunction3(z);
+    z.addListener(myFunction3)
+
+    const suggbox = document.querySelector('.suggestion-box');
+    function show() {
+      suggbox.classList.toggle('active-box');
+    }
+
+    const userIcon = document.querySelector('.user-icon');
+    const profileDropdown = document.querySelector('.profile-dropdown');
+    userIcon.addEventListener('mouseover', () => {
+      profileDropdown.classList.add('active-profile-dropdown');
+    })
+    document.body.addEventListener('click', () => {
+      profileDropdown.classList.remove('active-profile-dropdown');
+    })
+
+  </script>
+</body>
+
+</html>

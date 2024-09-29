@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .box{
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+</style>
+    
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box box1"></div>
+
+    <script>
+        let innerHeight=window.innerHeight;
+        let innerWidth=window.innerWidth;
+        let outerHeight=window.outerHeight;
+        let outerWidth=window.outerWidth;
+
+
+        console.log("InnerHeight: "+ innerHeight )
+        console.log("InnerWidth: "+ innerWidth )
+
+        // console.log("OuterHeight: "+ outerHeight )
+        // console.log("OuterWidth: "+ outerWidth )
+
+
+        let box=document.querySelector(".box");
+        let box1=document.querySelector(".box1")
+      window.addEventListener("resize",()=>{
+      
+      
+        if(window.innerWidth<=600){
+            box.style.backgroundColor="green";
+            box1.style.display="none";
+        }
+        else{
+            box.style.backgroundColor="red";
+            box1.style.display="block";
+        }
+      })
+
+
+    // console.log()
+    let cookie  = document.cookie;
+    let text = cookie.split(";")
+    console.log(text[0])
+    </script>
+</body>
+</html>

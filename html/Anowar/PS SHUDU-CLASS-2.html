@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+:root{
+            --my-color:greenyellow;
+            --new:crimson;
+            --my-font:cursive;
+        }
+
+        body{
+            /* background-color: var(--new); */
+        }
+        input:focus{
+            /* background-color: red; */
+
+        }
+        input:enabled{
+            /* background-color: blue; */
+
+        }
+        input:disabled{
+            /* background-color: aqua; */
+
+        }
+        input:read-only{
+            /* background-color: red; */
+
+        }
+        input:read-write{
+            /* background-color: brown; */
+        }
+        input:in-range{
+            /* background-color: blueviolet; */
+        }
+        input:out-of-range{
+            /* background-color: brown; */
+        }
+        input:valid{
+            /* background-color: aqua; */
+        }
+        input:invalid{
+            /* background-color: red; */
+        }
+        input:default{
+            /* background-color: plum; */
+        }
+        input{
+            caret-color: red;
+            accent-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Regstration Form</h1>
+    <form>
+
+        <label>Fast name :</label>
+        <input type="text" placeholder="Enrter First Name" disabled>
+        <br><br>
+
+        <label>Last Name :</label>
+        <input type="text" placeholder="Enter Last name" required>
+        <br><br>
+        
+        <label>Gender :</label>
+        <input type="radio" name="gender">
+        <label>Male</label>
+        <input type="radio" name="gender">
+        <label>Female</label>
+        <br><br>
+
+        <label>Dob :</label>
+        <input type="date" readonly>
+        <br><br>
+
+        <label>Email :</label>
+        <input type="email">
+        <br><br>
+
+        <label>Phone no :</label>
+        <input type="number" min="10" max="20">
+        <br><br>
+
+        <label>password :</label>
+        <input type="password">
+        <br><br>
+
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox" checked>
+        <input type="checkbox">
+
+        <input type="checkbox">
+        <br><br>
+
+        <input type="submit" value="Regstration form">
+        <input type="reset">
+        
+
+    </form>
+   
+</body>
+</html>

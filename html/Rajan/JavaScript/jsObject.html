@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    
+    <script>
+        let obj = {
+            name : 'Amit',
+            age : 45,
+            gender : "Male",
+            subjects : ["Hindi",'English',"Maths"],
+            lang: {primary:"Hindi",Secondary:"English"},
+            myFun: function (){
+                return "Hello  From My Function";
+            },
+
+            sum: (a,b)=>{
+                return a+b;
+            }
+
+
+
+        };
+
+
+        // delete obj.name;
+        obj.name='Sumit';
+
+        // document.write(obj.name)
+
+        // document.write(obj.subjects[0])
+
+        // document.write(obj.lang.Secondary)
+
+        // document.write(obj.myFun())
+
+        // document.write(obj.sum(45,25))
+
+
+
+        // let name = "ABCD";
+
+        function print_name(){
+            let name="XYZ"
+            // document.write(name);
+        }
+
+        print_name()
+
+        document.write(name)
+
+
+
+    </script>
+
+</body>
+</html>

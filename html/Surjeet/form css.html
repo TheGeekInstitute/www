@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container{
+            /* border: 1px solid black; */
+            width: 300px;
+            margin: 100px auto;
+            align-items: center;
+            padding: 20px 0;
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-dance-class-enrollment-poster-background-image_145268.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-sizing: border-box;
+
+
+        }
+
+        .container h1{
+               margin: 10px 0;
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form label{
+            display: block;
+            width: 270px;
+            margin: 3px 0;
+            font-size: large;
+            text-align: left;
+        }
+
+        .container input,
+        .container select{
+            width: 270px;
+            height: 35px;
+            font-size: large;
+            padding: 2px 3px;
+            outline: none;
+            border-width: 1px 1px 3px 1px;
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: transparent;
+         }
+
+         .container form #btn{
+            margin: 10px 0;
+            width: 100px;
+            background-color: royalblue;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+
+        <form action="">
+            <label for="">full name</label>
+            <input type="text">
+            <label for="">Username</label>
+            <input type="text">
+            <label for="">Gender</label>
+
+            <select name="" id="">
+                <option value="">choose</option>
+                <option value="">male</option>
+                <option value="">Female</option>
+                <option value="">others</option>
+            </select>
+
+            <label for="">Email</label>
+            <input type="text">
+            <label for="">password</label>
+            <input type="text">
+            <input type="submit" value="Signup" id="btn">
+        </form>
+    </div>
+    
+</body>
+</html>

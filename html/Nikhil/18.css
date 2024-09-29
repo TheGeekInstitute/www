@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    /* border: 2px solid #4285F4; */
+    margin-top: 20px;
+    display: flex; 
+    justify-content: end;
+}
+.a{
+    border: 2px solid black;
+    color: black;
+
+}
+.b{
+    border: 1px solid black;
+}
+.c{
+    border: 2px solid white;
+    background-color: #4285F4;
+    color: white;q
+    padding: 10px;
+    border-radius: 6px;
+}
+.photo img{
+    height: 200px;
+
+}
+
+.search input{
+    height: 30px;
+    width: 400px;
+}

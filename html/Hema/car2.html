@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("./images/back.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size:cover;
+            background-repeat:no-repeat ;
+        }
+        .car{
+            height: 120px;
+            position:absolute;
+            bottom: 10px;
+            left: -280px;
+            animation-name: car;
+            animation-duration: 4s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+        .boy{
+            height: 190px;
+            position: absolute;
+            bottom: 20vh;
+            right: -100px;
+            animation-name: boy;
+            animation-duration: 4s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+        .sun{
+            height: 100px;
+            position: absolute;
+            top: 25vh;
+            left: -8vw;
+            animation-name: sun;
+            animation-duration: 4s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+        @keyframes car{
+            0%{
+                transform: translate(0,0);
+
+
+            }
+            100%{
+                transform: translate(130vw,0);
+
+            }
+        }
+        @keyframes boy{
+            0%{
+                transform: translateX(0) rotateY(180deg);
+            
+            }
+            100%{
+                transform: translateX(-100vw) rotateY(180deg);
+            }
+        }
+        @keyframes sun{
+            
+        }
+    
+    </style>
+    
+    
+</head>
+<body>
+     <div class="box">
+        <img src="./images/car.gif" class="car" alt="asd">
+        <img src="./images/boy.gif" alt="" class="boy">
+        <img src="https://freepngimg.com/thumb/sun/3-2-sun-png-clipart.png" alt="" class="sun">
+        
+
+        
+     </div>
+    
+</body>
+</html>

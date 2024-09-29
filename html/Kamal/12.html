@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scenery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/previews/000/519/944/non_2x/vector-park-scene-with-green-field.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .content{
+            height: 170px;
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.216);
+            box-shadow: 5px 5px 10px white;
+            position: absolute;
+            bottom: 100px;
+            left: 200px;
+            font-family: cursive;
+            border-radius: 40px 10px;
+            text-align: center;
+        }
+        .container{
+            height: 220px;
+            width: 250px;
+            /* position: absolute; */
+            /* top: -20px; */
+            right: 0;
+            animation: scenery 5s linear 0s infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+            
+        }
+        img{
+
+            position: absolute;
+            bottom: 100px;
+            left: 400px;
+        }
+        @keyframes scenery {
+            0%{
+                transform: translateX(100vw);
+            }
+            60%{
+                transform: translateX(20vw);
+            }
+            100%{
+                transform: translate(20vw,30vw);
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container" style="background-image: url(http://payload159.cargocollective.com/1/1/55977/5498861/Emotion_Helicopter_5x.gif);">
+        
+    </div>
+    <img src="https://media3.giphy.com/media/1PqADZbksXHPhc8BVD/200.webp?cid=ecf05e47acfjgutvemowe3hcvoq7mxjsxnvpv37gct0vip8r&ep=v1_stickers_search&rid=200.webp&ct=s" alt="">
+    <div class="content">
+        <h2>hey, welcome </h2>
+        <p>I'm waiting for my helicopter to land here so, who wants to come with me plz welcome </p>
+    </div>
+</body>
+</html>

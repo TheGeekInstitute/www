@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LOGIN FORM</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/12/22/48/gradient-7258997_1280.png);
+    /* background-position:right; */
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container{
+            /* border: 1px solid greenyellow; */
+            width:300px;
+            height: 300px;
+            text-align: center;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            padding: 20px;
+            /* background-image: url(https://cdn.pixabay.com/photo/2022/06/12/22/48/gradient-7258997_1280.png); */
+            /* background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            box-shadow: 0 0 40px whitesmoke;
+        }
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container form label{
+            /* border: 1px solid black; */
+            width: 200px;
+            text-align: left;
+            font-size: 16px;
+            margin: 10px;
+      
+
+        }
+        .container form input{
+            border-radius: 52px;
+            height: 35px;
+            width: 250px;
+            outline: none;
+        }
+         #checkbox{
+           height: 10px;
+          display: flex;
+         
+         
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>
+            LOGIN FORM
+        </h1>
+        <form action="">
+            <label for=" username">username</label>
+            <input type="text">
+            <label for="">password</label>
+            <input type="password">
+            <label for="">remember me</label><span>
+            <input type="checkbox" name="checkbox" id="checkbox"></span>
+            <input type="button"
+            id="btn" value="login">
+        </form>
+    </div>
+
+</body>
+</html>

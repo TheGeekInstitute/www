@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid red;
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: calc(50vh - 200px);
+        }
+        
+        .sun{
+            /* position: absolute; */
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: yellow;
+            margin: auto;
+            margin-top: calc(50vh - 325px);
+            box-shadow: 3px 3px 50px rgb(214, 133, 11);
+            animation: circle 10s infinite linear;
+        }
+
+        .container .earth{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            animation: circle 10s infinite linear;
+
+        }
+
+        .container .earth .moon{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: grey;
+            animation: circle 10s infinite linear;
+            
+            
+        }
+
+        @-webkit-keyframes circle {
+            from {
+                -webkit-transform: rotatez(0deg)
+            }
+            to {
+                -webkit-transform: rotatez(360deg)
+            }
+            }
+            @-webkit-keyframes ccircle {
+            from {
+                -webkit-transform: rotateZ(360deg)
+            }
+            to {
+                -webkit-transform: rotateZ(0deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+         <div class="earth">
+            <div class="moon"></div>
+         </div>
+    </div>
+</body>
+</html>

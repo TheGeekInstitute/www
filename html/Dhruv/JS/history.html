@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="back">BACK</button>
+    <button id="forward">FORWARD</button>
+    <button id="go">GO</button>
+
+
+
+
+    <script>
+
+        // console.log(history)
+
+        document.querySelector("#back").addEventListener('click',()=>{
+            history.back();
+        })
+
+        document.querySelector("#forward").addEventListener('click',()=>{
+            history.forward();
+        })
+
+        document.querySelector("#go").addEventListener('click',()=>{
+            history.go(-3);
+        })
+    </script>
+
+</body>
+</html>

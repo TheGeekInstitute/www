@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* list-style:none; */
+
+        }
+
+        .container {
+            border: 2px solid black;
+            height: 500px;
+            width: 100%;
+            margin: 100px auto;
+            /* display: flex; */
+
+        }
+
+        .box {
+            /* border: 1px solid black; */
+            height: 120px;
+            width: 200px;
+            margin: 170px 80px auto;
+            text-align: center;
+            border-radius: 5px;
+            padding: 2.3rem;
+            display: none;
+            background-image: linear-gradient(rgb(172, 172, 240),rgb(87, 56, 41));
+            color: rgba(243, 235, 235, 0.904);
+            box-shadow:  5px 8px rgba(48, 47, 47, 0.411);
+
+        }
+
+       
+
+
+        .next {
+            /* border: 2px solid black; */
+            width: 50%;
+            height: 500px;
+            position: absolute;
+           /* display: none; */
+
+        }
+
+        .next .one{
+            /* border: 1px solid black; */
+            box-shadow: 0px 5px 8px 5px rgba(56, 55, 55, 0.815);
+            height: 250px;
+            width: 300px;
+            margin: 120px 30px auto;
+            padding: 30px;
+            border-radius: 5px;
+
+            background-color: rgba(153, 75, 87, 0.781);
+
+        }
+
+        .next .one form{
+            align-items: center;
+            justify-content: center;
+         
+
+        }
+
+        .next .one form input{
+            margin: 4px 0;
+        }
+        
+        .next .one h1{
+            text-align: center;
+            margin-bottom:8px;
+        }
+
+        /* --------------------------------- */
+
+
+        .next1{
+            border: 1px solid black;
+            width:50%;
+            height: 500px;
+            display: none;
+
+        }
+
+        .next1 .two{
+            /* border: 1px solid black; */
+            height: 180px;
+            width: 290px;
+            margin: 150px 30px auto;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 8px 5px rgba(56, 55, 55, 0.815);
+            background-color: rgb(49, 163, 184);
+        }
+
+        .next .two form{
+            align-items: center;
+            justify-content:center ;
+        }
+
+        .next1 .two form input{
+            margin: 4px 0;
+
+        }
+
+        .next1 .two h1{
+            text-align: center;
+            margin-bottom:8px;
+
+
+        }
+
+        .btns{
+            /* border: 1px solid black; */
+            flex-direction: column;
+            justify-content:center;
+            display: flex;
+            align-items: center;
+            margin-left: 50%;
+            margin-top:200px;
+            text-align: center;
+            
+        }
+
+        .btns button{
+            width:30%;
+            height:35px;
+            font-size: 16px;
+            margin: 5px;
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.801);
+        } 
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Hello !</h1>
+        </div>
+
+
+        <div class="next">
+            <div class="one">
+                <h1>SignUp</h1>
+                <form action="">
+                    <label for="">Full Name :</label>
+                    <input type="text" name="fullname">
+
+                    <label for="">Username :</label>
+                    <input type="text" name="username">
+
+                    <label for="">Email :</label>
+                    <input type="email" name="email">
+
+                    <label for="">Password :</label>
+                    <input type="password" name="password">
+                    <input type="submit" value="Signup">
+                </form>
+            </div>
+        </div>
+
+        <div class="next1">
+            <div class="two">
+                <h1>Login</h1>
+
+                <form action="">
+
+                    <label for="">Email</label>
+                    <input type="text" name="login">
+                    <label for="">Password</label>
+                    <input type="password" name="password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="btns">
+            <button>Login</button>
+            <button>SignUp</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<!-- 
+/* 
+.box img {
+    /* justify-content: center; */
+/* height: 340px; */
+/* width: 340px; */
+/* border-radius: 5px; */
+/* display: none; */
+/* margin: 50px auto; */
+
+
+/* box-shadow:0px 2px 0px 2px black; */
+
+
+/* } */
+
+
+.box a {
+    height: 33px;
+    width: 90px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.box1 {
+    border: 1px solid black;
+    height: 500px;
+    width: 50%;
+    /* align-items: center; */
+
+}
+
+.box1 button {
+    border: 1px solid black;
+    height: 28px;
+    width: 90px;
+    text-align: center;
+    border-radius: 3px;
+    margin: 65% 35% auto;
+
+}
+
+.box form {
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+
+}
+
+.box h1 {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.box .one {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 25px;
+
+    margin: 100px auto;
+}
+
+.box form label {
+
+    text-align: center;
+    /* padding: 3px; */
+    font-size: large;
+    margin: 7px 0;
+
+} -->

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight:600;
+        }
+        body{
+            background-image: url("https://fiori.homecredit.net/sap/public/bc/ui2/logon/themes/sap_belize/img/background.jpg");
+            
+        }
+
+        header img{
+            margin: 13px;
+            height: 25px;
+        }
+
+        .main{
+            position: absolute;
+            left: calc(50% - 155px);
+            top: calc(50% - 210px);
+
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            /* padding: 10px; */
+            height: 420px;
+            width: 310px; 
+        }
+
+        .main label{
+            margin: 10px 2px;
+            font-size: 20px;
+            color: gray;
+        }
+        .main input, .main select{
+            height: 44px;
+            margin: 3px 0;
+            /* border: none; */
+            outline: none;
+            padding:0 10px;
+            font-size: 16px;
+        }
+
+
+        .main #btn{
+            background-color: #367DB8;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .main #btn:hover{
+            background-color: #1e6aa8;
+        }
+        input{
+            padding:0 10px;
+            font-size: 17px;
+            border-radius:0px;
+            border: 0px solid grey;
+        }
+
+
+.main a{
+    display: block;
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top: 5px;
+    height: 44px;
+    line-height:44px;
+    font-size:18px;
+    border-radius: 5px;
+    color:#1e6aa8;
+    font-weight: 500;
+}
+
+.main a:hover{
+    background-color: #b7d4ec;
+}
+
+
+footer{
+    position:absolute;
+    bottom: 5px;
+    right: 15px;
+    color: grey;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <img src="https://fiori.homecredit.net/sap/public/bc/ui2/logon/img/sap_logo.png" alt="">
+    </header>
+    <div class="main">
+        <input type="text" placeholder="User">
+        <input type="password" name="" id="" placeholder="Password">
+        <label id="LANGUAGE_LABEL" for="LANGUAGE_SELECT" >Language</label>
+        <select name="EN-English" id="">
+            <option value=""></option>
+            <option value="">DE - Deutsch</option>
+            <option value="">EN - English</option>
+            <option value="">CH - Cestina</option>
+            <option value="">zx - vv</option>
+        </select>
+        <input type="text" placeholder="Client">
+        <input type="button" id="btn" value="Log On">
+        <a href="#">Change Password</a>
+        <a href="#">Reset Password</a>
+    </div>
+    <footer>
+        Copyright &copy; 2023 SAP SE All Rights Reserved.
+    </footer>
+</body>
+</html>

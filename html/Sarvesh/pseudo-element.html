@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: larger;
+        }
+
+        .para::first-line{
+            color: blue;
+        }
+
+        .para{
+            color: red;
+        }
+
+        ul li::marker{
+            color: green;
+        }
+
+        .new::selection{
+            color: red;
+            background-color: black;
+        }
+
+        ,new{
+            user-select: all;
+        }
+
+        h1::before{
+            content: 'The ';
+            color: red;
+        }
+
+        h1:hover::after{
+            content: " " attr(data-myattr);
+            color: orangered;
+        }
+
+        input::placeholder{
+            color: red;
+            opacity: 100%;
+        }
+
+        input{
+            caret-color: green;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, facere? Ab saepe quas similique, omnis aliquid distinctio cupiditate repudiandae iure nihil debitis, consequatur ducimus! Aspernatur sapiente quas nostrum velit deleniti.</p>
+
+    <ul>
+        <li>jan</li>
+        <li>feb</li>
+        <li>mar</li>
+    </ul>
+
+    <p class="new">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro iure est animi incidunt. Voluptate sunt, earum, est nam quia praesentium inventore molestias, maiores perferendis neque ullam impedit. Enim, dolor adipisci!</p>
+
+    <h1 class="abcd" data-myattr="Institute">Geek</h1>
+
+    <input type="text" placeholder="ABCD">
+
+
+</body>
+</html>

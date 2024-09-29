@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 67.3vh;
+        background-color: rgba(76, 0, 255, 0.349);
+        background-blend-mode: overlay;
+    }
+    form{
+        /* border: 1px solid red; */
+        height: 250px;
+        width: 250px;
+        margin: auto;
+        margin-top: 300px;
+        padding: 30px;
+        background-color: rgb(203, 252, 217);
+        border-radius: 10px;
+        box-shadow: 3px 3px 50px black;
+    }
+    label{
+        display: block;
+        /* margin: auto; */
+        color: black;
+        font-weight: 800;
+        font-size: larger;
+    }
+
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        height: 30px;
+        width: 200px;
+        padding: 5px;
+        font-weight: 700;
+        font-size: large;
+        background-color: rgb(255, 247, 255);
+        border-radius: 5px;
+    }
+
+    button{
+        display: block;
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-weight: 700;
+
+    }
+
+    form h1{
+        text-align: center;
+        margin-bottom: 20px;
+        color: blue;
+        text-shadow: 2px 2px 3px red;
+        font-size: 33px;
+    }
+
+    button:hover{
+        background-color: rgb(22, 1, 117);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <form action="">
+        <h1>LOGIN</h1>
+        <label for="">Username</label>
+        <input type="text">
+        <label for="">Password</label>
+        <input type="password">
+        <button>LOGIN</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="../Dhruv/responsive.css">
+
+    <style>
+        .container{
+            position: absolute;
+            z-index: -1;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .slider{
+            /* border: 2px solid red; */
+            height: 80vh;
+            width: 500vw;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            /* padding: 0 2rem; */
+            animation-name: image-slider;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+
+        }
+        .slider .box{
+            /* position: relative; */
+            /* border: 2px solid red; */
+            height: 80vh;
+            width: 100vw;
+            /* padding: 5rem; */
+            background-size: cover;
+            background-position: bottom;
+            text-align: center;
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+        }
+        .slider .box .content{
+            color: white;
+            width: 70vw;
+            /* height: 35vh; */
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 1.5rem;
+            padding: 5vh 2vw;
+
+        }
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+
+            }
+
+
+
+            25%{
+                transform: translateX(-100vw);
+                
+            }
+            30%{
+                transform: translateX(-100vw);
+
+            }
+            35%{
+                transform: translateX(-100vw);
+
+            }
+            40%{
+                transform: translateX(-100vw);
+
+            }
+
+            45%{
+                transform: translateX(-100vw);
+            }
+            
+            50%{
+
+                transform: translateX(-200vw);
+                }
+
+            55%{
+                transform: translateX(-200vw);
+
+            }   
+            
+            60%{
+                transform: translateX(-200vw);
+
+            }
+
+            65%{
+                transform: translateX(-200vw);
+
+            }
+            70%{
+                transform: translateX(-200vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-300vw);
+
+            }
+            85%{
+                transform: translateX(-300vw);
+            }
+            90%{
+                transform: translateX(-300vw);
+
+            }
+            95%{
+                transform: translateX(-300vw);
+
+            }
+
+            100%{
+                transform: translateX(-400vw);
+            }
+
+        }
+
+
+        .slider:hover{
+            animation-play-state: paused;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+        <contant>Dhruv Web</contant>
+    
+        <ul class="main">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn1"><i class="fa-solid fa-bars"></i></label>
+            <label for="check" class="btn2"><i class="fa-solid fa-xmark"></i></label>
+            <div class="line">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        
+        </ul>
+    </nav>
+<div class="container">
+    <div class="slider">
+        <div class="box" style=" background-image: url(https://w0.peakpx.com/wallpaper/582/539/HD-wallpaper-beautiful-nature-view.jpg);">
+           <div class="content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vitae sit libero nobis aspernatur dolores culpa atque, et reprehenderit fugiat eveniet suscipit fuga ex? Asperiores id consequuntur quia omnis ipsam.</p>
+           </div>
+        </div>
+
+        <div class="box" style=" background-image: url(https://w0.peakpx.com/wallpaper/983/204/HD-wallpaper-nature-landscape.jpg);">
+            <div class="content">
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vitae sit libero nobis aspernatur dolores culpa atque, et reprehenderit fugiat eveniet suscipit fuga ex? Asperiores id consequuntur quia omnis ipsam.</p>
+            </div>
+         </div>
+
+         <div class="box" style=" background-image: url(https://w0.peakpx.com/wallpaper/465/261/HD-wallpaper-nature-nature.jpg);">
+            <div class="content">
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vitae sit libero nobis aspernatur dolores culpa atque, et reprehenderit fugiat eveniet suscipit fuga ex? Asperiores id consequuntur quia omnis ipsam.</p>
+            </div>
+         </div>
+
+         <div class="box" style=" background-image: url(https://w0.peakpx.com/wallpaper/698/192/HD-wallpaper-nature-nature.jpg);">
+            <div class="content">
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vitae sit libero nobis aspernatur dolores culpa atque, et reprehenderit fugiat eveniet suscipit fuga ex? Asperiores id consequuntur quia omnis ipsam.</p>
+            </div>
+         </div>
+
+         <div class="box" style=" background-image: url(https://w0.peakpx.com/wallpaper/42/267/HD-wallpaper-nature-scenery-scenery-nature.jpg);">
+            <div class="content">
+             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt vitae sit libero nobis aspernatur dolores culpa atque, et reprehenderit fugiat eveniet suscipit fuga ex? Asperiores id consequuntur quia omnis ipsam.</p>
+            </div>
+         </div>
+    </div>
+</div>
+   
+</body>
+</html>

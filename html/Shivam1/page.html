@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@600&family=Mukta:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .header p{
+            font-size: larger;
+            font-weight: 500;
+        }
+        
+        .header a{
+            
+            /* border: 2px solid blue ; */
+            background-color: rgb(14, 121, 243);
+            font-family: 'Anton', sans-serif;
+            font-family: 'Mukta', sans-serif;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        .header a:hover{
+            background-color: gray;
+        }
+        .header{
+            /* border: 1px solid red; */
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .main{
+            /* border: 1px solid black; */
+            text-align: center;
+            height: 500px;
+            width: 100vw;
+            padding: 180px;
+            background-image: url("https://images.unsplash.com/reserve/AXx3QORhRDKAMrbb8pX4_photo%202.JPG?ixlib=rb-4.0.3");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .main p{
+            font-family: 'Anton', sans-serif;
+            font-size: xx-large;
+            color: white;
+            letter-spacing: 1.5px;
+            
+        }
+        .main input{
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 5px;
+            width: 300px;
+            outline: none;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(14, 121, 243);
+            color: white;
+            padding: 5px;
+            width: 80px;
+            cursor: pointer;
+            
+        }
+        button:hover{
+            background-color: gray;
+        }
+
+        .services{
+            /* border: 1px solid red; */
+            height: 13rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .services .box{
+            /* border: 1px solid green; */
+            width: 15rem;
+            height: 10rem;
+            text-align: center;
+            padding: 1rem  1rem;
+        } 
+        .services .box i{
+            color: cyan;
+            font-size: 2.5rem;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="header">
+        <p>Start Bootstrap</p>
+        <a href="">Sign In</a>
+   </div>
+   <div class="main">
+        <p>Build a landing page for your business or project and generate more leads!</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Sign up!</button>
+   </div>
+
+   <div class="services">
+    <div class="box">
+        <i class="fa-sharp fa-solid fa-desktop"></i>
+        <h3>Fully Responsive</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas</p>
+    </div>
+   
+    <div class="box">
+        <i class="fa-sharp fa-solid fa-desktop"></i>
+        <h3>Fully Responsive</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas</p>
+    </div>
+
+    <div class="box">
+        <i class="fa-sharp fa-solid fa-desktop"></i>
+        <h3>Fully Responsive</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas</p>
+    </div>
+</div>
+
+</body>
+</html>

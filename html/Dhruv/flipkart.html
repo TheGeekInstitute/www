@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            /* border: 1px solid black; */
+            display: flex;
+            margin-left: 20px;
+        }
+        .nav ul li{
+            display: inline-block;
+            margin: 10px;
+        }
+        .service ul li{
+            margin-top: 30px;
+        }
+        
+        .service ul li a{
+            color:black ;
+            margin-left: 30px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+        }
+         .right{
+            height: 200px;
+            width: 200px;
+            background-color: cyan;
+            overflow: hidden;
+        }
+
+        .right{
+            transform: translate(0px);
+        }
+        .nav img{
+            width: 20vh;
+            height: 15vh;
+            margin-top: -20px;
+        }
+        .right ul li{
+            border: 2px solid black;
+            /* padding: 10px 10px 10px; */
+            margin: 10px;
+            width: 130px;
+            text-align: center;
+            line-height: 30px;
+            height: 40px;
+            background-color: black;
+            border-radius: 10px;
+
+        }
+        .right ul li:last-child{
+            background-color: black;
+            /* padding: 0px 20px 30px; */
+            /* color: white; */
+        }
+        .right ul li a:last-child{
+            color: white;
+        }
+        .right ul li a{
+            /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(232, 243, 232);
+            transform: translateX(100%);
+            transition: all .3s;
+            
+        }
+
+        .right:hover ul li a{
+
+            transform: translateX(0);
+        }
+        
+        .main img{
+            /* background-color: #00b5db; */
+            height: 25em;
+            width: 220vh;
+            position: absolute;
+            z-index: -1;
+        }
+        .writing{
+            /* margin: 100px; */
+            margin-top: 70px;
+            margin-left: 50px;
+        }
+        .writing h1{
+            font-size: 40px;
+            color: yellow ;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .writing h3{
+            font-size: 30px;
+            color: white;
+        }
+        .writing input{
+            width: 320px;
+            height: 35px;
+            margin-top: 10px;
+            padding-left: 40px;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+
+        }
+        .writing i{
+            position: absolute;
+            top: 300px;
+            left: 60px;
+            font-size: 20px;
+            
+        }
+        .box{
+            margin-top: 30px;
+            /* margin-left: px; */
+            border: 2px solid #ffcc00;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+            line-height: 40px;
+            padding-left: 20px;
+            background-color: #ffcc00 ;
+        }
+        .box ul li a{
+            font-size: 22px;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .box i{
+            top: 373px;
+            left: 200px;
+            position: absolute;
+            /* width: 200px; */
+            font-size: 25px;
+            transform: rotate(90deg);
+            
+            
+        }
+    .right ul li:hover{
+        border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/fk-logo-pre-login-v3.svg" alt="">
+        <div class="service">
+            <ul>
+                <li><a href="#">Fee Structure</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href="#">Shopsy</a></li>
+            </ul>
+        </div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Start Selling</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>            
+
+    </div>
+    <div class="main">
+        <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/welcome_potal_banner_Desktop_V2_02.svg" alt="">
+      
+    </div>
+    <div class="writing">
+        <h1>Sell online to 50 crores+ customers</h1>
+        <h3>Launch your business in <br> 10 minutes</h3>
+        <i class="fa-solid fa-mobile-screen"></i>
+        <input type="text" placeholder="Enter 10 Disit Phone Number">
+        <div class="box">
+            <i class="fa-solid fa-arrow-up-long"></i>
+        <ul>
+            
+            <li><a href="#">Start Selling</a></li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>

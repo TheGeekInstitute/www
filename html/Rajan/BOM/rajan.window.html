@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+</head>
+<body>
+    <button class="open">open</button>
+    <button class="close">close</button>
+    <button class="move">move</button>
+    <button class="resize">resize</button>
+
+    <script>
+        let win;
+        document.querySelector('.open').addEventListener("click",()=>{
+            win=window.open("https://www.youtube.com/","_blank","height=500px,width=500px,top=250px,left=700px");
+        })
+        document.querySelector('.close').addEventListener("click",()=>{
+            win.close();
+            win.focus();
+        })
+        document.querySelector('.move').addEventListener("click",()=>{
+            win.focus();
+            win.moveBy(100,0)
+        })
+        document.querySelector('.resize').addEventListener("click",()=>{
+            win.resizeTo(800,800);
+            win.focus();
+        })
+    </script>
+</body>
+</html>

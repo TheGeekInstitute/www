@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            height: 70px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* text-align: center; */
+        }
+        .nav .logo{
+            color: greenyellow;
+            margin: 10px;
+            padding: 10px;
+            font-size: 50px;
+        }
+        .nav ul li{
+            display:inline;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            font-size: 20px;  
+        }
+        .container{
+            height: 70vh;
+            overflow: hidden;
+        }
+        .container .slider{
+        
+            height: 70vh;
+            width: 500vw;
+            display: flex;
+            animation-name:slider ;
+            animation-duration: 20s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+        .container .slider .image{
+            width: 100vw;
+            height:70vh ;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+        .container .slider .image .content{
+            background-color: rgba(0, 0, 0, 0.473);
+            height: 40vh;
+            width: 70vw;
+            padding: 10vh 5vw;
+            text-align: center;
+             border-top-left-radius: 10vw;
+             border-top-right-radius: 2vw;
+             border-bottom-left-radius:2vw ;
+             border-bottom-right-radius:10vw ;
+             backdrop-filter: blur(2px);
+            
+        }
+        @keyframes slider{
+            0%{
+                /* transform: translateX(0); */
+            }
+            25%{
+                transform: translateX(-100vw);   
+            }
+            50%{
+                transform: translateX(-200vw);   
+            }
+            75%{
+                transform: translateX(-300vw); 
+            }
+            100%{
+                transform: translateX(-0); 
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+ <div class="logo">logo</div>
+              <ul>
+                <li class="#">Home</li>
+                <li class="#">contact</li>
+                <li class="#">about</li>
+              </ul>  
+        
+    </div>
+     <div class="container">
+        <div class="slider">
+            
+      
+            <div class="image" style="background-image: url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam consequuntur nulla </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium exercitationem porro est modi beatae corrupti officia eligendi sapiente sit odit commodi recusandae rerum temporibus quam debitis, quod at quasi!</p>
+                      
+                </div>
+            </div>
+              
+            <div class="image" style="background-image: url(https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam consequuntur nulla </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium exercitationem porro est modi beatae corrupti officia eligendi sapiente sit odit commodi recusandae rerum temporibus quam debitis, quod at quasi!</p> 
+        
+                            
+                        </div>
+                    </div>
+
+                    <div class="image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTFrhr_-pYR74jUgOy7IerAoHAX3zPIZZcg&usqp=CAU);">
+                        <div class="content">
+                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam consequuntur nulla </h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium exercitationem porro est modi beatae corrupti officia eligendi sapiente sit odit commodi recusandae rerum temporibus quam debitis, quod at quasi!</p>                    
+                </div>
+            </div>
+
+
+            <div class="image" style="background-image: url(https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam consequuntur nulla </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium exercitationem porro est modi beatae corrupti officia eligendi sapiente sit odit commodi recusandae rerum temporibus quam debitis, quod at quasi!</p>
+                      
+                </div>
+            </div>
+              
+            <div class="image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXrNnq55wTc5slCfrOs9srjk55DZL6O2WaQg&usqp=CAU);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum laboriosam consequuntur nulla </h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium exercitationem porro est modi beatae corrupti officia eligendi sapiente sit odit commodi recusandae rerum temporibus quam debitis, quod at quasi!</p> 
+        
+             </div>
+             </div>
+
+        </div>
+     </div>
+</body>
+</html>

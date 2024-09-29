@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width:100px;
+            background-color: yellow;
+
+            /* animation-name: anim; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: steps(15); */
+
+
+            animation: move 5s linear 0s infinite alternate ;
+
+        }
+
+
+        @keyframes anim {
+            /* from{
+                border-radius: 0%;
+            }
+
+            to{
+                border-radius: 50%;
+            } */
+        
+        
+            0%{
+                width: 100px;
+                background-color: yellow;
+            }
+
+            100%{
+                width:400px;
+                background-color: red;
+            }
+
+        
+        }
+
+
+
+        @keyframes move {
+            0%{
+                transform: translate(0,0) rotate(0);
+            }
+
+            20%{
+                transform: translate(calc(100vw - 150px),0) rotate(0) scale(1);
+                background-color: green;
+
+            }
+
+            40%{
+                transform: translate(calc(100vw - 150px),calc(100vw - 150px)) rotate(120deg) scale(0.5);
+                background-color: red;
+
+
+            }
+
+            60%{
+                transform: translate(0,calc(100vw - 150px)) rotate(240deg) scale(1);
+                background-color: cyan;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+
+
+</body>
+</html>

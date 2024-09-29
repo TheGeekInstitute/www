@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav .logo{
+            font-size: 45px;
+        }
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav > .links > li > a{
+            display: block;
+            margin: 0 10px;
+            padding: 0 10px;
+            color: white;
+            line-height: 50px;
+            font-size: larger;
+
+
+        }
+        .nav .links li .sub{
+            position: absolute;
+            display: none;
+            text-alig 
+    </style>
+    
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">ARSHA</div>
+
+        <ul class="Links">
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Services</a></li> 
+            <li><a href="#">Portfolio</a></li> 
+            <li><a href="#">Team</a></li> 
+            <li><a href="#">pricing</a></li> 
+            <li><a href="#">dropdown</a>
+                <ul class="Sub">
+                    <li><a href="#">Dropdown 1</a></li>
+                    <li><a href="#">Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown</a></li>
+                    <ul class="sub">
+                        <li><a href="#">Deep Dropdown 1</a></li>
+                        <li><a href="#">Deep Dropdown 2</a></li>
+                        <li><a href="#">Deep Dropdown 3</a></li>
+                        <li><a href="#">Deep Dropdown 4</a></li>
+                        <li><a href="#">Deep Dropdown 5</a></li>
+
+                    </ul>
+                    <li><a href="#">Dropdown 3</a></li>
+                    <li><a href="#">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

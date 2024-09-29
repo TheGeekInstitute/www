@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+        body{
+            background-color: rgba(0, 0, 0, 0.884);
+            display: flex;
+            flex-direction: column;
+            height: 800px;
+            width: 800px;
+            margin: auto;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            color: wheat;
+            list-style: none;
+            text-decoration: none;
+        }
+        .circle,.circle2{
+            margin: auto;
+            /* border: 1px solid red; */
+            height: 150px;
+            width: 150px;
+            border-radius: 100px;
+            background-color: rebeccapurple;
+            /* filter: blur(5px); */
+            
+        }
+
+        .circle{
+            /* border: 2px solid orangered; */
+            background-color: orangered;
+            margin-left: 160px;
+            position: relative;
+            top: 100px;
+            z-index: -10;
+
+        }
+        .circle2{
+            position: absolute;
+            /* border: 2px solid blue; */
+            background-color: rgba(0, 0, 255, 0.733);
+            margin-right: 160px;
+            position: relative;
+            top: -100px;
+            z-index: -10;
+            /* margin-top: -60px; */
+
+        }
+
+        .form{
+            /* border: 2px solid red; */
+            height: 400px;
+            width: 350px;
+            margin: auto;
+            display: grid;
+            padding: 20px 30px;
+            backdrop-filter: blur(4px);
+            background-color: rgba(196, 192, 192, 0.226);
+            border-radius: 5px;
+            /* backdrop-filter: ; */
+            /* display: flex; */
+        }
+        .form h1{
+            color: white;
+            font-weight: 900;
+            /* font-size: ; */
+            text-align: center;
+            /* border: 2px solid ; */
+            height: 40px;
+            line-height: 40px;
+
+        }
+.form label{
+    /* margin-top: -31px; */
+    /* border: 2px solid blue ; */
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    margin-top:-20px ;
+}
+input{
+    margin-top: -30px;
+    /* border: 2px solid red; */
+    height: 30px;
+    background-color: rgb(51, 50, 50);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+input::placeholder{
+    color: white;
+    font-weight: 900;
+}
+input[type="text"]{
+    padding: 10px;
+}
+input[type="password"]{
+    padding: 10px;
+}
+
+button{
+    color: black;
+    height: 40px;
+    margin-top: -5px;
+}
+li{
+    margin-top: -5px;
+    display: flex;
+    /* grid-template-columns: 120px 120px; */
+    justify-content: space-around ;
+
+}
+li a{
+    display: block;
+    /* border: 2px solid red; */
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    /* padding: px; */
+}
+
+li a i{
+    color: white;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="form">
+        <h1>Login Here</h1>
+        <label for="">Username</label>
+        <input type="text" placeholder="Email or Phone">
+        <label for="">Password</label>
+        <input type="password" placeholder="Password">
+        <button>Log in</button>
+        <li>
+            <a href="#"><i class="fa-brands fa-google"></i> Google</a>
+            <a href=""><i class="fa-brands fa-facebook"></i> Facebook</a>
+
+        </li>
+
+
+    </div>
+    <div class="circle2"></div>
+    
+</body>
+</html>

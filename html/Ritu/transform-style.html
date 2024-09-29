@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D More</title>
+    <style>
+        .main{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            margin-top: 150px;
+            background-color: rgba(128, 128, 128, 0.608);  
+            perspective: 600px;
+            transform-style: preserve-3d;
+            transform: rotateY(30deg);
+            
+        }
+
+        .box{
+          height: 300px;
+          width: 300px;
+          background-color: aqua;
+            transition: all 1s;
+            /* transform-origin: bottom left; */
+        }
+
+
+        .box:hover{
+            transform:rotateX(30deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>

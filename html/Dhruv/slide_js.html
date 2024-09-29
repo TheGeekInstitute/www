@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            height: 400px;
+            width: 400px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .box div{
+            background-color: grey;
+            height: 1rem;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .box div::after{
+            content: '';
+            display: block;
+            height: 1rem;
+            width: 0%;
+            background-color: red;
+          
+        }
+
+        .box .html::after{
+            animation: per-90 1s linear 0s 1 alternate forwards;
+        }
+
+        .box .css::after{
+            animation: per-60 1s linear 0s 1 alternate forwards;
+        }
+
+        .box .js::after{
+            animation: per-40 1s linear 0s 1 alternate forwards;
+        }
+
+        .box .php::after{
+            animation: per-90 1s linear 0s 1 alternate forwards;
+        }
+
+        .box label{
+            display: block;
+            width: 100%;
+            text-align: left;
+            margin: 5px 0;
+            padding: 0 10px;
+        }
+
+
+        @keyframes per-90 {
+            0%{
+                width: 0%;
+            }
+
+            100%{
+                width: 90%;
+            }
+        }
+
+        @keyframes per-60 {
+            0%{
+                width: 0%;
+            }
+
+            100%{
+                width: 60%;
+            }
+        }
+
+
+        @keyframes per-40 {
+            0%{
+                width: 0%;
+            }
+
+            100%{
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<style>
+ 
+
+</style>
+<body>
+    <div class="box">
+        <label class="html"><span>0</span>%</label>
+        <div class="html" data-per="90"></div>
+        <label class="css"><span>1</span>%</label>
+        <div class="css" data-per="60"></div>
+        <label class="js"><span>0</span>%</label>
+        <div class="js" data-per="40"></div>
+        <label class="php"><span>0</span>%</label>
+        <div class="php" data-per="90"></div>
+
+    </div>
+
+    <script>
+
+    let box = document.querySelector(".box");
+
+    let boxChild = box.children;
+
+    Array.from(boxChild).forEach((e)=>{
+        if(e.hasAttribute("data-per")){
+            let per = parseInt(e.getAttribute("data-per"));
+
+            let dataVal =e.previousElementSibling.children[0];
+                // console.log(per);
+                perVal(per);
+        }
+    })
+
+    
+
+
+    function perVal(val){
+        
+    }
+
+
+
+    </script>
+</body>
+</html>

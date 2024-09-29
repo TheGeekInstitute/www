@@ -1,0 +1,262 @@
+
+Setting environment for using XAMPP for Windows.
+Geek-Institute@DESKTOP-HDAC0NG c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use mydb;
+Database changed
+MariaDB [mydb]> show tables;
++----------------+
+| Tables_in_mydb |
++----------------+
+| abcd           |
+| emp            |
+| std            |
+| students       |
++----------------+
+4 rows in set (0.001 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(30)   | NO   |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | 1000.00 |       |
+| city   | varchar(30)   | YES  |     | Delhi   |       |
+| phone  | varchar(10)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.016 sec)
+
+MariaDB [mydb]> create table emp1 (emp_no int, name varchar(30));
+Query OK, 0 rows affected (0.011 sec)
+
+MariaDB [mydb]> desc emp1;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| emp_no | int(11)     | YES  |     | NULL    |       |
+| name   | varchar(30) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+2 rows in set (0.014 sec)
+
+MariaDB [mydb]> alter table emp1 add gender char(1);
+Query OK, 0 rows affected (0.008 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp1;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| emp_no | int(11)     | YES  |     | NULL    |       |
+| name   | varchar(30) | YES  |     | NULL    |       |
+| gender | char(1)     | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.014 sec)
+
+MariaDB [mydb]> alter table emp1 drop gender;
+Query OK, 0 rows affected (0.024 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp1;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| emp_no | int(11)     | YES  |     | NULL    |       |
+| name   | varchar(30) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+2 rows in set (0.012 sec)
+
+MariaDB [mydb]> alter table emp1 add genders char(1);
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp1;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| emp_no  | int(11)     | YES  |     | NULL    |       |
+| name    | varchar(30) | YES  |     | NULL    |       |
+| genders | char(1)     | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.014 sec)
+
+MariaDB [mydb]> alter table emp1 modify genders varchar(10);
+Query OK, 0 rows affected (0.047 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp1;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| emp_no  | int(11)     | YES  |     | NULL    |       |
+| name    | varchar(30) | YES  |     | NULL    |       |
+| genders | varchar(10) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+3 rows in set (0.013 sec)
+
+MariaDB [mydb]> alter table emp1 change genders gender varchar(20);
+Query OK, 0 rows affected (0.008 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp1;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| emp_no | int(11)     | YES  |     | NULL    |       |
+| name   | varchar(30) | YES  |     | NULL    |       |
+| gender | varchar(20) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.014 sec)
+
+MariaDB [mydb]> insert into emp1 VALUES (1,NULL,NULL);
+Query OK, 1 row affected (0.034 sec)
+
+MariaDB [mydb]> select * from emp;
+Empty set (0.001 sec)
+
+MariaDB [mydb]> select * from emp1;
++--------+------+--------+
+| emp_no | name | gender |
++--------+------+--------+
+|      1 | NULL | NULL   |
++--------+------+--------+
+1 row in set (0.001 sec)
+
+MariaDB [mydb]> truncate table emp1;
+Query OK, 0 rows affected (0.019 sec)
+
+MariaDB [mydb]> select * from emp1;
+Empty set (0.001 sec)
+
+MariaDB [mydb]> insert into emp1 (emp_no,name) VALUES (1,NULL);
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [mydb]> select * from emp1;
++--------+------+--------+
+| emp_no | name | gender |
++--------+------+--------+
+|      1 | NULL | NULL   |
++--------+------+--------+
+1 row in set (0.001 sec)
+
+MariaDB [mydb]> insert into emp1 (emp_no,name) VALUES (2,"ABCD");
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [mydb]> select * from emp1;
++--------+------+--------+
+| emp_no | name | gender |
++--------+------+--------+
+|      1 | NULL | NULL   |
+|      2 | ABCD | NULL   |
++--------+------+--------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> drop table emp1;
+Query OK, 0 rows affected (0.023 sec)
+
+
+MariaDB [mydb]> create table emp1 (emp_no int(10) PRIMARY KEY, name varchar(100) NOT NULL, mobile varchar(10) UNIQUE);
+Query OK, 0 rows affected (0.030 sec)
+
+MariaDB [mydb]> describe emp1;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| emp_no | int(10)      | NO   | PRI | NULL    |       |
+| name   | varchar(100) | NO   |     | NULL    |       |
+| mobile | varchar(10)  | YES  | UNI | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+3 rows in set (0.015 sec)
+
+MariaDB [mydb]> alter table emp1 add gender varchar(10);
+Query OK, 0 rows affected (0.008 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> alter table emp1 add salary decimal(10,2) DEFAULT 5000.00;
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> describe emp1;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(10)       | NO   | PRI | NULL    |       |
+| name   | varchar(100)  | NO   |     | NULL    |       |
+| mobile | varchar(10)   | YES  | UNI | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | 5000.00 |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.016 sec)
+
+MariaDB [mydb]> describe emp1;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(10)       | NO   | PRI | NULL    |       |
+| name   | varchar(100)  | NO   |     | NULL    |       |
+| mobile | varchar(10)   | YES  | UNI | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | 5000.00 |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.014 sec)
+
+
+MariaDB [mydb]> alter table emp1 add age int(5) CHECK (age>=18);
+Query OK, 0 rows affected (0.013 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> describe emp1;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(10)       | NO   | PRI | NULL    |       |
+| name   | varchar(100)  | NO   |     | NULL    |       |
+| mobile | varchar(10)   | YES  | UNI | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | 5000.00 |       |
+| age    | int(5)        | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.016 sec)
+
+
+MariaDB [mydb]> insert into emp1 (emp_no,name,mobile,gender,age) VALUES (1,"Amit","8520147896","Male",18);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [mydb]> select * from emp;
+Empty set (0.000 sec)
+
+MariaDB [mydb]> select * from emp1;
++--------+------+------------+--------+---------+------+
+| emp_no | name | mobile     | gender | salary  | age  |
++--------+------+------------+--------+---------+------+
+|      1 | Amit | 8520147896 | Male   | 5000.00 |   18 |
++--------+------+------------+--------+---------+------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> alter table emp1 modify emp_no int(5) AUTO_INCREMENT;
+Query OK, 1 row affected (0.059 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> insert into emp1 (name,mobile,gender,age) VALUES ("Sumit","8520147891","Male",19);
+Query OK, 1 row affected (0.007 sec)
+
+MariaDB [mydb]> select * from emp1;
++--------+-------+------------+--------+---------+------+
+| emp_no | name  | mobile     | gender | salary  | age  |
++--------+-------+------------+--------+---------+------+
+|      1 | Amit  | 8520147896 | Male   | 5000.00 |   18 |
+|      2 | Sumit | 8520147891 | Male   | 5000.00 |   19 |
++--------+-------+------------+--------+---------+------+
+2 rows in set (0.001 sec)
+
+MariaDB [mydb]>

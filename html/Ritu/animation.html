@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+    /* @keyframes
+    animation-name
+    animation-duration
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-timing-function
+    animation-fill-mode
+    animation
+ */
+
+ @keyframes my-animation {
+    /* from{
+        border-radius: 0%;
+    }
+
+    to{
+             background-color: greenyellow;
+       
+    } */
+
+0%{
+    width: 100px;
+    background-color: red;
+}
+
+25%{
+    width: 200px;
+    background-color: green;
+}
+
+50%{
+    width: 300px;
+    background-color: cyan;
+}
+
+75%{
+    width: 400px;
+    background-color: blue;
+}
+
+100%{
+    width: 500px;
+    background-color: brown;
+}
+}
+
+
+
+.main{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+
+    animation-name: my-animation;
+    animation-duration: 5s;
+    /* animation-delay: 4s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-direction:reverse; */
+    /* animation-direction: alternate-reverse; */
+    animation-timing-function: linear;
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode: backwards;
+
+
+}
+
+.main:hover{
+    animation-play-state: paused;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+</body>
+</html>

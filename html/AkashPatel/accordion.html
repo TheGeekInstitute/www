@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input{
+            display:none;
+        }
+
+        .container{
+            border: 2px solid red;
+        }
+
+        .container .accordion{
+            border: 1px solid green;
+            margin: 10px;
+
+        }
+        .container .accordion label{
+            color: black;
+            background-color: blueviolet;
+            display: block;
+            cursor: pointer;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            font-size: larger;
+            padding: 0 2rem;
+            user-select: none;
+        }
+
+        .container .accordion .box{
+            padding: 0px 0rem;
+            background-color: aquamarine;
+            /* display: none; */
+            height: 0px;
+            overflow:hidden;
+         
+
+        }
+
+        .show{
+           animation: height-change 1s linear 0s 1 alternate forwards;
+        }
+
+
+        #btn:checked ~ .box{
+        }
+
+     
+
+        @keyframes height-change {
+            from{
+                height:0px;
+            }
+
+            to{
+                height:150px;
+                
+            }
+        }
+
+
+        @keyframes height-hide {
+            from{
+                height:0px;
+            }
+            
+            to{
+                height:150px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="accordion">
+            <!-- <input type="checkbox" name="" id="btn"> -->
+            <label for="btn" onclick="show()" class="main">ABCD</label>
+            <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit quo alias inventore ducimus. Soluta minima earum, porro atque veritatis impedit mollitia saepe nisi deserunt est, accusantium assumenda, omnis eveniet.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit quo alias inventore ducimus. Soluta minima earum, porro atque veritatis impedit mollitia saepe nisi deserunt est, accusantium assumenda, omnis eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugit quo alias inventore ducimus. Soluta minima earum, porro atque veritatis impedit mollitia saepe nisi deserunt est, accusantium assumenda, omnis eveniet.
+                lorem
+            </div>
+        </div>
+    </div>
+    <script>
+    function show(){
+        document.querySelector(".box").classList.toggle("show");
+    }
+    </script>
+</body>
+</html>

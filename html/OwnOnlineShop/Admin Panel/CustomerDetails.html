@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 1em;
+        }
+
+        header form input {
+            padding: .5em .5em;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #ddd;
+            color: crimson;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        header form button {
+            padding: .5em 1.5em;
+            width: 150px;
+            background: royalblue;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .CustomerDetails_firstRow {
+            border: 1px solid red;
+            padding: .51em .2em;
+            background: lightcoral;
+        }
+
+        .CustomerDetails_firstRow input {
+            outline: none;
+            border: none;
+            padding: .3em;
+            border-radius: 4px;
+        }
+
+        .customerDetails_secondRow {
+            /* margin-top: .5em; */
+            padding: 1em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            background: lightcyan;
+        }
+
+        .customerDetails_secondRow label {
+            display: inline-block;
+            width: 150px;
+            margin: .5em 0;
+        }
+
+        .customerDetails_secondRow input {
+            width: 150px;
+            padding: .2em .4em;
+            outline: none;
+            border: 1px solid #000;
+            border-radius: 4px;
+        }
+
+        .customerDetails_thirdRow {
+            /* border: 1px solid red; */
+            padding: 1em;
+            background: rgb(164, 228, 164);
+        }
+
+        .customerDetails_thirdRow .categoryBtnContainer button {
+            background-color: #000;
+            padding: .6em 1.5em;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-right: 1em;
+            color: #fff;
+            box-shadow: 0 0 5px #ddd;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form action="" style="display: flex;gap: 1em;">
+            <section>
+                <label for="">Email ID</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="">Mobile Number</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="">Adhar Number</label>
+                <input type="text">
+            </section>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <form action="">
+        <div class="CustomerDetails_firstRow">
+            <label for="Created">Created</label>
+            <input type="text">
+            <label for="">Customer Cateogary</label>
+            <input type="text">
+            <label for="Customer Number">Customer Number</label>
+            <input type="text">
+            <button style="padding: .345em 1.5em; cursor: pointer;">Blacklist </button>
+            <button style="padding: .345em 1.5em; cursor: pointer;"> Un Blacklist </button>
+        </div>
+        <div class="customerDetails_secondRow">
+            <section>
+                <label for="CustomerName">Customer Name</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="CustomerMobileNumber">Mobile Number</label>
+                <input type="number" name="" id="">
+            </section>
+            <section>
+                <label for="EmailID">Email Id</label>
+                <input type="email" name="" id="">
+            </section>
+            <section>
+                <label for="customerCity"> City</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="customerState">State</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="CustomerPincode">Pincode</label>
+                <input type="number" name="" id="">
+            </section>
+            <section>
+                <label for="TotalOrders">Total Orders</label>
+                <input type="number" name="" id="">
+            </section>
+            <section>
+                <label for="Cancel Orders">Cancel Orders</label>
+                <input type="number" name="" id="">
+            </section>
+            <section>
+                <label for="Fav Cat">Favourite Category</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="Total Notification">Total notifications</label>
+                <input type="number" name="" id="">
+            </section>
+
+            <section>
+                <label for="">Adhar Card</label>
+                <input type="text">
+            </section>
+
+            <section>
+                <label for="">Pan Card</label>
+                <input type="text">
+            </section>
+
+            <section>
+                <label for="">GST NO</label>
+                <input type="text">
+            </section>
+            <section>
+                <label for="Remarks">Remarks</label>
+                <input type="text">
+            </section>
+        </div>
+        <div class="customerDetails_thirdRow">
+            <div class="categoryBtnContainer">
+                <button>Pending Orders</button>
+                <button>Total Orders</button>
+                <button>cancel Orders</button>
+                <button>Total Notifications</button>
+                <button>Total Feedbacks</button>
+                <button>test</button>
+                <button>Test</button>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+
+</html>

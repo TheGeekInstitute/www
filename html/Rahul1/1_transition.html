@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            margin:150px auto;
+            height: 150px;
+            width: 150px;
+            background-color:green;
+            /* transition-property: all 1s linear; */
+            /* transition-property: height,width; */
+            /* transition-duration: 0.05s; */
+            /* transition-delay: 2s; */
+            /* transition-timing-function: steps(5); */
+            transition-property: ease 1s 3s 2s;
+        }
+
+        .box:hover{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    
+    </div>
+</body>
+</html>
+
+
+
+<!-- ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>abcd</h1>
+    <h1 class="aa">abcd123</h1>
+    <h1 class="aa">abcd1234</h1>
+    <h1 class="aa">abcd1235</h1>
+    <h1 class="aa">abcd1236</h1>
+    <h1 class="aa">abcd1237</h1>
+
+
+
+    <script>
+       let abcd = document.querySelector("h1");
+        
+        let tt= document.querySelectorAll(".aa")   ;
+        
+        // tt.addEventListener('click',function(){
+        //     tt.style.color="red";
+        // })
+      
+        // console.log(tt)
+
+        tt.forEach(function(e){
+            // console.log(e)
+
+
+        e.addEventListener('click',function(){
+            this.style.color="red"
+        })
+        })
+    </script>
+</body>
+</html>

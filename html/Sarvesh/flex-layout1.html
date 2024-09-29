@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 3.5rem;
+            background-color: darkgoldenrod;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .Logo{
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .Logo span{
+            color: blue;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .nav .links li a{
+            margin: 0.7rem;
+            color: white;
+            font-weight: 100;
+            font-size: large;
+            /* border: 1px solid red; */
+            display: block;
+            line-height: 3.5rem;
+            padding: 0 .5rem;
+        }
+
+        .nav .links li a:hover{
+            background-color: green;
+        }
+
+        .main img{
+            height: 90px;
+            width: 120px;
+            margin-top: -45px;
+            border-radius: 7px;
+        }
+
+        .main{
+            padding: 1rem;
+            /* margin: 2.3rem 0; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+        .main .box{
+            padding: 7px;
+            margin: 3.5rem 0rem;
+            /* border: 1px solid red; */
+            height: 18rem;
+            width: 15rem;
+            text-align: center;
+            background-color: beige;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px black;
+        }
+
+        .main .box h3{
+            font-family: cursive;
+        }
+        .main .box p{
+            margin: 10px 0;
+        }
+
+        .main .box a{
+            display: block;
+            margin: auto;
+            background-color: rebeccapurple;
+            color: white;
+            font-size: larger;
+            border-radius: 5px;
+            padding: 5px 0;
+            width: 6rem;
+        }
+
+        .main .box a:hover{
+            background-color: black;
+        }
+
+
+        .footer{
+            background-color: black;
+            color: white;
+            font-size: larger;
+            text-align: center;
+            height: 2.5rem;
+        }
+
+        .footer p{
+            line-height: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="Logo">
+            LO<span>GO</span>
+        </div>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div> 
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class="box">
+            <img src="../wallpaper.jpg" alt="">
+            <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id omnis libero.
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, veniam delectus praesentium culpa error minima reiciendis laudantium, 
+            </p>
+            <a href="#">Read More</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            copyright &copy; all rights reserved.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen</title>
+
+    <style>
+        .mobile,.laptop{
+            display: none;
+        }
+
+        @media screen  and (max-width:768px){
+               .laptop{
+                display: block;
+               } 
+
+               .mobile,.pc{
+                display: none;
+               }
+        }
+
+
+        @media screen  and (max-width:480px){
+               .mobile{
+                display: block;
+               } 
+
+               .laptop,.pc{
+                display: none;
+               }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="mobile">Mobile Screen</h1>
+    <h1 class="laptop">Laptop/Tablet Screen</h1>
+    <h1 class="pc">Computer Screen</h1>
+    
+</body>
+</html>

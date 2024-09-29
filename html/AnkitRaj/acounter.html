@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>counter</title>
+</head>
+<style>
+    fieldset{
+        
+    }
+    h1{
+        counter-reset:sec;
+        text-decoration: underline;
+        text-shadow: 10px 2px 20px solid grey;
+
+    }
+    h2::before{
+        content: counter(sec) "." " ";
+        counter-increment: sec 1;
+        /* text-indent: ; */
+        background-color: aqua;
+        padding: 5px;
+        margin-left:5px;
+        
+
+    }
+    h2{
+        counter-reset: sub-sec;
+    }
+    h3::before{
+        content: counter(sec) "." counter(sub-sec) " ";
+        counter-increment:sub-sec 1;
+        background-color: chartreuse;
+    }
+</style>
+<body>,<fieldset><legend>Sports</legend>
+    <h1>Games
+        <h2>Cricket
+            <h3>m.s. dhoni</h3>
+            <h3>v. kohli</h3>
+            <h3>s. mandana</h3>
+
+        </h2>
+        <h2>Football
+            <h3>c. ronaldo</h3>
+            <h3>L. root</h3>
+        </h2>
+        <h2>vellyball
+            <h3>j. gunes</h3>
+        </h2>
+    </h1>
+</fieldset>
+</body>
+</html>

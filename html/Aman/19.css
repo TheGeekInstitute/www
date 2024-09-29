@@ -1,0 +1,24 @@
+p{
+    color: red;
+    background-color: yellow;
+}
+
+*{
+    /* color: green; */
+}
+
+p{
+    /* color: yellowgreen; */
+}
+
+#heading{
+    color: pink;
+}
+#myhead{
+    color: purple;
+}
+
+.logo{
+    background-color: cyan;
+    color: green;
+}

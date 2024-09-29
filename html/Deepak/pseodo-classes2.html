@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class</title>
+    <style>
+        ul li{
+            font-size: large;
+            font-weight: 900;
+
+        }
+        ul li:first-child{
+            color: red;
+
+        }
+        ul li:last-child{
+            /* color: blue; */
+        }
+        ul li:nth-child(add){
+            color:red;
+        }
+        ul li:nth-child(7){
+            /* color: red; */
+        }
+        ul li:nth-last-child(3){
+            /* color: red; */
+        }
+        .box1 p:first-of-type{
+            /* color: red; */
+        }
+        .box1 p:last-of-type{
+            /* color: red; */
+        }
+        .box1 p:nth-last-of-type(1){
+            /* color: red; */
+        }
+       .box1 p:nth-last-child(1){
+        color:red;
+       }
+       .box1 p:first-letter{
+        color: red;
+       } 
+       .box2 p:nth-last-of-type(1){
+        /* color: red; */
+       }
+       
+      
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div class="box1">
+        <a href="derfs">derfs</a>
+        <p>Lorem 1 ipsum dolor sit amet consectetur adipisicing elit. Dolor accusamus eaque nemo maxime porro suscipit, iusto molestias fugit natus possimus quos amet nam excepturi perferendis consequuntur, est sit eos! Laborum?</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum, sapiente quia beatae molestiae nam quae impedit neque corporis ab ratione modi ipsa, repellat, sequi excepturi? Quisquam in at facere.</span>
+        <p>Lorem 2 ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nesciunt deserunt assumenda beatae voluptate repellat nam temporibus, nihil minima. Eaque pariatur earum inventore voluptatibus dolorum voluptates, atque officiis sint voluptatum.</p>
+    </div>
+       
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consequuntur odit nisi accusamus eaque sit, nulla ullam, reprehenderit aliquid cum sint culpa doloremque recusandae esse temporibus fugit velit, voluptatibus corrupti!</p>
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, repudiandae. Doloremque culpa quis assumenda eos. Excepturi, quo facere nisi culpa rem sed voluptates exercitationem voluptatum velit, maxime fugit distinctio earum!
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat velit, sequi dicta dolorum molestiae ipsa excepturi ducimus quibusdam enim. Expedita voluptas soluta harum aperiam deleniti blanditiis dolorum fugiat distinctio? Earum?</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ducimus saepe ex alias aliquam, provident iure, at illo dolorum temporibus mollitia porro eveniet dolor et. Quam excepturi illo quas nemo?</p>
+    </div>
+
+</body>
+</html>

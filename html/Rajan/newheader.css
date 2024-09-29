@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    /* border: 1px solid black; */
+    background-image: url(https://www.veeforu.com/wp-content/uploads/2022/09/plain-only-one-side-design-gradient-cyan-Color-youtube-thumbnail-template-293.png);
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.header .logo{
+    /* border: 1px solid red; */
+}
+.header .logo img{
+    /* border:  1px solid gray; */
+    width:  8rem;
+}
+.header .nav ul{
+    display: flex;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+.header >.nav >ul> li >a{
+    /* border:  1px solid gray; */
+    padding-right: 3rem;
+    font-size: larger;
+    color: black;
+}
+.header .nav ul li a:hover{
+    color: green;
+    text-shadow: 0 0 8px white;
+}
+.header .nav .sub ul {
+    /* border: 1px solid purple; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 1.5rem;
+}
+.header .nav .sub ul li a{
+    /* border: 1px solid green; */
+    font-size: larger;
+    margin-top: 1px;
+    /* background-color: grey; */
+    color: black;
+}
+.header > .nav .sub > ul > li{
+    line-height: 35px;
+    width: 60px;
+    background-color: grey;
+}
+
+.header .nav .sub{
+    display: none;
+}
+
+.header .nav ul li:hover .sub{
+    display: block;
+}
+.header .nav .sub .sub01 ul li{
+    /* border: 1px solid red; */
+    position: relative;
+    top: -80px;
+    right: 8rem;
+    background-color: gray;
+    font-size: larger;
+    width: 120px;
+}
+.header .nav .sub ul li:hover .sub01{
+    display: block;
+}
+.header .nav .sub .sub01{
+    display: none;
+}
+.header .nav .sub .sub02 ul li{
+    /* border: 1px solid red; */
+    position: relative;
+    top: -30px;
+    right: 8rem;
+    background-color: gray;
+    font-size: larger;
+    width: 120px;
+}
+.header .nav .sub ul li:hover .sub02{
+    display: block;
+}
+.header .nav .sub .sub02{
+    display: none;
+}
+.header .nav .sub .sub03 ul li{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 2px;
+    right: 8rem;
+    background-color: gray;
+    font-size: larger;
+    width: 120px;
+}
+.header .nav .sub ul li:hover .sub03{
+    display: block;
+}
+.header .nav .sub .sub03{
+    display: none;
+}
+.header .nav .sub .sub04 ul li{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 40px;
+    right: 8rem;
+    background-color: gray;
+    font-size: larger;
+    width: 120px;
+}
+.header .nav .sub ul li:hover .sub04{
+    display: block;
+}
+.header .nav .sub .sub04{
+    display: none;
+}
+.header .nav .sub .sub05 ul li{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 75px;
+    right: 8rem;
+    background-color: gray;
+    font-size: larger;
+    width: 120px;
+}
+.header .nav .sub ul li:hover .sub05{
+    display: block;
+}
+.header .nav .sub .sub05{
+    display: none;
+}

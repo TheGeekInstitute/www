@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000;
+        }
+        .container
+        {
+            border: 8px solid rgb(213, 226, 32);
+            border-radius: 8px;
+            height: 10vh;
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        #btn:checked + .container{
+            animation-name: height;
+            animation-timing-function: linear;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes height {
+            0%{
+                height: 20vh;
+            }
+            100%{
+                height:40vh;
+            }
+        }
+        #btn:not(:checked) + .container{
+            animation-name: fight;
+            animation-timing-function: linear;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-duration: alernate;
+        }
+        @keyframes fight {
+            0%{
+                height: 40vh;
+            }
+            100%{
+                height: 10vh;
+            }
+        }
+
+        label{
+            font-size: 40px;
+            font-style: oblique;
+            color:yellow;
+            margin-left: 220px;
+        }
+        
+        input[type='checkbox']{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" checked id="btn">
+    <div class="container">
+        <div class="box">
+            <label for="btn">
+                what is Accordion
+            </label>
+            <hr class="row">
+            <div class="data">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos expedita ullam ipsum nemo vero ut veniam. Et ipsam nemo ut nesciunt perspiciatis animi eaque asperiores! Asperiores inventore at numquam ab?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="box">
+            <label for="btn1">
+                what is Accordion
+            </label>
+            <hr class="row">
+            <div class="data">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos expedita ullam ipsum nemo vero ut veniam. Et ipsam nemo ut nesciunt perspiciatis animi eaque asperiores! Asperiores inventore at numquam ab?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box">
+            <label for="btn2">
+                what is Accordion
+            </label>
+            <hr class="row">
+            <div class="data">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos expedita ullam ipsum nemo vero ut veniam. Et ipsam nemo ut nesciunt perspiciatis animi eaque asperiores! Asperiores inventore at numquam ab?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box">
+            <label for="btn2">
+                what is Accordion
+            </label>
+            <hr class="row">
+            <div class="data">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos expedita ullam ipsum nemo vero ut veniam. Et ipsam nemo ut nesciunt perspiciatis animi eaque asperiores! Asperiores inventore at numquam ab?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

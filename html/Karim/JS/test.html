@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    
+    <script>
+        function print_num(num){
+            let sum=0;
+            let result="";
+            if(num != null && Number.isInteger(num)==true){
+                if(num%2==0){
+                    for(let i=0; i<=num ; i+=2){
+                        sum += i;
+                        result += i + "<br>";
+                    }
+                    return result + "The Sum of All Even Above :" + sum;
+                }
+                else{
+                    for(let i=1; i<=num ; i+=2){
+                        sum += i;
+                        result += i + "<br>";
+                    }
+                    return result + "The ODD of All Above :" + sum;
+                }
+
+            }
+            else{
+                return "Please Provide a Number";
+            }
+            
+        }
+
+
+        // document.write(print_num(10))
+
+        function print_arr(arr){
+            let result="";
+            if(arr!=null && Array.isArray(arr)==true){
+                for(data of arr){
+                    result += data + "<br>";
+                }
+                return result;
+            }
+            else{
+                return "Please Provide an Array";
+            }
+        }
+
+        let name=["Amit","Bablu","Amit"];
+
+        // document.write(print_arr(name))
+
+        function check_num(num){
+            if(num!=null && Number.isInteger(num)){
+                if(num%2==0){
+                    return num + " is an Even Number";
+                }
+                else{
+                    return num + " is a Odd Number";
+                }
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // document.write(check_num(11))
+
+
+        function print_data(row){
+            let result="";
+            if(row!=null && Number.isInteger(row)==true){
+                for(let i=1 ; i<=row ; i++){
+
+                    for(let j=1; j<=i; j++){
+                        // result +=i +" ";
+                        result += "* ";
+
+                    }
+
+                    result +="<br>";
+                }
+                return result;
+            }
+            else{
+                return "Please Enter Valid Row Number";
+            }
+        }
+
+
+        // document.write(print_data(15))
+
+        function print_data1(row){
+            let result="";
+            if(row!=null && Number.isInteger(row)==true){
+                for(let i=1 ; i<=row ; i++){
+
+                    for(let j=1; j<=row; j++){
+                        result +=i +" ";
+                        // result += "* ";
+
+                    }
+
+                    result +="<br>";
+                }
+                return result;
+            }
+            else{
+                return "Please Enter Valid Row Number";
+            }
+        }
+
+        document.write(print_data1(9))
+    </script>
+</body>
+</html>

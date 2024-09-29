@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: blueviolet;
+            color: white;
+            height: 50px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: cursive;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a{
+            display: block;
+            color: white;
+            font-size: large;
+            margin: 0 10px;
+            padding: 0 10px;
+            line-height: 50px;
+        }
+
+        .nav .links li a:hover{
+            background-color: red;
+        }
+
+        .nav label{
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .nav label,
+        .nav label .open,
+        .nav label .close{
+            display: none;
+        }
+
+        @media screen and (max-width:600px){
+            .nav label,
+        .nav label .open{
+            display: block;
+        }
+
+        .nav .links{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: grey;
+            flex-direction: column;
+            text-align: center;
+            display: none;
+        }
+
+        .nav .links li a{
+      
+            margin: 0;
+        }
+
+        #btn:checked + .links{
+            display: block;
+        }
+
+        #btn:checked ~ label .open{
+            display: none;
+        }
+
+
+        #btn:checked ~ label .close{
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <input type="checkbox" id="btn">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <label for="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+    </div>
+</body>
+</html>

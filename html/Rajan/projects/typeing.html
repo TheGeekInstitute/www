@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Test</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    .typing-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    }
+
+    textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 18px;
+    }
+
+    #stats {
+    margin-top: 20px;
+    }
+
+    #start-btn, #reset-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="typing-container">
+    <h1>Typing Test</h1>
+    <div class="text-to-type">
+      <p id="test-text">The quick brown fox jumps over the lazy dog.</p>
+    </div>
+    <textarea id="user-input" placeholder="Start typing..."></textarea>
+    <div id="stats">
+      <p>Time: <span id="timer">60</span> seconds</p>
+      <p>WPM: <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="accuracy">100%</span></p>
+    </div>
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+  </div>
+  <script>
+    let timer = 60;
+    let typingInterval;
+    let wordsTyped = 0;
+    let totalChars = 0;
+    let correctChars = 0;
+
+    const testText = document.getElementById('test-text').innerText;
+    const userInput = document.getElementById('user-input');
+    const timerDisplay = document.getElementById('timer');
+    const wpmDisplay = document.getElementById('wpm');
+    const accuracyDisplay = document.getElementById('accuracy');
+
+    function startTypingTest() {
+    typingInterval = setInterval(() => {
+        timer--;
+        timerDisplay.innerText = timer;
+        if (timer === 0) {
+        clearInterval(typingInterval);
+        endTypingTest();
+        }
+    }, 1000);
+
+    userInput.addEventListener('input', handleTyping);
+    }
+
+    function handleTyping() {
+    const currentInput = userInput.value;
+    totalChars = currentInput.length;
+
+    correctChars = 0;
+    for (let i = 0; i < currentInput.length; i++) {
+        if (currentInput[i] === testText[i]) {
+        correctChars++;
+        }
+    }
+
+    wordsTyped = currentInput.split(' ').length;
+    const wpm = Math.round((wordsTyped / (60 - timer)) * 60);
+    const accuracy = Math.round((correctChars / totalChars) * 100);
+
+    wpmDisplay.innerText = wpm;
+    accuracyDisplay.innerText = accuracy + '%';
+    }
+
+    function endTypingTest() {
+    alert('Typing test completed!');
+    }
+
+    document.getElementById('start-btn').addEventListener('click', startTypingTest);
+    const express = require('express');
+    const app = express();
+    const bodyParser = require('body-parser');
+
+    app.use(bodyParser.json());
+
+    // Example endpoint to save scores
+    app.post('/submit-score', (req, res) => {
+    const { username, score } = req.body;
+    // Save the score in the database (pseudo-code)
+    saveToDatabase(username, score);
+    res.send('Score saved!');
+    });
+
+    function saveToDatabase(username, score) {
+    // Function to save data to the database
+    }
+
+    app.listen(3000, () => {
+    console.log('Server running on port 3000');
+    });
+
+  </script>
+</body>
+</html>

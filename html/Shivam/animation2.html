@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplan animation</title>
+    <style>
+        @keyframes plane {
+            0%{
+                left: 5vw;
+                bottom: 50vh;
+            }
+            50%{
+                left: 50vw;
+                bottom: 20vh;
+
+            }
+            100%{
+                left: 100vw;
+                bottom: 10vh;
+
+
+            }
+
+        }
+        @keyframes plane2 {
+            0%{
+                right: -25vw;
+                bottom: -25vh;
+            }
+            50%{
+                right: 30vw;
+                bottom: 50vh;
+
+            }
+            100%{
+                right: 100vw;
+                bottom: 120vh;
+
+
+            }
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: borderbox;
+
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            overflow-x: hidden;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo0Q8TpOxLFEszohV6cxCbaMzJN6TBiEaHdw&usqp=CAU");
+            background-size: cover;
+        }
+        .plane{
+            height: 200px;
+            width: 400px;
+            position: relative;
+            z-index: 150;
+            /* bottom: 100px; */
+            margin-top: 500px;
+            animation-name: plane ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black);
+            /* left: -320px;          */
+            
+        }
+        .plane2{
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            z-index: 150;
+            /* bottom: 100px; */
+            margin-top: 500px;
+            animation-name: plane2 ;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black);
+            /* left: -320px;          */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <!-- <img src="https://www.animatedimages.org/data/media/71/animated-aeroplane-image-0113.gif" alt=""> -->
+       <div class="plan1">
+        <img src="https://www.animatedimages.org/data/media/71/animated-aeroplane-image-0264.gif" alt="" class="plane">
+       </div>
+       <div class="plane2">
+        <img src="https://www.animatedimages.org/data/media/71/animated-aeroplane-image-0015.gif" alt="">
+       </div>
+    </div>
+    
+</body>
+</html>

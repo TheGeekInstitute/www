@@ -1,0 +1,763 @@
+geek@CodeServer:~$ mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 31
+Server version: 10.11.6-MariaDB-0+deb12u1 Debian 12
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use Akash
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [Akash]> show tables;
++-----------------+
+| Tables_in_Akash |
++-----------------+
+| emp             |
+| empdb           |
+| img             |
+| notepad         |
+| user_table      |
+| users           |
+| voting          |
++-----------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [Akash]> select char(65);
++----------+
+| char(65) |
++----------+
+| A        |
++----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select char(65) as "Character";
++-----------+
+| Character |
++-----------+
+| A         |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select char(65,66,67,68) as "Character";
++-----------+
+| Character |
++-----------+
+| ABCD      |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select concat("hello","World") as Concat;
++------------+
+| Concat     |
++------------+
+| helloWorld |
++------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select concat("hello ", name) from emp;
++------------------------+
+| concat("hello ", name) |
++------------------------+
+| hello Sita             |
+| hello Sonu             |
+| hello Babita           |
+| hello Shivam           |
+| hello asdas            |
+| hello adas             |
+| hello sadas            |
++------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select concat("hello ", name) from emp as Hello;
++------------------------+
+| concat("hello ", name) |
++------------------------+
+| hello Sita             |
+| hello Sonu             |
+| hello Babita           |
+| hello Shivam           |
+| hello asdas            |
+| hello adas             |
+| hello sadas            |
++------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select concat("hello ", name) as hello from emp ;
++--------------+
+| hello        |
++--------------+
+| hello Sita   |
+| hello Sonu   |
+| hello Babita |
+| hello Shivam |
+| hello asdas  |
+| hello adas   |
+| hello sadas  |
++--------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select lower("ABCD");
++---------------+
+| lower("ABCD") |
++---------------+
+| abcd          |
++---------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select lower(name) from emp;
++-------------+
+| lower(name) |
++-------------+
+| sita        |
+| sonu        |
+| babita      |
+| shivam      |
+| asdas       |
+| adas        |
+| sadas       |
++-------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select upper(name) from emp;
++-------------+
+| upper(name) |
++-------------+
+| SITA        |
+| SONU        |
+| BABITA      |
+| SHIVAM      |
+| ASDAS       |
+| ADAS        |
+| SADAS       |
++-------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select substr("ABCDEFGHIJKLM",3,4);
++-----------------------------+
+| substr("ABCDEFGHIJKLM",3,4) |
++-----------------------------+
+| CDEF                        |
++-----------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select substring(name,1,2) from emp;
++---------------------+
+| substring(name,1,2) |
++---------------------+
+| Si                  |
+| So                  |
+| Ba                  |
+| Sh                  |
+| as                  |
+| ad                  |
+| sa                  |
++---------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select substring(name,1,2) from emp;
++---------------------+
+| substring(name,1,2) |
++---------------------+
+| Si                  |
+| So                  |
+| Ba                  |
+| Sh                  |
+| as                  |
+| ad                  |
+| sa                  |
++---------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [Akash]> select "         ABCD       ";
++----------------------+
+| ABCD                 |
++----------------------+
+|          ABCD        |
++----------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select ltrim("       ABCD        ");
++------------------------------+
+| ltrim("       ABCD        ") |
++------------------------------+
+| ABCD                         |
++------------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select rtrim("       ABCD        ");
++------------------------------+
+| rtrim("       ABCD        ") |
++------------------------------+
+|        ABCD                  |
++------------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select trim("       ABCD        ");
++-----------------------------+
+| trim("       ABCD        ") |
++-----------------------------+
+| ABCD                        |
++-----------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select trim("       ABCD        ") as ABCD;
++------+
+| ABCD |
++------+
+| ABCD |
++------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select instr("ABCDEFGHIJKL","L");
++---------------------------+
+| instr("ABCDEFGHIJKL","L") |
++---------------------------+
+|                        12 |
++---------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select instr("ABCDEFGHIJKL","B");
++---------------------------+
+| instr("ABCDEFGHIJKL","B") |
++---------------------------+
+|                         2 |
++---------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select length("ABCD");
++----------------+
+| length("ABCD") |
++----------------+
+|              4 |
++----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select name,length(name) from emp;;
++--------+--------------+
+| name   | length(name) |
++--------+--------------+
+| Sita   |            4 |
+| Sonu   |            4 |
+| Babita |            6 |
+| Shivam |            6 |
+| asdas  |            5 |
+| adas   |            4 |
+| sadas  |            5 |
++--------+--------------+
+7 rows in set (0.000 sec)
+
+ERROR: No query specified
+
+MariaDB [Akash]> select left("ABCDE",3)
+    -> ;
++-----------------+
+| left("ABCDE",3) |
++-----------------+
+| ABC             |
++-----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select right("ABCDE",3);
++------------------+
+| right("ABCDE",3) |
++------------------+
+| CDE              |
++------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select left(name,1) from emp;
++--------------+
+| left(name,1) |
++--------------+
+| S            |
+| S            |
+| B            |
+| S            |
+| a            |
+| a            |
+| s            |
++--------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select left(name,1),right(name,1) from emp;
++--------------+---------------+
+| left(name,1) | right(name,1) |
++--------------+---------------+
+| S            | a             |
+| S            | u             |
+| B            | a             |
+| S            | m             |
+| a            | s             |
+| a            | s             |
+| s            | s             |
++--------------+---------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select concat(left(name,1),length(name),right(name,1)) from emp;
++-------------------------------------------------+
+| concat(left(name,1),length(name),right(name,1)) |
++-------------------------------------------------+
+| S4a                                             |
+| S4u                                             |
+| B6a                                             |
+| S6m                                             |
+| a5s                                             |
+| a4s                                             |
+| s5s                                             |
++-------------------------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select concat(left(name,1),"...",right(name,1)) from emp;
++------------------------------------------+
+| concat(left(name,1),"...",right(name,1)) |
++------------------------------------------+
+| S...a                                    |
+| S...u                                    |
+| B...a                                    |
+| S...m                                    |
+| a...s                                    |
+| a...s                                    |
+| s...s                                    |
++------------------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select mid("ABCDEF",3,2);
++-------------------+
+| mid("ABCDEF",3,2) |
++-------------------+
+| CD                |
++-------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select mod(10,3);
++-----------+
+| mod(10,3) |
++-----------+
+|         1 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select mod(10,2);
++-----------+
+| mod(10,2) |
++-----------+
+|         0 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select pow(10,2);
++-----------+
+| pow(10,2) |
++-----------+
+|       100 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select pow(10,3);
++-----------+
+| pow(10,3) |
++-----------+
+|      1000 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select pow(10,4);
++-----------+
+| pow(10,4) |
++-----------+
+|     10000 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select round(salary) from emp;
++---------------+
+| round(salary) |
++---------------+
+|          7800 |
+|          6500 |
+|          7800 |
+|         48325 |
+|          3424 |
+|          1231 |
+|            23 |
++---------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select name, round(salary) from emp;
++--------+---------------+
+| name   | round(salary) |
++--------+---------------+
+| Sita   |          7800 |
+| Sonu   |          6500 |
+| Babita |          7800 |
+| Shivam |         48325 |
+| asdas  |          3424 |
+| adas   |          1231 |
+| sadas  |            23 |
++--------+---------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select name, round(salary) from emp;
++--------+---------------+
+| name   | round(salary) |
++--------+---------------+
+| Sita   |          7800 |
+| Sonu   |          6500 |
+| Babita |          7800 |
+| Shivam |         48325 |
+| asdas  |          3424 |
+| adas   |          1231 |
+| sadas  |            23 |
++--------+---------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select round(10.258);
++---------------+
+| round(10.258) |
++---------------+
+|            10 |
++---------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select round(10.558);
++---------------+
+| round(10.558) |
++---------------+
+|            11 |
++---------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select round(10.558,1);
++-----------------+
+| round(10.558,1) |
++-----------------+
+|            10.6 |
++-----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select round(10.558,2);
++-----------------+
+| round(10.558,2) |
++-----------------+
+|           10.56 |
++-----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select round(10.558,1);
++-----------------+
+| round(10.558,1) |
++-----------------+
+|            10.6 |
++-----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sign(-25);
++-----------+
+| sign(-25) |
++-----------+
+|        -1 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sign(-21);
++-----------+
+| sign(-21) |
++-----------+
+|        -1 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sign(-23);
++-----------+
+| sign(-23) |
++-----------+
+|        -1 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sign(23);
++----------+
+| sign(23) |
++----------+
+|        1 |
++----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sqrt(25);
++----------+
+| sqrt(25) |
++----------+
+|        5 |
++----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sqrt(1000);
++--------------------+
+| sqrt(1000)         |
++--------------------+
+| 31.622776601683793 |
++--------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sqrt(100);
++-----------+
+| sqrt(100) |
++-----------+
+|        10 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select truncate(15.4545,1);
++---------------------+
+| truncate(15.4545,1) |
++---------------------+
+|                15.4 |
++---------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select truncate(15.4545,1);
++---------------------+
+| truncate(15.4545,1) |
++---------------------+
+|                15.4 |
++---------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curdate();
++------------+
+| curdate()  |
++------------+
+| 2024-03-22 |
++------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select current_date();
++----------------+
+| current_date() |
++----------------+
+| 2024-03-22     |
++----------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select current_date;
++--------------+
+| current_date |
++--------------+
+| 2024-03-22   |
++--------------+
+1 row in set (0.000 sec)
+
+
+MariaDB [Akash]> select date;
+ERROR 1054 (42S22): Unknown column 'date' in 'field list'
+MariaDB [Akash]> select date(2024-06-12);
++------------------+
+| date(2024-06-12) |
++------------------+
+| NULL             |
++------------------+
+1 row in set, 1 warning (0.000 sec)
+
+MariaDB [Akash]> select date('2024-06-12');
++--------------------+
+| date('2024-06-12') |
++--------------------+
+| 2024-06-12         |
++--------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select month('2024-06-12');
++---------------------+
+| month('2024-06-12') |
++---------------------+
+|                   6 |
++---------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select day('2024-06-12');
++-------------------+
+| day('2024-06-12') |
++-------------------+
+|                12 |
++-------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select year('2024-06-12');
++--------------------+
+| year('2024-06-12') |
++--------------------+
+|               2024 |
++--------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:34  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:36  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:36  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:37  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:37  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:37  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:38  |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select curtime();
++-----------+
+| curtime() |
++-----------+
+| 11:52:39  |
++-----------+
+1 row in set (0.000 sec)
+
+
+MariaDB [Akash]> select concat(curdate(),"-",curtime());
++---------------------------------+
+| concat(curdate(),"-",curtime()) |
++---------------------------------+
+| 2024-03-22-11:53:07             |
++---------------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select concat(curdate()," - ",curtime());
++-----------------------------------+
+| concat(curdate()," - ",curtime()) |
++-----------------------------------+
+| 2024-03-22 - 11:53:14             |
++-----------------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select concat(curdate()," - ",curtime()) as CurrentDateandTime;
++-----------------------+
+| CurrentDateandTime    |
++-----------------------+
+| 2024-03-22 - 11:53:23 |
++-----------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select dayname('2024-06-12');
++-----------------------+
+| dayname('2024-06-12') |
++-----------------------+
+| Wednesday             |
++-----------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select dayname('2024-03-22');
++-----------------------+
+| dayname('2024-03-22') |
++-----------------------+
+| Friday                |
++-----------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select dayofmonth('2024-03-22');
++--------------------------+
+| dayofmonth('2024-03-22') |
++--------------------------+
+|                       22 |
++--------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select dayofyear('2024-03-22');
++-------------------------+
+| dayofyear('2024-03-22') |
++-------------------------+
+|                      82 |
++-------------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select sysdate();
++---------------------+
+| sysdate()           |
++---------------------+
+| 2024-03-22 11:54:22 |
++---------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select now();
++---------------------+
+| now()               |
++---------------------+
+| 2024-03-22 11:54:29 |
++---------------------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]>

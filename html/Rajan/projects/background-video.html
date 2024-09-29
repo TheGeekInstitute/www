@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-video</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 1px solid black;
+            width: 100vw;
+            height: 48rem;
+        }
+        .box video{
+            width: 100%;
+            height: 95%;
+        }
+        .btn{
+            /* border: 1px solid black; */
+            width: 100%;
+            text-align: center;
+        }
+        i{
+            text-shadow: 2px 2px 2px black;
+        }
+        .fa-play.show{
+            display: block;
+        }
+        .fa-play.hidden{
+            display: none;
+        }
+        .fa-pause.show{
+            display: block;
+        }
+        .fa-pause{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <video id="#video" src="../../video.mp4"></video>
+        <div class="btn">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-pause"></i>
+        </div>
+    </div>
+    <script>
+        let video1=document.querySelector("video");
+        let play1=document.querySelector('.fa-play');
+        let pause1=document.querySelector('.fa-pause');
+        play1.addEventListener("click",()=>{
+            video1.play();
+            play1.classList.add("hidden");
+            pause1.classList.add("show");
+        })
+        pause1.addEventListener("click",()=>{
+            pause1.classList.remove("show");
+            play1.classList.remove("hidden");
+            play1.classList.add("show");
+            video1.pause();
+        })
+    </script>
+</body>
+</html>

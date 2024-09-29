@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mera mediaquery</title>
+    <style>
+        *{
+            /* margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; */
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+        }
+
+        @media print{
+            .box p{
+                color: red;
+            }
+        }
+
+        @media screen and .(max-width:600px){
+            .box{
+                background-color: yellow;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+     <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure sapiente deserunt quas doloremque tenetur, quia vitae exercitationem excepturi rem maxime. Soluta ullam quasi necessitatibus sit suscipit omnis facilis nemo harum.</p>
+     </div>
+     
+</body>
+</html>

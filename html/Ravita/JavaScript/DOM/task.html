@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+ 
+
+
+
+        body {
+            background-image:linear-gradient(rgb(243, 151, 167),rgb(93, 195, 241)) ;
+            /* background-color: pink; */
+            
+
+        }
+
+
+        .container {
+            border: 2px solid black;
+            height: 350px;
+            width: 300px;
+            text-align: center;
+            margin: 145px auto;
+            padding: 0 20px;
+            /* background-color: ; */
+           border-radius: 6px;
+            
+
+
+        }
+
+        .container input {
+            border: 1.5px solid black;
+            height: 3rem;
+            width: 16rem;
+            /* width: 100%; */
+            margin-top: 15px;
+            margin-bottom: 18px;
+            border-radius: 4px;
+            background-color: rgba(146, 245, 162, 0.986);
+            font-size: large;
+            padding: 0 3px;
+            outline: none;
+
+        }
+
+        .container .btns {
+            display: grid;
+            gap: 4px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            cursor: pointer;
+
+
+
+        }
+
+        .container .btns {
+            /* width: 275px; */
+            height: 250px;
+
+        }
+
+        .container .zero {
+            grid-area: 5 / 1 / 6/ 3;
+        }
+
+        .container .btns .equal {
+            grid-area: 4 / 4 / 6/ 5;
+
+        }
+
+        .container .btns button {
+            margin: 4px;
+            /* border: 2px solid  black; */
+            border: 1px solid white;
+            font-size: x-large;
+            border-radius: 4px;
+        /* cursor: pointer; */
+        background-color: lightslategray;
+           
+            /* box-shadow: 2px ,2px ,5px black; */
+        }
+
+        .container .btns .main {
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="box">
+<div class="btn">
+    <div class="container">
+
+        <input type="text" class="result">
+
+        <div class="btns">
+
+            <button class="main clear">C</button>
+            <button class="main mplus">M+</button>
+            <button class="main divide">/</button>
+            <button class="main multiply">*</button>
+            <!-- // -->
+             <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <!-- // -->
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <!-- // -->
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="equal">=</button>
+            <!-- // -->
+            <button class="zero">0</button>
+            <button>.</button>
+        </div>
+
+    </div>
+</div>
+</div>
+
+    <script>
+        let res =  document.querySelector(".result");
+        let btns=  Array.from(document.querySelector(".btns").children);
+
+        let calc="";
+
+        btns.forEach((e)=>{
+           e.addEventListener("click",()=>{
+       
+            if(e.innerHTML=="="){
+                res.value = eval(res.value)
+            }
+            else if(e.innerHTML=="C"){
+                res.value="";
+            }
+            else if(e.innerHTML=="M+"){
+                console.log(res.value)
+                res.value=""
+            }
+            else{
+                res.value+=e.innerHTML;
+            }
+
+
+           })
+        
+        
+        })
+
+        
+    </script>
+
+
+</body>
+
+</html>

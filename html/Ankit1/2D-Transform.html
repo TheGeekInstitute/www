@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .box{
+            height: 250px;
+            width: 200px;
+            background-color: crimson;
+            margin: 150px auto;
+            transition: all 1s linear;
+        }
+
+        .box:hover{
+            /* transform: translate(100px,100px); */
+            /* transform: rotate(60deg); */
+
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            transform: skew(60deg) rotate(360deg) scale(1.5);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

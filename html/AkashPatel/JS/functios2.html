@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function name(){
+            document.write("hello world")
+        }
+        // name()
+
+
+       function name(name){
+        if(name!=null){
+            return "hi " + name
+        }
+        else{
+            return "Please enter your name"
+        
+       }
+    }
+
+    //    name("akash")
+    //    document.write(name("akash"))
+
+
+    function logo(not){
+        if(not!=null){
+            return "hi " + not
+        }
+        else{
+            return "please enter your name"
+        }
+    }
+
+    // logo("Akash Patel")
+    // document.write(logo("Akash Patel"))
+
+
+    function max(){
+        let a = prompt("Enter the value of 'a' ")
+        let b = prompt("Enter the value of 'b'")
+        let c = prompt("Enter the value of 'c'")
+        
+        if(a!=null && b!=null && c!=null){
+            if(a>b && a>c){
+                return a + "is grater then" + b + "and also " + c
+            }
+            else if(b>c && b>a){
+                return b + "is grater then" + c + "and aslo" + a
+            }
+            else if(c>a && c>b ){
+                return c + "is grater then" + a + "and also" + b
+            }
+            else{
+                return "All number is equal"
+            }
+        }
+        else{
+              return "Please Provide Three Numbers"
+        }
+        
+        
+
+    }
+    document.write(max(6 ,5,6))
+
+    </script>
+</body>
+</html>

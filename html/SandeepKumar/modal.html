@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            inset: 0;
+            display: none;
+        }
+
+        .container .modal{
+            background-color: white;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 200px);
+        }
+
+        .container .modal .heading{
+            display: flex;
+            background-color: rebeccapurple;
+            color: white;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            font-size: xx-large;
+            user-select: none;
+        }
+
+        .container .modal .content{
+            padding: 5px;
+        }
+
+        #btn:checked + .container{
+            display: block;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        .abcd{
+            background-color: royalblue;
+            display: block;
+            width: 100px;
+            text-align: center;
+            line-height: 34px;
+            color: white;
+            cursor: pointer;
+            margin: 150px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="btn" class="abcd">Open</label>
+
+    <input type="checkbox" id="btn">
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>Heading</p>
+                <label for="btn">X</label>
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores animi soluta expedita nulla quibusdam voluptas, eaque veritatis beatae dolorem. Aliquam ullam cumque aliquid eius commodi! Officia rerum quae quisquam quis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

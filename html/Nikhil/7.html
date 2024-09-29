@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(220, 255, 243);
+        }
+
+        .card{
+            background-color: aquamarine;
+            /* border: 2px solid black; */
+            text-align: center;
+            height: 340px;
+            width: 270px;
+            margin: auto;
+            margin-top: 180px;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0px 0px 40px black;
+        }
+
+        .card img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* padding: 20px; */
+            margin: 10px 0;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .card .name{
+            font-size: 35px;
+            font-weight: 900;
+            font-family: cursive;
+            text-shadow: 0px 0px 5px rebeccapurple;
+        }
+
+
+        .card .about{
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .icons{
+            margin-top: 15px;
+            font-size: 35px;
+        }
+        .icons ion-icon{
+            margin: 0 7px; 
+        }
+
+        .icons .ig{
+            color: palevioletred;
+
+        }
+
+        .icons .fb{
+            color: blue;
+        }
+
+        .icons .yt{
+            color: red;
+        }
+
+        .icons .gt{
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://scontent.fdel10-1.fna.fbcdn.net/v/t39.30808-1/349582347_198507606458975_3629117831838954078_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=gDxOS_BnsFwAX-NzJ3R&_nc_ht=scontent.fdel10-1.fna&oh=00_AfASm-2G3oieVqHenjT8rQByYqKuIBzi2LTKjiblbZg3zQ&oe=64B6A050" alt="ABCD">
+        <div class="name">Mani Kumar</div>
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quas, nihil itaque assumenda repellat corporis qui praesentium</p>
+
+        <div class="icons">
+            <a href="https://ionic.io/ionicons"><ion-icon name="logo-instagram" class="ig"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook" class="fb"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube" class="yt"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-github" class="gt"></ion-icon></a>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</body>
+</html>

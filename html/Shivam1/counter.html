@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .box{
+            counter-reset: secation;
+
+        }
+        .box h2{
+            text-indent: 30px;
+            color: rgb(22, 42, 214);
+        }
+        
+        h1::before{
+            content: counter(secation) " " ;
+            counter-increment:secation ;
+        }
+        h1{
+            counter-reset: sub;
+        }
+
+        h2::before{
+            content:  counter(secation) "." counter(sub) " ";
+            counter-increment:sub ;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>One</h1>
+            <h2>one.one</h2>
+            <h2>one.two</h2>
+            <h2>one.three</h2>
+        <h1>Two</h1>
+            <h2>two.one</h2>
+            <h2>two.two</h2>
+            <h2>two.three</h2>
+        <h1>Three</h1>
+            <h2>three.one</h2>
+            <h2>three.two</h2>
+            <h2>three.three</h2>
+    </div>
+
+</body>
+</html>

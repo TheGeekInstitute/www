@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 400px;
+        }
+
+        .child{
+            background-color: red;
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta saepe dolorum quibusdam recusandae. Perspiciatis eius explicabo provident, necessitatibus enim labore fugit voluptatibus autem sequi reiciendis? Laboriosam, quisquam nemo. Fugiat?</p>
+        <h1 class="old">Old Para</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos cum iusto architecto nostrum laudantium, omnis magnam nisi est, dolores rerum quos ullam quo numquam sequi tempore doloremque soluta aut.</p>
+    </div>
+
+    <button onclick="add()">Add</button>
+
+    <script>
+        // let element = document.createElement("h1");
+       
+        // let div = document.createElement("div");
+     
+        // let text = document.createTextNode("This is Simple text");
+        
+
+       
+        // let box = document.querySelector(".box");
+        // console.log(box)
+        // let comment = document.createComment("This is comment");
+        // let old = document.querySelector(".old");
+        // element.append(text);
+
+
+        // box.appendChild(element)
+        // box.appendChild(div)
+        // document.write(box)
+
+
+        // box.insertBefore(element,old)
+        // box.insertBefore(element,box.children[0])
+
+        
+
+        
+
+        // console.log(element)
+
+
+
+        function add(){
+       
+        let div = document.createElement("div");
+        let box = document.querySelector(".box");
+        div.classList.add("child")
+        box.appendChild(div)
+        }
+    </script>
+</body>
+</html>

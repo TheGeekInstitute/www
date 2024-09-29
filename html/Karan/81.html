@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .navbar{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            box-shadow: 2px 2px 3px black;
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .navbar ul li{
+            float: left;
+        }
+
+        .navbar ul li a{
+            color: white;
+            display: block;
+            /* margin: 0 5px; */
+            padding: 37px 10px;
+        }
+
+        .navbar ul li ul{
+            position:absolute;
+            /* left:0; */
+            /* width: 200px; */
+        }
+
+       .navbar ul li ul li{
+        width: 100%;
+       }
+
+       .navbar ul li ul li a{
+        padding: 15px ;
+        margin-top: 15px;
+       }
+
+
+        .navbar ul li a:hover{
+            background-color: greenyellow;
+            color: red;
+        }
+       
+        .items{
+            background-color: black;
+            visibility: hidden;
+        }
+
+        .navbar ul li:hover .items{
+            visibility: visible;
+        }
+        .hero{
+            background-image: url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwaG91c2V8ZW58MHx8MHx8&w=1000&q=80");
+           
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 80vh;
+            column-rule: 5px solid red;
+            border: 10px solid red;
+            column-count: 4;
+            text-align: justify;
+            column-gap: 20px;
+            column-width: 100px;
+            text-shadow: darkkhaki;
+
+        }
+        @font-face {
+            font-family: karanFont;
+            src: url("C:\Users\GeekInstitute\Downloads\karan.81");
+        }
+       
+        .footer{
+            background-color: black;
+            color: white;
+            height: 10vh;
+            text-align: center;
+            padding: 30px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">LOGO</h1>
+            <ul>
+                <li><a href="#" class="sub">Home</a>
+                <ul class="items">
+                    <li><a href="#">home 1</a></li>
+                    <li><a href="#">Home2</a></li>
+                </ul>
+            </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+       <!-- <h1>THIS IS MY OFFICIAL WEBSITE</h1> -->
+       <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ut porro labore, veniam laboriosam iste libero ratione dolores suscipit amet voluptas saepe veritatis ea numquam, modi, cupiditate expedita vitae commodi.
+       Ducimus temporibus, laudantium quo, hic reiciendis quasi totam deserunt sint quod eaque cum? Doloremque quaerat odit reprehenderit illum unde cupiditate ratione quos itaque asperiores. Minima unde aspernatur assumenda dolorem quibusdam.
+       Ullam commodi consectetur ut quisquam vel tempora! Voluptatem sunt, aliquam eaque non doloribus veniam saepe! Fugit quasi sunt, obcaecati veniam laboriosam necessitatibus, doloremque magni est voluptas deserunt provident corrupti dolorem.
+       Iusto eos accusantium officiis ab non fugiat id modi illum labore mollitia harum et voluptates, sapiente placeat esse voluptate quos ipsam quis quod voluptas vero aspernatur? Omnis optio harum voluptatem.
+       Est fugiat sed similique, ipsum aperiam, molestiae, cupiditate facilis aspernatur eum excepturi laboriosam aut perferendis aliquam nam repellat temporibus fuga ipsa. Dolores nihil iure eos praesentium dignissimos. In, quibusdam earum!
+       Repellendus, accusantium quis! Ex est id rerum culpa distinctio quia eaque asperiores ea excepturi harum saepe aspernatur repellendus suscipit quos maxime aliquam atque, vero beatae cupiditate illo? Saepe, architecto optio.
+       Eius inventore ducimus laboriosam excepturi. Eos doloribus dicta eius, minima soluta quibusdam temporibus voluptatibus eaque saepe, dolore aliquid sunt quia provident numquam autem quisquam nulla perspiciatis. Soluta earum consequuntur impedit!
+       Facere alias sequi, maiores ratione libero harum natus non, distinctio voluptate tempore aliquid molestias, nam dolorum officia suscipit facilis pariatur assumenda at totam est aspernatur mollitia magnam! Repellat, cupiditate quisquam!
+       Animi dolor vero nobis! Id, libero! Ullam excepturi natus consectetur dolore, totam omnis officia ratione, deserunt sint ea harum adipisci rerum saepe quibusdam officiis consequatur. Beatae minus perspiciatis distinctio repudiandae.
+       Minus molestiae quidem veritatis maiores necessitatibus tenetur! Exercitationem perferendis vero debitis sapiente, aliquam rerum, saepe voluptates distinctio atque doloribus ea officia laborum quidem? Numquam a labore ad reiciendis similique voluptatibus!
+       Accusamus fugit tempora autem velit veniam cumque quia voluptas perferendis cupiditate itaque? Numquam vitae sed possimus. Ratione corrupti, sunt enim incidunt, nulla ut debitis quia iure ab repellendus, quas a.
+       Ratione sed eligendi iusto quam voluptate tempore error nisi corrupti, quaerat quasi qui perferendis culpa ipsum doloremque accusantium dicta eaque eius numquam ducimus ea, id, nesciunt distinctio voluptates expedita. Alias.
+       Esse illo distinctio asperiores ad labore sunt atque minima eos rerum! Praesentium saepe id perferendis architecto necessitatibus, neque assumenda dolores, voluptates illo odio eos odit ipsa ex accusantium pariatur a.
+       Voluptatibus repellat porro commodi rerum, eveniet atque corporis veritatis excepturi laudantium veniam ipsa quo quia sed natus, vero ipsam neque sapiente voluptates perspiciatis. Impedit sapiente, soluta sit mollitia fugit rem.
+       Fuga dicta, dolore veritatis excepturi facere corrupti qui quisquam velit aliquam corporis reprehenderit accusamus, deserunt tempora perferendis a esse enim officiis asperiores soluta error! Molestiae culpa nemo voluptate quas explicabo.</P>
+       
+        </div>
+       
+        
+        <div class="footer">
+            <p>MY WEBSITE HAS COMPLATED</p>
+        </div>
+    </header>
+</body>
+</html>

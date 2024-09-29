@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        .container {
+            overflow: hidden;
+
+        }
+
+        .container .slider {
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500vw;
+            animation: slider 15s ease-in-out 0s infinite;
+
+        }
+
+        .container .slider .image {
+            height: 600px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .slider .image .content {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px groove rgba(128, 255, 0, 0.692);
+            border-radius: 10px 50px;
+            padding: 50px;
+            background-color: rgba(128, 128, 128, 0.432);
+            color: rgba(255, 255, 255, 0.76);
+        }
+
+        @keyframes slider {
+            0% {
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+
+            20% {
+                transform: translateX(-100vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40% {
+                transform: translateX(-200vw);
+            }
+            45%{
+                transform: translateX(-200vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60% {
+                transform: translateX(-300vw);
+            }
+            65%{
+                transform: translateX(-300vw);
+            }
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80% {
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(../Aasha/image/1.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis voluptate sint iusto culpa
+                    voluptatem necessitatibus magni amet cupiditate neque dignissimos eos laborum ducimus aliquid ullam,
+                    corrupti non eveniet modi.
+                </div>
+            </div>
+            <div class="image" style="background-image: url(../Aasha/image/2.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis voluptate sint iusto culpa
+                    voluptatem necessitatibus magni amet cupiditate neque dignissimos eos laborum ducimus aliquid ullam,
+                    corrupti non eveniet modi.
+                </div>
+            </div>
+            <div class="image" style="background-image: url(../Aasha/image/3.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis voluptate sint iusto culpa
+                    voluptatem necessitatibus magni amet cupiditate neque dignissimos eos laborum ducimus aliquid ullam,
+                    corrupti non eveniet modi.
+                </div>
+            </div>
+            <div class="image" style="background-image: url(../Aasha/image/4.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis voluptate sint iusto culpa
+                    voluptatem necessitatibus magni amet cupiditate neque dignissimos eos laborum ducimus aliquid ullam,
+                    corrupti non eveniet modi.
+                </div>
+            </div>
+            <div class="image" style="background-image: url(../Aasha/image/5.webp);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quis voluptate sint iusto culpa
+                    voluptatem necessitatibus magni amet cupiditate neque dignissimos eos laborum ducimus aliquid ullam,
+                    corrupti non eveniet modi.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

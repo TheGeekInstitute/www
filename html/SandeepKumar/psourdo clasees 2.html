@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second class</title>
+
+    <style>
+
+        input:focus{ background-color:rgba(0, 0, 0, 0.116);}
+
+        input:checked{ outline:2px solid black}
+
+        input:enabled{ background-color: green;}
+
+        input:disabled{background-color: red;}
+
+        input:read-only{ background-color: aqua;}
+
+        input:read-write{ background-color: blue;}
+
+        input:valid{background-color: purple;}
+
+        input:invalid{background-color: brown;}
+
+        input:in-range{  background-color: chartreuse;}
+
+        input:out-of-range{ background-color: burlywood;}
+
+        input:default{background-color: crimson;}
+    </style>
+</head>
+<body>
+
+    <h1>Regstration Form</h1>
+<form>
+    <label>First Name :</label>
+    <input type="text" placeholder="Enter First Name" disabled>
+    <br><br>
+    
+    <label>Last Name :</label>
+    <input type="text" placeholder="Enter Last Name" required>
+    <br><br>
+
+    <label>Gender :</label>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <br><br>
+
+    <label>DOB : </label>
+    <input type="date" readonly> 
+    <br><br>
+
+    <label>Email :</label>
+    <input type="Email">
+    <br><br>
+
+    <label>Phone Number :</label>
+    <input type="number" min="10" max="20">
+    <br><br>
+
+    <label>Password :</label>
+    <input type="password">
+
+    <br><br>
+
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox" checked>
+    <input type="checkbox" checked>
+    <input type="checkbox" checked>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+
+
+    <br><br>
+
+    <input type="submit" value="Register Now">
+    <input type="reset">
+
+    
+</form>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url("./image/back.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        .car{
+            height:300px;
+            position: absolute;
+            bottom: 20px;
+            left: -800px;
+            animation: car 10s linear 0s infinite;
+        }
+
+
+        @keyframes car {
+            0%{
+                transform: translateX(-800px);
+            }
+
+            100%{
+                transform: translateX(150vw);
+            }
+        }
+
+        @keyframes boy {
+            0%{
+                transform: translateX(15vw) rotateY(180deg);
+           
+
+            }
+
+            100%{
+                transform: translateX(-115vw) rotateY(180deg);
+            }
+        }
+
+
+        .boy{
+            height: 200px;
+       
+            position: absolute;
+            bottom: 25vh;
+            right: -15vw;
+            animation: boy 10s linear 0s infinite;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <img src="./image/car.gif" alt="" class="car">
+    <img src="./image/boy.gif" alt="" class="boy">
+
+</body>
+</html>

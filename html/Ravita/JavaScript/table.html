@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            height: 250px;
+            width: 150px;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+        } */
+ 
+
+        .box{
+            border:2px solid black;
+            height: 185px;
+            background-image: linear-gradient(rgb(142, 142, 235),rgb(253, 119, 141));
+            /* background-color:rgb(238, 175, 238); */
+            width: 120px;
+            display:inline-block;
+            padding:10px;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+    <script>
+        // function table(num){
+        //     let data="";
+        //     for(let i=1 ; i<=10 ; i++){
+        //         data += num + " x " + i + " = " + (num*i) + "<br>";
+        //     }
+
+        //     return data;
+        // }
+
+        // for(let i=1 ; i<=100 ; i++){
+        // document.write('<div class="box">'+table(i)+'</div>')
+
+        // }
+
+        //--- -revision-----///
+
+        function table(num){
+            let data = "";
+            for(let i=1 ; i<=10;  i++){
+                data += num + " x " +  i + " = " + (num*i) + "<br>";
+
+            }
+            return data;
+
+        }
+
+        for(let i=1; i<=100; i++){
+            document.write('<div class="box">'+table(i)+'</div>')
+        }
+
+    </script>
+
+</body>
+</html>

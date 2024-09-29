@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change{
+            color: red;
+            font-family: cursive;
+        }
+
+        .abcd{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quo asperiores nam quis rerum aliquid. Doloremque quasi accusantium, temporibus adipisci assumenda reiciendis voluptates nobis, dolore consequuntur iusto eligendi praesentium sit.</h1>
+
+    <button id="btn">Change</button>
+
+    <script>
+        let heading = document.querySelector(".heading");
+        let btn = document.querySelector("#btn");
+
+        btn.addEventListener('click',()=>{
+            // heading.classList.add("change")
+
+            heading.classList.toggle("change")
+
+            // console.log(heading.classList.contains('abcd'))
+
+            // console.log(heading.classList.item(0))
+            // console.log(heading.classList.length)
+
+        })
+    </script>
+</body>
+</html>

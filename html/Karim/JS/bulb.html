@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="bulbon()">On</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+    <button onclick="bulboff()">Off</button>
+
+    <script>
+        function bulbon(){
+            let bulb = document.getElementsByTagName("img")[0];
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif");
+        }
+
+        function bulboff(){
+            let bulb = document.getElementsByTagName("img")[0];
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+
+
+nav{
+    border: 1px solid red;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .left{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+}
+
+nav .left .logo img{
+    /* border: 1px solid gray; */
+    height: 4.5rem;
+    width: 5.5rem;
+}
+nav .left .search input{
+    height: 2.5rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #F0F5FF;
+    outline: none;
+    padding-left: 2rem;
+    font-family: Calibri;
+    font-size: large;
+    outline: none;
+    border: none;
+
+}

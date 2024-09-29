@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter backdrop-Filter</title>
+    <style>
+        img{
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+
+            /* filter: blur(3px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(150%) brightness(150%); */
+            /* box-shadow: 2px 2px red; */
+            /* filter: drop-shadow(2px 2px red); */
+            /* filter: grayscale(1); */
+            /* filter: hue-rotate(120deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%); */
+            /* filter: sepia(100%); */
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .box .one{
+            /* border: 2px solid red; */
+            height: 100px;
+            width: 100px;
+
+        }
+
+
+        @supports (backdrop-filter: blur(2px)){
+            .box .one{
+                backdrop-filter: blur(2px) brightness(150%);
+
+            }
+        }
+
+
+        @supports not (backdrop-filter: blur(2px)){
+            .box .one{
+                background-color: rgba(255, 255, 255, 0.336);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg" alt="">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/625px-Apple_logo_black.svg.png" alt=""> -->
+
+    
+
+
+    <div class="box">
+        <div class="one">
+            <h1>ABCD</h1>
+        </div>
+    </div>
+</body>
+</html>

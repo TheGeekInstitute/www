@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-pro1</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            /* border: 2px solid red; */
+            background-color: black;
+            height: 50px;
+            
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav ul li{
+            /* border: 1px solid red; */
+            /* line-height: 50px; */
+            margin: 11px 10px;
+            padding: 5px;
+            background-color: rgb(212, 32, 32);
+            border-radius: 4px;
+            text-align: center;
+            
+        }
+        .nav ul li a,.btn{
+            color: white;
+        }
+        .btn{
+            height: 30px;
+            width: 70px;
+            margin: 10px 10px;
+            background-color: rgb(12, 195, 219);
+            border-radius: 5px;
+            font-size: 20px;
+            border: none;
+            box-shadow: 2px 2px 5px rgb(204, 32, 32),-2px -2px 5px rgb(150, 15, 15);
+            
+
+
+        }
+        .nav img{
+            height: 40px; width: 40px;
+            border-radius: 50%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        
+        <ul>
+            <li><a href="#">Total student: <span>60</span></a></li>
+            <li><a href="#">Active student: <span>48</span></a></li>
+            <li><a href="#">Panding fee: <span>12</span></a></li>
+            <input type="button" value="Logout" class="btn">
+        </ul>
+    </div>
+</body>
+</html>

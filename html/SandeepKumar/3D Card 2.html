@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card 2</title>
+    <style>
+ *{padding: 0;
+   margin: 0;
+   box-sizing: border-box;}
+       
+.container{ 
+height: 300px;
+width: 300px;
+position: absolute;
+text-align: center;
+top: calc(50% - 150px);
+left: calc(50% - 150px);
+transform-style: preserve-3d;
+}
+.container .card{ height: 100%;
+width: 100%;
+transition: all .60s linear;
+transform-style: preserve-3d;}
+
+
+.container .card .Front,.container .card .Back{ height: 300px;
+width: 300px;
+/* font-size:30px; */
+/* line-height:300px; ; */
+position: absolute;
+backface-visibility: hidden;
+box-shadow: 0 0 30px black;
+border-radius: 10px;
+}
+
+.container .card .Front{ background-color: blue;
+background-image: url(../wallpapers/landscape/courtnie-tosana-school-of-dolphins-in-australia.jpg);
+background-position: center;
+padding-top: 263PX;
+background-size: cover;}
+
+.container .card .Back{ background-color:cyan;
+transform: rotateY(180deg);
+/* background-image: url(../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg); */
+background-position:center;
+background-size: cover;
+color: black;
+text-align:bottom;
+}
+
+.container:hover .card{ transform: rotateY(180deg);
+}
+
+.container .card .Front h1{background-color: rgba(255, 255, 255, 0.315);
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="Front"> <h1>Sandeep Kumar</h1>
+                <br> <br>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure repellat ratione sed, veritatis quod error autem, assumenda magnam consequatur eveniet nam fugit ab suscipit aliquid sunt eligendi pariatur. Voluptatibus!</p> -->
+                <i></i>
+            </div>
+            <div class="Back"> <h1>Sandeep Kumar</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure repellat ratione sed, veritatis quod error autem, assumenda magnam consequatur eveniet nam fugit ab suscipit aliquid sunt eligendi pariatur. Voluptatibus!</p></div>
+        </div>
+    </div>
+    
+</body>
+</html>

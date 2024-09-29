@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            padding: 1em;
+            line-height: 1.5;
+        }
+
+        .notes_container_header {
+            padding: .5em;
+        }
+
+        .notes_container_header button {
+            background: #000;
+            color: #fff;
+            padding: .5em 1.5em;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .notes_container_header input[type="text"] {
+            padding: .4em;
+            outline: none;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: .5em;
+            margin-left: 1em;
+        }
+
+        .notes_container .note {
+            margin-top: .51em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+            align-items: start;
+        }
+
+        .notes_container .note .notes_data {
+            border: 1px solid #ddd;
+            margin: 1em 0;
+            border-radius: 15px;
+            padding: .5em 1em;
+            box-shadow: 0 0 5px 1px #ddd;
+            line-height: 1.5;
+            /* background: red; */
+        }
+
+        .notes_container .note .notes_data p {
+            margin: .5em 0;
+            font-size: 1.1em;
+        }
+
+        .notes_container .note .notes_data h3 {
+            /* font-size: .7em; */
+            text-align: right;
+            margin: .5em 0;
+        }
+
+        .total-container {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: royalblue;
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+            padding: .5em;
+            color: #fff;
+            border-radius: 5px;
+            gap: .5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total-container">
+        <p>Total -</p>
+        <p>2</p>
+    </div>
+    <div class="notes_container">
+        <form action="">
+            <div class="notes_container_header">
+                <button>All</button>
+                <button>Today</button>
+                <button>Yesterday</button>
+                <input type="text" placeholder="User ID or Number">
+                <button type="submit">Search</button>
+            </div>
+            <div class="note">
+                <div class="notes_data">
+                    <section>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequuntur? Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Reprehenderit libero ullam architecto facere
+                            animi laudantium eos illum, voluptatem sapiente ea? Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Sapiente doloremque consequatur nesciunt incidunt ab perspiciatis iure
+                            expedita officiis ex, esse quod debitis mollitia quidem! Adipisci dolorem reiciendis tempore
+                            earum nemo explicabo libero rem alias debitis laudantium. Aliquid pariatur, facere ipsam
+                            aspernatur ad officiis nam sint recusandae quos, perferendis cumque enim.</p>
+                        <h3>Sk8424 | 10:17:43 10-05-2023</h3>
+                    </section>
+                </div>
+                <div class="notes_data">
+                    <section>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequuntur? Lorem ipsum
+                            quos, perferendis cumque enim.</p>
+                        <h3>Sk8424 | 10:17:43 10-05-2023</h3>
+                    </section>
+                </div>
+                <div class="notes_data">
+                    <section>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequuntur?</p>
+                        <h3>Sk8424 | 10:17:43 10-05-2023</h3>
+                    </section>
+                </div>
+
+                <div class="notes_data">
+                    <section>
+                        <h2>Heading</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequuntur? Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Reprehenderit libero ullam architecto facere
+                            animi laudantium eos illum, voluptatem sapiente ea? Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Sapiente doloremque consequatur nesciunt incidunt ab perspiciatis iure
+                            expedita officiis ex, esse quod debitis mollitia quidem! Adipisci dolorem reiciendis tempore
+                            earum nemo explicabo libero rem alias debitis laudantium. Aliquid pariatur, facere ipsam
+                            aspernatur ad officiis nam sint recusandae quos, perferendis cumque enim.</p>
+                        <h3>Sk8424 | 10:17:43 10-05-2023</h3>
+                    </section>
+                </div>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>

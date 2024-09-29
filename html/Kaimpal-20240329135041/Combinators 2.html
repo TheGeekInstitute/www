@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .main p{
+            color: rgb(0, 255, 42);
+            font-family: cursive;
+           
+        }
+        .main > p{
+            color: blueviolet;
+            font-size: 20px;
+
+        }
+        .main + p{
+            color: aqua;
+            font-size: 20px;
+
+        }
+
+        .main ~ P{
+            color: orangered;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .box{
+            background-color: cadetblue;
+            font-family: cursive;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p>Child1 of main</p>
+        <p>Child2 of main</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aut ducimus fuga! Veniam facilis assumenda non corporis, quisquam soluta optio temporibus maiores praesentium totam, expedita hic facere mollitia esse vero!</b>
+   
+
+    <div class="box">
+        <p>child1 of box</p>
+        <p>child2 of box</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magnam dignissimos voluptatum natus laudantium ratione, voluptatem voluptatibus consectetur repellat. Illo in eos maiores eius et numquam id dicta ullam sit.</b>
+
+    </div>
+    </div>
+    <p>
+        Sibling1 of main
+    </p>
+
+    <p>
+        Sibling2 of main
+    </p>
+    <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quasi ipsam possimus quis molestias iure animi facilis accusamus adipisci molestiae? Totam omnis eaque fugiat temporibus. Repellendus facere et id dolore!</b>
+
+    
+</body>
+</html>

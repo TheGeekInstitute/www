@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="time">00:00:00:00</h1>
+
+    <button id="btn">STOP</button>
+
+    <script>
+        
+        let data = setInterval(()=>{
+            let date = new Date();
+            let time = document.querySelector(".time");
+            time.innerHTML = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() +":" + date.getMilliseconds();
+        },10)
+
+        document.querySelector("#btn").addEventListener("click",()=>{
+            clearInterval(data);
+        })
+
+    </script>
+</body>
+</html>

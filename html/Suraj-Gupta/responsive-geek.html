@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        .navication{
+            /* border: 1px solid red; */
+            /* font-size: 30px; */
+            background-color: aqua;
+            width: 180vh;
+            margin-left: 15em;
+            /* display: flex; */
+            height: 3.5em;
+            /* margin-top: 10px; */
+            padding-top: 6px;
+            /* margin: ; */
+
+        }
+        .navication ul li{
+            /* width: 70vh; */
+            border: 1px solid black;
+            display: inline-block;
+            padding: 10px;
+            background-color: blue;
+            /* color: red; */
+        }
+        .navication ul li a{
+            color: white;
+        }
+        .main{
+            border: 1px solid red;
+            width: 15em;
+            margin-top: -56px;
+            height: 100vh;
+            background-color: red;
+        }
+        .main ul li{
+            border-bottom: 1.5px solid white ;
+            margin-top: 20px;
+            /* margin-left: 10px; */
+        }
+        .main ul li a{
+            font-size: 23px;
+            /* color: red; */
+            color: yellow;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        .system{
+            /* margin-left: 50vh;
+            border: 1px solid black;
+            margin-top: -37em;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding-top: 30px;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            position: absolute;
+             */
+        
+        }
+        /* .box{
+            margin-left: 56vh;
+            border: 1px solid black;
+            margin-top: -30em;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            padding-top: 30px;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            position: absolute;
+            
+        } */
+        .box .lebel{
+            /* border: 1px solid black; */
+            
+        }
+        .like{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto;
+            position: absolute;
+            z-index: 1000;
+            /* background-color: red; */
+            /* border: 20px solid black; */
+            margin-left: 15em;
+            top: 3.5em;
+            width: calc(100vw - 15em);
+        
+
+        }
+        .box{
+            border: 1px solid black;
+            /* margin-left: 35vh; */
+            /* border: 1px solid black; */
+            /* margin-top: -40em; */
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            /* padding-top: 30px; */
+            background-color: aqua;
+            margin: 10px;
+            /* display: grid;
+            grid-template-columns: auto auto auto ;
+            position: absolute; */
+        }
+        .main ul li:hover{
+            border: 1px solid black;
+            height: 50px;
+        }
+        
+        .nav .main ul li ul{
+            position: absolute;
+            /* border: 5px solid black; */
+            left: calc(15em + 0px);
+            top: calc(73vh + 5px);
+            width: 10rem;
+            background-color: red;
+            display: none;
+        }
+
+        .nav .main ul li:hover .sub{
+            display: block;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="navication">
+            <ul>
+                <li><a href="#">Total Students</a>
+                
+                </li>
+                <li><a href="#">Active Studnts</a></li>
+                <li><a href="#">Fees Pending</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <ul> 
+                <li><a href="#">Students </a></li>
+                <li><a href="#">Exam</a></li>
+                <li><a href="#">Add Question</a></li>
+                <li><a href="#">Add Notice</a></li>
+                <li><a href="#">Add Teacher</a></li>
+                <li><a href="#">Add Students</a></li>
+                <li><a href="#">Fees Management</a></li>
+                <li><a href="#">Generate Admit card</a></li>
+                <li><a href="#">Enquaries</a></li>
+                <li><a href="#">Add Post</a></li>
+                <li><a href="#">View Post</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">More</a>
+                    <ul class="sub">
+                        <li><a href="#">More 1</a></li>
+                        <li><a href="#">More 2</a></li>
+                        <li><a href="#">More 3</a></li>
+                    </ul>
+                </li>
+                
+
+
+            </ul>
+        </div>
+
+        <div class="like">
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+            <div class="box">Studnts</div>
+        </div>
+        
+       
+    
+    </div>
+    
+</body>
+</html>

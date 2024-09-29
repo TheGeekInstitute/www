@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            counter-reset: section;
+            background-color: rgba(0, 0, 0, 0.534);
+        }
+        h1::before{
+            content: counter(section) ". ";
+            counter-increment: section;
+            color: red;
+            border: 1px solid black;
+            background-color: black;
+            padding: 5px;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        h1{
+            counter-reset: sub-section;
+            font-size: 35px;
+            margin-bottom: 20px;
+            padding: 20px;
+            
+        }
+
+        .para::first-line{
+            color: rgba(128, 0, 128, 0.815);
+            
+        }
+        h2{
+            counter-reset: sub-sub-section;
+        }
+        h2::before{
+            content: counter(section) "."
+            counter(sub-section) " . ";
+            counter-increment: sub-section; 
+            color: blue; 
+            margin-left: 60px; 
+        }
+        h2{
+            counter-reset: sub-section;
+            font-size: 25px;
+            color: rgba(0, 0, 255, 0.479);
+        }
+        .para1::first-line{
+            color: rgba(0, 128, 0, 0.719);
+        }
+        h3{
+            counter-reset: sub-sub-section;
+            font-size: 18px;
+            color: rgba(222, 184, 135, 0.932);
+        }
+        h3::before{
+            content: counter(section) "."
+            counter(sub-section) "."
+            counter(sub-sub-section) ". ";
+            counter-increment: sub-sub-section; 
+            color: rgb(218, 165, 32); 
+            margin-left: 100px; 
+        }
+        .para2::first-line{
+           color: rgba(210, 105, 30, 0.815);
+        }
+        h3{
+            counter-reset: sub-section;
+        }
+        /* h4{
+            counter-reset: sub-sub-section;
+        }
+        h4::before{
+            content: counter(section) ". ";
+            counter-increment: sub-section;
+            color: cornflowerblue;
+            margin-left: 150px;
+        } */
+
+
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1 class="para">Game</h1>
+    <h2>Free Fire</h2>
+    <h3>Kely</h3>
+    <!-- <h4>Girls</h4> -->
+    <h3>Alok</h3>
+    <h3>K</h3>
+    <h2>Bgmi</h2>
+    <h2>Pubge</h2>
+    <h1 class="para1">Phone</h1>
+    <h2>Mi</h2>
+    <h3>Malda</h3>
+    <h3>Delhi</h3>
+    <h2>IPhone</h2>
+    <h2>Vivo</h2>
+    <h1 class="para2">Monster</h1>
+    <h2>Kong</h2>
+    <h3>Small Kong</h3>
+    <h3>Middle Kong</h3>
+    <h3>Big Kong</h3>
+    <h2>Godzila</h2>
+    <h2>Magladon</h2>
+   </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            /* width: 400px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            transition: all 2s;
+        }
+        
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            transition-duration: 10s;
+        }
+
+     
+
+        .red{
+            background-color: red;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .cyan{
+            background-color: cyan;
+            transform: scale(1);
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li class="btn red">red</li>
+    <li class="btn green">green</li>
+    <li class="btn blue">Blue</li>
+    <li class="btn cyan">Cyan</li>
+
+</ul>
+    
+
+        <div class="container">
+            <div class="box red ">1</div>
+            <div class="box green ">2</div>
+            <div class="box blue ">3</div>
+            <div class="box red ">4</div>
+            <div class="box green ">5</div>
+            <div class="box blue ">6</div>
+            <div class="box blue ">6</div>
+            <div class="box blue ">6</div>
+            <div class="box blue ">6</div>
+            <div class="box cyan ">6</div>
+            <div class="box blue ">6</div>
+            <div class="box blue ">6</div>
+            <div class="box cyan ">6</div>
+
+        </div>
+
+
+    <script>
+        let box = document.querySelectorAll(".box");
+        let btn = document.querySelectorAll(".btn");
+ 
+btn.forEach((e)=>{
+    e.addEventListener('click',()=>{
+      childClass = e.classList.item(1);
+       box.forEach((x)=>{
+        if(x.classList.contains(childClass) !=true){
+            x.style.display = "none";
+        }
+        else{
+            x.style.display = "block";
+            
+
+        }
+       })
+    })
+})
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

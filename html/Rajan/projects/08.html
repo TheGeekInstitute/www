@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the video covers the container without distortion */
+            z-index: -1; /* Place the video behind other content */
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff; /* Text color to be visible against the video */
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="../video/12087974_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+        </div>
+    </div>
+</body>
+</html>

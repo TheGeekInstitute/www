@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+
+        .main{
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+        .main input{
+            width: 170px;
+            padding: 5px 1px;
+            /* width: ; */
+            background-color: transparent;
+            outline: transparent;
+            border: 1px solid grey;
+
+        }
+        .main label{
+            position: relative;
+            /* top: 25px; */
+            left: 3px;
+            bottom: 25px;
+            width: 100px;
+            /* border-bottom: 2px solid red; */
+            
+        z-index: -1;
+            font-weight: 700;
+            color: red;
+            font-family: cursive;
+            transition: all .3s;
+            font-size: 16px;
+        }
+        .main input::placeholder{
+            font-size: 16px;
+            opacity: 100%;
+            font-weight: 700;
+            color:transparent;
+            font-family: cursive;
+        }
+ 
+
+        .main input:not(:placeholder-shown) + label{
+            transform: translateY(-25px);
+        }
+     
+
+
+
+    </style>
+</head>
+<body
+    <div class="main">
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+
+        <input type="text" placeholder="Enter Name">
+        <label for="">Enter Name</label>
+    </div>
+</body>
+</html>

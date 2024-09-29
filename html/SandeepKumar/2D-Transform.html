@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box{
+        background-color: crimson;
+        height: 300px;
+        width: 250px;
+        margin: 150px auto;
+        transition: all .3s linear;
+    }
+
+
+    .box:hover{
+        /* transform: translateX(100px); */
+        /* transform: translateY(200px); */
+        /* transform: translate(100px,100px); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(1.5); */
+        /* transform: scale(1.5,1); */
+        /* transform: skewX(60deg); */
+        /* transform: skewY(30deg); */
+        /* transform: skew(20deg); */
+        /* transform: rotate(180deg); */    
+    }
+
+    .container{
+        background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 250px;
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+
+    .container .card{
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        transform: translateY(85%);
+        color: white;
+        transition: all .3s ease-in-out ;
+    }
+
+    .container:hover .card{
+        transform: translateY(0);
+    }
+
+
+    @supports (backdrop-filter: blur(3px)){
+        .container .card{
+            backdrop-filter: blur(3px);
+        }
+    }
+
+    @supports not (backdrop-filter: blur(3px)){
+        .container .card{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    
+
+</style>
+</head>
+<body>
+    
+
+    <div class="box">
+        <h1>asdas</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="card">
+            <h1>ABCD XYZ</h1>
+            <p>asdasdasdas</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            transform-style: preserve-3d;
+        }
+        .box{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 0.9s;
+        }
+        .container:hover .box{
+             transform: rotate3d(1,1,1,180deg);
+        }
+        .front , .back{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 4px;
+        }
+        .back{
+            background-color: yellow;
+            transform: rotate3d(1,1,1,180deg);
+        }
+        .front{
+            background-color: pink;
+        }
+        .front i {
+            color: black;
+            /* border: 1px solid red; */
+            height: 90px;
+            width: 90px;
+            font-size: 90px;
+            border-radius: 50%;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: calc(50% - 60px);   
+        }
+        .front p{
+            margin-top: 80px;
+            margin-left: 40px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="front">
+                <i class="fa-brands fa-twitter"></i>
+                <p> TWITTER</p>
+            </div>
+            <div class="back">
+                <h2>About Twitter:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos, vel facilis, ratione reprehenderit magnam illum atque dolore earum nostrum molestias veritatis minima accusamus reiciendis provident iure ab doloremque fugiat?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

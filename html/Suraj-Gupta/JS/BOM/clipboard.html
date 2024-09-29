@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        input{
+            margin: 50px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="text" placeholder="Enter Text">
+    <p id="msg"></p>
+    <script>
+        let text = document.querySelector(".text");
+        let msg = document.querySelector("#msg");
+        let body = document.querySelector(".body");
+
+        text.addEventListener("copy",function(){
+            msg.innerHTML = "Copy Successfull";
+            document.body.style.backgroundColor = "red";
+        })
+        text.addEventListener("paste",function(){
+            msg.innerHTML = "Paste Sucessfully";
+            document.body.style.backgroundColor = "green";
+        })
+
+    </script>
+</body>
+</html>

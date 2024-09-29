@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .container{
+          
+            height: 600px;
+            width: 350px;
+            position: absolute;
+            top: calc(50% - 300px);
+            left :calc(50% - 175px);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px black;
+            border: 2px solid black;
+            
+        }
+
+        .container .header{
+            border: 2px solid black;
+            height:60px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 0 20px;
+            background-color: black;
+        
+            
+        }
+
+        .container .header img{
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            border:3px solid white;
+        }
+
+        .container .header p{
+            font-size: large;
+            font-weight: 700;
+            margin-left: 10px;
+            color: white;
+        }
+
+        .container .main{
+       
+            height: 480px;
+            width: 350px;
+            overflow:scroll;
+            background-image: url("https://w0.peakpx.com/wallpaper/744/548/HD-wallpaper-whatsapp-ma-doodle-pattern-thumbnail.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container .chat{
+            display:flex;
+            align-items:start;
+            justify-content: start;
+            flex-direction: column;
+  
+        }
+
+        .container .chat .msg{
+       
+            width:75%;
+            margin: 10px 3px;
+            padding: 10px;
+            border-radius: 3px;
+            background-color: grey;
+            display: flex;
+            align-items: start;
+            justify-content:start;
+            flex-direction: column;
+            color: white;
+            
+        }
+
+        .container .chat .msg label,
+        .container .chat .msg1 label
+        {
+            align-self: flex-end;
+            font-size: small;
+            margin-bottom: -7px;
+            color:white;
+        }
+
+        .container .chat .name{
+            font-size: small;
+            font-weight: 700;
+            color: black;
+            margin-top:-7px;
+            margin-bottom: 5px;
+        }
+
+        .container .chat .msg1{
+            display: flex;
+            align-items: start;
+            justify-content:start;
+            flex-direction: column;
+            width:75%;
+            margin: 10px 3px;
+            padding: 10px;
+            border-radius: 3px;
+            align-self: end;
+            background-color: green;
+            color: white;
+
+        }
+
+        .container .field{
+            height: 60px;
+ 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:black;
+        }
+
+        .container .field input{
+            outline: none;
+            border: 1px solid black;
+            height: 45px;
+            width: 80%;
+            border-radius: 1000px;
+            padding: 2px 20px;
+            font-size: large;
+        }
+
+        .container .field button{
+            height: 40px;
+            width: 40px;
+            margin-left: 5px;
+            border-radius: 50%;
+            font-size: large;
+            color:white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="../../../web/images/14.jpg" alt="asd">
+            <p>Ankit Kumar</p>
+            <a href="">Log out</a>
+    
+
+        </div>
+    
+    
+        <div class="main">
+
+            <div class="chat">
+                <div class="msg">
+                    <p class="name">Hello</p>
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+                <div class="msg1">
+                    <p class="name">Hi</p>
+
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+                <div class="msg1">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg1">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg1">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+                
+                <div class="msg1">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg1">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+
+                <div class="msg">
+                    <p>xyz abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+                
+                <div class="msg1">
+                    <p>xyx abcd</p>
+                    <label for="">9:45:36</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="field">
+            <input type="text" name="msg">
+           <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

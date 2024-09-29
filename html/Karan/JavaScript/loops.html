@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            background-color: red;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+
+    <br>
+
+    <script>
+        //#while loop
+
+        // let i=100;
+
+        // while(i<=10){
+        //     document.write(i + "<br>");
+        //     i++; // i =i+1;
+        // }
+
+
+        // while(i<=100){
+        //     document.write('<div class="box">'+i+'</div>');
+        //     i++; // i =i+1;
+        // }
+
+
+        // do{
+        //     document.write(i+"<br>");
+        //     i++;
+        // }while(i<=10);
+
+
+        // for(let b=0 ; b<=10 ; b++){
+        //     document.write(b + "<br>");
+        // }
+
+
+        // function print_even(num){
+            
+        //     if(num!="" && num!=0){
+        //         for(let i=1 ; i<=num ; i++){
+        //             if(i%2==0){
+        //                 document.write(i +"<br>");
+        //             }
+        //         }
+
+
+        //     }
+        //     else{
+        //         document.write("Please Provide a Positive Number");
+        //     }
+        // }
+
+
+        // print_even(10);
+
+
+
+
+        // function print_odd(num){
+            
+        //     if(num!="" && num!=0){
+        //         for(let i=1 ; i<=num ; i++){
+        //             if(i%2!=0){
+        //                 document.write(i +"<br>");
+        //             }
+        //         }
+
+
+        //     }
+        //     else{
+        //         document.write("Please Provide a Positive Number");
+        //     }
+        // }
+
+
+        // print_odd(10);
+
+
+        // function sum_n(num){
+        //     let sum=0;
+        //     if(num!="" && num!=0){
+        //         for(let i=0 ; i<=num ; i++){
+                   
+
+        //             sum+=i;
+        //         }
+
+        //         return sum;
+
+
+        //     }
+        //     else{
+        //         return ("Please Provide a Positive Number");
+        //     }
+        // }
+
+        // document.write(sum_n(10));
+
+
+
+        /* 
+        1
+        3
+        5
+        7
+        sum of Above : 16
+        
+        */
+
+
+    function print_table(num){
+        let data="";
+        let sum=0;
+        if(num!=0 && num!=""){
+            
+            for(let i=1 ; i<=10 ; i++){
+                data+=num + " x " + i + " = " + num*i + "<br>";
+
+                sum +=num*i;
+            }
+
+            return data + " Sum of All Above : " +sum;
+
+        }else{
+            return "Please Provide a Positive Number";
+        }
+
+      
+    }
+
+
+
+    // document.write(print_table(1337));
+
+
+    let names=["Amit","Sumit",'Ravi','Ankit'];
+    let length=names.length;
+
+    // console.log(length)
+
+    for(let i=0; i<length;i++){
+        console.log(names[i])
+    }
+    
+
+    </script>
+
+</body>
+</html>

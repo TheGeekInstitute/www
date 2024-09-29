@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+#game{
+    margin: auto;
+    border: 2px solid red;
+    background-color: green;
+    height: 200px;
+    width: 500px;
+    overflow: hidden;
+}
+
+#charc{
+    /* left: 20px; */
+    height: 50px;
+    width: 20px;
+    position: relative;
+    top: 150px;
+    border: 2px solid red;
+    /* background-color: black; */
+
+}
+
+#block{
+    position: relative;
+    top: 130px;
+    left: 480px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    animation: block 1s infinite linear;
+}
+
+
+@keyframes block {
+    9%{
+        /* transform: translateX(-770px); */
+        left: 480px;
+    }
+    100%{
+        left: -40px;
+    }
+}
+
+    
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 100px;
+    }
+    70%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+
+}
+.animation{
+    animation: jump 500ms;
+}
+.stop{
+    animation-play-state: paused;
+}
+
+/* #pause{
+    position: relative;
+    top: -120px;
+    left: 400px;
+} */
+
+
+    </style>
+</head>
+<body onkeyup="jump()">
+   <div id="game">
+        <div id="charc"></div>
+        <div id="block"></div>
+        <!-- <button id="pause">pause game</button> -->
+   </div>
+   <script>
+
+    // var pause = document.querySelector("#pause")
+    // pause.addEventListener("click",()=>{
+    //     alert("start game")
+    //     // alert("game paused ")
+    //     block.classList.add("stop")
+    //     block.classList.remove("blockAni")
+    //     pause.innerText="Start game";
+
+    // })
+
+    // pause.addEventListener("keydown",()=>{
+    //     block.classList.remove("stop")
+
+    //     // block.classList.toggle("stop")
+    //     block.classList.add("blockAni")
+    //     pause.innerText="restart game";
+        
+
+    // })
+
+    // var pro = alert("start game")
+var game = document.querySelector("#game")
+var charc = document.querySelector("#charc")
+var block = document.querySelector("#block")
+
+function jump(){
+    if(charc.classList!="animation"){
+        charc.classList.add("animation")
+    }
+    setTimeout(function(){
+        charc.classList.remove("animation")
+
+    },500)
+} 
+
+var dead = setInterval(()=>{
+ var charcTop = window.getComputedStyle(charc).getPropertyValue("top")
+
+ var blockLeft = window.getComputedStyle(block).getPropertyValue("left")
+
+ if(blockLeft<20 && blockLeft>0 % charcTop>=130){
+block.style.animation="none";
+block.style.display="none";
+alert("u lose")
+
+ }
+
+
+},10);
+
+
+
+
+   </script>
+</body>
+</html>

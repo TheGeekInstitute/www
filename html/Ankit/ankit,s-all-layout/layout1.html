@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTAP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <STYle>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        background-color:  rgb(0, 110, 255);
+    }
+    .NAV{
+        background-color: rgb(0, 110, 255);
+        /* height: 70px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .logo img{
+        margin-left: 50px;
+        cursor: pointer;
+        
+
+    }
+    .NAV a:hover{
+        border-bottom: 2px solid white;
+
+    }
+    .NAV a{
+        color: rgb(250, 248, 248);
+        font-size: larger;
+        font-family: cursive;
+        font-weight: bold;
+        /* border-bottom: 2px solid white; */
+
+    }
+    
+    .down{
+        border: 2px solid white;
+        padding: 12px;
+        cursor: pointer;
+        background-color: white;
+        border-radius: 5px;
+        margin-right: 20px;
+        color:  rgb(0, 110, 255);
+        font-size: larger;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        transition: all 0.5s linear;
+    }
+   
+    
+    .down:hover{
+        background-color: rgb(0, 110, 255) ;
+        color: black;
+        
+
+        
+        
+    }
+    .mid .content{
+        position:relative ;
+        top: 200px;
+        left: 100px;
+
+    }
+    .mid img{
+        /* margin-left: 600px;
+        margin-top: -100px;
+        marg */
+        position: relative;
+        left: 600px;
+        top: -250px;
+    }
+    .mid .content h1{
+        color: white;
+        font-size: 80px;
+    }
+    .mid .content p{
+        color: white;
+        font-size: 20px;
+    }
+    .start{
+        border: 2px solid white;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        transition: all 1s linear ;
+        border-radius: 30px;
+        background-color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:  rgb(0, 110, 255);
+        cursor: pointer;
+        margin-top: 10px;
+
+    }
+    
+    .start:hover{
+        background-color:  rgb(0, 110, 255);
+        color: white;
+        
+    }
+    .download{
+        border: 2px solid white;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 30px;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        left: 200px;
+        bottom: 40px;
+
+
+
+    }
+    .more{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rgb(212, 211, 211);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .more h2{
+        font-size: 33px;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    .more h2:hover{
+        color:  rgb(0, 110, 255);
+    }
+    .more a{
+        color: rgb(0, 110, 255);
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .more1{
+        position: relative;
+        left: 500px;
+        top: 150px;
+        border: 2px solid  rgb(212, 211, 211);
+        font-size: 20px;
+        padding: 20px;
+        width: 570px;
+        /* background-color: white; */
+        
+        
+    }
+    /* .more1 h2{
+       position: relative;
+       left: 50px;
+    } */
+    .more2{
+        border: 2px solid white;
+        padding: 40px;
+        width: 400px;
+        background-color: white;
+        border-radius: 10px ;
+        margin-right: 10px;
+       
+        padding-bottom: 10px;
+
+    }
+    .more2 h2{
+        padding-bottom: 15px;
+    }
+    .more2 p{
+        padding-bottom: 15px;
+    }
+    .more3 h2{
+        padding-bottom: 15px;
+    }
+    .more3 p{
+        padding-bottom: 15px;
+    }
+    .more4 h2{
+        padding-bottom: 5px;
+    }
+    .more4 p{
+        padding-bottom: 5px;
+    }
+    .more3{
+        border: 2px solid rgb(252, 250, 250);
+        padding: 40px;
+        border-radius: 10px ;
+        width: 400px;
+        margin-right: 20px;
+        background-color: white;
+        
+    }
+    .more4{
+        border: 2px solid rgb(253, 253, 253);
+        padding: 40px;
+        border-radius: 10px ;
+        width: 400px;
+        margin-right: 20px;
+        background-color: white;
+        padding-right: 100px;
+
+        
+    }
+    .more i{
+        color: rgb(0, 110, 255);
+        font-size: 50px;
+        position: relative;
+        left: 280px;
+        top: -50px;
+
+    }
+    .more4 i{
+        position: relative;
+        bottom: 40px;
+        right: 100px;
+    }
+    .img {
+        margin-left: 280px;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows:300px 300px 300px ;
+    }
+    .img img{
+        height: 200px;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+    }
+    .img img:hover{
+
+
+
+    }
+
+   </STYle>
+
+</head>
+<body>
+    <DIV class="NAV">
+        <ul class="logo"><img src="https://preview.uideck.com/items/smash/assets/images/logo.svg" alt=""></ul>
+        <a href="">HOME</a>
+        <a href="">SERVICE</a>
+        <a href="">PORTFOLIO</a>
+        <a href="">PRICING</a>
+        <a href="">ABOUT</a>
+        <a href="">TEAM</a>
+        <a href="">CONTACT</a>
+        <!-- <a href=""></a> -->
+        <ul class="down">DOWNLOAD</ul>
+
+    </DIV>
+    <div class="mid">
+        <div class="content">
+            <h1>Crafted For<br> Business</h1>
+            <p>We blend insights and strategy to create digital products for<br> forward-thinking organisations.</p>
+            <ul class="start">GET STARTED</ul>
+            <ul class="download">DOWNLOAD</ul>
+        </div>
+        <img src="https://preview.uideck.com/items/smash/assets/images/slider/2.png" alt="">
+    </div>
+     <div class="more1">
+        <h1>Our Services</h1>
+        <p>Stop wasting time and money designing and managing a website<br> that doesn’t get results. Happiness guaranteed!</p>
+
+        </div>
+    <div class="more">
+       
+
+        <div class="more2">
+            <h2>Graphics Design</h2>
+            <i class="fa-regular fa-object-ungroup"></i>
+
+            <p>Stop wasting time and money designing and managing a website that does not get results. Happiness guaranteed!</p>
+            <a href="">LEARN MORE</a>
+            
+
+        </div>
+
+        <div class="more3">
+            <h2>Website Design</h2>
+            <i class="fa-solid fa-table-list"></i>
+            <p>Stop wasting time and money designing and managing a website that does not get results. Happiness guaranteed!</p>
+            <a href="">LEARN MORE</a>
+
+        </div>
+
+        <div class="more4">
+            <h2>Digital Marketing</h2>
+            <i class="fa-solid fa-bolt"></i>
+            <p>Stop wasting time and money designing and managing a website that does not get results. Happiness guaranteed!</p>
+            <a href="">LEARN MORE</a>
+
+        </div>
+
+    </div>
+    <div class="feature">
+        <div class="heading">
+            <h2>Featured Works</h2>
+            <p>Stop wasting time and money designing and managing a website that does not get results. Happiness guaranteed!</p>
+
+        </div>
+
+        <div class="menu">
+            <a href="">ALL WORK</a>
+            <a href="">BRANDING</a>
+            <a href="">MARKETING</a>
+            <a href="">PLANNING</a>
+            <a href="">RESEARCH</a>
+
+        </div>
+
+        <div class="img">
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+            <!-- <ul class="img2"><img src="https://images3.alphacoders.com/133/1338664.png" alt=""></ul> -->
+            
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+            <img src="https://www.shutterstock.com/image-vector/enchanting-anime-landscape-mistcovered-mountain-600nw-2301778699.jpg" alt="">
+
+
+
+
+        </div>
+
+    </div>
+</body>
+</html>

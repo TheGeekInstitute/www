@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background Origin</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .main{
+            border: 50px solid rgba(0, 255, 255, 0.25);
+            padding: 50px;
+            background-image: url("../wallpapers/abstract/Acrylic\ Paint\ 1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            background-origin: border-box;
+            /* background-origin: padding-box; */
+            /* background-origin: content-box; */
+
+       
+        }
+        .main h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus reiciendis, molestiae ea expedita praesentium sapiente nostrum distinctio, commodi omnis dolorem eos veniam ratione labore repellendus dolor cum non reprehenderit id?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    /* border: 1px solid red; */
+    height: 40rem;
+    width: 32rem;
+    margin: auto;
+    margin-top: 1
+    
+    
+    
+    
+    rem;
+    border-radius: 1rem;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/461/478/desktop-wallpaper-whatsapp-dark-whatsapp-chat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: fixed;
+    top: calc(50% - 20rem);
+    left: calc(50% - 16rem);
+    
+
+    /* margin: auto; */
+
+}
+.box .nav{
+    /* border: 1px solid black; */
+    background-color: #202D36;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-radius: 1rem;
+    z-index: 5;
+}
+.nav .left{
+    display: flex;
+    justify-content:  center ;
+    align-items: center;
+    
+}
+.left .img img{
+    height: 3rem;
+    width: 3rem;
+    /* border: 1px solid #008000; */
+    border-radius: 50%;
+    line-height: 5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    user-select: none;
+}
+.left .name p{
+    /* border:  1px solid white; */
+    position: relative;
+    color: white;
+    height: 5rem;
+    width: auto;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 750;
+    /* bottom: 2rem; */
+    margin-left: 1rem;
+    user-select: none;
+}
+
+
+
+.nav .right{
+    border: 1px solid white;
+    height: 3rem;
+    width: 7rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    
+}
+.nav .right a{
+    /* border: 1px solid black; */
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    user-select: none;
+
+}
+.box .main{
+    /* border:  1px solid blue; */
+    height: 30rem;
+    width: 100%;
+    overflow: scroll;
+
+}
+.box .main .chat{
+    width: 20rem;
+    background-color: #212E36;
+    margin: 1rem;
+    border-radius: 0rem 2rem 2rem 0;
+    user-select: none;
+    padding:  0 1rem 0 1rem ;
+
+    
+
+}
+.main .chat h1{
+    color: red;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 3rem;
+    /* border: 1px solid red; */
+    /* width: 4rem; */
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 5rem;
+    user-select: none;
+    
+}
+.main .chat img{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+    user-select: none;
+    
+}
+.main .chat p{
+    /* border: 1px solid white; */
+    text-align: center;
+    /* height: 1.5rem; */
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 2.6rem;
+    color: rgb(243, 236, 236);
+    width: 17rem;
+    margin-left: 2.3rem;
+    user-select: none;
+    
+
+}
+
+
+
+
+.box .main .chat1{
+    /* border: 1px solid orange; */
+    /* height: 2.5rem; */
+    max-width: 100%;
+    width: 20rem;
+    background-color: #00B09B;
+    margin: 1rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+    position: relative;
+    left: 9.5rem;
+    padding:  0 1rem 0 1rem;
+    
+
+}
+.main .chat1 h1{
+    color: black;
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 2.3rem;
+    left: 3rem;
+    /* border: 1px solid red; */
+    /* width: 4rem; */
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 5rem;
+    user-select: none;
+    
+}
+.main .chat1 img{
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+    user-select: none;
+}
+.main .chat1 p{
+    /* border: 1px solid white; */
+    text-align: center;
+    /* height: 1.5rem; */
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 2.6rem;
+    color: rgb(243, 236, 236);
+    width: 17rem;
+    margin-left: 2.3rem;
+    /* padding:0 1rem 0 1rem ; */
+    user-select: none;
+    /* padding:  0 1rem 0 1rem; */
+
+    
+
+}
+
+
+.box .blank{
+    position: relative;
+    /* border:  1px solid yellow; */
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    margin-top: 1rem;
+    background-color:#091A22 ;
+    overflow: hidden;
+    
+}
+.box .text{
+    /* border:  1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -13px;
+    
+}
+.box .text input{
+    height: 2.5rem;
+    width: 26rem;
+    position: relative;
+    bottom: 0;
+    text-decoration: none;
+    outline: none;
+    padding: 0 1rem;
+    background-color: #202D36;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+.box .text button{
+    font-size: 1.5rem;
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: #00B09B;
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-left: 1.5rem;
+}
+.box .text button:active{
+    transform: scale(.9);
+    transition: all 0.3s;
+
+}

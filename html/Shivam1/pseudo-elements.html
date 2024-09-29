@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+
+        .para::first-line{
+            color: #FF4500;
+        }
+
+        .para{
+            width: 200px;
+            color: blue;
+        }
+
+        .new::selection{
+            color: red;
+            background-color: greenyellow;
+        }
+
+        .new{
+            /* user-select: auto; */
+            /* user-select: none; */
+            user-select: all;
+        }
+
+        ul li{
+            color: red;
+        }
+
+
+        ol li{
+            color: red;
+        }
+
+
+        ul li::marker{
+            color: blue;
+        }
+
+        ol li::marker{
+            color: blue;
+        }
+
+        input::file-selector-button{
+            background-color: orange;
+            border: 2px solid orangered;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 900;
+        }
+
+        input::file-selector-button:hover{
+            background-color: orangered;
+            border:2px solid black;
+        }
+
+
+        input::placeholder{
+            color: red;
+            opacity: 100%;
+            font-weight: 900;
+        }
+
+        input{
+            caret-color: aqua;
+            accent-color: red;
+            outline: transparent;
+        }
+
+        input:placeholder-shown{
+            border: 2px solid black;
+        }
+
+        input:not(:placeholder-shown){
+            border: 2px solid green;
+        }
+
+        h1::before{
+            content: "The ";
+            color: red;
+            /* display: block; */
+        }
+
+        h1:hover::after{
+            content: "Institute " attr(data-myattr);
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reprehenderit nobis suscipit ducimus quos rem nisi porro minima maxime odit, molestiae cupiditate ipsam voluptatum libero tenetur corrupti necessitatibus magni officiis.
+    </p>
+
+
+    <p class="new">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis officiis quidem quasi! Officiis beatae laborum unde porro officia voluptatum repellendus, voluptatem fugiat, pariatur quas est saepe itaque labore praesentium sunt expedita modi necessitatibus culpa quia, iusto consequatur ducimus ab ex. Corporis minima dolorum, recusandae consequatur autem architecto. Tempora aliquid maiores expedita laboriosam vero! Ducimus libero labore dolorum, aliquid iusto eos nemo nobis cupiditate unde corporis eum, itaque sunt odio nihil, ipsa velit iure! Molestiae incidunt ex laboriosam dicta quisquam veritatis, nesciunt nostrum?
+    </p>
+
+
+    <ul>
+        <li>asda</li>
+        <li>asd</li>
+        <li>asd</li>
+    </ul>
+
+    <ol>
+        <li>asda</li>
+        <li>asd</li>
+        <li>asd</li>
+    </ol>
+
+    <input type="text" placeholder="ABCD0">
+    <input type="file">
+
+    <input type="radio">
+    <input type="checkbox">
+
+
+    <h1 class="abcd" data-myattr="of Cyber Security">Geek </h1>
+</body>
+</html>

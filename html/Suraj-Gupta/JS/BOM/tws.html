@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            border: 1px solid black;
+            text-align: center;
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 15px;
+        }
+        p{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .typing{
+            text-align: center;
+        }
+        .typing h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .type{
+            padding-left: 10px;
+            top: 0;
+            width: 50rem;
+            height: 10rem;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button class="large">Large</button>
+        <button class="small">Small</button>
+        <button class="Mid">Middem</button>
+        <button class="red">Red</button>
+        <button class="green">Green</button>
+        <button class="blue">Blue</button>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, eos eligendi beatae accusamus qui aliquid nam quia dolorem libero nemo et saepe laudantium consequuntur officiis optio quo iusto eum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dignissimos est voluptatem vitae repellat velit possimus ipsam, corrupti totam aperiam voluptatibus nam veniam accusamus soluta repudiandae omnis quidem inventore eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quas, ipsam similique ipsa harum quia deserunt, repudiandae, perferendis adipisci accusamus eos dignissimos facere! Quam, sed culpa magni labore dolor laborum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur assumenda cumque adipisci officiis! Tempora corporis quidem nobis quaerat soluta voluptates veniam quis nemo exercitationem vel nam, perspiciatis ipsam veritatis suscipit.</p>
+        <div class="typing">
+            <h1>Typing Test</h1>
+            <input class="type" type="text">
+        </div>
+    </div>
+    <script>
+        let Large = document.querySelector(".large");
+        let Small = document.querySelector(".small");
+        let Mid = document.querySelector(".mid");
+        let Red = document.querySelector(".red");
+        let Blue = document.querySelector(".Blue");
+        let Green = document.querySelector(".green");
+        let para = document.querySelector(".para");
+
+    Large.addEventListener("click",function(){
+        para.style.fontSize = "28px";
+        para.style.fontFamily = "Cursive";    
+    })
+    
+    Small.addEventListener("click",function(){
+        para.style.fontSize = "24px";
+    })
+
+    Mid.addEventListener("click",function(){
+        para.style.fontSize = "25px";
+    })
+    Red.addEventListener("click",function(){
+        para.style.color = "red";
+    })
+
+
+
+    </script>
+</body>
+</html>

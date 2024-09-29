@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .navbar{
+            background-color: #ccc;
+            box-shadow: 2px 2px 3px grey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+        }
+
+        .navbar ul li{
+            position:relativ;
+            float: left;e
+            margin: 0 5px;
+        }
+        .navbar ul li a{
+            /* display: block; */
+            padding: 16px 5px;
+        }
+
+        .submenu-items{
+            position: absolute;
+            width: 100%;
+            top: 35px;
+            left: 0;
+            right: 0;
+        }
+
+        .submenu-items li a{
+            display: block;
+            width: 70px;
+            background-color: #ccc;
+            box-shadow: 2px 2px 2px green;
+        }
+
+        .navbar ul li a:hover{
+            background-color: aquamarine;
+        }
+
+        .submenu-items{
+            visibility: hidden;
+        }
+
+        .navbar ul li:hover  .submenu-items{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav class="navbar">
+        <h1 class="logo">LOGO</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="submenu">Pages+</a>
+                <ul class="submenu-items">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+   </header> 
+</body>
+</html>

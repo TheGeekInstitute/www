@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 70vh;
+            width: 80vw;
+            margin:50px  auto;
+            display: grid;
+            gap: 5px;
+
+            grid-template-columns: [col1-start]100px[col1-end col2-start] 1fr[col2-end col3-start] 100px[col3-end];
+
+            grid-template-rows: [row1-start]50px[row1-end row2-start] 70px[row2-end row3-start] 1fr[row3-end row4-start] 70px[row4-end];
+
+        }
+
+        .box1{
+            background-color: red;
+            /* grid-area: row1-start / col1-start / row1-end / col3-end; */
+ 
+        }
+
+        .box2{
+            background-color: cyan;
+       
+        }
+
+        .box3{
+            background-color: rebeccapurple;
+        }
+
+        .box4{
+            background-color: blue;
+        }
+        .box5{
+            background-color: purple;
+          
+        
+        }
+        .box6{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        
+
+    </div>
+</body>
+</html>

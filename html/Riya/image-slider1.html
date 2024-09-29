@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 1px solid black; */
+            height: 600px;
+            overflow: hidden;
+        }
+        .container .slider{
+            height: 600px;
+            width: 500vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: slider 10s linear 0s infinite alternate;
+
+        }
+        .container .slider .image{
+            height: 600px;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container .slider .image .content{
+            background-color: rgba(26, 24, 25, 0.568);
+            color: white;
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px 30px;
+        }
+        @keyframes slider{
+            0%{
+                transform: translateX(0);
+
+            }
+            5%{
+                transform: translateX(0);
+
+            }
+            10%{
+                transform: translateX(0);
+
+            }
+            15%{
+                transform: translateX(0);
+                
+            }
+            20%{
+                transform: translateX(-100vw);
+
+            }
+            25%{transform: translateX(-100vw);
+
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{transform: translateX(-100vw);
+
+            }
+            40%{
+                transform: translateX(-200vw);
+
+            }
+            45%{transform: translateX(-200vw);
+
+            }
+            50%{transform: translateX(-200vw);
+
+            }
+            55%{transform: translateX(-200vw);
+
+            }
+            60%{
+                transform: translateX(-300vw);
+
+            }
+            65%{
+                transform: translateX(-300vw);
+
+            }
+            70%{
+                transform: translateX(-300vw);
+
+            }
+            70%{
+                transform: translateX(-300vw);
+
+            }
+            80%{
+                transform: translateX(-400vw);
+
+            }
+            85%{
+                transform: translateX(-400vw);
+
+            }
+            90%{
+                transform: translateX(-400vw);
+
+            }
+            95%{
+                transform: translateX(-400vw);
+
+            }
+            100%
+            {transform: translateX(-500vw);
+
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://static.vecteezy.com/system/resources/previews/029/326/170/non_2x/blue-hued-magic-spring-flowers-in-focus-bokeh-adds-enchantment-vertical-mobile-wallpaper-ai-generated-free-photo.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, labore minima aperiam illum ipsa omnis saepe alias nemo quam laboriosam dolores eaque repudiandae voluptates veniam, corrupti modi ullam, fugiat possimus?</h1>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://i.pinimg.com/originals/77/60/d9/7760d941c2fc4e0b21a8f6292c54e1ba.png);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, labore minima aperiam illum ipsa omnis saepe alias nemo quam laboriosam dolores eaque repudiandae voluptates veniam, corrupti modi ullam, fugiat possimus?</h1>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://r1.ilikewallpaper.net/iphone-15-wallpapers/download-33468/Nature-Spring-Plum-Branch-Bokeh-Blur.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, labore minima aperiam illum ipsa omnis saepe alias nemo quam laboriosam dolores eaque repudiandae voluptates veniam, corrupti modi ullam, fugiat possimus?</h1>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://wallpapersmug.com/download/1280x2120/009051/purple-flowers-flora-nature.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, labore minima aperiam illum ipsa omnis saepe alias nemo quam laboriosam dolores eaque repudiandae voluptates veniam, corrupti modi ullam, fugiat possimus?</h1>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsX29mZmljZV8zM193YWxscGFwZXJfcGF0dGVybl9vZl9wYXN0ZWxfY29sb3JlZF9wZW5jaWxfdF9kNzIzNTM5YS1iMDJiLTQ0ZmItYjA5Zi1mNzQwNjMxYjM1NTNfMS5qcGc.jpg);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, labore minima aperiam illum ipsa omnis saepe alias nemo quam laboriosam dolores eaque repudiandae voluptates veniam, corrupti modi ullam, fugiat possimus?</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>

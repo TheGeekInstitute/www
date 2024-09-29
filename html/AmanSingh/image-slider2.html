@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider2</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            overflow: hidden;
+        }
+        .container{
+            height: 70vh;
+            width: 100VW;
+            border: 2PX solid RED;
+            overflow: hidden;
+        }
+        .container .slider{
+            height: 70vh;
+            width: 500vw;
+            display: flex;
+            animation-name:silder ;
+            animation-duration: 20s;
+            animation-duration:Alternate;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+
+        }
+        .container .slider .image{
+            height: 70vh;
+            width: 100vw;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+       .container .slider .image .content{
+        height: 40vh;
+        width: 70vw;
+        padding: 10vh 5vw;
+        text-align: center;
+        border-top-left-radius: 10vw;
+            border-top-right-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            border-bottom-right-radius: 10vw; 
+        
+       }
+       .container .slider .
+
+       .image1{
+            background-image: url("./images/1.jpeg");
+            
+        }
+        .image2{
+            background-image: url("./images/2.jpeg");
+        }
+        .image3{
+            background-image: url("./images/3.jpeg");
+        }
+        .image4{
+            background-image: url("./images/4.jpeg");
+        }
+        .image5{
+            background-image: url("./images/5.webp");
+        }
+
+        .images{
+            background-size: cover;
+            background-position: center;
+        }
+
+       @keyframes sliser {
+        0%{
+            transform: translate(0);
+        
+        }
+        25%{
+            transform: translateX(-100vw);
+        }
+        50%{
+            transform: translateX(-200vw);  
+        }
+        75%{
+            transform: translateX(-300vw);
+        }
+        75%{
+            transform: translateX(-400vw);
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="container">
+        <div class="slider">
+
+
+            <div class="images image1">
+
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, corporis eveniet quam perferendis doloremque autem iste beatae assumenda dolores iusto ipsa sunt exercitationem reprehenderit deleniti ad officia aut. Voluptatum, hic!</p>
+                </div>
+            </div>
+
+            <div class="images image2">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, corporis eveniet quam perferendis doloremque autem iste beatae assumenda dolores iusto ipsa sunt exercitationem reprehenderit deleniti ad officia aut. Voluptatum, hic!</p>
+                </div>
+            </div>
+
+            <div class="images image3">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, corporis eveniet quam perferendis doloremque autem iste beatae assumenda dolores iusto ipsa sunt exercitationem reprehenderit deleniti ad officia aut. Voluptatum, hic!</p>
+                </div>
+            </div>
+
+            <div class="images image4">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, corporis eveniet quam perferendis doloremque autem iste beatae assumenda dolores iusto ipsa sunt exercitationem reprehenderit deleniti ad officia aut. Voluptatum, hic!</p>
+                </div>
+            </div>
+
+            <div class="images image5">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, corporis eveniet quam perferendis doloremque autem iste beatae assumenda dolores iusto ipsa sunt exercitationem reprehenderit deleniti ad officia aut. Voluptatum, hic!</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-card</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            height: 335px;
+            width: 245px;
+            margin: 150px auto;
+            overflow: hidden;
+            background-image:url(https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923_640.jpg) ;
+            background-size: cover;
+            background-position:center;
+        }
+        .container .card{
+            background-color:rgba(0, 0, 0,.3);
+            height: 100%;
+            width: 100%;
+            transform: translate(0,100%);
+            transition-duration:all 1s linear;
+            backdrop-filter: blur(2px);
+            transition: all 1s linear;
+
+           
+        }
+        .container:hover .card{
+            transform: translate(0,0)
+            ;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>THE EARTH </h1>
+    </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

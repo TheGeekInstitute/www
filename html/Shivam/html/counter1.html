@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        .main{
+            counter-reset: order;
+        }
+        h1::before{
+            content: counter(order,Upper-roman) ". ";
+            counter-increment: order;
+
+        }
+        h1{
+            counter-reset: powder;
+
+        }
+        h2::before{
+            content: counter(order ,lower-roman) ". " counter(powder);
+            counter-increment: powder;
+        }
+        h2{
+
+        text-indent: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>shivam</h1>
+        <h2>mohit</h2>
+        <h2>pappu</h2>
+        <h2>rahul Gandhi</h2>
+        <h2>hadder</h2>
+        <h1>shivank</h1>
+        <h2>mohit</h2>
+        <h2>pappu</h2>
+        <h2>rahul Gandhi</h2>
+        <h2>hadder</h2>
+        <h1>sumit</h1>
+        <h2>mohit</h2>
+        <h2>pappu</h2>
+        <h2>rahul Gandhi</h2>
+        <h2>hadder</h2>
+
+    </div>
+    
+</body>
+</html>

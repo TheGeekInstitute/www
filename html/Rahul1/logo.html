@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logo bar</title>
+    <Style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            background-color: seagreen;
+            color: black;
+            display: flex;
+            align-items: center;
+            
+            justify-content:space-between;
+            padding: 0 20px;
+        }
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900px;
+            font-family: cursive;
+        }
+        .nav .link{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .nav .link li a{
+        display: block;
+        color: white;
+        font-size: large;
+        padding: 0 10px;
+        line-height: 50px;
+        margin: 0 10px;
+        }
+       .nav .link li a :hover{
+        background-color: red;
+       }
+         
+    </Style>
+</head>
+<body>
+   <div class="nav">
+    <div class="logo">LOGO</div>
+    <ul class="link">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+   </div>    
+</body>
+</html>

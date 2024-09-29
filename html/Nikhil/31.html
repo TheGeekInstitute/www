@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jio</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .container{
+            /* border: 2px solid red; */
+        }
+        .nav{
+            /* border: 1px solid black; */
+            width: 100%;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0F3CC9;
+           
+        }
+        .nav ul li {
+            display: inline-block;
+            margin: 0px 10px;
+           
+           
+        }
+        .nav input{
+            height: 40px;
+            width: 250px;
+            border-radius: 10000px;
+            padding: 0 50px;
+            outline: none;
+            /* border: 1px solid rgb(46, 79, 139); */
+            background-color: #0a1d567c;
+            backdrop-filter: 9px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin-right: 100px;
+            border: none;
+        }
+
+        
+        .nav img{
+            height: 40px;
+            width: 40px;
+            margin-left: 80px;
+        }
+        .nav ul li a{
+            color: white;
+            /* font-family: 900; */
+            font-size:16px ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            padding: 0 10px;
+        }
+
+        .nav .fa-magnifying-glass{
+            color: white;
+            position: relative;
+            font-size: 20px;
+            right: -75px;
+            font-weight: 600;
+            
+        }
+        .nav .fa-user{
+            color: white;
+            position: relative;
+            right:50px;
+            /* align-items: center; */
+            font-size: 25px;
+            line-height: 0px ;
+            
+
+        }
+        .nav input:hover{
+            background-color: #061951;
+        }
+
+        .nav ul li a:hover{
+            color: #BECEFB;
+            
+        }
+        @media screen and  (max-width:1200px) {
+            .nav .fa-magnifying-glass{
+            color: white;
+            position: relative;
+            font-size: 20px;
+            right: -40px;
+            font-weight: 600;
+            
+        }
+            
+        }
+        @media screen and  (max-width:1000px){
+            .nav ul li:nth-child(5) , .nav ul li:nth-child(6) , .nav ul li:nth-child(7) {
+                display: none;
+
+            }
+        }
+        @media screen and  (max-width:770px){
+            .nav ul li{
+                display: none;
+            }
+            .nav input{
+            height: 40px;
+            width: 250px;
+            border-radius: 10000px;
+            padding: 0 50px;
+            outline: none;
+            /* border: 1px solid rgb(46, 79, 139); */
+            background-color: #0a1d567c;
+            backdrop-filter: 9px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin-right: -10px;
+            border: none;
+        }
+        .nav .fa-magnifying-glass{
+            color: white;
+            position: relative;
+            font-size: 20px;
+            right: -125px;
+            font-weight: 600;
+            
+        }
+
+        }
+        @media screen and  (max-width:600px){
+            .nav input{
+            height: 40px;
+            width: 250px;
+            border-radius: 10000px;
+            padding: 0 50px;
+            outline: none;
+            /* border: 1px solid rgb(46, 79, 139); */
+            background-color: #0a1d567c;
+            backdrop-filter: 9px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            margin-right: 40px;
+            border: none;
+        }
+        .nav .fa-magnifying-glass{
+            color: white;
+            position: relative;
+            font-size: 20px;
+            right: -75px;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="https://hindubabynames.info/wp-content/themes/hbn_download/download/telecom-companies/jio-logo.png" alt="ABCD">
+            <ul>
+                <li><a href="https://www.jio.com/mobile">Mobile</a></li>
+                <li><a href="https://www.jio.com/5g">True 5G</a></li>
+                <li><a href="https://www.jio.com/fiber">JioFiber</a></li>
+                <li><a href="https://www.jio.com/business/">Business</a></li>
+                <li><a href="https://www.jio.com/jcms/devices/discover/">Devices</a></li>
+                <li><a href="https://www.jio.com/jcms/apps/">Apps</a></li>
+                <li><a href="https://www.jio.com/help/home#/">Support</a></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search">
+            <a href="https://www.jio.com/selfcare/login/"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+</body>
+</html>

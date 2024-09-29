@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    </div>
+
+    <script>
+        let data = fetch("https://dummyjson.com/products");
+        let container = document.querySelector(".container");
+        data.then((e)=>{
+           return e.text();
+        }).then((api_data)=>{
+            for(x of JSON.parse(api_data).products){
+                for(index in x){
+                    var abcd =`
+                    <div class="box">
+                        <img src="${x.thumbnail}" alt="">
+                        <h2>${x.title}</h2>
+                        <h3>${x.price}</h3>
+                    </div>
+                    `;
+                }
+                container.insertAdjacentHTML("beforeend",abcd)
+            }
+        })
+      
+    </script>
+</body>
+</html>

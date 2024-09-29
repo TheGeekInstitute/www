@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-boxs;
+    }
+    .box{
+        background-image: url("http://10.10.10.10/Aasha/image/back.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .car{
+        height: 150px;
+        position: absolute;
+        bottom: 10px;
+        left:-390px;
+        animation-name:car ;
+        animation-duration: 10s;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+    }
+    .boy{
+        height: 170px;
+        position: absolute;
+        bottom: 25vh;
+        right: -100px;
+        animation-name:boy ;
+        animation-duration: 15s;
+        animation-direction: normal;
+        animation-timing-function:linear ;
+        animation-iteration-count: infinite;
+
+    }
+    .sun{
+        height: 150px;
+        position: absolute;
+        top:25vh ;
+        left:-11vw ;
+
+
+        animation-name:sun ;
+        animation-duration:30s ;
+        animation-direction: normal;
+        animation-timing-function:linear ;
+        animation-iteration-count:infinite ;
+      
+    }
+    @keyframes car{
+             from{
+                transform: translateX(0);
+             }
+             to{
+                transform: translateX(250vw);
+             }
+
+        }
+        @keyframes boy{
+            from{
+                transform: translateX(0) rotateY(180deg);
+
+            }
+            to{
+                transform: translateX(-120vw) rotateY(180deg);
+
+            }
+        }
+        @keyframes sun{
+            0%{
+                transform: translate(0,0);
+
+            }
+            25%{
+                transform: translate(50vw,-15vh);
+            }
+            75%{
+                transform: translate(90vw,-25vh);
+            }
+            100%{
+            transform: translate(112vw,15vh);
+            }
+        }
+            
+        
+    
+</style>
+
+</head>
+<body>
+    <div class="box">
+   <img src="./image/car.gif"class="car" alt="asd">
+    </div>
+    <img src="./image/boy.gif" alt="" class="boy">
+    <img src="https://static.vecteezy.com/system/resources/previews/009/304/897/original/sun-icon-set-clipart-design-illustration-free-png.png" alt="" class="sun">
+</body>
+</html>

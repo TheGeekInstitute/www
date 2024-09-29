@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBok</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 600px;
+            margin: 150px auto;
+
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+        
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-flow: row wrap ; */
+            /* flex-wrap: wrap; */
+
+            /* align-content: space-between; */
+        }
+
+        .container .box{
+            height: 150px;
+            width: 150px;
+            text-align:center;
+            background-color: red;
+            margin: 5px;
+            
+            flex-shrink: 0;
+            flex-grow: 0;
+            flex-basis: 100%;
+        }
+
+        .box2{
+            /* align-self: start; */
+            order: 10;
+        }
+
+        .box5{
+            /* align-self: end; */
+            order: 9;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+
+        <!-- <div class="box box1">7</div>
+        <div class="box box2">8</div>
+        <div class="box box3">9</div>
+        <div class="box box4">10</div>
+        <div class="box box5">11</div>
+        <div class="box box6">12</div>
+
+        <div class="box box1">13</div>
+        <div class="box box2">14</div>
+        <div class="box box3">15</div>
+        <div class="box box4">16</div>
+        <div class="box box5">17</div>
+        <div class="box box6">18</div>
+
+        <div class="box box1">13</div>
+        <div class="box box2">14</div>
+        <div class="box box3">15</div>
+        <div class="box box4">16</div>
+        <div class="box box5">17</div>
+        <div class="box box6">18</div> -->
+    </div>
+
+</body>
+</html>

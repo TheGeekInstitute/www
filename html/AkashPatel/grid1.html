@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-rows: [row1-start]70px [row1-end row2-start]  50px [row2-end row3-start] 1fr [row3-end row4-star] 70px [row4-end];
+
+            grid-template-columns: [col1-start]100px [col1-end col2-start] 1fr [col2-end col3-start] 100px [col3-end];
+            margin: auto;
+            gap: 5px;
+            text-align: center;
+
+
+        }
+
+        .box{
+            font-weight: 900;
+            
+            
+        }
+
+        .box1{
+            background-color: gray;
+            grid-area: row1-start / col1-start / row2-start / col3-end;
+          
+        }
+        .box2{
+           background-color: rgb(132, 85, 85);
+           
+          
+        }
+        .box3{
+            background-color: rgb(199, 199, 171);
+        }
+        .box4{
+            background-color: crimson;
+          
+        }
+        .box5{
+            background-color: rgb(182, 153, 212);
+          
+        }
+        .box6{
+            background-color: orange;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">header</div>
+        <div class="box box2">navigation menu</div>
+        <div class="box box3">content</div>
+        <div class="box box4">main content</div>
+        <div class="box box5">content</div>
+        <div class="box box6">footer</div>
+     
+    </div>
+</body>
+</html>

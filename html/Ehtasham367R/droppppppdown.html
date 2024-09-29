@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doco</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            background-color:rebeccapurple;
+            height: 50px;
+            color:white;
+            display: flex;
+            padding: 0px 10px ;
+            align-items: center;
+            justify-content:space-between;
+        }
+        .nav > .logo{
+            font-size: x-large;
+            font-family: cursive;
+            font-weight: 900;
+        }
+        .nav > .links{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+        }
+
+        .nav > .links > li > a{
+            display: block;
+            color: white;
+            margin: 0 10px;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+
+        .nav > .links > li > a:hover{
+            background-color: red;
+        }
+
+
+        .nav .links li .sub{
+            background-color: grey;
+            position: absolute;
+            width: 80px;
+            text-align: center;
+
+            display: none;
+        }
+
+        .nav .links li .sub li a{
+            display: block;
+            line-height: 40px;
+            color: white;
+        }
+
+        .nav .links li .sub li a:hover{
+            background-color: green;
+        }
+
+ 
+        .nav .links li:hover .sub{
+            display: block;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="nav">
+
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a> 
+                <ul class="sub">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

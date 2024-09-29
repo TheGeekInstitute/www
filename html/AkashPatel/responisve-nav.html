@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .btn{
+            /* display: none; */
+            font-size: xx-large;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: green;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+        }
+
+        .nav .links li{
+            margin: 0 10px;
+        }
+
+        .nav .links li a{
+            color: white;
+            font-size: large;
+        }
+
+        .logo{
+            font-size: 35px;
+            font-weight: 900;
+        }
+
+
+        .open,.close{
+            display: none;
+        }
+
+
+        @media screen and (max-width:600px) {
+          .nav .links{
+            position: absolute;
+            background-color: grey;
+            top: 50px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            flex-direction: column;
+            display: none;
+            text-align: center;
+          }
+
+          .nav .links li{
+            line-height: 3rem;
+          }
+
+          .nav .links li a{
+            font-size: 25px;
+          }
+
+          .open{
+            display:block;
+          }
+
+
+          #btn:checked ~ .links{
+            display: block;
+          }
+
+          #btn:checked ~ .btn > .open{
+            display: none;
+          }
+
+          #btn:checked ~ .btn > .close{
+            display: block;
+          }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+
+        <input type="checkbox" id="btn">
+        
+        <div class="btn">
+            <label for="btn" class="open">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <label for="btn" class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+        </div>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image:url(https://images.pexels.com/photos/3573351/pexels-photo-3573351.png);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam voluptatum quam veniam</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                </div>
+                <div class="images" style="background-image: url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg);">
+                    <div class="content">
+                        <h1>Welcome To Our Website</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+                    </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <button onclick="bulbon()">On</button>
+
+    <img  src="https://www.w3schools.com/js/pic_bulboff.gif" alt="xcv" id="bulb">
+    <!-- <img  src="https://www.w3schools.com/js/pic_bulboff.gif" alt="xcv" id="bulb"> -->
+
+  
+    <script>
+    let  bulb = document.querySelector('#bulb')    
+    
+    
+        function bulbon() {
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulbon.gif")
+            bulb.innerHTML = "Off";
+        }
+
+        function bulboff(){
+            bulb.setAttribute("src","https://www.w3schools.com/js/pic_bulboff.gif")
+            bulbon.innerHTML = "On";
+        }
+
+
+    </script>
+
+
+</body>
+</html>

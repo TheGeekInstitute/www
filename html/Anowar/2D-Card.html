@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+        
+            height: 400px;
+            width: 400px;
+            background-color: gray;
+            overflow: hidden;
+        }
+        .container .content{
+            height: 100%;
+            width: 100%;
+            /* background-color: yellow; */
+        }
+
+        .container .box{
+           
+            background-color: rgba(255, 0, 0, 0.849);
+            height: 100%;
+            width: 100%;
+           
+            transition: all 1s linear;
+        }
+
+
+        .container:hover .box{
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere amet et quae dolor unde recusandae eaque repudiandae ipsa culpa, consequatur nobis reprehenderit, atque facilis blanditiis dolores dicta minima, magnam explicabo.
+        </div>
+        <div class="box">
+            <h1> ipsum, dolor sit amet consectetur adipisicing elit. Sint unde tempora quod, facilis, dicta ut aliquid, fugiat aspernatur odit blanditiis vel impedit vero odio rem laborum? Vero laudantium beatae in!</h1>
+
+        </div>
+    </div>
+</body>
+</html>

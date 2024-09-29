@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(85, 85, 85);
+            height: 200rem;
+        }
+        .first{
+            /* border: 3px solid red; */
+            height: 43.8rem;
+            background: black;
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/b85863b0-0609-4dba-8fe8-d0370b25b9ee/fdf508c8-97d0-42fd-a6f9-9bef6bf96934/IN-en-20230731-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+            background-color: rgba(0, 0, 0, 0.522);
+            background-blend-mode: overlay;
+            
+
+        }
+        .first > img{
+            height: 130%;
+            width: 100%;
+            overflow: hidden;
+            /* display: none; */
+        }
+        .nav{
+            height: 5rem;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem 10.5rem;
+        }
+        .nav  img{
+            height: 4.8rem;
+        }
+        .nav .arr{
+            /* border: 1px solid blue; */
+            /* line-height: 50%; */
+            /* margin: auto; */
+            display: flex;
+            justify-content: space-between;
+            width: 18rem;
+            height: 2.2rem;
+        }
+    .nav  a{
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+        /* border: 1px solid white; */
+        font-weight: 600;
+        padding: .3rem 1rem;
+        color: white;
+        background-color: red;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+    .nav select{
+        padding: .3rem 0rem;
+        background: #00000000;
+        padding-left: 2rem;
+        font-size: 16px;
+        color: rgb(228, 228, 228);
+        border-radius: 4px;
+        font-weight: 500;
+        border-color:gray ;
+        outline: none;
+
+
+    }
+    .nav  i{
+        color: white;
+        position: relative;
+        font-size:15.5px;
+        /* border: 1px solid pink; */
+        left: 3.8rem;
+        top: .7rem;
+    }
+    .hero{
+        color: white;
+        margin: 10rem 5rem;
+        /* border: 1px solid white; */
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 55px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 1000;
+        padding-bottom: 1.5rem;
+    }
+    .hero h3 , h5{
+        font-size:26px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 5;
+        padding-bottom: 1.5rem;
+
+    }
+    /* input{
+        height: 3.5rem;
+        width: 25rem;
+        font-size: 16px;
+        padding: ;
+    } */
+     .rrr{
+        /* line-height: 0em;
+        text-align: start; */
+        /* border: 1px solid green; */
+        
+    }
+    
+         .rrr input{
+            width: 24rem;
+            height: 3.5rem;
+            padding: 0rem .5rem ;
+            /* margin-top: ; */
+            margin-bottom: 1em;
+            font-size: 1rem;
+            color: white;
+            border-radius: 3px;
+            z-index: 5;
+            background-color: rgba(0, 0, 0, 0.562);
+            border:1px solid rgb(128, 128, 128);
+        }
+        .rrr input[type=submit]{
+            width: 12.5rem;
+            margin: 0rem .4rem;
+            background-color: red;
+            font-size: 23px;
+            font-weight: 600;
+            padding-right: 2rem;
+            border: none;
+            
+        }
+
+        .rrr input[type=submit] + i{
+            /* border: 1px solid green; */
+            position: relative;
+            right: 2.7rem;
+            font-size: 1.4rem;
+
+
+        } 
+        .items{
+            height: 37.4rem;
+            background-color: black;
+            color: white;
+            margin: .5rem 0rem;
+            font-size: 34px;
+            
+        }
+        .items .left,.right{
+            width: 50%;
+            border: 1px solid white;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+           <div class="nav">
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-text-emblem-31.png" alt="">
+            <div class="arr">
+                <i class="fa-sharp fa-solid fa-globe"></i>
+                <select>
+                    <option value="">English</option>
+                    <option value="">Hindi</option >
+                    <option value="">Chinese</option>
+                    <option value="">American</option>
+                </select>
+                <a href="">Sign in</a>
+            </div>
+        </div>
+        <div class="hero">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <h5>Ready to watch? Enter your email to create or restart your membership.</h5>
+            <div class="rrr">
+                
+                <input type="text" placeholder="Email  adderss">
+                <input type="submit" value=" Get Started"><i class="fa-solid fa-chevron-right"></i>
+                
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="items box">
+            <div class="left">
+                <h1>Enjoy on your TV</h1>
+            <h2>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h2>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="items box1"></div>
+        <div class="items box2"></div>
+        <div class="items box3"></div>
+    </div>
+    </div>
+    
+</body>
+</html>

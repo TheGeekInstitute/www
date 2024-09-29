@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal practise</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .open{
+            width: 6rem;
+            background-color: aqua;
+            color: black;
+            margin: 5rem;
+            padding: 10px;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        .contain{
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.212);
+            display: none;
+        }
+
+        .contain .box{
+            border: 2px solid red;
+            height: 20rem ;
+            width: 20rem;
+            margin: 150px auto;
+            padding: 10px;
+        }
+
+        #btn:checked ~ .contain{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="btn">
+     <label for="btn" class="open">Open</label>
+    <div class="contain">
+        <div class="box">
+            <div class="head">
+            <div class="modal">
+                <p>hello yes</p>
+            </div>
+
+            <div class="second">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima, eum ex ad odit, ipsam officia natus molestias a qui sequi quia accusantium illo vero consectetur expedita atque suscipit distinctio.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+
+        h1::before{
+            content:counter(section) " ";
+            counter-increment: section;
+            color: white;
+            background-color: red;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        h1{
+            counter-reset: section-one;
+        }
+        h2{
+            text-indent: 30px;
+            counter-reset:section-two;
+        }
+        h2::before{
+            content:counter(section) "." counter(section-one) " ";
+            color: green;
+            counter-increment: section-one;
+        }
+
+        h3{
+            text-indent: 60px;
+        }
+
+        h3::before{
+            content: counter(section) "." counter(section-one) "." counter(section-two) " ";
+            counter-increment: section-two;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Website Development</h1>
+        <h2>HTML</h2>
+            <h3>ABCd</h3>
+            <h3>ABCd</h3>
+
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Cyber Security</h1>
+        <h2>Linux</h2>
+        <h2>Windows</h2>
+        <h2>Wifi</h2>
+    <h1>Programming</h1>
+        <h2>Java</h2>
+        <h2>Python</h2>
+        <h2>Ruby</h2>
+</body>
+</html>

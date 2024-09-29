@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 100vw;
+            height: 100vh;
+            /* margin: 50px auto; */
+            display: grid;
+            grid-template-columns:100px 1fr 100px ;
+            grid-template-rows: 70px 40px 1fr 50px  ;
+            gap: 5px;
+
+
+        }
+
+        .box {
+            text-align: center;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .box2 {
+            background-color: green;
+            grid-row: 2 / 3;
+            grid-column: 1 /4;
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+        }
+
+        .box4 {
+            background-color: cyan;
+
+        }
+
+        .box5 {
+            background-color: plum;
+
+        }
+
+        .box6 {
+            background-color: crimson;
+            grid-area: 4 / 1 / 5 / 4;
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">header</div>
+        <div class="box box2">nav</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">footer</div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->
+
+<!-- min-content
+max-content
+minmax
+
+Implicit & Explicit Grid
+grid-auto-rows
+grid-auto-flow:column/row
+grid-auto-columns -->

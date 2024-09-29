@@ -1,0 +1,350 @@
+<!--all paragraph details and titles have been written according to my personal opinion and experience in this field-->
+
+<html>
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+/*all elements style*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*web body style*/
+body{
+  background-color: #f5f5f5;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav-list li{
+  list-style: none;
+}
+
+
+/*main navigation bar style*/
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container{
+  width: 100%;
+  position: fixed;
+}
+
+nav{
+  width: 100%;
+  height: 12vh;
+  background-color: #ba6300;
+  display: flex;
+}
+
+.nav-list a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  padding: 0 15px;
+}
+
+.logo{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list{
+  display: flex;
+  margin: -10px 30px auto auto;
+}
+
+.nav-list li{
+  line-height: 15vh;
+  position: relative;
+}
+
+.nav-list a:hover{
+  color: #2b2b2b;
+  transform: scale(1.2);
+  transition: all 0.7s ease;
+}
+
+.business-list{
+  position: absolute;
+  border: 2px solid #ba6300;
+  z-index: 100;
+  opacity: 0;
+  top: 80px;
+  visibility: hidden;
+}
+
+.business-list::before{
+  content: '';
+  position: absolute;
+  left: -30px;
+}
+
+.business-list a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  margin: -10px;
+  text-align: center;
+}
+
+.nav-list li:hover > .business-list{
+  opacity: 1;
+  visibility: visible;
+  background: #454545;
+  width: 150px;
+  left: -30px;
+}
+
+.business-list a:hover{
+  color: #ba6300;
+  transform: scale(1.1);
+  transition: all 0.7s ease;
+}
+
+
+/*page banner introducing the department style*/
+.banner{
+  width: 100%;
+  height: 300px;
+  background-image: url(https://i.ibb.co/DKpLfrj/clients.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 30px;
+  border-bottom: 2px solid #ba6300;
+}
+
+
+/*contained area style*/
+.work-container{
+  display: block;
+  position: relative;
+  margin: 120px auto;
+  width: 95%;
+  text-align: center;
+}
+
+
+/*client headline style*/
+.clients{
+  position: relative;
+}
+
+
+/*client headline text style*/
+h1{
+  font-family: roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #212121;
+  padding: 10px auto;
+  margin-bottom: 80px;
+}
+
+
+/*client headline underline style*/
+.rebbr{
+  width: 35px;
+  height: 2px;
+  background: #ba6300;
+  position: relative;
+  top: -75px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+
+/*all about clients style*/
+.client-details{
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin-bottom: 100px;
+}
+
+p{
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  line-height: 22px;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 20px;
+}
+
+/*all clients logo*/
+.img-deco{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2.5);
+  margin: 30px auto 30px auto;
+  padding: 40px;
+}
+
+
+/*the footer style*/
+footer{
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #2b2b2b;
+  margin-top: 80px;
+}
+
+.parent-bottom{
+  height: 280px;
+}
+
+
+/*social media logo style*/
+.media{
+  display: flex;
+  background: #454545;
+  padding: 5px 10px 10px 10px;
+  width: 100%;
+  height: 80px;
+  justify-content: center;
+}
+
+.social-media{
+  padding: 10px;
+  width: 80px;
+}
+
+.social-media a{
+  color: white;
+  height: 50px;
+}
+
+.social-media a:hover{
+  color: #db7500;
+}
+
+.media .social-media i{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+
+/*bottom navication bar style*/
+.footer-details-top{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-details-top a{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-details-top a:hover{
+  color: #ba6300;
+}
+
+
+/*company rights style*/
+.footer-details-bottom p{
+  font-family: sans-serif;
+  color: #636363;
+  font-size: 14px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+    </style>
+<!--javascript for social media icons-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+    <body>
+    <header>
+      
+<!--main navigation bar-->
+      <div class="container">
+       <nav>
+          <div class="logo">
+            <img src="https://i.ibb.co/RGKhSdX/Logo-nav-new-3.png" height="85" class="logo-deco">
+            </div>
+          <ul class="nav-list">
+            <li>
+              <a href="https://codepen.io/fady-naddaf/full/eYRdQjj">Business</a>          
+            <ul class="business-list">
+                <li>
+                  <a href="https://codepen.io/fady-naddaf/full/wveMNdW">Events</a>
+                </li>
+                <li>
+                  <a href="https://codepen.io/fady-naddaf/full/dyRvpwo">Gift Items</a>
+                </li>
+              <li>
+                  <a href="https://codepen.io/fady-naddaf/full/MWoeQwe">Clients</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://codepen.io/fady-naddaf/full/MWooyXZ">Services</a>
+            </li>
+            <li>
+              <a href="https://codepen.io/fady-naddaf/full/mdwEWmX">About Us</a>
+            </li>
+            <li>
+              <a href="https://codepen.io/fady-naddaf/full/oNwErWQ">Contact</a>
+            </li>
+            <li>
+              <a href="https://codepen.io/fady-naddaf/full/gORmgzJ">home</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      
+<!--page banner introducing the department-->
+    <div class="banner"></div>
+      
+<!--contained area-->
+      <div class="work-container">
+        
+<!--client headline-->        
+        <div class="clients">
+          <h1> Clients </h1>
+          
+<!--client headline underline-->          
+            <div class="rebbr"></div>
+          
+<!--all about clients-->          
+          <div class="client-details">
+          <p> <em>Al Mana Qatar Design Section</em> primarily started to work its way into a niche position in the Advertising industry. Our backbone structure is our own production unit that operates in <em>Doha</em> enabling us in better pricing, control of production and most of all large degree of flexibility that our present clients enjoy.Powermedia is full- fledged design & printing house with strong foundation in media and market research. We are different from others as we believe creativity should follow strategy and not the other way around. We support our clients with an advertising plan in all areas of promotion.</p>
+        </div>
+          
+<!--all clients logo-->          
+        <div>
+          <img src="https://i.ibb.co/TLK3WjN/Logos.png" class="img-deco" height="700">
+        </div>
+        </div>
+      </div>
+       
+<!---the footer--->
+  <footer class="parent-bottom">
+    
+
+  </body>
+</html>

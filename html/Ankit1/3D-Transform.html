@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transform</title>
+    <style>
+        .container{
+            background-color: rgba(128, 128, 128, .5);
+            height: 300px;
+            width: 250px;
+            margin: 150px auto;
+            perspective: 600px;
+            transform: rotateY(30deg);
+
+            
+        }
+
+        .container .box{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            transition: all .5s 
+            linear;
+
+            /* transform-origin: top right; */
+            
+            /* transform: translateX(-100px); */
+            /* transform: translateY(100px); */
+            /* transform: perspective(600px) translateZ(100px); */
+            /* transform: translate3d(100px,100px,100px); */
+
+             /* transform: scaleX(2); */
+            /* transform: scaleY(1.5); */
+            /* transform: scale3d(2,2,2); */
+
+
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(-180deg); */
+            /* transform: rotateZ(180deg); */
+
+            /* backface-visibility: hidden; */
+
+            
+
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>HELLO :)</h1>
+        </div>
+    </div>
+    
+</body>
+</html>

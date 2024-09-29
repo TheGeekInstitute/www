@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* text-decoration: none; */
+    list-style: none;
+    
+}
+.head h1{
+    color:rgba(212, 73, 101, 0.87);  
+    /* position: fixed;   */
+}
+.head{
+    margin-left: 10px;
+    position: fixed;
+    
+}
+.nav{
+    height: 50px;
+    width: 100vw;
+    background-image:linear-gradient(45deg,red,yellow,white,cyan,blue);
+    margin-left: 100px;
+    position: fixed;
+    margin-top: 52px;
+    
+    
+}
+.nav ul{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: 900;
+     
+}
+.nav ul li{
+    height: 50px;
+    line-height: 50px;
+    width: 20%;
+}
+.nav ul li:hover{
+    background-color: color-mix(in srgb-linear,red 50%,blue 50%);
+}
+.side{
+    margin-top:52px;
+    /* background-image:linear-gradient( to-right,green,); */
+    position:fixed;
+    height: 100vh;
+    width: 100px;
+    background-image:linear-gradient(225deg,red,yellow,white,rgba(70, 206, 70, 0.89),green);
+}
+.side ul li{
+    
+    padding-top:100px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 800;
+}
+.side ul li a{
+    font-size: large;
+    color: rgb(102, 14, 14);
+    transition-property: all;
+    transition-duration: .5s;
+}
+.side ul li a:hover{
+    background-color: color-mix(in hsl shorter hue, red 50%, blue 50%);
+    color: black;
+    
+    
+}
+.main{
+    width:calc(100vw-100px);
+    /* position: fixed; */
+       
+}
+.main img{
+    height: 400px;
+    width:calc(100vw - 100px);
+    margin-left: 100px;
+    margin-top:102px;
+    
+}
+.m-box h1{
+    
+    
+}
+.ex li{
+   display: inline-block;
+   border: 1px solid black;
+   margin: 5px 50px;
+   padding: 10px; 
+   background-color: rgb(221, 221, 221);
+    
+}
+
+
+.para{
+    margin-left: 100px;
+}
+.f-1{
+    text-decoration: underline;
+}
+.foot{
+    margin-left: 100px;
+    background-color:rgba(209, 209, 209, 0.781);
+    font-size: large;
+    padding: 5px;
+    margin-top: 52px;
+        
+}
+.c-tag{
+    color: blue;
+    font-weight: 500;
+}
+

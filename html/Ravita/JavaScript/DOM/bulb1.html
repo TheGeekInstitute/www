@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer</title>
+    <style>
+
+        .bulb{
+            background-image: url("https://www.w3schools.com/js/pic_bulboff.gif");
+            height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .bulb.active{
+            background-image: url("https://www.w3schools.com/js/pic_bulbon.gif");
+        }
+
+        button{
+            display: block;
+            margin: auto;
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="bulb" >
+
+    </div>
+
+    <button id="btn">ON</button>
+
+    <script>
+        let bulb = document.querySelector(".bulb");
+
+        let btn=document.querySelector('#btn');
+        btn.addEventListener("click",()=>{
+            bulb.classList.toggle("active")
+
+            if(bulb.classList.contains("active")){
+                btn.innerHTML="OFF"
+            }
+            else{
+                btn.innerHTML="ON"
+            }
+        })
+
+    </script>
+</body>
+</html>

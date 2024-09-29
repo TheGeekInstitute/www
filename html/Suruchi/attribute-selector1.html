@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        input[type="text"]{
+            background-color: red;
+        }
+        input[type="password"]{
+            background-color: blue;
+        }
+        a[target]{
+            color: green;
+        }
+        p[class~="para"]{
+            /* color: red; */
+        }
+        p[class|="abcd"]{
+        /* color: red */
+        }
+        p[class^="para"]{
+            color: green;
+        }
+        p[class]
+
+    </style>
+</head>
+<body>
+    <p align="center" class="Abcd-xyz para1 paragraph1 mypara abcd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nisi excepturi ipsa aut, neque dolorem ut quisquam, quos labore error, sit sequi maxime in. Ducimus quas omnis consequatur voluptas consectetur deleniti quasi placeat sunt quaerat numquam, aperiam a, voluptate rerum eveniet esse quibusdam temporibus nemo doloremque quis eius iure dolore ullam itaque at! Magnam, facilis sequi dolor veritatis soluta odit labore sapiente reiciendis illo, laboriosam rem iure neque aliquid maiores quia perferendis voluptatum recusandae, libero quidem aut unde. Nesciunt suscipit autem unde at voluptatum minus quaerat, sequi magnam ea fugiat illum? Fugit amet, dolorum dolor alias veritatis praesentium autem quos.
+    </p>
+    <p align="left" class="para paragraph mypara my-abcd key">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta voluptates at dolore fuga cupiditate hic voluptatum obcaecati sunt exercitationem reiciendis veritatis culpa, quisquam, magnam beatae? Consequatur maiores nemo molestias dignissimos iste. Minus dolores sunt ducimus repudiandae dolorem alias praesentium eveniet in cum dolorum rem voluptas eum ratione libero maxime, consequuntur modi non nulla nam distinctio excepturi fugit et, quo corporis. Dolorem doloremque dolores sunt officia quae rem unde in? Optio tempore aspernatur nesciunt, error laudantium iste tenetur numquam quaerat quod harum temporibus delectus reprehenderit illum quasi saepe quas inventore facere cumque atque ex dolorem magnam. Neque praesentium beatae atque adipisci rerum quos cumque, asperiores repudiandae molestias soluta animi eaque quod tempora nisi exercitationem dicta? Harum nam hic odit earum error quia voluptas optio, modi inventore excepturi perspiciatis officiis, pariatur soluta voluptatibus blanditiis. Et hic commodi magnam reprehenderit aperiam tenetur perferendis deleniti mollitia asperiores, beatae totam eius autem exercitationem, nobis voluptate.
+
+    </p>
+    
+    <a href="#">Good MORNING</a>
+    <a href="#" target="_ABCD">HELLO</a>
+    <a href="#" target="_blank">SIR</a>
+    <input type="text">
+    <input type="password">
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+
+Dark Server
+
+
+sudo apt install tor
+
+sudo nano /etc/tor/torrc
+
+uncomment
+HiddenServiceDir
+HiddenServicePort
+
+sudo service tor start
+
+cat /var/lib/tor/hidden_service/hostname
+
+
+sudo nano /etc/nginx/nginx.conf
+
+uncomment
+server-token off;
+
+uncomment
+server_name_hash_bucket_size 128;
+server_name_in_redirect off;
+
+cd /etc/nginx
+
+cp sites-avilable/default sites-avilable/darkweb
+
+nano sites-avilable/darkweb
+
+delete default_server
+listen 80
+
+server{
+listen 80;
+listen[::]:80;
+
+root /var/www/darkweb
+
+server_name ajkdjsdjsdfhjksdfhsdjk.onion
+}
+
+
+sudo ln -s /etc/nginx/sites-avilable/darkweb /etc/nginx/sites-enabled/darkweb
+
+
+sudo nginx -t
+
+sudo service nginx start

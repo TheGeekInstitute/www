@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 250px;
+            width: 280px;
+            background-color: pink;
+            text-align: center;
+            margin:  150px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1 id="heading">This is Heading</h1>
+    </div>
+
+
+    <script>
+        let box = document.querySelector(".box");
+        let heading = document.querySelector("#heading")
+
+        let element = document.createElement("h1");
+        let text = document.createTextNode("This is Simple text");
+
+        element.append(text)
+        console.log(element)
+
+        // box.appendChild(element)
+        // box.insertBefore(element,heading)
+        // box.insertAdjacentElement("beforebegin",element)
+        // box.insertAdjacentElement("afterbegin",element)
+        // box.insertAdjacentElement("beforeend",element)
+        // box.insertAdjacentElement("afterend",element)
+
+        // let txt ="This is text";
+        // box.insertAdjacentText("afterbegin",txt)
+
+
+
+
+        let data = `
+            <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="" id="bulb">
+        
+        `;
+
+        //  box.insertAdjacentHTML("afterbegin",data)
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+<!-- 
+createElement & CreatetextNode
+createComment
+
+appendChild & insertBefore
+
+insertAdjacentElement & insertAdjacentHTML
+
+insertAdjacentText
+
+    insertAdjacent Positions:
+        beforebegin
+        afterbegin
+        beforeend
+        afterend 
+    
+    -->

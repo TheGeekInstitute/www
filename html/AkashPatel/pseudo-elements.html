@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements</title>
+    <img src="https://img.freepik.com/premium-vector/landing-page-payment-with-glass-effect_290635-53.jpg" alt="">
+<style>
+    .para::first-letter{
+        color: red;
+        font-size: 20px;
+    }
+    .para::first-line{
+        color: blue;
+    }
+    .para{
+        color: green;
+    }
+
+    
+    ol{
+        color: red;
+    }
+
+    ul{
+        color: green;
+    }
+
+    ol li::marker{
+        color: green;
+    }
+    ul li::marker{
+        color: greenyellow;
+    }
+    
+    .new::selection{
+        color: red;
+        background-color: greenyellow;
+    }
+
+.new{
+    user-select:auto;
+
+}
+
+h1::before{
+    content: "The ";
+    color: red;
+}
+
+h1::after{
+    /* content: " Institute"; */
+    content: attr(data-myattr);    
+    color: orangered;
+}
+
+input{
+    /* color: red; */
+    caret-color: rgb(236, 0, 185);
+}
+
+input::placeholder{
+    color: red;
+    font-weight: 900;
+}
+.how::selection{
+    color: blue;
+    background-color: red;
+}
+h2::before{
+    content:"The";
+    color: red;
+}
+h2::after{
+    content: "Class";
+    color: red;
+}
+
+
+</style>
+</head>
+<body>
+
+    <ul>
+        <li>Abcd</li>
+        <li>asdsa</li>
+        <li>sadsa</li>
+    </ul>
+
+    <ol>
+        <li>sada</li>
+        <li>sadsada</li>
+        <li>sadsa</li>
+    </ol>
+
+
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quam totam. Possimus molestiae repellat numquam magnam quod rem vero accusantium nobis eum debitis id, voluptatum tempora consectetur at voluptatem sapiente?</p>
+
+    <p class="new">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae totam impedit voluptates! Necessitatibus ullam veniam optio neque sapiente! Sint voluptatum laboriosam sit recusandae aliquam magni modi temporibus maxime minima.
+        Eaque, eum illum? Dolorum vitae vero beatae pariatur voluptatibus assumenda! Quisquam similique facilis ullam omnis nulla. Eligendi tempora minus, voluptates reiciendis consequuntur sapiente nihil reprehenderit corrupti ab, ad alias voluptatibus?
+        Dolores expedita, labore unde quod repellat sunt neque quis tempore omnis repellendus itaque eius non voluptatem amet vel magnam. Debitis ex laboriosam consectetur perspiciatis eaque aspernatur, quae iusto nobis dolorum.
+    </p>
+
+    <h1 align="center" data-myattr=" Institute of Cyber Security">Geek</h1>
+
+
+    <input type="text" placeholder="ABCD">
+    <p class="how">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet modi sit placeat optio omnis laborum nisi cupiditate incidunt, at hic aspernatur? Ducimus dolor, excepturi ea iste iusto molestiae fuga et?
+    Quis, eum ea minima, sapiente consequatur explicabo debitis saepe nostrum harum inventore vitae dignissimos quibusdam libero earum ipsam. Ratione assumenda quisquam maiores ipsa ipsam vero, labore rem vitae aspernatur pariatur.</p>
+    <h2>
+        GRAMMER
+    </h2>
+
+</body>
+</html>

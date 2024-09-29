@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Heading</h1>
+    <h1 class="heading">Headingasdasd</h1>
+
+    <p id="para" class="abcd" style="background-color: red;">Parag<br>raph</p>
+    <b>Bold tag</b>
+    <h1>Heading 2</h1>
+    <script>
+        // console.log(document.all)
+        // console.log(document.head)
+        // console.log(document.body)
+
+        let heading = document.getElementsByTagName("h1")[0];
+
+        // let heading =document.getElementsByClassName("heading")[1]
+
+        let para = document.getElementById("para");
+
+        // console.log(para.innerText)
+        // console.log(para.innerHTML)
+
+        // console.log(para.getAttribute("class"))
+        // console.log(para.getAttributeNode("class"))
+
+        // console.log(para.attributes[1])
+
+        // heading.innerText = "ABCD"
+        // heading.innerHTML="<i>ABCD XYZ</i>"
+
+        // heading.setAttribute("style","color:green;");
+        // heading.setAttribute("class","color")
+
+        para.removeAttribute("style");
+
+
+    </script>
+</body>
+</html>
+
+<!-- 
+
+
+DOM Introduction
+
+DOM Targeting methods
+    document
+    document.all
+    document.documentElement
+    document.head
+    document.title
+    document.body
+    document.images
+    document.anchor
+    document.links
+    document.forms
+    document.doctype
+    document.URL
+    document.baseURI
+    document.domain
+    document.getElementByID
+    document.getElementsByClassName
+    document.getElementsByTagName
+
+DOM Get & set Values Methods
+    DOM GET:
+        innerText
+        innerHTML
+        getAttribute
+        getAttributeNode
+        Attribute
+    DOM SET:
+        innerText
+        innerHTML
+        setAttribute
+        Attribute
+    removeAttribute -->

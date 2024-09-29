@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+
+            animation-name: abcd;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            margin: auto;
+            /* animation-delay: 5s; */
+            /* animation-fill-mode:both; */
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 100px;
+        }
+        
+        .box:hover{
+            /* animation-play-state: paused; */
+            /* border-radius: 50%; */
+        }
+
+        @keyframes abcd {
+            /* from{
+               
+                width: 100px;
+            }
+
+            to{
+               width: 400px;
+            } */
+        
+            0%{
+                transform: translate(0,0) rotate(0);
+                background-color: red;
+            }
+
+            25%{
+                transform: translate(200px,0) rotate(-90deg);
+                background-color: cyan;
+
+            }
+        
+            50%{
+                transform: translate(200px,200px) rotate(-180deg);
+                background-color: purple;
+            }
+
+            75%{
+                transform: translate(0,200px) rotate(-270deg);
+                background-color: greenyellow;
+            }
+
+            100%{
+                transform: translate(0,0) rotate(-360deg);
+                background-color: aquamarine;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+ABCD
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="?abcd=123#aabbcc">Hello</a>
+
+    <button id="btn">Click Me</button>
+    <script>
+        // console.log(window.location.hash)
+        // console.log(location.host)
+        // console.log(location.hostname)
+
+        // console.log(location.origin)
+        // console.log(location.pathname)
+        // console.log(location.port)
+
+        // console.log(location.protocol)
+
+        // console.log(location.search)
+
+        document.querySelector('#btn').addEventListener("click",()=>{
+
+            // window.location.href="https://www.w3schools.com/jsref/obj_location.asp"
+
+            // location.assign("https://www.w3schools.com/jsref/obj_location.asp")
+
+            location.replace("https://www.w3schools.com/jsref/obj_location.asp")
+
+        })
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- Location Object -->
+
+
+<!-- Location Object Properties
+Property 	Description
+hash 	Sets or returns the anchor part (#) of a URL
+host 	Sets or returns the hostname and port number of a URL
+hostname 	Sets or returns the hostname of a URL
+href 	Sets or returns the entire URL
+origin 	Returns the protocol, hostname and port number of a URL
+pathname 	Sets or returns the path name of a URL
+port 	Sets or returns the port number of a URL
+protocol 	Sets or returns the protocol of a URL
+search 	Sets or returns the querystring part of a URL
+
+Location Object Methods
+Method 	Description
+assign() 	Loads a new document
+reload() 	Reloads the current document
+replace() 	Replaces the current document with a new one -->

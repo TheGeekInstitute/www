@@ -1,0 +1,36 @@
+.main{
+
+}
+.header{
+    color:blue;
+    background-color: black;
+}
+.nav a{
+    color: brown;
+    background-color: chartreuse;
+    margin: 20px 100px;
+}
+.h{
+    color: brown;
+    border: 3px solid red;
+}
+.d p{
+    color: cornsilk;
+    border-style: initial;
+}
+.dropdown{
+    background-color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: 700;
+    font-size: smaller;
+}
+.dropdown-content{
+    color:white;
+    background-color:black;
+}
+.dropdown-content a{
+    color: white;
+}
+.emoji{
+    size: 1;
+}

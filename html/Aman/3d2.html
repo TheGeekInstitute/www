@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d card </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* text-decoration: none; */
+            /* list-style: none;   */
+
+        }
+        .container{
+            /* border: 1px solid red ; */
+            height: 300px ;
+            width: 300px ;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+            transform-style: preserve-3d;
+
+        }
+        .card{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s ;
+            /* backface-visibility: hidden; */
+
+        }
+
+           .front,.back{
+            font-size: 65px ;
+            line-height: 300px ;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            backface-visibility: hidden;
+            border-radius: 20px ;
+            box-shadow: 0px 0px 10px black;
+
+           }
+
+        .front{
+            background-color:black;
+            color: white;
+
+        }
+        .back{
+            background-color: yellow;
+            transform: rotateY(180deg);
+        }
+        .container:hover .card{
+          transform: rotateY(180deg);
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">EENA</div>
+            <div class="back">PUBG</div>
+        </div>
+    </div>
+    
+</body>
+</html>

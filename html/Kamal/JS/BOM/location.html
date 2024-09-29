@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="https://www.mozilla.org/en-US/firefox/?utm_medium=firefox-desktop&utm_source=bookmarks-toolbar&utm_campaign=new-users&utm_content=-global"></a>
+
+
+    <button id="btn">ABCD</button>
+
+    <script>
+        let anchor =  document.querySelector("a");
+
+        // console.log(anchor.hash)
+        console.log(window.location.host)
+        console.log(anchor.hostname)
+        // console.log(anchor.href)
+    
+    
+        document.querySelector("#btn").addEventListener('click',()=>{
+            // window.location.href="https://www.google.com";
+            // console.log("dsad")
+            window.location.assign="https://www.google.com";
+            // window.location.replace="https://www.google.com";
+            // window.location.reload();
+            
+        })
+        // console.log(window.location.origin)
+        // console.log(window.location.pathname)
+        // console.log(window.location.protocol)
+        // console.log(window.location.port)
+        // console.log(anchor.search)
+
+
+
+
+    </script>
+</body>
+</html>

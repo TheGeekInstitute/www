@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container.nav .links li  :hover{
+            color:red ;
+            
+        }
+
+        .container{
+            background-color: #37517E;
+            color: white;
+            height: 40rem;
+        }
+
+        .container .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 3rem;
+            padding: 0 2rem;
+        }
+
+        .container .nav .logo{
+            font-size: 40px;
+            color:greenyellow;
+            font-family: cursive;
+        }
+
+        .container .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 2rem;
+        }
+        .container > .nav > .links > li a{
+            display: block;
+            color: white;
+            font-size: large;
+            margin: 0 .5rem;
+            line-height: 3rem;
+        }
+       
+
+        .container > .nav > .links > li:last-child  a{
+            border: 1px solid #47B2E4;
+            line-height: 2.5rem;
+            border-radius:10000px ;
+            padding: 0 .5rem;
+        }
+
+        .container > .nav > .links > li:last-child a:hover{
+           background-color: #47B2E4;
+        
+        }
+
+
+        .container .nav .links li .sub{
+            position: absolute;
+            top: 3rem;
+            width: 100px;
+            text-align: center;
+            display: none;
+            background-color: gray;
+        }
+
+        .container .nav .links li .sub li a:hover{
+           color: red;
+        }
+
+        .container .nav .links li:hover .sub{
+            display: block;
+        }
+
+        .container .nav .links li .sub li a{
+            display: block;
+            line-height: 2.5rem;
+        }
+
+        .container .hero{
+          
+            height: 37rem;
+            padding:5rem 4rem ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .hero .box:first-child{
+         
+            height: 30rem;
+            padding: 4rem .5rem;
+        }
+
+        .container .hero .box:first-child h1{
+            font-size: 2.7rem;
+          
+            width: 40rem;
+
+        }
+
+        .container .hero .box:first-child p{
+            font-size: 1.5rem;
+            line-height: 3rem;
+          color: chartreuse;
+            width: 40rem;
+            padding: .5rem 0;
+
+        }
+
+        .container .hero .box:first-child .btn a{
+        color: blue;
+        font-size: x-large;
+        display: inline-block;
+
+        }
+
+        .container .hero .box:first-child .btn a:first-child{
+      
+            background-color: #47B2E4;
+            padding: .5rem 1rem;
+            border-radius: 1000px;
+            margin-right: 10px;
+        }
+        
+        .container .hero .box:last-child{
+       
+            height: 30rem;
+        }
+
+        .container .hero .box:last-child img{
+            height: 90%;
+            animation: img 5s linear 0s infinite alternate ;
+        }
+        .container .nav .links li a:hover{
+            color: chartreuse;
+        }
+
+
+        @keyframes img {
+            form{
+                transform: translateY(0);
+            }
+
+            to{
+                transform: translateY(50px);
+            }
+        }
+        .services img{
+            height: 100px;
+            width: 100px;
+            padding: 0.9rem;
+            display: flex;
+            filter: grayscale(1);
+        
+        }
+        
+        .services{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .services img:hover{
+            filter: grayscale(0);
+            cursor: pointer;
+        }
+        .boader .footer h1{
+            height: 100px;
+            color: blue;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .para P{
+            font-size: x-large;
+            justify-content: center;
+            width: 500px;
+            
+        }
+        .click a i {
+            color:red;
+            height: 3rem;
+            width: 2rem;
+            line-height: 2rem;
+            font-size: x-large;
+        }
+
+        .click{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            
+        }
+        .animal{
+    
+            background-color:rgba(255, 192, 203, 0.89);
+            height: 30rem; 
+        }
+        .animal h1{
+            color:#37517E;
+        }
+        .animal h2{
+            color:darkgrey;
+            font-size:large;
+            
+        }
+
+        .animal .parent{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .animal .parent .left{
+            /* border: 1px solid red; */
+            width: 50%;
+            color: black;
+            margin-left: 20px;
+            
+
+        }
+
+
+        .animal .parent .left{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+       
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .animal .parent .left .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+
+        .animal .parent .left .box .heading{
+            background-color:cornflowerblue;
+            display: block;
+            width:30rem;
+            display: flex;
+            justify-content: space-around;
+            cursor: pointer;
+            height: 2rem;
+            align-items: center;
+                        
+        }
+
+        .animal .parent .left .box .content{
+            display: none;
+            width: 30rem;
+            background-color: aquamarine;
+        }
+
+        .animal .parent .left .box input[type="checkbox"]:checked ~ .content{
+            display: block;
+        }
+        #btn1:checked ~ .heading i{
+            transform:rotate(180deg);
+        }
+        #btn2:checked ~ .heading i{
+            transform:rotate(180deg);
+        }
+        #btn3:checked ~ .heading i{
+            transform:rotate(180deg);
+        }
+
+      
+
+        .animal .parent .right{
+            width: 50%;
+            height: 20rem;
+            
+        }
+        
+        .animal .right img{
+            height: 22rem;
+            margin-left: 20px;
+            
+        }
+       
+      
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">ARSHA</div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">DropDown +</a>
+                <ul class="sub">
+                    <li><a href="#">page1</a></li>
+                    <li><a href="#">page2</a></li>
+                    <li><a href="#">page3</a></li>
+
+                </ul>
+                </li>
+                
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Get Started</a></li>
+            </ul>
+        </div>
+
+        <div class="hero">
+            <div class="box">
+                <h1>Better Solutions For Your Business</h1>
+                <p>We are team of talented designers making websites with <br> Boostrap</p>
+
+                <div class="btn">
+                    <a href="#">Get Stared</a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i> Watch Videos</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="ABCD">
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" alt="">
+
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="">
+
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-3.png" alt="">
+
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" alt="">
+
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-5.png" alt="">
+
+        <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="">
+
+        </div>
+
+        <div class="boader">
+
+        <div class="footer">
+            <h1>ABOUT US</h1>
+
+            </div>
+
+        </div>
+
+        <div class="para">
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet similique debitis tempore Lorem ipsum, dolor sit amet consectetur  </p>   
+
+        </div>
+        <div class="click">
+                <a href="#"><i class="fa-sharp fa-solid fa-check-double"></i>Lorem ipsum dolor sit amet consectetur adipisicing</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-check-double"></i>Lorem ipsum dolor sit amet consectetur adipisicing</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-check-double"></i>Lorem ipsum dolor sit amet consectetur adipisicing</a>
+
+        </div>
+        <div class="animal">
+            <h1>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima asperiores cupiditate aspernatur beatae  <br> numquam voluptate, quasi tempore blanditiis nam quam illo voluptatibus  voluptates </h2>
+
+           
+            <div class="parent">
+                <div class="left">
+                    <div class="box">
+                        <input type="checkbox" id="btn1">
+                        <label for="btn1" class="heading">
+                            <p>01 Non consectetur a arat nam at lectus urna duis?</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </label>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facilis vitae quia repudiandae esse, facere quaerat consectetur ullam distinctio labore non modi rerum molestias, voluptatum praesentium eius. Dicta, voluptate explicabo.</p>
+                         </div>
+                    </div>
+                    <div class="box">
+                        <input type="checkbox" id="btn2">
+                        <label for="btn2" class="heading">
+    
+                        <P>02 Feugiat scelerisque varius enim nunc?</P>
+    
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </label>
+                        
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque nulla et ipsam non rerum est officiis explicabo sunt magnam ex quaerat, hic aperiam quam sit dolorem deleniti, tempore quia.</p>
+    
+                    </div>
+               </div>
+               <div class="box">
+                <input type="checkbox" id="btn3">
+                <label for="btn3" class="heading">
+    
+                <P>03 Dolor sit amet consectur adipiscing elit?</P>
+                <i class="fa-solid fa-chevron-down"></i>
+            </label>
+    
+                <div class="content">
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laudantium recusandae in architecto sequi eveniet at molestiae laboriosam nam sed. Voluptatibus rem, neque quos numquam repellat aspernatur eum architecto iste.</P>
+    
+                </div>
+    
+    
+               </div>
+                </div>
+    
+                <div class="right">
+                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" id="img">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+              
+
+        
+        
+           
+        
+
+
+
+ 
+        
+    
+</body>
+</html>

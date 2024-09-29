@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .box{
+            border: 1px solid gray;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            /* background-color: #5f4c4c; */
+            height: 5rem;
+            box-shadow: 2px 2px 5px black;
+        }
+        .box .img h2{
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            color: black;
+            margin-left: 2rem;
+        }
+        .box .menu ul li {
+            display: inline-block;
+            margin: 1rem 1rem;
+        }
+        .box .menu ul li a{
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            user-select: none;
+
+
+        }
+        .box .btn a{
+            color: black;
+            border: 1px solid gray;
+            padding: 0.7rem 1.2rem;
+            margin-right: 2rem;
+            /* background-color: skyblue; */
+            /* border-radius: 1rem; */
+            font-size: 1.2rem;
+            font-weight: 900;
+            user-select: none;
+        }
+        .box .btn a:hover{
+            background-color: #5F2DED;
+            color: white;
+            transition: all 0.3s;
+        }
+        .box .btn input[type="a"]:active{
+            transform: scale(.9);
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box">
+            <div class="img">
+                <h2>Zo<span>PL</span>a</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">class</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="http://10.10.10.10/Nikhil/phpMySQL/5.php">Log In</a>
+                <a href="http://10.10.10.10/Nikhil/phpMySQL/6.php">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buble Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            border: 1px solid royalblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 20px;
+            background-color: royalblue;
+        }
+        .reset:hover{
+            border: 1px solid green;
+            background-color: green;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+        .container{
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bubble{
+            border: 1px solid gray;
+            width: 3.6rem;
+            height: 3.6rem;
+            background-color: gray;
+            border-radius: 100px;
+            margin: 5px;
+            text-align: center;
+            animation: bubble 1s ease-in-out 0s 1 alternate forwards;
+        }
+        @keyframes bubble{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(3.6rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p class="score">Score:- <span>00</span></p>
+        <p class="chanceLeft">chance Left <span>10</span></p>
+        <p class="reset">Reset Game</p>
+    </div>
+    <div class="container">
+
+    </div>
+    <script>
+        let reset = document.querySelector('.reset');
+        let container = document.querySelector('.container');
+        let totalScore = document.querySelector('.score');
+        let chanceLeft = document.querySelector('.chanceLeft');
+        let chance=1;
+        let score =0;
+        for(let i=1;i<=100; i++){
+            let bubble='<div class="bubble"></div>'
+            container.insertAdjacentHTML("afterbegin",bubble)
+        }
+        let box = document.querySelectorAll('.bubble');
+        Array.from(box).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                let random = Math.ceil(Math.random()*1000)
+                if(chance<=10){
+                    e.innerHTML=random;
+                    chance++;
+                }
+                else{
+                    alert("Game Over.")
+                }
+                score+=Number(e.innerText)
+                let a=10;
+                chanceLeft.innerHTML=11-chance;
+                totalScore.innerHTML = score
+            })
+        })
+
+        reset.addEventListener("click",()=>{
+            window.location.reload()
+        })
+    </script>
+</body>
+</html>

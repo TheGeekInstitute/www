@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      /* border: 2px solid black; */
+      overflow: hidden;
+    }
+
+    .container .slider {
+      /* border: 2px solid black; */
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      width: 800vw;
+      transition: all 1s ease-in-out;
+      /* animation: slider 10s ease-in-out 0s infinite; */
+
+
+    }
+
+
+    .container .slider .image img {
+      height: 600px;
+      width: 100vw;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      display: flex;
+      border-radius: 20px;
+      align-items: center;
+      padding: 5px;
+      justify-content: center;
+
+    }
+
+    .container .btns {
+      /* border: 2px solid red; */
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -85px;
+      position: absolute;
+      /* z-index: 10; */
+      width: 100vw;
+
+    }
+
+    .container button {
+      background-color: rgba(128, 128, 128, 0.5);
+      color: white;
+      height: 30px;
+      width: 100px;
+      margin: 0 10px;
+      font-size: large;
+      font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+      cursor: pointer;
+      border-radius: 3px;
+      border: none;
+    }
+
+    .container .dots {
+      /* border: 2px solid black; */
+      height: 30px;
+      margin-top: -43px;
+      z-index: 10;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container .dots .circle {
+      height: 15px;
+      width: 15px;
+      border: 2px solid red;
+      border-radius: 50%;
+      margin: 0 5px;
+      transition: all 1s ease-in-out;
+    }
+
+    .container .dots .circle.active{
+      background-color: white;
+    }
+
+    .container .slider .image.active {
+      transform: translateX(0);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="slider">
+
+      <div class="image active">
+        <img
+          src="https://4kwallpapers.com/images/wallpapers/welcome-neon-glow-dark-background-glowing-3600x2000-2068.jpg"
+          alt="01">
+      </div>
+
+
+      <div class="image">
+        <img src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg " alt="02">
+      </div>
+
+      <div class="image">
+        <img src="https://t4.ftcdn.net/jpg/04/41/32/17/360_F_441321781_6Kf7EOg7pE9so9b7aAqgDxPX9XM6MCps.jpg " alt="03">
+      </div>
+
+
+
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg"
+          alt="04">
+      </div>
+
+      <div class="image">
+        <img src="https://images.freecreatives.com/wp-content/uploads/2015/03/Huge-Backgrounds-17.jpg" alt="05">
+      </div>
+
+      <div class="image">
+        <img src="https://jbsoftware.ca/wp-content/uploads/web-design.jpg" alt="06">
+      </div>
+
+      <div class="image">
+        <img src="https://www.imgacademy.com/sites/default/files/legacy-hotel-rendering.jpg" alt="07">
+      </div>
+
+
+      <div class="image">
+        <img src=" https://t4.ftcdn.net/jpg/04/12/83/91/360_F_412839178_eBThjVy75lyoTMkjcaSZSgeaH91M9bse.jpg" alt="08">
+      </div>
+    </div>
+
+
+    <div class="btns">
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
+    </div>
+
+    <div class="dots">
+      
+    </div>
+  </div>
+
+  <script>
+
+    let slider = document.querySelector(".slider")
+    let next = document.querySelector("#next")
+    let prev = document.querySelector("#prev")
+    let image = document.querySelectorAll(".image");
+
+    let dots = document.querySelector(".dots")
+    let data =`<div class="circle"></div>`;
+
+
+    for(let i=1 ; i<= image.length ; i++){
+            dots.insertAdjacentHTML("beforeend",data)
+        }
+
+        let circle =  document.querySelectorAll(".circle");
+        circle[0].classList.add("active") 
+       
+
+    let index = 0;
+
+    next.addEventListener("click", () => {
+      slider.children[index].classList.remove("active");
+
+
+      if (index < slider.childElementCount - 1) {
+        index += 1;
+
+      }
+
+      else {
+        index = 0;
+
+      }
+
+      slider.children[index].classList.add("active")
+      slider.style.transform = "translateX(-" + (index * 100) + "vw)";
+    })
+
+
+
+    prev.addEventListener("click", () => {
+      slider.children[index].classList.remove("active");
+
+
+
+      if (index <= 0) {
+        index < slider.childElementCount - 1;
+
+      }
+
+      else {
+        index -= 1;
+
+      }
+
+      slider.children[index].classList.add("active")
+      slider.style.transform = "translateX(-" + (index * 100) + "vw)";
+    })
+  </script>
+
+</body>
+
+</html>
+
+<!-- 
+/* 
+
+    @keyframes slider {
+        0%{
+            transform: translateX(0);
+        }
+        5%{
+            transform: translateX(0);
+        }
+
+        10%{
+            transform: translateX(0);
+        }
+
+        15%{
+            transform: translateX(0);
+        }
+
+
+        20%{
+            transform: translateX(-100vw);
+        }
+        25%{
+            transform: translateX(-100vw);
+        }
+
+        30%{
+            transform: translateX(-100vw);
+        }
+
+        35%{
+            transform: translateX(-100vw);
+        }
+
+
+        40%{
+            transform: translateX(-200vw);
+        }
+
+        45%{
+            transform: translateX(-200vw);
+        }
+
+        50%{
+            transform: translateX(-200vw);
+        }
+
+        55%{
+            transform: translateX(-200vw);
+        }
+
+        60%{
+            transform: translateX(-300vw);
+        }
+
+        65%{
+            transform: translateX(-300vw);
+        }
+
+        70%{
+            transform: translateX(-300vw);
+        }
+
+        75%{
+            transform: translateX(-300vw);
+        }
+
+        80%{
+            transform: translateX(-400vw);
+        }
+
+        85%{
+            transform: translateX(-400vw);
+        }
+
+        90%{
+            transform: translateX(-400vw);
+        }
+
+        95%{
+            transform: translateX(-400vw);
+
+        }
+
+        100%{
+            transform: translateX(-400vw);
+        }
+    } */ -->
+
+
+<!-- 
+    let slider = document.querySelector(".slider")
+    let next = document.querySelector("#next")
+    let prev = document.querySelector("#prev")
+    // let image = document.querySelectorAll(".image");
+
+    // let dots = document.querySelector(".dots")
+    // let data =`<div class="circle"></div>`;
+
+
+    // for(let i=1 ; i<= image.length ; i++){
+    //         dots.insertAdjacentHTML("beforeend",data)
+    //     }
+
+    //     let circle =  document.querySelectorAll(".circle");
+    //     circle[0].classList.add("active") 
+       
+
+    let index = 0;
+
+    next.addEventListener("click", () => {
+      slider.children[index].classList.remove("active");
+
+
+      if (index < slider.childElementCount - 1) {
+        index += 1;
+
+      }
+
+      else {
+        index = 0;
+
+      }
+
+      slider.children[index].classList.add("active")
+      slider.style.transform = "translateX(-" + (index * 100) + "vw)";
+    })
+
+
+
+    prev.addEventListener("click", () => {
+      slider.children[index].classList.remove("active");
+
+
+
+      if (index <= 0) {
+        index < slider.childElementCount - 1;
+
+      }
+
+      else {
+        index -= 1;
+
+      }
+
+      slider.children[index].classList.add("active")
+      slider.style.transform = "translateX(-" + (index * 100) + "vw)";
+    }) -->

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .wrapper{
+     
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 1rem 0;
+        background-color: darkcyan;
+        color: white;
+    }
+
+    .wrapper h1{
+        font-size: 50px;
+        text-shadow: 0px 0px 5px black;
+    }
+
+    .wrapper p{
+        font-size: xx-large;
+        
+        padding:.3rem .5rem;
+        border-radius: .3rem;
+    }
+
+    .wrapper form input::-webkit-file-upload-button,
+    .wrapper form input::file-selector-button,
+    .wrapper form input[type="submit"]
+    
+    {
+        background-color: orangered;
+        height: 2.5rem;
+        width: 7rem;
+        border: none;
+        color: white;
+        font-size: large;
+        font-weight: 700;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+
+    .container{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .image{
+        height: 100px;
+        width: 100px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 1rem;
+        border-radius: .5rem;
+    }
+
+    .container .image a{
+        display: block;
+        border-radius: .5rem;
+        text-align: center;
+        line-height: 100px;
+        height: 100%;
+        width: 100%;
+        color: white;
+        font-size: 5rem;
+        font-weight: 900;
+       background-color: rgba(0, 0, 0, 0.603);
+       transition: all .3s linear;
+    }
+
+    .container .image:hover a{
+        opacity: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Image Uploader</h1>http://10.10.10.10:5505/Hema/PHP/img.html#
+        <p class="msg" style="background-color: red;">File is not an image</p>
+        <form enctype="multipart/form-data" method="POST">
+            <input type="file" name="image">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="image" style="background-image: url(../../web/images/11.jpg);">
+            <a href="#">1</a>
+        </div>
+    </div>
+</body>
+</html>

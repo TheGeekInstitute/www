@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+ul li:first-child{
+    /* color: red; */
+}
+ul li:last-child{
+    /* color: red; */
+}
+
+ul li:nth-child(2n+1){
+    /* color: red; */
+}
+ul li:nth-last-child(2n+1){
+    /* color: red; */
+}
+
+div p:nth-of-type(1){
+    /* color: red; */
+}
+div p:nth-last-of-type(1){
+    /* color: red; */
+}
+
+
+div p:only-child{
+    /* color: red; */
+}
+
+div p:only-of-type{
+    /* color: red; */
+}
+
+div p:first-of-type{
+    /* color: red; */
+}
+
+div p:last-of-type{
+    /* color: red; */
+}
+
+div:empty{
+    border: 2px solid red;
+    height: 20px;
+}
+
+
+div:not(:empty){
+    /* border: 2px solid green; */
+}
+
+ul li:lang(fr){
+    /* color: red; */
+}
+
+p:target{
+    background-color: cyan;
+}
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li lang="en">1</li>
+        <li lang="hi">2</li>
+        <li lang="fr">3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laborum obcaecati perferendis soluta assumenda deserunt est, culpa atque eius, debitis quibusdam corrupti ea, dolorem fugiat amet sunt fuga officiis repellat.</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsa dicta harum sapiente necessitatibus explicabo possimus saepe reiciendis odio tenetur nesciunt, voluptatem nam corrupti nihil quibusdam magni officiis placeat voluptatum.</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus pariatur necessitatibus ut inventore enim ad ullam reprehenderit omnis voluptatem mollitia doloribus dolore dolorem corporis aperiam, eveniet recusandae quam ipsam asperiores.</p>
+    </div>
+
+
+    <div>
+        <p>Only Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, in? Autem rerum placeat beatae officia, et ullam ab explicabo repellat, minus dignissimos excepturi perspiciatis nobis consequatur maiores cum vel assumenda!</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima eum repellat saepe accusantium quo officiis asperiores, tempore vitae maxime, recusandae ipsa. Quo, aut quaerat a saepe reprehenderit dolorum rem!</b>
+        
+       
+    </div>
+
+
+    <div></div>
+    <a href="#ch1">Chapter 1</a>
+    <a href="#ch2">Chapter 2</a>
+    <a href="#ch3">Chapter 3</a>
+
+    <p id="ch1">
+        lasdaskldajksdhjkaha askdh asjkhdjkashjkdh asjk hdjkasjkdhjkashdjkashjkdhjkashdjkashjkdhjkashdjkashdjkhjk
+    </p>
+
+    <p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur vitae eligendi impedit rem architecto nulla, velit dolorem dignissimos cum, illum, explicabo quaerat commodi accusantium similique totam voluptatem temporibus cumque vel?</p>
+
+    <p id="ch3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi aut impedit nisi beatae nostrum et labore a, obcaecati quaerat quos. Repudiandae rerum, assumenda possimus commodi deserunt eos alias consequuntur.</p>
+
+</body>
+</html>

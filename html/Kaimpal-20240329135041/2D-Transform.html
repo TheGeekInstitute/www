@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            background-color: red;
+            margin: 150px auto;
+            height: 250px;
+            width: 200px;
+            transition: all 1s linear;
+
+        }
+
+
+        .box:hover{
+            /* transform: translate(100px,100px); */
+            /* transform: translateY(100px);
+            transform: translateX(100px); */
+
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(1.5); */
+
+            /* transform: rotate(360deg); */
+
+            /* transform: skew(30deg); */
+            /* transform: skewX(30deg);
+            transform: skewY(30deg); */
+
+
+
+            transform: scale(2) rotate(360deg);
+        }
+
+
+        .container{
+            background-color: cyan;
+            height: 200px;
+            width: 250px;
+            overflow: hidden;
+        }
+
+        .card{
+            height: 100%;
+            width: 100%;
+            background-color: red;
+
+            transform: translateY(100%);
+            transition: all .3s linear;
+        }
+        
+        .container:hover .card{
+            transform: translateY(0);
+
+        }
+
+</style>
+</head>
+<body>
+  <div class="box">
+adas
+  </div>
+
+
+  <div class="container">
+    <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias ut. Magnam numquam ex neque soluta, aperiam, enim qui facere ipsum dolor fugiat quisquam autem quos modi placeat. Repellat, doloribus.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .para::first-letter{
+            color: blue;
+            font-size: 50px;
+
+        }
+
+        
+        .para::first-line{
+            color: red;
+        }
+
+       
+        .para::selection{
+            background-color: aqua;
+            color: red;
+        }
+
+        .para{
+            /* user-select: none; */
+            /* user-select: all; */
+        }
+
+        ul li::marker{
+            color: greenyellow;
+        }
+
+        /* .geek::before{
+            content: 'The';
+            color: red;
+        } */
+        .geek::before{
+            content: 'Tarik';
+            color: aqua;
+        }
+        
+
+        .geek::after{
+            content: attr(data-my-attr);
+            color: green;
+        }
+
+
+        input::placeholder{
+            color: red;
+            opacity: 1;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">Vorem ipsum dolor, sit amet consectetur adipisicing elit. Magni consequatur, aspernatur recusandae voluptatum maiores similique suscipit hic nisi, reprehenderit, adipisci sint tempore dicta ea placeat error harum tempora fugit. Hic!
+    Maiores odio sunt libero iure earum, a, numquam dolorum iste maxime iusto, aspernatur atque culpa recusandae quidem quasi quisquam eaque nisi harum quibusdam fugit. Perspiciatis, eos eligendi? Sit, ratione officia.</p>
+    <ul>
+        <li>Red</li>
+        <li>One</li>
+        <li>Two</li>
+        <li>Green</li>
+    </ul>
+
+    <h1 class="geek" data-my-attr=" Institute"> Geek</h1>color: red;
+
+    <input type="text" placeholder="ABCD" name="" id="">
+
+   
+</body>
+</html>

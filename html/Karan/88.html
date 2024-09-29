@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        .topbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5vh;
+            background-color: black;
+            color: white;
+        }
+        .menu{
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+            background-color: grey;
+        }
+        .navbar ul li{
+            display: inline-block;
+            padding: 5px;
+        }
+        .navbar, ul li a:hover{
+            background-color: red ;
+            color: black;
+        }
+        
+        .secton{
+            margin-top: 50px;
+         /* background-position: center; */
+            /* background-size: cover; */
+            /* background-repeat: no-repeat; */
+            height: 80vh;
+            /* column-count: 4; */
+            /* text-align: justify;
+            column-gap: 20px;
+            column-width: 100px; */
+
+            flex-wrap: wrap;
+        
+
+        }
+ 
+        .secton{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .post{
+            height: 30vh;
+            width: 20vw;
+        }
+        p{
+         width: 25vh;
+        }
+        .btn{
+            padding: 7px;
+            margin: 10px;
+            background-color: red;
+            color: black;
+            font-weight: 900;
+            border: 1px solid black;
+            border-radius: 20px;
+
+            
+                    
+        }
+        .btn:hover{
+        background-color: grey;
+        color: #fff;
+        }
+        .footer
+        {
+            height: 20vh;
+            background-color: black;
+            color: white;
+            column-count: 3;
+            /* align-items: center; */
+            text-align: left;
+            padding: 8px;
+        }
+        
+
+        .link a{
+            display: block;
+            font-size: 16px;
+            color: white;
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        
+        <li><a href="#" class="menu">Gmail</a></li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i>
+<a href="#" class="menu">Phone</a></li>
+    </div>
+    <nav>
+        <div class="navbar">
+
+            <h1>heading</h1>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>Contact</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Services</li>
+            </ul>
+            
+        </div>
+        
+        <div class="secton">
+    
+            <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab, moles !</p>
+            <button class="btn">read more</button>
+        </div>
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsumenda comm Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+
+        
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sixpedita. Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sixpedita. Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sixpedita. Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolo expedita. Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab, molestiae !</p>
+            <button class="btn">read more</button>
+        </div>
+
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum doloxpedita. Non nostrum a qui vitae! Sequi qui eaque veritatis!</p>
+            <button class="btn">read more</button>
+        </div>
+
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab,</p>
+            <button class="btn">read more</button>
+        </div>
+
+
+        <div class="post">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ab, </p>
+            <button class="btn">read more</button>
+        </div>
+
+        </div>
+        <div class="footer">
+         <div class="link">
+        <a href="./18.html">First link</a>   
+         <a href="./16.html">Second link</a>
+        </div>
+         <div class="image">
+            <img src="../web/images/14.jpg"
+         </div>
+         <div class="End">
+            <h1>Finish</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci cumque placeat nostrum veritatis similique eos voluptatibus voluptatem eligendi, molestiae maiores? Ipsa nesciunt deserunt ipsum, perferendis asperiores praesentium odit non.</p>
+         </div>
+        </div>
+    </nav>
+</body>
+</html>

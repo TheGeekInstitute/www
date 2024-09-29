@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .box h1{
+           text-align: center;
+            background-color:  red;
+            color: white;
+            
+        }
+        .two{
+                display: none;
+
+            }
+            .three{
+                display: none;
+            }
+        @media screen and (max-width:1000px) {
+        .box h1{
+            text-align: center;
+            background-color:blue;
+            color: white;
+            
+            
+        }
+            .two{
+                display: none;
+
+            }
+            .three{
+                display: none;
+            }
+        }
+        @media screen and (max-width:770px){
+        .box h1{
+
+            text-align: center;
+            background-color:red;
+            color: blue;
+        }
+            
+        .one{
+                display: none;
+
+            }
+            .three{
+                display: none;
+            }
+            .two{
+                display: block;
+            }
+        }
+        @media screen and  (max-width:600px) {
+            .box h1{
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+            .one{
+                display: none;
+
+            }
+            .two{
+                display: none;
+            }
+            .three{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="one">Desktop Mode</h1>
+        <h1 class="two">Tab Mode</h1>
+        <h1 class="three">Phone Mode</h1>
+    </div>
+</body>
+</html>

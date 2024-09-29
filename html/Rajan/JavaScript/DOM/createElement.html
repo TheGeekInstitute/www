@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Elements</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>hello World</p>
+    </div>
+
+    
+    <script>
+        let  box= document.querySelector(".box");
+        let para =box.children[0];
+        
+    let element = document.createElement("h1");
+        let text = document.createTextNode("This is Simple text");
+        // let comment = document.createComment('This is Comment')
+        
+        // element.append(text)
+        // console.log(element)
+
+
+        // box.append(element)
+
+        // box.insertBefore(element,para)
+    </script>
+</body>
+</html>

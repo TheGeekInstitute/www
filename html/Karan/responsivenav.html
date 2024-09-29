@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: aquamarine;
+            height: 50px;
+            padding: 0 10px;
+            overflow: hidden;
+            
+        }
+        .links{
+            display: flex;
+        }
+
+        .links .menu li{
+            display: inline-block;
+        }
+
+        .links .menu li a{
+            display: block;
+            height: 50px;
+            width: 70px;
+            margin: 0 10px;
+            text-align: center;
+            line-height: 50px;
+            color: black;
+            font-weight: 700;
+            /* border: 1px solid red; */
+        }
+        .menu li a:hover{
+            background-color: grey;
+        }
+        #btn{
+            display: none;
+        }
+        .btn{
+            display: none;
+        }
+        
+        .btn1{
+            visibility: hidden;
+        }
+
+        @media screen and (max-width:600px) {
+            .btn{
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .nav{
+                overflow: hidden;
+            }
+            .menu{
+                visibility: hidden;
+                position: absolute;
+                background-color: cyan;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* transform: translateX(100%); */
+                transition: all .3s;
+            
+            }
+
+            .links{
+                /* flex-direction: column; */
+                /* overflow: hidden; */
+            }
+
+            
+            .nav .links .menu li a{
+                /* text-decoration: underline; */
+                text-decoration-color: grey;
+                border-bottom: 2px solid black;
+            }
+            
+        
+            .nav .links #btn:checked ~ .menu{
+                /* display: block; */
+                visibility: visible;
+             
+            }
+
+            .nav .links #btn:checked + .btn{
+                /* display: block; */
+                visibility: hidden;
+            }
+
+            .nav .links #btn:checked ~ .btn1{
+                /* display: block; */
+                visibility: visible;
+            }
+
+
+          
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="btn">&#9776;</label>
+            <label for="btn" class="btn1">X</label>
+
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur earum consequuntur aliquam quas tenetur enim totam dolore, architecto quam. At rem hic, distinctio laudantium accusantium cum ad voluptate ex.</p>
+</body>
+</html>

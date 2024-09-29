@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .header p{
+            background-color: black;
+            color: white;
+            height: 3.5rem;
+            text-align: center;
+            font-size: 1.3rem;
+            padding-top:1rem ;
+        }
+        .logo img{
+            height: 7rem;
+            margin-top: -3rem;
+            margin-left: -4rem;
+        }
+        .head{
+            text-align: right;
+        
+                        
+        }
+        .head a{
+            font-size: 1.3rem;
+            margin-left: 2rem;
+            color: black;
+            margin-right: 2rem;
+            
+        }
+        .head a:hover{
+            color: chocolate;
+        }
+        .nav{
+            height: 5rem;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.307);
+        }
+        .nav .logo,ul li{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .nav ul li {
+            display: inline;
+            font-size: 2rem;
+            margin-left: 2rem;
+            
+        }
+        .nav ul li a{
+            color: black;
+            margin:1.5rem;
+            margin-top: 2.5rem;
+            font-weight: 900;
+            transition: all .1s linear;
+            
+
+        }
+        .main{
+            margin-left: 20rem;
+        }
+        .nav ul li a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        .nav span{
+            color: rgb(122, 121, 121);
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .nav span:hover{
+            color: blue;
+        }
+        .sear{
+            margin-right: -8rem;
+        }
+        input[type=search]{
+          height: 3.2rem;
+          width: 25rem;
+          padding: 0rem 2.5rem;
+          outline: none;
+          background-color: rgba(128, 128, 128, 0.122);
+          border: none;
+        }
+        .sear i{
+            font-size: 1.5rem;
+            margin-left: -2.5rem;
+            color: black;
+        }
+        .menu{
+            font-size: large;
+            margin: .9rem;
+        }
+        .menu i{
+            color: black;
+            margin-right: 3rem;
+        }
+        .main1 h1{
+            font-size:3rem;
+            font-style: italic;
+            margin: 3rem;
+            margin-bottom: 1rem;
+            margin-left: 4.5rem;
+        }
+        .main1 span{
+            font-size: 1.5rem;
+            color: grey;
+        }
+        .main1 p{
+            margin-left: 4.5rem;
+            font-size: 1.7rem;
+            color: rgb(116, 115, 115);
+            
+        }
+        .main1 h2{
+            text-decoration: underline;
+            margin:  1rem 4.5rem;
+            font-size: large;
+        }
+        .item{
+            margin-left:3rem;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2rem;
+            cursor: pointer;
+            
+        }
+        .item .card img{
+            height: 25rem;
+            width: 30rem;
+            
+        }
+        .card i{
+            font-size: 1.5rem;
+            position: relative;
+            right: 4rem;
+            bottom: 22rem;
+
+        }
+        .card h6{
+        font-size: 1.5rem;
+        }
+        .card p{
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            color: grey;
+        }
+        .footer{
+        height: 49.3vh;
+        background-color:rgb(32, 88, 148);
+        margin-top: 2rem;
+        
+      }
+      .foot{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem;
+        border-bottom: 1px solid grey;
+        margin-top: 1rem;
+        /* width: 100vw; */
+      }
+      .foot h2:hover{
+        color: gold;
+        cursor: pointer;
+      }
+     
+      .foot ul li a{
+        color: #fff;
+        font-size: 1.3rem;
+        padding: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-decoration: none;
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 1.3rem;
+
+      }
+      .foot ul{
+        color: #fff;
+        text-align: center;
+        margin-top: .5rem;
+      }
+      
+      .social{
+        border-right: 1px solid grey;
+      }
+      .mail ul{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+      }
+      .office ul{
+        font-size: 1.6rem;
+        margin-top: 2rem;
+      }
+      .foot h2{
+        color:gray;
+        font-size: 2rem;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .end{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1.6rem;
+      }
+      .end i{
+        color: rgb(255, 196, 0);
+        height: .8rem;
+        margin-bottom: .3rem;
+        
+      }
+      .end{
+        color: #bdbbbb;
+      }
+      .end p{
+        padding-bottom: 0;
+        font-size: 1.5rem;
+      }
+      .card:hover{
+        text-decoration:  1px underline rgb(100, 100, 100);
+      }
+      
+
+        
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="header">
+        <p> FREE STANDARD SHIPPING & RETURNS </p>
+    </div>
+    <div class="head">
+        <a href="#">help</a>
+        <a href="#">order & returns</a>
+        <a href="#">join adiclub</a>
+        
+        </div>
+    <div class="nav">
+        
+        
+        <div class="logo">
+
+            <img src="https://img.freepik.com/free-icon/adidas_318-566026.jpg" alt="">
+            <ul class="main">
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#"><span>Sale</span></a></li>
+            </ul>
+        </div>
+
+        <div class="sear">
+            <input type="search" placeholder="search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-sharp fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-gift"></i></a>
+            
+        </div>
+    </div>
+    <div class="main1">
+        <h1>WOMEN'S ORIGINAL SHOES: UP TO 60% OFF WITH CODE * SAVEMORE <SPAN>[248]</SPAN></h1>
+        <p>Offers valid online from 06/23 to 06/25</p>
+        <h2>Shop Now</h2>
+    </div>
+    <div class="item"> 
+        
+       <div class="card"> 
+        <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/e8f95dbe5b95453f9db7ae9900c511d6_9366/nmd_r1-shoes.jpg" alt="">
+        <i class="fa-regular fa-heart"></i>
+        <h6>₹1999</h6>
+        <h1>nmd_r1-shoes</h1>
+        <p>Women's Original shoes</p>
+
+       </div>
+       
+       <div class="card">
+       <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/24877557cf254aa898124023c6ff6f3c_9366/gazelle-shoes.jpg" alt="">
+       <i class="fa-regular fa-heart"></i>
+       <h6>₹1499</h6>
+        <h1>gazelle-shoes</h1>
+        <p>Women's Original shoes</p>
+       </div>
+       <div class="card">
+        
+       <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/4a612eecb9664792ab14af41011a6581_9366/nmd_r1-shoes.jpg" alt="">
+        <i class="fa-regular fa-heart"></i>
+        <h6>₹2350</h6>
+        <h1>nmd_r1-shoes</h1>
+        <p>Women's Original shoes</p>
+    </div>
+    <div class="card"> 
+        <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb4057d7b9914b45b7c4b48fd96b93c6_9366/gazelle-shoes.jpg" alt="">
+        <i class="fa-regular fa-heart"></i>
+        <h6>₹4999</h6>
+        <h1>nmd_r1-shoes</h1>
+        <p>Women's Original shoes</p>
+
+       </div>
+</div>
+<div class="item"> 
+        
+    <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/042ac29e3ab043c69eb5adf0da258f7f_9366/gazelle-shoes.jpg" alt="">
+     
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹1999</h6>
+     <h1>gazelle-shoes</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+    
+    <div class="card">
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/ceff5c0ff46243b689831f04d286d306_9366/campus-00s-shoes.jpg" alt="">
+    <i class="fa-regular fa-heart"></i>
+    <h6>₹1499</h6>
+     <h1>campus-00s-shoes</h1>
+     <p>Women's Original shoes</p>
+    </div>
+    <div class="card">
+     
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/e2050a428e2640af8cec0acb4983f3e5_9366/forum-xlg-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹2350</h6>
+     <h1>forum-xlg-shoes</h1>
+     <p>Women's Original shoes</p>
+ </div>
+ <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/d2fad0012fd44ff2a30eb656ead9386e_9366/ozweego-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹4999</h6>
+     <h1>ozweego-shoes</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+</div>
+<div class="item"> 
+        
+    <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/0c25c9530a3a424abe12af8d00a1c50c_9366/forum-low-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹1999</h6>
+     <h1>orum-low-shoes</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+    
+    <div class="card">
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/24877557cf254aa898124023c6ff6f3c_9366/gazelle-shoes.jpg" alt="">
+    <i class="fa-regular fa-heart"></i>
+    <h6>₹1499</h6>
+     <h1>gazelle-shoes</h1>
+     <p>Women's Original shoes</p>
+    </div>
+    <div class="card">
+     
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/dc4640cb690e46e08efd5d6f0c4ccf89_9366/gazelle-bold-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹2350</h6>
+     <h1>gazelle-bold-shoes</h1>
+     <p>Women's Original shoes</p>
+ </div>
+ <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/df5e85bbc43943b1b30987733f4a5864_9366/adilette-22-slides.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹4999</h6>
+     <h1>adilette-22-slides</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+</div>
+<div class="item"> 
+        
+    <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb4057d7b9914b45b7c4b48fd96b93c6_9366/gazelle-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹1999</h6>
+     <h1>/gazelle-shoes</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+    
+    <div class="card">
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/66224c7ae00844b4b4dc5c92a0e2a5cc_9366/adilette-ayoon-slides.jpg" alt="">
+    <i class="fa-regular fa-heart"></i>
+    <h6>₹1499</h6>
+     <h1>adilette-ayoon-slides</h1>
+     <p>Women's Original shoes</p>
+    </div>
+    <div class="card">
+     
+    <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/a4921158b08f4d9aa981ab970008db6b_9366/nizza-platform-mid-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹2350</h6>
+     <h1>nizza-platform-mid-shoes</h1>
+     <p>Women's Original shoes</p>
+ </div>
+ <div class="card"> 
+     <img src="https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/d6362dbdbd474c5ab7591cb4b399fdbf_9366/adifom-stan-smith-mule-shoes.jpg" alt="">
+     <i class="fa-regular fa-heart"></i>
+     <h6>₹4999</h6>
+     <h1>adifom-stan-smith-mule-shoes</h1>
+     <p>Women's Original shoes</p>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="foot">
+        <div class="about">
+            <h2>ABOUT</h2>
+            <ul>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Our Mart Stories</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Our Mart</a></li>
+                <li><a href="#">Wholeless</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Information</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h2>HELP</h2>
+            <ul>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Cancellation &</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Infergement</a></li>
+            </ul>
+        </div>
+        <div class="policy">
+            <h2>CONSUMER POLICY</h2>
+            <ul>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms Of Uses</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Griveance</a></li>
+                <li><a href="#">Redressal</a></li>
+                <li><a href="#">EPF Caompliance</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h2>SOCIAL</h2>
+            <UL>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Instagram</a></li>
+            </UL>
+        </div>
+        <div class="mail">
+            <h2>MAIL US</h2>
+            <ul>Our Mart Internet Private Limitated, <br>Buildings Always Begoina & <br>Clove Embassy Tach Village, <br> OUter Ring Road, Village <br>Bengaluru, 52369856, <br>Karnataka, India</ul>
+        </div>
+    <div class="office">
+        <h2>Registered Office Address:</h2>
+        <ul>
+          Our Mart Internet Private Limitated, <br>Buildings Always Begoina & <br>Clove Embassy Tach Village, <br> OUter Ring Road, Village <br>Bengaluru, 52369856, <br>Karnataka, India <br>CIN:U156982K265LUG1255 <br>
+          Telephone:044-5698236  
+        </ul>
+        </div>
+    </div>
+    <div class="last">
+        <div class="end">
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Become a Seller</p>
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Advertise</p>
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Gift Cards</p>
+            <p><i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                Help Center</p>
+            <p>2007-2023 Our Mart.com</p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+           
+        </div>
+    </div>
+ </div>
+    
+
+</body>
+</html>

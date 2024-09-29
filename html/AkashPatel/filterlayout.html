@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            /* border: 3px solid green; */
+            height: 56em;
+            background-image: linear-gradient( 30deg ,rgb(238, 137, 154),rgba(255, 0, 0, 0.753) , rgba(148, 144, 144, 0.377),rgba(128, 0, 128, 0.795) ,rgba(0, 0, 255, 0.76));
+        }
+        .logo{
+            /* border: 2px solid red; */
+        }
+        .logo ul{
+            display: flex;
+            list-style: none;
+            margin-left: 60px;
+        }
+        .logo li {
+             margin-left: 100px;
+            margin-right: 10px;
+            padding: 20px;
+        }
+        .logo ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        #fire{
+            font-weight:bold ;
+            margin-right: 70px;
+            font-size: 20px;
+        }
+        #ro{
+           border: 2px solid black;
+           width: 100px;
+           height: 30px; 
+           border-radius: 10px;
+           border: none;
+            outline: none;
+        }
+        .lorem{
+            /* border: 2px solid red; */
+            width: 21em;
+            height: 15em;
+            padding: 20px;
+            border-radius: 40px;
+            box-shadow: 0px 0px  50px rgb(108, 208, 248);
+            margin: 50px 50px;
+            backdrop-filter: blur(60px);
+            /* position: absolute; */
+            
+
+        }
+        .lorem > h1{
+            font-size: 40px;
+            margin-left: 10px;
+        }
+        .lorem > p{
+             padding: 20px;
+             font-size: 15px;
+        }
+        .lorem input {
+            padding-left: 25px;
+            margin-left: 4em;
+            width: 10em;
+            height: 40px;
+            border-radius: 10px;
+            /* filter: blur(10px); */
+            box-shadow: 0px 0px 30px gray;
+            border: none;
+            outline: none;
+        }
+        
+        .name > .name1{
+            position: absolute;
+          /* border: 2px solid black; */
+          height: 15em;
+          width: 15em;
+          box-shadow: 0px 0px 50px white;
+          border-radius: 50%;
+          backdrop-filter: blur(50px);
+          background-image:  linear-gradient( 30deg ,rgb(238, 137, 154),rgba(255, 0, 0, 0.753) , rgba(148, 144, 144, 0.377),rgba(128, 0, 128, 0.795) ,rgba(0, 0, 255, 0.76));;
+          top: 100px;
+        }
+         .name2{
+            position: absolute;
+          /* border: 2px solid black; */
+          left: 25rem;
+          height:20em;
+          width: 20em;
+          box-shadow: 0px 0px 50px rgb(241, 127, 20);
+          border-radius: 50%;
+          backdrop-filter: blur(50px);
+          background-image:  linear-gradient( 30deg ,rgb(238, 137, 154),rgba(255, 0, 0, 0.753) , rgba(148, 144, 144, 0.377),rgba(128, 0, 128, 0.795) ,rgba(0, 0, 255, 0.76));;
+          left: 300px;
+          
+         bottom: -150px;
+        }
+        .name3{
+            position: absolute;
+            /* border: 2px solid black; */
+            width: 20em;
+            height: 14em;
+            border-radius: 20px;
+            /* padding-left: 20px; */
+            left: 100px;
+            box-shadow: 4px 4px 10px skyblue;
+        }
+        .name3  {
+            /* position: absolute;
+            top: 150px; */
+            padding: 9em 1em 1em 1em;
+            backdrop-filter: blur(10px);
+            transform: rotate(-5deg);
+        }
+
+        .name3 > p{
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 5px;
+            line-height: 2rem;
+        }
+        .name{
+            position: absolute;
+            left: 800px;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        .name:hover[
+
+        ]
+        
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <ul>
+                <li><a href="#" id="fire">LOGO </a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#"><input type="submit" name="" id="ro" placeholder="LOGIN"></a></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="lorem">
+                <h1>Paument For Any Business</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit asoiuji weiufm .</p>
+                <input type="submmit" name="" id="tor" placeholder="Learn More">
+            </div>
+            <div class="name">
+                <div class="name1"></div>
+                <div class="name2"></div>
+                <div class="name3">
+                    <p>0000 0000 0000 0000</p>
+                    <p>CARD HOLDER NAME</p>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</body>
+</html>

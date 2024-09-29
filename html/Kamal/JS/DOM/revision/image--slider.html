@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .imageslider.slider{
+                border: 2px solid black;
+                display: flex;
+                width: 500vw;
+                overflow: hidden;
+        }
+        .imageslider .slider .image.show{
+            transform: translatex(0);
+        }
+        .imageslider .image{
+            height: 90vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="imageslider" >
+        <div class="slider">
+        
+        <div class="image show" style="background-image: url(https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);"></div>
+        <div class="image" style="background-image: url(https://media.wired.com/photos/593261cab8eb31692072f129/master/pass/85120553.jpg);"></div>
+        <div class="image" style="background-image: url(https://store-images.s-microsoft.com/image/apps.17593.14427308708381960.c08919ed-27fc-45de-a4e7-199407fa59fe.d0b455a2-d411-433e-bd17-74834f38dc5a?h=576);"></div>
+        <div class="image" style="background-image: url(https://t4.ftcdn.net/jpg/05/51/73/07/360_F_551730796_1hsv3NPmpSlhmyWXHtthxK7TfDEka6cQ.jpg);"></div>
+        <div class="image" style="background-image: url(https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);"></div>
+     
+       </div>
+       <div class="btn">
+           <button class="previous">previous</button>
+           <button class="next"></button>
+       </div>
+        
+    </div>
+    
+    <script>
+        let next = document.querySelector(".next")
+        let prev = document.querySelector(".prev")
+        let slider = document.querySelector(".slider")
+        let image= document.querySelector(".image")
+
+        image[0].classlist.add("show");
+        let index = 0;
+        next.addEventListener("click",()=>{
+            if(index >= (image.length)-1){
+                index=0;
+            }
+            else{
+                index+=1;
+            }
+        })
+         
+       
+    </script>
+</body>
+</html>

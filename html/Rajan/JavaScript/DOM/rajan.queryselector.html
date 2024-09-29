@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querselector</title>
+    <style>
+        .pare{
+            color: white;
+            background-color: red;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">heading</h1>
+    <p class="para">paragraph 1</p>
+    <p class="para">paragraph 2</p>
+    <p class="para">paragraph 3</p>
+    <p class="para">paragraph 4</p>
+    <p class="para">paragraph 5</p>
+    <script>
+        let h=document.querySelector('#heading');
+        console.log(h)
+        let para=document.querySelectorAll('.para')
+      
+        Array.from(para).forEach((e)=>{
+           e.addEventListener("click",()=>{
+            e.classList="pare"
+           })
+        })
+        
+        let pare=document.querySelectorAll('.pare')
+
+        Array.from(pare).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                e.classList="pare"
+            })
+        })
+
+
+    </script>
+</body>
+</html>

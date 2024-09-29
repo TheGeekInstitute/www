@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 60vh;
+            width: 50vw;
+            position: absolute;
+            top: calc(50% - 30vh);
+            left: calc(50% - 20vw);
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            align-items: center;
+
+        }
+        .main .sec{
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            margin: 20px 5px;
+        }
+        .main input{
+            height: 40px;
+            width: 300px;
+            margin: 10px 5px;
+            padding: 5px 5px;
+            outline: transparent;
+            background-color: transparent;
+            font-size: 16px;
+            font-family:cursive ;
+
+            /* border: 2px solid red; */
+        }
+        .main label{
+            /* border: 2px solid blue; */
+            /* display: none; */
+            height: 40px;
+
+            width: 60px;
+            margin: 0px 5px;
+            margin-top:10px ;
+            padding: 5px 6px;
+            font-family:cursive ;
+            font-size: 16px;
+            position: relative;
+            z-index: -1;
+            transform: translatey(-55px);
+            transition: all .3s;
+
+
+        }
+        .main  .sec input:focus + label{
+            font-size: 14px;
+            transform: translateY(-77px);
+            z-index: 100;
+           background-color: white;
+           /* border: 1px solid black; */
+           padding: 0;
+           margin-left: 10px;
+           width: 72px;
+           height: 20px;
+           display: inline;
+           
+            /* background-color: white; */
+            /* border: 3px solid pink; */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<div class="main">
+    <div class="sec">
+        <input type="text" placeholder="Username">
+        <label for="">Username</label>
+    </div>
+    <div class="sec">
+        <input type="text" placeholder="Email">
+        <label for="">Email</label>
+    </div>
+    <div class="sec">
+        <input type="password" placeholder="Password">
+        <label for="">Password</label>
+    </div>
+    
+    
+</div>
+</html>

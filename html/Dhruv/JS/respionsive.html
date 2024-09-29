@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        
+    }
+
+    .nav{
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    .list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list li a{
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .logo{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    #anker{
+        font-size: 30px;
+        display: none;
+    }
+
+    .nav .active{
+        display: block;
+    }
+
+@media screen and (max-width:600px){
+.nav{
+    background-color: greenyellow;
+    color: black;
+    font-weight: 900;
+}
+
+    .list{
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        height: 30rem;
+        justify-content: space-around;
+        position: absolute;
+        background-color: gray;
+        /* height: 90%; */
+        top: 4rem;
+    }
+
+    #anker{
+        display: block;
+    }
+
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="nav">
+    <div class="logo">Logo</div>
+
+    <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">insert</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">fgdgfg</a></li>
+    </ul>
+
+<label for="" id="anker">
+    <i class="fa-solid fa-bars open"></i>
+
+</label>
+
+</div>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, et similique aperiam cumque iste veritatis labore id ipsam reiciendis sed reprehenderit, impedit eos perferendis nesciunt ut odit, iusto natus suscipit?</p>
+
+<script>
+
+document.getElementsByClassName("open")[0].addEventListener('click', function(){
+    document.getElementsByName("list")[0].classListAdd("active")
+})
+
+
+document.getElementsByTagName("p")[0].addEventListener('drag', function(){
+    this.style.backgroundColor="green"
+    // this.innerHtml="hellow";
+})
+
+// document.p.addEventListener('drag',function()
+// {
+//     this.style.color="red";
+
+// })
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

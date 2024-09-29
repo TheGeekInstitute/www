@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .box{
+            height: 200px;
+            width: 150px;
+            /* border: 2px solid black; */
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .box img{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            /* object-fit: cover; */
+            transition: all .3s;
+        }
+
+        .box p{
+            background-color: red;
+            height: 40px;
+            position: relative;
+            top: -42px;
+            /* display: none; */
+            opacity: 0;
+            transition: all .2s;
+        }
+
+        .box:hover img{
+            transform: scale(1.2);
+        }
+
+        .box:hover p{
+            /* display: block; */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <img src="../web/images/13.png" alt="">
+        <p>ABCD</p>
+    </div>
+
+    <div class="box">
+        <img src="../web/images/13.png" alt="">
+        <p>ABCD</p>
+    </div>
+
+    <div class="box">
+        <img src="../web/images/13.png" alt="">
+        <p>ABCD</p>
+    </div>
+</div>
+</body>
+</html> 

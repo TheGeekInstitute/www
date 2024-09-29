@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            overflow: hidden;
+        }
+
+        .container .slider{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400vw;
+            animation: image-slider 15s linear 0s infinite;
+        }
+
+        .container .slider .images{
+            height: 30rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .slider .images .content{
+            /* border: 2px solid red; */
+            width: 20rem;
+            height: 13rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 2rem 5px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color: white;
+        }
+
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+            40%{
+                transform: translateX(-100vw);
+            }
+            45%{
+                transform: translateX(-100vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+
+            55%{
+                transform: translateX(-200vw);
+            }
+            60%{
+                transform: translateX(-200vw);
+            }
+            65%{
+                transform: translateX(-200vw);
+            }
+            70%{
+                transform: translateX(-200vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-300vw);
+            }
+            85%{
+                transform: translateX(-300vw);
+            }
+            90%{
+                transform: translateX(-300vw);
+            }
+            95%{
+                transform: translateX(-300vw);
+            }
+            100%{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider" >
+
+            <div class="images" style="background-image: url(http://images1.fanpop.com/images/photos/1600000/Pics-from-the-zoo-animals-1674822-2560-1920.jpg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aut voluptate dicta animi molestiae tenetur dolore vel provident quas
+                </div>
+            </div>
+            <div class="images" style="background-image: url(../Aasha/images/2.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aut voluptate dicta animi molestiae tenetur dolore vel provident quas
+                </div>
+            </div>
+            <div class="images" style="background-image: url(../Aasha/images/3.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aut voluptate dicta animi molestiae tenetur dolore vel provident quas
+                </div>
+            </div>
+            <div class="images" style="background-image: url(../Aasha/images/4.jpeg);">
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, aut voluptate dicta animi molestiae tenetur dolore vel provident quas
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

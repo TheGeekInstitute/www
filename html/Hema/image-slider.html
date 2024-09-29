@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 70px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            align-items: center;
+        }
+        .nav ul{
+            display: flex;
+        }
+        .nav ul li{
+            margin: 0 10px;
+        }
+        .nav ul li a{
+            color: white;
+            font-family: cursive;
+            font-size: 18px;
+        }
+
+        .nav .logo{
+            font-size: 50px;
+            font-weight: 900;
+            font-family: cursive;
+            background-image: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            /* color: transparent; */
+            -webkit-background-clip: text;
+
+            animation-name: logo-color;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .image1{
+            background-image: url("./images/1.jpeg");
+        }
+        .image2{
+            background-image: url("./images/2.jpeg");
+        }
+        .image3{
+            background-image: url("./images/3.jpeg");
+        }
+        .image4{
+            background-image: url("./images/4.jpeg");
+        }
+        .image5{
+            background-image: url("./images/5.webp");
+        }
+
+        .images{
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 70vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        
+        .container .slider{
+            width: 500vw;
+            display: flex;
+            animation-name: image-slider;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        .container .slider .images .content{
+            /* border: 2px solid red; */
+            /* text-align: center; */
+            width: 50vw;
+            height: 35vh;
+            padding: 4vh 3vw;
+            border-top-left-radius: 5rem;
+            border-top-right-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: 5rem;
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, .3);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.171);
+           
+        }
+
+        .container .slider .images .content h1{
+            /* border: 1px solid red; */
+            height: 10vh;
+            line-height: 10vh;
+            text-align: center;
+            font-family: cursive;
+            }
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+            45%{
+                transform: translateX(-200vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+            65%{
+                transform: translateX(-300vw);
+            }
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+            90%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+        }
+
+
+        @keyframes logo-color {
+            0%{
+                background-size: 0;
+            }
+
+            25%{
+            background-size: 100%;
+            }
+
+            50%{
+            background-size: 200%;
+            }
+            75%{
+            background-size: 300%;
+            }
+            100%{
+            background-size: 400%;
+            }
+        }
+
+        .name{
+            font-size: 100px;
+            background-image: url("./images/3.jpeg");
+            background-size: cover;
+            background-position: bottom;
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">GeekInstitute</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="slider">
+          
+            <div class="images image1">
+                <div class="content">
+                    <h1>Welcome To Our Website</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae sunt dolores quia quam accusamus ea odio tempore enim quaerat earum</p>
+                </div>
+            </div>
+
+            <div class="images image2">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae sunt dolores quia quam accusamus ea odio tempore enim quaerat earum</p>
+                </div>
+            </div>
+
+            <div class="images image3">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae sunt dolores quia quam accusamus ea odio tempore enim quaerat earum</p>
+                </div>
+            </div>
+
+            <div class="images image4">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae sunt dolores quia quam accusamus ea odio tempore enim quaerat earum</p>
+                </div>
+            </div>
+
+            <div class="images image5">
+                <div class="content">
+                    <h1>Lorem ipsum  ullam voluptas.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt quae sunt dolores quia quam accusamus ea odio tempore enim quaerat earum</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <h1 class="name">ABCD</h1>
+
+    <input type="checkbox">
+</body>
+</html>

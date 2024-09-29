@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    background-color:#37517E;
+    height: 600px;
+}
+
+.nav{
+    /* border: 2px solid black; */
+    height: 50px;
+    padding: 0px 150px;
+    color: white;
+    
+}
+
+.nav, .nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.nav ul li a{
+    padding: 0px 20px;
+    color: rgb(233, 225, 225);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav ul li:first-child a{
+    color: #44A0D2;
+}
+
+.nav ul li:last-child{
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    padding: 7px;
+    margin-bottom: -10px;
+    font-size:large;
+}
+
+.nav ul li a:hover{
+    color: #44A0D2;
+}
+
+.container .main .left p:nth-child(1){
+    font-size: 40px;
+    font-weight:bolder;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container .main .left p:nth-child(2){
+    font-size: 23px;
+    color: #AFB9CB;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container .main .left{
+    /* border: 2px solid red; */
+    padding: 200px 50px 0px 20px ;
+    margin-left: 150px;
+}
+.container .main .right{
+    /* border: 2px solid red; */
+    margin-right: 150px;
+    height: 550px;
+
+}
+
+.container .main .right img{
+    height: 500px;
+    padding-top: 20px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.main .left .btn{
+    margin-top: 120px;
+    
+}
+.main .left .btn a:first-child{
+    /* border: 2px solid red; */
+    background-color: #47B2E4;
+    border-radius: 30px;
+    padding: 13px 30px;
+    color: white;
+    font-size: large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.main .left .btn a:last-child{
+    /* border: 2px solid red; */
+    border-radius: 30px;
+    padding: 13px 30px;
+    font-size:large;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main .left .btn a:last-child > #icon{
+    font-size: 3rem;
+    position: relative;
+    top: 1.1rem;
+}
+

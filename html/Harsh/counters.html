@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        .container{
+            counter-reset: section;
+        }
+
+        .container h1::before{
+            content: counter(section)  ". ";
+            /* content: counter(section,lower-greek)  ". "; */
+            counter-increment: section;
+            color: white;
+            background-color: red;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        h1{
+            counter-reset: sub-section;
+
+        }
+
+        h2{
+            text-indent: 50px;
+            counter-reset: sub-sub-section;
+        }
+
+        h2::before{
+            content:counter(section)  "."  counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: green;
+        }
+
+        h3{
+            text-indent: 100px;
+        }
+        
+        h3::before{
+            content:counter(section)  "."  counter(sub-section) "." counter(sub-sub-section,lower-alpha) ". " ;
+            counter-increment: sub-sub-section;
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Web Development</h1>
+            <h2>HTML</h2>
+                <h3>Heading</h3>
+                <h3>Links</h3>
+            <h2>CSS</h2>
+                <h3>Borders</h3>
+                <h3>Height/Width</h3>
+            <h2>JavaScript</h2>
+        <h1>Cyber Security</h1>
+            <h2>Kali Linux</h2>
+            <h2>Parrot Security</h2>
+            <h2>Black Arch</h2>
+        <h1>Computer Programming</h1>
+            <h2>Java</h2>
+            <h2>Python</h2>
+            <h2>C/C++</h2>
+    </div>
+
+
+    <div class="box">
+        <p class="parent">adsa</p>
+            <p class="child"></p>
+            <p class="child"></p>
+            <p class="child"></p>
+                <p class="sub-child"></p>
+                <p class="sub-child"></p>
+                <p class="sub-child"></p>
+
+        <p class="parent">adsa</p>
+        <p class="parent">adsa</p>
+
+    </div>
+
+
+
+
+</body>
+</html>
+
+
+

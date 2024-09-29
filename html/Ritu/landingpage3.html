@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 5rem;
+            background-color: rgb(247, 250, 253);
+        }
+        .nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 1.5rem;
+            padding-left: 7rem;
+            padding-right: 7rem;
+           
+            margin: 0px 20px;
+        }
+        .logo{
+            color: rgb(82, 82, 163);
+        
+            font-size: 2rem;
+        }
+        .nav ul li{
+            display: inline;
+        }
+        .nav ul li a{
+            text-decoration: none;
+            margin: 5px;
+            color: rgb(96, 95, 95);
+            font-size: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+        .abcd{
+            font-size: 1.8rem;
+            margin-left:2rem; 
+            color: rgb(138, 137, 137);
+        
+            
+        }
+        .nav [type=search]{
+            padding-left: 10px;
+            display: inline-block;
+            height: 35px;
+            width: 220px;
+            border: 1px solid rgb(211, 210, 210);
+            outline: transparent;
+        }
+            .sea{
+               
+                background-color: rgb(252, 103, 128);
+                color: white;
+                margin-left: -5px;
+                padding: 9px 10px;
+                outline: none;
+                border-bottom: 1.5px solid red;
+            }  
+            .main{
+                display: flex;
+                justify-content: space-evenly;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .main img{
+                height: 7rem;
+                width: 7rem;
+                border: 2px solid rgb(219, 216, 216);
+                margin: 20px;
+                
+            }
+            .main img{
+                max-width: 60%;
+                padding: 10px;
+            }
+            .head h1{
+                font-size: x-large;
+                margin: 1rem;
+            }
+            @media screen and (max-width:500px) {
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+
+            }
+                nav{
+                    /* display: inline-block; */
+                    height: 6rem;
+            }
+          .nav ul, .sear{
+            display: none;
+          }
+            .logo{
+                font-size: 2.5rem;
+                width: 100%;
+                height: 3rem;
+                margin: 0;
+                padding: 0;
+                /* border: 1px solid red; */
+                text-align: center;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <h1 class="logo">OWN SHOP</h1>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">contact</a></li>
+            </ul>
+
+         <div class="sear">
+ 
+                <input type="search">
+                <i class="fa fa-search sea" aria-hidden="true"></i>
+                <div class="menu">
+        
+                <i class="fa fa-sharp fa-light fa-cart-shopping abcd"></i></li>
+                <i class="fa-regular fa-user abcd"></i>
+
+
+                </div>
+           </div>
+        </div>
+    </nav>
+    <div class="head">
+       <h1>
+        Select Your Favourite Brand
+       </h1>
+       <div class="main">
+        <div class="box">
+        <img src="https://www.oneplus.com/content/dam/oasis/page/common/logo/OnePlus_Logo.png" alt="">
+        <p>One Plus</p>
+        </div>
+        <div class="box">
+        <img src="../Ownonlineshop/Images/Brands/apple.png" alt="">
+        <p>iPhone</p>
+        </div>
+        <div class="box">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/014/018/566/small/samsung-logo-on-transparent-background-free-vector.jpg" alt="">
+        <p>Samsung</p>
+        </div>
+        <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1DoOOogFxkeKUo4bzIWsOGti5k73UdfEjC9umAPAQsw&s" alt="">
+        <p>Vivo</p>
+        </div>
+        <div class="box">
+        <img src="../Ownonlineshop/Images/Brands/xiaomi.png" alt="">
+        <p>Mi</p>
+        </div>
+        <div class="box">
+        <img src="https://www.logo.wine/a/logo/Oppo/Oppo-Logo.wine.svg" alt="">
+        <p>Oppo</p>
+        </div>
+        <div class="box">
+        <img src="../Ownonlineshop/Images/Brands/motorola.png" alt="">
+        <p>Motorola</p>
+        </div>
+        <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVsHZDx8wfZufBQWcm1S0ESpwZ3tQapsZXmr5PTuaD&s" alt="">
+        <p>Nokia</p>
+        </div>
+       </div>
+        
+    </div>
+    
+</body>
+</html>

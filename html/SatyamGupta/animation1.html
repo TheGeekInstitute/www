@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Webpage</title>
+
+    <style>
+        .sun{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            background-color: yellow;
+            animation-name: sun;
+            animation-iteration-count: infinite;
+            animation-duration:  1s;
+            margin: 150px auto;
+        }
+        @keyframes sun {
+           0%{
+            box-shadow:0px 0px 10px red
+            
+
+           }
+
+           50%{
+            border-width: 50px;
+
+            box-shadow:0px 0px 10px red, 0px 0px 20px green;
+
+
+           }
+           
+            100%{
+                box-shadow:0px 0px 10px red, 0px 0px 20px green ,
+                0px 0px 40px purple;
+
+            }
+
+            
+
+
+
+
+
+
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="sun">
+
+    </div>
+    
+</body>
+</html>

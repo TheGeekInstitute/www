@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        .accordion{
+            /* border: 1px solid black; */
+            width: 30rem;
+            margin: 10px auto;
+        }
+
+        .accordion .box{
+            margin: 5px 0;
+        }
+
+        .accordion .box input[type="checkbox"]{
+            display: none;
+        }
+
+        .accordion .box label{
+            display: block;
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            height: 3rem;
+            font-size: x-large;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .accordion .box label i{
+            transition: all .2s linear;
+        }
+
+        .accordion .box .content{
+            background-color: bisque;
+            padding: 5px 15px;
+            display: none;
+        }
+
+
+        .accordion .box input[type="checkbox"]:checked ~ .content{
+            display: block;
+        }
+
+
+        .accordion .box input[type="checkbox"]:checked ~ label i{
+            transform: rotate(45deg);
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="accordion">
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <label for="btn">
+                <p>What is ABCD ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+
+            <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque repellat nobis esse. Maiores quidem officia quae, iste enim alias? Quasi laboriosam, accusamus soluta atque sit consequatur error nobis excepturi!
+            </p>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn1">
+            <label for="btn1">
+                <p>What is ABCD ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+
+            <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque repellat nobis esse. Maiores quidem officia quae, iste enim alias? Quasi laboriosam, accusamus soluta atque sit consequatur error nobis excepturi!
+            </p>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn2">
+            <label for="btn2">
+                <p>What is ABCD ?</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+
+            <p class="content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui cumque repellat nobis esse. Maiores quidem officia quae, iste enim alias? Quasi laboriosam, accusamus soluta atque sit consequatur error nobis excepturi!
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* border: 1px solid black; */
+            background-color: royalblue;
+            width: 20rem;
+            text-align: center;
+            margin: 18rem auto;
+            border-radius: 5px;
+        }
+        button{
+            /* border: 1px solid black; */
+            font-size: 15px;
+            width: 8rem;
+            margin: 5px;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Counter: <span class="name">0</span></h1>
+    <button id="increase">INCREASE</button>
+    <button id="decrease">DECREASE</button>
+    <button id="reset">RESET</button>
+    </div>
+    <script>
+        let name=document.querySelector('.name');
+        let increase=document.querySelector('#increase');
+        let decrease=document.querySelector('#decrease');
+        let reset=document.querySelector('#reset');
+        let i=0;
+        increase.addEventListener("click",()=>{
+            i++;
+            name.innerHTML=i;
+        })
+        decrease.addEventListener("click",()=>{
+            i--;
+            name.innerHTML=i;
+        })
+        reset.addEventListener("click",()=>{
+            i=0;
+            name.innerHTML=i;
+        })
+    </script>
+</body>
+</html>

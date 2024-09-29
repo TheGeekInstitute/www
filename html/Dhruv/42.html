@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        .nav{
+        background-color: rgb(171, 194, 229);
+        margin-left: 225px;
+        height: 40px;
+        }
+
+        .nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav ul li a{
+        display: block;
+        padding-top: 7px;
+        color: white;
+        /* text-decoration:none; */
+        margin: 0px 15px;
+        /* height: 10vh; */
+    }
+    .nav ul li a:hover{
+        background-color: blue;
+        /* font-size
+        : x-large; */
+        height: 5vh;
+
+    }
+    .start .combo{
+        position: fixed;
+        padding: 20px 0;
+        width: 225px;
+        height: 100%;
+        background-color: rgb(181, 162, 235);
+        top: 0;
+        left: 0;
+        transition: all 1s ease;
+        
+    }
+    .start .combo h1,p{
+        text-align: center;
+        /* margin-left: 10px; */
+        color: beige;
+    }
+    .start .combo h1:hover{
+        text-decoration: underline;
+        color: cadetblue;
+        font-size: x-large;
+        background-color: chartreuse;
+    }
+
+    .start .combo p:hover{
+        background-color: skyblue;
+        color: blue;
+        font-size: x-large;
+    }
+
+
+    .start .combo img{
+            margin-left: 10px;
+            border-radius: 20%;
+            margin-top: 10px;
+            margin-bottom: 5px;
+    }
+    .start .combo img:hover{
+            border-radius: 50%;
+            border: 8px solid rgb(201, 247, 201);
+            outline: 20px;
+    }
+
+    .start .combo li{
+        display: block;
+        height: 6vh;
+        /* text-align: center; */
+        font-size: x-large;
+        /* border: 1px solid red;                                                                               */
+        padding: 10px;
+        background-color: rgb(192, 151, 230);
+        transition: all 1s;
+        /* transition-delay: 10s; */
+
+    }
+
+    .start .combo li:hover{
+        background-color: skyblue;
+        padding: 10px;
+        font-size: x-large;
+
+    }
+
+
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+           <li><a href="#">Home</a> 
+           </li>
+           <li><a href="#">Contact</a>
+        </li>
+           <li><a href="#">Service</a></li>
+           <li><a href="#">About</a></li>
+        </ul>
+   
+        <div class="start">
+            <div class="combo">
+                <h1>DHRUV</h1>
+                <p>WEB DESIGNER</p>
+                <img src="../web/images/20.jpg" >
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                    
+            </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                        <span class="item">My Dashbord</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="item">People</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                        <span class="item">Performance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+                        <span class="item">Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+                        <span class="item">Reports</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+                        <span class="item">Admin</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                        <span class="item">Settings</span>
+                    </a>
+                </li>
+            </div>
+            </div>
+
+
+    </body>
+</html>

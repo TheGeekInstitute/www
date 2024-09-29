@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var</title>
+    <style>
+        :root{
+            --main-color:rgb(38, 226, 38);
+            --second: rgb(219, 41, 41);
+        }
+
+        *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        }
+
+        .main{
+            border: 2px solid black;
+            background-image: linear-gradient(  red, yellow, green,black);
+            /* width: calc(300px -10px); */
+            /* width: calc(100% - 10px); */
+            width: 500px;
+
+        }
+        .main h1{
+            color: var(--main-color);
+            
+        }
+
+        .main p{
+            /* color: rgb(200, 100, 100); */
+            color: var(--second);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cupiditate quasi cum nostrum provident, in praesentium deserunt magni veritatis rerum repudiandae repellendus dolor dolore numquam accusantium aspernatur nemo omnis voluptas?</p>
+    </div>
+</body>
+</html>

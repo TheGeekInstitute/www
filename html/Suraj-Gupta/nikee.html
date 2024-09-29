@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+body{
+  color: greenyellow;
+  background-color: aqua;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+ul{
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(var(--columns),1fr);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 600 1040' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2'%3E%3Cpath d='M0 0l300 173.205v346.41L0 346.41V0z' fill='url(%23_Linear1)'/%3E%3Cpath d='M300 519.615L600 692.82v346.411L300 866.025v-346.41z' fill='url(%23_Linear2)'/%3E%3Cpath d='M600 0L300 173.205v346.41L600 346.41V0z' fill='url(%23_Linear3)'/%3E%3Cpath d='M300 519.615L0 692.82v346.411l300-173.206v-346.41z' fill='url(%23_Linear4)'/%3E%3Cdefs%3E%3ClinearGradient id='_Linear1' x1='0' y1='0' x2='1' y2='0' gradientUnits='userSpaceOnUse' gradientTransform='rotate(-30 646.41 173.205) scale(346.41)'%3E%3Cstop offset='0' stop-color='%23b7ccc3'/%3E%3Cstop offset='1' stop-color='%23cde2d9'/%3E%3C/linearGradient%3E%3ClinearGradient id='_Linear2' x1='0' y1='0' x2='1' y2='0' gradientUnits='userSpaceOnUse' gradientTransform='rotate(-30 1766.025 -126.796) scale(346.41)'%3E%3Cstop offset='0' stop-color='%23b7ccc3'/%3E%3Cstop offset='1' stop-color='%23cde2d9'/%3E%3C/linearGradient%3E%3ClinearGradient id='_Linear3' x1='0' y1='0' x2='1' y2='0' gradientUnits='userSpaceOnUse' gradientTransform='rotate(-150 346.41 92.82) scale(346.41)'%3E%3Cstop offset='0' stop-color='%23e8dad1'/%3E%3Cstop offset='1' stop-color='%23fff0e7'/%3E%3C/linearGradient%3E%3ClinearGradient id='_Linear4' x1='0' y1='0' x2='1' y2='0' gradientUnits='userSpaceOnUse' gradientTransform='rotate(-150 266.025 392.82) scale(346.41)'%3E%3Cstop offset='0' stop-color='%23e8dad1'/%3E%3Cstop offset='1' stop-color='%23fff0e7'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  /* background-size: calc(200%/(var(--columns))); */
+}
+
+li{
+  grid-column-end: span 2;
+  position: relative;
+  padding-bottom: 70%;
+}
+
+li:nth-child(2n-1){
+  grid-column-start:2;
+}
+
+li:before{
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/adidas.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+.adidas::after{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/adidas.png");
+}
+.tiger::after{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/tiger.png");
+}
+div{
+  position: absolute;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 14%;
+  padding: 3%;
+}
+
+p{
+  font-size: 2em;
+  color: black;
+}
+h2{
+    color: white;
+}
+
+img{
+  position: absolute;
+  left: 50%;
+  width: 62%;
+  
+
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li class="adidas">
+          <div>
+            <h2>I-5923 RUNNER PRIDE</h2>
+            <p>3000</p>
+          </div>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/adidas01.png' alt='' />
+        </li>
+        <li class="tiger">
+          <div>
+            <h2>TIGER ALLY</h2>
+            <p>300</p>
+          </div>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/tiger05.png' alt='' />
+        </li>
+        <li class="adidas">
+          <div>
+            <h2>NMD_R1</h2>
+            <p>2000</p>
+          </div>
+          <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/881020/adidas02.png' alt='' />
+        </li>
+        <li class="tiger">
+          <div>
+            <h2>CALIFORNIA 78</h2>
+            <p>500</p>
+          </div>
+         
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,
+        .two,
+        .three,
+        .four
+        {
+            /* border: 1px solid red; */
+            display: block;
+            height: 10px;
+            width: 70%;
+            background-color: rgb(201, 217, 212);
+            margin: 10px 0;
+        }
+
+        .one::after{
+            content: '';
+            display: block;
+            height: 10px;
+            width: 0;
+            background-color: red;
+            animation: fill-70 2s linear 0s 1 alternate forwards;
+        }
+
+        .two::after{
+            content: '';
+            display: block;
+            height: 10px;
+            width: 0;
+            background-color: red;
+            animation: fill-30 2s linear 0s 1 alternate forwards;
+        }
+
+        .three::after{
+            content: '';
+            display: block;
+            height: 10px;
+            width: 0;
+            background-color: red;
+            animation: fill-90 2s linear 0s 1 alternate forwards;
+        }
+
+        .four::after{
+            content: '';
+            display: block;
+            height: 10px;
+            width: 0;
+            background-color: red;
+            animation: fill-50 2s linear 0s 1 alternate forwards;
+        }
+
+
+
+
+        @keyframes fill-70 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 70%;
+            }
+        }
+
+        @keyframes fill-50 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 50%;
+            }
+        }
+
+        @keyframes fill-30 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 30%;
+            }
+        }
+
+        @keyframes fill-90 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+
+
+
+</body>
+</html>

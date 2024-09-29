@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+        .nav {
+            /* border: 1px solid black; */
+            margin: 8px 0;
+        }
+
+        .nav ul {
+            /* border: 1px solid black; */
+            width:750px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            border-radius: 0  10px 0 10px ;
+            background-color: rgba(46, 45, 45, 0.836);
+            color: white;
+        }
+
+        .nav ul li {
+          
+            padding: 8px;
+            font-size:20px; 
+            transition: all .2s linear;
+
+            /* border-radius: px; */
+        }
+
+        .container{
+            /* border: 2px solid black; */
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color:rgba(127, 255, 212, 0.513); */
+    
+        }
+
+        .container .box{
+            height: 10rem;
+            width:16rem;
+            /* border: 1px solid black; */
+            margin:8px;
+            border-radius: 0 12px 0 12px;
+            background-size: cover;
+            box-shadow:0px 0px 10px black;
+        }
+
+        .nav ul li:hover{
+            /* border-radius:0 ; */
+              background-color: rgba(14, 13, 13, 0.863);
+        }
+
+
+        @keyframes show {
+            0%{
+                transform: scale(2)  translate(50px,50px);
+            }
+
+            100%{
+                transform: scale(1)  translate(0px,0px);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul id="btns">
+            <li data-name="All">All</li>
+            <li data-name="Flowers">Flowers </li>
+            <li data-name="Animals"> Animals </li>
+            <li data-name="Birds">Birds </li>
+            <li data-name="Foods">Foods </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="box Flowers"
+            style="background-image: url(https://cms.interiorcompany.com/wp-content/uploads/2024/01/lincoln-red-rose-bush-types.jpg);">
+        </div>
+        <div class="box Flowers"
+            style="background-image: url(https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg);">
+        </div>
+        <div class="box Animals"
+            style="background-image: url(https://lafeber.com/vet/wp-content/uploads/european-rabbit.jpg);"></div>
+        <div class="box Animals"
+            style="background-image: url(https://cdn.firstcry.com/education/2022/04/25155522/1378635314.jpg);"></div>
+        <div class="box Birds"
+            style="background-image: url(https://i.pinimg.com/564x/5e/72/c3/5e72c3313346ccab40a3232d90d68c56.jpg);">
+        </div>
+        <div class="box Birds"
+            style="background-image: url(https://rukminim2.flixcart.com/image/850/1000/l1tmf0w0/poster/s/r/6/small-poster-digital-painting-wall-art-paper-parrot-bird-wall-original-imagdazfqbrp7fqw.jpeg?q=90&crop=false);">
+        </div>
+        <div class="box Foods"
+            style="background-image: url(https://media.istockphoto.com/id/1137312508/photo/assortment-of-products-with-high-sugar-level.jpg?s=612x612&w=0&k=20&c=pfMfQfo4pHnTfESlJCSB_wCrOvlHhtZ3Eqdu3CY5LDY=);">
+        </div>
+        <div class="box Foods"
+            style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLySHjle04OuXE553Ai2roOoCO9nPcLd5XQ&s);">
+        </div>
+ 
+        <div class="box Foods" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSDRhLe47ebu5BwYevDbb3f4yEymfVZRIXYw&s);"></div>
+
+        <div class="box Foods" style="background-image:url(https://i.pinimg.com/736x/16/92/b3/1692b3193ce168983c05e8f42b2997c6.jpg) ;"></div>
+
+        <div class="box Animals" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrh9-ftTq0TLQuESpKn73UqBjKAlz77xIFFA&s) ;"></div>
+        
+        <div class="box Animals" style="background-image:url(https://ideas.ted.com/wp-content/uploads/sites/3/2020/05/final_animals-homeschooling_credit-alamy.jpg) ;"></div>
+
+        <div class="box Flowers" style="background-image:url(https://c4.wallpaperflare.com/wallpaper/895/954/424/sunflower-heart-bloom-flower-wallpaper-preview.jpg);"></div>
+
+        <div class="box Flowers" style="background-image:url(https://cdn.pixabay.com/photo/2023/08/08/15/01/flower-8177578_640.jpg) ;"></div>
+
+        <div class="box Birds" style="background-image:url(https://static.vecteezy.com/system/resources/thumbnails/035/543/452/small_2x/ai-generated-view-of-a-green-birds-house-scene-on-st-patrick-s-day-photo.jpg) ;"></div>
+
+        <div class="box Birds" style="background-image: url(https://freerangestock.com/sample/125474/seagulls-flying-in-the-air-.jpg);"></div>
+
+        <div class="box Flowers" style="background-image:url(https://t4.ftcdn.net/jpg/05/57/29/25/360_F_557292539_2kXYz0frOcCGISoYEd2MNTmxyT0lYyOj.jpg) ;"></div>
+
+        <div class="box Flowers" style="background-image:url(https://c4.wallpaperflare.com/wallpaper/895/954/424/sunflower-heart-bloom-flower-wallpaper-preview.jpg);"></div>
+
+        <div class="box Flowers" style="background-image:url(https://cdn.pixabay.com/photo/2023/08/08/15/01/flower-8177578_640.jpg) ;"></div>
+
+        <div class="box Birds" style="background-image:url(https://static.vecteezy.com/system/resources/thumbnails/035/543/452/small_2x/ai-generated-view-of-a-green-birds-house-scene-on-st-patrick-s-day-photo.jpg) ;"></div>
+
+        <div class="box Birds" style="background-image: url(https://freerangestock.com/sample/125474/seagulls-flying-in-the-air-.jpg);"></div>
+
+        <div class="box Flowers" style="background-image:url(https://t4.ftcdn.net/jpg/05/57/29/25/360_F_557292539_2kXYz0frOcCGISoYEd2MNTmxyT0lYyOj.jpg) ;"></div>
+
+        <div class="box Flowers"
+        style="background-image: url(https://cms.interiorcompany.com/wp-content/uploads/2024/01/lincoln-red-rose-bush-types.jpg);">
+    </div>
+    <div class="box Flowers"
+        style="background-image: url(https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg);">
+    </div>
+    <div class="box Animals"
+        style="background-image: url(https://lafeber.com/vet/wp-content/uploads/european-rabbit.jpg);"></div>
+    <div class="box Animals"
+        style="background-image: url(https://cdn.firstcry.com/education/2022/04/25155522/1378635314.jpg);"></div>
+    <div class="box Birds"
+        style="background-image: url(https://i.pinimg.com/564x/5e/72/c3/5e72c3313346ccab40a3232d90d68c56.jpg);">
+    </div>
+    <div class="box Birds"
+        style="background-image: url(https://rukminim2.flixcart.com/image/850/1000/l1tmf0w0/poster/s/r/6/small-poster-digital-painting-wall-art-paper-parrot-bird-wall-original-imagdazfqbrp7fqw.jpeg?q=90&crop=false);">
+    </div>
+    <div class="box Foods"
+        style="background-image: url(https://media.istockphoto.com/id/1137312508/photo/assortment-of-products-with-high-sugar-level.jpg?s=612x612&w=0&k=20&c=pfMfQfo4pHnTfESlJCSB_wCrOvlHhtZ3Eqdu3CY5LDY=);">
+    </div>
+    <div class="box Foods"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLySHjle04OuXE553Ai2roOoCO9nPcLd5XQ&s);">
+    </div>
+
+    </div>
+
+    <script>
+        
+        let btns = document.querySelector("#btns").children;
+
+        Array.from(btns).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                var attr = e.getAttribute("data-name");
+
+                Array.from(btns).forEach((a)=>{
+                    a.classList.remove("active")
+                })
+                e.classList.add("active");
+                
+
+                let container = document.querySelector(".container");
+                   
+              
+
+                Array.from(container.children).forEach((element)=>{
+
+                    if(element.classList.contains(attr)){
+                        element.style.display="none"
+                        setTimeout(() => {
+                            element.style.display="block"
+                            element.style.animation="show .5s ease-in-out 0s 1 alternate forwards"
+                            
+                        }, 50);
+                    }
+                    else if(attr=="All"){
+                        element.style.display="none"
+                        setTimeout(() => {
+                            element.style.display="block"
+                            element.style.animation="show .5s ease-in-out 0s 1 alternate forwards"
+                            
+                        }, 50);
+                    }
+                    else{
+                        element.style.display="none"
+                    }
+                
+                });
+            })
+        })
+    </script>
+</body>
+
+</html>

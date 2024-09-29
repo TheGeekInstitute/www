@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+    
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            background-color: aquamarine;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            padding: 0 10px;
+        }
+
+        .links .menu{
+            display: flex;
+        }
+        .links .menu li a{
+            display: block;
+            margin: 0 10px;
+            /* border: 1px solid red; */
+            height: 50px;
+            width: 70px;
+            line-height: 50px;
+            text-align: center;
+            color: black;
+            font-weight: 700;
+        }
+
+        .links .menu li a:hover{
+            background-color: grey;
+        }
+    #btn,.btn{
+        display: none;
+    }
+    
+@media screen and (max-width:600px) {
+  .menu{
+    position: absolute;
+    background-color: red;
+    left: 0;
+    top: 50px;
+    right: 0;
+    /* bottom: 0; */
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    /* transition: all .3s; */
+    /* transform: translateY(calc(-100% - 50px)); */
+    /* z-index: -1; */
+}
+  .btn{
+    display: block;
+    font-size: 30px;
+  }
+
+  .nav .links #btn:checked + .menu{
+    visibility: visible;
+    /* transform: translateY(0%); */
+
+  }
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Logo</div>
+        <ul class="links">
+            <label for="btn" class="btn"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="btn" >
+
+            <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+           
+        </ul>
+    </div>
+</body>
+</html>

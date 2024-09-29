@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <style>
+
+        .container{
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            margin-top: 200px;
+            perspective: 600px;
+            /* perspective-origin: top left; */
+            transform: rotateY(40deg);
+            transform-style: preserve-3d;
+            
+        }
+        .box{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 200px;
+            background-color: rgba(0, 255, 255, 0.384);
+            transition: all 2s;
+            transform-origin: 100px 20px;
+        }
+
+        .box:hover{
+            /* transform-origin:0% 50%; */
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(-180deg); */
+            /* transform: rotateZ(180deg); */
+            /* transform: translateZ(200px); */
+            /* transform: rotate3d(1,2,1,60deg); */
+            /* transform: translate3d(100px,140px,170px); */
+
+            /* transform: scale(2); */
+            transform: rotateX(60deg);
+        }
+
+        .abcd{
+            height: 150px;
+            width: 150px;
+            font-size: 60px;
+            background-color: red;
+            line-height: 150px;
+            text-align: center;
+            transition: all 1s;
+            backface-visibility: hidden;
+        }
+
+        .abcd:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">BOX</div>
+</div>
+
+<div class="abcd">BOX</div>
+</body>
+</html>

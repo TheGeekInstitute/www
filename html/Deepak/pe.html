@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover::after{
+            content: attr( data-myattr);
+            color: rgb(252, 4, 198);
+            text-shadow: 10px 10px 15px solid grey;
+        }
+        h1:active::before{
+            content:"Hii I'm";
+        }
+        ul::first-line{
+            color: rgba(11, 255, 84, 0.918);
+        }
+        ol li::marker{
+            color: chartreuse;
+        }
+        .para:hover::first-line{
+        text-align: center;
+        text-decoration: underline;
+        color: chocolate;
+        
+        }
+        .hii::selection{
+            /* user-select:all; */
+            /* color: darkgoldenrod; */
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" data-myattr="The Master">Vijay</h1>
+    <Ul>
+        <li>jkdghjksdhgjk</li>
+        <li>fdgsdgsfdgshr</li>
+        <li>687465465432465</li>
+        <li>sdfsdf454545</li>
+    </Ul>
+    <ol>
+        <li>jkfuiwehrjfuik</li>
+        <li>ankit raj</li>
+        <li>deg vijay</li>
+        <li>heyrawat</li>
+    </ol>
+    <p class="hii">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id reiciendis, enim et incidunt laboriosam ad vel assumenda fugit error in? Cupiditate facere repudiandae minima doloribus odit. Explicabo voluptatem saepe autem.</p>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem architecto tempora enim fugit aliquam sed aspernatur magnam ipsa, consequuntur sunt suscipit voluptas reiciendis debitis eligendi optio maxime. Quis, pariatur est!</p>
+</body>
+</html>

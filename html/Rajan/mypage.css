@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img{
+    width: 150px;
+
+}
+.one{
+    background-image: url(https://t4.ftcdn.net/jpg/06/29/66/01/360_F_629660118_l9Spbn6yym4oxMUL6UlwgkewmgZNUWom.jpghttps://cdn.wallpapersafari.com/17/73/0UfKOg.jpghttps://t4.ftcdn.net/jpg/02/39/60/81/360_F_239608136_4qtLPCPhCCzNaSoPo2hiEfMFA1fBXa2R.jpg);
+    background-size: cover;
+    height: 50rem;
+
+}
+.menu i{
+    font-size: 28px;
+}
+.menu{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    position: fixed;
+
+}
+.menu label{
+    margin-right: 15px;
+    color: white;
+    font-size: x-large;
+}
+
+.png{
+    margin: 3rem 2rem;
+}
+
+.png pre{
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.png p{
+    color: rgb(211, 210, 210);
+    /* position: absolute; */
+    /* top: 10rem;
+    left: 40px; */
+    font-size:x-large;
+}
+
+.png h1{
+    /* border: 1px solid red; */
+    width: 24rem;
+    font-size: 2rem;
+}
+.png{
+    /* border: 1px solid black; */
+    width: 80vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin-left: 150px;
+}
+.one .icons{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    line-height: 80px;
+    position: absolute;
+    top: 13.5rem;
+    right: 5px;
+
+}
+.one .icons i{
+    font-size: 35px;
+    color: white;
+    padding: 1rem;
+}
+.one .icons i:hover{
+    color: black;
+    text-shadow: 0 0 5px;
+}
+.one .button{
+    /* border: 1px  solid black; */
+    margin-left: 7rem;
+
+}
+.one .button button{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 8rem;
+    line-height: 2rem;
+    margin: 90px;
+
+}
+.one .button button:hover{
+    background-color: green;
+    box-shadow: 5px greenyellow;
+    color: black;
+}
+.hellothere{
+    border: 1px solid rgb(76, 241, 11);
+    background-color: rgba(13, 179, 21, 0.774);
+    width: 100vw;
+}
+.hellothere header{
+    /* border: 1px solid black; */
+    text-align: center;
+    line-height: 40px;
+
+}
+.hellothere .top h1{
+    font-size: 3rem;
+    margin: 20px;
+    display: inline;
+    border-bottom: 1px solid white;
+    padding: 35px;
+}
+.hellothere .top p{
+    margin-top: 35px;
+}
+.hellothere .hero p{
+    /* border: 1PX solid black; */
+    font-size: 25px;
+    margin: 6vw;
+    line-height: 2.5rem;
+}
+.number{
+    /* border: 1px solid black; */
+    width: 25rem;
+    line-height: 120px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* position: relative;
+    left: 20rem; */
+    text-align: center;
+}
+.number h1{
+    font-size: 6cap;
+    color: white;
+}
+.number .box{
+    /* border: 1px solid white; */
+    color: black;
+    margin: 1rem;
+    padding: 8px;
+    line-height: 60px;
+    width: 150px;
+}
+.number .border{
+    border-right: 1px solid white;
+}
+.whatwedo .top01{
+    text-align: center;
+    border-bottom: 1px solid rgb(100, 99, 99);
+    width: 40rem;
+    margin: auto
+}
+
+.whatwedo{
+    padding-top: 10rem;
+}
+
+.whatwedo p{
+    /* margin-top: 8rem; */
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.whatwedo  h1{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.con{
+    /* border: 1px solid black; */
+    /* width: 65rem; */
+    height: 60rem;
+    /* margin: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+}
+.con .box01{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 15rem;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+}
+.con .box01 .aicons{
+    /* border: 1px solid green; */
+    font-size: 4rem;
+    color: green;
+    width: 20%;
+    height: 100%;
+
+}
+
+.con .box01 .atext h3{
+    /* border: 2px solid red; */
+    display: block;
+    padding-bottom: 5px;
+}
+.con .box01 .atext{
+    /* border: 1px solid yellow; */
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 5px    ;
+   
+}
+.recentworks .top{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20rem 18rem;
+}
+.recentworks .top{
+    border-bottom: 1px solid white;
+    padding-bottom: 3rem;
+}
+.recentworks .top p{
+    color: green;
+    font-size: 25px;
+}
+.recentworks .top h1{
+    /* border:  1px solid red; */
+    font-size: 50px;
+    width: 50rem;
+    margin: auto;  
+}
+.recentworks .imge01{
+    /* border: 1px solid red; */
+    /* width: 60rem; */
+    margin: auto;
+    text-align: center;
+}
+.recentworks .imge01 img{
+    /* border: 1px solid yellow; */
+    width: 40rem;
+}
+.ourclicents{
+    /* border: 1px solid black; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(202, 201, 201);
+}
+.ourclicents .text02{
+    padding: 5rem 20rem;
+    padding-top: 20rem;
+}
+.ourclicents .text02 p{
+    color: green;
+    font-size: 25px;
+}
+.ourclicents .text02 h1{
+    font-size: 50px;
+    /* border: 1px solid red; */
+
+}
+.ourclicents .icons01{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 2rem;
+
+}
+.ourclicents .icons01 .icons01-1{
+    /* border: 1px solid green; */
+    font-size: 70px;
+    color: grey;
+}
+.ourclicents .icons01 .icons01-1:hover{
+    color: black;
+}
+.ourclicents .text03{
+    /* border: 1px solid red; */
+    margin-top: 11rem;
+}
+.ourclicents .text03 p{
+    /* border: 1px solid purple; */
+    font-size: 35px;
+    padding: 10px 5rem;
+}
+.ourclicents .text03 img{
+    /* border: 2px solid green; */
+    border-radius: 50%;
+    width: 10rem;
+    margin-top: 5rem ;
+}
+.ourclicents .text03 h4{
+    color: grey;
+}
+.contactus{
+    background-image: url(https://i.pinimg.com/originals/9b/01/72/9b0172588367a4f608643017ad1f1aba.jpg);
+    background-color: rgba(0, 0, 0, 0.623);
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 60rem;
+    text-align: center;
+}
+.contactus .text04 {
+    /* border: 1px solid black; */
+    padding-top: 7rem;
+}
+.contactus .text04 p{
+    font-size: x-large;
+    color: green;
+}
+.contactus .text04 h1{
+    font-size: 3rem;
+    color: white;
+}
+.contactus .form{
+    /* border: 1px solid red; */
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+    margin: 3rem 0;
+}
+.contactus .send{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    background-color: rgba(0, 0, 0, 0.329);
+    /* line-height: 20rem; */
+}
+.contactus .send input{
+    background: transparent;
+    border: none;
+    width: 30rem;
+    line-height: 2rem;
+    padding: 2px;
+    border-bottom: 1px solid rgb(253, 251, 251);
+    padding-top: 5px;
+    margin-left: 5px;
+    color: white;
+}
+.contactus .send h3{
+    font-size:x-large;
+    padding: 10px;
+    margin: 3rem 0;
+    color: white;
+}
+.contactus .send #yourmessage{
+    background: transparent;
+    border: none;
+    border: 1px solid rgb(255, 252, 252);
+    height: 15rem;
+    padding: 10px;
+    margin-left: 5px ;
+    color: white;
+}
+.contactus .send button{
+    width: 7rem;
+    border: none;
+    background-color: green;
+    line-height: 2rem;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+.contactus .send button:hover{
+    background-color: red;
+    box-shadow: 0 0 10px white;
+    color: white;
+}
+.contactus .about{
+    /* border: 1px solid purple; */
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 20rem;
+    margin: 0 5px;
+}
+.contactus .about h1{
+    color: white;
+    padding: 20px 0;
+    text-decoration: underline;
+}
+.contactus .about h3{
+    color: green;
+    padding: 15px 0;
+    font-size: 22px;
+}
+.contactus .about p{
+    color: gray;
+    padding: 5px 0;
+    font-size: 18px;
+}
+.footer{
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 30rem;
+}
+.footer .rk{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.footer .rk h1{
+    color: green;
+    padding-top: 30px;
+}
+.footer .rk p{
+    /* border: 1px solid white; */
+    width: 70%;
+    margin: 30px 60px;
+    font-size: 22px;
+    color:grey;
+}
+.footer .get{
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.footer .get h1{
+    color: white;
+    padding-top: 30px;
+}
+.footer .get p{
+    width: 70%;
+    margin: 30px 8rem;
+    font-size: 22px;
+    color: grey;
+    /* border: 1px solid white; */
+}
+.footer .get .email{
+    /* border: 1px solid ; */
+    /* display: inline; */
+    width: 20rem;
+    line-height: 2rem;
+    /* background-color: rgba(0, 0, 0, 0.589); */
+    border-radius: 5px;
+    margin:8rem 5rem;
+}
+.footer .get .email .fa-envelope{
+    margin-left: -50px;
+    font-size: 2rem;
+    color: white;
+}
+.footer .get .email input{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.footer .get .email button{
+    line-height: 2.7rem;
+    width: 5rem;
+    background-color: green;
+    border: none;
+}
+.footer .get .email button:hover{
+    background-color: red;
+    color: white;
+}

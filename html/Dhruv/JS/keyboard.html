@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+</head>
+<body>
+    <input type="text" id="abcd">
+
+
+<script>
+
+
+document.querySelector("#abcd").addEventListener('copy',()=>{
+    alert("Text Copied");
+})
+
+document.querySelector("#abcd").addEventListener('cut',()=>{
+    alert("Text Cutted");
+})
+
+
+document.querySelector("#abcd").addEventListener('paste',()=>{
+    alert("Text Pasted");
+})
+
+
+
+    document.body.addEventListener('keydown',(event)=>{
+
+        // let key = event.ctrlKey;
+        // let key = event.altKey;
+        // let key = event.metaKey;
+        // let key = event.key;
+
+
+        console.log(key)
+    })
+
+    // window.addEventListener('online',()=>{
+    //     console.log(true);
+    // })
+
+
+    console.log(navigator.onLine)
+</script>
+
+</body>
+</html>

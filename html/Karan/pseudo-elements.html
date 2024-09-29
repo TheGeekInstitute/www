@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .new::first-letter{
+            color: red;
+            font-size: 48px;
+        }
+
+        .new::first-line{
+            color: blue;
+        }
+
+        .new{
+            color: green;
+        }
+
+        h1::after{
+            /* content: " Institute"; */
+            content: attr(data-my);
+            color: red;
+        }
+
+        h1::before{
+            content: "The ";
+            color: orange;
+        }
+
+ul li{
+    color: red;
+}
+
+ul li::marker{
+    color: blue;
+}
+
+ol li{
+    color: red;
+}
+
+ol li::marker{
+    color: blue;
+    /* font-size: 32px; */
+}
+
+p::selection{
+    color: red;
+    background-color: greenyellow;
+}
+p{
+    /* user-select: all; */
+}
+
+    </style>
+</head>
+<body>
+    <p class="new">Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius culpa velit sint soluta reprehenderit quaerat minus rem dolorem ea, iure pariatur necessitatibus animi odit ut nostrum, nesciunt quia nulla.</p>
+
+    <h1 data-my=" Institute Of Cyber Security" title="abcd">Geek</h1>
+<ul>
+    <li>Abcd</li>
+    <li>asdas</li>
+    <li>asda</li>
+</ul>
+
+
+<ol>
+    <li>asd</li>
+    <li>sad</li>
+    <li>asd</li>
+</ol>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis maxime dolorum tempora alias voluptate repellendus. Necessitatibus, aliquam fugiat illo recusandae repellat, sit quas asperiores dolorum incidunt vitae eligendi, possimus tempore.</p>
+
+</body>
+</html>

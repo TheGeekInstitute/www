@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="txt">
+        <input type="submit">
+    </form>
+
+    <script>
+        let txt = document.querySelector("#txt");
+        let form = document.querySelector("form")
+        form.addEventListener("submit",()=>{
+            alert("hello")
+            // console.log(txt.value)
+        })
+    </script>
+</body>
+</html>
+<!-- 
+Form Events :
+        keydown
+        keypress
+        keyup
+        focus
+        blur
+        input
+        change
+        select
+        submit
+        invalid -->

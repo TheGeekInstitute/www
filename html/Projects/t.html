@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        [input]:disabled{
+            background-color: grey;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <input type="checkbox" id="tc">
+    <label for=""></label>
+
+    <input type="submit"  id="btn" disabled>
+    <label for="">aa</label>
+
+
+    <input type="text" name="" id="password">
+    <label for=""></label>
+    <input type="password" name="" id="cpassword">
+    <label for=""></label>
+
+    <script>
+        // let tc = document.querySelector("#tc");
+
+        // tc.addEventListener('click',()=>{
+
+        //     if(tc.checked==true){
+        //         document.querySelector("#btn").removeAttribute("disabled")
+
+        //     }
+        //     else{
+        //         document.querySelector("#btn").setAttribute("disabled","")
+                
+        //     }
+        // })
+
+
+        // let field = document.querySelectorAll("input");
+        // field.forEach((e)=>{
+        //     e.addEventListener('focus',()=>{
+        //         e.nextElementSibling.innerHTML="";
+        //     })
+        // })
+
+        let pass= document.querySelector("#password");
+        let cpass= document.querySelector("#cpassword");
+
+        cpass.addEventListener('input',()=>{
+            if(pass.value!=cpass.value){
+                cpass.nextElementSibling.innerHTML="Password Did'nt mAtched"
+            }
+            else{
+                cpass.nextElementSibling.innerHTML=""
+
+            }
+        })
+
+   
+        
+   </script>
+</body>
+</html>

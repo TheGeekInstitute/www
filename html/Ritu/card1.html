@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            height: 18rem;
+            width: 17rem;
+            background-image: url("https://i.pinimg.com/474x/9c/b0/70/9cb070d62dc738a0c3a1a408d68e4af5--tunnels-solitude.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            margin-top: 10rem;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px black;
+            overflow: hidden;
+
+            
+        }
+        .main{
+            /* padding: 10px; */
+            height: 18rem;
+            width: 17rem;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.315);
+            backdrop-filter: blur(2px);
+            transition: all .7s;
+            cursor: pointer;
+            transform: translateY(80%);
+  }
+  .card:hover .main{
+    transform: translateY(0);
+    border-radius: 12px;
+  }
+  .main h1{
+        color:white;
+        line-height: 3.6rem;
+        text-shadow: 0px 0px 5px rgb(0, 0, 255);
+        background-color: rgba(0, 255, 255, 0.459);
+  }
+  .main img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px grey, 0px 0px 5px aqua; 
+    border: 3px solid white;
+    margin-top: 10px;
+
+    
+  }
+  .main p{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+
+  }
+
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="main">
+            <h1>Ritu chauhan</h1>
+            <img src="../web/images/19.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, minima! Voluptas, ea vel labore ad dolores </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            height: 45rem;
+            background-image: url("https://th.bing.com/th/id/OIP.0u2ynz-XDDaq3suwHtC7eQHaEK?w=293&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+            background-color: rgba(0, 0, 0, 0.752);
+            background-blend-mode: overlay;
+            color: white;
+            text-align: center;
+            /* width: 100vw; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .nav .icon{
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem;
+        }
+        .nav .icon img{
+            height: 2rem;
+            margin-left: 4rem;
+        }
+        .nav .icon .box{
+            margin-right: 4rem;
+        }
+        .nav .icon .box select{
+               margin-right: .6rem;
+               width: 9rem;
+               padding: .6rem;
+               font-size: large;
+               background-color: transparent;
+               color: white;
+               border-radius: .5rem;
+               /* border: .1rem solid white; */
+        }
+        .nav .icon .box a{
+            margin-right: .8rem;
+            background-color: rgb(235, 11, 11);
+            padding: .6rem 1.2rem;
+            text-decoration: none;
+             font-size: large;
+            border-radius: .5rem;
+            color: white;
+        }
+        .nav h1{
+            margin-top: 8rem;
+            font-size: 3rem;
+            /* text-align: center; */
+            /* border: 1px solid black; */
+            font-weight: 900;
+        }
+        .nav p{
+            margin-top: .6rem;
+            font-size: 1.8rem;
+            /* font-size: larger; */
+        }
+        .nav #btn{
+            margin-top: 1.6rem;
+            /* font-size: larger; */
+        }
+        .nav input{
+            padding: 1.2rem;
+            width: 22rem;
+            font-size: large;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.999);
+            background-color: transparent;
+            border:.02rem solid rgba(255, 255, 255, 0.418);
+            border-radius: .2rem;
+        }
+        .nav #btn1{
+            border: transparent;
+            background-color: rgb(235, 11, 11);
+            width: 13rem;
+            margin: .8rem;
+            font-size: x-large;
+            font-weight: 500;
+        }
+        .nav input::placeholder{
+            color: rgba(255, 255, 255, 0.697);
+        }
+        .main{
+            height: 45rem;
+            /* width: 100rem; */
+            text-align: start;
+            border-top: 1rem solid gray;
+            /* background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"); */
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.978);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            padding-left: 4rem;
+        }
+        .main .box{
+            display: block;
+            justify-content: start;
+            align-items: start;
+            padding-left: 3.3rem;
+        }
+        .main .box h1{
+            font-size: 4rem;
+        }
+        .main .box p{
+            /* border: 1px solid rebeccapurple; */
+            text-align: start;
+            width: 36rem;
+            margin-top: .8rem;
+            text-justify: start;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        .main .media {
+            width: 45%;
+            height: 25rem;
+
+            margin-left: 20px;
+
+        }
+
+        .main .media img {
+            height: 350px;
+            position: relative;
+            z-index: 10;
+
+
+        }
+
+        .main .media iframe {
+            height: 200px;
+            position: relative;
+            z-index: 9;
+
+            top: -285px;
+            left: 55px;
+        }
+        .container{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.971);
+            color: white;
+            border-top: 1rem solid gray;
+            align-items: center;
+            padding: 3rem;
+        }
+        .container .box{
+             /* font-size: 1.5rem; */
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container .box h1{
+            font-size: 4rem;
+            width: 35rem;
+        }
+        .container .box p{
+            font-size:2rem;
+            width: 40rem;
+            margin-top: .7rem;
+        }
+        .container1{
+            display: flex;
+            text-align: start;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.971);
+            color: white;
+            border-top: 1rem solid gray;
+            /* align-items: center; */
+            padding: 3rem;
+        }
+        .container1 .box{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container1 .box h1{
+            font-size: 4rem;
+            width: 45rem;
+        }
+        .container1 .box p{
+            font-size: 2rem;
+            width: 40rem;
+            margin-top: .7rem;
+        }
+        .container2{
+            display: flex;
+            text-align: start;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.971);
+            color: white;
+            padding: 3rem;
+            border-top: 1rem solid gray;
+        }
+        .container2 .box{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container2 .box h1{
+            font-size: 4rem;
+            width: 40rem;
+            margin-bottom: .8rem;
+        }
+        .container2 .box p{
+             font-size: 2rem;
+             width: 43rem;
+        }
+        .container3{
+            background-color: rgba(0, 0, 0, 0.971);
+            color: white;
+            padding: 3rem;
+            border-bottom: 1rem solid gray;
+            text-align: center;
+            border-top: .8rem solid gray;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container3 h1{
+            margin-left: 1.2rem;
+            margin-bottom: .8rem;
+            font-size: 2.5rem;
+        }
+        .container3 .box{
+            display: flex;
+            flex-direction: column;
+            /* padding: 1.5rem; */
+            color: white;
+        }
+        .container3 .box input{
+            width: 60rem;
+            /* margin: 10rem auto; */
+            padding: 1.5rem;
+            margin: .3rem;
+            margin-left:17.5rem;
+            /* text-align: center; */
+            font-size: larger;
+            background-color: gray;
+        } 
+        .container3 p{
+            margin-top: .6rem;
+            font-size: 1.8rem;
+        }
+        .container3 input{
+            padding: 1.4rem;
+            width: 28rem;
+            /* font-size: large; */
+            color: rgba(255, 255, 255, 0.833);
+            background-color: transparent;
+            border:1px solid rgba(255, 255, 255, 0.59);
+            border-radius: .3rem;
+            margin-top: .9rem;
+            font-size: 1.5rem;
+            margin-bottom: 1.6rem;
+        }
+        .container3  #btn{
+            width: 14rem;
+            margin-left: .5rem;
+            font-size: 1.8rem;
+            background-color: red;
+            margin-bottom: .1rem;
+            border: transparent;
+        }
+        
+         .text{
+            display: flex;
+            padding: 1rem;
+            color: rgba(255, 255, 255, 0.853);
+            background-color: rgba(0, 0, 0, 0.923);
+            font-size: 1.2rem;
+            padding-left: 13.7rem;
+            padding-top: 6rem;
+        }
+         .text a{
+            color: rgba(255, 255, 255, 0.853);
+            margin-left: .6rem;
+        }
+        .anchor{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgba(0, 0, 0, 0.923);
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: .8rem;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+
+        }
+        .anchor .box1{
+            display: flex;
+            flex-direction: column;
+        }
+        .anchor .box1 a{
+            color: rgba(255, 255, 255, 0.762);
+            margin: .3rem;
+
+        }
+        .anchor .box2{
+            display: flex;
+            flex-direction: column;
+        }
+        .anchor .box2 a{
+            color: rgba(255, 255, 255, 0.762);
+            margin: .3rem;
+        }
+        .anchor .box3{
+            display: flex;
+            flex-direction: column;
+        }
+        .anchor .box3 a{
+            color: rgba(255, 255, 255, 0.762);
+            margin: .3rem;
+
+        }
+        .anchor .box4{
+            display: flex;
+            flex-direction: column;
+        }
+        .anchor .box4 a{
+            color: rgba(255, 255, 255, 0.762);
+            margin: .3rem;
+
+        }
+        .form{
+            background-color: rgba(0, 0, 0, 0.923);
+            padding: .8rem 0 6rem 13.7rem;
+        }
+        .form select{
+            color: rgba(255, 255, 255, 0.762);
+            background-color: transparent;
+            width: 8rem;
+            padding: .4rem;
+            font-size: 1.1rem;
+            border-radius: .3rem;
+        }
+        .form p{
+            color: rgba(255, 255, 255, 0.762);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 1rem;
+        }
+
+        .container3 input[type="email"]::placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+      <div class="icon">
+          <img src="https://cdn.geekwire.com/wp-content/uploads/2014/07/Netflix_Logo_Print_FourColorCMYK.png" alt="">
+          <div class="box">
+              <select>
+                  <option>English</option>
+                  <option>Hindi</option>
+                </select>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+        <h1>Unlimited movies, TV Shows and more</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <p id="btn">Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" placeholder="Email address">
+        <input type="submit" value="Get Started  >" id="btn1">  
+    </div>
+    <div class="main">
+        <div class="box">
+
+            <h1>Enjoy on your TV</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="media">
+
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+            <iframe src="https://youtu.be/Q33TkQKlIMg" frameborder="0" height="200px" width="350px" autoplay></iframe> 
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+        <div class="box">
+        <h1>Download your shows to watch offline</h1>
+        <p>Save your favourites easily and always have something to watch. </p>
+        </div>
+
+    </div>
+     <div class="container1">
+        <div class="box">
+            <h1>Watch everywhere </h1>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
+     </div>
+     <div class="container2">
+        <img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d" alt="">
+        <div class="box">
+            <h1>Create profiles for kids</h1>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+     </div>
+     <div class="container3">
+        <h1>Frequently Asked Questions</h1>
+        <div class="box">
+
+            <input type="text"  value="What is Netflix  +">
+            <input type="text"  value="How much does Netflix cost?  +">
+           <input type="text"  value="Where can I watch?">
+            <input type="text"  value="How do I cancel?">
+            <input type="text"  value="What can I watch on Netflix">
+            <input type="text"  value="Is Netflix good for kids?">
+        </div>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <input type="email" value="" placeholder="Email address">
+        <input type="submit" value="Get Started   >" id="btn">
+        
+     </div>
+     <div class="text">
+         <p>Question? Call</p>
+         <a href="#">000-800-919-1694</a>
+        </div>
+    <div class="anchor">
+        <div class="box1">
+            <a href="#">FAQ</a>
+            <a href="#">Account</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Ways to watch</a>
+        </div>
+        <div class="box2">
+            <a href="#">Privacy</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Speed Test</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+        <div class="box3">
+            <a href="#">Help Centre</a>
+            <a href="#">Media Centre</a>
+            <a href="#">Jobs</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div class="box4">
+            <a href="#">Cookies Preferences</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Legal Notices</a>
+        </div>
+     </div>
+     <div class="form">
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+          <p #btn>Netflix India</p>
+      </div>
+</body>
+</html>

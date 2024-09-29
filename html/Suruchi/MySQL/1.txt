@@ -1,0 +1,352 @@
+mygeek@CodeServer:/var/www/html$ mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 36
+Server version: 10.11.6-MariaDB-0+deb12u1 Debian 12
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| Aasha              |
+| Akash              |
+| Ankit              |
+| Dhruv              |
+| Karim              |
+| Nikhil             |
+| Nitin              |
+| OwnOnlineShop      |
+| Ritu               |
+| SANDEEP            |
+| Shivam             |
+| Shivank            |
+| Suruchi            |
+| abcd               |
+| chat               |
+| dataHema           |
+| ecommerce          |
+| hema               |
+| hemadeta           |
+| information_schema |
+| khushbu            |
+| mysql              |
+| new                |
+| performance_schema |
+| phpmyadmin         |
+| sandeep            |
+| sys                |
+| user_login         |
+| users              |
+| wordpress          |
++--------------------+
+30 rows in set (0.001 sec)
+
+MariaDB [(none)]> use Suruchi;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [Suruchi]> show tables;
++-------------------+
+| Tables_in_Suruchi |
++-------------------+
+| emp               |
+| emp1              |
+| emp2              |
+| emp4              |
+| emp5              |
++-------------------+
+5 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      |  8500.36 |
+|      2 | Sumit  | M      |  4600.25 |
+|      3 | Mohit  | M      |  4700.25 |
+|      4 | Geeta  | F      |  8500.25 |
+|      5 | Sita   | F      |  4500.13 |
+|      1 | Ashish | M      | 48000.00 |
+|      2 | Sumit  | m      | 70000.00 |
+|      3 | Suraj  | m      | 56000.00 |
+|      4 | Ravi   | m      | 52000.00 |
+|      5 | Geeta  | f      | 25000.00 |
+|      6 | Sita   | f      | 45000.00 |
+|      1 | Ashish | M      | 55000.00 |
+|      2 | Suraj  | M      | 68000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rakhi  | f      | 52000.00 |
+|      4 | Sita   | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+29 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> select * from emp1;
++--------+-------+--------+---------+
+| emp_no | name  | gender | salary  |
++--------+-------+--------+---------+
+|      2 | Sumit | M      | 4600.12 |
+|      3 | Ravi  | M      | 5500.00 |
++--------+-------+--------+---------+
+2 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> select * from emp2;
+Empty set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp3;
+ERROR 1146 (42S02): Table 'Suruchi.emp3' doesn't exist
+MariaDB [Suruchi]> select * from emp5;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rakhi  | f      | 52000.00 |
+|      4 | Sita   | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+12 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> drop table emp1;
+Query OK, 0 rows affected (0.013 sec)
+
+MariaDB [Suruchi]> drop table emp2;
+Query OK, 0 rows affected (0.009 sec)
+
+MariaDB [Suruchi]> show tables;
++-------------------+
+| Tables_in_Suruchi |
++-------------------+
+| emp               |
+| emp4              |
+| emp5              |
++-------------------+
+3 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp where gender="m"
+    -> ;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      |  8500.36 |
+|      2 | Sumit  | M      |  4600.25 |
+|      3 | Mohit  | M      |  4700.25 |
+|      1 | Ashish | M      | 48000.00 |
+|      2 | Sumit  | m      | 70000.00 |
+|      3 | Suraj  | m      | 56000.00 |
+|      4 | Ravi   | m      | 52000.00 |
+|      1 | Ashish | M      | 55000.00 |
+|      2 | Suraj  | M      | 68000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+18 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> select * from emp5 where gender="m"
+    -> ;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Rahul | M      | 55000.00 |
+|      2 | Suraj | M      | 77000.00 |
+|      6 | Bablu | M      | 25000.00 |
+|      1 | Ankit | M      | 55000.00 |
+|      2 | Suraj | M      | 77000.00 |
+|      3 | Rahul | M      | 52000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+7 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> select * from emp5 where salary>=70000;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      2 | Suraj  | M      | 77000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      5 | Sarita | F      | 74000.00 |
++--------+--------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp5 where salary>=70000 and gender="M";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      2 | Suraj | M      | 77000.00 |
+|      2 | Suraj | M      | 77000.00 |
++--------+-------+--------+----------+
+2 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      |  8500.36 |
+|      2 | Sumit  | M      |  4600.25 |
+|      3 | Mohit  | M      |  4700.25 |
+|      4 | Geeta  | F      |  8500.25 |
+|      5 | Sita   | F      |  4500.13 |
+|      1 | Ashish | M      | 48000.00 |
+|      2 | Sumit  | m      | 70000.00 |
+|      3 | Suraj  | m      | 56000.00 |
+|      4 | Ravi   | m      | 52000.00 |
+|      5 | Geeta  | f      | 25000.00 |
+|      6 | Sita   | f      | 45000.00 |
+|      1 | Ashish | M      | 55000.00 |
+|      2 | Suraj  | M      | 68000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rakhi  | f      | 52000.00 |
+|      4 | Sita   | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+29 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> select * from emp5;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rakhi  | f      | 52000.00 |
+|      4 | Sita   | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+12 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> update emp5 set salary= 100000 where emp_no=1;
+Query OK, 2 rows affected (0.002 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+MariaDB [Suruchi]> select * from emp;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      |  8500.36 |
+|      2 | Sumit  | M      |  4600.25 |
+|      3 | Mohit  | M      |  4700.25 |
+|      4 | Geeta  | F      |  8500.25 |
+|      5 | Sita   | F      |  4500.13 |
+|      1 | Ashish | M      | 48000.00 |
+|      2 | Sumit  | m      | 70000.00 |
+|      3 | Suraj  | m      | 56000.00 |
+|      4 | Ravi   | m      | 52000.00 |
+|      5 | Geeta  | f      | 25000.00 |
+|      6 | Sita   | f      | 45000.00 |
+|      1 | Ashish | M      | 55000.00 |
+|      2 | Suraj  | M      | 68000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Rahul  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rakhi  | f      | 52000.00 |
+|      4 | Sita   | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
+|      1 | Ankit  | M      | 55000.00 |
+|      2 | Suraj  | M      | 77000.00 |
+|      3 | Rahul  | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+29 rows in set (0.000 sec)
+
+MariaDB [Suruchi]> select * from emp5;
++--------+--------+--------+-----------+
+| emp_no | name   | gender | salary    |
++--------+--------+--------+-----------+
+|      1 | Rahul  | M      | 100000.00 |
+|      2 | Suraj  | M      |  77000.00 |
+|      3 | Rakhi  | f      |  52000.00 |
+|      4 | Sita   | F      |  25000.00 |
+|      5 | Sarita | F      |  74000.00 |
+|      6 | Bablu  | M      |  25000.00 |
+|      1 | Ankit  | M      | 100000.00 |
+|      2 | Suraj  | M      |  77000.00 |
+|      3 | Rahul  | M      |  52000.00 |
+|      4 | Geeta  | F      |  25000.00 |
+|      5 | Sarita | F      |  74000.00 |
+|      6 | Bablu  | M      |  25000.00 |
++--------+--------+--------+-----------+
+12 rows in set (0.000 sec)
+
+
+MariaDB [Suruchi]> update emp5 set salary= 10000 where emp_no=1 and name="Rahul";
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [Suruchi]> select * from emp5;
++--------+--------+--------+-----------+
+| emp_no | name   | gender | salary    |
++--------+--------+--------+-----------+
+|      1 | Rahul  | M      |  10000.00 |
+|      2 | Suraj  | M      |  77000.00 |
+|      3 | Rakhi  | f      |  52000.00 |
+|      4 | Sita   | F      |  25000.00 |
+|      5 | Sarita | F      |  74000.00 |
+|      6 | Bablu  | M      |  25000.00 |
+|      1 | Ankit  | M      | 100000.00 |
+|      2 | Suraj  | M      |  77000.00 |
+|      3 | Rahul  | M      |  52000.00 |
+|      4 | Geeta  | F      |  25000.00 |
+|      5 | Sarita | F      |  74000.00 |
+|      6 | Bablu  | M      |  25000.00 |
++--------+--------+--------+-----------+
+12 rows in set (0.001 sec)
+
+MariaDB [Suruchi]> delete from emp5 where emp_no=1 and name="Ankit";
+Query OK, 1 row affected (0.004 sec)
+
+MariaDB [Suruchi]> 

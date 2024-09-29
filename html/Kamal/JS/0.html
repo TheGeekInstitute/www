@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <textarea id="textbox"></textarea><br />
+        <button onclick="copyText()">Copy</button>
+        <br />
+        <h1>Copied Text:</h1><br />
+        <span id="clipboard">NA</span>
+    </center>
+ 
+    <script>
+        function copyText() {
+     
+            /* Select text area by id*/
+            var Text = document.getElementById("textbox");
+ 
+            /* Select the text inside text area. */
+            Text.select();
+            document.execCommand("paste")
+
+            // /* Copy selected text into clipboard */
+            // navigator.clipboard.writeText(Text.value);
+ 
+            // /* Set the copied text as text for 
+            // div with id clipboard */
+            // document.getElementById("clipboard")
+            //     .innerHTML = Text.value;
+        }
+    </script>
+</body>
+</html>

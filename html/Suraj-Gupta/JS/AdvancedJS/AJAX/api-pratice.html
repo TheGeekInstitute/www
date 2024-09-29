@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .container{
+            border: 1px solid black;
+        
+        }
+        .nav{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+
+        </div>
+    </div>
+    <script>
+        let promise1 = new Promise(function(Done,Reject){
+            a = 10;
+            if(a == 10){
+                console.log("Done")
+            }
+            else{
+                console.log("Reject")
+            }
+
+        })
+        
+        let promise2 = new Promise(function(Yes,No){
+            a = 20;
+            if(a == 20){
+                console.log("Yes");
+            }
+            else{
+                console.log("No")
+            }
+        })
+
+
+        let container = document.querySelector(".container");
+        
+        let xhr = new XMLHttpRequest();
+
+        xhr.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                let josn_data = JSON.parse(this.responseText);
+                for(data of josn_data.products){
+                    let abcd = `
+                    <div class="box">
+                        <img src="${data.thumbnail}" alt="">
+                    <p>${data.name}</p>
+                </div>
+                    `;
+               
+                }
+             
+            }
+        }
+        xhr.open("GET","'https://pexelsdimasv1.p.rapidapi.com/v1/photos/5683489",true);
+        xhr.send();
+
+
+
+    </script>
+</body>
+</html>

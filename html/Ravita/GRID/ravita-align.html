@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .auto-fill{
+          display: grid;
+        }
+
+
+        .auto-fill{
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+
+        }
+        .auto-fit{
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+        }
+
+
+
+        .box{
+            background-color:aqua;
+            color:black;
+            padding:20px;
+
+            border: 1px solid black;
+        }
+
+
+body {
+  padding: 2em;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="auto-fill">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+
+    <div class="auto-fit">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        
+    </div>
+</body>
+</html>

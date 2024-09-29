@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .tab-links {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .tab-link {
+            flex: 1;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            text-align: center;
+        }
+
+        .tab-link.active {
+            background-color: #ddd;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="tab-container">
+        <!-- Tab Links -->
+        <div class="tab-links">
+            <button class="tab-link" onclick="openTab('tab1')">Tab 1</button>
+            <button class="tab-link" onclick="openTab('tab2')">Tab 2</button>
+            <button class="tab-link" onclick="openTab('tab3')">Tab 3</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="tab1" class="tab-content">
+            <h2>Content for Tab 1</h2>
+            <p>This is the content of Tab 1.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <h2>Content for Tab 2</h2>
+            <p>This is the content of Tab 2.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <h2>Content for Tab 3</h2>
+            <p>This is the content of Tab 3.</p>
+        </div>
+    </div>
+    <script>
+        function openTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            const tabs = document.querySelectorAll('.tab-link');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            const activeTab = Array.from(tabs).find(tab => tab.textContent.toLowerCase() === tabId.replace('tab', 'tab'));
+            if (activeTab) {
+                activeTab.classList.add('active');
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => openTab('tab1'));
+    </script>
+</body>
+</html>

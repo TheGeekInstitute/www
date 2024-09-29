@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+
+            /* filter: blur(5px); */
+            /* filter: brightness(150%); */
+            /* filter: contrast(150%) brightness(150%) ; */
+            /* filter: drop-shadow(2px 2px red); */
+            /* filter: grayscale(50%); */
+            /* filter: hue-rotate(300deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%) brightness(150%); */
+            /* filter: sepia(100%); */
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box .one{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 200px;
+            color: white;
+        }
+
+
+        @supports (backdrop-filter: blur(2px)){
+            .one{
+                backdrop-filter: blur(2px);
+
+            }
+        }
+
+        @supports not (backdrop-filter: blur(2px)){
+            .one{
+                background-color: rgba(0, 0, 0, 0.534);
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg" alt="">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/625px-Apple_logo_black.svg.png" alt=""> -->
+
+    <div class="box">
+        <div class="one">
+            <h1>ONE</h1>
+        </div>
+    </div>
+</body>
+</html>

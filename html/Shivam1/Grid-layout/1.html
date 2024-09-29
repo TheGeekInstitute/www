@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .container{
+            /* border: 1px solid black; */
+            /* margin: 20px;
+            padding: 10px; */
+            width: 100vw;
+            height:100vh;
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 10vh repeat(3,1fr) 10vh;
+        }
+
+        .header{
+            background-color: black;
+            color: white;
+            grid-area: 1/1/2/4;
+        }
+
+        .side-bar{
+            background-color: brown;
+            grid-area: 2/1/-1/2;
+        }
+
+        .main{
+            background-color: aquamarine;
+            grid-area: 2/2/-1/3;
+            overflow: scroll;
+            padding: 10px;
+        }
+
+        .Instagram{
+            background-color: red;
+        }
+
+        .Facebook{
+            background-color: rgb(105, 105, 212);
+        }
+
+        .Twetter{
+            background-color: coral;
+        }
+
+        .footer{
+            background-color: black;
+            color: white;
+            grid-area: 5/1/-1/-1;
+            text-align: center;
+            line-height: 10vh;
+            font-weight: 900;
+            
+            
+        }
+        /* 1 navigation bar */
+
+        .nav{
+            /* border: 1px solid red; */
+            height: 10vh;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav ul{
+            display: flex;
+        }
+
+        .nav ul li{
+            margin: 0 10px;
+        }
+
+        .nav ul li a{
+            /* border: 1px solid red; */
+            /* padding: 26.5px 15px; */
+            display: block;
+            color: white;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 10vh;
+            width: 75px;
+            text-align: center;
+        }
+        
+        .nav ul li a:hover{
+            background-color: grey;
+        }
+        
+        .nav ul li .sub{
+            /* border: 1px solid black; */
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            width: 75px;
+            right: 125px;
+            background-color: rgb(84, 104, 219);
+            box-shadow: 1px 1px 2px black;
+            visibility: hidden;
+       }
+       .nav ul li .sub li a{
+        display: block;
+        height: 50px;
+        padding: 0;
+        margin-left: -10px;
+        line-height: 50px;
+        width: 75px;
+        /* border: 2px solid green; */
+       }
+        
+
+        .logo{
+            color: greenyellow;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+
+        .nav ul li:hover .sub{
+            visibility: visible;
+        }
+
+        /* 2 side-bar 
+        
+        (*G33KInstitute*);
+        */
+
+        .side-bar ul li{
+            text-align: center;
+            margin: 20px 0% 5vh 0;
+            /* padding: 5px; */
+            /* border: 1px solid ; */
+            
+        }
+        .side-bar ul li a{
+            /* border: 1px solid black; */
+            padding: 10px 52px ;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .side-bar ul li a:hover{
+            background-color: green;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">
+            <div class="nav">
+                <h1 class="logo">LO<span>GO</span></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a>
+        
+                        <ul class="sub">
+                            <li><a href="#">Page1</a></li>
+                            <li><a href="#">Page2</a></li>
+                        </ul>
+        
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box side-bar">
+           <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+           </ul>
+        </div>
+        <div class="box main">
+            <h1>Main</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti quo cupiditate nemo error maiores, magnam autem obcaecati, earum dicta aut. Sequi quo veniam ullam inventore, recusandae nesciunt omnis minus.
+            Recusandae quibusdam quos deleniti magnam eligendi impedit reiciendis excepturi? Dicta, aperiam ad? Suscipit velit, beatae, rerum fugit nemo aliquam soluta ratione atque facere dolores animi ex cum reiciendis molestiae explicabo.
+            Quos dicta voluptatem recusandae rem perspiciatis dolorem enim, magni dolore quaerat ut fuga a repellat excepturi voluptates ea nostrum id quis nisi, minus sed sit placeat! Pariatur laudantium rem debitis.
+            Dolore, nulla facere quaerat rem ipsa possimus aliquid itaque optio voluptates, voluptate magnam maxime nobis sunt culpa fuga eos corporis repellendus? Omnis cupiditate praesentium voluptatum fugit veritatis, ex ducimus sequi.
+            <iframe src="https://www.geekinstitute.org/" frameborder="0" height="400px"></iframe>
+            Veritatis ipsum aliquid laudantium id, a dignissimos nostrum, ducimus cupiditate at ab non! Eum libero amet odit obcaecati repellat ex veritatis quam nihil earum, aliquam maxime maiores temporibus iure esse?
+            Repellat dolorum ullam quibusdam ea vel amet, laboriosam mollitia id fugit eos veritatis dolor ipsam voluptas nulla quaerat impedit recusandae labore cumque perferendis eaque porro aliquam dolore aliquid odio. Dicta?
+            Quo inventore eligendi ipsam ad animi quaerat repellat repellendus quas omnis maxime molestias id voluptas ducimus quibusdam dolore aut, perferendis, reiciendis voluptates quisquam in sint odio. Aperiam nesciunt a debitis.
+            
+            
+            
+
+        </div>
+        <div class="box Instagram">Instagram</div>
+        <div class="box Facebook">Facebook</div>
+        <div class="box Twetter">Twetter</div>
+        <div class="box footer">
+            Copyright © 2023 The Geek Institute Of Cyber Security All Right Reserved.
+
+        </div>
+    </div>
+</body>
+</html>

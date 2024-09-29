@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        ul li{
+            color: white;
+        }
+
+        header{
+            /* border: 1px solid red; */
+            height: 2.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        header .left ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header .left ul li{
+            margin: 0 .5rem;
+        }
+
+        header .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        header .right ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        
+        header .right ul li{
+            margin: 0 .5rem;
+        }
+
+        header .right ul li a{
+            color: white;
+        }
+
+        nav{
+            /* border: 1px solid red; */
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            background-color: rebeccapurple;
+            color: white;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .btn,.open,.close{
+        font-size: 2rem;
+        display: none;
+        }
+        .logo{
+            font-size: 2rem;
+        }
+        nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav ul li a{
+            margin: 0 .5rem;
+            color: white;
+        }
+
+
+
+        @media screen  and  (max-width:780px){
+            header{
+                display: none;
+            }
+
+            nav .links{
+                position: absolute;
+                top: 3.5rem;
+                background-color: grey;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                display: none;
+                text-align: center;
+            }
+            nav .links li a{
+                line-height: 2.5rem;
+            }
+
+            .btn,.open{
+                display: block;
+                cursor: pointer;
+            }
+
+            nav #btn:checked ~ .links{
+                display: block;
+            }
+
+            nav #btn:checked ~ .btn .open{
+                display:none;
+            }
+            nav #btn:checked ~ .btn .close{
+                display: block;
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <ul>
+                <li>Call Us : +91 8882618533</li>
+                <li>Mail Us : info@geekinstitute.org</li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                1215, Kapashera, New Delhi
+            </p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">
+            LOGO
+        </div>
+        <input type="checkbox" name="" id="btn">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <label for="btn" class="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-x close"></i>
+        </label>
+
+    </nav>
+</body>
+</html>

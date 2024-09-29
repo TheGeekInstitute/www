@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selectors</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        p{
+            /* font-size: 32px; */
+            font-weight: 900;
+        }
+        div p:first-child{
+            /* color: red; */
+        }
+        div p:last-child{
+            /* color: yellow; */
+        }
+
+        div p:nth-child(2n+1){
+            /* color: red; */
+        }
+
+        div p:nth-last-of-type(2n+1){
+            /* color: red; */
+        }
+
+        div p:nth-of-type(1){
+            /* color: red; */
+        }
+
+        div p:only-child{
+            /* color: red; */
+        }
+
+        div p:only-of-type{
+            /* color: red; */
+        }
+
+        div p:first-of-type{
+            /* color: red; */
+        }
+
+        div span:last-of-type{
+            /* color: red; */
+        }
+
+        div:empty{
+            border: 2px solid red;
+            height: 100px;
+        }
+
+        div:not(:empty){
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        div p:lang(en){
+            color: yellowgreen;
+        }
+
+        div p:lang(hi){
+            color: red;
+        }
+        
+
+        :target{
+            background-color: yellowgreen;
+            color: red;
+        }
+
+       ul li a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p lang="en">1</p>
+        <p lang="fr">2</p>
+        <p lang="hi">3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+        <p>10
+            <div>
+                <p>11</p>
+            </div>
+        </p>
+        <span>11</span>
+    </div>
+
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium earum laudantium labore doloremque atque. Sapiente beatae, eveniet perspiciatis assumenda tempore praesentium facere nulla quam nam, illum quibusdam cumque quia expedita.</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente aliquam voluptatem odio placeat. Dolores, nihil enim. Incidunt, quam. Quasi, culpa provident. Nemo, eaque ut voluptatum veritatis porro reiciendis natus harum!</p>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque architecto vero iste asperiores ducimus. Id, rem temporibus blanditiis nulla minima veritatis officia eligendi, ipsa officiis perferendis repellat aspernatur voluptates?</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, modi quisquam. Dolore quo labore ipsa, dolorem eius non placeat aut repellat ipsam perferendis magnam veritatis numquam unde quos corrupti sapiente.</p>
+    </div>
+
+    <div></div>
+
+    <ul>
+        <li><a href="#ch1">Chapter 1</a></li>
+        <li><a href="#ch2">Chapter 2</a></li>
+        <li><a href="#ch3">Chapter 3</a></li>
+    </ul>
+
+    <p id="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+
+    <p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+
+    <p id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+</body>
+</html>

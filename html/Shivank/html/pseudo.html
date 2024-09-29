@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{
+            /* box-shadow: 4px 4px 10px 50px red; */
+            /* outline: 2px solid red; */
+            outline: none;
+        }
+
+        input:checked{
+            /* border: 2px solid red; */
+            box-shadow: 2px 3px 4px red;
+        }
+
+        input:disabled{
+            background-color: cyan;
+        }
+
+        input:enabled{
+            border: 2px solid red;
+        }
+
+        input:required{
+            border: 2px solid red;
+        }
+
+        input:optional{
+            background-color: red;
+        }
+
+        input:in-range{
+            background-color: green;
+        }
+        input:out-of-range{
+            background-color: red;
+        }
+        input:read-only{
+            color: red;
+        }
+
+        input:read-write{
+            background-color: red;
+        }
+        input:invalid{
+            background-color: palevioletred;
+        }
+        input:valid{
+            background-color: greenyellow;
+        }
+
+        input:default{
+            color: red;
+            outline: 2px solid cyan;
+        }
+
+        select option:default{
+            background-color: red;
+            color: red;
+            outline: 2px solid cyan;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Regstration Form</h1>
+        <legend>Form</legend>
+        <form>
+            <label>First Name :</label>
+            <input type="text" required name="firstname">
+    
+            <br> <br>
+    
+            <label>Last Name :</label>
+            <input type="text" value="Kumar" readonly>
+    
+            <br><br>
+    
+            <label>Gender :</label>
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+    
+            <br><br>
+    
+            <label>DOB :</label>
+            <input type="date">
+    
+            <br><br>
+    
+            <label>Phone :</label>
+            <input type="number" min="10" max="20">
+    
+            <br><br>
+    
+            <label>Email :</label>
+            <input type="email">
+    
+            <br><br>
+    
+            <label>Password :</label>
+            <input type="password" disabled>
+    
+            <br><br>
+            
+            <input type="checkbox" id="check">
+            <input type="checkbox">
+            <input type="checkbox" checked>
+            <input type="checkbox">
+
+            <label for="check">Click</label>
+
+
+            <br><br>
+
+
+            <input type="submit" value="Signup">
+            <input type="reset">
+
+            <select name="" id="">
+                <option >1</option>
+                <option selected>2</option>
+                <option >3</option>
+            </select>
+        
+            
+        </form>
+
+  
+
+</body>
+</html>

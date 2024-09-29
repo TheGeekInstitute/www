@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            height: 50px;
+            background-color: #c89664b9;
+            color: black;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+
+        }
+        .nav .logo{
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            
+        }
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav .links li a{
+            display: block;
+            color: blue;
+            font-size: larger;
+            margin: 0 10px;
+            padding: 0 10px;
+            line-height: 50px;
+        }
+        .nav .links li a:hover{
+            background-color: chartreuse;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <ul class="links">
+            <li><a href="card 1.html">Home</a></li>
+            <li><a href="card.html">About</a></li> 
+            <li><a href="#">Contact</a></li> 
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

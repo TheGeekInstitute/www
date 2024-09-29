@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+        .container{
+           
+            height: 400px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-wrap: wrap;
+
+        }
+
+        .container .box{
+            height: 70px;
+            width: 70px;
+            margin: 5px;
+        }
+
+        ul{
+            background-color: gainsboro;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+        }
+
+        ul li{
+        
+            line-height: 50px;
+            width: 150px;
+            text-align: center;
+            font-size: large;
+            background-color: blueviolet;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .red{
+            background-color: red;
+ 
+        }
+
+        .green{
+            background-color: green;
+
+        }
+
+        .blue{
+            background-color: blue;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <ul class="link">
+        <li data-color="all">All</li>
+        <li  data-color="red">Red</li>
+        <li  data-color="green">Green</li>
+        <li  data-color="blue">blue</li>
+    </ul>
+
+
+
+<div class="container">
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>    
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</div>
+<script>
+    let all = document.querySelectorAll("li"); 
+    let boxs = document.querySelectorAll(".box")
+
+    all.forEach((e)=>{
+        e.addEventListener("click",()=>{
+            let j = e.getAttribute("data-color");
+            boxs.forEach((i)=>{
+                if(i.classList.contains(j)==true){
+                    i.style.display = "block";
+
+                }
+
+                else if(j=="all"){
+                    i.style.display = "block"
+
+                }
+                
+
+                else(
+                    i.style.display = "none"
+                    
+                )
+            })
+        })
+    })
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

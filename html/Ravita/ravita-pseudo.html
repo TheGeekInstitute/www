@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ravita-pseudo</title>
+    <style>
+        input{
+            /* accent-color:skyblue; */
+            /* caret-color:black ; */
+        }
+
+    input:focus{
+        /* background-color: rgb(77, 230, 179); */
+        scale: 1.5;
+    }
+    input:checked{
+    /* outline: 2px solid black; */
+     /* accent-color:pink;  */
+    }
+
+    input:disabled{
+    /* background-color: blueviolet; */
+   }
+
+   input:enabled{
+   /* background-color: palevioletred; */
+   }
+
+   input:required{
+    /* background-color: brown; */
+   }
+    input:read-only{
+        /* background-color: rgb(112, 240, 123); */
+    }
+    input:read-write{
+        /* background-color:pink; */
+    }
+    input:in-range{
+    /* background-color: skyblue; */
+    }
+    input:out-of-range{
+        /* background-color: yellowgreen; */
+    }
+    input:optional{
+        /* background-color: aquamarine; */
+    }
+     
+    input:valid{ 
+      /* background-color: pink; */
+    }
+    input:invalid{
+      /* background-color: rgb(240, 60, 90); */
+
+    }
+    input:default{
+        /* background-color: aqua; */
+    }
+
+    
+
+     
+  
+
+    </style>
+    <!-- input
+    input:focus
+    input:checked
+    input:disabled
+    input:enabled
+    input:required
+    input:read-only
+    input:read-write
+    input:in-range
+    input:out-of-range
+    input:optional
+    input:valid
+    input:invalid
+    input:default -->
+    
+</head>
+<body>
+    <h1>Regstration Form</h1>
+<form>
+    <label>First Name :</label>
+    <input type="text" placeholder="Enter First Name" disabled>
+    <br><br>
+    
+    <label>Last Name :</label>
+    <input type="text" placeholder="Enter Last Name" required>
+    <br><br>
+
+    <label>Gender :</label>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <br><br>
+
+    <label>DOB :</label>
+    readonly
+    <input type="date" readonly> 
+    <br><br>
+    <label>Email :</label>
+    <input type="Email">
+    <br><br>
+
+    <label>Phone Number :</label>
+    <input type="number" min="10" max="20">
+    <br><br>
+
+    <label>Password :</label>
+    <input type="password">
+
+    <br><br>
+
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox" checked>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+
+
+    <br><br>
+
+    <input type="submit" value="Register Now">
+    <input type="reset">
+
+    
+</form>
+</body>
+</html>

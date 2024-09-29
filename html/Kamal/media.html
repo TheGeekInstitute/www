@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            color: green;
+        }
+
+        @media screen and (max-width:600px) {
+            body{
+                background-color: red;
+            }
+            .box{
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width:400px) {
+            body{
+                background-color: green;
+            }
+            .box{
+                display: none;
+            }
+        }
+
+
+
+        @media print {
+            .box{
+                color: green;
+                /* border: none; */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita fuga dignissimos doloribus animi culpa veniam corporis esse, fugit voluptatibus ducimus, dolore qui, aliquam rerum. Fuga, eveniet. Voluptatem, laudantium accusantium.
+    </div>
+</body>
+</html>

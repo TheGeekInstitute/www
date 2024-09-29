@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psoudo-element</title>
+    <style>
+        .para::first-letter{color: blue;
+        font-size: x-large;
+    font-family: cursive;}
+
+    .para.para::first-line{ color:blueviolet;}
+
+    .para::selection{ color: red;
+
+    background-color:rgba(65, 105, 225, 0.61);}
+
+ ul li:first-child::marker{ color:red;}
+
+ .para{ user-select: none;}
+
+ #txt{caret-color: blue;}
+ #txt::placeholder{ color: brown;}
+
+ input{accent-color: PURPLE;}
+
+ input::-webkit-file-upload-button,
+ input::file-selector-button{ background-color: chartreuse;}
+
+ .geek::after{content:' institute';
+color: aqua;}
+ 
+.geek::before{content: attr(data-the);
+color: blue;}
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+ <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil accusamus architecto inventore dolorem dolore rem, quisquam sunt? Consequuntur cupiditate dolorem nam nostrum beatae, enim error ad deleniti, amet repellat aspernatur.</p>
+
+ <ul>
+
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+ </ul>
+
+<input type="text" id="txt" placeholder="Type">
+
+<input type="checkbox"  id="checkbox">
+<input type="file">
+
+
+<h1 class="geek" data-the="The"="">Geek</h1>
+
+
+    </div>
+    
+</body>
+</html>

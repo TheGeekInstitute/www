@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+    .box{
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:linear-gradient(to bottom,Red, yellow,aqua,green) ; */
+        background-image:linear-gradient(45deg,Red, yellow,aqua,green) ;
+    }
+
+    .box h1{
+       height:100px ;
+       width:100px ;
+       border-radius:50% ;
+      border:10px rebeccapurple ;
+       margin: auto;
+    }
+
+    .box1{
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:radial-gradient(circle,Red 10%,orange 25%,yellow,Seagreen) ;  */
+         
+        background-image:radial-gradient(farthest-side at 10% 10%,Red ,orange,yellow,rgb(83, 139, 46)) ;   
+    }
+
+    .box1 h1{
+        height:100px ;
+       width:100px ;
+       border-radius:50% ;
+      /* border:10px rebeccapurple ; */
+       margin: auto; 
+    }
+
+    .box1 img{
+       height:200px ;
+       width:300px ;
+       margin-top:5px ; 
+       margin-left: 150px;
+       margin-bottom:200px ;
+  
+    }
+
+    .box2{
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:conic-gradient(red 25deg, orange,yellowgreen,aquamarine) ;  */
+        background-image:conic-gradient(from 45deg,red , orange,yellowgreen,aquamarine) ; 
+        /* background-image:conic-gradient(at 10% 10%,red 25deg, orange,yellowgreen,aquamarine) ;  */
+    }
+
+
+
+</style>
+    </head>
+    <body>
+<div class="box">
+    <h1>The Nature</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sequi excepturi quod corrupti placeat obcaecati maxime, eveniet tempora incidunt consequatur culpa vero illum est porro reprehenderit, ipsam consectetur, dolorum ducimus.</p>
+
+   </div>
+
+   <div class="box1">
+    <h1>images</h1>
+    <img src="../web/images/20.jpg">
+</div>
+
+    <div class="box2">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vitae illo dolor aperiam quos earum quo quaerat esse reiciendis, libero laboriosam ut obcaecati accusamus? Quo eum praesentium optio ad sit.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vitae quibusdam, error, eaque deserunt debitis, at nulla excepturi autem cumque voluptatum a dolorum explicabo? Aspernatur sunt dolor sint! Molestias, delectus.</p>
+    </div>
+    </body>
+</html>
+
+

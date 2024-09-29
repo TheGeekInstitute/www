@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .nav {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: rebeccapurple;
+        }
+
+        .nav .logo {
+            font-size: 40px;
+            font-weight: 900;
+            color: white;
+            font-family: cursive;
+        }
+
+        .nav .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a {
+            display: block;
+            line-height: 50px;
+            margin: 0 10px;
+            padding: 0 10px;
+            color: white;
+            font-size: large;
+        }
+
+        .nav .links li a:hover {
+            background-color: red;
+        }
+
+
+        #btn {
+            display: none;
+        }
+
+        .nav .btn{
+            font-size: 40px;
+            color: white;
+        }
+
+        @media screen and (max-width:600px){
+            .nav .btn,
+            .nav .btn .open{
+                display: block;
+            }
+
+        .nav .btn,
+        .nav .btn .open,
+        .nav .btn .close{
+            display: none;
+            user-select: none;
+            cursor: pointer;
+        } 
+
+
+       
+            }
+
+            .nav .links{
+                position: absolute;
+                flex-direction: column;
+                text-align: center;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: grey;
+                display: none;
+            }
+
+            .nav .links li a{
+          
+                margin:  5px 0;
+            }
+
+            #btn:checked + .links{
+                display: block;
+            }
+
+            #btn:checked ~ .btn .open{
+                display: none;
+            }
+
+
+            #btn:checked ~ .btn .close{
+                display: block;
+            }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <input type="checkbox" id="btn">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Servcies</a></li>
+        </ul>
+
+        <label for="btn" class="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: rebeccapurple;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .container{
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+        }
+
+        .container .bubble{
+            height: 50px;
+            width: 50px;
+            background-color: rebeccapurple;
+            margin: 5px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 35px;
+            font-weight: 900;
+            color: white;
+            cursor: pointer;
+            animation: bubble 1s ease-in-out 0s 1 alternate forwards;
+           
+        }
+
+        .container .bubble p{
+            filter: blur(7px);
+            background-color: grey;
+            border-radius: 50%;
+           height: 100%;
+           width: 100%;
+           transition: all .3s linear;
+        }
+
+        .container .bubble p:active{
+            background-color: cyan;
+        }
+
+        @keyframes bubble {
+            0%{
+                transform: scale(2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        .nav p{
+            cursor: pointer;
+           background-color: white;
+           color: black;
+            text-align: center;
+            font-size: large;
+            line-height: 40px;
+           height: 40px;
+           width: 150px;
+           border-radius: 5px;
+           user-select: none;
+           transition: all .2s linear;
+        }
+
+        .nav p:last-child{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <p class="score">Score : <span>0</span></p>
+        <p class="chanceLeft">Chance Left : <span>10</span></p>
+        <p class="reset">Reset Game</p>
+
+
+    </div>
+
+    <div class="container">
+       
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+        let totalScore = document.querySelector(".score").children[0];
+        let chanceLeft = document.querySelector(".chanceLeft").children[0];
+        let resetgGame = document.querySelector(".reset")
+        let score =0;
+        let chance=1;
+        for(let i=1  ; i<=150 ; i++){
+            let bubble = `<div class="bubble"> <p></p> </div>`
+            container.insertAdjacentHTML("afterbegin",bubble)
+            
+        }
+        
+        let box = document.querySelectorAll(".bubble");
+        
+        // Array.from(container.children).forEach((e)=>{
+
+        box.forEach((e)=>{
+
+       
+                e.addEventListener('click',()=>{
+                    let random = Math.ceil(Math.random()*100); 
+                    e.children[0].innerHTML = random
+                    if(chance<=10){
+                    chance+=1;
+                 e.children[0].style.filter="blur(0)";
+                     score+=Number(e.children[0].innerText)
+     
+                    //  console.log(chance)
+                    //  console.log(score)
+                    totalScore.innerHTML = score
+                    chanceLeft.innerHTML = 11-chance
+                }
+                else{
+                    alert("Game Over!!!!!!")
+                }
+
+                })
+        })
+       
+
+        resetgGame.addEventListener("click",()=>{
+            window.location.reload()
+        })
+    </script>
+</body>
+</html>

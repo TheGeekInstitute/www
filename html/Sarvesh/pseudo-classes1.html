@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        ul li{
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        ul li:first-child{
+            /* color: red; */
+        }
+
+        ul li:last-child{
+            /* color: blue; */
+        }
+
+        ul li:nth-child(2n+1){
+            color: red;
+        }
+
+        ul li:nth-last-child(2n+1){
+            color: blue;
+        }
+
+        div p:first-of-type{
+            /* color: red; */
+            font-size: 20px;
+            color: red;
+        }
+
+        div b:last-of-type{
+            /* color: green; */
+            color: red;
+        }
+
+        div p:nth-of-type(1){
+            /* color: red; */
+        }
+
+        div b:nth-last-of-type(1n){
+            /* color: blue; */
+            color: blue;
+        }
+
+        div p:only-child{
+            /* color: red; */
+            color: red;
+        }
+        div p:hover{
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <div>
+        <p>para</p>
+        <div>
+            <b>bold</b>
+            <p>para1</p>
+            <b>bold1</b>
+            <p>para1</p>
+        </div>
+
+        <b>bold</b>
+        <p>para</p>
+        <b>bold</b>
+   </div>
+
+   <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti id facilis placeat quidem repudiandae corporis reprehenderit alias illum a explicabo, natus quam recusandae, exercitationem esse iusto sapiente nam. Perferendis?</p>
+    
+</div>
+
+
+<div></div>
+    
+</body>
+</html>

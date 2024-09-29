@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new{
+            color: green;
+            background-color: black;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading abcd" onmouseenter="change_style()" onmouseleave="remove()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto rerum quasi facere quaerat, labore non eveniet neque unde deleniti consequuntur blanditiis, hic quia qui libero maiores est iure! Possimus?</h1>
+
+
+
+
+    <button onclick="change_style()">Change</button>
+<script>
+    
+    heading.style.color = "red";
+    heading.style.backgroundColor = "black";
+    heading.style.fontFamily="cursive"
+  
+    
+    
+    
+    
+    function change_style(){
+        let heading = document.querySelector(".heading");
+        console.log(heading.className)
+        heading.className =heading.className + " " + "new"
+        console.log(heading.className)
+
+        heading.classList.remove("abcd")
+        heading.classList.add("new")
+    }
+
+    function remove(){
+        let heading = document.querySelector(".heading");
+        console.log(heading.className)
+        heading.className =heading.className + " " + "new"
+        console.log(heading.className)
+
+        heading.classList.remove("abcd")
+        heading.classList.remove("new")
+    }
+
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+
+        }
+
+        body{
+            width: 100vw;
+            /* height: 100vh; */
+            display: grid;
+            grid-template-columns: [side-start] 140px [side-end main-col-start] 1fr [main-col-end right-side-start] 140px [right-side-end];
+            grid-template-rows:[nav-star] 50px [nav-end ] 1fr 200px 200px [footer-start] 50px [footer-end];
+            /* margin-left: 100px; */
+        
+            }
+
+        .nav,.footer{
+            background-color: black;
+            color: white;
+        }
+
+        .nav{
+            grid-area: nav-star / 1 / nav-end / -1;
+        }
+
+        .footer{
+            grid-area: footer-start / side-start /footer-end / right-side-end;
+        }
+        .left-sidebar{
+            background-color: cyan;
+            grid-area: 2 / side-start / 5 / side-end;
+        }
+
+        .right-sidebar{
+            background-color: green;
+        }
+        .right-sidebar1{
+            background-color: greenyellow;
+        }
+        .right-sidebar2{
+            background-color: yellow;
+        }
+
+        .main{
+            background-color: red;
+            grid-area: 2 / main-col-start / 5 / main-col-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore libero, cumque iste sunt consequuntur facilis dolore itaque magnam deleniti sint quia? Minus laboriosam accusantium dolores ex earum veritatis ipsa quam?</div>
+    
+    
+    <div class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate impedit beatae illum perspiciatis in itaque laudantium dignissimos, debitis quo rerum libero distinctio unde? Sunt, iusto minima quod accusantium porro reiciendis?
+    </div>
+
+
+
+    <div class="left-sidebar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odit labore autem vel error, voluptate ea maxime earum dolorem rem cumque perferendis iste adipisci deserunt, mollitia commodi, ad itaque delectus.</div>
+    <div class="right-sidebar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis quos illo. Alias, quasi itaque veritatis quis ad facilis ea voluptate illo doloribus officia sed architecto atque omnis optio nostrum.</div>
+    <div class="right-sidebar1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla culpa eaque quod maiores obcaecati, numquam voluptatibus commodi libero nemo natus id, vero facere amet veritatis accusamus eum minima nisi?</div>
+    <div class="right-sidebar2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, eligendi nobis exercitationem molestias rem ipsam quod omnis, nam tempore dolor, soluta eaque assumenda voluptatum aspernatur corrupti quibusdam. Cum, sed distinctio.</div>
+    <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus, dolore dignissimos dolorum possimus harum consectetur dicta fugiat, quam nostrum nobis sit qui quasi at doloremque veniam voluptas officiis. Assumenda.</div>
+
+</body>
+</html>

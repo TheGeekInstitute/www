@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 1px solid black;
+            margin: 5rem auto;
+            width: 6rem;
+            display: flex;
+            border-radius: 100px;
+            font-size: 20px;
+        }
+        .day{
+            width: 50%;
+            text-align: center;
+            border-radius: 100px;
+        }
+        .day.yellow{
+            background-color: yellow;
+        }
+        .night{
+            width: 50%;
+            text-align: center;
+            border-radius: 100px;
+        }
+        .night.yellow{
+            background-color: rgb(114, 114, 78);
+        }
+        .body.light{
+            background-color: white;
+            color: black;
+        }
+        .body.dark{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="box">
+        <div class="day">
+            <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="night">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </div>
+    <p>
+        The Sun, also known as Sol, is a star at the center of the solar system. It is a white star that gives off different types of energy such as infrared energy (heat), ultraviolet light, radio waves and light. It also gives off a stream of particles, which reaches Earth as "solar wind". The source of all this energy is nuclear fusion. Nuclear fusion is the reaction in the star which turns hydrogen into helium and makes huge amounts of energy. It is a nearly perfect ball of hot plasma.
+
+The Sun looks yellow to people on Earth, but it is really white. This happens because the air around the Earth scatters sunlight. The blue and green colors in the sunlight spread out more than the red and yellow colors. Because of this, the light that reaches our eyes is mostly red and yellow, making the Sun appear yellow. If we were in space, where there is no air to scatter the light, we would see that the Sun is actually white. 
+    </p>
+    <script>
+        let body = document.querySelector('.body');
+        let day = document.querySelector('.day');
+        let night = document.querySelector('.night');
+        day.addEventListener("click",()=>{
+            body.classList.add("light");
+            body.classList.remove("dark");
+            day.classList.add("yellow");
+            night.classList.remove("yellow");
+        })
+        night.addEventListener("click",()=>{
+            body.classList.add("dark");
+            body.classList.remove("light");
+            night.classList.add("yellow");
+            day.classList.remove("yellow");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <style>
+       p::first-letter{
+        color: Red;
+        font-size: xx-large;
+       }
+
+       p::first-line{
+        color: blue;
+       }
+
+       p::selection{
+        color: red;
+        background-color: aquamarine;
+       }
+
+       p{
+        /* user-select: all; */
+        user-select: none;
+       }
+
+       ul li::marker{
+        color: springgreen;
+       }
+
+       input{
+        accent-color: red;
+        caret-color: rgb(245, 7, 193);
+       }
+
+       input::placeholder{
+        color: blue;
+        opacity: 1;
+       }
+
+       input::-webkit-file-upload-button, input::file-selector-button{
+        border: 2px solid black;
+        background-color: orangered;
+       }
+
+       #geek::before{
+        content: "THE  ";
+        color: red;
+       }
+
+       #geek::after{
+        content: attr(data-myattr);
+        color: springgreen;
+       }
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae ullam voluptatum molestiae quas ratione consequuntur non corporis, dolor totam et ex ea unde nobis nulla nesciunt officia enim temporibus?</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+    
+    <input type="text" placeholder="Enter Name">
+
+    <input type="checkbox">
+    <input type="file">
+
+    <h1 id="geek" data-myattr="   INSTITUTE">GEEK</h1>
+</body>
+</html>

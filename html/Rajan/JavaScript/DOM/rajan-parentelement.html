@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .container .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            font-size: xx-large;
+            line-height: 50px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .container .box.mid{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box mid">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <script>
+
+        let container = document.querySelector(".container");
+        let box = document.querySelectorAll(".box");
+        let mid = document.querySelector(".mid");
+        console.log(box[0].parentElement.parentElement.parentElement)
+        console.log(container.childElementCount)
+        console.log(container.childNodes)
+        console.log(container.children[0])
+        console.log(container.hasChildNodes())
+        console.log(container.lastElementChild)
+        console.log(mid.nextElementSibling)
+        console.log(mid.previousElementSibling)
+
+
+    </script>
+</body>
+</html>

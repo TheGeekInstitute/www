@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // let name = "Amit";
+        // document.write(name)
+
+        let names=["Amit","Sumit","Ravi","Ankit",'Ganesh'];
+
+        // document.write(names);
+        // console.log(names)
+        // document.write(names.length)
+
+        // document.write(names[3])
+
+        // for(let i = 0 ; i < names.length ; i++){
+        //     document.write(names[i]+"<br>");
+        // }
+
+
+        // let i=0;
+        // while(i<names.length){
+
+        //     document.write(names[i]+"<br>");
+        //     i++;
+        // }
+
+
+
+        let data =[["A","B","C"],[1,2,3],["i","ii","iii"]];
+
+        // document.write(data[0][0])
+
+        for(let i=0; i< data.length;i++){
+            for(let j=0 ; j< data[i].length ; j++){
+                document.write(data[i][j] + " ")
+            }
+            document.write("<br>")
+        }
+
+
+        let arr = [[["A","B","C"],[1,2,3],["I","II","III"]],[["D","E","F"],[4,5,6],["IV","V","VI"]],["G","H","I"],[7,8,9],["VII","VIII","IX"]]
+
+
+        // document.write(arr[0][0][0])
+        for(let i=0; i< data.length ; i++){
+            for(let j=0 ; j< data[i].length ; j++){
+                document.write(arr[i][j])
+            }
+        }
+
+    </script>
+</body>
+</html>

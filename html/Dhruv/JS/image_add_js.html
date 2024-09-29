@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+
+    <style>
+        .show{
+            display: block;
+        }
+
+        input{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <label for="input" id="show">Name</label>
+        <input type="text" id="text" placeholder="home">
+        <button for="text" id="submit" >submit</button>
+
+    </div>
+<script>
+    document.querySelector("#show").addEventListener('click', function(){
+        document.querySelector("#text").classList.toggle("show")
+
+    })
+
+
+
+
+</script>
+
+</body>
+</html>

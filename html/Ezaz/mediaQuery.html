@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+
+        @media print {
+            .box{
+                border: 2px solid green;
+                color: red;
+            }
+        }
+  
+
+        .box{
+            border: 2px solid black;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: crimson;
+        }
+
+
+        @media screen and (max-width:600px){
+                .box{
+                    border-radius: 0;
+                    padding: 5px;
+                    background-color: yellow;
+                    color: red;
+                    font-size: x-large;
+                }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eum alias veniam! Consectetur molestias, commodi excepturi rerum officiis eaque vero magnam aliquam! Maiores repudiandae quam quia iste aut, ratione soluta?</p>
+    </div>
+
+</body>
+</html>

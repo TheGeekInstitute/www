@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=10;
+        // let b=10;
+        // let c=10;
+
+        // if(a>b && a>c){
+        //     document.write(a + " is grater than " + b + " and " + c);
+        // }else if(b> a && b>c){
+        //     document.write(b + " is grater than " + a + " and " + c);
+        // }else if(c>a && c> b){
+        //     document.write(c + " is grater than " + a + "and " + b);
+        // }
+        // else{
+        //     document.write("All Numbers Are Equals");
+        // }
+
+
+
+
+
+        // let a =prompt("Enter First Number");
+        // let b =prompt("Enter Second Number");
+        // let c =prompt("Enter Third Number");
+
+        //  if(a>b && a>c){
+        //     alert(a + " is grater than " + b + " and " + c);
+        // }else if(b> a && b>c){
+        //     alert(b + " is grater than " + a + " and " + c);
+        // }else if(c>a && c> b){
+        //     alert(c + " is grater than " + a + " and " + b);
+        // }
+        // else{
+        //     alert("All Numbers Are Equals");
+        // }
+
+        
+   
+
+        
+    
+    function findMax(a,b,c){
+        let max;
+        if(a>b && a>c){
+            max = (a + " is grater than " + b + " and " + c);
+        }else if(b> a && b>c){
+            max = (b + " is grater than " + a + " and " + c);
+        }else if(c>a && c> b){
+            max = (c + " is grater than " + a + " and " + b);
+        }
+        else{
+            max=("All Numbers Are Equals");
+        }
+        return max;
+    }
+
+
+
+
+
+
+
+    let a =prompt("Enter First Number");
+    let b =prompt("Enter Second Number");
+    let c =prompt("Enter Third Number");
+
+    // alert(findMax(a,b,c));
+
+ document.write(findMax(a,b,c));
+
+
+    </script>
+</body>
+</html>

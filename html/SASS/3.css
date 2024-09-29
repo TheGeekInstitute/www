@@ -1,0 +1,18 @@
+.box1 {
+  border: 2px solid black;
+  padding: 20px;
+  color: blue;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+.box2 {
+  font-family: "Arial, Cursive";
+  color: red;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.box2 {
+  padding: true;
+}/*# sourceMappingURL=3.css.map */

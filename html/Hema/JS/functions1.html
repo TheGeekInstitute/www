@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // function PrintName(){
+        //     document.write("Amit Sing")
+        // }
+
+        // print_name()
+
+        function print_name(name,age){
+            if(name != null && age !=null){
+                return "Hi, "+ name + "You are " + age + " Years Old.";
+            }
+            else{
+                return "Please Provide name and age";
+            }
+        }
+
+        // document.write(print_name("Amit"))
+
+        function sum(){
+            let num1 = prompt("Enter First Number")
+            let num2 = prompt("Enter Second Number")
+            num1= parseInt(num1)
+            num2 = parseInt(num2)
+            let sum = num1+num2
+            if(num1 != null && num1>0 && num2!=null && num2>0){
+                return num1 + " + " + num2 + " = " + sum;
+            }
+            else{
+                return "Please provide two Positive Numbers";
+            }
+        }
+
+        // alert(sum())
+
+
+
+        // let name ="Amit "
+        //     name+='Sumit '
+        //     name+='Ravi'
+
+
+            // document.write(name)
+
+function table(num){
+    let table="";
+    if(num!=null){
+        num = parseInt(num);
+    }
+    else{
+        num = parseInt(prompt('Enter A Number'))   
+    }
+
+   if(num!=null && num>0){
+    for(let i=1 ; i<=10 ; i++ ){
+        table+= num + " x " + i + " = " + num*i + "<br>";
+    }
+    return table;
+   }
+   else{
+    return "Please Enter a Positive Number";
+   }
+}
+
+
+document.write(table(45))
+
+
+
+
+    </script>
+</body>
+</html>

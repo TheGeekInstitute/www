@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Number (1-100)</h1>
+    <p>Enter a number and click Guess:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Guess</button>
+    <div id="result"></div>
+
+    <script>
+        // Generate a random number between 1 and 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        console.log("Random number:", randomNumber);
+    
+        // Function to check the user's guess
+        function checkGuess() {
+            // Get the user's input from the input field
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+            
+            // Get the result element to show feedback
+            const resultElement = document.getElementById('result');
+    
+            // Validate the user input
+            if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                resultElement.textContent = "Please enter a valid number between 1 and 100.";
+            } else {
+                // Compare user's guess with the random number
+                if (userGuess === randomNumber) {
+                    resultElement.textContent = `Congratulations! You guessed the correct number ${randomNumber}!`;
+                    resultElement.style.color = 'green';
+                    disableInputAndButton();
+                } else if (userGuess < randomNumber) {
+                    resultElement.textContent = "Your guess is too low. Try again.";
+                    resultElement.style.color = 'blue';
+                } else {
+                    resultElement.textContent = "Your guess is too high. Try again.";
+                    resultElement.style.color = 'red';
+                }
+            }
+        }
+    
+        // Function to disable input and button after correct guess
+        function disableInputAndButton() {
+            document.getElementById('guessInput').disabled = true;
+            document.querySelector('button').disabled = true;
+        }
+    </script>
+    
+</body>
+</html>

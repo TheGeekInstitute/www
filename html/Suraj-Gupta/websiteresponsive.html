@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .main{
+            display: flex;
+            margin: 15px;
+        }
+        .main img{
+            width: 100px;
+            margin-left: 50px;
+            /* margin-top: 50px; */
+        }
+        .main a{
+            margin: 25px;
+            font-size: 20px;
+            /* padding-left: 100px; */
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .right{
+            /* float: inline-start; */
+            margin-left: 30em;
+            margin-top: 20px;
+        }
+        .right a{
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+
+        }
+        .right a:hover{
+            color: red;
+            background-color: aqua ;
+        }
+        .nav{display: flex;
+            padding-left: 50px;
+            margin-top: 15px;
+        }
+        
+        .box{
+            border: 2px solid black;
+            margin-top: 50px;
+            text-align: center;
+            height: 50px;
+            /* line-height:-50px; */
+            background-color: black;
+        }
+        .box h2{
+            padding-top: 10px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .contant{
+            /* border: 2px solid black; */
+            /* width: 300px; */
+            margin-top: 100px;
+            margin-left: 70px;
+            
+        }
+        .contant h1{
+            font-size: 70px;
+        }
+        .contant h3{
+            font-size: 40px;
+        }
+        .contant img{
+            /* width: 100px; */
+            /* float: right; */
+            margin-top: -450px;
+            margin-left: 35em;
+            /* width: 10em; */
+            padding-left: 50px;
+        }
+        .contant span a:first-child{
+            border: 1px solid black;
+            padding: 7px;
+            padding-left: 40px;
+            padding-right:20px ;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 100px;
+        }
+        .contant span a:first-child:hover{
+            background-color: red;
+        }
+        .contant span a:last-child{
+            border: 1px solid black;
+            padding: 7px;
+            padding-left: 40px;
+            padding-right:20px ;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .contant span a:last-child:hover{
+            background-color: blue;
+        }
+        .craft h1{
+            text-align: center;
+            font-size: 60px;
+            margin-top: -70px;
+            /* margin-left: 10em; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .vision{
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 80px;
+            margin-left: 60px;
+            
+        }
+        .vision .high{
+            /* border: 2px solid black; */
+            width: 350px;
+            text-align: center;
+            margin-top: 50px;
+            height: 500px;
+            margin-top: 30px;
+            
+
+        }
+        .vision .high i{
+            font-size: 50px;
+            margin-top: 15px;
+            
+        }
+        .vision .high h1{
+            font-size: 40px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .vision .high h4{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .vision .simple{
+            /* border: 2px solid black; */
+            width: 350px;
+            text-align: center;
+            margin-top: 50px;
+            height: 500px;
+            margin-top: 30px;
+        }
+        .vision .simple i{
+            font-size: 50px;
+        }
+        .vision .simple h1{
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .vision .simple h4{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .vision .low{
+            /* border: 2px solid black; */
+            width: 350px;
+            text-align: center;
+            margin-top: 50px;
+            height: 500px;
+            margin-top: 30px;
+            /* border: 1px solid black; */
+
+        }
+        .vision .low i{
+            font-size: 50px;
+        }
+        .vision .low h1{
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+
+        }
+        .vision .low h3{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+
+        }
+        .ultra{
+            border: 1px solid black;
+            height: 40em;
+            background-color: aqua;
+        }
+        .nav .laptop{
+            display: none;
+            
+        }
+        .nav ul li:hover .laptop{
+            display: block;
+            position: absolute;
+            background-color: rgb(68, 68, 211);
+            margin-top: 15px;
+            margin-left: -15px;
+        }
+        .nav ul li:hover .laptop ul{
+            display: block;
+            margin: 10px;
+        }
+        .nav ul li:hover .laptop ul li{
+            width: 150px;
+            padding: 10px;
+            border-bottom: 1px;
+            background: transparent;
+            border-radius: 5px;    
+        }
+        @media screen and (max-width:768px) {
+            .main{
+                border: 2px solid black;
+                height: 50px;
+            }
+            .css{
+                display: none;
+            }
+            .css{
+                position: absolute;
+                top: 0;
+                left: 350px;
+                top: 30px;
+            }
+            .css{
+        height: 50px;
+    }
+    .css .menu .links li a{
+        font-size: 18px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+
+    .btn1,.btn2{
+        font-size: 35px;
+        color: white;
+    }
+    .btn1{
+        display: block;
+    }
+
+    .css .links{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        height: 200px;
+        flex-direction: column;
+        /* bottom: 0;   */
+        background-color: rgb(7, 122, 199);
+        text-align: center;
+
+        display: none;
+    }
+    .css .menu .links li a{
+        line-height: 50px;
+        padding-bottom: 5px;
+       border-bottom: 2px solid white;
+    }
+
+    .css .menu #btn:checked ~ .links{
+        display: block;
+    }
+    .css .menu #btn:checked + .btn1{
+        display: none;
+    }
+    .css .menu #btn:checked ~ .btn2{
+        display: block;
+    }
+        }
+ 
+      
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="https://getshogun.com/wp-content/themes/getshogun/assets/media/images/global/shogun-logo.svg" alt="">
+        <div class="nav">
+        <li><a href="#">Products</a>
+            <!-- <ul class="Laptop">
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Computer</a></li>
+                <li><a href="#">Mouse</a></li>
+                <li><a href="#">Monitor</a></li> -->
+                
+
+
+
+            </ul>
+        </li>
+        <li><a href="#">Home</a></li>
+        <!-- <li><a href="#">Menu</a></li> -->
+        <li><a href="#">gaming</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
+        <div class="right">
+            <a href="#
+            ">Get In Touch</a>
+            <a href="#">For Free</a>
+        </div>
+       
+    </div>
+    <div class="box">
+        <h2>Join us live on June 22nd at 3pm EST for Dtcxs Increadible Big Commenrece Coustmer Journey </h2>
+    </div>
+    <div class="contant">
+        <h1>Build your ecommerce <br> site for free</h1>
+        <h3>Customize your ecommerce store <br> with our visual <br> drag-and-drop website builder. <br> Free and  paid plans available.</h3>
+        
+        <br>
+
+        <span>
+        <a href="#">Try Shopify free</a>
+        <a href="#">Try Big Commenrce free</a>
+    </span>
+        <img src="https://getshogun.com/wp-content/uploads/2023/04/frame_34127_1x.webp" alt="">
+    </div>
+    <div class="craft">
+        <h1>Craft exceptional storefronts</h1>
+    </div>
+    <div class="vision">
+        
+        <div class="high">
+            <i class="fa-solid fa-house"></i>
+            <h1>Realize your brand's creative vision</h1>
+            <h4>Remarkable  Shopify and BigCommerce stores to create an experience that’s anything but cookie cutter.</h4>
+        </div>
+<div class="simple">
+    <i class="fa-solid fa-user"></i>
+    <h1>Simplify workflows to launch faster</h1>
+    <h4>Forget about long custom development cycles that delay timely promotions. Shogun helps your fast-moving team ship custom store pages code-free.</h4>
+</div>
+<div class="low">
+    <i class="fa-solid fa-download"></i>
+    <h1>Continually optimize to drive key results</h1>
+    <h3>By breaking the limits of traditional commerce with speedier customizations, you’ll decrease bounce rates, eliminate friction, and boost revenue.</h3>
+</div>
+</div>
+<div class="ultra">
+    <h1>The builder that scales with <br> you</h1>
+    <h4>Whether for publishing your first few pages or for scaling custom content creation Shogun Page Builder is designed to grow with your needs </h4>
+</div>
+<div class="css">
+    <!-- <div class="logo">LOGO</div> -->
+
+    <ul class="menu">
+        <input type="checkbox" id="btn">
+        <label for="btn" class="btn1"><i class="fa-solid fa-bars"></i></label>
+        <label for="btn" class="btn2"><i class="fa-solid fa-xmark"></i></label>
+        <div class="links">
+            <!-- <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </div>
+    
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+<!-- <i class="fa-solid fa-download"></i> -->

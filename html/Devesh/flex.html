@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+        
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            justify-content: space-between;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row-reverse wrap; */
+            /* align-content: center; */
+            /* align-content: space-evenly; */
+
+            flex-basis: 100%;
+            
+        }
+
+        .container .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            font-weight: 900;
+         
+
+
+        }
+
+        .box2{
+            align-self: flex-start;
+            order: 10;
+           
+        }
+
+        .box4{
+            
+          order: 9;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+
+        <div class="box">7</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> 
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>  
+    </div>
+ 
+
+</body>
+</html>

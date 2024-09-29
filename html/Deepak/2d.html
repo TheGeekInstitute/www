@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            /* margin-top: 300px; */
+            background-color: aquamarine;
+            transition: all 2s;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .box:hover{
+            /* transform: translate(-100px,-200px); */
+            /* transform: rotate(360deg); */
+            /* transform: scaleX(1.5) scaleY(1.5); */
+            /* transform: scale(2); */
+            transform: skew(20deg,30deg) rotate(360deg);
+            background-color: red;
+            
+        }
+
+        .container{
+        /* border: 2px solid black; */
+        height: 300px;
+        width: 270px;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    .main{
+        /* border: 2px solid red; */
+        height: 300px;
+        width: 270px;
+        background-color: red;
+        transform: translateY(100%);
+        transition: all .3s;
+        }
+
+        .container:hover .main{
+            transform: translateY(0);
+        }
+ 
+ </style>
+</head>
+<body>
+    <div class="box">ABCD</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, veritatis quisquam? Voluptatibus, tenetur eius adipisci omnis aperiam ex. Est quisquam nesciunt molestiae beatae ullam expedita pariatur maiores! Eius, explicabo obcaecati.</p>
+
+
+    <div class="container">
+        <div class="main">ABCD</div>
+    </div>
+
+
+</body>
+</html>

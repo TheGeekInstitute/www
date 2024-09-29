@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .card{
+            /* border: 2px solid red; */
+            height: 400px;
+            width: 300px;
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 20px;
+            text-align: center;
+            overflow: hidden;
+            background-image: url(./nikhil1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* margin-left: -20px; */
+            box-shadow: 0px 1px 1px 2px gray;
+          
+        }
+
+        .box{
+            height: 400px;
+            width: 300px;
+            transform: translateY(87%);
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 0, 0.712);
+            transition: all .3s;
+            /* padding: 10px; */
+            text-align: center;
+        }
+        .box img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /* border: 2px solid red; */
+            margin-top: 10px;
+            
+        }
+        .box h1{
+            background-color:#61C9A8;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0px 0px 5px rgb(5, 48, 190);
+            border-radius:0  0px 20px 20px;
+            height: 50px;
+            line-height: 50px;
+        }
+       
+        .box p{
+            margin-top: 10px;
+            font-weight: 400;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 10px;
+            color: #61C9A8;
+        }
+        .card:hover .box{
+            transform: translateY(0);
+            border-radius: 12px;
+            /* display:block; */
+            }
+
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="box">
+            <h1>Nikhil Kumar</h1>
+            
+            <img src="./Nikhil.png" alt="">
+
+
+            <p>I'm Nikhil, a creative and passionate individual who thrives on exploring new horizons and pushing boundaries. With a background in [mention your educational background or profession], I have honed my skills in [mention your skills or areas of expertise] and have a deep love for [mention your interests or hobbies].</p>
+            
+                <h5>social media</h5>
+
+
+        </div>
+    </div>
+</body>
+</html>

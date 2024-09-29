@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css</title>
+  <style>
+    *{
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+      list-style: none;
+    }
+
+     .main{
+      height: 50px;
+      /* border: 1px solid red; */
+      background-color: black;
+      text-align: right;
+     } 
+     
+     .main ul{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+     }
+
+     .main ul li a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin: 0 5px;
+      line-height: 50px;
+    }
+
+    .main ul li:last-child a{
+      background-color: gold;
+      height: 40px;
+      width: 70px;
+      text-align: center;
+      color: black;
+      border-radius: 5px;
+      line-height: 40px;
+    }
+
+
+
+     .contacat{
+      /* border: 1px solid red; */
+      align-items: center;
+      text-align: center;
+      height: 50vh;
+      width: 100vw;
+      background-color: rgb(31, 31, 63);
+      color: white;
+      font-size: large;
+      
+     }
+     form{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+     }
+     
+     input{
+
+      margin: 5px 0;
+      width: 300px;
+     }
+
+     #btn{
+      width: 120px;
+      background-color: yellow;
+      padding: 5px;
+      border-radius: 5px;
+     }
+    
+    
+     .container{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenlys;
+      
+      
+     }
+
+     .container .box{
+        /* border: 1px solid red; */
+        height: 300px;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        background-color: rgb(20, 20, 94);
+        color: white;
+     }
+    
+    
+     .container .box .img{
+
+         background-color: white;
+         height: 80px;
+         width: 100px;
+         
+     }
+
+  
+     
+  
+     
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    
+    <ul>
+    <li><a href="">Pricing</a></li>
+    <li><a href="">Signup</a></li>
+    </ul>
+  </div>
+  <div class="contacat">
+    <h2>one line header</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum esse soluta, quos at officiis! Aperiam ratione cum, enim, neque sapiente nulla reprehenderit provident aliquid deserunt ipsam est dolorum repellat.</p>
+<form action="">
+  <input type="text" name="form">
+  <input type="text" name="btn">
+  <input type="submit" id="btn">
+</form>
+  </div>
+  
+ <div class="container">
+  <div class="box">
+    <div class="img"></div>
+    <h3>ABCD XYZ</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="box">
+    <div class="img"></div>
+    <h3>ABCD XYZ</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="box">
+    <div class="img"></div>
+    <h3>ABCD XYZ</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="box">
+    <div class="img"></div>
+    <h3>ABCD XYZ</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+ </div>
+
+
+
+</body>
+</html>

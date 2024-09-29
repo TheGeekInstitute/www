@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class test{
+            name;
+            age;
+
+            // constructor(n,a){
+            //     this.name=n;
+            //     this.age= a;
+            // }
+
+            print_name(){
+                console.log("hi ",this.name + " you are " + this.age + " years old");
+            }
+
+        }
+
+
+        let obj = new test("Amit",12);
+        // let obj1 = new test();
+
+        // obj.name ="ABCD";
+        // obj.age=45
+        // obj.print_name()
+
+
+
+
+        class data{
+             num1;
+             num2;
+
+             constructor(x,y){
+                this.num1 =x
+                this.num2 = y
+             }
+
+             sum(){
+                return this.num1 + this.num2;
+             }
+        }
+
+
+        // let xyz = new data(45,5);
+
+        // console.log(xyz.sum())
+
+
+
+        class newClass extends data{
+            sub(){
+                return this.num1 - this.num2;
+             }
+        }
+
+
+
+        class old extends newClass{
+            mul(){
+                return this.num1 * this.num2;
+             }
+        }
+
+
+        // let xyz = new old(45,5);
+
+        // console.log(xyz.mul())
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            margin: auto;
+        }
+        #a{
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            transition: all .1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.dribbble.com/users/132666/screenshots/1728814/dog.gif" id="a" alt="">
+    <div class="box">
+
+    </div>
+
+
+    <script>
+        let box =  document.querySelector(".box")
+
+        // console.log(box.offsetWidth)
+        // console.log(box.clientWidth)
+
+
+        document.body.addEventListener("click",(e)=>{
+            // console.log(e.clientX)
+            // console.log(e.pageX)
+        })
+
+        box.addEventListener("click",(e)=>{
+            // console.log(e.offsetX)
+        })
+
+        let dog  =  document.querySelector('#a')
+
+        document.body.addEventListener("mousemove",(e)=>{
+            let left = e.clientX;
+            let top = e.clientY;
+            dog.style.top=top + "px";
+            dog.style.left=left +"px";
+
+           
+
+            
+        })
+    </script>
+
+</body>
+</html>
+
+
+<!-- clientWidth & clientHeight
+clientX & clinetY
+pageX & pageY
+screenX & screenY
+offesetX & offesetY -->

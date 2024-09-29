@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;   
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container{
+            padding: 10px;
+            width: 300px;
+            height: 350px;
+            margin: 150px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px black;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container h1{
+            line-height: 100px;
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form input{
+           height: 45px;
+            width: 250px;
+            margin: 6px 0;
+            outline: transparent;
+            border:none;
+            background-color: transparent;
+            border-color: black;
+            border-style: solid;
+            border-width: 1px 1px 4px 1px;
+            border-radius: 3px;
+            padding: 0 3px;
+        }
+
+        .container form #btn{
+            width: 100px;
+            font-size: large;
+            background-color: royalblue;
+            color: white;
+            border-style: solid;
+            border-color: black;
+            border-width: 1px 1px 4px 1px;
+            border-radius: 3px;
+        }
+
+        .container form label{
+            display: block;
+            width: 230px;
+            margin: 3px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <label>Username</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <input type="submit" id="btn" value="Login">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept Orders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .total-container {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #66cd8e;
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+            padding: .5em;
+            color: #fff;
+            border-radius: 5px;
+            gap: .5em;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1.5em;
+            padding: .5em 1em;
+            margin: .51em 0;
+        }
+
+        header section {
+            display: flex;
+            align-items: center;
+        }
+
+        header section input,
+        header section select {
+            border: 1px solid #ccc;
+            padding: .4em;
+            margin: 0 .4em;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .search-container {
+            padding: .5em;
+            margin: .5em 0;
+        }
+
+        .search-container h2 {
+            margin-bottom: .5em;
+        }
+
+        .search-container form {
+            display: flex;
+            align-items: center;
+            gap: .5em;
+        }
+
+        .search-container form input {
+            padding: .3em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .search-container form button {
+            padding: .30em .5em;
+            background: none;
+            border: 1px solid #000;
+            outline: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .search_filter {
+            margin: .5em 0;
+            padding: .5em 1em;
+        }
+
+        .search_filter h2 {
+            margin-bottom: .5em;
+        }
+
+        .search_filter button {
+            padding: .45em 1.5em;
+            background: none;
+            border: 1px solid #000;
+            border-radius: 4px;
+            outline: none;
+            margin-right: .5em;
+        }
+
+        .search_filter input {
+            padding: .5em;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        .search_results_list-container {
+            margin: 1.5em 0;
+            padding: .5em 1em;
+        }
+
+        .search_results_list-container h2 {
+            margin-bottom: .5em;
+        }
+
+        .search_results {
+            position: relative;
+            margin: 1em 0;
+            padding: .5em 1em;
+        }
+
+        .search_results h2 {
+            margin-bottom: .5em;
+        }
+
+        .search_results .selectorBtns {
+            position: absolute;
+            right: 25px;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            gap: .5em;
+            align-items: center;
+        }
+
+        .search_results .selectorBtns button {
+            padding: .5em 1.4em;
+            cursor: pointer;
+            margin: 0 .5em;
+        }
+
+        .search_results form section {
+            margin: 1em 0;
+        }
+
+        .search_results form button[type="submit"] {
+            background: royalblue;
+            padding: .5em 1.5em;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            font-size: 1em;
+            display: inline-block;
+            margin: .5em 0;
+        }
+
+        #state {
+            color: rgb(89, 16, 3);
+        }
+
+        #city {
+            color: hotpink;
+        }
+
+        #pincode {
+            color: mediumseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h3>State</h3>
+            <select name="" id="">
+                <option value="">Delhi</option>
+                <option value="">Haryana</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Manipur</option>
+                <option value="">Sikkim</option>
+                <option value="">Arunachal Pradesh</option>
+                <option value="">Himachal Pradesh</option>
+                <option value="">Meghalaya</option>
+                <option value="">Tamilnadu</option>
+                <option value="">Assam</option>
+                <option value="">Jharkhand</option>
+                <option value="">Mizoram</option>
+                <option value="">Telangana</option>
+                <option value="">Bihar</option>
+                <option value="">Karnataka</option>
+                <option value="">Nagaland</option>
+                <option value="">Tripura</option>
+                <option value="">Chattisgarh</option>
+                <option value="">Kerala</option>
+                <option value="">Odisha</option>
+                <option value="">Uttarakhand</option>
+                <option value="">Goa</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Punjab</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Gujarat</option>
+                <option value="">Maharashtra</option>
+                <option value="">Rajasthan</option>
+                <option value="">West Bengal</option>
+            </select>
+        </section>
+        <section>
+            <h3>Shop No</h3>
+            <input type="text">
+        </section>
+    </header>
+
+    <div class="search-container">
+        <h2>Search Order By</h2>
+        <form action="">
+            <div class="search-container_search_field">
+                <label for="">Order ID</label>
+                <input type="text">
+            </div>
+            <div class="search-container_search_field">
+                <label for="">Barcode ID</label>
+                <input type="text">
+            </div>
+            <div class="search-container_search_field">
+                <label for="">Dispatched By</label>
+                <input type="text">
+            </div>
+            <div class="search-container_search_field">
+                <label for="">Product ID</label>
+                <input type="text">
+            </div>
+            <div class="search-container_search_field">
+                <label for="">City</label>
+                <input type="text">
+            </div>
+            <div class="search-container_search_field">
+                <label for="">Pincode</label>
+                <input type="text">
+            </div>
+            <button type="submit">Search Now</button>
+        </form>
+    </div>
+
+    <div class="search_filter">
+        <h2>Filter Result By</h2>
+        <button>Today</button>
+        <button>Yesterday</button>
+        <button>All</button>
+        <span id="or"> Or </span>
+        <label for="fromdaterange">From</label>
+        <input type="date" />
+        <label for="todaterange">To</label>
+        <input type="date" />
+    </div>
+
+    <div class="search_results_list-container">
+        <h2>List Details</h2>
+        <table>
+            <tr>
+                <th>Dispatched By</th>
+                <th>Dispatched Date</th>
+                <th>Dispatched For</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td><a href="">Neeraj</a></td>
+                <td><a href="">4 June 2023</a></td>
+                <td><a href="">Mumbai</a></td>
+                <td><a href="">14s</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Neeraj</a></td>
+                <td><a href="">4 June 2023</a></td>
+                <td><a href="">Bihar</a></td>
+                <td><a href="">14s</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Neeraj</a></td>
+                <td><a href="">4 June 2023</a></td>
+                <td><a href="">Jaipur</a></td>
+                <td><a href="">14s</a></td>
+            </tr>
+            <tr>
+                <td><a href="">Neeraj</a></td>
+                <td><a href="">4 June 2023</a></td>
+                <td><a href="">Haryan</a></td>
+                <td><a href="">14s</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="search_results">
+        <h2>Results</h2>
+        <form action="">
+            <table>
+                <div class="selectorBtns">
+                    <button>Slect All</button>
+                    <button>De- Select All</button>
+                </div>
+                <tr>
+                    <th>S. No</th>
+                    <th>Order ID</th>
+                    <th>Barcode ID</th>
+                    <th>Product Name</th>
+                    <th>Dispatched For</th>
+                    <th> QTY</th>
+                    <th>Select/De-Select</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12356</td>
+                    <td>123ABC</td>
+                    <td>Apple PRO</td>
+                    <td><span id="state">Delhi</span> <span id="city">Kapashera</span> <span id="pincode">110037</span>
+                    </td>
+                    <td>5</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12356</td>
+                    <td>123ABC</td>
+                    <td>Apple PRO</td>
+                    <td>Mumbai</td>
+                    <td>5</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12356</td>
+                    <td>123ABC</td>
+                    <td>Apple PRO</td>
+                    <td>Mumbai</td>
+                    <td>5</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12356</td>
+                    <td>123ABC</td>
+                    <td>Apple PRO</td>
+                    <td>Mumbai</td>
+                    <td>5</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>12356</td>
+                    <td>123ABC</td>
+                    <td>Apple PRO</td>
+                    <td>Mumbai</td>
+                    <td>5</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+
+            <section>
+                <label for="">Sort By</label>
+                <select name="" id="">
+                    <option value="Old To New">Old To New</option>
+                    <option value="New to Old">New to Old</option>
+                </select>
+            </section>
+            <button type="submit" class="dispatchBtn">Accept</button>
+        </form>
+    </div>
+    <div class="total-container">
+        <p>Total -</p>
+        <p>2</p>
+    </div>
+</body>
+
+</html>

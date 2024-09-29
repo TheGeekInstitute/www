@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url("../Aasha/image/back.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .car{
+            height: 200px;
+            position: absolute;
+            bottom: 20px;
+            left: -550px;
+
+            animation: car 10s linear 0s infinite;
+        }
+        .boy{
+            height: 200px;
+            position: absolute;
+            transform: rotateY(180deg);
+            bottom: 25vh;
+            right: -200px;
+            animation: boy 20s linear 0s infinite;
+
+        }
+        .sun{
+            height: 170px;
+            
+            position: absolute;
+            transform: rotateY(180deg);
+             left: -550;
+            animation: sun 10s linear 0s infinite;
+            animation-timing-function: steps(10);
+
+
+
+
+
+        }
+
+        @keyframes sun{
+            form{
+
+                transform: translateX(0) rotateY(180deg);
+                
+            }
+            to{
+                transform: translateX(110vw)  rotateY(180deg);
+
+
+            }
+        }
+
+        @keyframes boy {
+            form{
+                transform: translateX(0) rotateY(180deg);
+            }
+
+            to{
+                transform: translateX(-110vw) rotateY(180deg);
+
+            }
+        }
+
+
+        @keyframes car {
+            form{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(130vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../Aasha/image/car.gif" alt="" class="car">
+
+    <img src="../Aasha/image/boy.gif" alt="" class="boy">
+
+   <img src="https://i.pinimg.com/originals/54/d3/ae/54d3ae04cae803cafc21389dfd31fc88.gif" alt="" class="sun">
+</body>
+</html>

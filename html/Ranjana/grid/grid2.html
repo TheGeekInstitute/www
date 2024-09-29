@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+border: 1px solid black;
+width: 800px;
+height: 600px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+            grid-template-rows:100px 40px 20px ;
+            grid-template-rows: repeat(4,1fr);
+            gap: 8px;
+
+        }
+        .box1{
+            background-color: rgb(47, 255, 151);
+            border: 1px solid black;
+            
+        }
+        .box2{
+            background-color: rgb(255, 94, 0);
+
+        }
+        .box3{
+            background-color: rgb(0, 174, 255);
+        }
+        .box4{
+            background-color: rgb(255, 196, 0);
+        }
+        .box5{
+            background-color: rgb(0, 102, 255);
+        }
+        .box6{
+            background-color: rgba(0, 0, 0, 0.171);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Dashboard</div>
+        <div class="box box2">Students</div>
+        <div class="box box3">Exam</div>
+        <div class="box box4">Add Question</div>
+        <div class="box box5">Add Notice</div>
+        <div class="box box6">Add user</div>
+        <div class="box box7">Generate Certificates</div>
+        <div class="box box8">Books
+        </div>
+        <div class="box box9">Add test</div>
+        <div class="box box10">Add Student</div>
+        <div class="box box11">Fees Management</div>
+        <div class="box box12">Generate Admit Card</div>
+        <div class="box box13">Enquiries</div>
+      </div> 
+
+    
+</body>
+</html>

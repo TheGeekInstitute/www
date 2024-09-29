@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        ul li{
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        ul li:first-child{
+            color: violet;
+        }
+        ul li:last-child{
+            color: red;
+        }
+        ul li:nth-child(5){
+            color: aqua;
+        }
+        ul li:nth-last-child(4){
+            color: blue;
+        }
+        div :first-child{
+            color: blueviolet;
+        }
+        div p:first-of-type{
+            color: chartreuse;
+        }
+        div :last-child{
+            color: brown;
+        }
+        div p:last-of-type{
+            /* color: tomato; */
+        }
+
+        p:target{
+            background-color: blue;
+        }
+        div p:only-child{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li lang="En">1</li>
+        <li lang="hi">2</li>
+        <li lang="gr">3</li>
+        <li lang="fr">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dolorum dolore voluptate voluptatum vel ducimus quod at voluptates eaque odit totam natus pariatur eveniet quas fugit, sequi tenetur harum iusto?</p>
+        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perferendis asperiores, voluptatum, cumque amet tenetur totam beatae corporis ipsum officiis quia. Tempore a iste, molestias optio facere voluptatibus error quibusdam.</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet et quidem molestiae quis maiores unde, tempora esse doloribus asperiores dolores fugit natus inventore rerum animi expedita? Minus totam ipsum magnam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis culpa deleniti enim reprehenderit ab cupiditate, illo a iste consectetur facilis officia rem? Maiores odit rem praesentium magni eveniet reiciendis?</p>
+    </div>
+    <div>
+        <p>456Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, et iste illo in culpa magni incidunt placeat quam molestiae sequi mollitia eos rerum earum temporibus accusamus sint asperiores sit. Dolorem!</p>
+        <samp>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem ad earum magnam temporibus? Laboriosam possimus beatae, unde aliquam quisquam illum animi dolorum veniam inventore officiis aliquid cumque dolor iure omnis!</samp>
+
+
+    </div>
+    <div>
+        <p>228Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum adipisci accusantium magnam, aut perspiciatis ullam quidem necessitatibus neque ipsum voluptate unde excepturi tenetur dolore ipsam laudantium, quas repellendus hic voluptatibus.</p>
+    </div>
+    <div></div>
+    <a href="#ch1">ch1</a>
+    <a href="#ch2">ch2</a>
+    <a href="#ch3">ch3</a>
+    <a href="#ch4">ch4</a>
+
+
+<p id="ch1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quasi ratione error voluptatem dolorem tempore repellendus labore ex consequatur quis recusandae mollitia, esse numquam aut alias rem aliquid, quidem reiciendis.</p>
+<p id="ch2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt provident ipsam maxime quos cum alias cupiditate eligendi est, sapiente nisi! Ullam maxime, quidem possimus ut consequatur ratione architecto nostrum harum.</p>
+<p id="ch3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium a quam atque veritatis sed ratione, quasi asperiores assumenda autem doloribus praesentium, vel in optio quisquam consectetur odit numquam omnis tenetur?</p>
+<p id="ch4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita animi sint earum iste tempore aperiam vel rerum nisi explicabo, odio sequi eligendi optio dignissimos ex beatae modi quam assumenda? Necessitatibus!</p>
+</body>
+</html>

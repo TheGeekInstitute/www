@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+
+    
+    <table>
+       <tr>
+        <th>Emp No</th>
+        <th>Name</th>
+        <th>gender</th>
+        <th>Salary</th>
+        <th>Image</th>
+       </tr>
+    </table>
+
+
+
+    <script>
+        let data = fetch("1.php");
+        var table= document.querySelector("table");
+        data.then((e)=>{
+            return e.text();
+        }).then((a)=>{
+            for(x of JSON.parse(a)){
+               data=`
+               <tr>
+                    <td>${x.emp_no}</td>
+                    <td>${x.name}</td>
+                    <td>${x.gender}</td>
+                    <td>${x.salary}</td>
+                    <td><img src="${x.image}"></td>
+                </tr>
+               `;
+            table.insertAdjacentHTML("beforeend",data);
+            
+            }
+        })
+    </script>
+</body>
+</html>

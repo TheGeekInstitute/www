@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .change{
+            color: red;
+            font-family: cursive;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>heading</h1>
+    <h1 id="heading" class="one" style="background-color: rgb(251, 134, 153);">heading 1 <i>asdas</i></h1>
+    <p class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis accusamus rerum tempore, iusto explicabo temporibus dolorem error consectetur quam sunt sint magni voluptatibus animi quia eligendi facere, enim repellat! Unde.
+    </p>
+
+    <P class="para2">
+     <h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ducimus nisi facere! Magni facilis molestiae, aliquid ratione distinctio eum soluta accusamus necessitatibus corporis rem tenetur quibusdam, repellat quia ipsam ab ducimus! Assumenda autem  est laudantium dolorem voluptatum, atque corporis itaque!</h1>
+    </P>
+    
+
+    <form action="" id="myform">
+        <input type="text" name="" id="">
+    </form>
+
+    <!-- <img src="https://www.sheknows.com/wp-content/uploads/2018/08/kg6hcul38056erbmr8dz.jpeg?w=960" alt="#">  -->
+
+    <a href="#abcd">Links</a>
+
+
+    <button onclick="change()">Click Me</button>
+
+    <script>
+        // console.log(document.all)
+        // console.log(document.head)
+        // console.log(document.body)
+        // console.log(document.title)
+        //    console.log(document.images)
+        // console.log(document.links)
+        // console.log(document.forms)
+
+
+
+
+// ------
+
+          let heading = document.getElementById("heading")
+
+                console.log(heading)
+// ------
+
+        //   let para = document.getElementsByClassName("para")
+                // console.log(para[0])
+// ------
+        //   let element = document.getElementsByTagName("h1")
+                // console.log(element[0])
+
+
+            // console.log(heading.innerText)
+            // console.log(heading.innerHTML)
+
+            // console.log(heading.getAttribute("class"))
+            // console.log(heading.getAttributeNode("class"))
+            // console.log(heading.attributes)
+
+        
+            function change(){
+                heading.innerHTML="ABCD<i>asdasdas</i>"
+                heading.innerText="ABCD<i>asdasdas</i>"
+
+                heading.setAttribute("class","change")
+                // heading.removeAttribute("style")
+            }
+
+// ----Ravision-----//
+
+      
+            // console.log(heading.innerText)
+
+            // console.log(heading.innerHTML)
+
+        //  console.log(heading.getAttribute("class"))
+
+        //  console.log(heading.getAttributeNode("class"))
+
+        //  console.log(heading.attributes)
+
+
+
+
+                
+    </script> 
+
+</body>
+</html>
+<!-- 
+DOM Targeting methods
+    document
+    document.all
+    document.documentElement
+    document.head
+    document.title
+    document.body
+    document.images
+    document.anchor
+    document.links
+    document.forms
+    document.doctype
+    document.URL
+    document.baseURI
+    document.domain
+
+
+    document.getElementByID
+    document.getElementsByClassName
+    document.getElementsByTagName
+
+
+-->

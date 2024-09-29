@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 1px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+        }
+        .alias{
+            cursor: alias;
+        }
+
+        .all-scroll{
+            cursor: all-scroll;
+        }
+        .pointer{
+            cursor: pointer;
+        }
+        .image{
+            cursor: url("https://csscursor.info/santahand.fbeeee9f.png"),auto;
+        }
+        .frd{
+            cursor: cell;
+        }
+        .jd{
+            cursor: col-resize;
+        }
+        .dji{
+            cursor: context-menu;
+        }
+
+        .hf{
+            cursor: e-resize;
+        }
+        .poet{
+            cursor: copy;
+        }
+        .utd{
+            cursor: crosshair;
+        }
+        .ret{
+           cursor: grab;
+        }
+        .tfeg{
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box alias">Alias</div>
+        <div class="box all-scroll">All Scroll</div>
+        <div class="box pointer">Pointer</div>
+        <div class="box image">Image</div>
+        <div class="box frd">frd</div>
+        <div class="box hf">hf</div>
+        <div class="box jd">jd</div>
+        <div class="box dji">dji</div>
+        <div class="box poet">poet</div>
+        <div class="box utd">utd</div>
+        <div class="box ret">ret</div>
+        <div class="box tfeg">tfeg</div>
+    </div>
+</body>
+</html>

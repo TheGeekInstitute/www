@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <Style>
+      .dotted{
+        border-style: dotted;
+        border-radius: 10px 15px 20px 25px; 
+       border-color:#615de2 #133cb7 #83b713  #615de2 ;
+      } 
+      
+      .dashed{
+        border-style: dashed;
+        border-radius: 10px 15px 20px 25px; 
+       border-color:blue palevioletred palegreen peru;
+       /* border-top-left-radius: 10px;  */
+       /* border-top-right-radius: 15px; */
+       /* border-bottom-left-radius: 20px; */
+      }
+
+      .solid{
+        border-style: solid;
+        /* border-width: 10px; */
+        border-color: green red yellow blue;
+        /* border-top-width:5px; */
+        border-width:10px 15px 20px 25px; 
+        border-radius: 10px 15px 20px 30px;
+      }
+
+      .double {
+        border-style: double;
+        border-width: 10px 15px 20px 25px;
+        border-radius: 10px 15px 20px 30px; 
+       border-color:blueviolet wheat red yellowgreen;
+      }
+
+      .groove{
+        border-style: groove;
+        border-width: 10px 15px 20px 30px;
+        border-radius: 10px 15px 20px 25px; 
+       border-color:#5de2be #615de2 #5dc4e2  #e2c45d  ;
+      }
+      
+      .ridge{
+        border-style: ridge;
+        border-width: 10px 15px 20px 25px; 
+       border-color:aqua #e25d5d #6ee25d hsl(19, 70%, 63%)  ;
+      }
+
+      .inset{
+        border-style: inset;
+        border-width: 10px 15px 20px 25px; 
+       border-color:#5da8e2 #6ee25d yellow #e25d84 ;
+      }
+
+      .outset{
+        border-style: outset;
+        border-width: 10px 15px 20px 25px; 
+       border-color:#e25d5d #5de2be #5da8e2 #5dc4e2;
+      }
+
+      .none{
+        border-style: none;
+     
+      }
+
+      .hidden{
+        border-style: hidden;
+      
+      }
+
+      .mix{
+        border-style:mix;
+        border-top:solid;
+        border-right:inset;
+        border-bottom:double;
+        border-left:dotted;
+        border-style:solid double ridge dotted;
+       
+      }
+    </Style>
+ </head>
+ <body>
+    <p class="dotted">A dotted Sentence</p>
+    <p class="dashed">A dashed Sentence</p>
+    <p class="solid">A solid Sentence</p>
+    <p class="double">A double Sentence</p>
+    <p class="groove">A groove Sentence</p>
+    <p class="ridge">A ridge Sentence</p>
+    <p class="inset">A inset Sentence</p>
+    <p class="outset">A outset Sentence</p>
+    <p class="none">A none Sentence</p>
+    <p class="hidden">A hidden Sentence</p>
+    <p class="mix">A mix Sentence</p>
+ </body>
+ </html>
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>responsive-nav</title>
+   <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+         margin: 0%;
+         padding: 0%;
+         box-sizing: border-box;
+         text-decoration: none;
+         list-style: none;
+        }
+        nav{
+         /* border: 2px solid red; */
+         height: 4rem;
+         display: flex;
+         justify-content: space-between;
+         padding: 0px 2rem;
+         background-color: thistle;
+         color: white;
+         align-items: center;
+        }
+        .logo{
+         display: inline-block;
+         font-size: 40px;
+         font-weight: 900;
+        }
+        .logo:hover{
+         color: slateblue;
+         background-color: rgb(223, 238, 15);
+
+        }
+        .container{
+         display: flex;
+         
+        }
+        .links{
+         /* border: 2px solid black; */
+         display: flex;
+   
+        }
+        .container .links{
+         display: flex;
+         align-items: center;
+        }
+        .links li{
+         margin: 0 1rem;
+        }
+
+        .links li a{
+         display: inline-block;
+        
+        }
+
+        .links li a{
+         color: white;
+         font-weight: 700;
+         font-size: 1.5rem;
+         
+        }
+       
+        .links li a:hover{
+         color: blue;
+         background-color: yellow;
+        }
+        #btn,.opne,.close{
+         display: none;
+        }
+        .open{
+         display: none;
+        }
+        @media screen and (max-width:600px){
+        nav{
+         background-color: black;
+
+        }
+        .open{
+         display: block;
+         font-size: 2rem;
+        }
+        .links{
+           /* border: 2px solid red; */
+           position: absolute;
+          left: 0;
+          right: 0;
+          top: 4rem;
+          background-color: rgb(4, 77, 52);
+          height: 12rem;
+          flex-direction: column;
+          visibility: hidden;
+          }
+          .links li{
+           margin: 0.5rem 0;
+        }
+        .opne{
+           display: flex;
+           font-size: 2rem;
+        }
+        .close{
+           font-size: 2rem;
+        }
+        #btn:checked ~ .links{
+           visibility:visible;
+           /* border: 2px solid red; */
+        }
+        #btn:checked ~ .open{
+          display: none;
+      }
+      #btn:checked ~ .close{
+          display: block;
+      }
+         
+      
+         
+      }
+   
+   </style>
+</head>
+<body>
+  
+   <nav>
+
+   <div class="logo">logo</div>
+   <div class="container">
+      <input type="checkbox" id="btn">
+         <label for="btn" class="open">
+            <i class="fa-solid fa-bars"></i>
+         </label>
+         <label for="btn" class="close">
+            <i class="fa-solid fa-xmark"></i>
+         </label>
+
+         <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contect</a></li>
+         </ul>
+   </div>
+
+   </nav>
+
+</body>
+</html>

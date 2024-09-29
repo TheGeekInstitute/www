@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-CARD HTML</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 2px solid red; */
+            height: 350px;
+            width: 270px;
+            text-align: center;
+            margin: 150px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px black, 0px 0px 50px black;
+            background-image: url("data:image/jpeg;base64,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");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+
+        .container .card{
+            height: 350px;
+            width: 270px;
+            color: rgb(11, 240, 61);
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            /* border-radius: 10px; */
+            transform: translate(0,100%);
+            transition: all .5s linear;
+        }
+        .container .card img{
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid rgb(20, 17, 228);
+            box-shadow: 0px 0px 10px rgb(13, 216, 13),0px 0px 20px rgb(255, 0, 55);
+        }
+        .container:hover .card{
+         transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://as2.ftcdn.net/v2/jpg/07/25/08/39/1000_F_725083901_xSmGqDm5zmS1EEpywoVX0qhbYheQz6lU.jpg" alt="">
+            <h1>CARD HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum officiis praesentium aut distinctio possimus ipsa, totam expedita. Fugit velit animi nihil ipsum fuga temporibus, adipisci laudantium unde possimus provident!</p>
+        </div>
+    </div>
+
+</body>
+</html>

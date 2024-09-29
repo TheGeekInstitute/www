@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animination</title>
+    <style>
+      @keyframes car {
+            0%{
+                
+            }
+            
+            100%{
+                
+            left: 120vw;
+                
+            }
+            
+        } 
+        @keyframes car2 {
+            0%{
+                
+            }
+
+
+            100%{
+                
+                /* transform:rotate(360deg) ; */
+                right: 80em;
+                
+            }
+            
+        } 
+
+body{
+            height: 100vh;
+            width: 100vw;
+            /* z-index: 200; */
+            overflow-x: hidden;
+            background-image: url("https://media.istockphoto.com/id/1159550975/photo/new-asphalt-roads-trees-under-blue-sky-and-white-clouds.jpg?s=612x612&w=0&k=20&c=COfOy7GPu_azjLaDe2rKhPpKn_NOCfMYpc49L23SVsQ=");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+.car{
+            height: 200px;
+            width: 400px;
+            position: relative;
+            /* z-index: 150; */
+            /* bottom: 100px; */
+            margin-top: 160px;
+            animation-name:car ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* filter: drop-shadow(4px 4px 10px black); */
+            left: -320px;         
+            
+        }
+        .car2{
+            
+             /* transform: rotatey(180deg); */
+             position: absolute;
+            height: 500px;
+            width: 600px;
+            /* transform:rotate(45deg); */
+            /* margin-top: 700px; */
+            bottom: 200px;
+            right: -320px;
+            /* top: 50vh;  */
+             animation-name:car2 ;
+             animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-timing-function: linear;
+            filter: drop-shadow(4px 4px 10px black)
+            
+        }
+
+.road img{
+    height: 40vh;
+}
+
+.road .a{
+    height: 800px;
+}
+
+.road img:hover{
+    animation-play-state: paused;
+}
+
+    </style>
+</head>
+<body>
+    <div class="road">
+        
+        <!-- <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="" class="newcar"> -->
+
+        <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="" class="car">
+        <!-- <img src="https://i.pinimg.com/originals/a4/b0/4a/a4b04ac2187aa414fba3d5fb1d4a0f85.gif" alt="" class="car2"> -->
+        <div class="car2">
+            <img class="a" src="https://media2.giphy.com/media/UtiGKkOh1xyo9Ix8V0/giphy.gif?cid=6c09b9522zmg84bbloclraz9pejrwvyimttvlt83202b0x80&ep=v1_stickers_related&rid=giphy.gif&ct=s" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

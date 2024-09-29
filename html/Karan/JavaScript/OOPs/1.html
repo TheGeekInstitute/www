@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class data{
+            name;
+            age;
+
+            constructor(n,a){
+                // console.log("Auto run")
+                this.name=n;
+                this.age=a;
+            }
+
+
+            print_data(){
+                console.log(this.name);
+                console.log(this.age);
+            }
+        }
+
+
+        class Student extends data{
+
+            print_info(){
+                console.log("Info");
+            }
+        }
+
+        let obj = new Student("Amit",'78');
+        // console.log(obj)
+        // obj.name="Amit";
+        // obj.age=45;
+
+        // obj.print_data();
+
+        obj.print_info();
+    </script>
+</body>
+</html>

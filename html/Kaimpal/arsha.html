@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsha</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container{
+            background-color: #37517E;
+            color: white;
+            height: 40rem;
+        }
+
+        .container .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 3rem;
+            padding: 0 2rem;
+        }
+
+        .container .nav .logo{
+            font-size: 40px;
+        }
+
+        .container .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container > .nav > .links > li a{
+            display: block;
+            color: white;
+            font-size: large;
+            margin: 0 .5rem;
+        }
+
+        .container >.nav >.links > li:last-child a{
+            border: 2px solid #47B2E4;
+            padding: .5rem 1rem;
+            border-radius:10000px ;
+        }
+
+        .container .nav .links li:last-child a:hover{
+           background-color: #47B2E4;
+        
+        }
+
+        .container .hero{
+          
+            height: 37rem;
+            padding:5rem 4rem ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .hero .box:first-child{
+         
+            height: 30rem;
+            padding: 4rem .5rem;
+        }
+
+        .container .hero .box:first-child h1{
+            font-size: 2.7rem;
+            width: 40rem;
+
+        }
+
+        .container .hero .box:first-child p{
+            font-size: 1.5rem;
+            line-height: 3rem;
+          color: chartreuse;
+            width: 40rem;
+            padding: .5rem 0;
+
+
+        }
+
+        .container .hero .box:first-child .btn a{
+        color: white;
+        font-size: x-large;
+        display: inline-block;
+
+        }
+
+        .container .hero .box:first-child .btn a:first-child{
+      
+            background-color: #47B2E4;
+            padding: .5rem 1rem;
+            border-radius: 1000px;
+            margin-right: 10px;
+        }
+
+
+
+
+        
+
+        .container .hero .box:last-child{
+       
+            height: 30rem;
+        }
+
+        .container .hero .box:last-child img{
+            height: 90%;
+            animation: img 2s linear 0s infinite alternate ;
+        }
+        .container .nav ul li .sub{
+            background-color: cyan;
+            position: absolute;
+            top: 50px;
+            width: 100px;
+            display: none;
+            
+        }
+        .container .nav ul li .sub li a{
+            display: block;
+            font-size: large;
+            color: white;
+            line-height: 40px;
+        }
+        .container .nav ul li:hover .sub {
+            display: block;
+        }
+     
+
+        
+
+
+
+        @keyframes img {
+            form{
+                transform: translateY(0);
+            }
+
+            to{
+                transform: translateY(50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">ARSHA</div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Dropdown +</a> 
+                    <ul class="sub">
+                        <li><a href="#">Page1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Get Started</a></li>
+            </ul>
+        </div>
+
+        <div class="hero">
+            <div class="box">
+                <h1>Better Solutions For Your Business</h1>
+                <p>We are team of talented designers making websites with <br> Boostrap</p>
+
+                <div class="btn">
+                    <a href="#">Get Stared</a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i> Watch Videos</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="ABCD">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

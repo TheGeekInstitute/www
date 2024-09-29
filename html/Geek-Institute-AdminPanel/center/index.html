@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Geek Institute - Center Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .wrapper .nav {
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3rem;
+            background-color: #080217;
+            color: #ede8fd;
+        }
+
+        body {
+            background-color: #ede8fd;
+        }
+
+        .wrapper .nav #logo {
+            font-size: 2rem;
+
+            font-weight: 700;
+            color: #ede8fd;
+            text-shadow: 0px 0px 1px cyan;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            letter-spacing: 1px;
+
+        }
+
+        .wrapper .nav .btn {
+            color: white;
+            font-size: large;
+            background-color: #5F2DED;
+            padding: 10px 10px;
+            border-radius: 3px;
+            transition: all .2s ease-in-out;
+        }
+
+        .wrapper .nav .btn:hover {
+            background-color: #4412d3;
+        }
+
+        .wrapper .main {
+            text-align: center;
+            padding: 0.5rem auto;
+
+        }
+
+        .wrapper .main img {
+            height: 10rem;
+            width: 10rem;
+            object-fit: cover;
+            filter: drop-shadow(0px 0px 5px black);
+        }
+
+        .wrapper .main .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .wrapper .main .container .login-form {
+            height: 20rem;
+            width: 30rem;
+            margin: 1rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+
+        }
+
+        .wrapper .main .container .notice {
+            height: 20rem;
+            width: 30rem;
+            margin: 1rem;
+            overflow: hidden;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .wrapper .main .container .login-form h1 {
+
+            background-color: #4412d3;
+            height: 3rem;
+            color: white;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+
+
+
+        .wrapper .main .container .notice h1 {
+            animation: notice .2s linear 0s infinite alternate;
+            background-color: #4412d3;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 2.5rem;
+            height: 3rem;
+
+        }
+
+        .wrapper .main .container .notice marquee ul li {
+            list-style-type: dotted;
+            font-size: small;
+            padding: 5px;
+        }
+
+        .wrapper .main .container .notice marquee ul li:nth-child(odd) {
+            background-color: #c9b9f9;
+        }
+
+        .wrapper .main .container .notice marquee ul li:nth-child(even) {
+            background-color: #a68af5;
+        }
+
+
+        .wrapper .main .container .notice marquee {
+            height: 20rem;
+            width: 100%;
+        }
+
+        .wrapper .main .container .login-form form {
+            height: 12rem;
+            width: 20rem;
+            margin: 2rem auto;
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+        }
+
+        .wrapper .main .container .login-form form .field {
+            margin: .7rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper .main .container .login-form form .field input {
+            height: 2.5rem;
+            width: 15rem;
+            outline: transparent;
+            padding: 2px 5px;
+            font-size: large;
+            background-color: #c9b9f9;
+            border: none;
+        }
+
+        .wrapper .main .container .login-form form .field label i {
+            color: #4412d3;
+            padding: 2px;
+            height: 2.5rem;
+            width: 2.5rem;
+            font-size: 2rem;
+            background-color: #c9b9f9;
+            line-height: 2.5rem;
+            border-right: 2px solid black;
+
+        }
+
+        .wrapper .main .container .login-form form input[type="submit"] {
+            background-color: #5F2DED;
+            border: none;
+            padding: .5rem 1.5rem;
+            font-size: large;
+            border-radius: .3rem;
+            color: white;
+            transition: all .2s ease-in-out;
+        }
+
+        .wrapper .main .container .login-form form input[type="submit"]:hover {
+            background-color: #4412d3;
+            cursor: pointer;
+
+        }
+
+
+
+
+        @keyframes notice {
+            0% {
+                color: yellow;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+
+        @media screen and (max-width:800px) {
+            .wrapper .nav #logo {
+                font-size: 1.5rem;
+                font-weight: 700;
+
+            }
+
+            .wrapper .nav .btn {
+
+                padding: 7px 7px;
+                border-radius: 3px;
+
+            }
+        }
+
+
+        @media screen and (max-width:600px) {
+            .wrapper .nav {
+                padding: 0 1rem;
+            }
+
+            .wrapper .nav #logo {
+                font-size: 1rem;
+                font-weight: 200;
+                font-family: cursive;
+
+            }
+
+            .wrapper .nav .btn {
+
+                padding: 5px 5px;
+                border-radius: 3px;
+
+            }
+        }
+
+
+        @media screen and (max-width:600px) {
+            .wrapper .nav {
+                padding: 0 .5rem;
+            }
+
+            .wrapper .nav #logo {
+                font-size: 1rem;
+                font-weight: 200;
+                font-family: cursive;
+
+            }
+
+            .wrapper .nav .btn {
+
+                padding: 5px 5px;
+                border-radius: 3px;
+
+            }
+        }
+
+
+        @media screen and (max-width:600px) {
+            .wrapper .nav {
+                padding: 0 .5rem;
+            }
+
+            .wrapper .nav #logo {
+                font-size: 1rem;
+                font-weight: 200;
+                font-family: cursive;
+
+            }
+
+            .wrapper .nav .btn {
+                font-size: 16px;
+                padding: 5px 5px;
+                border-radius: 3px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="nav">
+            <a href="https://www.geekinstitute.org" id="logo">The Geek Institute of Cyber Security</a>
+            <a href="../student/" class="btn">Student Login</a>
+        </div>
+
+        <div class="main">
+            <img src="../assets/images/logo.png" alt="Main Logo">
+
+
+            <div class="container">
+                <div class="login-form">
+                    <h1>Center Login</h1>
+
+                    <form action="">
+                        <div class="field">
+                            <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                            <input type="email" placeholder="example@example.com" id="email" name="email">
+                        </div>
+
+                        <div class="field">
+                            <label for="password"><i class="fa-solid fa-lock"></i></label>
+                            <input type="password" name="password" id="password" placeholder="********">
+                        </div>
+                        <input type="submit" value="SignIn">
+                    </form>
+                </div>
+
+                <div class="notice">
+                    <h1>Notice</h1>
+                    <marquee direction="up" scrollamount="3">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nihil explicabo nisi
+                                laudantium, fugiat consequuntur sapiente cumque impedit totam sint ipsa dolores? Animi
+                                porro enim earum eius, in ut suscipit?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam exercitationem iure
+                                quisquam cumque doloribus vel corporis perferendis odit voluptatem qui enim, amet ut id
+                                laboriosam numquam omnis fugit animi iste.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officiis deserunt ex qui
+                                fuga, autem dicta odio iure debitis vitae, libero omnis commodi distinctio, quibusdam
+                                optio amet maiores vel quam?</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nihil explicabo nisi
+                                laudantium, fugiat consequuntur sapiente cumque impedit totam sint ipsa dolores? Animi
+                                porro enim earum eius, in ut suscipit?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam exercitationem iure
+                                quisquam cumque doloribus vel corporis perferendis odit voluptatem qui enim, amet ut id
+                                laboriosam numquam omnis fugit animi iste.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officiis deserunt ex qui
+                                fuga, autem dicta odio iure debitis vitae, libero omnis commodi distinctio, quibusdam
+                                optio amet maiores vel quam?</li>
+
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nihil explicabo nisi
+                                laudantium, fugiat consequuntur sapiente cumque impedit totam sint ipsa dolores? Animi
+                                porro enim earum eius, in ut suscipit?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam exercitationem iure
+                                quisquam cumque doloribus vel corporis perferendis odit voluptatem qui enim, amet ut id
+                                laboriosam numquam omnis fugit animi iste.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In officiis deserunt ex qui
+                                fuga, autem dicta odio iure debitis vitae, libero omnis commodi distinctio, quibusdam
+                                optio amet maiores vel quam?</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- <script src="../assets/js/login.js"> </script> -->
+
+</body>
+
+</html>

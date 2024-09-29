@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* border: 2px solid black; */
+            /* height: 200px; */
+            /* width: 200px; */
+            /* align-content: center; */
+            align-content: center;
+            /* block-size: 100px; */
+            /* inline-size:200px; */
+
+            /* border-inline: 2px solid black; */
+            border-block: 2px solid black;
+            padding-block: 20px;
+            padding-inline: 20px;
+
+            container-type: inline-size;
+            container-name: mybox;
+
+            & .a{
+                color: green;
+                &:hover{
+                    background-color: red;
+                }
+            }
+
+
+        }
+   
+
+        @container mybox (max-width:800px){
+            h1{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="a">abcd</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quaerat a voluptatem deserunt
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0;
+            /* justify-content: center; */
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            /* padding:50% 0; */
+            height: 45rem;
+            /* width: 1024px; */
+            background-image:url(anime07.jpg) ;
+            background-size: cover;
+            color: white;
+            /* font: 30px; */
+            /* display: none; */
+
+            animation-name: mediaquery;
+            animation-duration: 2s;
+            /* animation-timing-function: 2s; */
+            animation-iteration-count: infinite;
+        }
+        .box h1, .box h2, .box h3{
+            display: none;
+        }
+        @media screen and (min-width:1024px){
+            .box h1{
+                display: block;
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width:1023) and (min-width:768){
+            .box h2{
+                display: block;
+                font-size: 50px;
+            }
+        }
+        @media screen and (max-width:767){
+            .box h3{
+                display: block;
+                font-size: 50px;
+            }
+        }
+        @keyframes mediaquery{
+            0%{
+                width: 100%;
+            }
+            20%{
+                width: 100%;
+            }
+            40%{
+                width: 800px;
+            }
+            60%{
+                width: 800px;
+            }
+            80%{
+                width: 500px;
+            }
+            100%{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>pc</h1>
+        <h2>tablet</h2>
+        <h3>smartphone</h3>
+    </div>
+</body>
+</html>

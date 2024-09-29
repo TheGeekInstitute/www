@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>navigation bar</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: bisque;
+    }
+
+    .nav{
+        background-color: black;
+        margin: 2px;
+        padding: 0px 15px;
+        border-radius: 15px;
+        /* height: 70px; */
+        
+
+    }
+
+    .nav ul li{
+        display: inline-block;
+    }
+
+    .nav ul li a{
+        display: block;
+        margin: 0px 10px;
+        padding: 25px 10px;
+        font-size: x-large;
+        font-weight: 700px;
+        text-decoration: none;
+        color: rgba(246, 247, 240, 0.938);
+       /* border: 1px solid red; */
+        
+    }
+
+    .nav ul li a:hover{
+        background-color: aqua;
+        color: white;
+    }
+    
+
+    .card{
+        /* border: 1px solid red; */
+        height: 350px;
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        margin-top: 170px;
+        background-color: rgb(127, 248, 208);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 4px 4px 6px gray;
+    }
+
+    .card img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 2px 2px 2px greenyellow,2px -2px 2px greenyellow;
+    }
+
+    .name{
+        font-family: cursive;
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        text-shadow: 2px 2px 3px red;
+    }
+    
+    .about{
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: justify;
+        text-shadow: 1px 1px 4px grey;
+        margin: 0px 10px;
+
+    }
+
+    .social{
+        padding: 10px;
+        font-size: 32px;
+    }
+
+    .social i{
+        margin: 10px;
+    }
+
+    .fb{
+        color: blue;
+    }
+    
+    .ld{
+        color: rgb(6, 74, 161);
+    }
+    
+    .tw{
+        color: cyan;
+    }
+    
+    .fb,.tw,.ld{
+        text-shadow: 2px 2px 1px black , 3px 3px 4px white;
+        /* border: 1px solid red; */
+
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+           <li><a href="#">home</a></li>
+           <li><a href="#">insert</a></li>
+           <li><a href="#">view</a></li> 
+        </ul>
+    </div>
+
+    <div class="card">
+        <img src="https://pbs.twimg.com/profile_images/1643209860807524357/a-KZZkRC_400x400.jpg" alt="Image">
+        <h2 class="name">Mani Kumar</h2>
+        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nulla illo aliquam, nostrum repudiandae qui dolores architecto reprehenderit saepe!</p>
+        <div class="social">
+            <a href="https://www.facebook.com/ManiKumar.Geek/" target="_blank"><i class="fa-brands fa-facebook fb"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin ld"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter tw"></i></a>
+    </div>
+</body>
+</html>

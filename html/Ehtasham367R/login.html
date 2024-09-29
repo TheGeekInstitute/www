@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: beige;
+        }
+
+        .box{
+         
+            width: 260px;
+            height: 300px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 130px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .box form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 90%;
+            width: 100%;
+        }
+
+        .box form input{
+            border: none;
+            outline: none;
+            border-style: solid;
+            border-width: 1px 1px 4px 1px;
+            border-color: black;
+            height: 30px;
+            width: 90%;
+            border-radius: 2px;
+            background-color:transparent;
+            margin: 7px 0;
+            font-size: large;
+            padding: 0 3px;
+        }
+
+        .box form label{
+            width: 90%;
+            display: block;
+            text-align: left;
+            font-size: large;
+        }
+
+        .box form #btn{
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Login</h1>
+        <form>
+            <label>Username</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <input type="submit" value="Login" id="btn">
+
+        </form>
+    </div>
+</body>
+</html>

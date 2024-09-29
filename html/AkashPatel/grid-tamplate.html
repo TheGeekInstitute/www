@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+        }
+        .grid{
+            /* display: flex; */
+        }
+        .box{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 2rem;
+            background-color: rgb(26, 13, 56);            
+        }
+        .sub-box{
+            display: flex;
+            position:relative;
+            left: 180px;
+        }
+        .box1{
+            border: 2px solid red;
+            /* padding:0  10px; */
+            margin: 0 10px;
+            font-size: 19px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            margin: 10px 10px;
+            margin-left: 20px;
+            padding: 9px 10px;
+             border-radius: 8px;
+
+        }
+        .box1 > p > span{
+            color: white;
+        }
+        .img{
+            /* border: 1px solid red; */
+            width: 14rem;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            color: white;
+        }
+        .img > img{
+
+            /* border: 2px solid black; */
+            height: 2.5rem;
+            width: 2.5rem;
+            border-radius: 50%;
+            /* margin-right: 20px; */
+        }
+        .img > p {
+            font-weight: bold;
+        }
+        input[type="submit"]{
+            /* border:2px solid green; */
+            width: 5rem;
+            height: 2.6rem;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: red;
+            outline: transparent;
+
+        }
+        .fix{
+            border: 2px solid red;
+            position:  absolute;
+            width: 14rem;
+            height: 90vh;
+            top: -83px;
+            background-color: blue;
+        }
+        .fix > ul li {
+            /* border: 2px solid; */
+            margin: 3px 0px;
+            height: 3rem;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 27px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            /* border-radius: 6px; */
+            transition: all 0.3s;
+        }
+        .fix > ul li:hover{
+            background-color: darkgoldenrod;
+        }
+        .para{
+            border: 2px solid red;
+            position: relative;
+            width: 77em;
+            height: 90vh;
+            top: -620px;
+            left: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">
+             <div class="sub-box">
+                <div class="box1">
+                    <p>Total Student: <span> 11</span></p>
+                </div>
+                <div class="box1">
+                    <p>Total Student: <span> 11</span></p>
+
+                </div>
+                <div class="box1">
+                    <p>Total Student: <span> 11</span></p>
+
+                </div>
+
+             </div>
+             <div class="img">
+                    <img src=".//images/2.jpeg" alt="">
+                    <p>Hi, Admin</p>
+                       <input type="submit"  value="Logout">
+             </div>
+        </div>
+    </div>
+    <div class="fix">
+         <ul>
+            <li>Student-1</li>
+            <li>Student-2</li>
+            <li>Student-3</li>
+            <li> Student-4</li>
+            <li>Student-5</li>
+            <li>Student-6</li>
+            <li>Student-7</li>
+            <li>Student-8</li>
+            <li>Student-9</li>
+            <li>Student-10</li>
+            <li>Student-11</li>
+            <li>Student-12</li>
+            <li>Student-13</li>
+
+         </ul>
+    </div>
+    <div class="para">
+        div.grid
+    </div>
+</body>
+</html>

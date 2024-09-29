@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Text</title>
+    <style>
+        h1{
+            font-size: 250px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-image: linear-gradient(45deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua);
+
+            color: transparent;
+            background-clip: text;
+            web-kit-background-clip: text;
+
+            background-size: 100%;
+
+            animation: color-change .5s ease-in-out 0s infinite alternate;
+        }
+
+        body{
+            background-color: black;
+        }
+
+
+
+        @keyframes color-change {
+            0%{
+                background-size: 100%;
+                /* background-image: linear-gradient(45deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua); */
+            }
+
+            25%{
+                background-size: 200%;
+                /* background-image: linear-gradient(90deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua); */
+            }
+            
+            50%{
+                background-size: 300%;
+                /* background-image: linear-gradient(135deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua); */
+            }
+
+            75%{
+                background-size: 400%;
+                /* background-image: linear-gradient(180deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua); */
+            }
+
+            100%{
+                background-size: 500%;
+                /* background-image: linear-gradient(225deg,red,green,blue,cyan,orange,pink,purple,yellow,aqua); */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>ABCD XYZ</h1>
+</body>
+</html>

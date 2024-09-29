@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .nav{
+            background-color: black;
+            height: 70px;
+        }
+
+        .container{
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .container .slider{
+            height: 70vh;
+            width: 500vw;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 20s;
+            animation-direction: alternate;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        .container .slider .images{
+            width: 100vw;
+            height: 70vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .container .slider .images .content{
+            /* border: 2px solid red; */
+            height: 40vh;
+            width: 70vw;
+            padding:10vh 5vw;
+            text-align: center;
+            border-top-left-radius: 10vw;
+            border-top-right-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            border-bottom-right-radius: 10vw;
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        @keyframes slider {
+            0%{
+                /* transform: translateX(0); */
+            }
+            
+            25%{
+                transform: translateX(-100vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                <div class="content">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cum, inventore incidunt quis consectetur ad quod, possimus debitis ab ex sint! Odio excepturi cum nesciunt nisi illum sint repudiandae minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem maiores hic eaque, voluptatibus unde recusandae, suscipit libero vel quia atque eveniet aliquam! Nobis dolores, laborum id itaque eos iste error.</p>
+                </div>
+            </div>
+
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                     <div class="content">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cum, inventore incidunt quis consectetur ad quod, possimus debitis ab ex sint! Odio excepturi cum nesciunt nisi illum sint repudiandae minima.</p>
+                </div>
+            </div>
+
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                   <div class="content">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cum, inventore incidunt quis consectetur ad quod, possimus debitis ab ex sint! Odio excepturi cum nesciunt nisi illum sint repudiandae minima.</p>
+                </div>
+            </div>
+
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                    <div class="content">
+                    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cum, inventore incidunt quis consectetur ad quod, possimus debitis ab ex sint! Odio excepturi cum nesciunt nisi illum sint repudiandae minima.</p>
+                </div>
+            </div> 
+
+            <div class="images" style="background-image: url(https://images.pexels.com/photos/352096/pexels-photo-352096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                <div class="content">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, cum, inventore incidunt quis consectetur ad quod, possimus debitis ab ex sint! Odio excepturi cum nesciunt nisi illum sint repudiandae minima.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

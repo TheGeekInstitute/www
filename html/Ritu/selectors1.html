@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        *{
+            margin: 10px;
+            background-color:bisque;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content h1{
+            text-align: center;
+            margin: 20px;
+        }
+        .content p{
+            color: blue;
+        }
+        .mid h1{
+            text-align: center;
+            margin: 20px;
+
+        }
+        .mid .child > p{
+            margin: 20px;
+            color: red;
+        }
+         h1{
+            margin: 20px;
+            text-align: center;
+        }
+        div ~ p{
+                color:green;
+            }
+        div + p{
+            color:brown;
+        } 
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h1>Descendant selector(space)</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ipsa eveniet cumque! Assumenda earum eos repudiandae nobis, illo reprehenderit debitis sunt odit temporibus delectus expedita et impedit error aliquam. Consequuntur!
+            </p>
+        </div>
+    </div>
+    <div class="mid">
+        <h1>Child selector (>)</h1>
+        <div class="child">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum amet, voluptatibus quaerat veniam ullam itaque perferendis adipisci accusantium eius earum illo ea consequuntur sequi optio, odit nesciunt deserunt magnam incidunt? </p></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel commodi aspernatur nisi corporis, autem quo. Debitis libero quidem nihil, vel in praesentium velit saepe accusamus nisi doloribus vitae, optio id?</div>
+        <div class="lorem"></div>
+    </div>
+        <h1>Adjacent Sibling Selector(+)</h1>
+        <div>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem dolorum nam maiores ut impedit saepe harum eos ratione repellendus culpa debitis, expedita distinctio non nostrum repudiandae nisi, ullam temporibus! </p>
+        </div>
+            <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quas dignissimos tempora rem consequuntur provident adipisci repellat in quo enim neque illo voluptates a sed, eaque ea quidem laborum? Consequuntur?
+            </p>
+            <h1>General Sibling selector(~)</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid officiis nam perspiciatis exercitationem quidem aut neque unde amet? Voluptatum praesentium adipisci doloremque? Esse sunt nam harum assumenda quae quis?</p>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est beatae et impedit nam eveniet quis? Accusamus aliquid, asperiores a, nulla esse fugiat mollitia totam ducimus saepe, quisquam ab. Doloremque, enim!</p>
+            </div>
+            <p>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit velit assumenda officia pariatur, corrupti amet. Culpa voluptate repudiandae odio cum! Repellat veritatis enim illo quisquam totam natus labore velit sequi!
+                </span>
+            </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ab commodi consequuntur architecto culpa asperiores veniam explicabo! Nihil distinctio consectetur corrupti numquam saepe corporis possimus. Delectus fugiat doloribus hic quidem.</p>
+    
+</body>
+</html>

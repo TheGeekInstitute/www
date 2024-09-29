@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* .parent .child .grand-child{
+            color: red;
+            font-size: 32px;
+        }
+
+        .parent1 > div{
+            color: red;
+        }
+        .parent1 > div > div{
+            color: blue;
+        }
+        p + span{
+            color: red;
+        } */
+
+         h1 + span{
+            color: cyan;
+        }
+
+        h1 ~ span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, doloribus id impedit voluptates nesciunt delectus corrupti! Impedit hic repellat natus, saepe laborum pariatur adipisci magnam dolorem voluptatum. Tempora, dicta vero?</p>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, animi perspiciatis sequi consequuntur molestiae quis distinctio architecto voluptatum? Facere assumenda doloremque dignissimos pariatur ipsa sapiente. Excepturi ipsum earum ut iusto.</p>
+            <div class="grand-child">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt qui dolores neque fuga rerum. Sint, exercitationem, animi ut optio nisi, accusantium perferendis dolores aliquid excepturi labore adipisci quibusdam. Fuga, natus?</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="parent1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, doloribus id impedit voluptates nesciunt delectus corrupti! Impedit hic repellat natus, saepe laborum pariatur adipisci magnam dolorem voluptatum. Tempora, dicta vero?</p>
+        <div class="child1">
+            <p>Child</p>
+            <div class="grand-child">
+                <p>Grand Child</p>
+            </div>
+        </div>
+
+        <div class="child2">
+            <p>Child</p>
+            <div class="grand-child">
+                <p>Grand Child</p>
+            </div>
+        </div>
+
+        <div class="child3">
+            <p>Child</p>
+            <div class="grand-child">
+                <p>Grand Child</p>
+            </div>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla itaque, vitae dolor incidunt asperiores eum, pariatur ad repudiandae error a aperiam libero rerum fugit, soluta numquam eaque reprehenderit. Recusandae, cum!</p>
+
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, in est aliquid repudiandae unde placeat necessitatibus voluptates rem aspernatur. Corporis deserunt illum aspernatur. Iusto nobis repellendus laborum quod? Expedita, accusamus!</span>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium totam illo illum repellat quas asperiores at rem veritatis nisi, fugiat, similique maiores inventore ipsum eius non accusantium magnam debitis soluta.</p>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque. Iusto, esse eveniet aspernatur necessitatibus omnis asperiores officiis vitae culpa, ipsa praesentium error quia earum. Laborum distinctio consequuntur placeat labore!</span>
+
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis labore similique sequi maiores impedit? Culpa cupiditate velit impedit odit aliquam ut explicabo, accusamus fugit quisquam saepe itaque eius quaerat deserunt.</h1>
+    
+    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, obcaecati? Temporibus corporis consequuntur alias recusandae provident eos sit officia blanditiis minus impedit doloribus dicta voluptate, qui voluptatem perferendis facilis neque?</span>
+    <br>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae deserunt impedit maxime consequuntur nemo eligendi, nesciunt, ex accusantium illum mollitia corporis laboriosam totam placeat aperiam voluptatibus nostrum voluptatum eos?</span>
+
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorum. Inventore, officia laudantium optio adipisci nostrum aperiam dignissimos? Dolorem nemo fugiat excepturi totam amet molestiae facere illo libero quod quae.</span>
+    </div>
+</body>
+</html>

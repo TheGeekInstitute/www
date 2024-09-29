@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        let arr=['Amit','Sumit','Ravi','Ankit'];
+        let data={
+            "name": "Anmol",
+            "age":25,
+            "gender":"male",
+            "class":"X"
+        }
+
+
+        //for of
+        // for(value of arr){
+        //     document.write(value+"<br>")
+        // }
+
+
+        // for(key in arr){
+        //     document.write( key+ ". " + arr[key] + "<br>")
+        // }
+
+
+        // for(key in data){
+        //     document.write(key + " : " + data[key] + "<br>")
+        // }
+    
+        
+        arr.forEach(function(value,key){
+            document.write(key + " -> " + value +"<br>")
+        });
+
+    </script>
+</body>
+</html>

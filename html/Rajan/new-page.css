@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+header .head{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+header .head h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header .head button{
+    font-size: large;
+    background-color: rgb(55, 121, 243);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 100px;
+    line-height: 50px;
+
+}
+header .head button:hover{
+    background-color: green;
+    border: 1px solid black;
+    box-shadow: 5px black;
+}
+.hero{
+    background-image: url(https://wallpaperaccess.com/full/763110.jpg);
+    line-height: 39rem;
+    background-size: cover;
+}
+.hero .email{
+    text-align: center;
+    /* border: 2px solid white; */
+}
+/* .hero h1{
+
+} */
+.hero .email button{
+    width: 6rem;
+    line-height: 3rem;
+    background-color: rgb(55, 121, 243);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    /* background-color: transparent ; */
+}
+.hero .email input{
+    width: 26rem;
+    line-height: 3rem;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 6px;
+}
+.hero .email h1{
+    /* border: 2px solid red; */
+    font-size: 44px;
+    width: 42rem;
+    line-height: 3rem;
+    margin: auto;
+    color: white;
+    position: relative;
+    top: 12rem;
+    /* padding-top: 20rem; */
+}
+.icons{
+    /* border:  1px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icons .box{
+    /* border: 1px solid red; */
+    margin: 5rem;
+    text-align: center;
+}
+.icons .box i{
+    font-size: 5rem;
+    color: royalblue;
+}
+.icons .box p{
+    /* border: 1px solid green; */
+    width: 18rem;
+    font-size: larger;
+}
+.icons .box h1{
+    font-size: x-large;
+}
+.third{
+    /* border:  1px solid black; */
+    display: flex;
+}
+.third .text{
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+}
+.third .img{
+    /* border: 1px solid green; */
+    width: 50%;
+
+}
+.third .img img{
+    width: 100%;
+    line-height: 100%;
+}
+.last{
+    /* border: 1px solid black; */
+    text-align: center;
+
+}
+.last h1{
+    font-size: xx-large;
+    margin-top: 5rem;
+}
+.last .imge img{
+    /* border:  1px solid rgb(30, 6, 168); */
+    width: 10rem;
+    line-height: 10rem;
+    border-radius: 50rem;
+    margin: auto;
+}
+.last .imge{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 2rem;
+}
+.last .data{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    /* border: 1px solid black; */
+    text-align: center;
+    background-image: url(https://wallpaperaccess.com/full/763110.jpg);
+    background-size: cover;
+}
+.footer input{
+    width: 26rem;
+    line-height: 3rem;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 6px;
+}
+.footer button{
+    width: 6rem;
+    line-height: 3rem;
+    background-color: rgb(55, 121, 243);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;   
+}
+.footer h1{
+    font-size: 44px;
+    width: 42rem;
+    line-height: 3rem;
+    margin: auto;
+    color: white;
+    padding-top:5rem ;
+}
+.lastfooter{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem;
+}
+.lastfooter .about{
+    font-size: 20px;
+    padding: 5px;
+}
+.lastfooter .website{
+    font-size: 15px;
+}
+.lastfooter .left{
+    font-size: 35px;
+    color: royalblue;
+    align-items: center;
+    justify-content: center;
+}

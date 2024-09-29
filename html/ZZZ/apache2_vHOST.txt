@@ -1,0 +1,22 @@
+https://app.simplenote.com/p/SdDKhM
+
+Apache2 vHOSTS
+
+mkdr -p /var/www/site1.com/public_html
+mkdr -p /var/www/site2.com/public_html
+
+sudo cp /etc/apache2/sites-avilable/000-default.conf /etc/apache2/sites-avilable/site1.com.conf
+
+sudo cp /etc/apache2/sites-avilable/000-default.conf /etc/apache2/sites-avilable/site2.com.conf
+
+edit those file
+
+ServerAdmin abc@abc.net
+DocumentRoot /var/www/site1.com/public_html 
+ServerName site1.com
+ServerAlias www.site1.conf
+
+same for site 2
+sudo a2ensite site1.com.conf
+sudo a2ensite site2.com.conf
+sudo a2dissite 000-default.conf

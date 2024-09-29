@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .box{
+            /* border: 2px solid black; */
+            
+        }
+        .box div{
+            background-color: gray;
+            height: 10px;
+            margin: 20px;
+        }
+        .box div::after{
+            content: '';
+            background-color:red;
+            display: block;
+            position: relative;
+            top:0;
+            left: 0;
+            width: 0%;
+            height: 10px;
+        } 
+        .box  .one::after{
+            background-color: green;
+            content: '';
+            background-color:red;
+            display: block;
+            position: relative;
+            top:0;
+            left: 0;
+           
+            height: 10px;
+            animation: fill-10 10s linear 0s 1 alternate forwards;
+        }
+        @keyframes fill-30 {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 30%;
+            }
+        }
+
+        @keyframes fill-60 {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 60%;
+            }
+        }
+
+
+        @keyframes fill-80 {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 80%;
+            }
+        }
+
+        @keyframes fill-90 {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 90%;
+            }
+        }
+
+        @keyframes fill-10 {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width: 10%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="eight"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+        
+
+    </div>
+</body>
+</html>

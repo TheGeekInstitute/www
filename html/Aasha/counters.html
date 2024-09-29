@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+
+    <style>
+        .box{
+            counter-reset: number ;
+        }
+
+
+      .box  h1::before{
+            content:counter(number,upper-roman) ;
+            counter-increment: number;
+            color: white;
+            background-color: red;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+.main{
+    counter-reset: section ;
+}
+
+.main h1::before{
+    content: counter(section) " : ";
+    counter-increment: section;
+    color: blue;
+}
+
+h1{
+    counter-reset: subsection;
+}
+h2{
+    text-indent: 30px;
+}
+
+h2::before{
+    /* content: counter(section) "." counter(subsection) " "; */
+    content:  counter(subsection,lower-roman) " ";
+    counter-increment: subsection;
+    color: red;
+}
+
+input[data-abcd]{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+        <h1>Four</h1>
+    </div>
+
+<div class="main">
+    <h1>Website</h1>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JS</h2>
+    <h1>Languages</h1>
+        <h2>Java</h2>
+        <h2>Python</h2>
+    <h1>Colours</h1>
+        <h2>Red</h2>
+        <h2>Green</h2>
+</div>
+
+
+<input type="text" data-abcd="field">
+<input type="password">
+</body>
+</html>

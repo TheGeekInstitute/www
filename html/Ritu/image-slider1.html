@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image movement</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(6, 179, 179);
+            color: white;
+            text-align: center;
+            height: 80px;
+            padding: 0 10px;
+        }
+        .logo{
+            line-height: 80px;
+            font-size: 3rem;
+            font-weight: 900;
+            background-image:linear-gradient(45deg,red,blue,yellow,rgb(49, 233, 49),red,blue,yellow,rgb(49, 233, 49),red,blue,yellow,rgb(49, 233, 49)) ;
+            color: transparent;
+            -webkit-background-clip: text;
+            font-family: cursive;
+            animation-name: sliders;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+        }
+        .ch{
+            display: flex;
+           
+        }
+       
+        .menu{
+            display: flex;
+            line-height: 80px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: cursive;
+            
+        }
+        .menu  li a{
+            color: white;
+            margin: 0 10px;
+        }
+        #btn,.btn1,.btn2{
+            display: none;
+        }
+        @media  screen and (max-width:700px){
+           .nav{
+            height: 60px;
+            text-align: center;
+           }
+           .nav .logo{
+            line-height: 60px;
+            font-size: 2.8rem;
+           }
+            .ch{
+                display: block;
+                font-size: 3rem;
+                line-height: 80px;
+                
+            }
+            #btn,.btn2{
+                display: none;
+            }
+            .btn1{
+                display: block;
+            }
+            
+            .menu{
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: rgb(0, 102, 255);
+                height: 200px;
+                flex-direction:column;
+                display: none;
+                align-items: center;
+                z-index: 10 ;
+            }
+            .menu li a{
+                border-bottom: 2px solid white ;
+                line-height: 55px;
+                display:block;
+              
+                }
+                .nav .ch #btn:checked ~ .menu{
+                display: block;
+                }
+                .nav .ch #btn:checked ~ .btn1{
+                display: none;
+                }
+                .nav .ch #btn:checked ~ .btn2{
+                display: block;
+                    }
+                
+            
+            
+
+        }
+        .menu li a:hover{
+            color: red;
+            text-shadow: 0px 0px 4px gold;
+        }
+        .main{
+            height: 70vh;
+            width: 100vw;
+            overflow: hidden;
+            position: absolute;
+            z-index: 5;
+        }
+        .main .slider{
+            height: 70vh;
+            width: 600vw;
+            display: flex;
+            animation-name: image-slider;
+            animation-duration: 40s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+        }
+        .main .slider .image .content{
+            text-align: center;
+            height: 40vh;
+            width: 65vw;
+            padding: 2rem 1rem;
+            /* border: 2px solid red; */
+            background-color: rgba(0, 0, 0, 0.459);
+            backdrop-filter: blur(3px);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 50px;
+            font-size: 1.3rem;
+            box-shadow: 0px 0px  3px white;
+            
+        }
+        .main .slider .image{
+            height: 70vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            color: white;  
+        }
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+            25%{
+                transform: translateX(-100vw);
+            }
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+            45%{
+                transform: translateX(-200vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+            65%{
+                transform: translateX(-300vw);
+            }
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+            90%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+        }
+
+
+       
+        @keyframes sliders {
+            0%{
+                background-size: 0;
+            }
+            25%{
+                background-size: 100%;
+            }
+            50%{
+                background-size: 200%;
+            }
+            75%{
+                background-size: 300%;
+            }
+            100%{
+                background-size: 400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"> Website</div>
+        <ul class="ch">
+        <input type="checkbox" id="btn">
+        <label for="btn" class="btn1"><ion-icon name="menu-outline"></ion-icon></label>
+        <label for="btn" class="btn2"><ion-icon name="close-outline"></ion-icon></label>
+        <div class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://images.unsplash.com/photo-1618588507085-c79565432917?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://img.freepik.com/premium-photo/fantastic-view-kirkjufellsfoss-waterfall-near-kirkjufell-mountain-sunset_761071-868.jpg?w=2000);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://images.unsplash.com/photo-1610878180933-123728745d22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuYWRhJTIwbmF0dXJlfGVufDB8fDB8fHww&w=1000&q=80);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://img.freepik.com/premium-photo/suspension-bridge-travel-nature-scenery-building_1417-264.jpg?w=2000);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://i.pinimg.com/736x/5b/99/b3/5b99b3974c2d889fc1fb703b473394de.jpg);">
+            
+                <div class="content">
+                    <h1>Welcome To Our Website </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus officiis repudiandae est totam officia at et nostrum. Amet, pariatur? Dolores delectus possimus tenetur, id quas molestias </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

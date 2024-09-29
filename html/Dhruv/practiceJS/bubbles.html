@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbles</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+            /* line-height: 50px; */
+        }
+        
+        .box p{
+            font-size: large;
+            /* line-height: 50px; */
+            font-weight: 900;
+        }
+
+        .bob{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .text{
+            display: none;
+        }
+
+        nav{
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0 50px;
+        }
+        .nav p{
+            background-color: rebeccapurple;
+            padding: 10px;
+            border: 3px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <p class="score">Score : <span id="score">0</span></p>
+            <p class="reset">Reset Game</p>
+            <p class="chance">Chance Left : <span id="chance">10</span></p>
+    </nav>
+
+    
+<div class="bob">
+ 
+
+    </div>
+
+
+
+</div>
+
+    <script>
+        let score = document.querySelector("#score")
+        let reset = document.querySelector(".reset");
+        let ChanceLeft = document.querySelector("#chance")
+        let num = parseInt(ChanceLeft.innerText)
+
+
+let sum =0;
+let chance=0;
+
+        let bob = document.querySelector(".bob");
+        // let box = document.querySelector(".box")
+        for(let i=0;i<=100;i++){
+            
+            let random = Math.ceil(Math.random()*100);
+            let add = ` 
+            <div class="box">
+                <p class="text">${random}</p>
+                </div>
+                `;
+
+                bob.insertAdjacentHTML("afterbegin",add)
+        }
+
+        let bubble = Array.from(bob.children);
+            
+            bubble.forEach((e)=>{
+               
+                    e.addEventListener('click',()=>{
+                    if(chance<=10){    
+                        chance+=1;
+                        sum+= parseInt(e.children[0].innerText)
+                        score.innerText=sum;
+                        ChanceLeft.innerText=(num+1)-chance
+                        e.children[0].style.display = "block"
+                        e.style.backgroundColor = "green"
+                        console.log(chance + " " + sum)
+                    }
+                    else{
+
+                        alert("YOUR SCORE IS "+sum)
+
+                    }
+
+                })
+         
+          
+           
+            })
+
+               reset.addEventListener("click",()=>{
+            location.reload()
+        })
+
+    </script>
+    
+</body>
+</html>

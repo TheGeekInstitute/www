@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float With Clear</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+           
+        }
+
+        div{
+            margin: 10px;
+        }
+        .main,.main1{
+            border: 2px solid red;
+            overflow:auto;
+        }
+
+        .main img{
+            float: right;
+        }
+
+        .main p{
+            display: inline;
+            clear: right;
+            /* text-align:justify; */
+        }
+
+        .main1 img{
+            float: left;
+        }
+
+        .main1{
+            clear: right;
+        }
+    
+    .text {
+        border: 2px solid red;
+        background-image: url("../web/images/11.jpg");
+        color:  white;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        <img src="../web/images/11.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore animi adipisci molestias. Nemo illo veritatis voluptatem id corporis, dicta eius quis cupiditate, fuga a voluptas vel accusantium sed exercitationem!</p>
+    </div>
+
+
+    <div class="main1">
+        <img src="../web/images/11.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime inventore animi adipisci molestias. Nemo illo veritatis voluptatem id corporis, dicta eius quis cupiditate, fuga a voluptas vel accusantium sed exercitationem!</p>
+    </div>
+    
+
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ad dignissimos odio. Eum, quas. Ut animi, quaerat culpa reprehenderit sunt deleniti voluptas autem sequi eaque architecto nihil ab, et libero?</p>
+    </div>
+
+</body>
+</html>

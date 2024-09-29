@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            padding: 50px 210px;
+        }
+
+        .image1{
+            position:absolute;
+            top: 70px;
+            left: 100px;
+            z-index: 200;
+            padding: 200px 120px;
+        }
+        
+        .image2{
+            
+            position:absolute;
+            z-index: 100;
+            top: 0;
+           
+        }
+
+        .box{
+            margin-top: 300px;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            overflow: scroll;
+            resize: both; padding: ;
+        }
+    </style>
+</head>
+<body>
+    <img src="../web/images/11.jpg" alt="Image1" class="image1">
+    <img src="../web/images/12.jpg" alt="Image1" class="image2">
+
+
+<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae animi rem voluptate ipsa natus minima, facere dolores adipisci quaerat quo, explicabo nihil voluptatum aperiam iste accusamus. Minima, nesciunt vel.
+Nostrum vero reiciendis eos magni dolorem deserunt corrupti impedit ipsam. Doloremque ea, consectetur ex sapiente assumenda deleniti fuga incidunt odit, natus beatae dolorem voluptates dolor consequuntur reprehenderit ipsam mollitia quaerat!</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background-color: rgb(183, 248, 226);
+        }
+
+        .card{
+            height: 40vh;
+            width: 300px;
+            /* border: 1px solid red; */
+            margin: auto;
+            text-align: center;
+            padding: 1vh;
+            margin-top: 30vh;
+            background-color: rgb(142, 248, 212);
+            box-shadow: 3px 3px 4px grey;
+            border-radius: 1.5vh;
+        }
+
+        .card img{
+            height: 90px;
+            width: 90px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 2px 2px 2px grey;
+        }
+        .name{
+            color: rgb(3, 10, 69);
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px greenyellow , 3px 3px 4px red;
+
+        }
+
+        .card p{
+            font-weight: 600;
+            padding: 10px;
+            color: blueviolet;
+        }
+
+        .social{
+            font-size: xx-large;
+            padding: 5px;
+            margin: 5px;
+        }
+        .fb{
+            color: blue;
+        }
+        .tw{
+            color: cyan;
+        }
+        .ig{
+            color: rgb(252, 71, 207);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://lh3.googleusercontent.com/a/AEdFTp5aoHiRSivgig1PC2imCG6iB0fIgimU5q2e3Dqy" alt="ABCD">
+        <h1 class="name">Mani Kumar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolor, aliquid</p>
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-instagram ig" aria-hidden="true"></i>
+
+            </a>
+            <a href="#">
+                <i class="fa fa-facebook fb" aria-hidden="true"></i>
+
+            </a>
+            <a href="#">
+                <i class="fa fa-twitter tw" aria-hidden="true"></i>
+
+            </a>
+        </div>
+    </div>
+</body>
+</html>

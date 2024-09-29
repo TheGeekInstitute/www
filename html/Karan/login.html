@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://media.istockphoto.com/id/1308682666/vector/blue-gradient-soft-background.jpg?s=612x612&w=0&k=20&c=CBSD2BDe2uMi-Zm65ny6KoPKXsTPdk5K8wt_vMIb3Hc=");
+            /* background-image: linear-gradient(to right, blue,rgb(46, 250, 5)); */
+             /* background-image: url("https://img.freepik.com/premium-photo/abstract-colorful-wallpaper_692702-9806.jpg"); */
+            height: 72vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .hero{
+            width: 270px;
+            height: 270px;
+            margin: auto;
+            margin-top: 250px;
+            padding: 13px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 70px 15px black;
+            font-size: 20px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyYWRpZW50fGVufDB8fDB8fHww&w=1000&q=80");
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 4px 4px 4px blue;
+            color: white;
+        }
+        .hero input{
+            font-weight: 700;
+            padding: 6px;
+            border: 1px solid black;
+            border-bottom: 4px solid black;
+            margin-top: 10px;
+            border-radius: 6px;
+            /* background-image: linear-gradient(to right, blue,rgb(71, 218, 42)); */
+            background-color: transparent;
+            outline: none;
+             text-shadow: 4px 4px 4px blue;
+            color: white;
+            caret-color: white;
+            transition: all .8s linear;
+            
+            /* margin-left: 25px; */
+        }
+    .hero input:hover{
+        box-shadow: 2px 2px 4px green;
+    }
+       .btn{
+            /* margin-left: 60px; */
+            display: block;
+            margin: auto;
+            padding:6px;
+            border: 1px solid black;
+            border-bottom: 4px solid black;
+            color: black;
+            font-weight: 800; 
+            margin-top: 10px;
+            border-radius: 6px;
+            background-color: transparent;
+            transition: all .6s linear;
+            /* background-image: linear-gradient(to right, rgb(52, 52, 228),rgb(66, 212, 37)); */
+        }
+
+        form{
+            margin-left: 27px;
+        }
+        .btn:hover{
+            background-image: linear-gradient( to right, rgb(21, 129, 231),blue);
+            color: #fff;
+            box-shadow: 2px 2px 4px green;
+        }
+        @media only screen and (max-width:600px) {
+            .hero{
+                background-color: red;
+                margin-right: 100px;
+                width: auto;   
+            }
+      
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Login</h1>
+        <form action="">
+            <label >Username</label>
+            <input type="text">
+            <label >password</label>
+            <input type="password">
+            <button class="btn">sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

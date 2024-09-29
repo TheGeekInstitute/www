@@ -1,0 +1,17 @@
+body{
+    background-color: cyan;
+}
+
+.heading1{
+    color: red;
+    background-color: black;
+}
+
+#heading2{
+    color:red;
+    background-color: black;
+}
+
+nav{
+    color: black;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+            height:100vh ;
+            width:100vw;
+            text-align: center;
+
+
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+
+            grid-template-rows: 100px 60px 1fr 50px;
+
+            gap: 10px;
+        }
+
+        .box {
+            text-align:center;
+            /* line-height: 150px; */
+            font-size:x-large;
+            font-weight:500;
+        }
+
+        .box1 {
+
+            background-color: rgba(0, 0, 0, 0.300);
+            /* border: 2px solid black; */
+
+            grid-column: 1/4 
+            
+
+        }
+
+
+        .box2 {
+            background-color:rgba(0, 0, 0, 0.300);
+            grid-column: 1/4;
+            /* border: 2px solid black; */
+
+        }
+
+        .box3 {
+            background-color:rgba(0, 0, 0, 0.300);
+            /* border: 2px solid black; */
+
+
+
+        }
+
+        .box4 {
+            background-color: rgba(0, 0, 0, 0.300);
+            /* border: 2px solid black; */
+
+        }
+
+        .box5 {
+            background-color:rgba(0, 0, 0, 0.300);
+            /* border: 2px solid black; */
+
+        }
+
+        .box6 {
+            /* border: 2px solid black; */
+            background-color:rgba(0, 0, 0, 0.300);
+            grid-column: 1/4;
+        }
+
+        .box7 {
+            background-color:rgba(0, 0, 0, 0.300);
+        }
+
+        .box8 {
+            background-color:rgba(0, 0, 0, 0.300);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1"><p>Header</p></div>
+        <div class="box box2">Navigation Menu</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">Footer</div>
+      
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

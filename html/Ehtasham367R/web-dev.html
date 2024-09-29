@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-Dev</title>
+
+</head>
+<style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+
+.wrapper{
+    background-image:url(https://preview.colorlib.com/theme/busicol/img/banner/banner2.png.webp);
+   
+    
+}
+
+
+.nav{
+    display: flex;
+    height: 40px;
+    background-color:rgba(0, 0, 0, 0.308);
+    justify-content: space-between;
+    align-items: center;
+padding: 0px 100px;
+
+    
+}
+.nav .one{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .two{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav .two li{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.nav .two li a{
+    display:flex;
+    margin: 30px;
+    color: white;
+    
+     
+}
+.nav .one li a{
+    display: flex;
+    margin: 5px;
+    font-weight: 900;
+    font-size: large;
+    color: white;
+    
+}
+.nav .one li a:hover{
+    color: green;
+    transition: 0.9s;
+
+}
+
+
+
+.nav2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: palevioletred; */
+    padding: 0px 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid black;
+
+
+}
+.nav2 .logo{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color: white;
+}
+.nav2 .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+
+}
+.nav2 .links  .sub1{
+    display:none;
+    position: absolute;
+    justify-content:center;
+    background-color: white;
+    color: black;
+    
+   
+}
+
+.nav2  .sub1:hover  { 
+    background-color: white;
+    color: black;
+}
+
+.nav2 .sub2{
+    display: block;
+    position: absolute;
+    background-color: white;
+
+
+}
+
+
+.nav2 .links .sub2{
+    display: none;
+    color: black;
+    
+}
+.nav2 .links .sub2 li a{
+    color: black;
+    display: flex;
+}
+
+.nav2 .links:hover .sub2{
+    background-color: white;
+    color:black;
+}
+
+.nav2  .sub1 li a{
+  display: flex;
+  margin: 15px;
+  font-weight: 900;
+  color: black;
+  font-size: large;
+  
+ }
+ .nav2 li a{
+  display: flex;
+  margin: 15px;
+  font-weight: 900;
+  color: white;
+  font-size: large;
+  
+ }
+ .nav2  ul li a:hover{
+    color: green;
+    transition: 0.9s;
+
+ }
+ 
+ 
+
+.nav2 .links:hover .sub1 {
+    display:block;
+    position: absolute;
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+
+}
+ 
+
+ h1{
+    color:white;
+    margin-top: 120px;
+    padding-left: 90px;
+
+    
+
+ }
+ p{
+    color:white;
+    padding-left: 90px;
+    padding-top: 20px;
+    
+ }
+.nav .two .fa-solid{
+    color:green;
+    margin-right: 10px;
+
+  
+}
+.nav2 .new{
+    border:1px solid green;
+    background-color: green;
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    padding: 90px;
+    
+
+}
+
+.container .box1{
+    border: 2px solid green; 
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    
+
+}
+.container .box {
+    border: 1px  solid white;
+    border-radius: 5px ;
+    padding:15px;
+    width: 200px;
+    color: white;
+    margin-left: 20px;
+
+
+}
+.container .box:hover{
+    background-color: green;
+    border: 1px solid green;
+    transition: 0.9s;
+}
+.container .box i{
+margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+   color: black;
+   text-align: center;
+   margin: 60px; 
+}
+
+
+
+
+
+.groups{
+    border: 2px solid black;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+}
+
+
+
+
+
+</style>
+<body>
+<div class="wrapper">
+    <div class="nav">
+        <ul class="one">
+            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+        
+        </ul>
+        <ul class="two">
+            <li><a href=""><i class="fa-solid fa-envelope"></i> info@docmed.com</a></li>
+        
+            <li><a href=""><i class="fa-solid fa-phone"></i>1601-1609 6780</a></li>
+        
+        </ul>
+        
+        
+            </div>
+        
+        
+        
+        
+        <div class="nav2">
+            <div class="logo"><img src="https://themewagon.github.io/busicol/img/logo.png" alt=""></div>
+            
+            <ul class="links">
+             <li><a href="">Home</a></li>
+             <li><a href="">about</a></li>
+             <li><a href="">services</a></li>
+            <li><a href="">Blog <i class="fa-solid fa-angle-down"></i></a>
+        
+        
+        
+                <ul class="sub1">
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Single-Blog</a></li>
+                </ul>
+        
+        
+        
+        
+            </li>
+             <li><a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub2">
+                    
+                    <li><a href="">Element</a></li>
+                    <li><a href="">sdafasdf</a></li>
+                    <li><a href="">asdfas</a></li>
+                </ul>
+            
+            
+            
+            </li>
+            <li><a href="">contect</a></li>
+        
+                </ul>
+                
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        
+                <div class="new"><a href="">Get a Quote</a></div>
+        
+        
+            </div>
+        
+        <h1> Grow Big With <br> Musicol Business</h1>
+        <div><p>Nam libero tempore, cum soluta nobis est eligendi optio <br> cumque nihil impedit quo minus.</p></div>
+        <div class="container">
+            <div class="box1">Our services</div>
+            <div class="box"><i class="fa-solid fa-play"></i>See How It Work</div>
+        </div>
+       
+</div>
+   
+<h1>Explore Our solutions</h1>
+  
+</div>
+
+
+
+
+
+
+</div>
+</div> 
+</body>
+</html>

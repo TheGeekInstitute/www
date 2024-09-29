@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-image: url("../wallpaper.jpg");
+            height: 300px;
+            width: 400px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            border: 2px solid white;
+            height: 150px;
+            width: 200px;
+            background-color: rgba(255, 255, 255, 0.137);
+            /* backdrop-filter: blur(1px); */
+            backdrop-filter: saturate(500%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="../wallpaper.jpg" alt=""> -->
+        <div class="box"></div>
+    </div>
+</body>
+</html>

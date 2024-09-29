@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let name="ABCD";
+        //  name="XYZ";
+
+        // var abcd="AAA";
+        // var abcd="XYZ";
+        // document.write(name)
+
+        // function abcd(){
+        //     document.write("HELLO");
+        // }
+
+        // let abcd = ()=>{
+        //     document.write("HELLO");
+        // }
+     
+        // abcd();
+
+
+
+        // function print_data(){
+        //     // document.write(data)
+
+        //     for(x in arguments){
+        //         document.write(arguments[x]);
+        //     }
+
+        // }
+
+
+        function print_data(...args){
+            // document.write(data)
+            let sum=0;
+            for(x in args){
+                sum+=args[x];
+                
+            }
+
+            document.write(sum)
+            
+        }
+
+
+
+    //    document.write
+
+    print_data(45,25,"Amit");
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            /* padding: 50px; */
+            display: flex;
+            justify-content:space-between;
+            /* align-items: flex-start; */
+            /* align-content: start; */
+            align-content: space-between;
+            /* flex-wrap:wrap; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+        }
+
+        .box{
+            border: 1px solid red;
+            width: 70px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            margin: 5px;
+            background-color: green;
+            color: white;
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
+            flex-basis: 200px;
+
+        }
+
+         .box1{
+            align-self: flex-start;
+            order: 10;
+        }
+
+        .box3{
+            /* align-self: flex-end; */
+            order: -1;
+        }
+
+        .box5{
+            align-self: flex-start;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+    </div>
+</body>
+</html>

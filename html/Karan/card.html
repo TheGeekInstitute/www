@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        .card{
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+        }
+        
+        .content{
+            position: absolute;
+            font-size: 60px;
+            line-height: 300px;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s;
+        }
+        .front,.back{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px green;
+        }
+        
+        .front{
+            background-color: yellow;
+            color: red;
+        }
+        
+        .back{
+            color: white;
+            background-color: chartreuse;
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .content{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

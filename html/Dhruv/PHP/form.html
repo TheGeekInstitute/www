@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+        margin: 0px;
+        padding: 0%;
+        /* box-sizing: border-box; */
+    }
+    .form{
+
+        margin: auto;
+        margin-top: 200px;
+        background-color: rgb(179, 162, 162);
+        height: 150px;
+        width: 180px;
+        color: white;   
+        text-align: center;
+        padding: 10px; 
+        outline: none;
+        border-radius: 10%;
+        box-shadow: 5px 6px gray;
+        
+    }
+    
+    .submit{
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 10px;
+        box-shadow:2px 2px gray;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form">
+    <form action="data.php" method="post">
+        <label for="">Username</label>
+        <input type="text" name="Username" style="height: 20px;border-radius: 10%;" >
+    <br>
+        <label for="">Password</label>
+        <input type="text" name="Password" style="height: 20px;border-radius: 10%;">
+    <br>
+        <input type="submit" name="submit" class="submit">
+    </form>
+</div>
+</body>
+</html>

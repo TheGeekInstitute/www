@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .container{
+            border: 2px solid black;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .container .box{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            text-align: center;
+            
+           
+        }
+
+        .container .box label{
+            display: block;
+            text-align: right;
+           
+            padding-inline: 4px;
+            width: 50%;
+            position: relative;
+            right: -50%;
+            cursor: pointer;
+            z-index: 999;
+            color: red;
+
+        }
+
+        .container .box p{
+            clear: both;
+            font-size: 40px;
+            position: relative;
+            top: -20px;
+            left: -5px;
+
+        }
+
+        .container .add{
+            font-size: 40px;
+            font-weight: 900;
+            cursor: pointer;
+            /* line-height: 50px; */
+            color: blue;
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="add">
+            +
+        </div>
+    </div>
+
+
+    <script>
+        let container = document.querySelector(".container");
+        let addBox =document.querySelector(".add");
+
+        
+        
+        
+        addBox.addEventListener('click',()=>{
+            let count  = container.childElementCount;
+            let box = document.createElement("div");
+            let label = document.createElement("label");
+            let close = document.createTextNode("X");
+            let para = document.createElement("p");
+            label.classList.add("close")
+            label.append(close);
+            para.append(count);
+            box.append(label)
+            box.append(para);
+            box.classList.add("box");
+            container.insertBefore(box,addBox)
+            let closeBtn = document.querySelectorAll(".close");
+            
+            closeBtn.forEach((e)=>{
+                e.addEventListener("click",()=>{
+                    container.removeChild(e.parentElement)
+                    
+                    console.clear()
+                })
+            })
+            console.clear()
+
+            
+        })
+
+
+       
+
+
+
+    </script>
+</body>
+</html>

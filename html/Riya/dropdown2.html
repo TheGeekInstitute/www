@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+           background-image: url(https://images.rawpixel.com/image_social_portrait/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsb2ZmaWNlMV9iZWF1dGlmdWxfYV9oZWFydF9tYWRlX29mX2dsYXNzX29uX2FfYmVhY2hfd2FsbF8zZDgyM2M5NC02Y2IyLTRjMmEtYTgxZS1iZTY1MTE1MzE3MmEuanBn.jpg);
+           background-position: center;
+        }
+        .nav .logo{
+            font-size: 45px;
+        }
+        .nav .links{
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+        }
+        .nav > .links > li > a{
+            display: block;
+            margin: 0 10px;
+            padding: 0 10px;
+            color: white;
+            font-size: large;
+            line-height: 50px;
+            transition: all 3s linear;
+        }
+        .nav > .links > li > a:hover{
+            background-color: chartreuse;
+        }
+        .nav .links li .sub{
+            position: absolute;
+            top: 50px;
+            width: 100px;
+            background-color: palevioletred;
+            text-align: center;
+            display: none;
+        }
+        .nav .links li .sub li a{
+            display: block;
+            line-height: 40px;
+            color: black;
+        }
+        .nav .links li .sub li a:hover{
+            background-color: crimson;
+        }
+        .nav .links li:hover .sub{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a>
+                <ul class="sub">
+                    <li><a href="#">page 1</a></li>
+                    <li><a href="#">page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

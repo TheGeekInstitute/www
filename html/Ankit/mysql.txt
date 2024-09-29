@@ -1,0 +1,219 @@
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| Aasha              |
+| Akash              |
+| Dhruv              |
+| Karim              |
+| Nikhil             |
+| OwnOnlineShop      |
+| Ritu               |
+| Shivam             |
+| Shivank            |
+| abcd               |
+| chat               |
+| information_schema |
+| khushbu            |
+| mysql              |
+| new                |
+| performance_schema |
+| phpmyadmin         |
+| sandeep            |
+| sys                |
+| users              |
+| wordpress          |
++--------------------+
+21 rows in set (0.009 sec)
+
+MariaDB [(none)]> use Akash
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [Akash]> show tables;
++-----------------+
+| Tables_in_Akash |
++-----------------+
+| emp             |
+| empdb           |
+| img             |
+| notepad         |
+| user_table      |
+| users           |
+| voting          |
++-----------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [Akash]> select * from emp where salary>=5000;
++--------+--------+--------+----------+-------+
+| emp_no | name   | gender | salary   | image |
++--------+--------+--------+----------+-------+
+|      4 | Sita   | Female |  7800.00 |       |
+|      5 | Sonu   | Male   |  6500.00 |       |
+|      6 | Babita | Female |  7800.00 |       |
+|     12 | Shivam | Male   | 48325.00 |       |
++--------+--------+--------+----------+-------+
+4 rows in set (0.001 sec)
+
+MariaDB [Akash]> select * from emp where salary<5000;
++--------+-------+--------+---------+----------------------------------+
+| emp_no | name  | gender | salary  | image                            |
++--------+-------+--------+---------+----------------------------------+
+|     14 | asdas | as     | 3424.00 |                                  |
+|     15 | adas  | Male   | 1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas | Male   |   23.00 | uploads/ffee23e74f806c460877.gif |
++--------+-------+--------+---------+----------------------------------+
+3 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp where gender="Male";
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [Akash]> select * from emp where gender="Male" and salary >5000;
++--------+--------+--------+----------+-------+
+| emp_no | name   | gender | salary   | image |
++--------+--------+--------+----------+-------+
+|      5 | Sonu   | Male   |  6500.00 |       |
+|     12 | Shivam | Male   | 48325.00 |       |
++--------+--------+--------+----------+-------+
+2 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp where gender="Male" OR salary >5000;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp order by emp_no desc;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      4 | Sita   | Female |  7800.00 |                                  |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp order by emp_no asc;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp order by name asc;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [Akash]> select * from emp order by name desc;
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|      4 | Sita   | Female |  7800.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
+|      6 | Babita | Female |  7800.00 |                                  |
+|     14 | asdas  | as     |  3424.00 |                                  |
+|     15 | adas   | Male   |  1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
++--------+--------+--------+----------+----------------------------------+
+7 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp where name like "S%";
++--------+--------+--------+----------+----------------------------------+
+| emp_no | name   | gender | salary   | image                            |
++--------+--------+--------+----------+----------------------------------+
+|      4 | Sita   | Female |  7800.00 |                                  |
+|      5 | Sonu   | Male   |  6500.00 |                                  |
+|     12 | Shivam | Male   | 48325.00 |                                  |
+|     16 | sadas  | Male   |    23.00 | uploads/ffee23e74f806c460877.gif |
++--------+--------+--------+----------+----------------------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [Akash]> select * from emp where name like "%s";
++--------+-------+--------+---------+----------------------------------+
+| emp_no | name  | gender | salary  | image                            |
++--------+-------+--------+---------+----------------------------------+
+|     14 | asdas | as     | 3424.00 |                                  |
+|     15 | adas  | Male   | 1231.00 | uploads/af06c871b4bb12fbcc59.jpg |
+|     16 | sadas | Male   |   23.00 | uploads/ffee23e74f806c460877.gif |
++--------+-------+--------+---------+----------------------------------+
+3 rows in set (0.000 sec)
+
+MariaDB [Akash]> select * from emp where name like "_o%";
++--------+------+--------+---------+-------+
+| emp_no | name | gender | salary  | image |
++--------+------+--------+---------+-------+
+|      5 | Sonu | Male   | 6500.00 |       |
++--------+------+--------+---------+-------+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select 4+9;
++-----+
+| 4+9 |
++-----+
+|  13 |
++-----+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]> select 4+9 as SUM;
++-----+
+| SUM |
++-----+
+|  13 |
++-----+
+1 row in set (0.000 sec)
+
+MariaDB [Akash]>

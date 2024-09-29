@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(35, 34, 36);
+        }
+
+        .accordian{
+            margin: 5px;
+        }
+        .accordian{
+            /* border: 2px solid red; */
+            background-color: aqua;
+        }
+        .accordian label{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 30px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+         .container{
+            font-size: 20px;
+            display: none;
+            transition: all 0.5;
+        }
+    
+        input{
+            display: none;
+        }
+        #btn:checked ~ .container{
+            display: block;
+        }
+        
+
+        #btn1:checked ~ .container{
+            display: block;
+        }
+        #btn2:checked ~ .container{
+            display: block;
+        }
+        #btn3:checked ~ .container{
+            display: block;
+        }
+        #btn4:checked ~ .container{
+            display: block;
+        }
+        #btn:checked ~ label span  i {
+            transform: rotate(45deg);
+        }
+        #btn1:checked ~ label span  i {
+            transform: rotate(45deg);
+        }
+        #btn2:checked ~ label span  i {
+            transform: rotate(45deg);
+        }
+        #btn3:checked ~ label span  i {
+            transform: rotate(45deg);
+        }
+        #btn4:checked ~ label span  i {
+            transform: rotate(45deg);
+        }
+        
+    </style>
+</head>
+<body>
+     <div class="accordian">
+         <input type="checkbox" id="btn" >
+        <label for="btn">What is accoridan? <span><i class="fa-solid fa-plus"></i></span></label>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quisquam voluptatem, assumenda optio hic eius perspiciatis dolore nisi laudantium ipsum. Repellat laboriosam delectus cumque commodi ducimus ipsa fuga eaque.</p>
+        </div>
+
+    </div>
+
+    <div class="accordian">
+        <input type="checkbox" id="btn1" >
+       <label for="btn1">What is accoridan? <span><i class="fa-solid fa-plus"></i></span></label>
+       <div class="container">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quisquam voluptatem, assumenda optio hic eius perspiciatis dolore nisi laudantium ipsum. Repellat laboriosam delectus cumque commodi ducimus ipsa fuga eaque.</p>
+       </div>
+
+   </div>
+   <div class="accordian">
+    <input type="checkbox" id="btn2" >
+   <label for="btn2">What is accoridan? <span><i class="fa-solid fa-plus"></i></span></label>
+   <div class="container">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quisquam voluptatem, assumenda optio hic eius perspiciatis dolore nisi laudantium ipsum. Repellat laboriosam delectus cumque commodi ducimus ipsa fuga eaque.</p>
+   </div>
+
+</div>
+<div class="accordian">
+    <input type="checkbox" id="btn3" >
+   <label for="btn3">What is accoridan? <span><i class="fa-solid fa-plus"></i></span></label>
+   <div class="container">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quisquam voluptatem, assumenda optio hic eius perspiciatis dolore nisi laudantium ipsum. Repellat laboriosam delectus cumque commodi ducimus ipsa fuga eaque.</p>
+   </div>
+
+</div>
+<div class="accordian">
+    <input type="checkbox" id="btn4" >
+   <label for="btn4">What is accoridan? <span><i class="fa-solid fa-plus"></i></span></label>
+   <div class="container">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui consequuntur quisquam voluptatem, assumenda optio hic eius perspiciatis dolore nisi laudantium ipsum. Repellat laboriosam delectus cumque commodi ducimus ipsa fuga eaque.</p>
+   </div>
+
+</div>
+
+
+</body>
+</html>

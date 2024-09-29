@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 15px;
+            height: 70px;
+            background-color: blueviolet;
+        }
+
+        .logo{
+            color: white;
+            
+        }
+        .logo:hover{
+            text-shadow: 2px 2px 3px greenyellow;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+        .nav ul{
+            display: flex;
+        }
+        .nav ul li a{
+            /* margin: 0 10px; */
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 25px 10px;
+            /* border: 1px solid red; */
+        }
+        .nav ul li a:hover{
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .submenu{
+            position: absolute;
+            /* border: 1px solid red; */
+            top: 70px;
+            right: 82px;
+            background-color: gray;
+            width: 75px;
+            height: 103px;
+            text-align: center;
+        }
+      .nav ul li ul{
+        display: flex;
+        flex-direction: column;
+      }
+     .nav .submenu li a{
+        display: block;
+        /* border: 1px solid red; */
+        padding: 15px 0px ;
+        /* height: 60px; */
+        border-bottom: 1px solid black;
+      }
+
+      .submenu{
+        visibility: hidden;
+        
+      }
+
+      .nav ul li:hover .submenu{
+        visibility: visible;
+    
+      }
+      .new{
+        /* border: solid red; */
+        margin: 10px 10px ;
+        padding: 5px;
+        
+      }
+    
+      
+
+  
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">Geek <span>Institute</span></h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Pages+</a>
+
+                <ul class="submenu">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                </ul>
+            
+            </li>
+            
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+<div class="new">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, at quo est cupiditate, accusamus ipsum minus itaque debitis beatae quas laborum aut, provident soluta possimus quod eveniet animi deserunt praesentium.</p>
+</div>
+    
+</body>
+</html>

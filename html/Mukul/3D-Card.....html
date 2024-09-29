@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-CARD.....HTML</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT91pmUJFmHs24Gd0QYqEYflgIIB4SYIUI78w&s">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          box-sizing: border-box;
+        }
+        .container{
+    height: 400px;
+         width: 400px;
+           position: absolute;
+        top: calc(50%-200px);
+           left: calc(50%-200px);
+    transform-style: preserve-3d;      
+     perspective: 600px;
+        }
+        .container .card{
+  height: 400px;
+      width: 400px;
+transition: all 1s ease-in-out;
+     transform-style: preserve-3d;
+        }
+.container .card .font,
+ .container .card .back{
+         height: 400px;
+    width: 400px;      
+    text-align: center;
+     font-size: 100px;
+     line-height: 400px;
+     position: absolute;
+     backface-visibility: hidden;
+  border-radius: 10px;
+   box-shadow: 0px 0px 10px rgb(243, 16, 16);
+    }
+     .container .card .front{
+        height: 400px;
+        width: 400px;
+        background-color: rgb(4, 26, 231);
+    }
+    .container .card .back{
+        height: 400px;
+        width: 400px;
+        background-color: rgb(0, 255, 0);
+        transform: rotateY(180deg);
+    }
+ .container:hover .card{
+     transform: rotateY(180deg);
+    }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <div class="card">
+            <div class="front">Front :)</div>
+            <div class="back">Back :)</div>
+        </div>
+    </div>
+</body>
+</html>

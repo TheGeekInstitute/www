@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend mode</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            /* background-color: rgba(4, 109, 109, 0.582); */
+            background-image: linear-gradient(red,green,yellow);
+        }
+        .box img{
+            mix-blend-mode: overlay;
+        }
+
+        .new{
+            height: 400px;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: rgba(0, 0, 0, 0.623);
+            background-blend-mode: overlay;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../web/images/12.jpg" alt="">
+    </div>
+
+    <div class="new">
+        sdfsdfsdfsdf
+        sdfsdfsdf
+    </div>
+</body>
+</html>

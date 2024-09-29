@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // function data(){
+    //     console.log(arguments[1]);
+    //     let sum=0;
+    //     for(x in arguments){
+    //         // console.log(arguments[x])
+    //         sum+=arguments[x];
+    //     }
+
+    //     console.log(sum)
+        
+    // }
+    // data("name","class");
+
+
+
+    // function data(name,gender,...args){
+    //     console.log(arguments[1]);
+    //     console.log(args)
+
+    //     console.log(name)
+        
+
+    //     let sum=0;
+
+    //     for(x of args){
+    //         sum+=x;
+    //     }
+
+    //     console.log(sum)
+    //     console.log(name)
+    // }
+
+
+    // data("Amit",45,"Male",7800);
+
+    // data("Amit","male",45,25,78,20);
+
+
+    function abcd(a){
+        console.log(a)
+        // console.log(arguments)
+    }
+
+
+    abcd("Amit",...[45,25,36]);
+
+    let a1="mydata";
+
+    let a = {
+        [a1]:"asdas"
+    };
+
+    a.name="Sumit";
+    a.age=45;
+    a.gender="Male"
+
+
+    console.log(a)
+
+    for(x in a){
+        console.log(a[x])
+    }
+
+    console.log(a)
+
+
+
+</script>
+</body>
+</html>

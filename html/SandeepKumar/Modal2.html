@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{ margin: 0;
+        padding: 0;
+     list-style: none;
+    text-decoration: none;
+}
+.container{ background-color:rgba(0, 0, 0, 0.336);
+position: absolute;
+inset: 0;
+display: none;
+}
+
+.container .modal{ background-color:white;
+ width: 400px;
+ height: 300px;
+text-align: center;
+position: absolute;
+top: calc(50% - 150px);
+left: calc(50% - 200px);}
+
+.container .modal .heading{ display: flex;
+ background-color: blueviolet;
+ color: white;
+ height: 50px;
+align-items: center;
+justify-content: space-between;
+padding: 0 10px;
+font-size: xx-large;
+user-select: none;
+ }
+ .container .modal .content{
+            padding: 5px;
+        }
+
+        #btn:checked + .container{
+            display: block;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        .abcd{
+            background-color: royalblue;
+            display: block;
+            width: 100px;
+            text-align: center;
+            line-height: 34px;
+            color: white;
+            cursor: pointer;
+            margin: 150px auto;
+        }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal 2</title>
+</head>
+<body>
+div.container
+<label for="btn" class="abcd">Popup</label>
+
+<input type="checkbox" id="btn">
+ <div class="container">
+ <div class="modal">
+    <div class="heading">
+        <P>Modal on Test</P>
+
+        <label for="btn">x</label>
+    </div>
+
+    <div class="content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, in assumenda quam praesentium velit maxime sequi atque deserunt, sunt quos eos eum temporibus laboriosam ipsam quasi earum esse, accusamus vel.</p></div>
+ </div>
+ </div>
+</body>
+</html>

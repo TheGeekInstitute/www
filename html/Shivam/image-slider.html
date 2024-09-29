@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .box{
+            /* border: 2px solid black; */
+            height: 400px;
+            width: 400px;
+            margin-top: 150px;
+            overflow: hidden;
+        }
+        
+        .box .image img{
+            /* display: inline-block; */
+            height: 400px;
+            /* width: 400px; */
+            max-width: 100%;
+        }
+        
+        .image{
+            /* position: relative; */
+            height: 400px;
+            /* width: 400px; */
+            /* border: 3px solid red; */
+            animation-name: image;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            display: flex;
+        }
+
+        @keyframes image {
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-400px);
+            }
+
+            50%{
+                transform: translateX(-800px);
+
+            }
+            75%{
+                transform: translateX(-1200px);
+
+            }
+            100%{
+                transform: translateX(-1600px);
+
+            }
+        }
+
+        .image:hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+ <div class="image">
+    <img src="../wallpaper.jpg" alt="">
+    <img src="../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg" alt="">
+    <img src="../wallpapers/films/lotrA.jpg" alt="">
+    <img src="../wallpapers/light/annie-spratt-wXWbUuaoEy0-unsplash.jpg" alt="">
+    <img src="../wallpapers/films/MEDIA-atla-appa.jpg" alt="">
+ </div>
+    </div>
+</body>
+</html>

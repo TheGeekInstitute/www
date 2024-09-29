@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            background-image: url("https://wallpapercg.com/media/ts_2x/144.webp");
+            /* background-repeat: no-repeat; */
+            /* background-position: center; */
+            position: absolute;
+        }
+        .nav{
+            border: 1px solid rgba(0, 0, 0, 0.315);
+            height: 60px;
+            margin-left: 30rem;
+            width: 330px;
+            margin-top: 10rem;
+            background-color: white;
+            border-radius: 10px;    
+            display: flex;
+            text-align: center;
+            padding-left: 20px;
+            line-height: 60px;
+        }
+         p{
+            font-size: 40px;
+            margin-left: 10px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        button{
+            padding: 5px 10px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 10px ;
+            border: 1px solid rgba(0, 0, 0, 0.062) ;
+            border-radius: 10px;
+        }
+        .btn{
+            margin-left: 33rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <span class="hours"><p>00</p></span>
+        <span class="colon"> <p>:</p> </span>
+        <span class="minute"> <p>00</p> </span>
+        <span class="colon"> <p>:</p> </span>
+        <span class="seconds"> <p>00</p> </span>
+        <span class="colon"> <p>:</p> </span>
+        <span class="miliseconds"> <p>00</p> </span>
+    </div>
+    <div class="btn">
+    <button class="start">Start</button>   
+    <button class="stop">Stop</button>
+    <button class="restart">Restart</button>
+</div>
+<script>
+    let start = document.querySelector(".start");
+    let stop = document.querySelector(".stop");
+    let restart = document.querySelector(".restart");
+    let hours = document.querySelector(".hours");
+    let minute = document.querySelector(".minute");
+    let seconds = document.querySelector(".seconds");
+    let miliseconds = document.querySelector(".miliseconds");
+
+   
+
+    setInterval(() => {
+        const date = new Date();
+        hours.children[0].innerText = date.getHours();
+        minute.children[0].innerHTML = date.getMinutes();
+        seconds.children[0].innerHTML = date.getSeconds();
+        miliseconds.children[0].innerHTML = date.getMilliseconds();
+    }, 100);
+    
+
+
+    start.addEventListener("click",function(){
+        start();
+    })
+
+</script>
+</body>
+</html>

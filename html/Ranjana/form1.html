@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            border: 2px solid white;
+            height: calc(20rem + 5px);
+            width: calc(20rem + 5px);
+            overflow: hidden;
+        }
+        body{
+            background-color: rgb(19, 18, 18);
+            position: absolute;
+            top: calc(50% - 13rem);
+            left: calc(50% - 10rem);
+
+        }
+
+        .container{
+            border: 2px solid red;
+            height: 20rem;
+            width: 20rem;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        .container::after{
+            content: "";
+            display: block;
+            /* background-color: green; */
+            background: linear-gradient(180deg, transparent, #ec03f4);
+            position: absolute;
+            left: -5px;
+            right: -5px;
+            top: -5px;
+            bottom: -5px;
+            /* z-index: -1; */
+           animation-name: color;
+           animation-duration: 20s;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           animation-timing-function: linear;
+
+           transform-origin: bottom left;
+        }
+
+
+        @keyframes color {
+            0%{
+                transform: rotate(0);
+            }
+           100%{
+                transform: rotate(360deg);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+</html>

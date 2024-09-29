@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robu</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: "Inter", "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        }
+        header{
+            /* border: 1px solid red; */
+            border-bottom: 1px solid #29323a6b;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3rem;
+            font-size:14px;
+        }
+
+        header > .left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header > .left > li a{
+            color: #29323A;
+            margin: 0 .5rem;
+        }
+
+        header > .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        header > .right > li a{
+            color: #29323A;
+            margin: 0 .5rem ;
+        }
+
+        header > .right > li > .sub-menu{
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 1.9rem;
+            width:200px;
+            height: 109px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            border-top: 3px solid blue;
+            border-radius: 3px 3px 7px 7px;
+            right: 8.5rem;
+            box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.445);
+            display: none;
+            padding-top: 10px;
+            /* transition: transform .3s; */
+            cursor: pointer;
+        }
+
+        header > .right > li > .sub-menu > li a{
+            display: block;
+            width:204px;
+            margin-left: -2px;
+            line-height: 1.7rem;
+            padding: 0 .5rem;
+            /* border: 1px solid red; */
+        }
+
+        header > .right > li > .sub-menu > li a:hover{
+            background-color: rgba(198, 211, 211, 0.692);
+        }
+        header .right li:hover .sub-menu{
+            display: block;
+            /* transform: translateY(.5rem); */
+        }
+
+        .search{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid red;
+            height: 112px;
+            /* width: 1430px; */
+            margin: auto;
+        }
+
+        .search > .left img{
+            height: 70px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="left">
+            <li>
+                <a href="#"><i class="fa-solid fa-phone"></i> 1234567890</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-solid fa-envelope"></i> Customer Support</a>
+            </li>
+        </ul>
+
+
+        <ul class="right">
+            <li>
+                <a href="#">My Orders</a>
+            </li>
+            <li>
+                <a href="#">Track Your Order</a>
+            </li>
+            <li>
+                <a href="#">My Account <i class="fa-solid fa-angle-down"></i></a>
+
+                <ul class="sub-menu">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="search">
+        <div class="left">
+            <img src="https://robu.in/wp-content/uploads/2023/08/MicrosoftTeams-image-67.jpg" alt="">
+        </div>
+
+        <div class="centter">
+            <input type="text">
+            <select name="" id="">
+                <option value="">All Categories</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+
+        <div class="right">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body{
+background-color: rgb(61, 61, 61);
+    }
+        
+.circle1{
+    /* border: 1px solid red; */
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position:absolute ;
+        top: 150px;
+        left: calc(50% - 150px);
+        background-color: blue;
+       animation: circle1 4s linear 0s infinite;
+
+    }
+    .circle2{
+        border: 1px solid rgb(26, 23, 23);
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position:absolute ;
+        top: 450px;
+        left: calc(50% + 80px);
+        background-color: rgb(226, 94, 46);
+        animation: circle2 4s linear 0s infinite;
+    }
+    .container:hover{
+       animation-play-state: paused;
+
+    }
+    .container{
+        height: 300px;
+        width: 230px;
+        border: 1px solid black;
+        margin: auto;
+        position: absolute;
+        top: 200px;
+        left: calc(50% - 100px);
+        display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+background-color: rgba(47, 48, 49,.2);
+z-index: 1;
+/* opacity: 80%; */
+border-radius: 3%;
+backdrop-filter: blur(5px);
+        
+    }
+    .container>.login{
+        /* background-color: aquamarine; */
+        font-size: large;
+        font-weight: 700;
+        font-family:Calibri;
+        color: white;
+    }
+    .container>form{
+        position: relative;
+        top: -22px;
+        left: 4px;
+        padding: 20px ;
+        margin: 0px;
+    }
+    .container>form>label{
+        color: white;
+        display: block;
+        padding: 8px 0px;
+    }
+    .container>form>input{
+        padding: 5px;
+        color: white;
+    }  
+    .container>form>.btn{
+        width: 183px;
+        position: relative;
+        top: 40px;
+        color: black;
+        font-size: medium;
+        font-weight: 600;
+    } 
+    .container>.o-auth>a{
+        color: rgb(247, 247, 247);
+        padding: 7px;
+        display:inline-block;
+        background-color: rgba(182, 188, 194, 0.596);
+    }
+    
+    @keyframes circle1 {
+        0%{
+            transform: translate(0px);
+           }
+           50%{
+            transform: translateY(300px);
+           }
+           
+           }
+           @keyframes circle2 {
+            0%{
+                transform: translate(0px);
+            }
+            50%{
+                transform: translateY(-300px);
+            }
+            
+           }
+</style>
+<body>
+    <div class="circle1"></div>
+    <div class="container">
+        <div class="login">
+            Login Here
+        </div>
+
+        <form>
+            <label>Username :</label>
+            <input type="text" placeholder="Email or Phone">
+            <label>Password :</label>
+            <input type="password" placeholder="Password">
+            <input class="btn" type="submit" value="Log in">
+        </form>
+
+        <div class="o-auth">
+            <a href="#">
+                <i class="fa-brands fa-google"></i>
+                Google
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+                Facebook
+            </a>
+        </div>
+
+    </div>
+    <div class="circle2"></div>
+</body>
+</html>

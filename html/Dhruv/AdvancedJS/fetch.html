@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+
+    <script>
+        // fetch("data.txt").then((e)=>{
+        //     return e.text();
+        // }).then((data)=>{
+        //     console.log(data)
+        // })
+
+
+        fetch("data1.php").then(e=>e.text()).then(data=>{
+            console.log(data)
+        })
+    </script>
+
+</body>
+</html>

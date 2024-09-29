@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D - Transform</title>
+    <style>
+        .container{
+            background-color: rgba(128, 128, 128, 0.3);
+            height: 300px;
+            width: 250px;
+            margin: 150px auto;
+            perspective: 600px;
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+        }
+
+        .container .box{
+            height: 300px;
+            width: 250px;
+            background-color: crimson;
+            transition: all 1s linear;
+            backface-visibility: hidden;
+            /* transform-origin: top left; */
+        }
+
+        .container:hover .box{
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            /* transform: perspective(600px) translateZ(100px); */
+            /* transform: translate3d(100px,100px,100px); */
+
+            transform: rotateX(180deg);
+            /* transform: rotateY(60deg); */
+            /* transform: rotateZ(-60deg); */
+            /* transform: rotate3d(1,1,1,30deg); */
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="box">A</div>
+    </div>
+
+
+</body>
+</html>

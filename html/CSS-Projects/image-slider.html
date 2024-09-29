@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        
+        }
+        
+        a{
+           color: white;
+           font-family: cursive;
+        }
+
+        .nav{
+            background-color: #004225;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo{
+            color: transparent;
+            font-weight: 900;
+            text-tra-nsform: uppercase;
+            font-size: 45px;
+           font-family: cursive;
+           background-image: linear-gradient(45deg,red,yellow,cyan,rgb(43, 253, 43),hotpink,rgb(255, 196, 0),orangered,rgb(33, 192, 255),#ff5c5c5c,lightblue,lightgreen);
+          
+           -webkit-background-clip: text;
+
+           animation: 1s linear 0s infinite alternate change-color;
+        
+            /* animation-name: change-color;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+        }
+
+        .nav .menu{
+            display: flex;
+        }
+
+        .nav .menu .links{
+            display: flex;
+            
+        }
+
+        .nav .menu .links li a{
+            margin: 0 10px;
+            font-family: cursive;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .nav .menu .links a:hover{
+            color: red;
+        }
+
+        #btn,.btn{
+            display: none;
+        }
+
+        @keyframes change-color {
+            0%{
+                background-size: 0 ;
+            }
+
+            25%{
+                background-size: 100% ;
+            }
+
+            50%{
+                background-size: 150%;
+            }
+
+            75%{
+                background-size: 200%;
+            }
+
+            100%{
+                background-size: 0;
+            }
+        }
+
+
+        .container{
+            overflow: hidden;
+            z-index: -1;
+            position: relative;
+        }
+        
+        
+        .container .slider{
+            /* border: 2px solid red; */
+            width: 500vw;
+            height: 80vh;
+            display: flex;
+            animation-name: image-slider;
+            animation-duration: 40s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        .container .slider .images{
+            width: 600vw;
+            height: 70vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container .slider .images .content{
+            /* border: 3px solid greenyellow; */
+            box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.3);
+            width: 80vw;
+            height: 40vh;
+            padding: 5vw 4vw;
+            color: white;
+            border-bottom-left-radius: 7rem;
+            border-bottom-right-radius: 1.5rem;
+            border-top-right-radius: 7rem;
+            border-top-left-radius: 1.5rem;
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+
+            }
+
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+
+            }
+
+            30%{
+                transform: translateX(-100vw);
+
+            }
+
+            35%{
+                transform: translateX(-100vw);
+
+            }
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-300vw);
+            }
+
+            65%{
+                transform: translateX(-300vw);
+
+            }
+
+            70%{
+                transform: translateX(-300vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-400vw);
+            }
+            85%{
+                transform: translateX(-400vw);
+            }
+
+            90%{
+                transform: translateX(-400vw);
+            }
+            95%{
+                transform: translateX(-400vw);
+            }
+            100%{
+                transform: translateX(-400vw);
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width:768px) {
+            
+            .nav{
+                height: 50px;
+            }
+            .logo{
+                font-size: 30px;
+            }
+            
+            .btn1{
+                display: block;
+            }
+            .btn1,.btn2{
+                color: white;
+                font-size: 30px;
+            }
+
+            .nav .menu .links{
+                position: absolute;
+                top: 50px;
+                left: 0;
+                text-align: center;
+                right: 0;
+                /* bottom: 0; */
+                height: 200px;
+                background-color:#068b52;
+                flex-direction: column;
+                
+                display: none;
+                /* transition: all .3s; */
+                /* transform: translateY(calc(-100% - 50px)); */
+                /* z-index: -1; */
+            }
+
+            .nav .menu .links a{
+                line-height: 60px;
+                /* text-decoration: underline; */
+                border-bottom: 2px solid white;
+            }
+
+            .nav .menu #btn:checked ~ .links{
+                display: block;
+                /* transform: translateY(0); */
+            }
+            .nav .menu #btn:checked ~ .btn1{
+                display: none;
+            }
+            .nav .menu #btn:checked ~ .btn2{
+                display: block;
+            }
+
+
+            .content h1{
+                font-size: 20px;
+            }
+            .content p{
+                font-size: 14px;
+            }
+
+            .content{
+                width: 100vw;
+                
+            }
+
+            .slider{
+                height: 40vh;
+            }
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+       <div class="nav">
+        <div class="logo">Logo</div>
+
+        <ul class="menu">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="btn btn1"><i class="fa-solid fa-bars"></i></label>
+        <label for="btn" class="btn btn2"><i class="fa-solid fa-xmark"></i></label>
+        
+   <div class="links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+   </div>
+    </ul>
+       </div> 
+
+<div class="container">
+    <div class="slider">
+       
+       
+        <div class="images" style="background-image: url(https://images.pexels.com/photos/3573351/pexels-photo-3573351.png);">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam voluptatum quam veniam.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+            </div>
+        </div>
+
+        <div class="images" style="background-image: url(https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg);">
+            <div class="content">
+                <h1>Welcome To Our Website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+            </div>
+        </div>
+
+
+
+        <div class="images" style="background-image: url(https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg);">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam voluptatum quam veniam.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+            </div>
+        </div>
+
+        <div class="images" style="background-image: url(https://images.pexels.com/photos/3049327/pexels-photo-3049327.jpeg);">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam voluptatum quam veniam.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+            </div>
+        </div>
+
+        <div class="images" style="background-image: url(https://images.pexels.com/photos/2929211/pexels-photo-2929211.jpeg);">
+            <div class="content">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nam voluptatum quam veniam.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officiis fugiat quo, ullam laboriosam voluptas facilis similique praesentium ipsum. Ullam, neque nostrum iste eos vero necessitatibus cumque pariatur eius unde.</p>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+    </body>
+</html>

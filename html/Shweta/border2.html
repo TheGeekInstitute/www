@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders</title>
+</head>
+<style>
+    .dotted{
+        border-style: dotted;
+    }
+    .dotted{
+        border-top-width: 10px;
+        border-top-color: green;
+     border-left:10px ;
+    border-right-color: blue;
+    border-width: 10px 5px 10px 5px;
+    }
+
+
+    .dashed {
+            border-style: dashed;
+            border-color: blueviolet green blue red;
+            border-radius: 12px;
+        }
+
+        .solid {
+            border-style: solid;
+            border-color: blueviolet green blue red;
+            border-radius: 12px;
+        }
+        .double {
+            border-style: double;
+            border-top-color: rgb(147, 199, 5);
+            border-top-left-radius: 10PX;
+        }
+/* border-top-style:solid;
+            border-right-style: dashed;
+            border-bottom-style: ridge;
+            border-left-style: double; */
+        .groove {
+            border-style: groove;
+            border-bottom-color: blue;
+            border-right-style: dashed;
+        }
+
+        .ridge {
+            border-style: ridge;
+        }
+
+        .inset {
+            border-style: inset;
+        }
+
+        .outset {
+            border-style: outset;
+        }
+
+        .none {
+            border-style: none;
+        }
+
+        .hidden {
+            border-style: hidden;
+        }
+
+        .mix{
+            /* border-top-style:solid;
+            border-right-style: dashed;
+            border-bottom-style: ridge;
+            border-left-style: double; */
+        
+            border-top-style: solid;border-left-color: blue;
+        border-style: double solid ridge inset;
+        }
+
+</style>
+<body>
+
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+
+    
+</body>
+</html>

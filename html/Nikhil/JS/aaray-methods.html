@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arry=["Amit","Sumit",'Ravi',"Ankit","bablu","Ravi"];
+        document.write(arry);
+
+        document.write("<br><br>")
+
+        // arry[0]="ABCD"
+        // document.write(arry);
+
+        // arry.pop();
+        // arry.push('ABCD')
+
+        // arry.shift()
+        // arry.unshift('ABCD')
+
+        // arry1= arry.slice(1,4)
+        // arry1 = arry.splice(1,3)
+
+
+        // document.write(Array.isArray(arry))
+
+        // document.write(arry.indexOf('Ravi'))
+        // document.write(arry.lastIndexOf('Ravi'))
+        // document.write(arry.includes('Ravita'))
+
+
+        let num=[10,14,5,6,100,55,10];
+
+
+        // document.write(num.some(check))
+
+        
+        // document.write(num.every(check))
+
+        let arry1 = num.filter(check) 
+
+
+        function check(n){
+            if(n>10){
+                return n;
+            }
+        }
+
+        // document.write(typeof(arry1.toString()))
+
+        // document.write(arry.valueOf())
+
+        // arry.fill('ABCD')
+
+
+
+
+        // document.write(arry)
+
+        // num.map(function(e){
+        //     document.write(e*10+ " ")
+        // })
+
+        num.forEach(function(e){
+            document.write(e + "<br>")
+        })
+
+    </script>
+</body>
+</html>

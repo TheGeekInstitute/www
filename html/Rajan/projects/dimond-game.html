@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimond-game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            border: 1px solid royalblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: 20px;
+            background-color: royalblue;
+        }
+        .reset:hover{
+            border: 1px solid green;
+            background-color: green;
+            border-radius: 10px;
+            padding: 0 10px;
+        }
+        .container{
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container .box{
+            border: 1px solid gray;
+            width: 3.6rem;
+            height: 3.6rem;
+            background-color: gray;
+            margin: 5px;
+            text-align: center;
+            animation: box 1s ease-in-out 0s 1 alternate forwards;
+        }
+        .container .box.diamond{
+            background-image: url(https://i.pinimg.com/736x/13/27/e5/1327e5a168371ddce6bbf33336d7ca4b.jpg);
+            background-size: 3.6rem;
+        }
+        .container .box.bomb{
+            background-image: url(https://png.pngtree.com/png-vector/20191113/ourmid/pngtree-retro-bomb-icon-cartoon-style-png-image_1965877.jpg);
+            background-size: 3.6rem;
+        }
+        @keyframes box{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(3.6rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p class="score">Score:- <span>00</span></p>
+        <p class="reset">Reset Game</p>
+    </div>
+    <div class="container"></div>
+    <script>
+        let reset = document.querySelector('.reset');
+        let container = document.querySelector('.container');
+        let totalScore = document.querySelector('.score');
+        let a=0;
+        for(let i=1;i<=100; i++){
+            let box='<div class="box"></div>'
+            container.insertAdjacentHTML("afterbegin",box)
+        }
+        let box = document.querySelectorAll('.box');
+        Array.from(box).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                let random = Math.ceil(Math.random()*10)
+                if(random>6){
+                        e.classList.add("diamond");
+                        a++;
+                }
+                else if(random<=6){
+                        e.classList.add("bomb");
+                        // a--;
+                        alert("Game Over.")
+                        window.location.reload()
+
+                }
+                totalScore.innerHTML = a;
+            })
+        })
+
+        reset.addEventListener("click",()=>{
+            window.location.reload()
+        })
+    </script>
+</body>
+</html>

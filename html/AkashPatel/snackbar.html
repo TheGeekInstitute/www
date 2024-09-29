@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #btn:checked + .snackbar{
+            display: block;
+            /* border: 1px solid red; */
+            width: 20rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 0 2rem;
+            font-size: larger;
+            font-weight: 900;
+            background-color: black;
+            border-radius: .5rem;
+            position: absolute;
+            top: calc(50% - 2rem);
+            left: calc(50% - 10rem);
+            box-shadow: 0px 0px 5px black;
+            animation: hide 3s linear 0s 1 alternate forwards;
+        }
+   
+        .snackbar i{
+            margin-right: .5rem;
+            color: gold;
+        }
+
+        .snackbar p{
+            color: white;
+            font-family: cursive;
+        }
+
+        @keyframes hide {
+             0%{
+                opacity: 100%;
+                transform: translateY(0);
+             } 
+             
+             25%{
+                opacity: 100%;
+                transform: translateY(0);
+             }
+
+             50%{
+               
+                opacity: 100%;
+                transform: translateY(0);
+             
+             }
+
+             75%{
+                opacity: 50%;
+                transform: translateY(50px);
+             }
+             
+             100%{
+                opacity: 0%;
+                transform: translateY(100px);
+             }
+        }
+
+        .hide{
+            display: none;
+        } 
+
+        label{
+            font-size: 5rem;
+            user-select: none;
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button onclick="show()">ABCD</button>
+
+    <label for="btn" class="btn"><i class="fa-solid fa-mobile-button"></i></label>
+
+    <input type="checkbox" id="btn">
+
+    <div class="snackbar hide">
+        <i class="fa-solid fa-message"></i>
+        <p>Message Here</p>
+    </div>
+
+
+
+
+    <script>
+        function show(){
+            document.querySelector(".snackbar").classList.toggle("hide");
+        }
+    </script>
+
+</body>
+</html>

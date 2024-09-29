@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        h1{
+            color: azure;
+            margin-left: 10px;
+        }
+
+    
+        .nav{
+            /* border: 1px solid red; */
+            height: 10vh;
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav ul li{
+            /* float: right; */
+            display: inline-block;
+            margin: 15px;
+        }
+
+        .logo{
+            color: white;
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            font-size: large;
+            color: white;
+            /* border: 1px solid red; */
+            /* padding: 20px  0px; */
+            display: block;
+            /* height: 45px; */
+            padding: 10px;
+
+        }
+
+        .hide{
+            /* border: 1px solid red; */
+            background-color: black;
+        }
+
+        .nav ul li ul{
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 90px;
+            /* height: 100px; */
+        }
+
+        .nav ul li ul li a{
+            display: block;
+
+        }
+
+
+.nav ul li ul{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.nav ul li:hover .hide{
+    visibility: visible;
+    background-color: blue;
+}
+
+.nav ul li a:hover{
+    background-color: aquamarine;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+       
+        <h1>BootstrapMade</h1>
+      
+        <ul>
+            <li><a href="#">Start</a></li>
+            <li><a href="#">gana +</a>
+                    
+            </li>
+            <li><a href="#">About</a>
+                <ul class="hide">
+                    <li><a href="#">game</a></li>
+                    <li><a href="#">over2</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>

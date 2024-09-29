@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* border: 1px solid red; */
+            /* height: 400px; */
+            width: 400px;
+            margin: 150px auto;
+            /* border: 1px solid red; */
+        }
+
+        .container .box{
+            /* border: 1px solid black; */
+            margin: 5px 0;
+            height: 15px;
+            background-color: grey;
+        }
+
+        .container p{
+            margin-top: 10px;
+            color: royalblue;
+            font-size: larger;
+            font-weight: 900;
+        }
+
+        .box::after{
+            content: '';
+            background-color: red;
+            display: block;
+            height: 15px;
+            position: relative;
+            width: 0;
+        }
+
+        .box1::after{
+           animation: fill-95 1s linear 0s 1 forwards;
+        }
+
+        .box2::after{
+            animation: fill-20 1s linear 0s 1 forwards;
+
+        }
+
+        .box3::after{
+            animation: fill-75 1s linear 0s 1 forwards;
+           
+        }
+
+        .box4::after{
+           animation: fill-40 1s linear 0s 1 forwards;
+            
+        }
+
+
+        @keyframes fill-20 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 20%;
+            }
+        }
+
+
+        @keyframes fill-40 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 40%;
+            }
+        }
+
+        @keyframes fill-75 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 75%;
+            }
+        }
+
+        @keyframes fill-95 {
+            from{
+                width: 0;
+            }
+
+            to{
+                width: 95%;
+            }
+        }
+
+
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: gray;
+            text-underline-offset: 20px;
+        }
+
+        .heading::after{
+            content: '';
+            background-color: cyan;
+            display: block;
+            height: 3px;
+            /* position: relative; */
+            width: 25px;
+            position: absolute;
+            left: 48%;
+            bottom: calc(28% + 2px);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <p>asd</p>
+            <div class="box box1"></div>
+            <p>asd</p>
+            <div class="box box2"></div>
+            <p>asd</p>
+            <div class="box box3"></div>
+            <p>asd</p>
+            <div class="box box4"></div>
+        </div>
+
+
+        <h1 class="heading">About US</h1>
+</body>
+</html>

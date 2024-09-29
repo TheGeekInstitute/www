@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+    
+           
+            display: grid;
+            grid-template-rows: 100px 50px 1fr 70px;
+            grid-template-columns: 150px 1fr 150px;
+            
+            gap: 5px;
+
+            grid-template-areas: "header header header"
+                                "nav nav nav"
+                                 "left-sidebar main right-sidebar" 
+                                 "footer footer footer"
+
+            ;
+
+
+           
+
+        }
+
+
+        .box1{
+            background-color: burlywood;
+            grid-area: header;
+
+
+        }
+        .box2{
+            background-color: chartreuse;
+            grid-area: nav;
+            
+
+        }
+        .box3{
+            background-color: brown;
+            grid-area: left-sidebar;
+        }
+        .box4{
+            background-color: cyan;
+            grid-area: main;
+        }
+        .box5{
+            background-color: plum;
+            grid-area: right-sidebar;
+        }
+        .box6{
+            background-color: crimson;
+            grid-area: footer;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Headar</div>
+        <div class="box box2">Nevigation Menu</div>
+        <div class="box box3">contant</div>
+        <div class="box box4">Main content</div>
+        <div class="box box5">Content</div>  
+        <div class="box box6">footer</div>   
+   
+</body>
+</html>

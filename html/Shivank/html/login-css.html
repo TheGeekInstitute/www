@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+        body{
+            background-color: rgb(41, 41, 41);
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .form{
+            margin: auto;
+            /* display: flex; */
+            /* border: 1px solid black; */
+            height: 22rem;
+            width: 18rem;
+            border-radius: 1rem;
+            position: absolute;
+            text-align: center;
+            color: white;
+            flex-direction: column;
+            top: calc(50% - 11rem);
+            left: calc(50% - 9rem);
+            background-color: rgba(82, 80, 80, 0.329);
+            backdrop-filter: blur(5px);
+            box-shadow: 2px 2px 2px solid red;
+            /* background-color: transparent; */
+        }
+        .form h1{
+            margin: 1rem;
+        }
+        label{
+            padding-top: 1rem;
+            padding-left: 2.1rem;
+            display: flex;
+        }
+        input{
+            height: 2rem;
+            width: 14rem;
+            margin-top: 0.2rem;
+            border-radius: 0.2rem;
+            border: none;
+            background-color: rgb(168, 168, 168);
+            border: none;
+            outline: none;
+            padding-left: 5px;
+            caret-color: white;
+        }
+        input[type="submit"]{
+            margin-top: 1.5rem;
+            background-color: white;
+            font-weight: 800;
+        }
+        input::placeholder{
+            color: white;
+            padding-left: 2px;
+        }
+        .goo{
+            display: flex;
+            margin-left: 1rem;
+        }
+        .goo p{
+            /* border: 1px solid black; */
+            line-height: 2rem;
+            width: 6rem;
+            border-radius: 5px;
+            margin: 1rem;
+            background-color: rgb(168, 168, 168);
+            cursor: pointer;
+        }
+        .circle1{
+            position: absolute;
+            /* border: 1px solid black; */
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            backdrop-filter: blur(10px);
+            background-color:rgba(13, 13, 218, 0.705);
+            top: calc(50% - 15rem);
+            left: calc(50% - 13.3rem);
+        }
+        .circle2{
+            position: absolute;
+            /* border: 1px solid black; */
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            background: linear-gradient(orangered , orange);
+            top: calc(100% - 13.5rem);
+            left: calc(100% - 16rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle2"></div>
+    <div class="form">
+        <div class="circle1"></div>
+        <h1>LoGin Form</h1>
+        <label>Username</label>
+        <input type="text" placeholder="Email or Phone">
+        <label>Password</label>
+        <input type="password" placeholder="Password">
+        <input type="submit" value="LoG in">
+        <div class="goo">
+        <p><i class="fa-brands fa-google"></i> Google</p>
+        <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+        </div>
+    </div>
+</body>
+</html>

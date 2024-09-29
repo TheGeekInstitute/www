@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    
+    <form action="" id="form1">
+        <label for="">Enter Your Name :</label>
+        <input type="number" id="text" min="10" max="50">
+        <select name="" id="opt">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <h3 id="data"></h3>
+
+
+
+    <form action=""></form>
+
+    <script>
+        let text = document.querySelector('#text');
+        text.addEventListener("focus",function(){
+            // alert("hello")
+            // this.style.backgroundColor="red"
+        });
+
+
+        text.addEventListener("blur",function(){
+            // alert("hello")
+            // this.style.backgroundColor="red"
+        });
+
+        // document.forms[0].addEventListener("keypress",function(){
+        //     alert("hello")
+        // })
+
+
+        // document.forms[0].addEventListener("keydown",function(){
+        //     alert("hello")
+        // })
+
+
+        document.forms[0].addEventListener("keyup",function(){
+            // alert("hello")
+        })
+
+        // text.addEventListener("input",function(){
+            
+        //     document.querySelector("#data").innerHTML = text.value
+        //     // console.log(this.value)
+        // });
+
+
+        // document.forms[0].addEventListener("change",function(){
+        //     // alert("hello")
+        // })
+
+
+        // text.addEventListener("select",function(){
+        //     // alert("hello")
+        //     // this.style.backgroundColor="red"
+        // });
+
+
+    //     document.forms[0].addEventListener("submit",function(){
+    //     //    document.querySelector("#data").innerHTML = text.value
+       
+    //         alert(text.value);
+    // })
+
+
+   text.addEventListener("invalid",function(){
+        //    document.querySelector("#data").innerHTML = text.value
+       
+        //    alert("sjkdhsjka")
+    })
+
+
+    
+
+    </script>
+
+</body>
+</html>
+
+
+<!-- 
+Form Events :
+        keydown
+        keypress
+        keyup
+        focus
+        blur
+        input
+        change
+        select
+        submit
+        invalid -->

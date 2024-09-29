@@ -1,0 +1,1 @@
+  // cout <<sizeof (arry)/sizeof(arry[0]);

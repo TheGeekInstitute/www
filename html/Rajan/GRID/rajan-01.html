@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid black;
+            width: 50rem;
+            height: 30rem;
+            margin: 30px auto;
+            display: grid;
+            grid-template-rows: 70px 50px 1fr 40px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 5px;
+            padding: 5px;
+
+        }
+        .box{
+            border: 1px solid royalblue;
+            line-height: 4.8rem;
+            text-align: center;
+            font-size: 25px;
+        }
+        .box01{
+            background-color: green;
+            color: white;
+            line-height: 90px;
+
+            grid-row: 1 / 2;
+            grid-column: 1 / 5;
+        }
+
+        .box02{
+            background-color: yellow;
+            color: red;
+
+            grid-row: 2/3;
+            grid-column: 1/5;
+
+        }
+
+        .box03{
+            background-color: red;
+            color: yellow;
+
+            grid-row: 3/5;
+        }
+        .box04{
+            background-color: greenyellow;
+            
+            grid-row: 3/5;
+            grid-column: 2/4;
+        }
+
+        .box05{
+            grid-row: 3/5;
+        }
+        .box06{
+            background-color: gray;
+            grid-column: 1/5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box01"><p>header</p></div>
+        <div class="box box02"><p>Navigation menu</p></div>
+        <div class="box box03"><p>content</p></div>
+        <div class="box box04"><p>main content</p></div>
+        <div class="box box05"><p>content</p></div>
+        <div class="box box06"><p>footer</p></div>
+    </div>
+</body>
+</html>

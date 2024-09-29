@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let data = new Promise(function(resolve,reject){
+            let age=55
+            if(age>=18){
+                resolve("Done")
+            }
+            else{
+                reject("Failed");
+            }
+        })
+
+
+        let data1 = new Promise(function(resolve,reject){
+            let age=19
+            if(age>=18){
+                resolve("Done1")
+            }
+            else{
+                reject("Failed1");
+            }
+        })
+
+        console.log(data)
+        data.then((e)=>{
+            console.log(e)
+        }).catch((a)=>{
+            console.log(a)
+        })
+        
+        data.then((e)=>{
+            console.log(e)
+        },(a)=>{
+            console.log(a)
+        })
+
+        let abcd =  Promise.all([data,data1])
+
+        // console.log(abcd)
+
+        abcd.then((e)=>{
+            for(x of e){
+                console.log(x)
+            }
+        },(a)=>{
+            console.log(a)
+        })
+
+
+    </script>
+</body>
+</html>

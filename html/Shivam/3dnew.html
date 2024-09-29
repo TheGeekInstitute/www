@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            perspective: 500px;
+
+            transform: rotateY(30deg);
+            transform-style: preserve-3d;
+        }
+
+        .box{
+            background-color: aqua;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+
+            transform: rotateX(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>

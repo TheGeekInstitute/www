@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .header,.footer{
+            background-color: grey;
+            height: 10vh ;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: greenyellow;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+.red,.blue,.green,.yellow{
+    height: 40vh;
+    width: 50vw;
+    display: inline-block;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">header</div>
+    <div class="red">red</div><div class="blue">Blue</div><div class="green">green</div><div class="yellow">yellow</div>
+    <div class="footer">Footer</div>
+</body>
+</html>

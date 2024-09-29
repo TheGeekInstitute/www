@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+<style>
+    .box p{
+        /* color: red; */
+    }
+
+    .box > p{
+        /* color: red; */
+    }
+
+    .box + p{
+        /* color: red; */
+    }
+
+    .box ~ p{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    
+    
+    <div class="box">
+        <p>Box's Child</p>
+        
+        <div class="one">
+            <p>One's Child</p>
+        </div>
+    </div>
+
+    <p>Box Sibiling1</p>
+    <p>Box Sibiling2</p>
+
+
+</body>
+</html>
+
+
+
+<!-- descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) -->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        .container{
+            width: 300px;
+            margin: 150px auto;
+            text-align:center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+            background-color: rgba(153, 50, 204, 0.425);
+        }
+
+
+        .container h1{
+            font-size: 40px;
+            text-shadow: 0 0 4px rgba(255, 0, 0, 0.63);
+            margin-bottom: 10px;
+        }
+        
+        .container form input{
+            outline: none;
+            border: none;
+            border: 2px solid black;
+            height: 35px;
+            width: 90%;
+            border-width: 1px 1px 4px 1px;
+            border-radius: 3px;
+            font-size: large;
+            padding: 0 5px;
+            margin: 7px 0;
+            color: black;
+            background-color: transparent;
+        }
+
+        .container form label{
+            display: block;  
+            width: 90%;
+            margin: auto;
+            text-align: left;
+            font-size: large;
+        }
+
+        .container form #btn{
+            background-color: royalblue;
+            color: white;
+            width: 150px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signup</h1>
+        <form action="">
+            <label for="">Full Name</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="email">
+            <label for="">Contact Numaber</label>
+            <input type="number">
+            <label for="">Password</label>
+            <input type="password">
+            <label for="">Confirm password</label>
+            <input type="Password">
+            <input type="submit" value="Signup" id="btn">
+        </form>
+    </div>
+</body>
+</html>

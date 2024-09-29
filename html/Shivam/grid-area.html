@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 50px 1fr 1fr 1fr  50px;
+            grid-template-areas: "nav nav nav"
+                                 "left main right1"
+                                 "left main right2"
+                                 "left main right3"
+                                 "footer footer footer";
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav" style="background-color: black; grid-area: nav;"></div>
+        <div class="left" style="background-color: cyan; grid-area: left;"></div>
+        <div class="main" style="background-color: yellow; grid-area: main;"></div>
+        <div class="right1" style="background-color: green; grid-area: right1;"></div>
+        <div class="right2" style="background-color: red; grid-area: right2;"></div>
+        <div class="right3" style="background-color: blue; grid-area: right3;"></div>
+        <div class="footer" style="background-color: black; grid-area:footer;"></div>
+    </div>
+</body>
+</html>

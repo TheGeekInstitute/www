@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Modal</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+
+    <button onclick="opens()">Open</button>
+    <button onclick="closes()">close</button>
+
+    <div class="nav">
+
+    </div>
+    <script>
+
+        // console.log(window.innerHeight)
+        // console.log(window.innerWidth)
+
+        // console.log(window.outerHeight)
+
+    
+        let win;
+        function opens(){
+           win= window.open("https://www.w3schools.com/js/js_window.asp","_blank","height=200px,width=200px,top=250px,left=700px")
+            
+    
+        }
+        
+        function closes(){
+            win.close(win)
+            
+        }
+
+        let left=0;
+        for(let i = 1 ; i<= ; i++){
+            win= window.open("https://www.w3schools.com/js/js_window.asp","_blank","height=200px,width=200px,top=250px,left="+left+"px")
+            left+=200;
+        }
+
+    </script>
+</body>
+</html>

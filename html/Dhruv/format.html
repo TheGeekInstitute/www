@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+       
+        .form{
+            border: 1px solid black;
+            margin: auto;
+            height: 32vh;
+            width: 15vw;
+            /* display: grid; */
+            /* grid-template-columns:15vw 15vw; */
+       border-radius: 10px;  
+       box-shadow: 5px 3px 2px gray; 
+       overflow: hidden;  
+       background-image:linear-gradient(60deg,red,yellow,green) ;
+       animation: all .1s;
+animation-name: box;
+animation-timing-function: linear;
+        }
+@keyframes box{
+    0%{
+        transform: translateX(0%);
+    }
+    50%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translatex(0%);
+    }
+}
+
+.name1{
+    /* display: flex; */
+    /* background-color: red; */
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    background-image:linear-gradient(40deg,blue,purple,pink) ;
+    color: white;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color:transparent ; */
+}
+
+.name2 input, .name3 input{
+    margin: 5px 20px;
+    /* border-radius: 30%; */
+    border: .1px solid black;
+    /* margin-left: 10px; */
+    border-radius: 20px;
+    padding-left: 10px;
+    height: 20px;
+}
+.name4{
+    font-size: 12px;
+    margin: 0px 7px;
+
+}
+.name5{
+    background-image: linear-gradient(45deg,blue,purple,pink);
+    height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+button{
+    background-color: transparent;
+    overflow: hidden;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.name6{
+margin-top:5px;
+margin-left: 10px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="name name1">Lorin Form</div>
+        <div class="name name2">
+        <input type="text" placeholder="User name">
+        </div>
+
+        <div class="name name3">
+            <input type="password" placeholder="password">
+        </div>
+
+
+        <div class="name name4">
+            <input type="checkbox">
+            <span>Remember me</span>
+            <a href="#">Forget password</a>
+        </div>
+        <div class="name name5"><button> Login </button></div>
+        <div class="name name6">
+           <span> Not a member?</span>
+           <a href=#"">signup now</a>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

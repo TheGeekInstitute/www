@@ -1,0 +1,42 @@
+https://app.simplenote.com/p/FFfH2p
+
+
+Samba Server Configuration for sharing resources
+
+1. Install samba apt-get update apt installl
+
+2. Create a Samba Public Share Without Authentication
+
+nano /etc/samba/smb.conf 
+
+[public] 
+comment = no need username and password 
+path = /samba/public 
+browsable = yes 
+guest ok = yes 
+writable = yes 
+read only = no 
+
+mkdir -p /samba/public 
+chmod -R 777 /samba/public 
+systemctl restart smbd.service nmbd.service
+
+3. Create a Private Samba Share
+
+[Private] 
+comment = needs username and password to access 
+path = /samba/private/ 
+browseable = yes 
+guest ok = no 
+writable = yes 
+valid users =admin 
+
+sudo smbpasswd -a username 
+
+mkdir -p /samba/private 
+
+chmod -R 777 /samba/private 
+
+systemctl restart smbd.service nmbd.service
+Published with Simplenote
+Report abuse

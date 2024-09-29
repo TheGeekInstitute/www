@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend-mode</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            background-color: rgba(0, 0, 0, .7);
+        }
+
+        .box img{
+            mix-blend-mode: darken;
+
+        }
+
+
+.new{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../wallpaper.jpg");
+    background-color: rgba(47, 3, 104, 0.534);
+    background-blend-mode: overlay;
+}
+
+
+.new h1{
+    color: white;
+}
+
+</style>
+</head>
+<body>
+    <div class="box">
+        <img src="../web/images/12.jpg" alt="">
+    </div>
+
+
+    <div class="new">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores hic nostrum quasi reprehenderit aliquid ex blanditiis culpa! Amet ut non aperiam quisquam libero mollitia ad ducimus, alias quas est aliquam?</h1>
+    </div>
+</body>
+</html>

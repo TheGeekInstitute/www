@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-transform</title>
+    <!-- <link rel="stylesheet" href="rajan-3d-transform.css"> -->
+    <style>
+        *{
+            margin: 100px auto;
+            padding: 0%;
+
+
+        }
+        .box{
+            border: 1px solid  black;
+            width: 30rem;
+            height: 30rem;
+            background-image: url(https://images8.alphacoders.com/134/1348853.png);
+            background-size: 30rem 30rem;
+            transition: all 3s linear;
+            /* backface-visibility: hidden; */
+            /* transform-origin: top; */
+        }
+        .box:hover{
+            /* transform: rotateX(30deg); */
+            /* transform: rotateY(30deg); */
+            transform: rotateZ(1800deg);
+            /* transform: translateX(300px); */
+            /* transform: translateY(100px); */
+            /* transform:perspective(150px) translateZ(100px); */
+            border-radius: 300px;
+        }
+        .box01{
+            /* border: 1px solid red; */
+            width: 20rem;
+            height: 20rem;
+            background-image: url(https://i.pinimg.com/originals/1b/c4/be/1bc4be083639611654e02b602ab0c8da.jpg);
+            background-size: 0;
+            transition: all 3s linear;
+        }
+        .box:hover .box01{
+            background-size: 20rem 20rem;
+             transform: rotateZ(1800deg);
+            border-radius: 300px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box01">
+        </div>
+    </div>
+    
+</body>
+</html>

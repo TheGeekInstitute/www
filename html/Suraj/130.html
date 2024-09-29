@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .nav{
+        background-color: black;
+        color: white;
+        height: 8vh;
+        margin-left: 15rem;
+    }
+
+    .sidebar{
+        background-color:antiquewhite;
+        width: 15rem;
+        height: 100vh;
+        /* text-align: center; */
+        position:absolute;
+        top: 0;
+    }
+
+    .sidebar img{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        margin-left: 4rem;
+        margin-top: 2rem;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+.sidebar ul{
+    margin-top: 2rem;
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid black;
+
+}
+    .sidebar ul li a{
+        display: block;
+        margin-left: 1rem;
+        padding:1rem 0px;
+        color: black;
+        font-weight: 900;
+        font-size: x-large;
+    }
+
+    .sidebar ul li:hover{
+        background-color: aqua;
+    }
+
+    .main{
+        margin-left: 15rem;
+        background-color: aquamarine;
+        height: 92vh;
+    }
+</style>
+</head>
+<body>
+    <div class="nav">
+       nav
+    </div>
+
+    <div class="sidebar">
+        <img src="../web/images/11.jpg" alt="">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-address-card"></i> About</a></li>
+            <li><a href="#"><i class="fa-solid fa-address-book"></i> Contact</a></li>
+            <li><a href="#"><i class="fa-brands fa-servicestack"></i> Services</a></li>
+            <li><a href="#"><i class="fa-solid fa-compass"></i> Menu</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        main
+    </div>
+</body>
+</html>

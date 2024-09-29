@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object</title>
+</head>
+<body>
+    <button id="next">Next</button>
+    <button id="prev">previous</button>
+    <button id="go">Go</button>
+
+
+
+    <script>
+        let next = document.querySelector('#next');
+        let prev = document.querySelector('#prev');
+        let go = document.querySelector('#go');
+        // next.addEventListener('click',()=>{
+        //     window.history.forward();
+        // })
+        // prev.addEventListener('click',()=>{
+        //     window.history.back();
+            
+        // })
+        // go.addEventListener('click',()=>{
+        //     window.history.go(-5);
+        // })
+        // console.log(window.history.length)
+         next.addEventListener("dblclick",function(){
+            window.history.back();
+         })  
+
+
+
+
+
+    </script>
+
+</body>
+</html>

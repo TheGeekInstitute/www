@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        // function sum(){
+        //     let num1 = prompt ("Enter first number")
+        //     let num2 = prompt ("Enter second number")
+        //     num1 = parseInt(num1)
+        //     num2 = parseInt(num2)
+        //     let sum = (num1+num2)
+        //     if(num1  !=null && num1>0 && num2 !=null && num2>0){
+        //         return num1 + " + " , + num2 + " = "  + sum;
+                
+        //     }
+        //     else{
+        //          return "please provide two positve number";
+        //     }
+
+        // }
+        // alert (sum())
+
+
+        // function sum(){
+        //     let num1 = prompt("Enter  1 number")
+        //     let num2 = prompt( "Enter 2 number")
+        //     num1 = parseInt(num1)
+        //     num2 = parseInt(num2)
+        //     let sum = (num1+num2)
+        //     if(num1 !=null && num1>0 && num2 !=null && num2>0){
+        //         return num1 + " + " , + num2 + " = " + sum;
+        //     }
+        //     else{
+        //         return "please valid number";
+        //     }
+        // }
+        // alert(sum())
+
+
+function table(num){
+    let table=" ";
+    if(num!=null){
+        num = parseInt(num);
+    }
+    else{
+        num = prompt("Enter A number")
+    }
+    if(num!=null && num>0){
+        let mul=0;
+        let sum=0;
+        for(let i=1; i<=10; i++){
+            mul=num*i
+            sum+=mul
+            table+=num + " x " + i + " = " + mul + "<br>";
+
+
+        }
+        table += "The Sum of all Above : "+ sum;
+
+        return table
+            
+    }
+    else{
+          return  "please provide the valid number";   
+    }
+} 
+
+
+document.write(table(20))
+    
+// function table(num){
+//     let table=" ";
+//     if(num!=null){
+//         num = parseInt(num);
+       
+//     }
+//     else{
+//         num = prompt("Enter the A number")
+//     }
+//     if(num!=null && num>0){
+//         for(let i=1;
+//         i<=10;  i++){
+//             table+=num +  " x " + i + " = " + num*i  + "<br>";
+            
+//         }
+//         return table
+//     } else{
+//         return "please provid valid number";
+//     }
+
+    
+// }
+// document.write(table(12))
+
+    </script>
+    
+</body>
+</html>

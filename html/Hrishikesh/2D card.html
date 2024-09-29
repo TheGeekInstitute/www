@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 17rem;
+            width: 15rem;
+            background-image: url(../images/18.jpg);
+            margin: 200px auto;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .container .card{
+            transition: all .5s linear;
+            height: 17rem;
+            width: 15rem;
+            backdrop-filter: blur(7px);
+            /* background-color: rgba(64, 224, 208, 0.5); */
+            transform: translateX(100%);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container .card img{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin: 2rem;
+        }
+        .container .card h1{
+            font-size: 1.2rem;
+            text-decoration: underline;
+        }
+        .container:hover .card{
+            transform: translateX(0);
+        }
+
+        @supports (backdrop-filter:blur(2px)){
+            .container .card{
+            backdrop-filter: blur(2px);
+
+            }
+        }
+
+     
+        @supports  not (backdrop-filter:blur(2px)){
+            .container .card{
+                background-color: rgba(14, 2, 2, 0.644);
+              /* backdrop-filter: blur(87px); */
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="card">
+            <h1>ABCD XYZ</h1>
+            <img src="../images/11.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae magni tempore, magnam quasi velit a d</p>
+        </div>
+     </div>
+</body>
+</html>

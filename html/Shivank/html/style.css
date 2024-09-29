@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(0, 15, 28);
+}
+
+#abcd h1{
+    color: rgb(233, 145, 14);
+}
+  
+
+#heading{
+    background-color: aqua;
+}
+.new{
+    color: blue;
+}
+
+.cow {
+    background-color:#FFA07A;
+}
+.cow h1{
+    color: rebeccapurple;
+}
+.cow p{
+    color: rgb(94, 255, 0);
+}
+#horse h1{
+    background-color: blueviolet;
+}
+.horse p{
+ background-color: #800080;
+}
+.word h1{
+    color: aqua;
+}

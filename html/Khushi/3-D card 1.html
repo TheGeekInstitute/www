@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>three-d card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            transform-style: preserve-3d;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            
+            
+
+        }
+        .container .card{
+            height: 100%;
+            width: 100%;
+            transition: all 2s linear;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 100%;
+            width: 100%;
+            text-align: center;
+
+            backface-visibility: hidden;
+            position: absolute;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+        .container .card .front{
+            /* background-color: rgb(243, 19, 187); */
+            background-image: url(https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container .card .front h1{
+            background-color:beige;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            position: relative;
+            top: 263px;
+            color: darkred;
+        }
+        .container .card .back h1{
+            font-family: cursive;
+            color:yellow;
+            
+        }
+        
+
+        .container .card .back{
+            transform: rotateY(180deg);
+            background-image: url(https://images.unsplash.com/photo-1562690868-60bbe7293e94?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9zZSUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+        p{
+            font-weight: 600;
+            font-family: cursive;
+            color: whitesmoke;
+            
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+        <div class="front">
+        <h1>Khushi ku.gupta</h1>
+        </div>
+
+        <div class="back">
+        <h1>KHUSHI</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis eos non voluptatibus blanditiis doloribus odit expedita maxime magni, reprehenderit eius nisi ut deleniti sit ea a adipisci nobis Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius velit debitis incidunt minima mollitia sapiente beatae qui molestiae numquam quos quis unde modi optio, libero quisquam laborum maxime necessitatibus!
+
+        </P>
+
+        </div>
+    </div>
+
+</div>
+
+    
+</body>
+</html>

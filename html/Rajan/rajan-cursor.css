@@ -1,0 +1,18 @@
+.container{
+    border: 1px solid black;
+    width: 30rem;
+    height: 20rem;
+    background-image: url(https://free-3dtextureshd.com/wp-content/webpc-passthru.php?src=https://free-3dtextureshd.com/wp-content/uploads/2024/03/86.jpg&nocache=1);
+    background-size: cover;
+}
+.container .box{
+    border: 1px solid red;
+    width: 8rem;
+    height: 2.3rem;
+    margin: 5px;
+}
+.container .box1{
+    background-color: red;
+    corsor: help ;
+    filter: blur(1px);
+}

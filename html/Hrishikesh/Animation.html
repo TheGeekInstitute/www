@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            height: 20rem;
+            width: 19rem;
+            border-radius: .3rem;
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            animation: move 2s linear 1s infinite alternate;
+        }
+        .card h1{
+            font-size: x-large;
+            text-decoration: underline;
+            text-shadow: 0rem 0rem .2rem brown;
+        }
+        .card img{
+            height: 8rem;
+            width: 8rem;
+            border-radius: 50%;
+            border: .8rem ridge red;
+            margin: .8rem 0rem .8rem 0rem;
+        }
+        .card p{
+            font-size: large;
+            text-shadow: 0rem 0rem .8rem greenyellow;
+        }
+        @keyframes move{
+            0%{
+                transform: rotate(0,0);
+            }
+            20%{
+                transform: rotate(calc(100vw, 0));
+                background-color: green;
+            }
+            40%{
+                transform: rotate(0, calc(100vw));
+                background-color: turquoise;
+            }
+            60%{
+                transform: rotate(calc(100vw, 0));
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Geek Institute</h1>
+        <img src="../wallpaper.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nisi sunt assumenda sequi modi dolores doloremque enim? Ipsum eaque quo cum min</p>
+    </div>
+</body>
+</html>

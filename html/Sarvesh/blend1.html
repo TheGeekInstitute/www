@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend</title>
+    <style>
+        .box{
+            background-color: red;
+        }
+
+        .box img{
+            mix-blend-mode: darken;
+            height: 200px;
+            width: 200px;
+        }
+
+        .container{
+            height: 300px;
+            width: 300px;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: blue;
+            color: white;
+            background-blend-mode: lighten;
+            margin-top: 5px;  
+        }
+
+        .main img{
+            height: 300px;
+            width: 300px;
+            margin-top: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: blue;
+            color: white;
+            background-blend-mode: lighten;
+
+        }
+
+        .main img:hover{
+            background-color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../wallpapers/art/young-hare.jpg" alt="">
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis magnam sequi necessitatibus mollitia numquam 
+    </div>
+
+    <div class="main">
+        <img src="../wallpapers/psychedelic/1339547-popular-4k-psychedelic-wallpapers-3840x2160-hd-1080p.jpg" alt="">
+    </div>
+</body>
+</html>

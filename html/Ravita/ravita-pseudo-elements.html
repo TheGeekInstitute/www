@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lorem::first-letter{
+            color: green;
+            font-size: xx-large;
+             font-weight:900;
+            font-family: Georgia;
+        }
+
+        .lorem::first-line{
+            color: rgb(231, 116, 135);
+        }
+
+        .lorem::selection{
+            background-color: rgb(4, 77, 105);
+            color: aqua;
+        }
+
+        ul li::marker{
+            color: rgb(198, 146, 247);
+            font-size: x-large;
+        }
+
+        input::placeholder{
+            opacity:.5;
+            color: rgb(179, 104, 104);
+        }
+
+        #file::-webkit-file-upload-button,
+        #file::file-selector-button{
+            background-color: rgb(104, 243, 197);
+            border: 2px solid rgb(172, 131, 139);
+        }
+           
+        .heading::after{
+          content: ' GEEK INSTITUTE';
+           background-image: linear-gradient(rgb(243, 131, 149) , rgb(87, 87, 167));
+        }
+
+        .heading::before{
+            content: attr(data-myattr);
+            background-image: linear-gradient(rgb(243, 131, 149) , rgb(87, 87, 167));
+
+        }
+   
+    </style>
+</head>
+<body>
+    <h1 class="heading" data-myattr="THE" ></h1>
+
+    <ul>
+        <li>Laxmi</li>
+        <li>Ravita</li>
+        <li>Sumit</li>
+    </ul>
+
+    <p class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus incidunt consectetur quos beatae quaerat quae, magni cumque sint ut voluptatum quasi vitae neque quisquam. Optio quis quos quas ullam sunt?
+        Rem quam aspernatur consequuntur omnis, ad officiis, quisquam totam et qui eaque quia blanditiis nemo debitis est sequi aliquam fugit amet. Rerum et dolorem temporibus est quas vitae harum quidem.
+        Ullam fugiat accusamus voluptate. Assumenda et sit, quos tempora corporis beatae incidunt suscipit obcaecati voluptates ipsam! Eaque consequatur, molestias ratione deleniti sequi, nostrum quam voluptatem amet minus repellat, corrupti quia!
+        Illo blanditiis perferendis velit animi debitis laboriosam voluptatem accusantium qui doloremque nisi ullam necessitatibus maiores a suscipit, quidem atque ad corporis soluta dolore iusto ea assumenda neque repellendus accusamus? Quod.
+        
+    </p>
+    <input type="text" id="txt" placeholder="abcd">
+     <input type="file" id="file">
+</body>
+</html>

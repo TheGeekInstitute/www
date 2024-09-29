@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D- Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 200px;
+            width: 400px;
+            border: 2px solid black;
+            margin: 150px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: red;
+        }
+
+        .container .box:first-child{
+          
+            width: 300px;
+            height: 100%;
+            clip-path: polygon(0 0, 100% 0, 45% 100%, 0% 100%);
+            background-color: rgba(0, 0, 0, 0.699);
+            position: relative;
+            right: 10px;
+            scale: 4;
+            z-index: -1;
+        
+        }
+
+        .container .box:nth-child(2){
+          
+            width: 200px;
+            height: 100%;
+            background-color: rgba(0, 128, 0, 0.507);
+            clip-path: polygon(0 0, 100% 0, 45% 100%, 0% 100%);
+            transform: rotate(180deg);
+            scale: 2;
+            position: relative;
+            z-index: -1;
+
+
+        }
+
+        .content{
+            position: relative;
+            /* height: 100%;
+            width: 100%; */
+            z-index: 40;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus libero perferendis eius explicabo, nisi hic, animi est rem ut, corporis illo porro fugit voluptatem iusto quod officiis laboriosam dolorem. Modi!
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

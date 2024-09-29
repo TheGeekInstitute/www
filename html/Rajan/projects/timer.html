@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border: 2px solid red;
+            height: 100px;
+        }
+        h3{
+            border: 1px solid black;
+            margin: 5px;
+            width: 30px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="timer">
+        <h3 class="m"></h3>
+        <h3 class="s"></h3>
+    </h1>
+
+    <button id="start">START</button>
+
+    <script>
+        let timer = document.querySelector('#timer');
+        let st=document.querySelector('#start');
+        let m=document.querySelector('.m');
+        let s=document.querySelector('.s');
+
+        
+        // let abcd =setInterval(() => {
+        //   let date = new Date();
+        //     timer.innerHTML = date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds() + " : " + date.getMilliseconds()
+        // }, 5);
+        
+        
+        st.addEventListener("click",()=>{
+            // clearInterval(abcd)
+            let mi=1;
+            let se=1;
+            let sceonds =setInterval(()=>{
+                s.innerHTML=se;
+                se++;
+                if(se==60){
+                    se=1;
+                }
+            },1000)
+            
+            let minutes = setInterval(()=>{
+                m.innerHTML=mi;
+                mi++;
+            },60000)
+
+        })
+
+    </script>
+</body>
+</html>

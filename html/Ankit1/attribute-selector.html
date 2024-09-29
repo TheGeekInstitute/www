@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+<style>
+
+    input[type="text"]{
+        /* background-color: red; */
+    }
+
+    a[target]{
+        color: red;
+        
+    }
+
+    p[class~="para1"]{
+        /* color: red; */
+    }
+
+    p[class|="my"]{
+        /* color: blue; */
+    }
+
+    p[class^="abcd"]{
+        /* color: green; */
+    }
+
+    p[class$="key"]{
+        /* color: red; */
+    }
+
+    p[class*="para"]{
+        color: yellow;
+        background-color: black;
+    }
+
+
+</style>
+</head>
+<body>
+    <p align="center" class="abcde para1 paragraph1 mypara1 abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus in totam tenetur, sunt mollitia distinctio quaerat, voluptates similique, maxime alias magnam? Nulla vel animi omnis, reiciendis ducimus explicabo laudantium.</p>
+    <p align="left" class="my-abcd para paragraph mypara key">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facere est aliquam eum veniam quo tenetur dolorum explicabo aspernatur aliquid, deserunt tempora eaque fugiat animi nam necessitatibus in quam iure.</p>
+    
+    <a href="#">Abcd</a>
+    <a href="#" target="_abcd">qwerty</a>
+    <a href="#" target="_blank">Xyz</a>
+<input type="text">
+<input type="password">
+</body>
+</html>
+
+<!-- https://www.w3schools.com/css/css_attribute_selectors.asp -->

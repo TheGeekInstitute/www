@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3dx</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            backface-visibility: hidden;
+
+        }
+        .container  .card{
+
+        backface-visibility: hidden;
+    
+
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            font-size: 100px;
+            align-items: center;
+            justify-content: center;
+            line-height: 70px;
+
+        }
+        .container .card .front{
+            background-color: purple;
+            
+        }
+        .container .card  .back{
+            background-color: green;
+            backface-visibility: hidden;
+            transform: rotateY(280deg);
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+<div class="card">
+<div class="front">front</div>
+<div class="back">back</div>
+
+
+</div>
+
+
+   </div>
+    
+</body>
+</html>

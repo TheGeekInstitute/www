@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /* margin-top: 20px; */
+        }
+        
+        .container{
+            border: 2px solid black;
+            height:80vh ;
+            width: 90vw;
+            margin: auto;
+            display: grid;
+            /* grid-template-columns: fit-content(100px) repeat(2,1fr); */
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,100px);
+            /* align-items:start;
+            justify-items: start; */
+            /* place-items: center end; */
+            /* justify-content: space-evenly; */
+            /* align-content: space-between; */
+        }
+   
+
+        .item1{
+            background-color: aqua;
+            order: 10;
+   
+        }
+
+        .item2{
+            background-color: brown;
+            /* align-self: end;
+            justify-self: end; */
+            /* place-self: start center; */
+            order: 9;
+     
+        }
+
+        .item3{
+            background-color: green;
+       
+        }
+
+        .item4{
+            background-color: greenyellow;
+            order: 8;
+            
+        }
+        .item5{
+            background-color: bisque;
+            order: -1;
+           
+        }
+        .item6{
+            background-color:grey ;
+            
+        }
+
+        .item7{
+            background-color: aquamarine;
+           
+        }
+
+        .item8{
+            background-color: red;
+           
+        }
+
+
+        .item9{
+            background-color: orangered;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+
+
+ 
+
+
+    </div>
+</body>
+</html>

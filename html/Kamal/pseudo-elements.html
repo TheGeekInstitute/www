@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+        .para{
+            /* user-select: none; */
+            /* user-select: all; */
+        }
+
+        ul li::marker{
+            color: red;
+        }
+
+        ul li{
+            color: blue;
+        }
+       
+        .geek::before{
+            content: 'The ';
+            color: red;
+        }
+        .geek:hover::before{
+            content: " " attr(data-myattr);
+            color: crimson;
+        }
+
+        .name::placeholder{
+            color: red;
+            opacity: 100%;
+        }
+
+        .name{
+            caret-color: cyan;
+            outline: transparent;
+        }
+
+        .name:placeholder-shown{
+            border: 2px solid red;
+        }
+
+        .name:not(:placeholder-shown){
+            border: 2px solid blue;
+        }
+
+        .file::-webkit-file-upload-button,
+        .file::file-selector-button{
+            background-color: red;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, esse praesentium. Excepturi, praesentium itaque nostrum hic obcaecati vero, eius alias provident repellendus fuga animi autem quasi laudantium, corporis quam est.</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+
+    <h1 class="geek" data-myattr="Institute of Cyber Security">Geek</h1>
+
+    <input type="text" class="name" placeholder="Enter Name">
+
+    <input type="file" class="file">
+</body>
+</html>

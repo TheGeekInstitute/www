@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading" align="center" style="color: red;">Lorem ipsum <strong>dolor</strong> sit, amet consectetur adipisicing elit. Tenetur unde <br> cupiditate mollitia. A vitae consequatur quisquam voluptatibus est repellat voluptatum dignissimos natus odit dolor placeat dicta ab porro, ea totam.</h1>
+    <h1 id="heading">This is Simple heading</h1>
+
+    <p class="heading">djkas</p>
+
+    <button onclick="oldimage()">One</button>
+
+    <img src="../web/images/10.jpg" alt="" id="image">
+    <button onclick="newimage()">Two</button>
+
+
+
+
+    <script>
+        let data = document.getElementsByClassName("heading")[0];
+
+        // console.log(data.innerHTML)
+        // console.log(data.innerText)
+        // console.log(data.getAttribute("align"))
+        // console.log(data.getAttributeNode("align"))
+        // console.log(data.attributes[0])
+
+
+        function newimage(){
+    //  document.getElementById("heading").innerText = "Hello <br> world"
+    // document.getElementById("heading").innerHTML = "Hello <br> world"
+
+    // document.getElementById("heading").setAttribute("style","color:green;")
+
+    // data.setAttribute("style","color:green;")
+        // data.removeAttribute("align");
+        // data.removeAttribute("style")
+
+        document.getElementById("image").setAttribute("src","../web/images/1.jpg")
+
+}
+
+
+function oldimage(){
+    document.getElementById("image").setAttribute("src","../web/images/10.jpg")
+}
+
+
+
+// let info = document.querySelector(".heading");
+let info = document.querySelectorAll(".heading")[1];
+
+console.log(info)
+
+
+    </script>
+</body>
+</html>

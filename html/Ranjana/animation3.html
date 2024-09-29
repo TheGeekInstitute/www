@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 1 px solid red;
+            position: absolute;
+            top: calc(50% - 150px);
+    left: calc(50% - 150px);
+
+
+
+        }
+        .box::after,.box::before{
+    content: "";
+    /* display: inline-block; */
+    /* border: 2px solid red; */
+    position: absolute;
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    z-index: -1;
+    animation: change-color 3s linear 0s infinite alternate;
+    border-radius: 10px;
+    }
+    .box::after{
+        filter: blur(30px);
+    }
+    .box{
+        background-color: black;
+        color: white;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+    @keyframes change-color{
+            from{
+                background-size: 0;
+            }
+            to{
+                background-size: 400px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        ranjana
+    </div>
+</body>
+</html>

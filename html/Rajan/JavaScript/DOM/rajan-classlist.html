@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pare{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para para">Paragraph 1</p>
+        <p class="para">Paragraph 2</p>
+        <p class="para">Paragraph 3</p>
+        <p class="para">Paragraph 4</p>
+        <p class="para">Paragraph 5</p>
+    </div>
+
+    <script>
+        let para = document.querySelectorAll(".para");
+        Array.from(para).forEach(function(para){
+            para.addEventListener("click",function(){
+            para.classList.toggle("pare")
+            })
+
+        })
+        Array.from(para).forEach(function(para){
+            para.addEventListener("click",function(){
+            // para.classList.toggle("pare")
+            })
+
+        })
+        Array.from(para).forEach(function(para){
+            para.addEventListener("click",function(){
+            // para.classList.add("pare")
+            })
+
+        })
+        Array.from(para).forEach(function(para){
+            para.addEventListener("click",function(){
+            // para.classList.remove("pare")
+            })
+
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 200px;
+            margin: 150px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../../web/images/1.jpg" alt="" id="image">
+    </div>
+
+    <button onclick="change()">Change</button>
+
+
+    <script>
+        function change(){
+            let data=document.getElementById("image");
+            data.setAttribute("src","../../web/images/10.jpg");
+        }
+    </script>
+</body>
+</html>

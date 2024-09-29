@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        ul{
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+        }
+
+        ul li{
+            /* background-color: red; */
+            padding: 10px;
+            text-align: center;
+            margin: 0 10px;
+            width: 10rem;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        ul li:nth-child(1){
+            background-color: black;
+        }
+
+        ul li:nth-child(2){
+            background-color: red;
+        }
+
+        ul li:nth-child(3){
+            background-color: green;
+        }
+
+        ul li:nth-child(4){
+            background-color: cyan;
+        }
+        
+        .container{
+            border: 2px solid black;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container .book{
+            height: 150px;
+            width: 100px;
+            margin: 10px;
+          
+        }
+
+        .a{
+            background-color: red;
+        }
+
+        .b{
+            background-color: green;
+        }
+
+        .c{
+            background-color: cyan;
+        }
+
+
+        @keyframes show {
+            0%{
+                opacity: 0;
+                transform:  scale(0);
+            }
+
+            100%{
+                opacity: 100;
+                transform:  scale(1) ;
+
+            }
+        }
+
+        @keyframes hide {
+            0%{
+                transform: scale(1);
+            }
+            
+            100%{
+                transform: scale(0);
+            }
+        }
+       /* .container .box{
+            animation: show .5s linear 0s infinite alternate forwards;
+        } */
+
+
+        @keyframes anim {
+            0%{
+                opacity: 0;
+                transform:  scale(0);
+            }
+
+            100%{
+                opacity: 100;
+                transform:  scale(1) ;
+
+            }
+        }
+
+
+        @keyframes anim1 {
+            0%{
+                opacity: 100;
+                transform:  scale(1) ;
+            }
+            
+            100%{
+                opacity: 0;
+                transform:  scale(0);
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li data-book="all">ALL</li>
+
+        <li data-book="a">A</li>
+        <li data-book="b">B</li>
+        <li data-book="c">C</li>
+    </ul>
+    <div class="container">
+        <div class="book a"></div>
+        <div class="book a"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book c"></div>
+        <div class="book c"></div>
+        <div class="book c"></div>
+        <div class="book a"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book b"></div>
+        <div class="book a"></div>
+        <div class="book a"></div>
+        <div class="book a"></div>
+        <div class="book c"></div>
+    </div>
+
+
+    <script>
+        // let li = document.querySelectorAll("li");
+        // let book = document.querySelectorAll(".book");
+        // li.forEach((e)=>{
+        //    e.addEventListener('click',()=>{
+        //     let attr = e.getAttribute("data-book");
+        //     book.forEach((b)=>{
+        //         b.style.animation="show .5s linear 0s 1 alternate forwards";
+
+        //         if(b.classList.contains(attr)==true){
+        //             b.style.animation="show .5s linear 0s 1 alternate forwards";
+        //             b.style.display="block";
+        //         }
+        //         else if(attr == "all"){
+        //             b.style.animation="show .5s linear 0s 1 alternate forwards";
+        //             b.style.display="block";
+                
+        //         }
+        //         else{
+        //             // b.style.animation="hide .5s linear 0s 1 alternate forwards";
+        //             b.style.display="none";
+           
+        //         }
+        //     })
+        //    })
+        // })
+
+        let box = document.querySelectorAll(".book");
+        let li = document.querySelectorAll("li");
+
+        li.forEach((e)=>{
+            e.addEventListener('click',()=>{
+                let attr = e.getAttribute("data-book");
+                box.forEach((a)=>{
+                    
+                    console.log(a.classList.contains(attr))
+                    a.style.animation = "anim .5s linear 0s 1 alternate forwards";
+                    
+                    if(a.classList.contains(attr) == true){
+                        a.style.display = "block";
+                        a.style.animation = "anim .5s linear 0s 1 alternate forwards";
+
+                    }
+                    else if(attr == "all"){
+                        a.style.display = "block";
+                        a.style.animation = "anim .5s linear 0s 1 alternate forwards";
+
+                    }
+                    else{
+                        a.style.animation = "anim1 .5s linear 0s 1 alternate forwards";
+                        setTimeout(()=>{
+                            a.style.display = "none";
+
+                        },450)
+
+                    }
+                })
+            }) 
+        })
+     
+    </script>
+</body>
+</html>

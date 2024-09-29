@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom and jerry</title>
+    <style>
+        img{
+            height: 200px;
+            width: 200px;
+            /* filter: blur(10px); */
+            /* filter: brightness(130%); */
+            /* filter: contrast(250%); */
+            /* filter: drop-shadow(5px 5px gold); */
+            /* margin: 100px auto; */
+            /* filter: grayscale(100%); */
+            /* filter: hue-rotate(600deg); */
+            /* filter: invert(0); */
+            /* filter: none; */
+            /* filter: opacity(40%); */
+            filter: saturate(1000%);
+            /* filter: sepia(100%); */
+
+        }
+        .container{
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMTQ3ZGIzNjMtYWJhMC00MDRhLTgyYWItMjBjNzM0MTIzM2JlXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg);
+            height: 400px;
+            width: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container .box{
+            border: 2px solid gray;
+            height: 200px;
+            width: 200px;
+
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 10px red;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="https://m.media-amazon.com/images/M/MV5BMTQ3ZGIzNjMtYWJhMC00MDRhLTgyYWItMjBjNzM0MTIzM2JlXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg" alt="">
+
+    <div class="container">
+        <div class="box">abcd</div>
+
+    </div>
+    
+</body>
+</html>

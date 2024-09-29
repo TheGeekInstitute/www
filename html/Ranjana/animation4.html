@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        border-radius: 50%;
+        margin: 220px auto;
+       
+    }
+    .wing1{
+        height: 400px;
+        width: 30px;
+        background-color: black;
+        position: relative;
+        top: -150px;
+        left: 35px;
+        transform: rotate(45deg);
+        z-index: -1;
+        border-radius: 100px;
+        background-image: linear-gradient(45deg,red,green,cyan);
+
+    }
+    .wing2{
+        height: 400px;
+        width: 30px;
+        background-color: black;
+        position: absolute;
+        top: -450px;
+        right: 50px;
+        transform: rotate(45deg);
+        z-index: -1;
+        border-radius: 100px;
+
+
+
+    }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="circle">
+            <div class="wing1"></div>
+            <div class="wing2"></div>
+        </div>
+
+
+        <div class="stand"></div>
+
+    </div>
+    
+</body>
+</html>

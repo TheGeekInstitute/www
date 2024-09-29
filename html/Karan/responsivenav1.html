@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: #3949ab;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+        .nav ul li a{
+            color: #ffff;
+        }
+        .nav .menu{
+            display: flex;
+        }
+
+        .nav .menu .main{
+            display: flex;
+            
+        }
+
+        .nav .menu .main li a{
+            margin: 0 10px;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .nav .menu .menu a:hover{
+            color: red;
+        }
+        #btn,.btn{
+            display: none;
+        }
+        @media screen and (max-width:600px) {
+            .btn{
+                display: block;
+                font-size: 30px;
+                cursor: pointer;
+                user-select: none;
+            }
+            .nav{
+                overflow: hidden;
+            }
+            .menu{
+                position: absolute;
+                background-color: red;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav .menu .main a{
+                line-height: 60px;
+                border-bottom: 2px solid white;
+            }
+
+            .nav .menu #btn:checked ~ .main{
+                display: block;
+            }
+            .nav .menu #btn:checked ~ .btn1{
+                display: none;
+            }
+            .nav .menu #btn:checked ~ .btn2{
+                display: block;
+            }
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">ReSpOnSiVe</h1>
+    <ul class="menu">
+        <input type="checkbox" id="btn">
+            <label for="btn" class="btn btn1"><i class="fa-solid fa-bars"></i></label>
+        <label for="btn" class="btn btn2"><i class="fa-solid fa-xmark"></i></label>
+    <div class="main">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">HELP</a></li>
+        <li><a href="#">PRIVACY</a></li>
+       </div>
+        </ul>
+           </div> 
+        </div>
+</body>
+</html>

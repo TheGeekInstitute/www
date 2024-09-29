@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 20px solid red;
+            margin: auto;
+            margin-top: 200px;
+            background-color: cyan;
+            /* border-image-source: url("https://www.w3schools.com/cssref/border.png"); */
+            /* border-image-slice: 30; */
+            /* border-image-repeat:stretch space; */
+            /* border-image-repeat: round; */
+            /* border-image-width: 30px; */
+            /* border-image-outset: -30px; */
+        
+            /* border-image: linear-gradient(45deg,red,yellow,green,cyan) 30; */
+
+
+            border-image-slice:
+15 15 18 15 fill;
+border-image-width:
+10px 10px 10px 10px;
+border-image-outset:
+0px 0px 0px 0px;
+border-image-repeat:
+round round;
+border-image-source:
+url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-3.png");
+border-style:
+solid;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

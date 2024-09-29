@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .row{
+            margin: 100px;
+            /* background-image: linear-gradient(red , yellow , blue); */
+        }
+        body{
+            background-image: linear-gradient(red, blue , yellow , green );
+            /* background-repeat: none; */
+            /* background-size: cover; */
+            background: no-repeat;
+        }
+        .internet{
+	position: relative;
+	margin-top: 30px;
+    /* width: 100px; */
+	margin-bottom: 30px;
+}
+
+	.label{
+		font-size: 20px;
+		color: black;
+		position: absolute;
+		pointer-events: none;
+		/* top: 9px; */
+		left: 12px;
+		transition: all 0.1s ease;
+        color: red;
+	}
+    
+	input:focus ~ .label,
+	input:not(:focus):valid ~ .label {
+        top: -30px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 25px;
+		/* opacity: 1; */
+        color: blue;
+	}
+    input{
+        width: 200px;
+        height: 30px;
+        outline: none;
+        background-color: aqua;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="row">
+		<div class="col-">
+			<div class="internet">
+			<input type="text" id="username" class="form-control" autocomplete="off" autofocus required />
+				<label class="label">Usdddername</label>
+			</div>
+		
+		
+		</div>
+	</div>
+</body>
+</html>

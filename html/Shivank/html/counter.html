@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            counter-reset: order;
+        }
+        h1::before{
+            color: red;
+            content: counter(order) ".";
+            counter-increment: order;
+        }
+        h1{
+            counter-reset: powder;
+        }
+        h2{
+            text-indent: 25px;
+            counter-reset: one;
+        }
+
+        h2::before{
+            color: green;
+            content: counter(order) "." counter(powder);
+            counter-increment: powder;
+        }
+        h3{
+            text-indent: 50px;
+            counter-reset: pan;
+        }
+        h3::before{
+            color: brown;
+            content: counter(order) "." counter(powder) "." counter(one);
+            counter-increment: one;
+        }
+        h4{
+            text-indent: 70px;
+        }
+        h4::before{
+            color: blueviolet;
+            content: counter(order) "." counter(powder) "." counter(one) "." counter(pan);
+            counter-increment: pan;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Ram</h1>
+            <h2>pappu</h2>
+                <h3>ramu</h3>
+                <h4>prem</h4>
+                <h4>shivam</h4>
+                <h3>samu</h3>
+                <h3>ravi</h3>
+            <h2>netu</h2>
+        <h1>Shyam</h1>
+        <h1>Ramesh</h1>
+    </div>
+</body>
+</html>

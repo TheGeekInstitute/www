@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+            *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aquamarine;
+            height: 4rem;
+        }
+
+        .nav ul li{
+            display: inline-block;
+            margin: 0px 5px;
+        }
+
+        .user{
+            margin: 0px 5px;
+        }
+        .card{
+            margin: 0px 5px;
+        }
+
+        .nav .search{
+            border: 1px solid grey;
+            height: 2em;
+            width: 12rem;
+        }
+
+        .nav .btn1{
+            height: 2em;
+            border: 1px solid rgb(255, 18, 57);
+            width: 2em;
+            background-color: rgb(255, 18, 57);
+            margin-left: -4px;
+            color: white;
+        }
+
+        .user{
+            color: black;
+            font-size: 1.3rem;
+        }
+        .card{
+            color: black;
+            font-size: 1.3rem;
+        }
+        .main h2{
+            padding: 1rem;
+            margin: 1rem;
+        }
+        .image img{
+            height: 10vh;
+            width: 13vw;
+            border: 1px solid #fff;
+            box-shadow: 2px 2px 2px grey;
+            margin: 3px;
+            transition: all .5s linear;
+        }
+        .image img:hover{
+            box-shadow: 2px 2px 2px green;
+            background-color: black;
+             color: #fff;
+        }
+        .phone{
+            display: flex;
+        }
+        .btn{
+            color: #fff;
+            background-color: blue;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            margin: 0.3rem;
+            transition: all .5s linear;
+        }
+        .btn:hover{
+            box-shadow: 2px 2px 4px green;
+            background-color: black;
+            color: #fff;
+           
+        }
+        .mobile {
+            border: 1px solid white;
+            box-shadow: 2px 2px 2px grey;
+            text-align: center;
+        }
+        
+        
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color:#ffff ;
+            height: 30vh;
+            padding: 1.4rem;
+        }
+        .footer ul li a {
+            color:#fff;
+        }
+        .footer h1{
+            color:#fff
+        }
+        .first{
+            color: #fff;
+        }
+        .second{
+            color: red;
+        }
+        .color{
+            height: 10vh;
+            background-color: black;
+            text-align: center;
+        }
+        h3{
+            color: #ffff;
+        }
+        span{
+            color:rgb(219, 44, 24);
+            font-family: 'Dancing Script', cursive;
+        }
+        .social{
+            font-size: 30px;
+        }
+        .fb{
+            color: blue;
+        }
+        .ig{
+            color: rgb(184, 14, 184);
+        }
+         .tw{
+        color: rgba(0, 255, 255, 0.842);
+        }
+
+        .li{
+            color: rgb(49, 49, 235);
+        }
+        span{
+            color: rgb(250, 28, 3);
+        }
+        @media only screen and (max-width:700px) {
+            .nav{
+                display: none;
+            }
+            .image{
+                width: 100%;
+                /* display: inline-block; */
+            }
+             .image img{
+                width: 40px;
+            }
+            .phone{
+                
+                display: flex;
+                flex-direction: column;
+            }
+            .mobile{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .mobile .btn{
+                margin-left: 100px;
+                width: 300px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">OWN YOUR <SPAn>FLIPKART</SPAn></h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+
+    <form>
+    <input type="text" class="search">
+                <button class="btn1"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <a href="#"><i class="fa fa-shopping-cart card" aria-hidden="true"></i>
+                    </a>
+                    <a href="#"><i class="fa fa-user user" aria-hidden="true"></i>
+                    </a>
+                <!-- </div> -->
+            </form>
+
+    </div>
+    <div class="main">
+        <h2>Select Your Favourite Brand</h2>
+        <div class="image">
+            <img src="https://www.oneplus.com/content/dam/oasis/page/common/logo/OnePlus_Logo.png" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple-logo.png/640px-Apple-logo.png" alt="">
+            <img src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/360_197_1.png?$FB_TYPE_B_PNG$" alt="">
+            <img src="https://1000logos.net/wp-content/uploads/2022/02/Vivo-Logo.jpg" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/800px-Xiaomi_logo.svg.png" alt="">
+            <img src="https://download.logo.wine/logo/Oppo/Oppo-Logo.wine.png" alt="">
+            <img src="https://www.logocentral.info/wp-content/uploads/2022/09/Nokia-logo-1920x1080-1.png" alt="">
+        </div>
+        <h2>Smartphones</h2>
+        <div class="phone">
+            <div class="mobile">
+                <img src="https://m.media-amazon.com/images/I/41kyuER2HjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+                <h4>samsung Glaxy S22</h4><br>
+                <h4>$10000</h4>
+                <button class="btn">Add to card</button>  
+                <button class="btn">Bay Now</button>
+            </div>
+            <div class="mobile">
+                <img src="https://m.media-amazon.com/images/I/41kyuER2HjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+                <h4>samsung Glaxy S22</h4><br>
+                <h4>$10000</h4>
+                <button class="btn">Add to card</button>  
+                <button class="btn">Bay Now</button>
+            </div>
+            <div class="mobile">
+                <img src="https://m.media-amazon.com/images/I/41kyuER2HjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+                <h4>samsung Glaxy S22</h4><br>
+                <h4>$10000</h4>
+                <button class="btn">Add to card</button> 
+                <button class="btn">Bay Now</button>
+            </div>
+            <div class="mobile">
+                <img src="https://m.media-amazon.com/images/I/41kyuER2HjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+                <h4>samsung Glaxy S22</h4><br>
+                <h4>$10000</h4>
+                <button class="btn">Add to card</button>  
+                <button class="btn">Bay Now</button>
+            </div>
+            <div class="mobile">
+                <img src="https://m.media-amazon.com/images/I/41kyuER2HjL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
+                <h4>samsung Glaxy S22</h4><br>
+                <h4>$10000</h4>
+                <button class="btn">Add to card</button> <br><br>
+                <button class="btn">Buy Now</button> 
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="first">
+            <h1>Ester</h1>
+            <ul>
+                <li><a href="#">Home Dacer</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Hales</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Hales</a></li>
+            </ul>
+        </div>
+        <div class="second">
+            <h1>Services</h1>
+            <ul>
+                <li><a href="#">Deals in Dives</a></li>
+                <li><a href="#">Home Dacer</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Hales</a></li>
+            </ul>
+        </div>
+        <div class="third">
+            <h1>Cateogaries</h1>
+            <ul>
+                <li><a href="#">Electronic</a></li>
+                <li><a href="#">Sevices</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Decoreaction</a></li>
+                <li><a href="#">Home Dacer</a></li>
+            </ul>
+        </div>
+        <div class="forth">
+            <h1>Contact Us</h1>
+            <ul>
+                <li><a href="#"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Email Us</a></li>
+                <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                    Call us</a></li>
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                    Kapashera New Delhi</a></li>
+                </ul>
+                </div>
+                <div class="social">
+            <a href="https://www.facebook.com/@karanpokhriyal5">
+                <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+            </a>
+        <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                <i class="fa fa-instagram ig" aria-hidden="true"></i>
+            </a>
+        <a href="https://twitter.com">
+                <i class="fa fa-twitter tw" aria-hidden="true"></i>
+            </a>
+        <a href="https://in.linkedin.com">
+                <i class="fa fa-linkedin li" aria-hidden="true"></i>
+            </a>
+    </div>
+    </div>
+    <div class="color">
+        <h3>copyright@ 2023 | contact by <span>karan chandra</span></h3>
+    </div>
+</body>
+</html>

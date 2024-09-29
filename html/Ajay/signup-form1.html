@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container{
+       
+            height: 300px;
+            width: 270px;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 135px);
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px black;
+
+            background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+
+        .container form .field{
+         
+            width: 95%;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .container form .field i{
+            display: block;
+            /* border: 1px solid black; */
+            font-size: 30px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+   border-width: 1px 1px 3px 1px;
+   background-color: transparent;
+   color:white;
+   text-shadow: 0px 0px 2px black;
+
+        }
+.container form .field input{
+    height: 40px;
+    width: 80%;
+    margin-left: -1px;
+    outline: none;
+   border: 1px solid black;
+   border-width: 0px 0px 2px 0px;
+   padding: 0 3px;
+   font-size: large;
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+}
+
+.container form button{
+    background-color: royalblue;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    padding: 5px 50px;
+    border: none;
+    border-radius: 3px;
+}
+
+.container form button:hover{
+    box-shadow: 2px 2px black;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Signup</h1>
+
+        <form action="">
+            <div class="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="field">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button><i class="fa-solid fa-angles-right"></i></button>
+        </form>
+
+    </div>
+
+</body>
+</html>

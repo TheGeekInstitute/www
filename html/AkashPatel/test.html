@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .accordion{
+            border: 1px solid black;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+
+        .item{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 0 10px;
+        }
+
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .change .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .links a{
+            margin: 10px 10px;
+        }
+
+        .one{
+            background-color: red;
+            display: none;
+        }
+
+        .two{
+            background-color: green;
+            display: none;
+        }
+
+        .three{
+            background-color: aqua;
+            display: none;
+        }
+
+        .item:target{
+            display: block;
+        }
+
+        @media screen and (max-width:400px) {
+            .accordion{
+                display: block;
+            }
+
+            .change{
+                display: none;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="change">
+            <div class="links">
+                <a href="#one">One</a>
+                <a href="#two">Two</a>
+                <a href="#three">Three</a>
+            </div>
+    
+            <div class="box">
+        
+                <div class="one item" id="one"></div>
+                <div class="two item" id="two"></div>
+                <div class="three item" id="three"></div>
+            </div>
+        </div>
+
+
+
+        <div class="accordion">
+
+        </div>
+    </div>
+</body>
+</html>

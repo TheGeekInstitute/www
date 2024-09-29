@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        .sidebar{
+            /* background-color: rgb(47, 32, 184); */
+            height: 100vh;
+            width: 12rem;
+            margin: -4rem;
+            position: absolute;
+            box-shadow: 0px 4px 3px black;
+        }
+        .nav{
+            background-color: rgb(17, 2, 70);
+            height: 4rem;
+            width:  calc(100% - 12rem);
+            margin-left: 12rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 0px 10px;
+            box-shadow: 10px 10px 20px grey;
+        }
+        .nav .profile img{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin: top 5px;
+            border: 2px solid white;
+
+        }
+        .nav .btn a{
+            background-color: brown;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 400;
+        }
+        .nav .btn a span{
+            font-weight: 900;
+            color: black;
+        }
+        .profile {
+            /* border: 1px solid red; */
+            margin: 5px;
+            /* margin-top: -10px; */
+        }
+        .nav.profile p{
+            padding: 10px;
+            display: inline-block;
+            position: relative;
+            top: -10px;
+        }
+        .nav.profile p span{
+            font-weight: 900;
+
+        }
+        .nav.profile a{
+            background-color: red;
+            padding: 10px;
+            position: relative;
+            top: -10px;
+            color: white;
+            font-weight: 700px;
+            border-radius: 4px;
+
+        }
+        .nav.profile a:hover{
+            background-color: crimson;
+
+        }
+        .container{
+            margin-left: 12rem;
+            background-color: rgb(202, 241, 228);
+            height: calc(92vh - 4rem);
+            width: calc(100% - 12rem);
+            max-height: auto;
+            max-width: auto;
+        }
+        .footer{
+            height: 8vh;
+            width: 100vw;
+            margin-left:12rem ;
+            width: calc(100% - 12rem);
+            background-color: rgb(1, 34, 12);
+            text-align: center;
+        }
+        .footer{
+            height: 8vh;
+            width: 100vw;
+            margin-left:12rem ;
+            width: calc(100% - 12rem);
+            background-color: rgb(1, 34, 12);
+            text-align: center;
+        }
+        .sidebar ul li a{
+            display: block;
+            padding:.7em 1em;
+            color: white;
+            font-weight: 600;
+            transition: all .3s;
+        }
+        .sidebar ul li a:hover{
+            background-color: gold;
+            color: black;
+        }
+        .box{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto ;
+            grid-template-rows: auto auto auto;
+            padding: 2em 1em;
+            gap: .5em;
+          
+        }
+        .box .items{
+            color: white;
+            padding: 2.5rem;
+            margin: top 10px;
+            background-color: rgb(43, 226, 165);
+            border-radius: 5px;
+            font-size: 1.3rem;
+            text-align: center;
+            box-shadow: 2px 2px 3px black;
+            transition: all .3s;
+
+
+        }
+        .box .items:hover{
+            background-color: gold;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div class="btn">
+                <a herf="">total student<span>11</span></a>
+                <a herf="">Active student<span>11</span></a>
+                <a herf="">padding student <span>11</span></a>
+            </div>
+            <div class="profile">
+                <img src="../web/images/11.jpg" alt="Profile">
+                <p>hi,<span>Admin</span></p>
+                <a herf="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="sidebar"></div>
+        
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="box">
+                <a href="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+                <a herf="#">
+                    <div class="items">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>Student</p>
+                    </div>
+                </a>
+               
+            </div>
+        </div>
+    </section>
+</body>
+</html>

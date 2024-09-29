@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D</title>
+    <style>
+        *{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+        .container {border:2px solid black;
+        height: 300px;
+        width: 250px;
+        margin: 150px auto;
+        background-size: cover;
+        background-position: center;
+        margin:150 auto;
+    background-image: url(/wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg);
+overflow: hidden;}
+
+    .container .box{  background-color:rgba(0, 0, 0, 0.459);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(88%);
+    transition: all .3s ease-in-out;
+
+}
+   .container:hover .box{transform: translateY(0); }
+
+   @supports( backdrop-filter: blur(3px)){ .container .box { backdrop-filter: blur(3px);}}
+
+   @supports not (backdrop-filter: blur(3px)){ .container .box{ background-color: rgba(0, 255, 255, 0.281);}}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"> <h1>HELLO WORLD </h1>
+            <br>
+
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium tenetur quos tempore amet eveniet, doloremque nemo sint quis eos est deserunt in enim sunt laboriosam quibusdam, expedita autem consectetur cumque.</p>
+     
+
+        </div>
+    </div>
+</body>
+</html>

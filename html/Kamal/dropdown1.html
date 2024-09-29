@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: antiquewhite;
+            background-color: rebeccapurple;
+            height: 4rem;
+            padding: 0 20px;
+        }
+        nav > .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav > .menu > li >a{
+            display: block;
+            color: white;
+            padding: 0 20px;
+            font-size: x-large;
+            font-family: cursive;
+            line-height: 4rem;
+        }
+        nav > .menu > li >a:hover{
+            background-color: black;
+        }
+        
+        
+        nav > .menu > li > .submenu{
+            position: absolute;
+            right: 162px;
+            background-color: aqua;
+            /* display: none; */
+            }
+        nav .menu .li:hover .submenu{
+            display: block;
+        }
+
+        nav > .menu > li > .submenu > li > a{
+            display: block;
+            font-size: large;
+            line-height: 50px;
+            text-align: center;
+            width: 100px;
+            font-family: cursive;
+            font-weight: 600;
+        }
+        nav > .menu > li > .submenu > li > a:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">cars24</div>
+        <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">types</a>
+            <ul class="submenu">
+                <li><a href="#">sedan</a></li>
+                <li><a href="#">suv</a></li>
+                <li><a href="#">compact</a></li>
+            </ul>
+            </li>
+            <li><a href="#">book now</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

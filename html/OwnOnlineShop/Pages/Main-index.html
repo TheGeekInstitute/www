@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwnOnlineShop</title>
+    <link rel="shortcut icon" href="../Images/Brands/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Images/Brands/Logo.png" alt="logo image">
+            </div>
+            <div class="nav-menu">
+                <a href="./index.html">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Pages</a>
+                <a href="#">Contact</a>
+                <a href="./allcat.html">All Cateogaries</a>
+            </div>
+            <div class="cart-navigation">
+                <form action="">
+                    <input type="text" onclick="show()">
+                    <button id="searchbtn" type="submit"><i class="fa-light fa-magnifying-glass"></i></button>
+
+                </form>
+                <div class="suggestion-box">
+                    <div class="suggestion_list">
+                        <a href="#">Samsung Galaxy Ultra Pro Max Legendry</a>
+                        <a href="#">iphone 14 Pro</a>
+                        <a href="#">Motorola Edge</a>
+                        <a href="#">Samsung Galaxy S22 Ultra Pro Max</a></li>
+                        <a href="#">Macbook Air</a>
+                    </div>
+                </div>
+                <!-- cart item count starts -->
+                <div class="cart-icon">
+                    <a href="./cart.html"><i class="fa-light fa-cart-shopping"></i></a>
+                    <p class="items-count">3</p>
+                </div>
+                <!-- cart item count ends -->
+                <div class="user-profile">
+                    <a class="user-icon" href="./login.html"><i class="fa-light fa-user"></i></a>
+                    <div class="profile-dropdown">
+                        <ul class="profile-dropdown_list">
+                            <li>Hi Neeraj</li>
+                            <li><a href="./orders.html">My Orders</a></li>
+                            <li><a href="./profile.html">Profile Setting</a></li>
+                            <li><a href="./account.html">Change Passwod</a></li>
+                            <li><a href="./login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-notification">
+                    <a href="./notifications.html" class="user-notification-icon"><i class="fa-light fa-bell"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cateogary-container">
+        <div class="cateogaries">
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/camera.jpg" alt="cateogary image">
+                    <p>Photography</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/camera.jpg" alt="cateogary image">
+                    <p>Photography</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/camera.jpg" alt="cateogary image">
+                    <p>Photography</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/Samsung A73/001_Galaxy_A73_5G_gray_front.jpg" alt="cateogary image">
+                    <p>Gadgets</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/smartwatch.jpg" alt="cateogary image">
+                    <p>Smart Watch</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/Samsung Buds/005_galaxybudslive_mysticbronze_dynamic_combination-1.jpg"
+                        alt="cateogary image">
+                    <p>Earbuds</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/pexels-kinkate-205926.jpg" alt="cateogary image">
+                    <p>Headphone</p>
+                </a>
+            </div>
+
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Brands/apple.png" alt="cateogary image">
+                    <p>Electronics</p>
+                </a>
+            </div>
+            <div class="cateogary-box">
+                <a href="./Smartphones.html" target="_blank">
+                    <img src="../Images/Products/laptop.jpg" alt="cateogary image">
+                    <p>Laptop</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- cateogary ends -->
+
+    <div class="hero-wrrapper-slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html"><img src="../Images/Assets/size.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Assets/size.jpg" alt="slider imnage">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Posters/Poster6.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Posters/poster1.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Posters/poster7.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Posters/poster5.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-img">
+                        <a href="./index.html">
+                            <img src="../Images/Products/camera.jpg" alt="slider imnage"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- hero erapper ends -->
+
+    <!-- hot deals slider starats -->
+    <div class="hotdeals-container">
+        <div class="hotdeal-header">
+            <h2>Most Viewed <i class="fa-solid fa-arrow-right-long"></i> </h2>
+            <p>Chckout Our Most Viewed Products</p>
+        </div>
+        <div class="swiper hotdeals-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/iphonesale.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Iphone 12</p>
+                        <p>Rs 54000</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Sony K-840</p>
+                        <p>Rs 999</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-math-249597.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Nikon N70</p>
+                        <p>Rs 9899</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <!-- hot deals slider ends -->
+    <!-- cproduct banner starts  -->
+    <div class="hero-wrapper">
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Starting From <span style="color: orangered; font-weight: 900;">₹199<span></p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/laptop.jpg" alt="">
+                    <p> Samsung Galaxy Notebook 3</p>
+                    <p>Starting From <span style="color: orangered; font-weight: 900;">₹199<span></p>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <!--  prodcut banner ends -->
+    <!-- Best deals slider starats -->
+    <div class="hotdeals-container">
+        <div class="hotdeal-header">
+            <h2>Latest Deals <i class="fa-solid fa-arrow-right-long"></i> </h2>
+            <p>Chckout Our Latest Deals</p>
+        </div>
+        <div class="swiper hotdeals-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/iphonesale.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Iphone 12</p>
+                        <p>Rs 54000</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Sony K-840</p>
+                        <p>Rs 999</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-math-249597.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Nikon N70</p>
+                        <p>Rs 9899</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <!-- Best deals slider ends -->
+
+
+    <!-- offer container starts -->
+    <div class="offer-container">
+        <h2>Our offers</h2>
+        <div class="offers">
+            <div class="offer">
+                <a href="./product.html">
+                    <figure>
+                        <img src="../Images/Posters/iphonesale.jpg" alt="">
+                    </figure>
+                    <p>Under 399</p>
+                </a>
+            </div>
+            <div class="offer">
+                <a href="./product.html">
+                    <figure>
+                        <img src="../Images/Posters/poster2.jpg" alt="">
+                    </figure>
+                    <p>Under 399</p>
+                </a>
+            </div>
+            <div class="offer">
+                <a href="./product.html">
+                    <figure>
+                        <img src="../Images/Posters/poster2.jpg" alt="">
+                    </figure>
+                    <p>Under 399</p>
+                </a>
+            </div>
+            <div class="offer">
+                <a href="./product.html">
+                    <figure>
+                        <img src="../Images/Posters/poster2.jpg" alt="">
+                    </figure>
+                    <p>Under 399</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- offer container ends -->
+
+    <!-- shop byn cateogry slider ends -->
+    <div class="hotdeals-container">
+        <div class="hotdeal-header">
+            <h2>Shop By Cateogary <i class="fa-solid fa-arrow-right-long"></i> </h2>
+            <p>Choose the Product that will not affects the budget</p>
+        </div>
+        <div class="swiper hotdeals-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/oneplus.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Oneplus 9R</p>
+                        <p>Rs 35940</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Posters/iphonesale.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Iphone 12</p>
+                        <p>Rs 54000</p>
+                    </div>
+                    <div class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </div>
+                    <!-- Discont banner starts -->
+                    <form class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </form>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-kinkate-205926.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Sony K-840</p>
+                        <p>Rs 999</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+                <div class="swiper-slide hotdeal">
+
+                    <div class="hotdeal-img">
+                        <figure><img src="../Images/Products/pexels-math-249597.jpg" alt="hot deal image"></figure>
+                    </div>
+                    <div class="hotdeal-detail">
+                        <p>Nikon N70</p>
+                        <p>Rs 9899</p>
+                    </div>
+                    <form class="purchase-section">
+                        <button class="purchase addtoCart">Add To Cart</button>
+                        <button class="buynowbtn">Buy Now</button>
+                    </form>
+                    <!-- Discont banner starts -->
+                    <div class="discount-banner">
+                        <label for="">10%</label>
+                        <i class="fa-duotone fa-badge"></i>
+                    </div>
+                    <!-- Discont banner ends -->
+                </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+    <!-- shop byn cateogry slider ends -->
+
+    <div class="hero-wrapper">
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/laptop.jpg" alt="">
+                    <p> Samsung Galaxy Notebook 3</p>
+                    <p>Rs. 98765</p>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <!--  prodcut banner ends -->
+    <div class="hero-wrapper">
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/laptop.jpg" alt="">
+                    <p> Samsung Galaxy Notebook 3</p>
+                    <p>Rs. 98765</p>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <!--  prodcut banner ends -->
+    <div class="hero-wrapper">
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/camera.jpg" alt="">
+                    <p>Nikon S426T</p>
+                    <p>Rs. 48,765</p>
+                </figure>
+            </a>
+        </div>
+        <div class="hero-wrapper_product">
+            <a href="./product.html">
+                <figure>
+                    <img src="../Images/Products/laptop.jpg" alt="">1
+                    <p> Samsung Galaxy Notebook 3</p>
+                    <p>Rs. 98765</p>
+                </figure>
+            </a>
+        </div>
+    </div>
+    <!--  prodcut banner ends -->
+    <!-- Footer  Starts-->
+    <footer>
+        <div class="footer-hero">
+            <div class="about-footer">
+                <h2>Easter</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus adipisci nostrum voluptatibus
+                    porro dignissimos qui doloremque, fugit minima id voluptate?</p>
+            </div>
+            <div class="service-footer">
+                <h2>Services</h2>
+                <ul>
+                    <li><a href="#">Deals in Devices</a></li>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Health</a></li>
+                </ul>
+            </div>
+            <div class="Cateogaries-footer">
+                <h2>Cateogaries</h2>
+                <ul>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Refurbished Devices</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Decoration</a></li>
+                    <li><a href="#">Beauty Products</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </div>
+            <div class="contact-footer">
+                <ul>
+                    <h2>Contact Us</h2>
+                    <li><a href="mailto:mrabraham@thegics.in"> <i class="fa-solid fa-envelope"></i> Email US</a></li>
+                    <li><a href="tel:8447377952"> <i class="fa-solid fa-phone"></i> Call Us</a></li>
+                    <li><a href="#"> <i class="fa-solid fa-house-chimney-crack"></i> Kapashera New Delhi</a></li>
+                </ul>
+                <div class="contact-social">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="https://wa.me/8447377952"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <p>Copyright &copy; 2022 | Created By <a href="https://www.thegics.in/" target="_blank">Gics</a></p>
+        </div>
+    </footer>
+    <!-- Footer ends -->
+    <!-- Swiper JS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                // disableOnInteraction : false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".hotdeals-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 10000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+        const suggbox = document.querySelector('.suggestion-box');
+        function show() {
+            suggbox.classList.toggle('active-box');
+        }
+
+        const userIcon = document.querySelector('.user-icon');
+        const profileDropdown = document.querySelector('.profile-dropdown');
+        userIcon.addEventListener('mouseover', () => {
+            profileDropdown.classList.add('active-profile-dropdown');
+        })
+
+        document.body.addEventListener('click', () => {
+            profileDropdown.classList.remove('active-profile-dropdown');
+        })
+
+        function hotdealFunction(hotdeal) {
+            if (hotdeal.matches) { // If media query matches
+                var swiper2 = new Swiper(".hotdeals-swiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    loop: true,
+                    autoplay: {
+                        delay: 10000,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    }
+                });
+            }
+        }
+        var hotdeal = window.matchMedia("(max-width: 750px)");
+        hotdealFunction(hotdeal);
+        hotdeal.addListener(hotdealFunction)
+
+
+    </script>
+</body>
+
+</html>

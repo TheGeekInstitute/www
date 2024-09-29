@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <Style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(15, 9, 9, 0.493);
+        }
+
+        .container {
+            height: 24rem;
+            width: 20rem;
+            border: 2px solid rgb(255, 255, 255);
+            margin: auto;
+            margin-top: 80px;
+            border-radius: 10px;
+            background-color: rgba(10, 10, 10, 0.527);
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: "Kanit", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            margin-top: 15px;
+        }
+
+        .username {
+            display: block;
+            margin-left: 20px;
+            margin-top: 35px;
+        }
+
+        .username-input {
+            margin-left: 20px;
+            /* margin-top: 4px; */
+            height: 28px;
+            width: 230px;
+        }
+
+        .password {
+            display: block;
+            margin-top: 25px;
+            margin-left: 20px;
+        }
+
+        .password-input {
+            margin-left: 20px;
+            height: 28px;
+            width: 230px;
+        }
+
+        .login-btn {
+            width: 230px;
+            height: 28px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .btns{
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btns a{
+            padding: 8px 20px;
+            background-color: white;
+            text-decoration: none;
+
+
+        }
+
+        .btns a:first-child{
+            margin-right: 10px;
+            margin-left: 20px;
+            background-color: rgba(0, 0, 0, 0.301);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .btns a:last-child{
+            margin-left: 10px;
+            background-color: rgba(0, 0, 0, 0.301);
+            color: white;
+            border-radius: 8px;
+        
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Here</h1>
+        <form>
+            <label class="username">Username</label>
+            <input class="username-input" type="text">
+
+            <label class="password">Password</label>
+            <input class="password-input" type="text">
+
+            <div class="button"></div>
+            <Button class="login-btn">Log In</Button>
+        </form>
+
+      <div class="btns">
+        <a href="#"> <i class="fa-brands fa-google"></i> Google</a>
+        <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a>
+
+      </div>
+
+    </div>
+</body>
+
+</html>

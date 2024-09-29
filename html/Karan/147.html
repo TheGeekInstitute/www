@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+</head>
+
+<style>
+    .box1{
+        border: 30px solid black;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        margin-top: 100px;
+        background-color: bisque;
+        
+        border-image-source: linear-gradient(45deg,red,yellow,green);
+        border-image-repeat:stretch;
+        /* filter: saturate(0); */
+        border-image-slice: 15;
+
+       
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        filter: saturate(150%);
+        border-image-slice: 15 15 15 15 ;
+        border-image-repeat: round;
+        
+    }
+
+    /* .box2{ */
+        /* border: 30px solid black;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        margin-top: 20px; */
+        /* border-image-slice:15 15 15 15; */
+/* border-image-width:10px 10px 10px 10px; */
+/* border-image-repeat:round round; */
+/* border-image-source:url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-3.png"); */
+/* border-style:round;
+    } */
+</style>
+<body>
+    <div class="box1">
+       <img src="https://lh3.googleusercontent.com/a/AAcHTtdNW15TK9_M7fIGSOt-dOssyx2k0gLsW1TwW4Bo5w=s288-c-no" alt=""> 
+    </div>
+</body>
+</html>

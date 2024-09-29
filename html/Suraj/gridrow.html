@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .students{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        grid-template-rows: 70px repeat(2,1fr) 70px;
+        /* border: 2px solid red; */
+        grid-template-columns: footer;
+
+        
+        }
+        div{
+            border: 1px solid black;
+            grid-area: nav;
+        }
+        .students1{
+            background-color: aqua;
+            grid-area: footer;
+        }
+        .students2{
+            background-color: red;
+            grid-area: sidebar1;
+        }
+        .students3{
+            background-color: black;
+            grid-area: sidebar2;
+        }
+        .students4{
+            background-color: blue;
+        }
+        .students5{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="students">
+        <div class="students1">1</div>
+        <div class="students2">2</div>
+        <div class="students3">3</div>
+        <div class="students4">4</div>
+        <div class="students5">5</div>
+    </div>
+</body>
+</html>

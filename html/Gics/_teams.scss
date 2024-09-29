@@ -1,0 +1,191 @@
+@import './variables';
+
+img{
+    max-width: 100%;
+}
+
+.teams-container{
+    padding: 2em 0;
+    background:linear-gradient(to left,hsl(212,55%,90%),hsl(212,15%,90%));
+    h1{
+        text-align: center;
+        line-height: 1.5;
+        margin: 1em 0;
+        i{
+            color: #ccc;
+            position: relative;
+            top: 6px;
+            font-size: 1.2em;
+            left: 8px;
+        }
+    }
+    .teams{
+        max-width: 100%;
+        padding: .5em;
+        .profile{
+            background: #fff;
+            margin: 1em .52em;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #abc;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: 1s ease;
+            figure{
+                img{
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                figcaption{
+                    padding: 1em;
+                    .profilename-designation{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: .5em;
+                        h2{
+                            font-weight: 400;
+                            font-size: 1.2em;
+                        }
+                        h3{
+                            font-weight: 300;
+                            color: #abc;
+                        }
+                            }
+                            p{
+                                line-height: 1.5;
+                                margin-top: 1em;
+                            }
+                            .user-social{
+                                display: flex;
+                                align-items: center;
+                                margin-top: 1em;
+                                li{
+                                    list-style: none;
+                                    margin-left: 1.5em;
+                                    &:first-of-type{
+                                        margin-left: 0;
+                                        i{
+                                            color: black;
+                                        }
+                                            }i{
+                                                font-size: 1.5em;
+                                                }
+                                            &:nth-child(2){
+                                                i{
+                                                    color: #1DA1F2;
+                                                }
+                                            }
+                                            &:nth-child(3){
+                                                i{
+                                                    color: #1DA1F2;
+                                                }
+                                            }
+                                            &:nth-child(4){
+                                                i{
+                                                    color: #C13584;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+            }
+        }
+        .active-profile{
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media (min-width:650px){
+
+    .teams-container{
+        .teams{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: .5em;
+            place-items: center;
+            .profile{
+                figure{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 50%;
+                        object-fit: cover;
+                    }
+                    figcaption{
+                        width: 50%;
+                        .profilename-designation{
+                            h2{
+                                font-size: 1em;
+                            }
+                            h3{
+                                font-size: 1em;
+                            }
+                        }
+                        p{
+                            font-size: 1em;
+                        }
+                        .user-social{
+                            li{
+            margin-left: 1em;                                
+            a{
+                   i{
+                       font-size: 1.1em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media (min-width:850px){
+    .teams-container{
+        .teams{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: .5em;
+            place-items: center;
+            .profile{
+                figure{
+                    display: flex;
+                    img{
+                        width: 50%;
+                        object-fit: cover;
+                    }
+
+                    figcaption{
+                .profilename-designation{
+                    h2{
+                        font-size: 1.4em;
+                    } //h2 
+                    h3{
+                        font-size: 1.1em;
+                    } // h3
+                } // profile
+                p{
+                    font-weight: 100;
+                    font-size: 1em;
+                }
+                .user-social{
+                    li{
+                        a{
+                            i{
+                                font-size: 1.52em;
+                            }
+                        }
+                    }
+                }
+                    }
+                } //ifgure closed here
+            }
+        }
+    }
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd pseudo-classes with table </title>
+    <style>
+        body{
+            background-color: rgb(7, 53, 75);
+        }
+          :root{
+        --my-color:red;
+        --my-second-color:rgb(226, 213, 97);
+    }
+        input:focus{
+    background-color: aqua;
+}   
+
+input:checked{
+    box-shadow: 2px 2px 3px red;
+    accent-color: cyan;
+
+}
+
+input:disabled{
+    /* background-color: red; */
+}
+
+input:enabled{
+    /* background-color: red; */
+}
+
+input:required{
+    /* background-color: rgb(255, 0, 43); */
+}
+input:optional{
+    /* background-color: red; */
+}
+
+input:in-range{
+    /* background-color: greenyellow; */
+}
+
+input:out-of-range{
+    /* background-color: orangered; */
+}
+
+input:read-only{
+    /* background-color: red; */
+}
+
+input:read-write{
+    /* background-color: red; */
+}
+
+input:valid{
+    background-color: rgb(163, 250, 22);/
+}
+input:invalid{
+    background-color: red;
+}
+input:default{
+    outline: 3px solid red;
+}
+
+
+p{
+    color: var(--my-second-color);
+}
+p{
+    color: var(--my-second-color);
+}
+
+    </style>
+</head>
+<body>
+    <form>
+        <label>First Name :</label>
+        <input type="text" placeholder="Enter First Name " minlength="4 " maxlength="10">
+
+        <br> <br>
+
+        <label>Last Name :</label>
+        <input type="text" placeholder="Enter Last Name " minlength="4" maxlength="20">
+
+        <br><br>
+
+        <label>Gender :</label>
+        <label>Male</label>
+        <input type="radio" required>
+        <label>Female</label>
+        <input type="radio">
+
+        <br><br>
+
+        <label>DOB :</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Phone :</label>
+        <input type="number" required>
+
+        <br><br>
+
+        <label>Email :</label>
+        <input type="email" required>
+
+        <br><br>
+
+        <label>Password :</label>
+        <input type="password" min="8" max="10">
+
+        <br><br>
+
+        <input type="submit" value="Signup">
+        <input type="reset">
+        <input type="range">
+
+        <br><br>
+
+        <input type="checkbox" required>
+        <input type="checkbox">
+        <input type="checkbox" checked>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+  <div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quasi quos unde numquam, labore cum exercitationem libero consequuntur officia dolore laudantium eligendi nobis assumenda distinctio! Fugit autem quo ipsa recusandae!
+    </p>
+  </div>
+  <div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas dolorem voluptatibus odit cum iusto, obcaecati nam, suscipit repellat eveniet, fugit vitae mollitia distinctio omnis cumque ut. Eos, nostrum cumque!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquid, nobis expedita tempora earum rem quam? Ex eius quae sequi? Exercitationem veniam dolorem commodi, quia aliquid aspernatur minus facilis placeat.
+    </p>
+  </div>
+    </form>
+</body>
+</html>

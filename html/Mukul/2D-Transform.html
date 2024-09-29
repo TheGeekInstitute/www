@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            margin: 150px auto;
+            background-color: red;
+            transition: all .3s linear;
+
+        }
+
+        .box:hover{
+            /* transform: translate(-100px,-100px); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(2); */
+            transform: skew(30deg) rotate(360deg) scale(1.5);
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .container .card{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            transform: translate(0,100%);
+            transition: all .3s ease-in-out;
+        }
+
+        .container:hover .card{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+
+
+    <div class="container">
+        <div class="card">
+            sfsdf
+        </div>
+    </div>
+
+</body>
+</html>

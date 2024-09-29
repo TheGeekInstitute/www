@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p{
+            height: 50px;
+            width: 50px;
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="box"></div>
+
+    <div id="new"></div>
+
+    <div id="old"></div>
+
+    <p id="aa"></p>
+    <script>
+
+        class Student{
+            name;
+            age;
+
+            // abcd() {
+            //     console.log("ABCD")    
+            // }
+            
+            change(data){
+                document.getElementById(data).style.transform="translateX(100px)"
+                document.getElementById(data).style.border="2px solid Black";
+                // console.log(data)
+            }
+        }
+
+
+       let obj = new Student; 
+
+       obj.change("box");
+       obj.change("new")   
+    
+       obj.change("old")
+        
+       obj.change("aa")
+    //    obj.name="Amit";
+    //    obj.age=25;
+
+        
+
+        // console.log(obj.name);
+
+       
+
+
+    </script>
+</body>
+</html>

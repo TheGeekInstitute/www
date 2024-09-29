@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container {
+      
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container form {
+            margin-top: 50px;
+        }
+
+        .container p {
+            margin-top: 20px;
+            font-size: large;
+            font-weight: 400;
+        }
+
+        .images{
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .images .image{
+            height: 100px;
+            width: 100px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .images .image a{
+            display: block;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            font-size: 60px;
+            color: white;
+            text-decoration: none;
+            font-weight: 900;
+            background-color: rgba(0, 0, 0, 0.507);
+            box-shadow: 0px 0px 10px black;
+            opacity: 1;
+            transition: all .3s ease-in-out;
+        }
+
+        .images .image:hover a{
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Image Uploader</h1>
+        <p>Error MSG</p>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="" id="">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+
+
+    <div class="images">
+        <div class="image" style="background-image: url(../../web/images/11.jpg);">
+            <a href="" target="_blank">1</a>
+        </div>
+
+        <div class="image" style="background-image: url(../../web/images/11.jpg);">
+            <a href="">1</a>
+        </div>
+
+        <div class="image" style="background-image: url(../../web/images/11.jpg);">
+            <a href="">1</a>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

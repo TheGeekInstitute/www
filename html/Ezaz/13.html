@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2a3a49;
+    font-family: 'poppins',sans-serif;
+}
+.card{
+    width: 30em;
+    height: 15em;
+    background-color:#2a3a49 ;
+    border-radius: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.card::before{
+    content: '' ;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 30.5em;
+    height: 15.5em;
+    background: linear-gradient(160deg,#f8fd01,#f8fd01b4,#263542,#263542,#03dee0b4,#03dee0);
+    border-radius: 35px;
+    transform: translate(-50%,-50%);
+}
+.circle{
+    position: absolute;
+    z-index: 1;
+    filter: blur(50px);
+
+}
+.c1{
+    top: 0;
+    left: 0;
+    height:3em ;
+    width: 3em;
+    background-color: #f8fd01;
+}
+.c2{
+    bottom: -7%;
+    right: -5%;
+    height:4em ;
+    width: 4em;
+    background-color: #03dee0;
+}
+.card-image{
+    width: 35%;
+    height: 100%;
+    position: relative;
+}
+.card-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+.card:hover ,.card-image img{
+    animation: zoom 0.8s cubic-bezier(1,2,0.2,0.6);
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0) translate(-150%,-200%);
+    }
+    100%{
+        transform: scale(1)
+        translate(-50%,-50%);
+    }
+    
+}
+.content{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+flex-direction:column ;
+padding: 0 30px;
+}
+.content h4{
+    color: #7f94a5;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+.content h2{
+    color: #fff;
+    text-transform: capitalize;
+}
+.content h5{
+    color: #03dee0;
+    text-transform: uppercase;
+    margin-top: 8px;
+
+}
+.content p{
+    color: #7f94a5;
+    margin-top: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="circle c1" ></div>
+        <div class="card-image">
+            <img src="./OIP.png" alt="">
+        </div>
+        <div class="content">
+            <h4>super cell</h4>
+            <h2>class royale</h2>
+            <h5>Exp 8</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit doloribus.</p>
+        </div>
+        <div class="circle c2"></div>
+    </div>
+</body>
+</html>

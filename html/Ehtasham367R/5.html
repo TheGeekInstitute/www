@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rform</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    .container{
+        border: 2px solid black;
+        height: 400px;
+        width: 260px;
+        margin: 100px auto;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+    .container form{
+        display: flex;
+        justify-content: center;
+        align-items:left;
+        flex-direction: column;
+        width: 100%;
+        font-size:large;
+
+    }
+    .container form label{
+        display: block;
+        width: 90%;
+        text-align: left;
+        margin: 3px 0px;
+    }
+    .container form input{
+        background-color: red;
+        height: 30px;
+        padding: 6px;
+        width:90%;
+        border: none;
+        outline: none;
+
+    }
+</style>
+<body>
+    <div class="container">
+        
+        <h1>Regstration Form</h1>
+
+        <form action="">
+            <label>First Name</label>
+            <input type="text">
+            <label>Last Name</label>
+            <input type="text">
+            <label>Gender</label>
+            <select name="" id="">
+                <option value="">Choose</option>
+                <option value="">male</option>
+                <option value="">female</option>
+                <option value="">other</option>
+            </select>
+            <label for="">email</label>
+            <input type="email">
+            <label for="">phone</label>
+            <input type="number">
+            <label for="">password</label>
+            <input type="password">
+            <input type="submit" value="Register" id="btn">
+
+    
+        </form>
+    </div>
+</body>
+</html>

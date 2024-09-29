@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-inline: 50px;
+            margin-top: 50px;
+
+        }
+        .buttons button{
+            height: 40px;
+            width: 100px;
+            box-shadow: 2px 2px 5px black ;
+        }
+        .container{
+            border: 2px solid black;
+            /* height: 70vh; */
+            width: 80vw;
+            margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            
+        }
+        .container .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 5px red;
+        }
+        .container .red{
+            background-color: red;
+        }
+        .container .blue{
+            background-color: blue;
+        }
+        .container .yellow{
+            background-color: yellow;
+            /* animation: show .3s linear 0s 1 alternate forwards; */
+        }
+
+        .container .show{
+            animation: show .3s linear 0s 1 alternate both;
+        }
+
+        .container .hide{
+            animation: show .3s linear 0s 1 alternate both;
+
+        }
+
+
+        @keyframes show {
+            0%{
+                transform: scale(0);
+               transform: translateY(100px);
+                
+            }
+            
+            100%{
+                transform: scale(1);
+               transform: translateY(0);
+
+            }
+        }
+
+
+        @keyframes hide {
+            0%{
+                transform: scale(1);
+            }
+
+            100%{
+                transform: scale(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="buttons">
+    <button class="all" data-btn="all"> All</button>
+    <button class="red" data-btn="red"> Red</button>
+    <button class="blue" data-btn="blue">blue</button>
+    <button class="yellow" data-btn="yellow">Yellow</button>
+   </div> 
+
+   <div class="container">
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all blue"></div>
+    <div class="box all blue"></div>
+    <div class="box all blue"></div>
+    <div class="box all blue"></div>
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all red"></div>
+    <div class="box all blue"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all blue"></div>
+    <div class="box all blue"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all yellow"></div>
+    <div class="box all blue"></div>
+    <div class="box all blue"></div>
+    <div class="box all yellow"></div>
+   
+   </div>
+   <script>
+    let btns = document.querySelector(".buttons");
+    let container = document.querySelector(".container");
+    Array.from(btns.children).forEach(e=>{
+        e.addEventListener('click',()=>{
+            let attr = e.getAttribute("data-btn");
+            
+            Array.from(container.children).forEach(b=>{
+                if(b.classList.contains(attr)){
+                    b.style.display="block"
+                    // b.classList.add("show")
+                    b.style.animation="show .3s linear 0s 1 alternate forwards";
+                   
+                       
+
+                   
+                
+                }
+                else if(attr=="all"){
+                    b.style.display="block"
+                    b.style.animation="show .3s linear 0s 1 alternate forwards";
+                    
+                }
+                else{
+                    b.style.animation="hide .3s linear 0s 1 alternate forwards";
+
+                    setTimeout(()=>{
+                        b.style.display="none"
+                    },290)
+
+
+                }
+            })
+
+        })
+    })
+    
+   </script>
+</body>
+</html>

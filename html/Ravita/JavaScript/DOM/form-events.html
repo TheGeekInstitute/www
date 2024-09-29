@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for="">First Name</label>
+        <input type="text" id="txt">
+        <input type="submit">
+    </form>
+
+    <h1 id="heading"></h1>
+
+    <script>
+        let input = document.querySelector('#txt');
+        // input.addEventListener("keydown",()=>{
+        //     alert('Hello World')
+        // })
+
+        // input.addEventListener("keypress",()=>{
+        //     alert('Hello World')
+        // })
+
+        //    input.addEventListener("focus",()=>{
+        //     alert('Hello World')
+        // })
+
+        // input.addEventListener("blur",()=>{
+        //     alert('Hello World')
+        // })
+
+        // input.addEventListener("input", () => {
+        //     // alert('Hello World')
+        //     document.querySelector('#heading').innerHTML = input.value
+        // })
+
+        // input.addEventListener("select", () => {
+        //     alert('Hello World')
+     
+        // })
+
+
+        document.forms[0].addEventListener("submit",()=>{
+            alert("Hello World")
+        })
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
+Form Events :
+        keydown
+        keypress
+        keyup
+        focus
+        blur
+        input
+        change
+        select
+        submit
+        invalid -->

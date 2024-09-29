@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul a li:hover{
+            color: red;
+        }
+        ul li{
+            font-size: large;
+            font-weight: 600;
+        }
+        ul li:first-child{
+            color: aqua;
+        }
+        ul li:nth-child(3){
+            color: red;
+        }
+        ul li:nth-child(8){
+            color: cornflowerblue;
+        }
+        ul li:nth-child(4){
+            color: coral;
+        }
+        ul li:nth-child(2){
+            color: chartreuse;
+        }
+        ul li:nth-child(6){
+            color: crimson;
+        }
+        ul li:last-child{
+            color: blue;
+        }
+        ul li:nth-child(9){
+            color: white;
+        }
+        ul li:nth-child(5){
+            color: blueviolet;
+        }
+        div p:first-of-type{
+            /* color: aqua; */
+        }
+        div p:last-of-type{
+            /* color: blue; */
+        }
+        div span:first-of-type{
+            /* color: blueviolet; */
+        }
+        div span:last-of-type{
+            /* color: orange; */
+        }
+        div p:only-of-type{ 
+            
+            color: chartreuse;
+
+        }
+        div p:only-child{
+            color: green;
+            border: 2px dotted black;
+            height: 150px;
+            width: 150px;
+            font-family: cursive;
+            font-size: large;
+            text-shadow:  4px 2px silver;
+            text-align: center;
+            /* text-decoration: underline ; */
+            text-decoration-line: underline;
+            /* text-decoration: dotted; */
+            text-decoration-style:  dotted;
+            border-radius: 50%;
+            padding: 20px;
+            margin-left: 100ppx;
+            /* margin-right: 100px; */
+            margin-bottom: 100px;
+            transition-property: all;
+            transition-delay: 2s;
+            transition-duration: 1s;
+
+        }
+        a p:hover{
+            color: aqua;
+            background-color: blueviolet;
+
+        }
+        div:empty{
+                border: 2px solid var(--my-color);
+                height: 50px;
+            }
+
+            div:not(:empty){
+                /* border: 2px solid green; */
+            }
+
+            :target{
+                background-color: var(--my-color);
+            }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <a href="https://youtu.be/5oH9Nr3bKfw"><li>9</li></a>
+        <li>10</li>
+    </ul>
+
+    <div>
+        <a href="https://youtu.be/5oH9Nr3bKfw"><p>jdosad</p></a>
+    </div>
+
+    <div>
+        <span>hsfshi</span>
+        <p>jdlfsj</p>
+        
+
+    </div>
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sequi autem ea, cum placeat ducimus totam tenetur quam neque voluptas rerum molestiae a praesentium magni, ullam corrupti aperiam fuga aliquam.</span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ipsam, nihil molestiae ipsa sequi atque mollitia deserunt suscipit beatae laudantium eaque aut nesciunt, nostrum dolore id delectus libero fugit quaerat!</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe asperiores distinctio error qui numquam pariatur laborum reiciendis voluptate? Natus laborum doloremque consectetur iure officia impedit pariatur reprehenderit asperiores officiis!</span>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus impedit cupiditate, officiis accusantium nesciunt eum eius quam corrupti repellat. Ullam, fugit provident soluta nemo ea sapiente quisquam temporibus illum accusamus?</p>
+    </div>
+    <div></div>
+    <ul>
+        <li><a href="#ch1">Chapter 1</a></li>
+        <li><a href="#ch2">Chapter 2</a></li>
+        <li><a href="#ch3">Chapter 3</a></li>
+    </ul>
+
+    <p id="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+
+    <p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+
+    <p id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis quidem doloribus harum nam praesentium id nihil distinctio quia dignissimos labore amet vel, optio, asperiores culpa, ex at odit possimus.</p>
+</body>
+</html>

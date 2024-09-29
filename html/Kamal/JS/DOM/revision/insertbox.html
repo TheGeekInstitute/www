@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            height: 300px;
+            width: 100vw;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 2px solid black;
+            height: 50px;
+            width: 60px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+        .btn{
+            border: 2px solid black;
+            height: 50px;
+            width: 60px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            user-select: none;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+           +
+        </div>
+    </div>
+    <script>
+        let container = document.querySelector(".container")
+        let btn = document.querySelector(".btn")
+        
+        btn.addEventListener("click",()=>{
+            let box = document.createElement("div")
+        box.setAttribute("class","box")
+        container.insertBefore(box,btn)
+        box.innerHTML = container.childElementCount-1
+        })
+    </script>
+</body>
+</html>

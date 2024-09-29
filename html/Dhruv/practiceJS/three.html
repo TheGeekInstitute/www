@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+</head>
+<body>
+    <button id="forward">forward</button>
+    <button id="backward">backward</button>
+    <button id="go">go</button>
+
+    <script>
+        document.querySelector("#forward").addEventListener('click',()=>{
+            history.forward();
+
+        })
+        // document.querySelector("#backward").addEventListener('click',()=>{
+        //     history.back();
+
+        // })
+
+        // document.querySelector("#go").addEventListener('click',()=>{
+        //     history.go(-3);
+
+        // })
+        setInterval(()=>{
+                    document.querySelector("#backward").addEventListener('click',()=>{
+            history.back(10);
+
+        // })
+        },10000)
+
+        })
+
+    </script>
+    
+</body>
+</html>

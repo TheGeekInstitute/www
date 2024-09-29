@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animaion</title>
+    <style>
+        body{
+            background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhoRQHzPoS5coajfpSgwt8GSCGIeArKNSMOX5I5XzVLGiHqQ4aMzWYWorGZAjM2EiSa_TmXHmBYod1mU55tImCJZwkIj16g6ZANaOXa7euoGcFSDbywxif1cdMWjfGg4TlONz6GYR-J2ZUbq8WD6mzwX-eCIuVT2NNcGK_PjDtA0zCtzdmQAvqLmOqMgci-=s16000-rw);
+            background-size: cover;
+        }
+        .box{
+            /* border: 1px solid black; */
+            /* width: 5rem; */
+            /* height: 5rem; */
+            /* background-image: url(https://i.pinimg.com/originals/a6/58/f6/a658f6ad35ba174e03d208847db7c536.jpg); */
+            /* background-size: cover; */
+            /* background-color: royalblue; */
+            /* margin: 120px auto; */
+            /* position: absolute; */
+            /* top: 50%; */
+            /* left: 50%; */
+
+            /* animation-name: anime; */
+            /* animation-duration:5s; */
+            /* animation-timing-function: step-start; */
+            /* animation-delay: 1s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        @keyframes anime{
+            1%{
+                /* width: 5rem; */
+                /* height: 5rem; */
+                /* border-radius: 0px; */
+            }
+            10%{
+                /* width: 5rem; */
+                /* height: 7rem; */
+
+            }
+            20%{
+                /* width: 5rem; */
+                /* height: 9rem; */
+
+            }
+            30%{
+                /* width: 5rem; */
+                /* height: 12rem; */
+
+            }
+            40%{
+                /* width: 5rem; */
+                /* height: 10rem; */
+
+            }
+            50%{
+                /* width: 5rem; */
+                /* height: 15rem; */
+
+            }
+            60%{
+                /* width: 5rem; */
+                /* height: 5rem; */
+
+            }
+            70%{
+                /* width: 5rem; */
+                /* height: 10rem; */
+
+            }
+            80%{
+                /* width: 5rem; */
+                /* height: 20rem; */
+
+                /* transform: rotateZ(360deg); */
+                /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+            }
+            90%{
+                /* width: 5rem; */
+                /* height: 5rem; */
+
+            }
+            100%{
+                /* transform: rotateZ(360deg); */
+                /* border-radius: 400px; */
+                /* width: 5rem; */
+                /* height: 20rem; */
+                /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+            }
+        }
+        .box01{
+            /* border: 1px solid black; */
+            width: 10rem;
+            height: 10rem;
+            /* margin: 10px; */
+            position: absolute;
+            /* top: 0; */
+            /* z-index: 10; */
+
+            animation-name: box;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes box{
+            0%{
+                background-color: red;
+                
+
+            }
+            10%{
+                transform: translateY(37rem);
+                border-radius: 300px;
+                background-color: black;
+            }
+
+
+            20%{
+                transform: translate(80rem,37rem);
+                border-radius: 0;
+                background-color: purple;
+            }
+            30%{
+                transform: translateX(80rem);
+                border-radius: 300px;
+                background-color: blue;
+
+            }
+            40%{
+                transform: translateY(37rem);
+                border-radius: 300px;
+                background-color: yellow;
+            }
+            50%{
+                transform: translate(0,0);
+                border-radius: 0;
+                background-color: green;
+            }
+            60%{
+                transform: translate(80rem,37rem);
+                border-radius: 0;
+                background-color: yellowgreen;
+                
+            }
+            70%{
+                transform: translateX(80rem);
+                border-radius: 300px;
+                background-color: royalblue;
+            }
+            80%{
+                transform: translateY(37rem);
+                border-radius: 300px;
+                background-color: brown;
+            }
+            90%{
+                transform: translate(80rem,37rem);
+                border-radius: 0;
+                background-color: pink;
+            }
+            100%{
+                transform: translate(0,0);
+                border-radius: 0;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box01"></div>
+</body>
+</html>

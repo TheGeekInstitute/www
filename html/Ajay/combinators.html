@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        .container p{
+            /* color: red; */
+        }
+
+        .container > p{
+            /* color: red; */
+        }
+
+
+        .container + p{
+            /* color: red; */
+        }
+
+        .container ~ p{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae repudiandae, libero, quaerat tenetur, quidem porro saepe dignissimos nam sit quasi fugiat? Expedita debitis molestiae voluptate officiis soluta dolor eum eaque!</p>
+       
+        <div class="box">
+            <p>child paragraph</p>
+        </div>
+
+        <p>asdjkas</p>
+    </div>
+
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ut sit cum impedit, quis nobis eum molestiae aperiam vel omnis enim a. Blanditiis necessitatibus rem nostrum, molestias temporibus nisi magni!</p>
+
+    <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut delectus totam fuga rerum, error facere ex atque, libero ullam maxime iusto nisi ad officia eveniet recusandae natus velit, ab praesentium!</b>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, vero explicabo suscipit nam nesciunt rem harum quo repudiandae optio ea perferendis eveniet numquam similique iste incidunt cum odio eligendi nemo.</p>
+
+</body>
+</html>
+
+<!-- 
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) -->

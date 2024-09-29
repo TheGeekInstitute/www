@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            /* background-image: url(https://preview.colorlib.com/theme/busicol/img/banner/banner2.png.webp); */
+        }
+        .contianer{
+            background-image: url(https://preview.colorlib.com/theme/busicol/img/banner/banner2.png.webp);
+            color: white;
+            height: 100vh;
+            background-repeat: no-repeat;
+            
+        }
+        .contianer .hero{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .contianer .hero{
+            
+            height: 80px;
+            width: 1300px;
+            margin-left: 200px;
+            padding: 20px;
+            border: 2px solid red;
+            border: hidden;
+            background-color: rgba(0, 0, 0, 0.192);
+            
+            
+           
+           
+
+        }
+
+       
+        .contianer .hero .left .para{
+            display: flex;
+        }
+        .contianer .hero .left .para li a{
+            font-size: large;
+            word-spacing: 10px;
+            color: white;
+            
+            padding: 10px;
+            
+        
+        }
+        .contianer .hero .left .para li a:hover{
+            color: green;
+        }
+        .contianer .hero .right .icons{
+            display: flex;
+            margin: 30px;
+
+            
+
+        
+        }
+        .contianer .hero .right .icons a:last-child{
+            margin: 30px;
+        }
+
+        .icons .fa-envelope{
+            color: green;
+        }
+        .icons .fa-phone{
+            color: green;
+        }
+        .contianer .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px;
+        }
+        .contianer .nav .logo{
+            font-size: 30px;
+            margin: 200px;
+        }
+        .contianer .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contianer .nav .links li a{
+            display: block;
+            margin: 10px;
+            padding: 10px;
+            font-size: large;
+            color: white;
+        }
+        .contianer .nav .links li .sub{
+            display: block;
+             line-height: 30px;
+            width: 150px;
+            text-align: center;
+            position: absolute;
+
+
+            display: none;
+        }
+        .contianer .nav li .sub li a{
+            display: block;
+            color: black;
+            background-color: white;
+
+
+        }
+
+        
+        .contianer .nav .links li:hover .sub{
+            display: block;
+        }
+
+        .contianer .nav .links li .sub1{
+            display: block;
+            line-height: 30px;
+            width: 150px;
+            text-align: center;
+            position: absolute;
+
+            display: none;
+        }
+        .contianer .nav .links li .sub1 li a{
+            display: block;
+            color: black;
+            background-color: white;
+        }
+        .contianer .nav .links li:hover .sub1{
+
+            display: block;
+        }
+        .contianer .nav .links li a:hover{
+            color: green;
+        }
+
+
+
+        .contianer .nav .right1{
+            display: flex;
+        }
+        .contianer .nav .right1 a{
+            margin: 20px;
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+        }
+       
+        .contianer .nav .right1 a:last-child{
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 5px 6px;
+            background-color: green;
+           
+            font-size: 16px;
+            margin-right: 200px;
+        }
+        .contianer .nav .right1 a:last-child{
+            display: block;
+            height: 45px;
+            /* width: 100px; */
+            text-align: center;
+            padding: 12px;
+        }
+        .contianer .box1{
+            border: 1px solid black;
+            margin-top: 50px;
+            margin-left: 170px;
+            margin-right: 200px;
+        }
+        .contianer .box h1{
+            display: block;
+            font-size: 60px;
+            margin-left: 170px;
+            margin-top: 200px;
+            font-family: candria;
+
+        }
+        .contianer .box p{
+            display: block;
+            font-size: 20px;
+            margin-left: 170px;
+            margin-top: 20px;
+           
+        }
+        .contianer .box .btn{
+            display: flex
+        }
+        .contianer .box .btn a:first-child{
+            display: block;
+            border: 2px solid red;
+            border: hidden;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            background-color: green;
+            color: white;
+            margin-top: 30px;
+            padding: 13px;
+            font-size: large;
+            font-family: ebrima;
+            border-radius: 10px;
+
+           
+            margin-left: 170px;
+           
+
+
+        }
+        .contianer .box .btn a:last-child{
+            display: block;
+            border: 2px solid white;
+           
+            height: 50px;
+            width: 250px;
+            text-align: center;
+            
+            color: white;
+            margin-top: 30px;
+            padding: 10px;
+            font-size: large;
+            font-family: ebrima;
+            border-radius: 10px;
+
+           
+            margin-left: 20px;
+            word-spacing: 3px;
+           
+
+        }
+        .contianer .box .btn a:hover:last-child{
+            background-color: green;
+        }
+
+        h2{
+            font-size: 50px;
+            margin-left: 650px;
+            margin-top: 150px;
+            margin-bottom: 30px;
+            font-family: ebrima;
+        }
+
+
+       
+
+        .contianer1{
+            display: flex;
+        }
+
+ 
+        .contianer1 .box3{
+            border: 2px solid black;
+            border: hidden;
+            height: 250px;
+            width: 350px;
+            margin-left: 370px;
+            background-image: url(https://preview.colorlib.com/theme/busicol/img/about/1.png);
+            overflow: hidden;
+        }
+
+        .contianer1 .a h1{
+            display: block;
+            font-size: 25px;
+            text-align: center;
+            padding: 30px;
+            color: white;
+            
+        
+        }
+        .contianer1 .a p{
+            text-align: center;
+            font-size: large;
+            word-spacing: 2px;
+            text-indent: 10px;
+            line-height: 25px;
+            margin-top: -20px;
+            color: white;
+           
+
+        }
+
+
+        .contianer1 .box3 .one{
+            height: 100%;
+            width: 100%;
+        }
+
+        .contianer1 .b{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0.979);
+
+
+            
+            transition: all .3s linear;
+        }
+        .box3:hover .b{
+            transform: translateY(-100%);
+        }
+
+        .contianer1 .box3 .one .icons3{
+            font-size: 70px;
+            text-align: center;
+            display: block;
+            padding-top: 80px;
+            /* line-height: 250PX; */
+            
+            
+        }
+        .icons3 .fa-toilet-paper{
+            color: rgba(0, 0, 0, 0.596);
+        }
+
+        .contianer1 .box3 .one .icons3 p{
+            font-size: 20px;
+            margin-top: 50px;
+            color: black(255, 255, 255, 0.849);
+        }
+        .contianer1 .box4{
+            border: 2px solid black;
+            border: hidden;
+            height: 250px;
+            width: 350px;
+            margin-left: 20px;
+            background-image: url(https://preview.colorlib.com/theme/busicol/img/about/2.png);
+            overflow: hidden;
+        }
+        .contianer1 .box4 .d h1{
+            text-align: center;
+            font-size: 25px;
+            display: block;
+            padding: 20px;
+            color: white;
+
+
+        }
+        .contianer1 .box4 .d p{
+            text-align: center;
+            font-size: large;
+            word-spacing: 2px;
+            margin-top: -20px;
+            line-height: 25px;
+            text-indent: 10px;
+            color: white;
+        }
+        .contianer1 .box4 .two{
+            height: 100%;
+            width: 100%;
+        }
+        /* .contianer1 .box4 .two .icons{
+            align-items: center;
+            display: block;
+            justify-content: center;
+        } */
+
+        /* .icons .fa-backpack{
+            color: red;
+        } */
+        .contianer1 .c{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0.938);
+
+            transition: all .3s linear;
+        }
+        .box4:hover .c{
+            transform: translateY(-100%);
+        }
+        .contianer1 .box4 .two .icons2{
+            font-size: 70px;
+            text-align: center;
+            display: block;
+            padding-top: 80px;
+            /* line-height: 250PX; */
+            
+            
+        }
+        .icons2 .fa-briefcase{
+            color: rgba(0, 0, 0, 0.562);
+        }
+
+        .contianer1 .box4 .two .icons2 p{
+            font-size: 20px;
+            margin-top: 50px;
+            color: black(255, 255, 255, 0.849);
+        }
+
+       
+
+
+
+        .contianer1 .box5{
+            border: 2px solid black;
+            border: hidden;
+            height: 250px;
+            width: 350px;
+            margin-left: 20px;
+            background-image: url(https://preview.colorlib.com/theme/busicol/img/about/3.png);
+            overflow: hidden;
+
+        }
+        .contianer1 .box5 .n h1{
+            display: block;
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+            color: white;
+        }
+        .contianer1 .box5 .n p{
+            text-align: center;
+            font-size: large;
+            word-spacing: 2px;
+            margin-top: -20px;
+            text-indent: 10px;
+            line-height: 25px;
+            color: white;
+        }
+        .contianer1 .box5 .three{
+            height: 100%;
+            width: 100%;
+        }
+
+        .contianer1 .m{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0.897);
+            transition: all .3s linear;
+
+        }
+        .box5:hover .m{
+            transform: translateY(-100%);
+        }
+
+        .contianer1 .box5 .three .icons1{
+            font-size: 70px;
+            text-align: center;
+            display: block;
+            padding-top: 80px;
+            
+            /* line-height: 250PX; */
+            /* margin-top: 20px; */
+            
+            
+            
+        }
+        .contianer1 .box5 .three .icons1 p{
+            font-size: 20px;
+            display: block;
+            margin-top: 30px;
+            color: black(255, 255, 255, 0.699);
+        }
+
+        .icons1 .fa-book-quran{
+            color: rgba(0, 0, 0, 0.527);
+        }
+        
+
+       
+        /* .contianer1 .box .six{
+            height: 100%;
+            width: 100%;
+
+        }
+        .contianer1 .m{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 128, 0, 0.884);
+            transition: all .3s linear;
+        }
+        .contianer1:hover .m{
+            transform: translateY(-100%);
+        } */
+       
+
+
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="contianer">
+        <div class="hero">
+            <div class="left">
+               <ul class="para">
+                <li><a href="#">in</a></li>
+                <li><a href="#">f</a></li>
+                <li><a href="#">G+</a></li>
+               </ul>
+            </div>
+
+            <div class="right">
+                <ul class="icons">
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a>tarik00008080@Gmail.com</li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a>7063156251</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav">
+            
+            <div class="logo">
+                <img src="https://preview.colorlib.com/theme/busicol/img/logo.png.webp" alt="ABCD">
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Blog<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="sub">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Singale-Blog</a></li>
+                       </ul>
+                </li>
+                <li><a href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub1">
+                    <li><a href="#">Eliments</a></li>
+                    <li><a href="#">Profole</a></li>
+                    <li><a href="#">Profile Logo</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+
+            <div class="right1">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#">Get a Quote</a>
+            </div>
+        </div>
+        <div class="box1"></div>
+
+
+        <div class="box">
+
+            <h1>
+                Grow Big with 
+                <br>
+                Musicol Business
+
+            </h1>
+            <p>
+                Nam libero tempore, cum Sould nobas est eligali optio <br>
+                cumque nihil impito quo mones.
+            </p>
+            <div class="btn">
+                <a href="#">Our Service</a>
+                <a href="#"><i class="fa-solid fa-play"></i></i>See How it Work</a>
+            </div>
+           
+        </div>
+        
+
+    </div>
+
+
+    <h2>Explore Our Solutions</h2>
+
+    <div class="contianer1">
+        <div class="box3">
+
+            <div class="one">
+                <div class="icons3">
+                    <a href="#"<i class="fa-solid fa-toilet-paper"></i>></a>
+
+                    
+                    <p>Invoicing</p>
+
+
+
+
+                </div>
+
+            </div>
+<div class="b">
+   
+    <div class="a">
+        <h1>Invoicing</h1>
+        <p>These cases are <br> perfectly simple and <br>easy to distinguish. In a <br> free hour power.</p>
+
+        
+    </div>
+
+</div>
+        </div>
+
+
+        <div class="box4">
+            <div class="two">
+                <div class="icons2">
+                    <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+
+                    <p>Business Growth</p>
+                </div>
+                <!-- <div class="icons"><i class="fa-thin fa-backpack"></i></div> -->
+
+
+            </div>
+            <div class="c">
+                <div class="d">
+                    <h1>Business Growth</h1>
+                    <p>These cases are <br> perfectly simple and <br> easy to distinguish. In a  <br>free hour power.</p>
+                </div>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="three">
+
+                <div class="icons1">
+                    <a href="#"<i class="fa-solid fa-book-quran"></i></a>
+                    <p>Problem Solving</p>
+                    
+                </div>
+                
+               
+
+            </div>
+            <div class="m">
+                <div class="n">
+                    <h1>Problem Solving</h1>
+                    <p>These cases are <br> perfectly simple and <br> easy to distinguish. In a <br> free hour power.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- <i class="fa-solid fa-house"></i>Busicol -->

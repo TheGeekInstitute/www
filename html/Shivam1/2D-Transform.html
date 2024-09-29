@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            background-image: linear-gradient(skyblue, green, rgb(110, 110, 224));
+            background-repeat: no-repeat;
+            height: 100vh;
+        } */
+        .box{
+            /* background-color: red;
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            margin-top: 150px;
+            transition: all 1s; */
+        }
+
+        .box:hover{
+            /* transform: translate(100px,150px); */
+            /* transform: translateX(-100px); */
+            /* transform: translateY(100px); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform:scale(1.5); */
+            /* transform: rotate(60deg); */
+            /* transform: skew(20deg) rotate(360deg) scale(1.5); */
+        }
+
+        .container{
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/728/272/856/download-nature-background-images-1920x1080-wallpaper-preview.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: auto;
+            margin-top: calc(50vh - 150px);
+            height: 300px;
+            width: 250px;
+            background-color: red;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 1px 2px 19px rgb(14, 13, 13);
+            
+        }
+
+        .container .new{
+            background-color: rgba(49, 49, 51, 0.473);
+            height: 300px;
+            width: 250px;
+            padding: 10px 5px;
+            text-align: center;
+            transform: translateY(100%);
+            transition:all .3s;
+        }
+        .container .new h1{
+            color: white;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .container .new p{
+            color: white;
+            font-size: 20px;
+        }
+
+        .container .new img{
+            border: 1px solid black;
+            box-shadow: .5px .5px 3px black;
+            height: 50px;
+            width: 50px;
+            border-radius: 100000px;
+            margin: 10px 0px;
+
+        }
+
+        .container:hover .new{
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quis unde, officiis sed pariatur ea amet corrupti. Porro accusamus exercitationem magnam harum, voluptate fugiat dolor vitae repellat ut voluptatum eligendi!</p> -->
+
+
+
+
+    <div class="container">
+        <div class="new">
+            <h1> Saurav kumar </h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcVybh3KjWrKdzfpH6NK6UpVxOrfU1_fJALkk9f9_H&s" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, magnam officia nesciunt quasi vel delectus architecto officiis unde veniam! Inventore?</p>
+
+        </div>
+    </div>
+</body>
+</html>

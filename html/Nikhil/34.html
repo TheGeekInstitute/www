@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sing in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Inclusive+Sans&family=Qwitcher+Grypen:wght@700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+            font-family: 'Inclusive Sans', sans-serif;
+
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .content{
+            /* border: 1px solid red; */
+        }
+        .main{
+            border: 1px solid #cfcfd1;
+            height: 50rem;
+            width: 45rem;
+            margin: auto;
+            position: relative;
+            margin-top: 5rem;
+            text-align: center;
+            border-radius: 0.8rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+           
+            
+        }
+        .main img{
+            height: 5.5rem;
+            /* width: 40px; */
+            margin-top: 3rem;
+        }
+        .main h2{
+            color: rgba(0, 0, 0, 0.944);
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+        .main .account{
+            font-size:1.6rem ;
+            color: rgba(0, 0, 0, 0.944);
+           margin-top: 1.6rem;
+           font-weight: 500;
+        }
+        .main input{
+            width: 37rem;
+            height: 5.2rem;
+            margin-top: 3.5rem;
+            border-radius: 0.3rem;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            border: 1px solid  #cfcfd1;
+            padding-left: 1.7rem;
+            font-size: 1.6rem;
+            font-weight: 550;
+            background-color: transparent;
+            z-index: 10;
+             }
+             .main .input{
+                position: relative;
+                color: #5F6368;
+                font-size: 1.6rem;
+                bottom: 3.5rem;
+                right:11rem ;
+                font-weight: 550;
+                /* padding-left: 1.7rem; */
+                padding: 0 .5rem;
+                transition: all .3s;
+
+             }
+             .main .forgot{
+                margin-top: 0.9rem;
+                margin-right: 27.3rem;
+                /* display: inline-block; */
+                color: #1A73E8;
+                font-size: 1.4rem;
+                text-decoration: none;
+                font-weight: 600;
+               
+             }
+            .main  .disclaimer{
+                color: #5F6368;
+                font-size: 1.5rem;
+                margin-top:6rem ;
+            }
+            .learn{
+                color: #1A73E8;
+                font-size:1.4rem ;
+                margin-top: 0.5rem;
+                margin-right: 28.8rem;
+                text-decoration: none;
+                font-weight: 600;
+
+
+            }
+            .main .button{
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .button .create{
+                position: relative;
+                font-size: 1.4rem;
+                text-decoration: none;
+                color: #1A73E8;
+                font-weight: 600;
+                right: 9.4rem;
+                top: 4rem;
+                letter-spacing: 0.15px;
+                /* border: 1px solid red; */
+                height: 1.8rem;
+                width: 12rem;
+            }
+            .button .next{
+                position: relative;
+                font-size: 1.4rem;
+                text-decoration: none;
+                color:white;
+                font-weight: 600;
+                left: 9.5rem;
+                top: 4rem;
+                letter-spacing: 0.15px;
+                background-color: #1A73E8;
+                padding:  1rem 2rem;
+                border-radius: 0.5rem;
+
+            }
+            .button .next:hover{
+                background-color: #1568d4;
+            }
+            .button .create:hover{
+                background-color: #66686941;
+                padding:  0rem 0.3rem;
+                
+
+            }
+            
+            .main input:focus{
+                border:2px solid #1A73E8;
+            }
+
+            .main input:focus + label{
+                transform: translateY(-25px);
+                background-color: white;
+                z-index: 1000;
+                font-size: small;
+            }
+            
+            input::placeholder{
+                color: transparent;
+            }
+            
+            input:not(:placeholder-shown) + label{
+                transform: translateY(-25px);
+                background-color: white;
+                z-index: 1000;
+                font-size: small;
+            }
+            input:not(:placeholder-shown) {
+                border:2px solid #1A73E8;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            <img src="https://cdn.telanganatoday.com/wp-content/uploads/2022/04/Google-multisearch-tool-to-help-users-search-with-photos.jpg" alt="Google">
+
+            <h2>Sign in</h2>
+
+            <p class="account">Use your Google Account</p>
+
+
+            <input type="text" placeholder="adasd">
+
+            <label class="input">Email or phone</label>
+
+            <a href="#" class="forgot">Forgot email?</a>
+
+            <p class="disclaimer">Not your computer? Use a private Window to sing in.
+            </p>
+
+            <a href="#" class="learn">Learn more</a>
+            <div class="button">
+
+                <a href="#" class="create">Create account</a>
+
+                <a href="#" class="next">Next</a>
+
+            </div>
+        </div>
+        <div class="other">
+            <a href="">English (United States)</a>
+            <a href="">Help</a>
+            <a href="">Privacy</a>
+            <a href="">Terms</a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        div:empty{
+            border: 2px solid red;
+            height: 100px;
+        }
+
+        div:not(:empty){
+            border: 2px solid black;
+        }
+
+        ul li:lang(en){
+            color: red;
+        }
+
+
+       :target{
+            background-color: red;
+            border: 2px solid black;
+            font-family: cursive;
+        }
+
+        #para2:target{
+            background-color: yellow;
+        }
+
+        #para3:target{
+            background-color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde reprehenderit, est labore ab vel voluptatibus dignissimos veritatis explicabo quas distinctio rem debitis eum repudiandae vero voluptatem, rerum cum? Porro, dolorem?</p>
+    </div>
+
+    <ul>
+        <li lang="en">English</li>
+        <li lang="hi">Hindi</li>
+        <li lang="fr">French</li>
+        <li>sjdj</li>
+    </ul>
+
+<ul>
+    <li><a href="#para1">Para 1</a></li>
+    <li><a href="#para2">Para 2</a></li>
+    <li><a href="#para3">Para 3</a></li>
+</ul>
+
+
+<p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dolorem deleniti earum libero perspiciatis, culpa, alias voluptatem, deserunt hic molestias autem aspernatur doloremque excepturi. Inventore incidunt tenetur vitae expedita quas?</p>
+
+<p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel, veritatis quis eum quisquam, soluta maiores cumque quos corporis distinctio vitae illum amet, commodi architecto doloremque perferendis? Animi, culpa earum?</p>
+<p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium accusantium recusandae nobis id culpa nam ipsam ipsa obcaecati! Quas voluptatibus eveniet ratione inventore, possimus id sunt harum reprehenderit perspiciatis.</p>
+
+</body>
+</html>

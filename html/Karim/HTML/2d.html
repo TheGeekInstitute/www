@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: all 1s;
+            margin: auto;
+            margin-top: 200px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            font-size: 60px;
+            font-weight: 900;
+        }
+
+        .box:hover{
+            /* transform: translate(200px,100px); */
+            /* transform: translateY(200px); */
+            /* transform: translateX(200px); */
+
+            /* transform: rotate(360deg); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+            /* transform: scaleX(2) scaleY(1.7); */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(20deg); */
+            /* transform: skew(30deg,20deg); */
+        
+            transform: scale(1.2) rotate(306deg) translate(100px,100px);
+        }
+
+        .container{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 150px;
+            background-color: red;
+            overflow: hidden
+            ;
+        }
+
+        .container .card{
+            height: 200px;
+            width: 150px;
+            background-color: cyan;
+            transform: translateY(100%);
+            transition: all 1s;
+        }
+
+        .container:hover .card{
+            transform: translateY(0);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        box
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus labore aperiam ipsum consequuntur quam nobis? Nisi, quam odit atque at velit eligendi iure laudantium adipisci recusandae, unde nobis praesentium. Sequi.</p>
+
+    <div class="container">
+        <div class="card">
+        <h1><b>The codeing</b></h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </div>
+    </div>
+</body>
+</html>

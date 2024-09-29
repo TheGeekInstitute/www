@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+        
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            text-align: center;
+            transform-style: preserve-3d;
+            perspective: 600px;
+        }
+
+        .container .card{
+            height: 400px;
+            width: 400px;
+            text-align: center;
+            backface-visibility: hidden;
+            transition: all 1s ease-in-out;
+            transform-style: preserve-3d;
+
+        }
+
+        .container .card .front,
+        .container .card .back{
+            font-size: 80px;
+            line-height: 300px;
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            text-align: center;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px black;
+        }
+
+        .container .card .front{
+            background-color: red;
+        }
+
+        .container .card .back{
+            background-color: yellow;
+            transform: rotateY(180deg);
+        }
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">Front :)</div>
+            <div class="back">Back :)</div>
+        </div>
+    </div>
+</body>
+</html>

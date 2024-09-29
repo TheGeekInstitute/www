@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .nav{
+            background-color: rgb(14, 9, 9);
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: cursive;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .links li a{
+            display: block;
+            line-height: 50px;
+            margin: 0 5px;
+            padding: 0 10px;
+            color: white;
+            font-size: large;
+        }
+
+        .nav .links li a:hover{
+            background-color: red;
+        }
+
+        #btn{
+            display: none;
+        }
+
+        .nav .btn,
+        .nav .btn .open,
+        .nav .btn .close{
+            font-size: 40px;
+            display: none;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width:600px) {
+               .nav .btn,
+               .nav .btn .open
+               {
+                display: block;
+               }
+
+               .nav .links{
+                background-color: grey;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom:0;
+                flex-direction: column;
+                justify-content: start;
+                display: none;
+               }
+
+               .nav .links li{
+                width: 100%;
+                text-align: center;
+               }
+
+               .nav .links li a{
+                border-bottom: 1px solid white;
+                margin: 0;
+               }
+
+               #btn:checked ~ .links{
+                display: block;
+               }
+
+               #btn:checked ~ .btn .open{
+                display: none;
+               }
+
+               #btn:checked ~ .btn .close{
+                display: block;
+               }
+
+
+     }
+    
+        
+
+     
+     .min :first-of-type{
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 50%;
+        margin: 110px ;
+        background-color: aqua;
+     }
+     .min a:last-child{
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 50%;
+        margin:10px ;
+        background-color: aqua;
+     }
+    
+
+
+       
+        
+    </style>
+</head>
+<body>
+   
+       
+    </div>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        
+        <input type="checkbox" id="btn">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <label for="btn" class="btn">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+    </div>
+    <div class="min">
+        <a href="#">Toggle video</a>
+        <a href="#">Get started</a>
+
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new{
+            background-color: blue;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>Lorem ipsum dolor sit amet consectetur</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis ad ipsam beatae doloribus facilis. Repudiandae accusamus debitis et quidem ullam aperiam quaerat officia perferendis ducimus, sed temporibus eum nihil?</p>
+    </div>
+
+    <p id="para" class="abcd" style="background-color: crimson;">abcd <i>asdasd</i></p>
+
+    <p class="a">asd</p>
+    <p class="a">dfgdf</p>
+    <script>
+        // console.log(document)
+        console.log(document.all)
+
+        let para = document.getElementById("#para")
+        // console.log(para)
+
+        // let cls = document.getElementsByClassName("a")
+        // console.log(cls[0])
+
+        // let para =  document.getElementsByTagName("p")
+
+        // console.log(para[0])
+
+        // console.log(para.innerText)
+    //  console.log(para.innerHTML);
+
+
+    // console.log(para.getAttribute("style"))
+    // console.log(para.getAttributeNode('style'))
+
+        // para.innerText="Hello world <b>asdas</b>"
+        para.innerHTML="Hello world <b>asdas</b>"
+
+        para.setAttribute("class","new")
+
+        // console.log(para.attributes[2])
+
+        // para.setAttribute("style","background-color:yellow;")
+
+        para.removeAttribute("style")
+        para.removeAttribute("class")
+
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- 
+    DOM Targeting methods
+    document
+    document.all
+    document.documentElement
+    document.head
+    document.title
+    document.body
+    document.images
+    document.anchor
+    document.links
+    document.forms
+    document.doctype
+    document.URL
+    document.baseURI
+    document.domain
+
+
+    document.getElementByID
+    document.getElementsByClassName
+    document.getElementsByTagName
+
+DOM Get & set Values Methods
+    DOM GET:
+        innerText
+        innerHTML
+        getAttribute
+        getAttributeNode
+        Attribute
+    DOM SET:
+        innerText
+        innerHTML
+        setAttribute
+        Attribute
+    removeAttribute 
+-->

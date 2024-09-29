@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container .box{
+            height: 50px;
+            width: 50px;
+            margin: 5px;
+            background-color: red;
+            
+        }
+
+        .abcd{
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            transition: all .3s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+
+
+    <div class="abcd"></div>
+
+
+    <button id="btn">STOP</button>
+
+    <script>
+
+        // setInterval(data,1000);
+
+        // setInterval(()=>{
+          
+        //     console.log(i++)
+           
+        // },1000)
+
+        let box = `<div class="box"></div>`;
+        let container = document.querySelector(".container");
+
+        let boxfunction = setInterval(() => {
+            container.insertAdjacentHTML("beforeend",box)
+        }, 1000);
+
+        
+        
+        let abcd = setTimeout(() => {
+            document.querySelector(".abcd").style.width="400px";
+        }, 5000);
+        
+        
+        
+                document.querySelector("#btn").addEventListener("click",()=>{
+                    // clearInterval(boxfunction)
+                    clearTimeout(abcd)
+                })
+
+
+
+        // function data(){
+        //     let i=1;
+        //     console.log(i)
+            
+        // }
+</script>
+
+</body>
+</html>

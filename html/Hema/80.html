@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+        }
+        .login{
+            /* border: 1px solid red; */
+            height: 15rem;
+            width: 19rem;
+            margin: auto;
+            margin-top: 15rem;
+            display: flex;
+            flex-direction: column;
+            /* padding: 0rem 0rem; */
+            background-color: aquamarine;
+            box-shadow: 2px 2px 3px gray;
+            border-radius: 1rem;
+        }
+        .login h1{
+            color: white;
+            background-color: blue;
+            padding: .3rem;
+            text-align: center;
+            border-top-right-radius: 1rem;
+            border-top-left-radius: 1rem;
+
+        }
+        label span{
+            font-size: 20px;
+            font-weight: 700;
+            margin: .4rem;
+        }
+        input{
+            padding: .4rem .1rem;
+            font-size: 16px;
+            font-weight: 600;
+            margin: .1rem;
+            border-radius: .2rem;
+            border: none;
+            outline: none;
+            background-color: rgb(212, 245, 234);
+        }
+
+        input[type=submit]{
+            background-color: blue;
+            margin: 1rem 2rem;
+            padding: .7rem 0;
+            color: white;
+            border-radius: 100rem;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover{
+            background-color: rgb(4, 56, 151);
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="login">
+            <h1>Login</h1>
+            <label><span>Username</span></label>
+            <input type="text">
+            <label><span>Password</span></label>
+            <input type="password">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+</body>
+</html>

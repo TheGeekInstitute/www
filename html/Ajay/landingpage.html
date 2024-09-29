@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav{
+        
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .nav a{
+            display: block;
+            color: black;
+        }
+
+        .nav .logo{
+            font-size: x-large;
+        }
+
+        .nav #btn{
+            background-color: royalblue;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        .main{
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            height: 600px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-blend-mode: overlay;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .main h1{
+            font-size: 40px;
+            text-align: center;
+            width: 600px;
+        }
+
+        .main form{
+            margin-top: 50px;
+        }
+
+        .main form input{
+            padding: 3px 5px;
+            width: 500px;
+            height: 60px;
+            font-size: x-large;
+            border-radius: 10px;
+        }
+
+        .main form #btn1{
+            width: 100px;
+            background-color: rgba(21, 58, 168, 0.9);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .features{
+          
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .features .box{
+          
+            width: 260px;
+            text-align: center;
+        }
+
+        .features .box i{
+            font-size: 50px;
+            color: royalblue;
+        }
+
+        .features .box h2{
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .features .box p{
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">Start Bootstrap</a>
+        <a href="#" id="btn">Signup</a>
+    </div>
+
+    <div class="main">
+        <h1>Generate more leads with a professional landing page!</h1>
+        <form action="">
+            <input type="text" placeholder="Email Address">
+            <input type="submit" id="btn1" value="Submit">
+        </form>
+    </div>
+
+    <div class="features">
+        <div class="box">
+            <i class="fa-regular fa-window-maximize"></i>
+            <h2>Fully Responsive</h2>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Bootstrap 5 Ready</h2>
+            <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h2>Easy to Use</h2>
+            <p>Ready to use with your own content, or customize the source files!</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- https://startbootstrap.com/previews/landing-page -->

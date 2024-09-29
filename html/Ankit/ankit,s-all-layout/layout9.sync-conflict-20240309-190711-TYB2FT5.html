@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .nav{
+            display: flex;
+            height: 70px;
+            justify-content: space-between;
+            align-items: center;
+           
+
+        }
+        .nav a{
+            font-size: larger;
+            font-weight: bold;
+            font-family: cursive;
+            color: black;
+            cursor: pointer;
+            transition: all 0.5s linear;
+        }
+        .nav a:hover{
+            color: #06BBCC;
+            transform: scale(1.5);
+        }
+        .nav i{
+            color: #06BBCC;
+            font-size: 30px;
+        }
+        .logo{
+            color: #06BBCC;
+            font-size: 30px;
+            font-family: cursive;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        /* .logo2:hover{
+            transform: scale(1.1);
+        } */
+        .logo2{
+            border: 2px solid transparent;
+           padding-top: 16px;
+            width: 180px;
+            font-size: larger;
+            /* margin-right: 20px; */
+            background-color: #06BBCC;
+            height: 100%;
+            font-family: cursive;
+            text-align: center;
+            /* padding-bottom: 10px; */
+            cursor: pointer;
+        }
+        .logo2 i{
+            color: blue;
+            padding-left: 10px;
+            font-size: 25px;
+            /* padding-top: 10px; */
+        }
+        .mid{
+            background-image: url(https://media.istockphoto.com/id/1272815911/photo/young-indian-female-university-student-stock-photo.jpg?s=612x612&w=0&k=20&c=Iwdc08GR3pw8_Qg3_nabNJUQYTo52EU3dvW4tsth1tE=);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            background-color: rgba(0, 0, 0, 0.287);
+            background-blend-mode:overlay;
+        }
+        .mid h3{
+            color:#06BBCC ;
+        }
+        .mid h1{
+            color: white;
+            font-family:cursive;
+            font-weight: bolder;
+            font-size: 45px;
+
+        }
+        .mid p{
+            color: white;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: 20px;
+            
+
+        }
+        .text{
+            /* border: 2px solid black; */
+            width: 650px;
+            /* margin-top: 250px; */
+            position: relative ;
+            top: 200px;
+            left: 52px;
+            height: 250px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .mid a{
+            border: 2px solid none;
+           border-radius: 5px ;
+            color: black;
+            background-color: #06BBCC;
+            padding: 15px;
+            margin-right: 20px;
+            position: relative;
+            top: 30px;
+            cursor: pointer;
+            font-family: cursive;
+            
+            
+            
+        }
+        .mid a:last-child{
+            background-color: white;
+
+        }
+        .mid2{
+            /* border: 2px solid black; */
+            /* width: 250px; */
+            /* height: 150px; */
+            display: flex;
+            /* align-items: center; */
+            justify-content: space-between;
+            /* margin-right: 50px;  */
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 80px;
+           
+            /* margin-left: 50px; */
+           
+            
+        }
+        .mid3{
+            border: 2px solid rgba(0, 0, 0, 0.362);
+            margin-right: 20px;
+            margin-left: 20px;
+             padding: 20px;
+             transition: all 0.5s linear;
+             border-radius: 10px;
+            cursor: pointer;
+            
+        }
+        .mid2 i{
+
+            font-size: 40px;
+            color: #2ecc06;
+            box-shadow: 1px 1px 1px #0c0c0c;
+            padding: 20px;
+            transition: all 0.5s linear;
+            border-radius: 10px;
+            
+
+
+
+        }
+        
+        .mid4{
+            border: 2px solid rgba(0, 0, 0, 0.362);
+            cursor: pointer;
+            margin-right: 20px;
+            transition: all 0.5s linear;
+            margin-left: 20px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .mid5{
+            border: 2px solid rgba(0, 0, 0, 0.362);
+            margin-right: 20px;
+            transition: all 0.5s linear;
+            margin-left: 20px;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+
+
+        }
+        
+        .mid6{
+            border: 2px solid rgba(0, 0, 0, 0.362);
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+
+
+            transition: all 0.5s linear;
+        }
+        /* @keyframes anime{
+            10%{
+                background-color: none;
+
+            }
+            25%{
+                background-color:  none;
+
+            }
+            50%{
+                background-color: #06BBCC;
+
+            }
+            75%{
+                background-color: #06BBCC;
+
+            }
+            100%{
+                background-color: #06BBCC;
+
+            }
+
+        } */
+
+        .mid2 h2{
+            padding: 10px;
+            font-family: cursive;
+        }
+        .mid3:hover{
+            transform:scale(1.1);
+            background-color: #06BBCC;
+            color: white;
+            
+
+        }
+        /* .mid3 i:hover{
+            color: white;
+
+            background-color: #06BBCC;
+        } */
+        .mid4:hover{
+            transform: scale(1.1);
+            color: white;
+            background-color: #06BBCC;
+
+        }
+        .mid5:hover{
+            transform: scale(1.1);
+            color: white;
+            background-color: #06BBCC;
+
+        }
+        .mid6:hover{
+            transform: scale(1.1);
+            color: white;
+            background-color: #06BBCC;
+
+        }
+        .mid2 p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .alpha{
+            border: 2px solid none;
+            width: 600px;
+            height: 400px;
+            padding: 50px;
+            position: relative;
+            bottom: 680px;
+            left: 650px;
+
+        }
+        .alpha h1{
+            font-family: cursive;
+            font-size: 30;
+        }
+        .alpha p{
+            padding-top: 10px;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        .img2{
+            transition: all 0.5s linear;
+        }
+        .img2 img{
+            border: 2px solid black;
+            border-radius: 10px;
+            
+            cursor: pointer;
+        }
+
+        .alpha2{
+            border: 2px solid none;
+            width: 120px;
+            padding: 20px;
+            font-family: cursive;
+            font-size: 25px;
+            position: relative;
+            bottom: 350px;
+            left: 60px;
+        }
+        .alpha3 a{
+            font-family: cursive;
+            color: black;
+            font-size: 20px;
+        }
+        .alpha3{
+            position: relative;
+            bottom: 780px;
+            left: 700px;
+        }
+        .alpha3 h1{
+            font-family: cursive;
+            font-size: 30px;
+        }
+        .img2:hover{
+            transform: scale(1
+            .1);
+
+        }
+        .student{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .student img{
+            height: 160px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .student1{
+            border: 2px solid black;
+            text-align: center;
+            width: 325px;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 10px;
+            
+            margin-left: 20px;
+            /* margin-right: 10px; */
+
+        }
+        .student2{
+            border: 2px solid black;
+            text-align: center;
+            width: 325px;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 10px;
+            margin-left: 20px;
+            /* margin-right: 10px; */
+
+        }
+
+        .student3{
+            border: 2px solid black;
+            text-align: center;
+            width: 325px;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 10px;
+            margin-left: 20px;
+            /* margin-right: 10px; */
+        }
+
+        .student4{
+            border: 2px solid black;
+            text-align: center;
+            width: 335px;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 10px;
+            margin-left:20px;
+            /* margin-right: 10px; */
+
+        }
+
+        .student5{
+            border: 2px solid black;
+            text-align: center;
+            width: 335px;
+            padding: 20px;
+            background-color: cyan;
+            border-radius: 10px;
+            margin-left: 20px;
+            /* margin-right: 10px; */
+            
+
+        }
+        .student{
+            position: relative;
+            bottom: 650px;
+        }
+        /* .student h1{
+            position: relative;
+            bottom: 100px;
+            left: 500px;
+            border: 2px solid black;
+            width: 500px;
+            height:50px;
+            /* text-decoration: underline; */
+        } */
+
+
+        
+
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="logo">
+            <i class="fa-solid fa-book"></i> eLEARNING
+        </ul>
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">COURSES</a>
+        <a href="">PAGES</a>
+        <a href="">CONTACT</a>
+        <ul class="logo2">
+            join now <i class="fa-solid fa-arrow-right"></i>
+        </ul>
+    </div>
+    <div class="mid">
+        <div class="text">
+            <h3>BEST ONLINE COURSES</h3>
+            <H1>The Best Online <br> LEARNING Platform </H1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, laborum, asperiores possimus deserunt facere nostrum molestiae reiciendis consequatur pariatur dolores eum dolorum assumenda? Tempore voluptatum ab adipisci enim delectus. Exercitationem.</p>
+            <a>Read More</a>
+            <a>Join Now</a>
+        </div>
+    </div>
+
+    <div class="mid2">
+        <div class="mid3">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>skilled Instructors</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam illum earum provident </p>
+
+        </div>
+        <div class="mid4">
+            <i class="fa-brands fa-chrome"></i>
+            <h2>Online Classes</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam illum earum provident </p>
+            
+        </div>
+        <div class="mid5">
+            <i class="fa-solid fa-house-chimney"></i>
+             <h2>Home Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam illum earum provident </p>
+
+        </div>
+        <div class="mid6">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h2>Book Library</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam illum earum provident </p>
+
+        </div>
+        
+    </div>
+    <div class="img">
+       <div class="img2">
+         <img src="https://img.freepik.com/free-photo/portrait-female-teacher-holding-notepad-green_140725-149620.jpg" alt="">
+       </div>
+       <div class="alpha2">
+        <a href="">UPSC</a>
+        <a href="">BPSC</a>
+        <a href="">B.TECH</a>
+        <a href="">B.A</a>
+        <a href="">ETC</a>
+       </div>
+       <div class="alpha">
+        <h1>Best Teacher in Our Website</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quasi, laudantium velit mollitia cupiditate omnis, fugit quae esse dolor similique placeat adipisci est dignissimos ratione ex ullam praesentium, repellendus ipsam?</p>
+       </div>
+       <div class="alpha3">
+
+        <h1>Our teachers information</h1>
+         <a href="">Our Teacher have 5yr experience</a><br>
+       <a href="">ALL Teachers has Completed her Graduation from London Univercity</a><br>
+       <a href="">All Teachers are Physicaly Fit</a><br>
+       <a href="">Our teachers Are Best Teacher</a><br>
+       </div>
+      
+    </div>
+
+    <div class="student">
+        <!-- <h1>Here is Our  top Five Topper Student </h1> -->
+        <div class="student1">
+            <h2> Rambo Kumar (95%)</h2>
+            <img src="https://i.pinimg.com/736x/a3/7b/e5/a37be5b9709175f1527761157463ec38.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, unde. Amet neque vel omnis. Tenetur, ab? Non incidunt inventore dicta, excepturi mollitia hic, cumque facilis quibusdam et exercitationem pariatur aspernatur.</p>
+
+
+
+        </div>
+
+        <div class="student2">
+            <h2>Rahul Yadav (92%)</h2>
+            <img src="https://www.bapssathy.ac.in/images/student-council/reneshat.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, unde. Amet neque vel omnis. Tenetur, ab? Non incidunt inventore dicta, excepturi mollitia hic, cumque facilis quibusdam et exercitationem pariatur aspernatur.</p>
+
+
+        </div>
+        
+        <div class="student3">
+            <h2> Shivam Roy (90%)</h2>
+            <img src="https://pbs.twimg.com/media/FGlIIsNXoAgNmJB.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, unde. Amet neque vel omnis. Tenetur, ab? Non incidunt inventore dicta, excepturi mollitia hic, cumque facilis quibusdam et exercitationem pariatur aspernatur.</p>
+
+
+        </div>
+
+        <div class="student4">
+            <h2>Ravina Kumari (96%)</h2>
+            <img src="https://static.toiimg.com/thumb/msid-74209821,width-400,resizemode-4/74209821.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, unde. Amet neque vel omnis. Tenetur, ab? Non incidunt inventore dicta, excepturi mollitia hic, cumque facilis quibusdam et exercitationem pariatur aspernatur.</p>
+
+
+        </div>
+
+        <div class="student5">
+            <h2>Vikas Kumar (98%)</h2>
+            <img src="https://i.pinimg.com/474x/4a/5c/2f/4a5c2f2a828314d79432bb91afeb3ef3.jpg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, unde. Amet neque vel omnis. Tenetur, ab? Non incidunt inventore dicta, excepturi mollitia hic, cumque facilis quibusdam et exercitationem pariatur aspernatur.</p>
+
+
+        </div>
+    </div>
+
+    
+
+
+
+
+
+</body>
+</html>

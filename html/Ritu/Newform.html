@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    
+    <style>
+        *{
+          background-color: yellow; 
+          
+        }
+        input[type=datetime-local]{
+            
+            width: 120px;
+            transition: width 0.5s ease-in-out;
+            border: 2px solid rgb(234, 80, 80);
+}
+input[type=text]{
+
+    border: 2px solid rgb(226, 37, 37);
+    width: 120px;
+
+    transition: width 0.5s ease-in-out;
+    
+}
+input[type=week]{
+    width: 120px;
+    transition: width 0.5s ease-in-out;
+    border: 2px solid rgb(245, 69, 10);
+   
+}
+
+input[type=datetime-local]:focus{
+    width: 300px;
+    background-color: aqua;
+}
+input[type=text]:focus{
+    width: 400px;
+    background-color: burlywood;
+    color: rgb(130, 8, 33);
+    
+    
+}
+input[type=week]:focus{
+    width: 200px;
+    background-color: aqua;
+}
+input[type=submit]{
+border:2px solid red;
+background-color: aqua;
+}
+input[type=reset]{
+    border:2px solid red ;
+    background-color: aqua;
+}
+
+
+label{
+    color: rgb(6, 57, 165);
+    /* background-color: blue; */
+}
+h1{
+    text-decoration: underline ;
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <h1>Admision Form..</h1>
+     <form>
+        <label> First Name:</labela>
+            <input type="text"required title="Please enter First Name"Placeholder="enter">
+            <br><br>
+         <label>Last Name:</label>
+         <input type="text" required title="Please enter the Last Name"Placeholder="enter" class="name">
+         <br><br>
+         <label>Gender:</label>
+         <label>Male</label>
+          <input type ="radio" Name="Gender">
+          <label>Female</label> 
+           <input type="radio"Name="Gender">
+           <br><br>
+           <label>DOB: </label>
+           <input type="datetime-local">
+           <input type="week">
+           <br><br>
+           <input type="submit">
+           <input type="reset"> 
+           
+    
+</body>
+</html>

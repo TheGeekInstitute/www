@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Preview Image Before Upload</title>
+   <script type="text/javascript">
+      function previewImage(event) {
+         var input = event.target;
+         var image = document.getElementById('preview');
+         if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+               image.src = e.target.result;
+            }
+            reader.readAsDataURL(input.files[0]);
+         }
+      }
+   </script>
+   <style>
+      #preview {
+         width: 300px;
+         height: 300px;
+      }
+   </style>
+</head>
+<body>
+   <h2>Preview Image Before Upload</h2>
+   <input type="file" accept="image/*" onchange="previewImage(event)">
+   <br>
+   <img id="preview" alt="Preview Image">
+</body>
+</html>

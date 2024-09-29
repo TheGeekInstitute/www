@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 2px solid black; */
+            height:300px;
+            width:400px;
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+
+
+            gap: 5px;
+           
+        }
+        .box{
+            /* border: 2px solid black; */
+        }
+        .box1{
+           background-color: violet;
+          
+        }
+        .box2{
+            background-color: turquoise;
+        }
+        .box3{
+            background-color: yellow;
+        }
+        .box4{
+            background-color: tomato;
+        }
+        .box5{
+            background-color: teal;
+        }
+        .box6{
+            background-color: wheat;
+        }
+        .box7{
+            background-color: aqua;
+        }
+        .box8{
+            background-color: thistle;
+            grid-area: 1/1/2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">main1</div>
+        <div class="box box2">main2</div>
+        <div class="box box3">main3</div>
+        <div class="box box4">main4</div>
+        <div class="box box5">main5</div>
+        <div class="box box6">main6</div>
+        <div class="box box7">main7</div>
+        <div class="box box8">main8</div>
+    </div>
+    
+</body>
+</html>

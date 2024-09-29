@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 500px;
+            width: 700px;
+            margin: 50px auto;
+            padding: 50px;
+        }
+
+        .container .name{
+            /* border: 1px solid black; */
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .container .name input{
+            margin-left: 30px;
+            height: 30px;
+            width: 150px;
+        }
+
+        .container .email{
+            /* border: 1px solid black; */
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+
+        .container .email input{
+            margin-left: 68px;
+            height: 30px;
+            width: 330px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="name">
+            <label for="">Enter Name</label>
+            <input type="text">
+            <input type="text">
+
+        </div>
+
+        <div class="email">
+            <label for="">Email</label>
+            <input type="email">
+        </div>
+
+    </div>
+
+</body>
+</html>

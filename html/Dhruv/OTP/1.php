@@ -1,0 +1,114 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<body>
+    <form action="" method="post">
+        Full Name <input type="text" name="fullname">
+        <br><br>
+        Email : <input type="email" name="email">
+        <br><br>
+        Username : <input type="text" name="username">
+        <br><br>
+        Password : <input type="password" name="password">
+        <br><br>
+        <input type="submit" value="Signup">
+    </form>
+
+<?php
+session_start();
+require "../../PHP/mail/mail.php";
+$conn=mysqli_connect("localhost",'root',"toor","Dhruv");
+
+if($_SERVER['REQUEST_METHOD']=="POST"){
+    if(isset($_POST['fullname'])){
+        $fullname=$_POST['fullname'];
+    
+        if(isset($_POST['email'])){
+            $email=$_POST['email'];
+
+            if(isset($_POST['username'])){
+                $username=$_POST['username'];
+
+                if(isset($_POST['password'])){
+                    $password=$_POST['password'];
+
+                    $sql="SELECT `user_id`, `fullname`, `email`, `username`, `password` FROM `Mailing` WHERE `username`='$username' OR `email`='$email'"; 
+                    
+                    $query=mysqli_query($conn,$sql);
+                    
+                    if($query){
+                        if(mysqli_num_rows($query)==1){
+                            $data=mysqli_fetch_assoc($query);
+                            if($data['email']==$email){
+                                echo 'Email Already Registered';
+                            }
+                            else{
+                                echo "Username Already taken";
+                            }
+                        }
+                        else{
+                            //Insert
+                            
+                            $otp=mt_rand(11111,999999);
+                            $valid_from=time();
+                            $is_verified=0;
+                           $sql="INSERT INTO `users`(`fullname`, `username`, `email`, `password`, `is_verified`) VALUES ('$fullname','$username','$email','$password','$is_verified')";
+                           
+                            $otp_sql="INSERT INTO `otp`(`otp`, `username`, `email`,`valid_from`) VALUES ('$otp','$username','$email','$valid_from')";
+
+                            $msg="<h1>".$otp."</h1>";
+
+                            if(mysqli_query($conn,$sql) && mysqli_query($conn,$otp_sql) && sendmail($email,'OTP Verification',$msg)){
+                                // echo "Regstration Compeleted";
+                                $_SESSION['username']=$username;
+                                $_SESSION['email']=$email;
+                                $_SESSION['verification']=true;
+                                header("location:otp_verify.php");
+                            }
+                            else{
+                                echo "Server Busy";
+                            }
+                        
+                        }
+                    }
+                    
+
+
+                }
+                else{
+                    echo "Please Enter Email";
+                }
+
+            }
+            else{
+                echo "Please Enter Username";
+            }
+
+        }
+        else{
+            echo "Please Enter Email";
+        }
+
+    }
+    else{
+        echo "Please Enter Full Name";
+    }
+}
+
+
+
+
+?>
+
+</body>
+</head>

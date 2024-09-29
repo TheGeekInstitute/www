@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+       .box{
+        counter-reset: count;
+       }
+
+       h1::before{
+        /* content: counter(count,lower-alpha) ". "; */
+        content: counter(count) ". ";
+        counter-increment: count;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;  
+       }
+
+       h1{
+        counter-reset: sub-count;
+       }
+
+       h2::before{
+        content: counter(count) "." counter(sub-count) ". "; 
+        color: red;
+        counter-increment: sub-count;
+       }
+
+       h2{
+        text-indent: 50px;
+        counter-reset: suyb-sub-count;
+    }
+
+    h3::before{
+        content: counter(count) "." counter(sub-count) "." counter(sub-sub-count) ". ";
+        color: green;
+        counter-increment: sub-sub-count;
+    }
+
+    h3{
+        text-indent: 100px;
+    }
+
+    
+
+       
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>Web Development</h1>
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JAVA SCRIPT</h2>
+    <h1>Programming</h1>
+        <h2>JAVA</h2>
+            <h3>Basic Java</h3>
+            <h3>Classes & Objects</h3>
+            <h3>Sockets</h3>
+        <h2>PYTHON</h2>
+        <h2>C/C++</h2>
+    <h1>Ethical Hacking</h1>
+        <h2>Linux</h2>
+            <h3>Kali Linux</h3>
+            <h3>Parrot Security OS</h3>
+            <h3>Black Arch</h3>
+        <h2>Networking</h2>
+        <h2>Website hacking</h2>
+        <h3>SQLi</h3>
+
+        <h1>ABCD</h1>
+</div>
+</body>
+</html>

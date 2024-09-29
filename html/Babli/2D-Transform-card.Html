@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        @import url(" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+        *{
+            margin:0%;
+            padding:0% ;
+            box-sizing:border-box ;
+        }
+
+        body{
+            background-color:white ;
+        }
+
+        .card{
+            /* border:2px solid Black ; */
+            height:300px ;
+            width:250px ;
+            margin:auto;
+            margin-top:150px ;
+            border-radius:12px ;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_sBn71f17xvy4nha2Q-omk5repjmRNuJr5-t6Zlep2uepoyrBVSzK7D_Zw&s");
+            background-size: cover;
+            background-position: center;
+             background-repeat: no-repeat;
+          /* filter: blur(1px); */
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0px 0px 30px black;
+        }
+
+        .box{
+            height: 300px;
+            width:250px ;
+            /* border:2px solid black ; */
+            padding:10px ;
+            text-align:center ;
+            transform:translateY(80%) ;
+            backdrop-filter:blur(4px);
+            background-color: rgb(0, 0, 0,0.5);
+            transition:all .3s ;
+        }
+
+        .box h1{
+            color:white ;
+            text-shadow:0px 0px 5px blue ;
+            border-bottom:2px solid white;
+            line-height:50px ;
+        }
+
+        .card:hover .box{
+            transform:translateY(0);
+            border-radius:12px ;
+        }
+
+        .box img{
+            height:70px ;
+            width:70px ;
+            margin:10px ;
+            border:5px solid white ;
+            border-radius:50% ;
+            box-shadow:0px 0px 20px White 0px 0px 10px aqua ;
+        }
+
+        .box p{
+            color:white ;
+            font-weight:400;
+            font-size:18px ;
+            font-family:cursive ;
+        }
+
+        .box .windows{
+            color:rgb(67, 67, 138) ;
+            /* text-align:left; */
+            padding:10px 0;
+            /* border-bottom:2px solid black ; */
+            /* width:110px ; */
+        }
+     </style>
+</head>
+<body>
+	<div class="card">
+        <div class="box">
+            <h1>About Earth</h1>
+            <img src="../web/images/10.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, odit consequuntur  </p>
+            <div class="windows">
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-windows"></i>
+
+        </div>
+    </div>
+</body>
+</html>

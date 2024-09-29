@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: royalblue;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .box{
+            background-color: gray;
+            border-radius: 5px;
+        }
+        .content{
+            display: none;
+        }
+        .content.show{
+            display: block;
+        }
+        .heading .fa-plus{
+            color: white;
+        }
+        .heading .fa-plus.rotate{
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="box">
+            
+            <label for="btn" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus tenetur voluptatem molestiae assumenda accusamus deleniti culpa, dolore tempora expedita porro, laborum vel iusto repellat? Dignissimos sint perspiciatis labore cumque!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <label for="btn1" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus tenetur voluptatem molestiae assumenda accusamus deleniti culpa, dolore tempora expedita porro, laborum vel iusto repellat? Dignissimos sint perspiciatis labore cumque!</p>
+            </div>
+        </div>
+
+        <div class="box">
+            
+            <label for="btn2" class="heading">
+                <p>Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et repellendus tenetur voluptatem molestiae assumenda accusamus deleniti culpa, dolore tempora expedita porro, laborum vel iusto repellat? Dignissimos sint perspiciatis labore cumque!</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let heading=document.querySelectorAll('.heading');
+        let content=document.querySelectorAll('.content');
+        let box=document.querySelectorAll('.box');
+        let plus=document.querySelectorAll('.fa-plus');
+     
+
+        Array.from(heading).forEach((e)=>{
+            e.addEventListener("click",()=>{
+                Array.from(content).forEach((a)=>{
+                    a.classList.remove("show")
+                })
+                e.nextElementSibling.classList.toggle("show")
+                console.log(e.children[1])
+                e.children[1].classList.toggle("rotate");
+            })
+        })
+    </script>
+    
+</body>
+</html>

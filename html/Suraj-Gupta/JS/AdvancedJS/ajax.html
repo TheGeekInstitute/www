@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 250px;
+            font-size: x-large;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+ 
+    <button id="btn">Fetch</button>
+
+ <script>
+     let container=document.querySelector(".box");
+     document.querySelector('#btn').addEventListener('click',()=>{
+         
+         let xhr=new XMLHttpRequest();
+         
+         xhr.onreadystatechange = function(){
+             if(this.readyState==4 && this.status==200){
+                 
+            container.innerHTML=this.responseText
+        }
+        else{
+            container.innerHTML="Loading...."
+           
+        }
+    }
+
+
+    xhr.open("GET","data.php",true);
+    xhr.send();
+
+
+
+})
+
+</script>
+</body>
+</html>

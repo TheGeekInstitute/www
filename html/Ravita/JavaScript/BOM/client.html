@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .box{
+        border: 2px solid black;
+        height: 300px;
+        width: 300px;
+        margin: 150px auto;
+    }
+
+    #dog{
+        height: 70px;
+        /* width: 50px; */
+        position: absolute;
+        transition: all .1s linear;
+        z-index: 9999;
+    }
+</style>
+</head>
+<body>
+        <!-- <img src="https://media3.giphy.com/avatars/LittleWhiteDogCo/Q9m3AjMPsAnr.gif" id="dog" alt=""> -->
+
+         <img src="https://i.pinimg.com/originals/70/98/9e/70989ecb0258f566b9af13e876cf7dce.gif" id="dog" alt="">
+<!-- 
+         <img src="https://image.pngaaa.com/993/4023993-middle.png"  id="dog" alt=""> -->
+
+    <div class="box"></div>
+
+    <script>
+        let dog =  document.querySelector('#dog');
+        document.body.addEventListener("mousemove",(e)=>{
+            // console.clear()
+            // console.log(e.clientX)
+
+            // console.log(e.pageX)
+            let top = e.clientY;
+            let left =  e.clientX;
+
+            dog.style.top = top + "px"
+            dog.style.left = left + "px"
+
+        })
+
+        document.querySelector(".box").addEventListener("click",(e)=>{
+            // console.log(window.screenX)
+            console.log(e.offsetX)
+        })
+
+
+        document.addEventListener("click",(e)=>{
+            // console.log(e.screenX)
+
+        })
+    </script>
+
+</body>
+</html>
+<!-- 
+The screenX Property	The Screen area
+The screenY Property	The Screen area
+The clientX Property	The Window area
+The clientY Property	The Window area
+The pageX Property	The Page (Document)
+The pageY Property	The Page (Document)
+The offsetX Property	The target Element
+The offsetY Property	The target Element -->

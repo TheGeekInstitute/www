@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+            overflow: hidden;
+        }
+
+        .container .slider{
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500vw;
+            animation: slider 15s ease-in-out 0s infinite ;
+       
+        }
+        
+        .container .slider .image{
+            height: 600px;
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            width: 100vw;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      
+        }
+
+        .container .slider .image .content{
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+            padding: 50px;
+            border-radius: 20px 5px;
+            background-color: rgba(0, 0, 0, 0.486);
+            color: white;
+            font-size: x-large;
+        }
+
+        @keyframes slider {
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+
+            20%{
+                transform: translateX(-100vw);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+            }
+
+            30%{
+                transform: translateX(-100vw);
+            }
+
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-200vw);
+            }
+
+            45%{
+                transform: translateX(-200vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+
+            55%{
+                transform: translateX(-200vw);
+            }
+
+        
+            60%{
+                transform: translateX(-300vw);
+            }
+
+            65%{
+                transform: translateX(-300vw);
+            }
+
+            70%{
+                transform: translateX(-300vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+
+            80%{
+                transform: translateX(-400vw);
+            }
+
+            85%{
+                transform: translateX(-400vw);
+            }
+
+            90%{
+                transform: translateX(-400vw);
+            }
+
+            95%{
+                transform: translateX(-400vw);
+            }
+
+            100%{
+                transform: translateX(-400vw);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slider">
+
+            <div class="image" style="background-image: url(../Aasha/images/1.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic, voluptatibus rem natus et id alias ducimus minima sit iste quae enim, maxime ipsa delectus itaque harum accusamus nam. Quam.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../Aasha/images/2.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic, voluptatibus rem natus et id alias ducimus minima sit iste quae enim, maxime ipsa delectus itaque harum accusamus nam. Quam.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../Aasha/images/3.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic, voluptatibus rem natus et id alias ducimus minima sit iste quae enim, maxime ipsa delectus itaque harum accusamus nam. Quam.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../Aasha/images/4.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic, voluptatibus rem natus et id alias ducimus minima sit iste quae enim, maxime ipsa delectus itaque harum accusamus nam. Quam.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../Aasha/images/5.webp);">
+                <div class="content">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic, voluptatibus rem natus et id alias ducimus minima sit iste quae enim, maxime ipsa delectus itaque harum accusamus nam. Quam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

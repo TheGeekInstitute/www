@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        body{
+        background-image:url("https://images.pexels.com/photos/6985003/pexels-photo-6985003.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70.8vh;
+        /* background-color: rgba(28, 62, 255, 0.123); */
+        /* background-blend-mode: overlay; */
+    }
+
+    .login{
+        /* border: 2px solid red; */
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        margin-top: 270px;
+        background-image: url("https://images.pexels.com/photos/6388946/pexels-photo-6388946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-color: rgba(210, 210, 252, 0.973); */
+        /* background-blend-mode: darken; */
+        padding: 25px 45px;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 50px 10px black;
+
+    }
+
+    .login h1{
+        /* color: ; */
+        text-align: center;
+    }
+
+    form label{
+        display: block;
+        color: black;
+        font-size: larger;
+        font-weight: 900;
+        margin: 5px 0px;
+        /* color: ; */
+        /* text-shadow: .5px .5px 1px black; */
+    }
+    form input{
+        border: none;
+        outline:none ;
+        border: .5px solid black;
+        border-radius: 3px;
+        border-bottom: 4px solid black;
+        background-color: transparent;
+        padding: 3px;
+        width: 210px;
+        height: 30px;
+        font-weight: 900;
+        color: rgb(44, 44, 46);
+        /* text-shadow: 1px 1px 1px grey; */
+        transition: all .3s;
+        caret-color: red;
+    }
+
+    form button{
+        display: block;
+        border: .5px solid black;
+        border-bottom: 4px solid black;
+        font-weight: 900;
+        font-size: large;
+        padding: 5px 15px;
+        background-color: transparent;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 3px;
+        transition: translate .3s;
+    }
+
+    form button:active{
+        transform:translate(1px,1px);
+    }
+
+    form input:focus{
+        transform: scale(1.1);
+
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>LOGIN</h1>
+        <form action="">
+            <label for="">Username</label>
+            <input type="text">
+            <label for="">Password</label>
+            <input type="password">
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>

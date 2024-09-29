@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Transform</title>
+<style>
+    /* rotateX(angle)
+    rotateY(angle)
+    rotateZ(angle)
+    rotate3d(x,y,z,angle)
+    translateZ(z)
+    translate3d(x,y,z)
+    scale3d(x,y,z)
+    scaleZ(z)
+    perspective(n)
+     */
+    .container{
+        height: 200px;
+        width: 250px;
+        background-color: gray;
+        margin: auto;
+        margin-top: 200px;
+        
+    }
+
+    .box{
+        height: 200px;
+        width: 250px;
+        background-color: red;
+        transition: all 1s;
+        /* transform-origin: top center; */
+        transform: perspective(1000px) skewY(30deg);
+    }
+
+    .box:hover{
+        /* transform: perspective(800px) rotateZ(90deg); */
+
+        /* transform:perspective(100px) rotate3d(4,0,0,30deg); */
+        /* transform: perspective(1000px) translateZ(100px); */
+
+        
+
+    }
+    .container p{
+        position: absolute;
+        z-index: 100;
+        width: 250px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laborum obcaecati, aliquid nihil quasi est eveniet libero ipsa itaque quae dicta quia repudiandae illo inventore voluptas minima maxime corporis optio.</p>
+        <div class="box"></div>
+    </div>
+    
+
+</body>
+</html>

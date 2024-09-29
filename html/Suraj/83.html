@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+            *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width: 600px;
+            margin: auto;
+            display: flex;
+            justify-content:center;
+            /* align-items: center; */
+            /* flex-direction: row-reverse; */
+        }
+        .item1,.item2,.item3,.item4,.item5{
+            height: 30px;
+            width: 60px;
+            /* margin: 5px; */
+            flex: 1;
+          
+            align-content: flex-end;
+        }
+        .item1{
+            background-color: red;
+            height: 60px;
+        }
+        .item2{
+            background-color: green;
+            /* align-self: center; */
+            /* order: -1; */
+            flex-grow: 5;
+            
+        }
+        .item3{
+            background-color: purple;
+        }
+        .item4{
+            background-color: orangered;
+        }
+        .item5{
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+       </div>
+</body>
+</html>

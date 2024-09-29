@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let name="ABCD";
+
+        let data = `hello ${name}`;
+
+        // console.log(data);
+
+        // function abcd(){
+
+        // }
+
+
+        // let abcd= function(){
+
+        // }
+
+        // let abcd =name=>name;
+
+
+
+        // abcd();
+
+        // console.log(abcd("XYZ"))
+    
+        // let abcd=(name)=>{
+        //     console.log(name);
+        // }
+
+        // abcd('ABCD',"XYZ")
+
+        
+        function abcd(name,...args){
+            let sum=0;
+            // Array.from(arguments).forEach((e)=>{
+            //     sum+=e;
+            //     console.log(sum)
+            // })
+        
+            // for(let i=0; i< arguments.length ; i++){
+            //     sum+=arguments[i];
+            // }
+
+            // console.log(sum)
+            console.log(abcd)
+
+            // console.log(name)
+
+            for(let x of args){
+                sum+=x
+            }
+
+            console.log(name,sum)
+        
+        }
+
+
+        abcd("a",45,25,45,22);
+
+    
+
+        let one=[1,2];
+        let two=[...one,3,4];
+
+        console.log(two)
+
+
+        let obj={
+            name:"ABCD",
+            age:[1,2,3,4,5],
+            func: function(){
+                return "ABCD"
+            }
+        }
+
+
+        console.log(obj.func())
+    </script>
+
+</body>
+</html>

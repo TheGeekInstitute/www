@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acordion</title>
+    <style>
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p{
+    display: none;
+}
+
+.show{
+    display: block;
+    color: white;
+    background-color: orangered;
+}
+
+.link{
+    transition: all .1s;
+    border: 2px solid red;
+}
+.cont{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 30px;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="link">
+        <div class="cont">
+    <h1>What is Css</h1>
+   <i class="fa-solid fa-plus btn1"></i>
+            </div>
+
+   <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsa vel, nesciunt eos rerum itaque perferendis omnis harum sed ut numquam, dolore officiis quos deleniti optio ratione? Enim, beatae voluptatum?</p>
+    </div>
+
+    <div class="link">
+        <div class="cont">
+    <h1>What is JSS</h1>
+   <i class="fa-solid fa-plus btn2"></i>
+            </div>
+
+   <p id="pera2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsa vel, nesciunt eos rerum itaque perferendis omnis harum sed ut numquam, dolore officiis quos deleniti optio ratione? Enim, beatae voluptatum?</p>
+    </div>
+
+    <div class="link">
+        <div class="cont">
+    <h1>What is SQL</h1>
+   <i class="fa-solid fa-plus btn3"></i>
+            </div>
+
+   <p id="pera3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsa vel, nesciunt eos rerum itaque perferendis omnis harum sed ut numquam, dolore officiis quos deleniti optio ratione? Enim, beatae voluptatum?</p>
+    </div>
+
+    <script>
+        let links = document.querySelector(".links")
+        let pera = document.querySelector("#pera")
+
+        let btn1 = document.querySelector(".btn1").addEventListener('click',()=>{
+           pera.classList.toggle("show")
+           pera.style.backgroundColor="white";
+           pera.style.color="black";
+
+        })
+
+        let btn2 = document.querySelector(".btn2").addEventListener('click',()=>{
+           pera2.classList.toggle("show")
+
+        })
+
+        let btn3 = document.querySelector(".btn3").addEventListener('click',()=>{
+           pera3.classList.toggle("show")
+           pera3.style.backgroundColor="Green";
+
+        })
+
+        
+    </script>
+    
+</body>
+</html>

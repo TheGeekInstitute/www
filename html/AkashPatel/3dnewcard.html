@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: calc(50% -  150px);
+            left: calc(50% - 150px);
+            perspective: 600px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+    .box{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        transition: all 1s;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+
+    }
+
+    .front,.back{
+        width: 300px;
+        height: 300px; 
+        position: absolute;
+        font-size: 80px;
+        text-align: center;
+        line-height: 300px;
+        border-radius: 50px;
+        backface-visibility: hidden;
+        border: 2px solid black;
+    }
+
+    
+    .front{
+        background-color: red;
+        backface-visibility: hidden;
+
+    }
+
+    .back{
+        background-color: yellow;
+        /* transform: rotate3d(180deg); */
+        transform: rotate3d(1,1,1,180deg);
+        backface-visibility: hidden;
+
+
+    }
+
+    .container:hover .box{
+        transform: rotate3d(1,1,1,-180deg);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="front">Front</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+</body>
+</html>

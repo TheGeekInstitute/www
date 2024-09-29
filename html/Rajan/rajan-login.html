@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>login here</title>
+    <style>
+        *{
+            background-color:rgb(27, 27, 25) ;
+            color: white;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .box{
+            text-align: center;
+            /* border: 1px solid white; */
+            width: 20rem;
+            margin: 15rem auto;
+            background-color: rgb(41, 40, 40);
+        }
+        .box h1{
+            font-size: 30px;
+            padding: 15px 0;
+            background-color: rgb(41, 40, 40);
+        }
+        .box .contant{
+            /* border: 1px solid red; */
+            width: 15rem;
+            margin:15px auto;
+            text-align: left;
+        }
+        .box .contant p{
+            background-color: rgb(41, 40, 40);
+            font-size: 18px;
+        }
+        .box .contant input{
+            width: 15rem;
+            line-height: 22px;
+            border-color: transparent;
+        }
+        .box .log{
+            border: 1px solid white;
+            width: 15rem;
+            margin: auto;
+            border-radius: 8px;
+            line-height: 30px;
+            background-color: white;
+            z-index: 3;
+        }
+        .box .log p{
+            display: inline;
+            background-color: white;
+            color: black;
+        }
+        .box .logo{
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            width: 15rem;
+            margin: auto ;
+            line-height: 35px;
+            background-color: rgb(41, 40, 40);
+            padding: 30px 0;
+            z-index: 2;
+        }
+        .box .logo .goo{
+            border: 1px solid white;
+            width: 100px;
+            border-radius: 5px;
+            /* background-color: gray; */
+            z-index: 2;
+        }
+        .box01{
+            /* border: 1px solid white; */
+            width: 10rem;
+            height: 10rem;
+            border-radius: 200px;
+            position: absolute;
+            top: 120px;
+            left: 27rem;
+            background: linear-gradient(rgba(0, 0, 255, 0.911), rgba(255, 255, 255, 0.507));
+        }
+        .box02{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 200px;
+            position: absolute;
+            top: 30rem;
+            right: 27rem;
+            background: linear-gradient(rgba(255, 145, 0, 0.87), rgba(255, 255, 255, 0.507));
+            z-index: 1;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Login Here</h1>
+        <div class="contant">
+            <p>User name</p>
+            <input type="text" placeholder="Email or phone">
+        </div>
+        <div class="contant">
+            <p>Password</p>
+            <input type="text" placeholder="Password">
+        </div>
+        <div class="log">
+            <p>Log in</p>
+        </div>
+        <div class="logo">
+            <div class="goo">
+                <i class="fa-brands fa-google"></i>
+                <a href="#">
+                    Google
+                </a>
+            </div>
+            <div class="goo">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="#">
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="box01"></div>
+    <div class="box02"></div>
+</body>
+</html>

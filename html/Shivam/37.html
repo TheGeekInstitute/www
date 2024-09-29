@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-align: center;
+            /* border: 1px solid red; */
+            margin: 3px;
+        }
+        :root{
+            --main-color:rgb(201, 201, 201);
+        }
+        .header{
+            background-color:var(--main-color);
+            height: 10vh;
+        }
+        .nav{
+            height: 5vh;
+            background-color:var(--main-color);
+        }
+        .footer{
+            height: 5vh;
+            background-color:var(--main-color);
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left,.right{
+            height: 75vh;
+            background-color:var(--main-color);
+            width: 25vw;
+        }
+        .main{
+            background-color:var(--main-color);
+            width:50vw ;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="nav">Nav</div>
+    <div class="container">
+    <div class="left">Left</div>
+    <div class="main">Main Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis tenetur, molestias nam neque voluptates quia eos soluta molestiae ipsum corporis aliquam, a ullam, sed vitae recusandae nulla quae nesciunt. Quaerat?</div>
+    <div class="right">Right</div>
+    </div>
+    <div class="footer">Footer </div>
+</body>
+</html>

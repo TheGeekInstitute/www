@@ -1,0 +1,189 @@
+
+Setting environment for using XAMPP for Windows.
+Geek-Institute@DESKTOP-HDAC0NG c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| certificate_ikgptu |
+| dhruv              |
+| emp                |
+| information_schema |
+| mydb               |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| shivam             |
+| test               |
++--------------------+
+10 rows in set (0.015 sec)
+
+MariaDB [(none)]> create database Hema;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| certificate_ikgptu |
+| dhruv              |
+| emp                |
+| hema               |
+| information_schema |
+| mydb               |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| shivam             |
+| test               |
++--------------------+
+11 rows in set (0.001 sec)
+
+MariaDB [(none)]> use hema;
+Database changed
+MariaDB [hema]> show tables;
+Empty set (0.001 sec)
+
+MariaDB [hema]> create table emp (emp_no int(5), name varchar(30), gender char(1), salary decimal(10,2));
+Query OK, 0 rows affected (0.012 sec)
+
+MariaDB [hema]> show tables;
++----------------+
+| Tables_in_hema |
++----------------+
+| emp            |
++----------------+
+1 row in set (0.001 sec)
+
+MariaDB [hema]> describe emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(30)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.016 sec)
+
+MariaDB [hema]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(30)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.013 sec)
+
+MariaDB [hema]> insert into emp (emp_no,name,gender,salary) VALUES (1,"Amit Singh","M",4500.00);
+Query OK, 1 row affected (0.051 sec)
+
+MariaDB [hema]> insert into emp (emp_no,name,gender,salary) VALUES (2,"Sumit Singh","M",4600.00);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [hema]> insert into emp (emp_no,name,gender,salary) VALUES (3,"Geeta","F",5000.00);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [hema]> insert into emp (emp_no,name,gender,salary) VALUES (4,"Sita","F",5500.00),(5,"Ravita","F",7800.00),(6,"Bablu","M",5600.00);
+Query OK, 3 rows affected (0.004 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+MariaDB [hema]> select * from emp;
++--------+-------------+--------+---------+
+| emp_no | name        | gender | salary  |
++--------+-------------+--------+---------+
+|      1 | Amit Singh  | M      | 4500.00 |
+|      2 | Sumit Singh | M      | 4600.00 |
+|      3 | Geeta       | F      | 5000.00 |
+|      4 | Sita        | F      | 5500.00 |
+|      5 | Ravita      | F      | 7800.00 |
+|      6 | Bablu       | M      | 5600.00 |
++--------+-------------+--------+---------+
+6 rows in set (0.001 sec)
+
+MariaDB [hema]> select name from emp;
++-------------+
+| name        |
++-------------+
+| Amit Singh  |
+| Sumit Singh |
+| Geeta       |
+| Sita        |
+| Ravita      |
+| Bablu       |
++-------------+
+6 rows in set (0.000 sec)
+
+MariaDB [hema]> select name,salary from emp;
++-------------+---------+
+| name        | salary  |
++-------------+---------+
+| Amit Singh  | 4500.00 |
+| Sumit Singh | 4600.00 |
+| Geeta       | 5000.00 |
+| Sita        | 5500.00 |
+| Ravita      | 7800.00 |
+| Bablu       | 5600.00 |
++-------------+---------+
+6 rows in set (0.001 sec)
+
+MariaDB [hema]> select emp_no,name,salary from emp;
++--------+-------------+---------+
+| emp_no | name        | salary  |
++--------+-------------+---------+
+|      1 | Amit Singh  | 4500.00 |
+|      2 | Sumit Singh | 4600.00 |
+|      3 | Geeta       | 5000.00 |
+|      4 | Sita        | 5500.00 |
+|      5 | Ravita      | 7800.00 |
+|      6 | Bablu       | 5600.00 |
++--------+-------------+---------+
+6 rows in set (0.001 sec)
+
+MariaDB [hema]> show tables;
++----------------+
+| Tables_in_hema |
++----------------+
+| emp            |
++----------------+
+1 row in set (0.001 sec)
+
+MariaDB [hema]> drop table emp;
+Query OK, 0 rows affected (0.013 sec)
+
+MariaDB [hema]> show tables;
+Empty set (0.001 sec)
+
+MariaDB [hema]> drop database hema;
+Query OK, 0 rows affected (0.019 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| certificate_ikgptu |
+| dhruv              |
+| emp                |
+| information_schema |
+| mydb               |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| shivam             |
+| test               |
++--------------------+
+10 rows in set (0.001 sec)
+
+MariaDB [(none)]>

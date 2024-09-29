@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backimage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contaner{
+            background-image: url(../images/pexels-gochrisgoxyz-1477166.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100vw;
+            line-height: 46rem;
+        }
+        .contaner h1{
+            /* border: 1px solid black; */
+            line-height: 30%;
+            font-size: 6rem;
+            display: inline;
+            position: relative;
+            left: 15rem;
+            text-shadow: 2px 2px 2px white;
+        }
+        .contaner .my{
+            top: 5rem;
+        }
+        .contaner .welcome{
+            left: 23rem;
+        }
+        .card{
+            /* border: 1px solid black; */
+            text-align: center;
+            background-image: url(https://images.pexels.com/photos/8335670/pexels-photo-8335670.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: 100%;
+            
+        }
+        .card h1{
+            font-size: 40px;
+            margin: 10px 0;
+            color: white;
+            /* border-bottom: 2px solid white; */
+        }
+        .card .images{
+            /* border: 1px solid red; */
+            width: 70rem;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px auto;
+        }
+        .card .images .box{
+            /* border: 1px solid black; */
+            margin:10px;
+            width: 32rem;
+            background-size: cover;
+        }
+        .card .images .box:hover .text{
+            /* display: block; */
+            transform: scale(1);
+            transition: all 0.5s linear;
+        }
+        .card .images .box .text{
+            /* display: none; */
+            transform: scale(0);
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            height: 50rem;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+        .nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .nav button {
+            background-color: rgba(0,0,0,0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+        <h1 class="welcome">Welcome To</h1>
+        <h1 class="my"> My Page</h1>
+    </div>
+    <div class="card">
+        <h1>Images</h1>
+        <div class="images">
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 20rem;">
+                <div class="text">
+                    <h1>mount everest</h1>
+                    <p>Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point. Its elevation of 8,848.86 m was most recently established in 2020 by the Chinese and Nepali authorities.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/1122626/pexels-photo-1122626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 42rem;">
+                <div class="text">
+                    <h1>white rose plant</h1>
+                    <p>Rosa × alba plants are tall shrubs with arching stems and bluish-green leaves. They bloom only in mid summer. They are extremely cold hardy and disease resistant, hence they are used to create new varieties for subarctic climates like northern Scandinavia and Canada. These magnificent shrubs can withstand shade and semishade, and are easily found abandoned in semi wild situations. In Sweden and Finland the French bred 'Minette' has been considered a wild rose called R. × suonum (Mustialanruusu). The Mustiala rose belongs to the Finns' tradition of roses "and is unknown outside the Nordic countries, although in 1819 it was bred in France".</p>
+                    <h1>Parentage hypotheses</h1>
+                    <p>Rosa × alba is hexaploid,with six sets of chromosomes in each cell, which means that it interbreeds only rarely with the more common diploid, tetraploid, and pentaploid roses. Maskew and Primavesi concluded in 2005 that a 1993 suggestion by Graham and Primavesi that it was derived by chromosome duplication from a triploid offspring of R. arvensis (diploid) and R. gallica (tetraploid) had been mistaken.R. alba shares some nuclear DNA sequences with R. canina and may be derived from hybridization between that species and R. gallica.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/1420440/pexels-photo-1420440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 42rem;">
+                <div class="text">
+                    <h1>Morning Sun</h1>
+                    <p>Although the Sun appears to "rise" from the horizon, it is actually the Earth's motion that causes the Sun to appear. <br> The illusion of a moving Sun results from Earth observers being in a rotating reference frame; <br> this apparent motion caused many cultures to have mythologies and religions built around the geocentric model, which prevailed until astronomer Nicolaus Copernicus formulated his heliocentric model in the 16th century.Architect Buckminster Fuller proposed the terms "sunsight" and "sunclipse" to better represent the heliocentric model, though the terms have not entered into common language.Astronomically, sunrise occurs for only an instant, namely the moment at which the upper limb of the Sun appears tangent to the horizon.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/4622893/pexels-photo-4622893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 42rem;"></div>
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 42rem;"></div>
+            <div class="box" style="background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); height: 42rem;"></div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="../images/01.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="../images/02.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="../images/05.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="../images/04.jpg" alt="Image 4"></div>
+        </div>
+        <div class="nav">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </div>
+
+    <script>
+        const slides = document.querySelector('.slides');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        let index = 0;
+
+        function showSlide(i) {
+            const slideWidth = document.querySelector('.slide').offsetWidth;
+            slides.style.transform = `translateX(${-i * slideWidth}px)`;
+        }
+
+        prev.addEventListener('click', () => {
+            index = (index > 0) ? index - 1 : document.querySelectorAll('.slide').length - 1;
+            showSlide(index);
+        });
+
+        next.addEventListener('click', () => {
+            index = (index < document.querySelectorAll('.slide').length - 1) ? index + 1 : 0;
+            showSlide(index);
+        });
+
+        let sld=setInterval(()=>{
+            index = (index < document.querySelectorAll('.slide').length - 1) ? index + 1 : 0;
+            showSlide(index);
+        },2200)
+
+        window.addEventListener('resize', () => showSlide(index));
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <p class="new how bow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, maxime nulla! Quia rem facere, obcaecati temporibus ipsa aliquam expedita veniam pariatur necessitatibus voluptatem omnis, reprehenderit cupiditate hic repudiandae quod recusandae?</p>
+
+    <button onclick="change()">print</button>
+
+    <script>
+        function change(){
+            let anup = document.querySelector(".new");
+            // anup.style.color="red";
+            // anup.style.backgroundColor="purple";
+            // anup.style.border="8px solid green";
+            // anup.style.borderRadius="30%"
+
+            // console.log(anup.className);
+            // anup.className = "col";
+            // anup.className = anup.className + " " + "for"
+            // console.log(anup.className);
+
+            // anup.classList.remove("bow")
+            anup.classList.add("low")
+            // console.log(anup)
+
+            let result = document.getElementsByClassName("low")[0];
+            result.style.color="blue";
+            result.style.fontSize="20px"
+            result.style.fontFamily="cursive"
+            console.log(result) 
+        }
+    </script>
+
+
+
+</body>
+</html>

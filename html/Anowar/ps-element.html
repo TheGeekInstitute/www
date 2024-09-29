@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            font-size: 40px;
+            color: aqua;
+        }
+        .para::first-line{
+            color: red;
+        }
+        .para::selection{
+            background-color: aqua;
+            color: black;
+        }
+        .tarik::before{
+            content: "The";
+            color: blue;
+        }
+        .tarik::after{
+            content: " is Baker";
+            color: red;
+        }
+        ul li::marker{
+            color: aqua;
+            font-size: 40px;
+        }
+        input{
+            caret-color: aqua;
+            accent-color: red;
+        }
+        input::placeholder{
+            color: red;
+            opacity: 1;
+        }
+        input::-webkit-file-upload-button,
+        input::file-selector-button{
+            color: red;
+            background-color: green;
+            border: 2px solid black;
+            width: 100PX;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ut eos error exercitationem quisquam, asperiores quibusdam eaque aliquid, repudiandae quia obcaecati quas nam doloribus consequatur distinctio. Dolorum facere tempora sequi.</p>
+    <h1 class="tarik">Tarik</h1>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>Three</li>
+    </ul>
+    <input type="text" placeholder="Absd">
+
+    <input type="checkbox" id="">
+    <input type="radio" id="">
+
+
+    <input type="file" name="" id="">
+</body>
+</html>

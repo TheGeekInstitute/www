@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+
+<body>
+
+    <script>
+
+        let promise1 = new Promise((resolve, reject) => {
+            let age = 100;
+            if (age >= 18) {
+                resolve("Success 1..");
+            }
+
+            reject("Failed 1...");
+
+        });
+
+
+        // let promise2 = new Promise((resolve, reject) => {
+        //     let age = 10;
+        //     if (age >= 18) {
+        //         resolve("Success 2..");
+        //     }
+        //     reject("Failed 2...");
+
+        // });                                 
+
+
+
+
+        // promise1.then((e)=>{
+        //     console.log(e)
+        // }).catch((a)=>{
+        //     console.log(a)
+        // })
+
+
+
+        promise1.then((e)=>{
+            console.log(e)
+        },(a)=>{
+            console.log(a)
+        })
+
+        let data = Promise.all([promise1, promise2])
+      
+        data.then((e)=>{
+            e.forEach((e)=>{
+                console.log(e)
+            })
+        },(a)=>{
+            console.log(a)
+        })
+
+        
+
+    </script>
+
+</body>
+
+</html>

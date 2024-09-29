@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{text-decoration: none;
+         border: 2px solid; color: black;
+         padding: 2px; color:black}
+
+         a:hover{ background-color: green;}
+
+         a:active{ background-color: blue;}
+
+         a:visited{ color: blueviolet;}
+         .box{ border: 2px solid black;
+                height:200px;
+               width: 200px;
+               margin: 200px;
+               }
+            .box:hover{ border-radius:50%;}
+            .box:hover{ background-color:aqua}
+
+            ul{ border:2px solid black;
+            list-style-position: inside;
+                list-style-type:upper-roman;}
+            /* list-style-type: "🤕"; */
+            /* list-style-image:url(data:image/png;base64,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) ; */
+            ul li{ border: 2px solid purple}
+
+            body{ background-color: white;}
+            
+            table,th,td{border:2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding:6px}
+
+            table{ width: 70%;
+                   margin: 5px auto;}
+
+            th{ background-color: green;
+            color: white;}
+
+            tr:nth-child(odd){ background-color: orangered;}
+
+            tr:nth-child(even){ background-color:orange;}
+
+
+
+            </style>
+</head>
+<body>
+   <a href="https://www.google.com/">google</a>
+<div class="box"></div>
+
+<ul>
+<li>One</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+
+<table>
+    <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>ID</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Amit</td>
+        <td>XII</td>
+        <td>65</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Anuj</td>
+        <td>XI</td>
+        <td>68</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Rohit</td>
+        <td>XII</td>
+        <td>19</td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Aman</td>
+        <td>XI</td>
+        <td>78</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>Arush</td>
+        <td>XI</td>
+        <td>92</td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td>Raja</td>
+        <td>XII</td>
+        <td>18</td>
+    </tr>
+
+</table>
+    
+</body>
+</html>

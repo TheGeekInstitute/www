@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      text-align: center;
+      /* border: 2px solid black; */
+      /* height: 600px; */
+
+
+    }
+
+    .container .review {
+      border: 2px solid black;
+      height: 450px;
+      width: 550px;
+      margin-inline: auto;
+      /* overflow: hidden;  */
+      flex-wrap: nowrap;
+
+      transition:all 1s ease-in-out ;
+
+
+    }
+
+    .container .review .slider {
+      /* border: 2px solid black; */
+      justify-content: center;
+      height: 450px;
+      width: 550px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .container .review .slider .content{
+      height: 450px;
+      width: 550px;
+      /* align-items: center; */
+      /* justify-content:center; */
+      /* flex-grow: 0; */
+      /* flex-shrink: 0; */
+      border: 2px red solid;
+    /* margin:10px 0px 10px 0px; */
+
+
+
+    }
+
+    .container .review .slider .content img {
+      height: 150px;
+      width: 150px;
+      background-size: cover;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 15px auto;
+      box-shadow: 0 0 5px 5px black;
+
+    }
+
+
+    .container .review .slider .content .about{
+      
+      padding: 5px;
+      /* text-align: center; */
+
+      
+    }
+
+    .container .review .slider .content .about p{
+      /* width: 450px; */
+
+    }
+
+
+
+    .container .btns {
+      width: 100vw;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      margin-top: -80px;
+      position: absolute;
+      z-index: 10;
+
+    }
+
+    .container button {
+      background-color: rgba(37, 37, 37, 0.542);
+      border: none;
+      height: 33px;
+      width: 80px;
+      margin: 0 10px;
+      font-size: 25px;
+      cursor: pointer;
+      border-radius: 3px;
+
+
+    }
+
+    .container .slider .content.active{
+          transform: translate(0);
+        } 
+
+
+
+
+  
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Our Reviews</h1>
+
+    <div class="review">
+
+      <div class="slider">
+
+        <div class="content active">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF1kSDHf2EYkYfHSg6gXAdXD9U9i1EOKw1VQ&s"
+            alt="1">
+          <div class="about">
+            <h2>Radhe Krishn</h2>
+            <p>Radha-Krishna (IAST rādhā-kṛṣṇa, Sanskrit: राधा कृष्ण) is the combined form of the Hindu god Krishna with
+              his chief consort and shakti Radha. They are regarded as the feminine as well as the masculine realities
+              of God, in several Krishnaite traditions of Vaishnavism.</p>
+          </div>
+        </div>
+
+
+        <div class="content">
+          <img
+            src="https://huggingface.co/datasets/huggingfacejs/tasks/resolve/main/image-classification/image-classification-input.jpeg"
+            alt="2">
+          <div class="about">
+            <h2>Cat</h2>
+            <p>Cats have nearly twice the amount of neurons in their cerebral cortex as dogs. Cats have the largest eyes
+              relative to their head size of any mammal. Cats make very little noise when they walk around. The thick,
+              soft pads on their paws allow them to sneak up on their prey — or you!</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img src="https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg" alt="3">
+          <div class="about">
+            <h2>Lion</h2>
+            <p>The lion is a wild terrestrial animal called the king of the forest. The lion is a strong animal with a
+              strong body, a big head, a majestic mane, and two fierce eyes. Lions are predatory animals and eat only
+              after hunting. They have strong claws and sharp teeth, which help them hunt their prey and eat the flesh.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="content">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTukrj_JLycWh-YrCqXmkhMImNCsdvcowlaAwNpTk3F6pNXETsPKUV9Tp35CoI671VvUX8&usqp=CAU"
+            alt="4">
+          <div class="about">
+            <h2>Dog</h2>
+            <p>The dog is a pet animal. A dog has sharp teeth so that it can eat flesh very easily, it has four legs,
+              two ears, two eyes, a tail, a mouth, and a nose. It is a very clever animal and is very useful in catching
+              thieves.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img src="https://tinypng.com/images/social/website.jpg" alt="5">
+          <div class="about">
+            <h2>Panda</h2>
+            <p>Pandas are also one of the only animals to have a pseudo-thumb, a flexible wrist bone that allows them to
+              manipulate objects in a cunning manner. They can stand on their hind legs, they like to frolic in the
+              snow—the list goes on. They even somersault. And they inspire similar antics in us.</p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQSO09y3C56pehckJKH7w5TY-ZsqjLH4su3zi_FMd526zz50sC419jdeAmC1M_sUXqmzg&usqp=CAU"
+            alt="6">
+          <div class="about">
+            <h2>Rabbit</h2>
+            <p>Rabbits are mammals, which are warm blooded animals with backbones. They like to live in groups and dig
+              tunnels under the ground to protect themselves. They are prey and have many predators that like to eat
+              them. Rabbits are herbivores, which means they like to eat only plants.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="btns">
+      <button id="prev"><</button>
+            <button id="next">></button>
+    </div>
+
+
+    <script>
+        let slider = document.querySelector(".slider")
+        // let content = document.querySelector("#content")
+        let next = document.querySelector("#next")
+        let prev = document.querySelector("#prev")
+
+        let index = 0;
+
+        //  slider.style.width = (slider.childElementCount * 550) +"px"
+
+
+
+        next.addEventListener("click", () => {
+          slider.children[index].classList.remove("active");
+
+          if (index < slider.childElementCount - 1) {
+            index += 1;
+          }
+          else {
+            index = 0;
+          }
+          slider.children[index].classList.add("active");
+          slider.style.transform = "translateX(-" + (index * 550) + "px)";
+
+          console.log(index)
+
+        })
+
+
+
+        prev.addEventListener("click", () => {
+          slider.children[index].classList.remove("active");
+
+          if (index <= 0) {
+            index = slider.childElementCount - 1;
+          }
+          else {
+            index -= 1;
+          }
+          slider.children[index].classList.add("active");
+          slider.style.transform = "translateX(-" + (index * 550) + "px)";
+        })
+
+
+
+       </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-image: url("https://cdn.vectorstock.com/i/1000x1000/47/29/abstract-green-color-gradient-blurred-background-vector-19384729.webp");
+        }
+        form{
+            border: 1px solid red ;
+            height: 16rem;
+            width: 16rem;
+            display: flex;
+            position: absolute;
+            top: calc(50% - 8rem);
+            left: calc(50% - 8rem);
+            flex-direction: column;
+            padding: 5px 20px ;
+            border-radius: 5px ;
+            box-shadow: 0px 0px 10px red ,0px 0px 20px black;
+            background-image: url("https://cdn.vectorstock.com/i/1000x1000/47/28/abstract-background-blurred-dark-blue-and-purple-vector-22904728.webp");
+        }
+        h1{
+            text-align: center;
+            font-size: xx-large ;
+            background-image: linear-gradient(red,skyblue,yellow);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+        }
+        form label{
+            /* border: 1px solid red ; */
+            font-size: large;
+            font-weight: 700px ;
+            margin: 5px ;
+
+        }
+        input{
+            margin: 2px  0px ;
+            outline: transparent;
+            border-style: solid;
+            border-color: black;
+            height: 2rem;
+            color: black;
+            padding: 0 10px ;
+            font-weight:700px;
+            font-weight: 1px 1px 4px 0px ;
+            border-radius: 3px ;
+            background-color: transparent;
+
+        }
+        input[type="submit"]{
+            margin: auto;
+            width: 8rem;
+            font-weight: 900;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Form</h1>
+        <label> Username</label>
+        <input type="text">
+        <label> Password</label>
+        <input type="password">
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>

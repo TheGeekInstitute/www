@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="txt" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, possimus voluptatum reprehenderit
+    </textarea>
+
+    <h1 class="msg"></h1>
+
+    <script>
+        let msg = document.querySelector(".msg");
+
+        let txt = document.querySelector("#txt");
+
+        txt.addEventListener("copy",()=>{
+            msg.innerHTML="text Copied";
+        })
+
+
+        txt.addEventListener("cut",()=>{
+            msg.innerHTML="text Cutted";
+        })
+
+
+        txt.addEventListener("paste",()=>{
+            msg.innerHTML="text pasted";
+        })
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb{
+            background-image: url(https://www.w3schools.com/js/pic_bulboff.gif);
+            height: 200px;
+            width: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: linear 2s;
+
+        }
+        .bulb1{
+            background-image: url(https://www.w3schools.com/js/pic_bulbon.gif);
+            height: 200px;
+            transition: linear 2s;
+            width: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb">
+
+    </div>
+    <button id="btn">
+        On
+    </button>
+    <script>
+        let bulb = document.querySelector(".bulb")
+        let button = document.querySelector("#btn")
+        button.addEventListener("click",()=>{
+            bulb.classList.toggle("bulb1")
+
+           if(bulb.classList.contains("bulb1")){
+            button.innerHTML = "Off"
+           }
+           else{
+            button.innerHTML = "On"
+
+           }
+           
+      
+        })
+
+    </script>
+</body>
+</html>

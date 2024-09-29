@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            border: 1px solid black;
+            width: 20rem;
+            height: 20rem;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .loder{
+            height: 17rem;
+            width: 17rem;
+            display: none;
+        }
+        .box{
+            padding: 10px;
+            margin-left: 20rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img class="loder" src="https://img.pikbest.com/png-images/20190918/cartoon-snail-loading-loading-gif-animation_2734139.png!bw700" alt="">
+    </div>
+    <button class="box">Request</button>
+    <script>
+        let nav = document.querySelector(".nav");
+        let loder = document.querySelector(".loder");
+        let box = document.querySelector(".box");
+
+        box.addEventListener("click",function(){
+            let xhr = new XMLHttpRequest;
+
+            xhr.onreadystatechange = function(){
+                if(this.readyState == 2 && this.status == 200){
+                    nav.innerHTML = "21321321213"
+                }
+                else{
+                    loder.style.display = "block";
+                }
+            }
+            xhr.open("POST","pratice.php",false);
+            xhr.send();
+        })
+
+    </script>
+</body>
+</html>

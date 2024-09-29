@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .box{
+
+        }
+        label i{
+            transition: all .3s;
+        }
+        .name{
+            border: 1px solid white;
+            background-color: brown;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1rem;
+            height: 3rem;
+            width: 40rem;
+        }
+        .para{
+            background-color: bisque;
+            padding: 0 1rem;
+            height: 4rem;
+            width: 40rem;
+        }
+        input[type=checkbox]{
+            display: none;
+        }
+        .para{
+            display: none;
+        }
+        .box #btn:checked ~ .para{
+            display: block;
+        }
+        .box #btn1:checked ~ .para{
+            display: block;
+        }
+        .box #btn2:checked ~ .para{
+            display: block;
+        }
+        .box #btn3:checked ~ .para{
+            display: block;
+        }
+        .box #btn:checked + .name label i{
+            transform: rotate(45deg);
+        }
+        .box #btn1:checked + .name label i{
+            transform: rotate(45deg);
+        }
+        .box #btn2:checked + .name label i{
+            transform: rotate(45deg);
+        }
+        .box #btn3:checked + .name label i{
+            transform: rotate(45deg);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="checkbox" id="btn">
+            <div class="name">
+                <p>WWW Full Form</p>
+                <label for="btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <div class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla autem corporis, dolorum odio suscipit sed cupiditate eius omnis doloremque natus, at maiores, debitis aliquid repellat quas expedita minus perferendis consectetur!
+            </div>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn1">
+            <div class="name">
+                <p>WWW Full Form</p>
+                <label for="btn1">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <div class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla autem corporis, dolorum odio suscipit sed cupiditate eius omnis doloremque natus, at maiores, debitis aliquid repellat quas expedita minus perferendis consectetur!
+            </div>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn2">
+            <div class="name">
+                <p>WWW Full Form</p>
+                <label for="btn2">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <div class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla autem corporis, dolorum odio suscipit sed cupiditate eius omnis doloremque natus, at maiores, debitis aliquid repellat quas expedita minus perferendis consectetur!
+            </div>
+        </div>
+        <div class="box">
+            <input type="checkbox" id="btn3">
+            <div class="name">
+                <p>WWW Full Form</p>
+                <label for="btn3">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <div class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla autem corporis, dolorum odio suscipit sed cupiditate eius omnis doloremque natus, at maiores, debitis aliquid repellat quas expedita minus perferendis consectetur!
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

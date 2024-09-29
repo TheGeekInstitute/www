@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 3px;
+    height: 50vh;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.box{
+    border: 2px solid red;
+    height: 30px;
+    width: 70px;
+    margin: 5px;
+    text-align: center;
+}
+
+.nav{
+    
+}

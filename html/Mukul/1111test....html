@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WhatsApp Chat Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #e5ddd5;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    padding-bottom: 60px; /* to make room for the input box */
+}
+
+.message {
+    max-width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sender {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.receiver {
+    background-color: #ffffff;
+    align-self: flex-start;
+}
+
+.time {
+    font-size: 0.8em;
+    color: #999;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.input-container input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-container button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>Chat with John Doe</h2>
+        </div>
+        <div class="chat-box">
+            <div class="message sender">
+                <p>Hello! How are you</p>
+                <span class="time">10:00 AM</span>
+            </div>
+            <div class="message receiver">
+                <p>vikas kaha ho i love you me tumri jaan</p>
+                <span class="time">10:01 AM</span>
+            </div>
+            <div class="message sender">
+                <p>Doing well! Let's meet up tomorrow.</p>
+                <span class="time">10:02 AM</span>
+            </div>
+            <div class="message receiver">
+                <p>Sounds great! What time?</p>
+                <span class="time">10:03 AM</span>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" placeholder="Type a message..." />
+            <button type="submit">Send</button>
+        </div>
+    </div>
+</body>
+</html>

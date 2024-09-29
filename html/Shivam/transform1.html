@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRansform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 7vh;
+            background: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav h1{
+            color: white;
+            margin-left: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        .nav ul li{
+            display: inline;
+        }
+        .nav ul li a{
+            color: white;
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .circle{
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background: gray;
+            border-radius: 40%;
+            text-align: center;
+            /* transition: all 1s ; */
+        }
+        
+        .circle:hover{
+            height: 200px;
+            width: 200px;
+            border: 5px solid blue;
+            translate: 300px 200px ;
+            transform: rotate(360deg);
+            background: red;
+
+        }
+        .circle p{
+            /* margin: ; */
+            text-align: center;
+            margin-top: 130px;
+        }
+        .square{
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background: red;
+            transition: all .3s ;
+        }
+        .square:hover{
+            transform: scale(50%,50%) skew(-25deg,10deg) translate(20px,20px );
+            border-radius: 30%;
+            background: blue;
+            color: white;
+            translate: 400px -300px;
+            font-size: x-large;
+            font-weight: bolder;
+            /* transform: skew(-25deg,10deg); */
+            transform: rotate(360deg);
+
+        }
+
+        .square p{
+            /* margin: ; */
+            text-align: center;
+            margin-top: 130px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>Shasta nav</h1>
+        <ul>
+            <li><a href="#">shasta</a></li>
+            <li><a href="#">shasta</a></li>
+            <li><a href="#">shasta</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="circle">
+            <p>Lorem ipsum dolor, sit amet consectetur
+            </p>
+        </div>
+        <div class="square">
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+    
+</body>
+</html>

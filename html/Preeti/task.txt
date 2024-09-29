@@ -1,0 +1,19 @@
+https://www.programiz.com/python-programming/examples
+
+
+Enter a Number : 45
+
+
+
+
+1. Sr No
+2. series
+ Step Value : 
+3. Odd
+4. Even
+
+Choose an Option : 1
+
+Output : 4 + 5 = 9
+
+60*140

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p{
+            /* color: red; */
+        }
+
+        .container > p{
+            /* color: blue; */
+        }
+
+        .container + p{
+            /* color: red; */
+        }
+
+        .container ~ p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Container Child</p>
+        <b>Container Child 1</b>
+
+        <div class="box">
+            <p>Box Child</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed at quo eveniet voluptatum natus similique eum nostrum et, velit recusandae non laudantium commodi consectetur explicabo. Sint vel consequatur commodi nihil.</p>
+
+    <b>Bold text</b>
+
+    <p>paragraph</p>
+
+</body>
+</html>
+<!-- 
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) 
+
+-->

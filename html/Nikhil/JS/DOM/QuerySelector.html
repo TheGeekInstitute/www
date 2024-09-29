@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+    <style>
+        .one{
+            background-color: crimson;
+        }
+
+        .change{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading abcd xyz one two">Heading Hai Ye</h1>
+    <p class="para">Paragraph hai ye</p>
+
+
+    <button onclick="abcd()">Change Me</button>
+
+    <script>
+        let heading = document.querySelector('.heading');
+        // console.log(heading.innerHTML)
+
+        // let xyz = document.querySelector(".para")
+
+        // console.log(xyz)
+
+        
+        
+        function abcd(){
+            // heading.classList.add("change")
+            // heading.classList.remove("one")
+            // heading.classList.toggle("change")
+
+            // console.log(heading.classList.contains("abcd"))
+            // console.log(heading.classList.item(1))
+
+            console.log(heading.classList.length)
+
+
+        }
+
+    </script>
+</body>
+</html>

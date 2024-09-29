@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordion1</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        input[type="checkbox"]{
+          display: none;  
+        }
+        .container{
+            /* border: 1px solid red; */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container .box{
+            margin: 2px;
+            width: 30rem;
+        }
+        .container .box label{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(170, 112, 35);
+            color: white;
+            font-size: 25px;
+            padding: 0 1rem;
+        }
+
+        .data{
+            display: none;
+        }
+        #btn:checked ~ .data{
+            display: block;
+
+        }
+
+        #btn1:checked ~ .data{
+            display: block;
+            
+        }
+
+        #btn2:checked ~ .data{
+            display: block;
+            
+        }
+
+        #btn3:checked ~ .data{
+            display: block;
+            
+        }
+
+        #btn4:checked ~ .data{
+            display: block;
+        }
+
+
+        .container .box .lable i{
+            transition: all 3s;
+        }
+
+
+      #btn:checked ~ label i{
+        transform: rotate(45deg);
+    }
+    #btn1:checked ~ label i{
+        transform: rotate(45deg);
+    }
+
+    #btn2:checked ~ label i{
+        transform: rotate(45deg);
+    }
+
+    #btn3:checked ~ label i{
+        transform: rotate(45deg);
+    }
+
+    #btn4:checked ~ label i{
+        transform: rotate(45deg);
+    }
+
+
+    </style>
+ 
+    <div class="container">
+
+               <div class="box">
+                <input type="checkbox" id="btn">
+                <label for="btn">
+                <p>What is HTML ?</p>
+                <i class="fa-solid fa-plus"></i>
+                </label>
+
+
+                <div class="data">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia. Necessitatibus sit enim, ad voluptates veritatis dignissimos quam veniam similique voluptas nisi voluptatem numquam, quos sunt. Officia mollitia nam velit!
+          
+                    
+                </p>
+         </div>
+     </div>
+     <div class="box">
+        <input type="checkbox" id="btn1">
+        <label for="btn1">
+        <p>What is HTML ?</p>
+        <i class="fa-solid fa-plus"></i>
+        </label>
+
+
+        <div class="data">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia. Necessitatibus sit enim, ad voluptates veritatis dignissimos quam veniam similique voluptas nisi voluptatem numquam, quos sunt. Officia mollitia nam velit!
+  
+            
+        </p>
+ </div>
+</div>
+
+<div class="box">
+    <input type="checkbox" id="btn2">
+    <label for="btn2">
+    <p>What is HTML ?</p>
+    <i class="fa-solid fa-plus"></i>
+    </label>
+
+
+    <div class="data">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia. Necessitatibus sit enim, ad voluptates veritatis dignissimos quam veniam similique voluptas nisi voluptatem numquam, quos sunt. Officia mollitia nam velit!
+
+        
+    </p>
+</div>
+</div>
+
+<div class="box">
+    <input type="checkbox" id="btn3">
+    <label for="btn3">
+    <p>What is HTML ?</p>
+    <i class="fa-solid fa-plus"></i>
+    </label>
+
+
+    <div class="data">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia. Necessitatibus sit enim, ad voluptates veritatis dignissimos quam veniam similique voluptas nisi voluptatem numquam, quos sunt. Officia mollitia nam velit!
+
+        
+    </p>
+</div>
+</div>
+
+<div class="box">
+    <input type="checkbox" id="btn4">
+    <label for="btn4">
+    <p>What is HTML ?</p>
+    <i class="fa-solid fa-plus"></i>
+    </label>
+
+
+    <div class="data">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quia. Necessitatibus sit enim, ad voluptates veritatis dignissimos quam veniam similique voluptas nisi voluptatem numquam, quos sunt. Officia mollitia nam velit!
+
+        
+    </p>
+</div>
+</div>
+
+
+
+      
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

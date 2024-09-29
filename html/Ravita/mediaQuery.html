@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            /* width: 600px; */
+            /* max-width: 600px; */
+            background-color: red;
+        }
+
+
+        @media print{
+            p{
+                color: red;
+                border: 2px solid black;
+            }
+        }
+
+
+        @media screen and (max-width:600px){
+            .box{
+                background-color: yellow;
+            }
+        }
+
+
+        @media screen  and (max-width:480px){
+            .box{
+                border-radius: 50%;
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae qui ad doloribus doloremque aut ex quos explicabo ut consequatur, hic dolorum nam laborum eos? Placeat debitis voluptate atque ducimus.</p>
+
+    </div>
+
+</body>
+</html>

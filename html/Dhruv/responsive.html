@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="../Dhruv/responsive.css">
+    <style>
+
+.images{
+    position: absolute;
+    /* display: flex; */
+    /* display: block; */
+    height: 50vh;
+    width: 100vw;
+    z-index: -1;
+    /* justify-content: ; */
+    overflow: hidden;
+}
+
+.slider{
+            height: 80vh;
+            width: 600vw;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            animation-name: right;
+            animation-duration: 20s;
+            animation-timing-function: ease-in;
+           animation-iteration-count: infinite;
+           animation-direction: alternate;
+           
+           
+}
+
+@keyframes right{
+    0%{
+        transform: translatex(0vw);
+
+    }
+    20%{
+        transform: translatex(-100vw);
+    }
+
+    40%{
+        transform: translatex(-200vw);
+    }
+
+    60%{
+        transform: translatex(-300vw);
+    }
+
+80%{
+    transform: translatex(-400vw);
+}
+100%{
+    transform: translatex(-500vw);
+}
+
+}
+
+.slider:hover{
+    animation-play-state: paused;
+
+}
+
+        img{
+            height: 50vh;
+            width:100vw;
+            animation-play-state: paused;
+            /* filter: saturate(0); */
+
+          
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="Heading"> Dhruv Web</div>
+    
+        <ul class="main">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn1"><i class="fa-solid fa-bars"></i></label>
+            <label for="check" class="btn2"><i class="fa-solid fa-xmark"></i></label>
+            <div class="line">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+        
+        </ul>
+    </div>
+
+    <div class="images">
+        <div class="slider">
+        <img src="https://www.shyamparivar.com/uploads/gallery/Sky-and-Moon-Dark-Wallpaper-for-Desktop-and-Laptop.jpg" alt="" class="img1">
+       
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy5vGcUav6mLFP5dJIJAuk6YOx-V7O3JYgiw&usqp=CAU" alt="" class="img2">
+
+
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp65IHlrfa1QaUY3SrlmkXNo6kZFbuiPq7ig&usqp=CAU" alt="" class="img3">
+
+        <img src="https://t3.ftcdn.net/jpg/05/28/86/66/360_F_528866602_aiVwnOnkooTrqo3MgicCf83SVVzt1Gnd.jpg" alt="" class="img4">
+
+        <img src="https://images.template.net/wp-content/uploads/2015/09/16202744/Romantic-Couple-HD-Background-for-PC.jpg" alt="" class="img5">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmDnRY8eYgP5fiB8lUKOk9hewmZYgepySeQ&usqp=CAU" alt="" class="img6">
+    </div>
+
+
+    </div>
+
+div.
+
+
+</body>
+</html>

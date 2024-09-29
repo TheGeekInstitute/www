@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            /* margin: 5px; */
+            height: 10vh;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            background: rgb(255, 72, 0);
+            position: sticky;
+            top: 0;
+            border-radius: 20px;
+            border: 2px solid white;
+            transition: all .3s linear;
+            transition-delay: 1s;
+
+        }
+        .nav:hover{
+            border: 2px solid black;
+            border: 2px solid yellow;
+            box-shadow: 2px 2px 2px white;
+            background:  blue;
+
+        }
+        .nav img{
+            border: 2px solid white;
+            /* height: 40px; */
+            padding: 5px;
+            /* text-shadow: 2px 2px 3px ; */
+            border-radius: 30%;
+            box-shadow: 3px 3px 2px gray;
+            transition: all .3s linear;
+            /* transition-delay: 1s; */
+
+            margin-left: 4px;  
+        }
+        .nav img:hover{
+            background: rgb(255, 1, 1);
+            box-shadow: 2px 2px 2px white;
+            border: 2px solid black;
+            border-radius: 50%;
+            
+            
+        }
+        
+        .nav h1{
+            letter-spacing: 2px;
+            border-top: 3px dotted;
+            border-bottom: 3px dotted;
+            font-size: 40px;
+            font-weight: 900;
+            transition: all .3s linear;
+            
+            
+            /* position: ; */
+        }
+        .nav h1:hover{
+            color: white;
+            text-shadow: 3px 3px 2px black;
+            letter-spacing: 2px;
+            border: 4px double black;
+            border-radius: 20%;
+            background: red;
+            box-shadow: 3px 3px 2px white;
+
+        }
+        .nav ul li{
+            display: inline-block;
+            margin: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            background: violet;
+            padding: 7px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 2px rgb(155, 54, 155);
+            transition: all .3s linear;
+        }
+        .nav ul li:hover{
+            /* display: inline-block; */
+            margin: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            background: red;
+            padding: 7px;
+            border-radius: 50%;
+            box-shadow: 4px 4px 2px rgb(78, 7, 78);
+        }
+        .nav ul li a{
+            color: white;
+            text-shadow: 3px 3px 2px black;
+            /* background: rgb(163, 3, 163) ; */
+            /* box-shadow: 3px 3px 2px white; */
+        }
+
+        
+        .container{
+            background: black;
+            color: white;
+        }
+        .heading{
+            font-size: 60px;
+            margin: 10px;
+        }
+        .container p{
+            font-size: large;
+            margin: 10px;
+            margin-right: 40vw;
+        }
+        .container img{
+            margin-left: 40vw;
+            margin-top: 10px;
+            height: 100px;
+            border: 3px solid white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .boxlink{
+            margin-top: 40px ;
+            margin-left: 50px;
+            /* border: 1px solid white; */
+            display: inline-block;
+            padding: 15px;
+            width: 350px;
+            text-align: center;
+            background: rgb(155, 103, 155);
+            border-radius: 5px;
+            box-shadow: 4px 4px 1px rgb(94, 62, 94);
+            transition: all .3s ease;
+        }
+        .boxlink:hover{
+            background:rgb(153, 34, 153);
+            box-shadow: 4px 4px 1px rgb(88, 30, 88);
+
+        }
+        .sponser ul{
+            margin-top: 80px;
+            background: rgb(94, 87, 87);
+            margin-right: 5vw;
+            margin-left: 5vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-size: large;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all .5s ease;
+        }
+        .sponser ul:hover{
+            background: rgb(108, 108, 108);
+        }
+        .sponser ul li a{
+            color: black;
+            /* border: 2px solid; */
+            padding: 5px;
+            border-radius: 40%;
+            background: rgb(192, 65, 65);
+            box-shadow: 4px 4px 2px rgb(146, 55, 55);
+        }
+        .sponser ul li a:hover{
+            background: rgb(227, 48, 48);
+            color: white;
+            box-shadow: 4px 4px 2px rgb(102, 3, 3);
+            
+        }
+        .head2{
+            font-size: 40px;
+            text-align: center;
+            margin: 30px;
+        }
+        
+        .content{
+            display: flex;
+            margin: auto;
+            justify-content: space-evenly;
+            /* margin: 5px; */
+            
+        }
+        .box{
+                /* border: 1px solid red; */
+            /* height: 100px; */
+            width: 180px;
+            text-align: center;
+            
+        }
+        
+        .box img{
+            /* margin-left: 50px; */
+            width: 90px;
+            height: 90px;
+            /* justify-content: space-evenly */
+            border-radius: 50%;
+            box-shadow: 3px 3px .5px grey;
+        }
+        .box p{
+            font-size: small;
+        
+        }
+        .footer{
+         column-count: 2;
+        /* column-rule-style: solid; */
+        /* column-rule-color: cyan; */
+        /* column-rule-width: 2px; */
+        padding: 5px;
+        background-color: rgb(167, 166, 166);
+        color: black;
+        /* column-width: 300px; */
+        /* height: 60px; */
+        /* margin: 40px; */
+        padding-bottom: 40px;
+        
+    }
+    .about{
+        /* margin: 20px; */
+    }
+    .footer .logo{
+        column-span: all;
+        color: black;
+        margin: 60px;
+        text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/flora/89dba18e-flora-logo_01d00z01c00z000000001.png" alt="">
+        <h1>BF.Arrangments</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contect</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/flora/89dba18e-flora-logo_01d00z01c00z000000001.png" alt="">
+        <h1 class="heading">Beautiful Floral Arrangments</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, in debitis delectus neque excepturi aliquid molestias doloremque voluptas nam voluptate eligendi cum ipsum libero! Explicabo officiis magni cum labore deserunt.</p>
+        <h3 class="boxlink">EXPLORE OUR COLLECTIONS</h3>
+        <p>Starting at Just $29.00/ Delivery with free shipping!</p>
+        <div class="sponser">
+            <ul>
+                <li><a href="#">The denoli times</a></li>
+                <li><a href="#">Power bull</a></li>
+                <li><a href="#">direct</a></li>
+                <li><a href="#">lifebook</a></li>
+                <li><a href="#">cloudforce</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="head2">How It Works?</h2>
+        <div class="content">
+        
+            <div class="box">
+                <img src="../web/images/5.jpg" alt="">
+                <p>1.Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+            </div>
+               
+
+            <div class="box">
+                <img src="../web/images/3.jpg" alt="">
+                <p>1.Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+            </div>
+
+            <div class="box">
+                <img src="../web/images/9.jpg" alt="">
+                <p>1.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam  </p>
+            </div>
+
+            <div class="box">
+                <img src="../web/images/1.jpg" alt="">
+                <p>1.Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+            </div>
+          
+        </div>
+        <div class="footer">
+    
+            <h1 class="logo"> What The Press Says</h1>
+            
+            <div class="about">
+               
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem labore laboriosam fuga modi totam, at voluptates nulla laborum aspernatur harum possimus assumenda quaerat illo, veritatis repudiandae autem explicabo eum? Quasi?gjsdudfsdfgjgjk</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cumque, quisquam provident dicta est earum dolorem, quo temporibus iure vero omnis iste animi commodi unde distinctio aut impedit nobis minima.</p>
+            </div>
+            
+            
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 150px 150px 1fr;
+            grid-template-rows: 200px 1fr 1fr 500px;
+            grid-template-areas: "first first first"
+                                "fourth fourth fourth"
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="first" style="background-color:red; grid-area: first;"></div>
+            <div class="second" style="background-color: black; grid-area: second;"></div>
+            <div class="third" style="background-color: cyan; grid-area: third;"></div>
+            <div class="fourth" style="background-color: blue; grid-area: fourth;"></div>
+    </div>
+</body>
+</html>

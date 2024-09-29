@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+
+        :root{
+            --main-color:green;
+        }
+
+        
+
+        ul li{
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        ul li:first-child{
+            color: red;
+        }
+
+        ul li:last-child{
+            color: blue;
+        }
+
+        ul li:nth-child(2n+1){
+            color: red;
+        }
+
+        ul li:nth-last-child(2n+1){
+            color: blue;
+        }
+
+
+        div  p:first-of-type{
+            /* color: red; */
+        }
+
+        div b:last-of-type{
+            /* color: blue; */
+        }
+
+        div p:nth-of-type(1){
+            /* color: red; */
+        }
+
+        div b:nth-last-of-type(1n){
+            color: blue;
+        }
+
+        div p:only-child{
+            color: red;
+        }
+
+
+        div:empty{
+            border: 2px solid black;
+            height: 100px;
+        }
+
+        div:not(:empty){
+            border: 2px solid green;
+        }
+
+        P:target{
+            background-color: var(--main-color);
+        }
+
+
+        input:focus{
+            background-color: red;
+        }
+
+        input:checked{
+            /* outline: 2px solid red; */
+        }
+
+        input:disabled{
+            /* background-color: red; */
+        }
+
+        input:enabled{
+            /* background-color: red; */
+        }
+
+        input:required{
+            /* background-color: red; */
+        }
+
+        input:optional{
+            /* background-color: red; */
+        }
+
+        input:in-range{
+            /* background-color: green; */
+        }
+
+        input:out-of-range{
+            /* background-color: red; */
+        }
+
+        input:read-only{
+            background-color: white;
+        }
+
+        input:read-write{
+            /* background-color: green; */
+        }
+
+        input:valid{
+            /* background-color: green; */
+        }
+
+        input:invalid{
+            /* background-color: red; */
+        }
+
+
+        input:default{
+            /* outline: 2px solid red; */
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+
+    <div>
+        <p>para</p>
+            <div>
+                <p>para1</p>
+                <b>bold1</b>
+                <p>para1</p>
+
+                <b>bold1</b>
+            </div>
+        
+        <b>bold</b>
+        <p>para</p>
+        <b>bold</b>
+    </div>
+
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deleniti id facilis placeat quidem repudiandae corporis reprehenderit alias illum a explicabo, natus quam recusandae, exercitationem esse iusto sapiente nam. Perferendis?</p>
+        
+    </div>
+
+
+    <div></div>
+
+    <ul>
+        <li><a href="#ch1">Chapter 1</a></li>
+        <li><a href="#ch2">Chapter 2</a></li>
+        <li><a href="#ch3">Chapter 3</a></li>
+    </ul>
+
+
+    <p id="ch1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum ipsam reiciendis necessitatibus libero omnis assumenda consectetur mollitia. Aut est sapiente excepturi accusamus enim, recusandae maiores? Itaque quibusdam optio quod?</p>
+
+
+    <p id="ch2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum ipsam reiciendis necessitatibus libero omnis assumenda consectetur mollitia. Aut est sapiente excepturi accusamus enim, recusandae maiores? Itaque quibusdam optio quod?</p>
+
+
+    <p id="ch3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum ipsam reiciendis necessitatibus libero omnis assumenda consectetur mollitia. Aut est sapiente excepturi accusamus enim, recusandae maiores? Itaque quibusdam optio quod?</p>
+
+
+
+
+    <form>
+        <label>First Name :</label>
+        <input type="text"  minlength="2" maxlength="10" size="30" placeholder="First Name" title="Enter First Name" disabled>
+
+        <br><br>
+
+        <label>Last Name :</label>
+        <input type="text" placeholder="Last name" required>
+
+        <br><br>
+        
+        <label>Gender :</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <br><br>
+
+        <label>DOB :</label>
+        <input type="date">
+
+        <br><br>
+
+        <label>Phone :</label>
+        <input type="number" min="5" max="10">
+
+        <br><br>
+
+        <label>Email :</label>
+        <input type="email" >
+
+        <br><br>
+
+        <label>Password</label>
+        <input type="password">
+
+        <br><br>
+        <input type="checkbox" name="" id="" checked>
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="">
+
+
+        <br><br>
+        
+        <input type="submit" value="Register">
+
+        </form>
+
+
+</body>
+</html>

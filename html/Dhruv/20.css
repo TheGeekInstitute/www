@@ -1,0 +1,131 @@
+*{
+text-align: right;
+ }
+.h{
+    background-color: black;
+    border: 5px solid red;
+    color: beige;
+    text-align: center;
+    text-shadow: 5px 2px 2px blue;
+    font-size: 50px;
+    border-radius: 50px;
+    margin-top: 0px;
+    outline: 2px solid blue;
+    text-transform: capitalize;
+
+}
+::selection{
+    background-color: chartreuse;
+    color: blueviolet;
+}
+.m{
+    text-transform:uppercase;
+    margin-top: 0px;
+
+}
+h2{
+    text-align: center;
+    border-bottom: 3px solid ;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: montserrat;
+}
+p{
+    text-align: center;
+    background-color: rgba(135, 207, 235, 0.113);
+    margin: 50PX 300PX;
+
+}
+
+.i{
+    width: 60px;
+    /* float: right; */
+
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+
+}
+a{
+    color: brown;
+    text-decoration: wavy;
+    font-size: 20px;
+    border: 1px solid red;
+    background-color: skyblue;
+
+}
+a :hover{
+    background-color: aqua;
+    color: blue;
+}
+a :active{
+    color: chartreuse;
+}
+a :visited{
+    color: yellow;
+}
+.l{
+    font-size: 25px;
+    text-decoration: solid;
+    font-style: oblique;
+}
+
+.navbar{
+    background-color: black;
+    box-shadow: 2px 2px 3px black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}
+
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li a{
+    text-align: right;
+    color: white;
+    display: block;
+    /* margin: 0 5px; */
+    padding: 30px 10px;
+}
+
+.navbar ul li ul{
+    position:absolute;
+    /* left:0; */
+    /* width: 200px; */
+}
+
+.navbar ul li ul li{
+width: 100%;
+}
+
+.navbar ul li ul li a{
+padding: 10px 5px;
+}
+
+
+.navbar ul li a:hover{
+    background-color: red;
+}
+
+.items{
+    background-color: blue;
+    visibility: visible;
+}
+
+.navbar ul li:hover .items{
+    visibility: visible;
+}
+.karan{
+    background-color: blue;
+    visibility: hidden;
+}
+
+.navbar ul li:hover .karan{
+    visibility: visible;
+}

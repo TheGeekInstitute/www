@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* color: red; */
+        }
+
+        div{
+            /* background-color: yellow; */
+        }
+
+        .parent{
+            background-color: red;
+            padding: 20px;
+        }
+
+        .parent .child{
+            background-color: yellow;
+        }
+
+        .parent .child p{
+            color: red;
+        }
+
+
+        .parent1 .child > p{
+            color: red;
+        }
+
+
+        .parent2 + p{
+            color: blue;
+        }
+
+
+    .parent2 ~ span{
+        color: red;
+    }
+
+    .parent2 div > div{
+        color: red;
+    }
+
+    .parent2 > div{
+        color: blue;
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="layer1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab unde et odio ipsa qui maxime labore, distinctio, magni libero totam voluptatum inventore est dolore rerum cupiditate accusamus ratione sit consequatur?</p>
+    <div class="layer2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit iusto sunt consequuntur nisi suscipit fugiat, assumenda vero eum dolor magnam quibusdam blanditiis soluta? Quam quo nam aut totam saepe!</p>
+    </div>
+</div>
+
+
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quisquam et commodi aliquam eveniet perspiciatis enim, dolorum autem ipsam quam eius sequi at natus quasi nam reprehenderit similique totam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quisquam et commodi aliquam eveniet perspiciatis enim, dolorum autem ipsam quam eius sequi at natus quasi nam reprehenderit similique totam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quisquam et commodi aliquam eveniet perspiciatis enim, dolorum autem ipsam quam eius sequi at natus quasi nam reprehenderit similique totam.</p>
+        </div>
+    </div>
+
+
+    <div class="parent1">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto pariatur quisquam et commodi aliquam eveniet perspiciatis enim, dolorum autem ipsam quam eius sequi at natus quasi nam reprehenderit similique totam.</p>
+
+            <div class="grand-child">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis natus corporis eius? Similique dolores voluptates dignissimos, temporibus quidem cumque ratione. Labore sed voluptatibus nobis nisi fugiat ratione voluptatem quam accusamus?</p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="parent2">
+    <p>parent</p>
+
+    <div class="child1">
+        <p>Child</p>
+
+        <div class="grand-child1">
+            <p>Grand Child</p>
+        </div>
+    </div>
+
+
+    <div class="child2">
+        <p>Child 2</p>
+
+        <div class="grand-child2">
+            <p>Grand Child</p>
+        </div>
+    </div>
+
+</div>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium perspiciatis iusto tempora temporibus, sint ratione quod modi consequuntur rem omnis. Voluptates, molestias ducimus. Minima odio numquam illo nostrum sequi aliquid.</p>
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dignissimos dolorum voluptate cum eum harum amet temporibus quisquam odit necessitatibus aliquam facere autem eos, in reprehenderit, porro expedita, natus ad!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto libero blanditiis doloremque consequatur nostrum. Laudantium a necessitatibus maxime, iure repudiandae, repellendus quo vero eaque, praesentium deleniti ea distinctio. Nisi, nihil?</p>
+</div>
+
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi soluta provident sit illum, aliquid expedita repellendus suscipit dolores adipisci laborum, rem alias vitae blanditiis aut autem sed exercitationem quidem reiciendis.</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi veniam beatae accusamus numquam temporibus quam tenetur ratione nemo quos minus nostrum labore fuga illum perferendis, qui optio ducimus dolorum.</span>
+</div>
+
+
+<span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dicta iusto, numquam nisi sapiente eos saepe molestias adipisci ducimus neque blanditiis repudiandae, dolor nemo repellat ullam debitis ut beatae temporibus?</span>
+
+</body>
+</html>

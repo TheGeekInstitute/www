@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main::first-line {
+            color: red;
+            background-color: aqua;
+        }
+
+        .yes p::selection {
+            color: yellow;
+            background-color: brown;
+        }
+
+        h2::before{
+            content: "Yes";
+            color: blue
+        }
+
+        h2::after{
+            content: ab"data-ab";
+            color: white;
+            background-color: black;
+        }
+
+        input:focus{
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, veritatis!lore,50
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum corporis animi ad veniam similique! Ducimus neque temporibus inventore voluptates repellat maxime natus delectus veritatis aut? Nihil omnis nesciunt sit, alias repudiandae distinctio, mollitia sapiente voluptatum esse error quidem temporibus, provident ut necessitatibus vel voluptas? Rem in nihil laudantium alias incidunt?
+        </p>
+    </div>
+
+    <br><br>
+    <div class="yes">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, veritatis!lore,50
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum corporis animi ad veniam similique! Ducimus neque temporibus inventore voluptates repellat maxime natus delectus veritatis aut? Nihil omnis nesciunt sit, alias repudiandae distinctio, mollitia sapiente voluptatum esse error quidem temporibus, provident ut necessitatibus vel voluptas? Rem in nihil laudantium alias incidunt?
+        </p>
+    </div>
+
+    <h2   data-ab="Vs code">Hello world"</h2>
+    <input type="date" name="" id="">
+    
+</body>
+</html>

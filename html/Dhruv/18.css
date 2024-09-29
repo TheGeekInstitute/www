@@ -1,0 +1,28 @@
+*{
+    background-color: black;
+    color: bisque;
+    background-image: url(https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    background-color: chartreuse;
+    color: cornflowerblue;
+}
+img{
+    height: 250px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-left: 25px;
+    width: 250px;
+}
+.tiger{
+    margin-left:250px;
+    font-size: larger;
+}
+a{
+    color: wheat;
+    background-color: black;
+    border: 5px solid;
+}

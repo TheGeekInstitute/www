@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        ul li:first-child{
+            color: blue;
+            background-color: brown;
+        }
+        ul li:last-child{
+            color: red;
+            background-color: aqua;
+        }
+        ul li:nth-child(6){
+            color: blue;
+            background-color: aquamarine;
+        }
+        ul li:nth-child(4){
+            color: brown;
+            background-color: chartreuse;
+        }
+        div p:first-of-type{
+            color: red;
+            /* background-color: blueviolet; */
+        }
+        
+        
+        div p:last-of-type{
+          color:green;
+        }
+        div p:nth-of-type(2){
+            text-align: center;
+        }
+        div p:only-of-type{
+            color: blue;
+        }
+        div p:only-child{
+            text-align: center;
+            color: chocolate;
+        }
+        div:empty{
+            border: 3px solid blue;
+            height: 100px;
+        }
+        div:not(:empty){
+            border: 2px solid red;
+        }
+       p:target{
+        background-color:blue;
+        color: yellow;
+       }
+
+       :lang(hi){
+        background-color: yellow;
+       }
+    
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li lang="en">1</li>
+        <li lang="hi">2</li>
+        <li lang="fr">3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque natus animi sint ipsa itaque dicta exercitationem doloribus quibusdam. Laudantium perferendis voluptatibus consequatur porro, nam distinctio adipisci nesciunt unde necessitatibus voluptatum.</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur recusandae magnam molestias doloribus quam, asperiores, officiis eum earum animi et ex blanditiis quod veniam! Libero recusandae quasi assumenda cumque nostrum.</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempore possimus doloremque sint tempora commodi dignissimos earum quia. Nesciunt nobis maiores modi fugiat praesentium ab nulla neque minima, reprehenderit labore.</p>
+    </div>
+    <div>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente ad sunt neque modi. Sint laborum pariatur iusto dolorem molestiae harum amet eveniet, minus voluptates, animi iste, nostrum recusandae aut.</span>
+        <b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consequatur vel, sed commodi, quia velit impedit a maxime dignissimos quod libero similique saepe expedita autem nobis delectus, animi consectetur itaque.</b>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, suscipit? Maiores voluptas reprehenderit cumque voluptatibus fugit laboriosam, magnam, repudiandae et quasi, voluptates inventore quis porro dicta voluptatem. Rem, architecto quo.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim itaque exercitationem, neque voluptas illo ea perferendis rem quidem aperiam molestias nobis delectus mollitia totam id, iure natus suscipit odio! Minus!</p>
+    </div>
+
+    <div></div>
+    <a href="#che1">che1</a>
+    <a href="#che2">che2</a>
+    <a href="#che3">che3</a>
+
+
+
+
+    <p id="che1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, adipisci omnis delectus numquam reprehenderit, id, excepturi saepe a officia facilis debitis? Minus doloremque non quis porro ducimus praesentium, ut explicabo.</p>
+
+    <p id="che2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque vero asperiores qui error, nam cum exercitationem quasi sequi harum repellendus inventore. Quod voluptate sit blanditiis qui sint illo temporibus facere.</p>
+
+    <p id="che3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in cum quaerat quo ipsam aliquid minus laudantium laborum error voluptatibus commodi, ex nostrum doloribus a, nulla, nesciunt illo deleniti repellat.</p>
+
+
+    
+</body>
+</html>

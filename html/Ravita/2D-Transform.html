@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: crimson;
+            height: 250px;
+            width: 200px;
+
+            margin: 50px auto;
+
+            transition: all 1s linear;
+        }
+        
+        .box:hover{
+            /* transform: translate(-100px,-100px); */
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+            
+             transform: rotate(960deg);
+            /* transform: scale(2); */
+
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+
+            /* transform: skewX(30deg); */
+            /* transform: skewX(30deg) rotate(360deg); */
+            /* transform: skewY(30deg); */
+
+            /* transform: skew(30deg); */
+
+
+
+
+        }
+
+        .container{
+            background-color: yellow;
+            height: 200px;
+            width: 150px;
+            overflow: hidden;
+        }
+
+        .container .card{
+            background-color: red;
+            height: 100%;
+            width: 100%;
+            transform: translateY(100%);
+            transition: all 1s linear;
+
+        }
+
+        .container:hover .card{
+            transform: translateY(0);
+        }
+
+        .zoom{
+            /* border: 1px solid red; */
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+
+        }
+
+        .zoom img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            transition: all .3s linear;
+
+        }
+
+        .zoom:hover img{
+            transform: scale(1.1);
+        }
+
+       
+     
+    </style>
+</head>
+<body>
+    
+   
+    <div class="box">AAA</div>
+    
+
+    <div class="container">
+        <div class="card"></div>
+    </div>
+
+
+
+    <div class="zoom">
+        <img src="../web/images/10.jpg" alt="">
+    </div>
+
+
+ 
+</body>
+</html>

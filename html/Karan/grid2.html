@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: content-box;
+            text-decoration: none;
+        }
+       
+        .main{
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: 150px  1fr 150px ;
+            grid-template-rows: 50px repeat(2,1fr)  50px; */
+        }
+        .nav{
+            background-color: black;
+            grid-row: 1 / 2;
+        }
+        .hero{
+            background-color: aqua;
+        }
+        .sidebar{
+            background-color: blue;
+        }
+        .rightbar{
+            background-color: brown;
+        }
+        .leftbar{
+            background-color: rgb(226, 86, 43);
+        }
+        .middle{
+            background-color: rgb(255, 0, 221);
+        }
+        .footer{
+            background-color: darkred;
+        }
+        .sidebar{
+            grid-row: 2 / -2;
+        }
+        .hero{
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">1</div>
+        <div class="hero">2</div>
+        <div class="sidebar">3</div>
+        <div class="rigthbar">4</div>
+        <div class="leftbar">5</div>
+        <div class="middle">6</div>
+        <div class="footer">7</div>
+    </div>
+</body>
+</html>

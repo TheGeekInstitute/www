@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Anime</title>
+    <style>
+        .container{
+            border: 1px solid  black;
+            height: 20rem;
+        }
+        .container .box label{
+            display: block;
+            border: 1px solid red;
+            height: 10rem;
+            width: 10rem;
+            background-image: url(anime01.jpg);
+            background-size: cover;
+        }
+        .container .box label .arrow{
+            border: 1px solid black;
+            color: gray;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            margin: 10rem 0;
+        }
+        #btn01:checked ~ .img{
+            /* position: absolute; */
+            /* left: 20rem; */
+            /* width: 60rem; */
+            margin: auto;
+            width: 20rem;
+            height: 20rem;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <input type="checkbox" id="btn01">
+            <label for="btn01" class="img">
+                <div class="arrow">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </label>
+        </div>
+    </div>
+</body>
+</html>

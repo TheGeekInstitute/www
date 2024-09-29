@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid black;
+            margin: 30px auto;
+            width: 25rem;
+        }
+
+        .container .list{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .list .task{
+            display: flex;
+            justify-content: space-between;
+            padding: .5rem 1rem;
+            background-color: bisque;
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="field">
+            <input type="text" id="text">
+            <button id="btn">Add</button>
+        </div>
+
+        <div class="list" >
+            <!-- <div class="task">
+                <input type="checkbox" class="checkbox">
+                <p id="data"> ABCD</p>
+                <p id="close">X</p>
+            </div> -->
+
+    
+        </div>
+    </div>
+
+    <script>
+      
+        let list= document.querySelector(".list");
+        document.querySelector("#btn").addEventListener('click',()=>{
+            let input = document.querySelector("#text").value;
+            let task=`
+            <div class="task">
+                <input type="checkbox" class="checkbox">
+                <p class="data">${input}</p>
+                <p class="close"> <button id="close" >close</button></p>
+            </div>
+            `;
+            list.insertAdjacentHTML("beforeend",task)
+   
+
+
+            let close = document.querySelectorAll(".close");
+
+            close.forEach((close_btn)=>{
+                close_btn.addEventListener('click',()=>{
+               
+                        let remove = close_btn.parentElement;
+                           close_btn.parentElement.parentElement.removeChild(remove);
+                });
+            });
+
+            
+            let checkbox = document.querySelectorAll(".checkbox");
+            checkbox.forEach((ckbtn)=>{
+                ckbtn.addEventListener('click',()=>{
+                  let  para = ckbtn.parentElement.children[1];
+                  let paraText = para.innerText;
+                  if(ckbtn.checked == true){
+                      para.innerHTML = "<s>"+paraText+"</s>";
+                    }
+                    else{
+                        para.innerHTML =paraText;
+                        
+                    }
+                    
+          
+
+
+
+                    
+                });
+                
+            });
+            
+        });     
+    </script>
+</body>
+</html>

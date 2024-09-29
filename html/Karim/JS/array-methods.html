@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        let name=["Amit","Sumit",'Raju','Ankit',"Sumit","Golu"];
+        let age=[10,25,18,16,45,66];
+        let data=["ABCD","XYZ","JKL"];
+        document.write(name + "<br>")
+        document.write(data + "<br>")
+
+        document.write("<br><br>")
+
+        //#Modifying and Deleting Array index Value
+    //      name[0]=""
+    //      delete name[0]
+    //   name[0]="Ravi"
+
+        // //#Sorting asc and desc array
+        //  name.sort()
+        //  name.reverse(); //Reversing an array
+
+
+        // //#Deleting and adding array index value at the end of an array
+        //  name.pop() //Delete last index of an array
+        //  name.push("Golu") // Adding New Value at The end of an array
+
+        //  name.shift() // Deleting first index of an array
+
+        // name.unshift("Ravita") 
+        // //#adding new value at the begning of an array
+
+        // document.write(name + "<br>")
+
+        //Joining Two arrays
+        // let new_arr= data.concat(name);
+        // document.write(new_arr)
+
+        //Join is used for convetring an array into string with delimeter
+
+        // document.write(name.join("-"))
+
+
+        //Slice() is used for slicing or breaking an array
+
+        // let new_arr = name.slice(1,3);
+        // document.write((new_arr))
+
+    //    name.splice(1,0,data); //0 without deleting
+        // name.splice(2,1,data);
+
+        // document.write(name);
+
+        // let abcd="asda";
+        // document.write(Array.isArray(abcd))
+
+        // document.write(name.indexOf("Sumit",2))
+        // document.write(name.lastIndexOf("Sumit",2))
+
+        // document.write(name.includes("Sumit"))
+
+
+    </script> 
+     
+   <script>
+    //  let name=["amit","rohan","mohan","sumit","ravi"];
+
+    //    document.write(name + "<br>")
+    //    name[0] =""
+    //    delete name[0]
+    //    name[0]="red"
+    //    document.write(name + "<br>")
+    // let number=[1,2,3,"4","5","6","7","8","9","10"];
+    // document.write(number+"<br>");
+    // document.write("<br>" + "<br>");
+    // number[0] ="";
+    // number[0] ="this is the cahnging number "
+    // delete number[3];
+    // delete number[0];
+    // delete number[1];
+
+
+    // for(let i=0 ; i<=4 ; i++){
+    //     delete number[i];
+    // }
+
+    // document.write(number+"<br>")
+
+let new_data = age.some(function check(val){
+    return val>=18;
+});
+
+let new_dat = age.every(function check(val){
+    return val>=10;
+});
+
+
+let new_filter = age.filter(function check(val){
+    return val>=20;
+});
+
+
+// document.write(new_filter)
+
+// document.write(typeof(name.toString()))
+
+// document.write(name.valueOf(0))
+
+// name.fill("ABCD");
+
+// document.write(name)
+
+// name.forEach( function data(value) {
+//     document.write(value + "<br>");
+// });
+
+name.map( function data(value) {
+    document.write("hi, " + value + "<br>");
+});
+
+
+
+</script>
+</body>
+</html>

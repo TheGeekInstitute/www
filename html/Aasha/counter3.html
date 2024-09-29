@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counters</title>
+
+    <style>
+     .box{
+        counter-reset: number;
+     }
+     .box h1::before{
+        content: counter(number,upper-roman);
+        counter-increment: number;
+        color: white;
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+
+
+     }
+     .main{
+        counter-reset: section;
+     }
+     .main h1::before{
+        content: counter(section);
+        counter-increment: (section);
+        color: blueviolet;
+     }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>one</h1>
+        <h1>two</h1>
+        <h1>three</h1>
+        <h1>four</h1>
+    </div>
+    <div class="main">
+<h1>website</h1>
+    <h2>html</h2>
+    <h2>css</h2>
+    <h2>js</h2>
+<h1>languages</h1>
+    <h2>jawa</h2>
+    <h2>pathon</h2>
+<h1>colors</h1>
+    <h2>red</h2>
+    <h2>Green</h2>
+    </div>
+<input type="text"data-abcd="field">
+<input type="password">
+
+</body>
+</html>

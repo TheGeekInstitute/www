@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>       
+</head>
+<body>
+    <script>
+
+        let a = parseInt(prompt('Enter Frist Number'));
+        let b = parseInt(prompt('Enter Second Number'));
+        let c = parseInt(prompt('Enter third Number'));
+
+        if(a>b && a>c){
+            alert (a + " is grater than "+b + " and " +c);
+        }
+        else if(b>a && b>c){
+            alert (b + " is grater than "+c + " and " +a);
+        }
+        else if(c>a && c>b){
+            alert (c + " is grater than "+b + " and " +a);
+        }
+        else{
+            alert ("all Number are Equal");
+        }
+
+
+    </script>
+</body>
+</html>

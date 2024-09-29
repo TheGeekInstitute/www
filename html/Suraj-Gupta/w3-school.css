@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav {
+  border: 1px solid black;
+  display: flex;
+  height: 100px;
+}
+.nav img {
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.nav ul {
+  display: flex;
+  margin-left: 10px;
+}
+.nav li {
+  margin: 20px;
+}
+.nav a {
+  color: black;
+  font-size: 18px;
+}
+.nav input {
+  height: 35px;
+  width: 10em;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  margin-top: 15px;
+  padding-left: 15px;
+  font-size: 17px;
+}
+.nav .right {
+  margin-left: 10em;
+  display: block;
+}
+.nav ul:last-of-type {
+  border: 1px solid black;
+}/*# sourceMappingURL=w3-school.css.map */

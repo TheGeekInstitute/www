@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Count</title>
+    <style>
+        @import url("./column.css");
+        /* 
+            column-count
+            column-gap
+            column-rule-style
+            column-rule-color
+            column-rule-width
+            column-rule
+            column-width 
+            column-span
+        */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .main{
+            column-count: 3;
+            column-gap: 10px;
+            /* column-rule-style: double;
+            column-rule-color: blue;
+            column-rule-width: 10px; */
+            column-rule: 2px solid red;
+            column-width: 200px;
+        }
+
+        .main h1{
+            column-span:all;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque qui repellendus illo harum, quaerat voluptatum ut maxime</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aut, perspiciatis quis architecto ipsam hic dolorum quod iste. Eaque iste sequi tenetur accusamus hic quibusdam odio error consequatur in incidunt.
+        Magnam odit, perspiciatis quam vitae maiores sit dolor voluptatibus. Fugiat eaque iste unde reprehenderit debitis sint iusto maiores nulla corporis, atque quod placeat odio non totam labore sequi ab voluptate.
+        Odit neque quisquam eum veritatis ducimus incidunt eveniet, molestias, saepe repellendus ex dolorum accusamus! Consequuntur est nisi enim iste eos amet placeat, cum natus veniam deleniti eveniet ratione. Ipsa, impedit.
+        Aliquam sapiente facere deserunt quae animi rem. Excepturi ab expedita officia inventore iure. Magnam adipisci velit excepturi explicabo suscipit quas praesentium alias aliquid iure, accusamus sed neque voluptas perspiciatis voluptate.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listner</title>
+</head>
+<body>
+    <h1 id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellendus itaque eos molestiae explicabo, facere nam nisi quaerat perferendis quisquam molestias ipsam fugit excepturi consequatur? Quisquam et expedita mollitia accusantium.</h1>
+
+    <button id="btn">ABCD</button>
+
+    <script>
+        // let heading = document.querySelector("#heading");
+        // heading.addEventListener('click',change_color);
+
+        // heading.addEventListener('click',function(){
+        //     heading.style.color = "red";
+
+        // });
+
+
+        // document.querySelector("#heading").addEventListener('dblclick',function(){
+        //    this.style.color= "red"
+        // });
+
+
+
+        document.querySelector("#btn").addEventListener('mouseenter',function(){
+            document.querySelector("#heading").style.color="red";
+        });
+
+
+        document.querySelector("#btn").addEventListener('mouseleave',function(){
+            document.querySelector("#heading").removeAttribute("style");
+        });
+
+
+
+
+
+        // function change_color(){
+        //     heading.style.color = "red";
+        // }
+    </script>
+</body>
+</html>

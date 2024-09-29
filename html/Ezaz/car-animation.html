@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                        
+        }
+        .box{
+            background-image: url(../Aasha/image/back.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+          
+        }
+        .boy{
+            height: 170px;
+            position: absolute;
+            bottom: 190px;
+            transform: rotateY(180deg);
+            right: -80px;
+            animation-name: boy;
+            animation-duration: 15s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        .car{
+            height: 150px;
+            position: absolute;
+            bottom: 10px;
+           left: -390px;
+          animation: car normal 10s 0s infinite ;
+        }
+        @keyframes car {
+                from{transform: translateX(0);}
+                to{
+                    transform: translateX(250vw);
+                }            
+        }
+        @keyframes boy {
+            from{
+                transform: translateX(0)rotateY('180deg');
+            }
+            to{
+                transform: translateX(-120vw)rotateY(180deg);
+            }
+            
+        }
+                </style>
+</head>
+<body><div class="box">
+    <img class="car" src="../Aasha/image/car.gif" alt="">
+</div>
+    <img class="boy" src="../Aasha/image/boy.gif" alt="">
+</body>
+</html>

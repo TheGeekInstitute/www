@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        nav{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            align-items: center;
+            background-color: aqua;
+            line-height: 50px;
+        }
+        nav .logo span:nth-child(1){
+            font-size:40px;
+            font-weight: bolder;
+            font-family: cursive;
+            color: blue;
+        }
+        nav .logo span:nth-child(2){
+            font-size: 30px;
+            font-weight: 900;
+            font-family: cursive;
+            color: red;
+        }
+        .nav .links{
+            display: flex;
+            align-items: center;
+        }
+        nav .links li a{
+            margin: 0 10px;
+            font-size: 20px;
+            font-weight: 800;
+            font-family: Verdana;
+            line-height: 60px;
+            /* border: 1px solid red; */
+            color:lightcoral ;
+            display: block;
+            padding: 0 10px;
+            transition: all 0.5s;
+            /* background-color: red; */
+        }
+        nav > .links > li > a:hover{
+            background-color: bisque;
+        }
+        #btn{
+            display: none;
+        }
+        nav .btn span{
+            border: 2px solid white;
+            display: block;
+            width: 40px;
+            margin: 7px 0;
+            height: 5px;
+            background-color: white;
+
+        }
+        .btn{
+            display: none;
+        }
+        @media screen and (max-width:600px) {
+            .btn{
+                display: block;
+            }
+            .nav .links{
+                position: absolute;
+                top: 60px;
+                flex-direction: column;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                text-align: center;
+                padding-top: 50px;
+                background-color: blueviolet;
+                display: none;
+            }
+            nav #btn:checked + .links{
+                display: block;
+            }
+            nav #btn:checked ~ .btn .two{
+                display: none;
+            }
+        
+           
+        }
+        .nav #btn:checked ~ .btn .one{
+            position: relative;
+            top: 10px;
+            transform: rotate(45deg);
+        }
+        nav #btn:checked ~ .btn .three{
+            position: relative;
+            top: -2px;
+            transform: rotate(-45deg);
+        }
+
+        section::before{
+            
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <span>PU</span><span>MA</span>
+        </div>
+        <input type="checkbox" id="btn">
+        <ul class="links">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Shop</a></li>
+           <li><a href="#">About</a></li>
+        </ul>
+        <label for="btn" class="btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </label>
+    </nav>
+    <section style="border: 1px solid red; height: 200px; width: 800px; background-color: red; margin-top: 10px;">
+
+    </section>
+    <div style="border: 1px solid red; height: 200px; width: 800px; background-color: red; margin-top: 10px;">
+
+    </div>
+</body>
+</html>

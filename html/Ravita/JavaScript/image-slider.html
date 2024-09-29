@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+            overflow: hidden;
+        }
+
+        .container .slider{
+       
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            width: 500vw;
+            transition: all 1s ease-in-out;
+        }
+        
+        .container .slider .image{
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            /* flex-grow: 0; */
+            /* flex-shrink: 0; */
+        }
+
+        .container .slider .image .content{
+           
+            height: 200px;
+            width: 400px;
+            padding: 40px;
+            border-radius: 5px 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* box-shadow: 0px 0px 30px black; */
+            border: 2px solid black;
+            color: white;
+            font-size:large;
+        }
+
+
+        .container .btns{
+            /* border: 2px solid red; */
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -40px;
+            position: absolute;
+            z-index: 10;
+            width: 100vw;
+        }
+
+        .container button{
+            background-color: rgba(128, 128, 128, 0.5);
+            color: white;
+            border: none;
+            margin: 0 10px;
+            height: 30px;
+            width: 100px;
+            font-size: large;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .container .slider .image.active{
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slider">
+            
+            <div class="image active" style="background-image: url(../../Aasha/images/1.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fuga amet sunt eos culpa ipsum iste illo optio atque consectetur sed temporibus libero ducimus, excepturi exercitationem saepe dolores aut vel?</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../../Aasha/images/2.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fuga amet sunt eos culpa ipsum iste illo optio atque consectetur sed temporibus libero ducimus, excepturi exercitationem saepe dolores aut vel?</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../../Aasha/images/3.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fuga amet sunt eos culpa ipsum iste illo optio atque consectetur sed temporibus libero ducimus, excepturi exercitationem saepe dolores aut vel?</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../../Aasha/images/4.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fuga amet sunt eos culpa ipsum iste illo optio atque consectetur sed temporibus libero ducimus, excepturi exercitationem saepe dolores aut vel?</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(../../Aasha/images/5.webp);">
+                <div class="content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus fuga amet sunt eos culpa ipsum iste illo optio atque consectetur sed temporibus libero ducimus, excepturi exercitationem saepe dolores aut vel?</p>
+                </div>
+            </div>
+        </div>
+
+   
+        <div class="btns">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+
+    <script>
+        let slider=  document.querySelector(".slider");
+        let next = document.querySelector("#next");
+        let prev = document.querySelector("#prev");
+        let index=0;
+
+        
+        next.addEventListener("click",()=>{
+            slider.children[index].classList.remove("active");
+
+            if(index<slider.childElementCount-1){
+                index+=1;
+            }
+            else{
+                index=0;
+            }
+            slider.children[index].classList.add("active");
+            slider.style.transform = "translateX(-"+(index*100)+"vw)"; 
+        })
+
+
+        prev.addEventListener("click",()=>{
+            slider.children[index].classList.remove("active");
+
+            if(index<=0){
+                index=slider.childElementCount-1;
+            }
+            else{
+                index-=1;
+            }
+            slider.children[index].classList.add("active");
+            slider.style.transform = "translateX(-"+(index*100)+"vw)"; 
+        })
+
+    </script>
+
+
+</body>
+</html>

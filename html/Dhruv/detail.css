@@ -1,0 +1,193 @@
+/* @import url("detail.html"); */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body{
+
+/* background-color:skyblue; */
+/* border-radius: 50%; */
+width: 10vw;
+height: 100vh;
+line-height: 5vh;
+/* transition: all 1s; */
+}
+.side{
+/* background-color: skyblue; */
+
+
+    /* border-radius: 50%; */
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    /* transition: all 1s; */
+
+}
+.side li:first-child{
+    /* background-color: aquamarine; */
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.side li a{
+    /* border: 1px solid blue; */
+    color: rgb(233, 135, 15);
+    display: block;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+.side li a:hover{
+    background-color: rgb(110, 110, 250);
+    color: beige;
+    scale:1.1;
+    box-shadow: 2px 2px black;
+
+}
+
+.ul{
+    display: none;
+    /* left: 100px; */
+    position: absolute;
+    margin-left: 10vw;
+    top: 6.5vh;
+    transition: all 1s;
+}
+.ul li{
+    background-color: chartreuse;
+    
+}
+
+.ul li a{
+    display: block;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    color: rgb(9, 13, 238);
+}
+.side:hover .ul{
+    display: block;
+}
+
+.ul li a:hover{
+    background-color: deepskyblue;
+}
+
+
+
+
+.side-side{
+    /* background-color: skyblue; */
+
+    /* border-radius: 50%; */
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    transition: all 1s;
+
+}
+.side-side li:first-child{
+    /* background-color: rgb(74, 103, 198); */
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.side-side li a{
+    /* border: 1px solid blue; */
+    color: rgb(126, 29, 58);
+    display: block;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+.side-side li a:hover{
+    background-color: rgb(110, 110, 250);
+    color: beige;
+    scale:1.1;
+    box-shadow: 2px 2px black;
+
+}
+
+.ul-ul{
+    display: none;
+    /* left: 100px; */
+    position: absolute;
+    margin-left: 10vw;
+    top:11.3vh;
+    transition: all 1s;
+}
+.ul-ul li{
+    background-color: rgb(16, 229, 73);
+    
+}
+
+.ul-ul li a{
+    display: block;
+    width: 10vw;
+    height: 5vh;
+    line-height: 5vh;
+    color: rgb(17, 154, 51);
+}
+.side-side:hover .ul-ul{
+    display: block;
+}
+
+.ul-ul li a:hover{
+    background-color: deepskyblue;
+    color: rgb(67, 13, 244);
+}
+.nav{
+    border: 1px solid red;
+    /* margin-left: 224px; */
+    display: flex;
+}
+.ul1{
+    display: flex;
+    justify-content: flex-end;
+}
+.uli li{
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+h1{
+    text-align: center;
+    margin-left: 10vw;
+}
+.nav img{
+    height: 7vh;
+}
+
+
+
+
+
+
+img{
+    height: 4rem;
+}
+
+.home h1{
+    /* border: 1rem solid red; */
+    font-style: oblique;
+    font-weight: 800;
+    /* width: ; */
+    padding: 1rem;
+    color: green;
+}
+
+ h1 span{
+    /* background-image: linear-gradient(green red yellow); */
+    color: red;
+}

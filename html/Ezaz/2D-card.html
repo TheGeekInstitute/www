@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 350px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 150px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 5px 50px crimson;
+            
+
+        }
+        .box{
+            height: 350px;
+            width: 300px;
+            backdrop-filter: blur(4px);
+            background-color:rgba(255, 255, 255, 0.1);
+            transform: translateY(80%);
+            transition: all .5s;
+            padding: 10px;
+            text-align: center;
+        }
+        .box h1{
+            color: whitesmoke;
+            box-shadow: 0 0 5px rgb(5 , 48, 190);
+            border-bottom: 2px solid white;
+            line-height: 50px;
+        }
+         .container:hover .box{
+            transform: translateY(0);
+            
+        }
+       
+        .box img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0px 0px 20px white, 0px 0px 10px cyan;
+    border: 5px solid white;
+}
+        .box p{
+            color: white;
+            font-weight: 500;
+            font-family: cursive;
+        }
+        .list{
+            color: gold;
+            box-shadow: 0 0 50px white;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>EZAZ</h1>
+            <img src="../web/images/10.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, reprehenderit similique</p>
+            <div class="list">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

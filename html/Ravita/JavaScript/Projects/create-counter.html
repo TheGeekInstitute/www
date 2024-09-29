@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            height: 300px;
+            width: 400px;
+            text-align: center;
+            justify-content: center;
+            margin: 150px auto;
+
+        }
+
+        .container h1{
+            font-size:45px ;
+            padding: 20px;
+        }
+
+        .container h2{
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        button {
+            height: 35px;
+            width: 85px;
+            margin: 5px
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <h1>Counter</h1>
+            <h2 id="num">0</h2>
+            <button id="decrease">Decrease</button>
+            <button id="reset">Reset</button>
+            <button id="increase">Increase</button>
+    </div>
+
+    <script>
+
+
+let num=document.querySelector('#num');
+        let increase=document.querySelector('#increase');
+        let decrease=document.querySelector('#decrease');
+        let reset=document.querySelector('#reset');
+        let i=0;
+        increase.addEventListener("click",()=>{
+            i++;
+            num.innerHTML=i;
+        })
+        decrease.addEventListener("click",()=>{
+            if(i<=0){
+                i=0
+            }
+            else{
+                i--;
+
+            }
+            num.innerHTML=i;
+        })
+        reset.addEventListener("click",()=>{
+            i=0;
+            num.innerHTML=i;
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let num = document.querySelector(".num");
+        // let decrease = document.querySelector("#decrease")
+        // let reset = document.querySelector("#reset")
+        // let increase = document.querySelector("increase")
+
+        // let i = 0;
+
+        // increase.addEventListener("click", () => {
+        //     i++;
+        //     num.innerHTML = i;
+        // })
+
+      
+
+        // decrease.addEventListener("click", () => {
+        //     i--;
+        //     num.innerHTML = i;
+        // })
+ 
+        // reset.addEventListener("click",()=>{
+        //     i=0;
+        //     num.innerHTML=i;
+        // })
+
+
+
+    </script>
+</body>
+
+</html>

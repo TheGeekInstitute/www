@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transfrom</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            transition: all .3s linear;
+            margin: 150px auto;
+        
+        }
+
+        .box:hover{
+           / transform: translate(-100px,10px); */
+            /* transform: rotate(360deg); */
+            /* transform: scale(2); */
+           /* transform: skew(30deg,10deg); */
+
+
+        }
+
+        
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width:300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .container .card{
+            height: 300px;
+            width:300px;
+            background-color: red;
+            transform: translate(0,100%);
+            transition: all .3s linear;
+        }
+
+        .container:hover .card{
+            transform: translate(10px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+
+
+    <div class="container">
+        <div class="card"></div>
+    </div>
+
+</body>
+</html>

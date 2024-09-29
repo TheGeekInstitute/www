@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *{
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+
+    }  
+       .wrapper .sidebar{
+        background-color: rgb(109, 167, 190);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 225px;
+        height: 100%;
+        padding: 20px 0;
+        transition: all 0.5s ease;
+        
+    }
+    .sidebar img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+
+    }
+    .sidebar h3{
+        color: aliceblue;
+        margin: 10px 0 5px;
+        margin-left:45px ;
+    }
+    .sidebar p{
+        color: rgb(190, 221, 252);
+        font-size: 14px;
+        margin-left: 60px;
+    }
+    .sidebar li a{
+        font-size: 20px;
+        color: rgb(203, 221, 238);
+        display: block;
+        
+        padding: 25px 30px;
+       position: relative;
+       border-bottom: 1px solid ;
+       transition: all ease 0.4s;
+    
+        
+    }
+
+   
+    .sidebar li:hover{
+        background-color: rgb(253, 254, 255);
+    
+        
+    }
+    .sidebar li  :hover{
+        color:rgb(36, 49, 53) ;
+        font-size: 23px;
+        
+    }
+    
+    .img{
+        margin-left: 225px;
+        height:100vh;
+        width: 100vw;
+        z-index:-10 ;
+        opacity: 80%;
+        
+    }
+
+    .nav{
+        background-color: black;
+        margin-left: 225px;
+        height: 7vh;
+    }
+
+    
+    .nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .nav ul li a{
+        display: block;
+        /* padding-top: 7px; */
+        line-height: 7vh;
+        color: white;
+        text-decoration:none;
+        margin: 0px 15px;
+    }
+    .nav ul li a:hover{
+        background-color: burlywood;
+        color: brown;
+        /* border-radius: 70%; */
+        /* padding: 12px 0; */
+        
+    }
+    .main{
+        margin-left: 225px;
+        background-image: url("https://www.striata.com/wp-content/uploads/2019/11/Technical-Account-Manager-listing.jpg");
+        background-size: cover;
+        color: aliceblue;
+        height: 93vh;
+        opacity: 70%;
+        text-align: center;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    
+   <div class="nav">
+        <ul>
+           <li><a href="#">Home</a> 
+           </li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Service</a></li>
+           <li><a href="#">About</a></li>
+        </ul>
+   
+       
+       </div>
+       
+    <div class="wrapper">
+    <div class="sidebar">
+        <img src="../web/images/19.jpg" >
+        <h3>Ritu Chauhan</h3>
+        <p>Accountant</p>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <span class="item">Home</span>
+            </a>
+    </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                <span class="item">My Dashbord</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                <span class="item">People</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
+                <span class="item">Performance</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+                <span class="item">Development</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span>
+                <span class="item">Reports</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-user-secret" aria-hidden="true"></i></span>
+                <span class="item">Admin</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                <span class="item">Settings</span>
+            </a>
+        </li>
+    </div>
+    </div>
+
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae impedit asperiores eius quibusdam inventore ipsa, esse maiores consequuntur nam rem non mollitia voluptatum debitis odio magni architecto ex distinctio eligendi!</h1>
+    </div>
+ 
+</body>
+</html>

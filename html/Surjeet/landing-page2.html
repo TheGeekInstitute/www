@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-age 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav .logo{
+            color: black;
+            font-weight: 700;
+            font-size: x-large;
+        }
+
+        .nav .signup{
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: large;
+        }
+
+        .hero{
+
+            height: 600px;
+
+            padding-top: 150px;
+
+            background-image: url("https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG8lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+
+        .hero h1{
+            color: white;
+            width: 500px;
+            margin: auto;
+            font-size: 40px;
+            margin-bottom: 50px;
+
+        }
+
+        .hero form input{
+            border: none;
+            font-size: x-large;
+            height: 55px;
+            width: 450px;
+            border-radius: 5px;
+            padding: 2px 5px;
+
+
+        }
+
+        .hero form .btn{
+            width: 100px;
+            background-color: royalblue;
+            color: white;
+        }
+
+        .services{
+            height: 300px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .services .box{
+            width: 300px;
+            height: 270px;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .services .box i{
+                color: royalblue;
+                font-size: 90px;
+
+        }
+
+        .services .box p{
+            font-size: large;
+            margin: 10px 0;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#" class="logo">start bootstrap</a>
+        <a href="#" class="signup">sign up</a>
+    </div>
+
+    <div class="hero">
+        <h1>generate more leds with a professioal landing page!</h1>
+
+        <form action="">
+            <input type="email" placeholder="email address">
+
+            <input type="submit" class="btn" value="submit">
+        </form>
+    </div>
+    <!-- 12css ka yah tak -->
+
+    <div class="services">
+        <div class="box">
+            <i class="fa-solid fa-window-maximize"></i>
+            <h3>fully responsive</h3>
+            <p>this theme will look great on any device, no matter the size!</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            
+            <h3>bootstrap 5 ready</h3>
+            <p>featuring the latest build of the the new bootstrap 5 framework!</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+        <h3>easy to use</h3>
+        <p>ready to use with your own content, or customize the sourse files!</p>
+      </div>
+    </div>
+</body>
+</html>

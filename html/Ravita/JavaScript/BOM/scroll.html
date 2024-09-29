@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            overflow: scroll;
+        }
+
+        .container .box{
+            height: 700px;
+            width: 700px;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit illo aliquid animi sapiente, quo fugiat quia nisi architecto quam dolorem enim qui, odit tempore minima magnam. Dolorum, rerum dolor?
+            Commodi ad at non vel nobis repellendus assumenda. Quis voluptas soluta ab dolore corrupti eius labore eveniet excepturi commodi non impedit, quos dolor harum minima blanditiis. Provident natus odio consequuntur!
+            Accusantium ad labore iusto culpa inventore necessitatibus qui, aut sint adipisci excepturi. Aut accusantium perferendis facere a qui, dolores molestias cumque velit voluptatibus voluptates veritatis iste, explicabo harum molestiae facilis.
+        </div>
+    </div>
+
+    <script>
+        let container = document.querySelector(".container");
+        let box = document.querySelector(".box");
+
+        container.addEventListener("scroll",()=>{
+            // console.clear();
+            // console.log(container.scrollTop)
+            // console.log(container.scrollLeft)
+
+        })
+
+        console.log(container.scrollWidth)
+        console.log(container.scrollHeight)
+
+        console.log(container.offsetWidth)
+
+        console.log(container.clientWidth)
+
+
+    </script>
+
+</body>
+</html>

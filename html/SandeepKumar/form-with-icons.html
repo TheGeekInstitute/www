@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container{
+          
+            width: 300px;
+            text-align: center;
+            padding: 10px 0;
+            height: 270px;
+            position: absolute;
+            top: calc(50% - 130px);
+            left: calc(50% - 150px);
+            background-color: antiquewhite;
+            border-radius: 5px;
+            /* background-image: linear-gradient(45deg,green,yellow,cyan); */
+
+        }
+
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+
+        .container form .field{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .container form .field i{
+            display: block;
+            border: 1px solid black;
+            border-width: 1px 1px 3px 1px;
+
+            font-size: x-large;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            line-height: 35px;
+            background-color: aliceblue;
+            background-color: transparent;
+            color: blue;
+
+        }
+
+        .container form .field input{
+            height: 35px;
+            outline: none;
+            margin-left: -1px;
+            width: 200px;
+            font-size: large;
+            padding: 0 3px;
+            background-color: aliceblue;
+
+            border: 1px solid black;
+            border-width: 1px 1px 3px 1px;
+            background-color: transparent;
+        }
+
+        .container form #btn{
+            border: none;
+            background-color: royalblue;
+            color: white;
+            padding:7px 20px;
+            border-radius: 3px;
+            font-size: large;
+            cursor: pointer;
+        }
+        .container a{
+            display: block;
+            transition: all .2s linear;
+        }
+
+        .container a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Signup</h1>
+
+        <form action="">
+            <div class="field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text">
+            </div>
+
+            <div class="field">
+                <i class="fa-solid fa-key"></i>
+                <input type="password">
+            </div>
+
+           <input type="submit" id="btn">
+        </form>
+        <a href="#">Forget Password</a>
+    </div>
+
+</body>
+</html>

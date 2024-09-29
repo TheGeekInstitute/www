@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+
+        }
+        .nav a{
+            display: block;
+            color: black;
+            font-weight: 600;
+            font-size: large;
+        }
+        .nav #btn{
+            background-color: royalblue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 7px;
+
+        }
+        .hero{
+            height: 500px;
+            text-align: center;
+            /* flex-direction: column; */
+            background-image: url("../Devansh/images/bg-masthead.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-size: 20px;
+
+            background-color: rgba(0, 0, 0, 0.3);
+            background-blend-mode: overlay;
+
+        }
+        .hero h1{
+            /* border: 2px solid red; */
+            width: 800px;
+            margin: auto;
+            padding: 80px 0;
+            /* margin-top: 150px; */
+        }
+        .hero form input{
+            width: 500px;
+            height: 60px;
+            border-radius: 10px;
+            border: none;
+            font-size: large;
+            padding: 2px 5px;
+            font-weight:600;
+
+
+        }
+        .hero form #submit{
+            background-color: rgba(65, 105, 225, 0.836);
+            color: white;
+            width: 100px;
+            margin-left: 10px;
+
+        }
+        .features{
+            height: 300px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+
+        }
+        .features .box{
+            width: 300px;
+            height: 270px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: 0 30px;
+
+
+        }
+        .features .box i{
+            display: block;
+            font-size: 70px;
+            color: royalblue;
+        }
+        .features .box h2{
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+        .features .box p{
+            margin-top: 20px;
+            font-size: large;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- nav starts here -->
+<div class="nav">
+    <a href="#">Start Bootstrap</a>
+    <a href="#" id="btn">Sign Up</a>
+</div>
+
+    <!-- nav ends here -->
+
+
+    <div class="hero">
+        <h1>Generate more leads with a professional landing page!</h1>
+        <form action="">
+        <input type="email" placeholder="Enter Email Address" name="" id="">
+        <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <div class="features">
+        <div class="box">
+            <i class="fa-regular
+            fa-window-maximize"></i>
+            <h2>fully Responsive</h2>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Bootstarp 5 ready</h2>
+            <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h2>Easy to Use</h2>
+            <p>Ready to use with your own content, or customize the source files!</p>
+        </div>
+    </div>
+
+    <div class="services">
+    <div class="box">
+        <div class="content">
+             <h1>fully Responsive Design</h1>
+             <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+
+             <img src="../Devansh/images/bg-showcase-2.jpg" alt="">
+
+             <div class="content">
+                <h1>Fully Re </h1>
+
+             </div>
+
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+    
+</body>
+</html>

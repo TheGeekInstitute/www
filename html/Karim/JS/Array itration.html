@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array itration </title>
+</head>
+<body>
+    <h1>Arrya iration </h1>
+    <script>
+         let array=[
+    {"name" : "amit", "age":25,"gender": "male"},
+    {"name" : "Sumit", "age":26,"gender": "male"},
+    {"name" : "Ganesh", "age":27,"gender": "male"},
+    {"name" : "Ravi", "age":28,"gender": "male"},
+    {"name" : "Ravi", "age":28,"gender": "male" , "class" : "XII"}
+];
+
+let name=["Amit",'Sumit','Ankit'];
+
+// for(data of name){
+//     document.write(data + "<br>");
+// }
+
+for(obj of array){
+    for(index in obj){
+        document.write(index + " : " + obj[index] + "<br>")
+    }
+    document.write( "<br>")
+}
+
+
+    </script>
+</body>
+</html>

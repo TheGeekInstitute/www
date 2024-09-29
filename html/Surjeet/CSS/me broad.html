@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders</title>
+
+
+    <style>
+        .dotted{
+            border-style: dotted;
+        }
+
+        .dashed{
+            border-style: dashed;
+        }
+
+        .solid{
+            border-style: solid;
+            border-color: red;
+            border-top-color:green;
+            border-right-color: yellow;
+            border-bottom-color: cyan;
+            border-left-color: purple;
+            border-color: red green yellow cyan;
+            
+            border-width: 10px;
+
+            border-top-width: 20px;
+            border-width: 10px 5px 2px 20px;
+        }
+        
+        .double{
+            border-style: groove;
+        }
+
+        .groove{
+            border-style: groove;
+        }
+
+        .inset{
+            border-style: ridge;
+        }
+
+        .outset{
+            border-style: outset;
+        }
+
+        .none{
+            border-style: hidden;
+        }
+
+        .mix{
+            border-top-style: solod;
+            border-bottom-style: double;
+            border-right-style: dotted;
+            border-left-style: inset;
+        }
+
+        .photo{
+            border: 10px ridge crimson;
+        }
+
+
+    </style>
+    </head>
+    <body>
+    <p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="double">A double border.</p>
+<p class="groove">A groove border.</p>
+<p class="ridge">A ridge border.</p>
+<p class="inset">An inset border.</p>
+<p class="outset">An outset border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+
+ <img src="../photo-1572460418264-695212ed493a.webp" alt="" class="photo">   
+</body>
+</html>

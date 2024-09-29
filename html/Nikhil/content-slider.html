@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 10rem;
+            overflow: hidden;
+        }
+
+        .container .slider{
+            height: 10rem;
+            padding: calc(1rem - 5px) 0;
+            white-space:nowrap;
+            animation: move 10s linear 0s infinite forwards;
+        }
+        
+        .box{
+            display: inline-block;
+            background-color: red;
+            height: 8rem;
+            width: 8rem;
+            margin:  5px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        @keyframes move {
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(-100%);
+            }
+        }
+
+        .slider:hover{
+            animation-play-state: paused;
+        }
+
+        .slider .box:hover{
+            background-color: blue;
+            transform: scale(1.1);
+            transition: all 1s;
+            cursor: pointer;
+        }
+        
+        .box img{
+            position: relative;
+            height: 100%;
+            width:100%;
+            padding:10px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+
+
+    <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNQg4Q191_a8RyttqllQrh69C0Q6G4Nm-9lA8pnUg&s" alt=""></div>
+    <div class="box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt=""></div>
+    <div class="box"><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/php_plain_logo_icon_146397.png" alt=""></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-image: url("https://t3.ftcdn.net/jpg/03/00/10/16/360_F_300101671_g05kRIreJ3N9RVmMwZIRJmh8BAFLyTxU.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+    @keyframes abcd {
+        0%{
+            
+        }
+
+        100%{
+            left: 100vw;
+        }
+
+    }
+    @keyframes truck{
+        0%{
+
+        }
+        100%{
+            left: 100vw;
+        }
+    }
+    @keyframes plane{
+        0%{
+
+        }
+        100%{
+            left: 700vh;
+            right: 200vh;
+           
+        }
+    }
+    .highway{
+             position: absolute;
+             height: 300px;
+             animation-name: abcd;
+             animation-duration: 2s;
+            animation-timing-function: linear;
+            bottom: 10px;
+           left: -100px;
+    }
+    .truck{
+              position: absolute;
+             height: 500px;
+             animation-name: truck;
+             animation-duration: 1s;
+            animation-timing-function: linear;
+             /* margin-top: 410px; */
+            bottom: 5px;
+           left: -100px;
+    }
+    .plane{
+        position: absolute;
+            height: 400px;
+            bottom: 0;
+            right:-400px;
+            animation-name: plane;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+            /* animation-direction: alternate; */
+            filter: drop-shadow(4px 4px 10px black);
+
+    }
+
+</style>
+</head>
+<body>
+    <div class="run">
+    <div class="highway">
+        <img src="https://i.giphy.com/media/nqKGxMxYzCE8jje7bA/giphy.webp" alt="">
+    </div>
+    <div class="truck">
+     <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWJhYTA4YzdiYWZjNWE2NDRkNmE0ZDgyMDVhN2Q5OGRlMGNjMDhiOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/gKx8NdL6pZIcsGmJHL/giphy.gif" alt="">
+    </div>
+    <div class="plane">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJhMDY5ODljNmY1NzY2ZDdjMzZjY2U5NWI5MWNmZmJmNTE1MDVhZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/U29iRRUrtx1wjD4GR4/giphy.gif" alt="">
+    </div>
+    </div>
+</body>
+</html>

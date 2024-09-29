@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        background-image: url("../Aasha/image/back.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    .car{
+        height: 100px;
+        width: 300px;
+        bottom: 20px;
+        position: absolute;
+        left: -400px;
+        animation: car 10s linear 0s infinite ;
+    }
+    @keyframes car {
+        from{
+            transform: translateX(-550);
+
+        }
+        to{
+            transform: translateX(100vw);
+
+        }
+    }
+
+    
+    /* @keyframes car {
+            from{
+                transform: translateX(-550px);
+            }
+
+            to{
+                transform: translateX(150vw);
+            }
+        } */
+
+    .boy{
+        height: 100px;
+        width: 300px;
+        bottom: 30px;
+        position: absolute;
+        right: -400px;
+        animation: boy 10s linear 0s infinite ;
+    }
+
+    @keyframes boy {
+            0%{
+                transform: translateX(-100px) rotateY(180deg);
+            }
+
+            100%{
+                transform: translateX(-110vw) rotateY(180deg);
+            }
+        }
+   </style>
+</head>
+<body>
+    <img src="../Aasha/image/car.gif" alt="" class="car">
+
+    <img src="../Aasha/image/boy.gif" alt="" class="boy">
+
+    
+</body>
+</html>

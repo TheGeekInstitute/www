@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+    //    let name=["Ram","Mohan","sohan","Rohit","Ankit"]
+    //    document.write(name[1])
+    //    let i=0
+    //    while(i<name.length){
+    //     document.write(name[i])
+    //     i++
+    //    }
+    
+        //  for(let i=0;i<name.length;i++){
+        //     document.write(name[i])
+        //  }
+            let array=[
+                [1,2,3,4,5,6,7,8,9,10,11],
+                ["A","B","C"],
+                ["I","II","III"],
+                ["a","b","c","d"],
+                ["aa","bb","cc"],
+                
+                ];
+            // document.write(array[0][1])
+            // document.write(array[0])
+            // for(let i=0;i<array.length;i++){
+            //     console.log
+            // }
+
+        for(let x=0; x < array.length ; x++){
+            
+            for(let y=0 ; y<array[x].length ; y++){
+                document.write(array[x][y]+"    ")
+            }
+           document.write("<br>")
+           document.write("<br>")
+        }
+
+
+        // for(let outer of array){
+        //     for(let inner of outer){
+        //         document.write(inner + "  ")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        // for(let outer in array){
+        //   for(let inner in array[outer]){
+        //     document.write(array[outer][inner] + " ")
+        //   }
+        //   document.write("<br>")
+        // }
+
+    </script>
+</body>
+</html>

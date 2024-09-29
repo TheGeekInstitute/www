@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 4vw;
+            /* height: 10vh; */
+            background-color: black;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav ul li{
+            display: inline-block;
+            /* float: right; */
+            margin: 15px;
+            /* margin-top: -30px; */
+            font-size: larger;
+            /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+
+
+        }
+        .nav ul li a{
+            display: block;
+            color: white;
+            /* border: 1px solid red; */
+            /* height: 10vh; */
+            /* padding: 20px; */
+        }
+
+        .sub{
+            position: absolute;
+            font-size: 16px;
+            /* color: red; */
+            background-color: black;
+            width: 160px;
+            top: 55px;
+            /* left: 50vw; */
+            right: 15em;
+            visibility: hidden;
+            /* padding: 0%; */
+        }
+
+        .nav ul li:hover .sub{
+            visibility: visible;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="hero">Safta</h1>
+        <ul>
+            <li><a href="#">Login</a>
+            <ul class="sub">
+                <li><a href="#">Teacher Login</a></li>
+                <li><a href="#">Student Login</a></li>
+                <li><a href="#">Founder Login</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Logout</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    
+    
+</body>
+</html>

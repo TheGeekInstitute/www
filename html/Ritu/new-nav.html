@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .nav {
+            border: 1px solid red;
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 5rem;
+        }
+        .links{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .links a{
+            margin: 0 10px;
+            color: black;
+        }
+
+        .search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link{
+            
+            margin-right: 150px;
+        }
+
+        .nav button{
+            border:none;
+            background-color: pink;
+            height: 25px;
+            width: 30px;
+        }
+
+        .nav input{
+            height: 25px;
+            border: 1px solid rgb(190, 188, 188);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2>Own Shop</h2>
+        <div class="links">
+        <div class="link">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Pages</a>
+            <a href="#">Contact</a>
+        </div>
+
+            <div class="search">
+                <input type="text">
+                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+
+                <div class="menu">
+                    <a href="#"><i class="fa fa-sharp fa-light fa-cart-shopping abcd"></i></a>
+                    <a href="#"><i class="fa-regular fa-user abcd"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

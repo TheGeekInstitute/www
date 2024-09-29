@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /* .main h1{
+            color: red;
+        } */
+
+
+        .main > h1{
+            color: red;
+        }
+
+
+        .main > .box > h1{
+            color: aqua;
+        }
+        .main h1 + div{
+            border: 2px solid red;
+        }
+
+        /* p + b{
+            color: blue;
+        } */
+
+
+        p ~ b{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="box">
+            <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ad doloribus in eius consequatur voluptas repellendus at explicabo odio ut cumque qui eligendi, assumenda provident totam ipsa, aspernatur earum nam?</h1>
+        </div>
+
+        
+        
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aperiam rem ducimus! Numquam et sed dolor nesciunt incidunt similique quibusdam aspernatur cum placeat nihil? Dolorem ut alias deleniti illo ratione.</h1>
+
+        <div class="new">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae praesentium neque reiciendis iure commodi laboriosam amet nisi quidem nostrum at, fuga aut exercitationem provident natus atque! Ullam, numquam veritatis.</h1>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla inventore animi odit incidunt, dolore veritatis eos ab sunt delectus debitis voluptas adipisci fuga in. Tenetur ullam architecto nemo tempore.</p>
+
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis iste, cumque quo a voluptatibus? Totam enim excepturi facilis aliquid veritatis saepe minima? Minus libero recusandae quae nisi itaque a.</div>
+
+        <b> dfgd Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque est a commodi molestiae suscipit, impedit, eius sapiente excepturi ipsa laborum ab quisquam laboriosam eligendi magni cum, unde facilis sint.</b>
+
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, fugiat aspernatur. Ex accusamus animi et, unde eligendi eveniet in blanditiis autem, ipsum nesciunt dolorem qui distinctio a ullam repellat quidem?</h1>
+    </div>
+
+
+    <p>Lorem ipsum dolor sit amet</p>
+    <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, optio esse culpa dignissimos libero minima fuga recusandae veniam. Laboriosam quaerat beatae consequatur omnis dignissimos corporis, repudiandae consectetur nesciunt asperiores quia.</b>
+
+    <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor velit itaque, perspiciatis et id quod! Odit, porro, hic soluta doloribus minima accusamus est quos <b>rerum provident </b> qui nesciunt facilis a!</i>
+
+    <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequuntur molestias atque, accusantium magni voluptates illo aliquam placeat reprehenderit ipsa. Itaque odio veniam earum laboriosam autem quam perspiciatis beatae aperiam.</b>
+</body>
+</html>

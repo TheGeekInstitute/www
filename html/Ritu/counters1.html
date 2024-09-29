@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            counter-reset: number;
+        }
+         h1::before{
+            content: counter(number);
+            counter-increment: number;
+            color: red;
+
+        }
+        h2{
+            text-indent: 30px;
+            counter-reset: sub-sub-section;
+        }
+        h1{
+            counter-reset: sub-section;
+        }
+        h2::before{
+            content: counter(number) "." counter(sub-section) "";
+            counter-increment: sub-section;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>One</h1>
+        <h2>One.one</h2>
+        <h3>One.one.one</h3>
+        <h3>One.one.two</h3>
+        <h3>One.one.three</h3>
+    </div>
+    
+</body>
+</html>

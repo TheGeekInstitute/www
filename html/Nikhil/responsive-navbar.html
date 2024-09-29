@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+         html{
+            font-size: 62.5%;
+
+         }
+         body{
+            overflow: hidden;
+
+         }
+         .navbar{
+            background-color:  black;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.6rem;
+            color: white;
+
+         }
+         .navbar .btn{
+            /* display: none; */
+         }
+         .go{
+            color: orangered;
+            font-size: 3rem;
+         }
+
+         input[type='checkbox']{
+            display: none;
+         }
+
+         .navbar ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+         }
+         .navbar ul li a{
+            margin: 0 1rem;
+            color: white;
+            font-size: 2rem;
+         }
+         .navbar .btn span{
+            height: .5rem;
+            width: 3.2rem;
+            background-color: white;
+            display: block;
+            margin: 1rem 0;
+            position: relative;
+            transition: all.3s;
+
+
+         }
+         @media screen and (max-width:600px) {
+            .navbar .btn {
+                display: block;
+
+            }
+            .navbar #btn:checked ~ .btn span:nth-child(2){
+                display: none;
+            }
+            
+         }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Lo<span class="go">Go</span>
+        </div>
+
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">Contect</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Page</a></li>
+        </ul>
+        <label class="btn" for="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+</body>
+</html>

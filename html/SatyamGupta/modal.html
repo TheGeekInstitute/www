@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .container{
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.342);
+            display: none;
+        }
+
+        .container .modal{
+            border: 2px solid red;
+            height: 20rem;
+            width: 28rem;
+            position: absolute;
+            top: calc(50% - 10rem);
+            left: calc(50% - 14rem);
+            background-color: white;
+            border-radius: 5px;
+            padding: .7rem;
+        }
+
+        .modal .heading{
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .open{
+            display: block;
+            padding: 7px;
+            width: 100px;
+            text-align: center;
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        #btn:checked ~ .container{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <label for="btn" class="open">Open</label>
+    <input type="checkbox" id="btn">
+    <p>asda</p>
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>What Is abcds</p>
+                <label for="btn">X</label>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, unde possimus incidunt dignissimos consectetur distinctio explicabo sunt ratione optio id asperiores aliquam obcaecati quis impedit dolor? Maiores autem nobis iure!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

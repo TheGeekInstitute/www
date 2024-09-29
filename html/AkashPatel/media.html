@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: green;
+        }
+
+        div{
+            font-size: 10rem;
+        }
+        /* @media print {
+            div{
+                background-color: red;
+                color:aqua;
+            }
+        } */
+    
+        @media screen and (max-width:600px) {
+            body{
+                background-color: red;
+            }
+
+            div{
+                font-size: 4rem;
+            }
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique cumque odit illum laborum ab at sed esse nesciunt libero voluptate? Ipsum culpa nulla corporis in, voluptatem nemo consequatur veniam cumque.</div>
+    
+</body>
+</html>

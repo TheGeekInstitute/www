@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>
+        html{
+        font-size: 62.5%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.877);
+        }
+        .container{
+            background-color:black;
+            color: white;
+            position: absolute;
+            height: 62rem;
+            width: 62rem;
+            left:calc(50% - 31rem) ;
+            top: calc(50% - 31rem);
+            z-index: -10;
+
+}
+        .box{
+            background-color:rgba(255, 255, 255, 0.144);
+            backdrop-filter: blur(4px);
+            height: 37rem;
+            width: 37rem;
+           position: absolute;
+           top: calc(50% - 18.5rem);
+           left: calc(50% - 18.5rem);
+           display: flex;
+           flex-direction: column;
+           font-family: calibri;
+           padding: 35px;
+           padding-left: 45px;
+           border-radius: 5px;
+           z-index: 6;
+           backdrop-filter: blur(3px);
+
+ }
+            h1{
+                font-size: 3rem;
+ }
+            p{
+                font-size: 1.2rem;
+ }
+            label{
+                margin-top: 20px ;
+                font-size: 1.2rem;
+}
+            input[type=text]{
+                background-color: transparent;
+                outline: none;
+                border: 1px solid white;
+                padding: 5px;
+                width: 270px;
+                border-radius: 5px;
+
+}
+           
+            input[type=submit]{
+                width: 270px;
+                border-radius: 5px;
+                background-color: red;
+                color: #ffffff;
+                padding: 8px;
+                border: none;
+                outline: none;
+            }
+            .pass{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+               margin: 17px 10px;
+                
+                
+            }
+            h6{
+                font-size: 1.2rem;
+            }
+            h5{
+                font-size: 1.2rem;
+                margin-top: 10px;
+            }
+            #btn{
+                color: red;
+            }
+
+            .pass .remember label{
+                font-size: 1.5rem;
+                position: relative;
+                top: -2px;
+            }
+
+            .pass a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            }
+            .pass .remember input{
+                accent-color: red;
+            }
+            .circle1{
+                height: 150px;
+                width: 150px;
+                background:linear-gradient(blue,rgb(84, 84, 209));
+                border-radius: 50%;
+                position: absolute;
+                top: calc(50% - 26rem);
+                left: calc(50% - 27rem) ;
+                
+
+            }  
+            .circle2{
+                height: 150px;
+                width: 150px;
+                background:linear-gradient(orangered,orange);
+                border-radius: 50%;
+                position: absolute;
+                top: calc(50% + 11rem);
+                left: calc(50% + 10rem) ;
+                z-index: -4;
+        }  
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Login</h1>
+            <p>Welcome back Please Login To Your Account</p>
+            <label for="">Name</label>
+            <input type="text">
+            <label for="">Password</label>
+            <input type="text">
+            <div class="pass">
+                <div class="remember">
+                    <input type="checkbox" id="btn">
+                    <label for="checkbox">Remember Me</label>
+                </div>
+            <a href="#">Forgot Password</a>
+            </div>
+            <input type="submit" value="Login">
+            <h5>Don't have an account? <span>signup</span></h5>
+        </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+    
+</body>
+</html>

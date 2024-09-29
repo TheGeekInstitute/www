@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG_IN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-decoration-line: none;
+        }
+        .container{
+            /* border: 1px solid black; */
+            /* box-shadow: 2px 2px 1px 5px rgb(67, 115, 247); */
+            border-radius: 10px;
+            display: flex;
+            margin: 40px auto;
+            width: 45rem;
+            height: 30rem;
+            /* background-image: url(../images/pexels-gochrisgoxyz-1477166.jpg); */
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        .container .side{
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            width: 30%;
+            background-color: rgba(87, 149, 241, 0.616);
+            z-index: 1;
+        }
+        .container .side.show{
+            width: 5%;
+        }
+        .container .side ul{
+            /* border: 1px solid green; */
+            margin: 15px 2px;
+        }
+        .container .side ul li{
+            /* border: 1px solid black; */
+            color: black;
+            border-radius: 5px;
+            margin: 10px 4px;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 20px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .container .side ul li:hover{
+            background-color: white;
+        }
+        .container .side .log.show{
+            background-color: white;
+        }
+        .container .side .sign.show{
+            background-color: white;
+        }
+        .container .side ul li .tabs.show{
+            display: none;
+        }
+        .container .box{
+            width: 70%;
+            /* border: 1px solid black; */
+            z-index: 1;
+        }
+        .container .box .login.show{
+            display: block;
+        }
+        .container .box .login{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            display: none;
+
+        }
+        .container .box .login input{
+            border: 1px solid black;
+            width: 20rem;
+            height: 30px;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 5px;
+            margin:  10px 20px;
+        }
+        .container .box .login h2{
+            /* border: 1px solid black; */
+            width: 5rem;
+            border-radius: 100px;
+            position: relative;
+            left: 15rem;
+            background-color: rgb(19, 120, 214);
+            color: white;
+            padding: 10px 15px;
+            user-select: none;
+            cursor: pointer;
+
+        }
+        .container .box .login h2:hover{
+            background-color: rgba(29, 180, 240, 0.5);
+            transition: all 0.5s linear;
+            color: black;
+            box-shadow: 2px 2px 2px black;
+        }
+        .container .box .login h1{
+            text-align: left;
+            margin: 10px 20px;
+            color: gray;
+        }
+        .container .box .login span{
+            color: black;
+        }
+        .container .box .login P{
+            text-align: left;
+            /* border: 1px solid black; */
+            margin: 10px 20px 60px 20px;
+            width: 13rem;
+            font-size: 17px;
+            color: gray;
+            
+        }
+
+
+        .container .box .signup.show{
+            display: block;
+        }
+        .container .box .signup{
+            /* border: 1px solid red; */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            display: none;
+
+        }
+        .container .box .signup input{
+            border: 1px solid black;
+            width: 20rem;
+            height: 30px;
+            border-radius: 5px;
+            margin:  10px 20px;
+            box-shadow: 2px 2px 2px black;
+        }
+        .container .box .signup h2{
+            /* border: 1px solid black; */
+            width: 5rem;
+            border-radius: 100px;
+            position: relative;
+            left: 15rem;
+            background-color: rgb(19, 120, 214);
+            color: white;
+            padding: 10px 15px;
+            user-select: none;
+            cursor: pointer;
+
+        }
+        .container .box .signup h2:hover{
+            background-color: rgba(29, 180, 240, 0.5);
+            transition: all 0.5s linear;
+            color: black;
+            box-shadow: 2px 2px 2px black;
+        }
+        .container .box .signup h1{
+            text-align: left;
+            margin: 10px 20px;
+            color: gray;
+        }
+        .container .box .signup span{
+            color: black;
+        }
+        .container .box .signup P{
+            text-align: left;
+            /* border: 1px solid black; */
+            margin: 10px 20px 60px 20px;
+            width: 13rem;
+            font-size: 17px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side">
+            <ul>
+                <li class="log show">Log in</li>
+                <li class="sign">Sign up</li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="login show">
+                <h1>We are <span>NUVA</span></h1>
+                <p>Welcome back! log in yo your account to view today's clients:</p>
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="password">
+                <h2>Log in</h2>
+            </div>
+            
+            <div class="signup">
+                <h1>We are <span>NUVA</span></h1>
+                <p>Welcome! Sign up yo your account to view today's clients:</p>
+                <input type="text" placeholder="First name">
+                <input type="text" placeholder="Last name">
+                <input type="number" placeholder="Phone number">
+                <input type="text" placeholder="password">
+                <h2>Sign up</h2>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let log=document.querySelector('.log');
+        let sign=document.querySelector('.sign')
+        let login=document.querySelector('.login');
+        let signup=document.querySelector('.signup');
+        let box=document.querySelector('.box');
+        log.addEventListener("click",()=>{
+            signup.classList.remove("show");
+            login.classList.add("show");
+
+            log.classList.add("show");
+            sign.classList.remove("show");
+        })
+        sign.addEventListener("click",()=>{
+            signup.classList.add("show");
+            login.classList.remove("show");
+
+
+            log.classList.remove("show");
+            sign.classList.add("show");
+        })
+    </script>
+</body>
+</html>

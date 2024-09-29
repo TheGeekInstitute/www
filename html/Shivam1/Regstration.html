@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regstration Form</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box; 
+        }
+        body{
+            background-image: url(https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form{
+            /* border: 1px solid red; */
+           background-image: url(https://wallpapertag.com/wallpaper/full/4/b/7/274770-gradient-background-2560x1600-photos.jpg); 
+           background-size: cover;
+            height: 700px;
+            width: 350px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 50px;
+            box-shadow: 3px 3px 50px black;
+            border-radius: 15px;
+            /* text-align: center; */
+        }
+        label{
+            margin: 5px;
+            display: block;
+            font-weight: 800;
+            font-size:large;
+            text-shadow: 1px 1px 2px black;
+        }
+        input{
+            border: none;
+            font-size: larger;
+            border-radius: 8px;
+            box-shadow: 2px 3px 4px;
+            padding: 5px;
+            background-color: transparent;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 3px solid black;
+        }
+        form h1{
+            text-align: center;
+            text-shadow: 2px 2px 3px yellowgreen;
+        }
+        button{
+            display: block;
+            margin-top: 40px;
+            margin-left: 80px;
+            /* border: 2px solid gray; */
+            padding: 15px;
+            border-radius: 15px;
+            font-size: larger;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            box-shadow: 2px 3px 4px black;
+            background-color: transparent;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 3px solid black;
+
+        }
+        button:hover{
+            background-color:chocolate;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Signup</h1>
+        <label for="">First Name</label>
+        <input type="text">
+        <label for="">Last Name</label>
+        <input type="text">
+        <label for="">Date of Birth</label>
+        <input type="date">
+        <label for="">Gander</label>
+        <input type="radio" name="gander">
+        <label for="">Male</label>
+        <input type="radio" name="gander">
+        <label for="">Female</label>
+        <label for="">Phone No.</label>
+        <input type="number">
+        <label for="">Email Id</label>
+        <input type="email">
+        <button>Signup</button>
+        
+
+    </form>
+</body>
+</html>

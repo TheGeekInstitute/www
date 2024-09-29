@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            display: flex;
+            /* border: 1px solid black; */
+            height: 4rem;
+            width: 100vw;
+            padding-left: 65rem;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+        }
+        .nav input[type=submit]{
+            color: white;
+           height: 2.2rem;
+           width: 6rem;
+           border-radius: 5px;
+           background-color: rgb(44, 92, 252);
+           cursor: pointer;
+        }
+        .nav input:hover[type=submit]{
+            background-color: rgb(13, 47, 158);
+        }
+        .nav a{
+            color: rgb(87, 86, 86);
+        }
+        .nav a:hover{
+            border-bottom: 1px solid black;
+        }
+        .google{
+            border: 1px solid black;
+            /* position: absolute; */
+            padding-top: 5rem;
+            padding-right: 12rem;
+            height: 18rem;
+            width: 100rem;
+            text-align: center;
+           font-size: 3rem;
+        }
+        .google h1 .g{
+            color: rgb(50, 92, 233);
+        }
+        .google h1 .o{
+            color: rgb(230, 61, 61);
+        }
+        .google h1 .oi{
+            color: orange;
+        }
+        .google h1 .l{
+            color: green;
+        }
+        .google input[type=text]{
+            border: 1px solid rgb(184, 184, 184);
+            width: 35rem;
+            height: 3rem;
+            border-radius: 5rem;
+            outline: none;
+            padding-left: 55px;
+            background-color: transparent;
+            font-size: 15px;
+        }
+        .google i{
+        color: grey;
+        position: absolute;
+        font-size: 15px;
+        top: 18rem;
+        left: 34rem;
+     }
+     .loy{
+        /* border: 1px solid black; */
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+     }
+     .loy button{
+        color: rgb(63, 61, 61);
+        margin-inline: 1.7rem;
+        background-color: transparent;
+        border: none;
+        width: 8rem;
+      cursor: pointer;
+    }
+    .loy button:hover{
+        border: 1px solid rgb(197, 197, 197);
+        /* height: 2rem; */
+        border-radius: 5px;
+    }
+     .ptx{
+        margin-top: 1rem;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+     }
+     .ptx li a{
+        margin-inline: .3rem;
+        color: rgb(53, 17, 255);
+    }
+    .ptx li a:hover{
+        border-bottom: 1px solid rgb(53, 17, 255);
+        /* color: rgb(53, 17, 255); */
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Images</a></li>
+        <li><a href=""></a></li>
+        <input type="submit" value="Sign in">
+    </div>
+    <div class="google">
+        <h1><span class="g">G</span><span class="o">o</span><span class="oi">o</span><span class="g">g</span><span class="l">l</span><span class="o">e</span></h1>
+        <i class="fa-solid fa-magnifying-glass search"></i>
+        <input type="text" >
+    </div>
+    <div class="loy">
+           <button>Google Search</button>
+            <button>I'm Felling Lucky</button>
+    </div>
+    <div class="ptx">
+            <p>Google offered in:</p>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">বাংলা</a></li>
+            <li><a href="#">తెలుగు</a></li>
+            <li><a href="#"> मराठी</a></li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">ગુજરાતી</a></li>
+            <li><a href="#">ಕನ್ನಡ</a></li>
+            <li><a href="#"> മലയാളം </a></li>
+            <li><a href="#">ਪੰਜਾਬੀ</a></li>
+     </div>
+    
+</body>
+</html>

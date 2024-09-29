@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d Card </title>
+    <style>
+          @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            background-color: lightsalmon;
+          
+          }
+          .card{
+            height:300px;
+            width: 250px;
+            margin: auto;
+            margin-top: 150px;
+            background-image: url("https://cdn.shopify.com/s/files/1/1172/5864/files/A_Guide_to_Water_Conservation_-_Saving_Water_and_the_Earth_480x480.jpg?v=1644994401");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+          }
+          .card:hover .box{
+            transform: translatey(-0%);
+            /* transition-duration:  1s; */
+            transition: all 1s;
+          }
+        .box img{
+          border: 1px solid red ;
+          height: 80px ;
+          width: 80px ;
+          border-radius: 100px ;
+        /* display: flex; */
+        
+        }
+       .box{
+        /* border: 1px solid red ; */
+        height: 300px;
+    width: 250px;
+    transform: translateY(85%);
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+    padding: 10px;
+    text-align: center;
+    overflow:hidden ;
+    
+    
+       }
+       .card .star{
+        margin-top: 80px ;
+       }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="box">
+            <h1>SAVE WATER</h1>
+            <img src="https://cdn.shopify.com/s/files/1/1172/5864/files/A_Guide_to_Water_Conservation_-_Saving_Water_and_the_Earth_480x480.jpg?v=1644994401.jpg" alt="">
+           
+            
+
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+       
+    
+</body>
+</html>

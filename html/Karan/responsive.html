@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        body{
+            background-image: linear-gradient(to bottom,rgb(50, 168, 109),#fff, rgb(63, 250, 7),red );
+            background-color:rgba(255, 255, 0, 0.192);
+            background-blend-mode: overlay;
+        }
+        .nav,.footer{
+            text-transform: capitalize;
+            text-shadow: 2px 2px 2px red;
+        }
+        .footer{
+            text-align: center;
+        }
+        .hero{
+            height: 80vh;
+            padding: 10rem;
+            color: black;
+            text-shadow: 2px 2px 2px blue;
+        }
+        .nav h1{
+            text-shadow: 2px 2px 2px red;
+        }
+        .nav, .nav ul{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+        }
+        .nav ul li a{
+            color: #ffff;
+            margin: 6px;
+            text-shadow: 3px 3px 3px 3px red;
+        }
+        .btn{
+            padding: 8px;
+            background-color: blue;
+            color: #ffff;
+            font-size: 18px;
+            border-radius: 5px;
+            border: 1px solid blue;
+            font-style: bold;
+            text-shadow: 2px 2px 2px red;
+            text-align: center;
+
+        }
+        .btn:hover{
+            background-color: #ffff;
+            color: black;
+            border: 1px solid #ffff;
+        }
+        .hero h1{
+            text-align: center;
+        }
+        .hero H2{
+            text-align: center;
+        }
+        @media only screen and (min-width:600px) {
+                .nav{
+                    font-size: 4rem;
+                    color: black;
+                    text-shadow: 2px 2px 2px red;
+                }
+                .footer{
+                    font-size: 4rem;
+                    color: black
+                    text-shadow: 2px 2px 2px red;
+                    
+                }
+                .hero{
+                    height: 80vh;
+                }
+                .hero h1{
+                    font-size: 4.3rem;
+                    padding-bottom: 7rem;
+                    color: black;
+                    text-shadow: 2px 2px 2px rgb(2, 248, 15);
+                }
+                .hero h2{
+                    /* padding: 2rem; */
+                    padding-bottom: 8rem;
+                    margin: auto;
+                    font-size: 7rem;
+                    color: black;
+                    text-shadow: 2px 2px 2px red;             }
+                .btn{
+
+                    font-size: 4rem;
+                    padding: 1rem;
+                    text-align: center;
+                    border-radius: 3rem;
+                    width: 45rem;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>heading &copy;
+            
+        </h1>
+        <!-- <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul> -->
+    </div>
+    <div class="hero">
+        <h1>CREATE OUR OWN WEBSITE</h1>
+        <H2>MAKE THIS WEBSITE FOR HIS OWN SDIE</H2>
+        <button class="btn">LOGIN HERE</button><br><br><br><br>
+        <button class="btn">SIGN UP HERE</button>
+    </div>
+    <div class="footer">
+        <h1>copy@right</h1>
+    </div>
+</body>
+</html>

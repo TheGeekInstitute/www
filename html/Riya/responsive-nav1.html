@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-nav</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 50px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            background-color:blue;
+            color: pink;
+        }
+        .nav #btn{
+            display: none;
+        }
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 300px;
+            font-family: cursive;
+        }
+        .nav .links{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .nav .links li a{
+            display: block;
+            line-height: 40px;
+            padding: 0 10px;
+            margin: 10px;
+            color: white;
+            font-size: larger;
+        }
+        .nav .links li a:hover{
+            background-color: brown;
+        }
+        .nav .btns{
+            font-size: 40px;
+        }
+        .nav .btns,
+        .nav .btns .open,
+        .nav .btns .close{
+
+            display: none;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width:600px){
+            
+        
+
+            .nav .btns,
+            .nav .btns .open{
+                display: block;
+            }
+            body{
+                background-color: aquamarine;
+            }
+ 
+        .nav .links{
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            left:0;
+            right:0;
+            background-color: brown;
+            flex-direction: column;
+            text-align: center;
+            display: none;
+        }
+        .nav .links li a{
+            margin: 0;
+        }
+        .nav #btn:checked + .links{
+            display: block;
+        }
+        .nav #btn:checked ~ .btns .open{
+            display: none;
+        
+        }
+        .nav #btn:checked ~ .btns .close{
+            display: block;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LOGO</div>
+        <input type="checkbox" id="btn">
+        <ul class="links">
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">content</a></li>
+        </ul>
+        <label for="btn" class="btns">
+            <i class="fa-solid fa-bars open"></i>
+            <i class="fa-solid fa-xmark close"></i>
+        </label>
+    </div>
+</body>
+</html>

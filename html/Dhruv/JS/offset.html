@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box{
+            height: 200px;
+            width: 250px;
+            margin: 150px 100px;
+            border: 5px solid red;
+            /* padding: 5px; */
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box"></div>
+<script>
+    let box = document.querySelector(".box");
+
+    // console.log(box.offsetWidth);
+    // console.log(box.offsetHeight);
+
+    // console.log(box.clientHeight)
+
+
+    box.addEventListener('mousedown',(abcd)=>{
+        // console.log(abcd.clientX)
+
+        // console.log(abcd.pageX)
+
+        // console.log(abcd.screenX)
+        // console.log(abcd.offsetX)
+
+        // console.log(abcd.button)
+
+        if(abcd.button==0){
+            document.body.style.backgroundColor ="green";
+        }
+        else if(abcd.button ==1){
+            document.body.style.backgroundColor ="cyan";
+        }
+        else if(abcd.button == 2){
+            document.body.style.backgroundColor ="blue";
+        }
+        else{
+            document.body.style.backgroundColor ="white";
+
+        }
+
+
+
+    })
+
+</script>
+
+</body>
+</html>

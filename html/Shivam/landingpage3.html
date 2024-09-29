@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #0277bb;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+        .heading{
+            /* border: 1px solid black; */
+            /* align-items: center; */
+            padding: 5rem 0vw;
+            border-bottom: 2px solid white;
+            margin: 10px 15vw;
+            
+        }
+        .heading h1{
+            font-size: 38px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+        }
+       .center{
+        display: flex;
+        margin: 4rem 15vw;
+    }
+    .cantent{
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 300;
+        width: 45vw;
+        
+       }
+       .para2{
+        font-size: 25px;
+        margin: 20px 0px;
+
+       }
+       .form{
+           padding: 7rem 2rem;
+           /* border: 1px solid black; */
+           background: #14475e92;
+           border-radius: 3px;
+        }
+        .form h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           font-size: 21px;
+           background: #14475e00;
+           /* border: 1px solid black; */
+           padding-bottom: 2rem;
+
+       }
+       input{
+        outline: none;
+        border: none;
+        /* margin: ; */
+        width: 16rem;
+        background: white;
+        padding: .8rem 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 5rem;
+        border-radius: 4px;
+        color: black;
+       }
+      input[type=submit]{
+        width: 10rem;
+        /* color: black; */
+        display: block;
+        margin: auto;
+        margin: 2rem 8.5rem;
+        padding: .8rem 1.3rem ;
+        background: rgb(255, 149, 0);
+        color: white;
+
+
+      }
+      .media{
+        margin-left:6.8vw ;
+        background:#14475e00;
+      }
+      .like,.Gplus,.tweet{
+        /* border: 1px solid black; */
+        margin: 5px 2px ;
+        padding: 4px 10px;
+        font-size: smaller;
+        border-radius: 5px;
+      }
+      .like{
+        background: #0f3b82;
+      }
+      .thume{
+        background:rgba(0, 0, 255, 0) ;
+        margin: 2px;
+        border-radius: 5px;
+
+      }
+      .Gplus{
+        padding: 4px 25px;
+        background: white;
+        color: red;
+        border-radius: 5px;
+
+      }
+      .tweet{
+
+
+      }
+      @media screen and (max-width:600px){
+        .heading{
+            /* border: 1px solid black; */
+            /* align-items: center; */
+            padding: 3rem 0vw;
+            /* border-bottom: 2px solid white; */
+            margin: 8px 2vw;
+            width: 84vw;
+            
+        }
+
+        .heading h1{
+          font-size: 29px ;
+        }
+        .center{
+          display: flex;
+          flex-direction: column;
+          margin: 2rem 1vw;
+          /* border: 1px solid black; */
+          width: 85vw;
+
+        }
+        .cantent{
+        font-size: 30px;
+        font-weight: 300;
+        width: 85vw;
+
+
+      }
+      .form{
+        margin-top: 50px;
+      }
+      .img img{
+        /* margin-left: 4vw; */
+        width: 85vw;
+      }
+      .media{
+        margin-left: 7rem;
+      }
+        
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Free Ebook: The Complete Guide to Facebook Ads</h1>
+    </div>
+    
+    <div class="center">
+        <div class="cantent">
+            <p>Want a crash course in everything you need to know about Facebook ads?</p>
+            <p class="para2">This 82-page ebook will teach you everthing, from budgeting and desing to advanced targeting, strategies to get the most bang for your buck, and much mare!</p>
+            <div class="img">
+              <img src="./1.png" alt="">
+            </div>
+        </div>
+        <div class="form">
+            <h1> Download Your Free Guide Today!</h1>
+            <input type="text" placeholder="Your First Name">
+            <input type="text" placeholder=" Your Email">
+            <input type="text" placeholder="Your business Website">
+            <input type="submit" value="Get My Free Ebook" >
+            <div class="media">
+            <a href="#" class="like"><i class="fa fa-thumbs-up thume" aria-hidden="true"></i>Like</a>
+            <a href="" ><i class="fa fa-google-plus Gplus" aria-hidden="true"></i></a>
+            <a href="#" class="tweet"><i class="fa fa-twitter tw" aria-hidden="true"></i>Tweet</a>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

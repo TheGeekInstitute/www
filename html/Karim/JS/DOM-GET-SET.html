@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 class="heading data" id="new" style="color: cadetblue;">Lorem ipsum <br> dolor sit <i>amet</i> consectetur adipisicing elit. Rerum, necessitatibus aspernatur! Recusandae libero assumenda molestias repellendus sit voluptatum ipsum accusamus rem quibusdam labore quia repellat perspiciatis cum possimus, maiores dolorum!</h1>
+    <p class="heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, totam iste illo veritatis aliquid mollitia, libero inventore consequatur assumenda veniam atque asperiores alias eaque quos soluta dolor ea. Sit, nam!</p>
+    <b class="heading">Bold text</b>
+
+
+    <button onclick="change()">Change data</button>
+
+    <script>
+        let heading = document.querySelector("#new");
+        // let heading = document.querySelector(".heading");
+        // let heading = document.querySelectorAll(".heading")[2];
+
+         function change(){
+            // console.log(heading.innerHTML)
+            // console.log(heading.innerText)
+            // console.log(heading.getAttribute("id"))
+            // console.log(heading.getAttributeNode("class"))
+            // console.log(heading.attributes)
+            // heading.innerHTML = "<i>sfdfsdfsdfs</i>"
+
+            // heading.innerText = "<i>sfdfsdfsdfs</i>"
+
+            heading.setAttribute("style","color:cadetblue;")
+            heading.removeAttribute("style");
+
+        }
+
+        console.log(heading)
+    </script>
+</body>
+</html>

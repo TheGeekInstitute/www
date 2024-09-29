@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para::first-letter{
+            color: red;
+            font-size: xx-large;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: blue;
+        }
+
+
+        .para::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+
+        .para{
+            user-select: all;
+        }
+
+        ul li::marker{
+            color: red;
+        }
+
+        input::placeholder{
+            color: red;
+        }
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button{
+            color: white;
+            background-color: crimson;
+            border: 2px solid black;
+        }
+
+
+        #geek:hover::after{
+            content: ' Institute';
+            color: red;
+            
+        }
+
+        #geek::before{
+            content: attr(data-myattr) " ";
+            color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, tempore. Vel mollitia tenetur illo odio dolore laborum aperiam consequatur obcaecati nostrum recusandae! Similique nesciunt facilis, cupiditate porro voluptatem quae vero.
+    </div>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <h1 id="geek" data-myattr="The">Geek</h1>
+
+    <input type="text" placeholder="abcd" id="txt">
+
+    <input type="file"  id="file">
+</body>
+</html>

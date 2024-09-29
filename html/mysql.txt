@@ -1,0 +1,1296 @@
+Microsoft Windows [Version 10.0.22631.3155]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Geek-Institute>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 11
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+5 rows in set (0.001 sec)
+
+MariaDB [(none)]> create database mydb;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> use mydb
+Database changed
+MariaDB [mydb]> create table emp (emp_no int(5), name varchar(50), gender char(1), salary decimal(10,2));
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.012 sec)
+
+MariaDB [mydb]> insert into emp VALUES (1,"Amit","M",45000.00),(2,"Sumit","M",78000.00),(3,"Ravi","M",52000.00),(4,"Geeta","F",25000.00),(5,"Sarita","F",74000.00),(6,"Bablu","M",25000.00);
+Query OK, 6 rows affected (0.002 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      | 45000.00 |
+|      2 | Sumit  | M      | 78000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> select name from emp;
++--------+
+| name   |
++--------+
+| Amit   |
+| Sumit  |
+| Ravi   |
+| Geeta  |
+| Sarita |
+| Bablu  |
++--------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> select name,gender from emp;
++--------+--------+
+| name   | gender |
++--------+--------+
+| Amit   | M      |
+| Sumit  | M      |
+| Ravi   | M      |
+| Geeta  | F      |
+| Sarita | F      |
+| Bablu  | M      |
++--------+--------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where gender="M";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where gender="M";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary>50000;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      2 | Sumit  | M      | 78000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      5 | Sarita | F      | 74000.00 |
++--------+--------+--------+----------+
+3 rows in set (0.001 sec)
+
+MariaDB [mydb]> select * from emp where salary<50000;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      4 | Geeta | F      | 25000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary<52000;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      4 | Geeta | F      | 25000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+3 rows in set (0.001 sec)
+
+MariaDB [mydb]> select * from emp where salary<=52000;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      4 | Geeta | F      | 25000.00 |
+|      6 | Bablu | M      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary=52000 ;
++--------+------+--------+----------+
+| emp_no | name | gender | salary   |
++--------+------+--------+----------+
+|      3 | Ravi | M      | 52000.00 |
++--------+------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary>52000 and gender="M";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      2 | Sumit | M      | 78000.00 |
++--------+-------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary>=52000 and gender="M";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
++--------+-------+--------+----------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary>=52000 OR gender="M";
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      | 45000.00 |
+|      2 | Sumit  | M      | 78000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 25000.00 |
++--------+--------+--------+----------+
+5 rows in set (0.000 sec)
+
+MariaDB [mydb]> update emp set salary=30000.00 where emp_no=6;
+Query OK, 1 row affected (0.001 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      | 45000.00 |
+|      2 | Sumit  | M      | 78000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      6 | Bablu  | M      | 30000.00 |
++--------+--------+--------+----------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]>
+MariaDB [mydb]> update emp set name="Deepika" , gender="F" where emp_no=6;
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> insert into emp VALUES (10,"Deepika","F",30000.00);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|     10 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+7 rows in set (0.000 sec)
+
+MariaDB [mydb]> update emp set emp_no=7 where emp_no=10;
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      7 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+7 rows in set (0.000 sec)
+
+MariaDB [mydb]> delete from emp where emp_no=7;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+6 rows in set (0.000 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Setting environment for using XAMPP for Windows.
+Geek-Institute@DESKTOP-HDAC0NG c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use mydb
+Database changed
+MariaDB [mydb]> show tables;
++----------------+
+| Tables_in_mydb |
++----------------+
+| emp            |
++----------------+
+1 row in set (0.001 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
++--------+---------+--------+----------+
+7 rows in set (0.044 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.618 sec)
+
+MariaDB [mydb]> insert into emp VALUES (9,NULL,"M",NULL);
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | NULL    | M      |     NULL |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary=NULL;
+Empty set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where  salary is NULL;
++--------+------+--------+--------+
+| emp_no | name | gender | salary |
++--------+------+--------+--------+
+|      9 | NULL | M      |   NULL |
++--------+------+--------+--------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where  name is NULL;
++--------+------+--------+--------+
+| emp_no | name | gender | salary |
++--------+------+--------+--------+
+|      9 | NULL | M      |   NULL |
++--------+------+--------+--------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where  name is NOT NULL;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
++--------+---------+--------+----------+
+7 rows in set (0.000 sec)
+
+MariaDB [mydb]> update emp set salary=85000.00 where emp_no=9;
+Query OK, 1 row affected (0.002 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | NULL    | M      | 85000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.001 sec)
+
+MariaDB [mydb]> update emp set name="Bablu" , salary=45000.00 where emp_no=9;
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.001 sec)
+
+
+MariaDB [mydb]> select * from emp  order by name asc;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      9 | Bablu   | M      | 45000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      2 | Sumit   | M      | 78000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp  order by name desc;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      2 | Sumit   | M      | 78000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      9 | Bablu   | M      | 45000.00 |
+|      1 | Amit    | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp  order by emp_no desc;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      9 | Bablu   | M      | 45000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      1 | Amit    | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp  order by emp_no desc;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      9 | Bablu   | M      | 45000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      1 | Amit    | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp  order by emp_no desc;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      9 | Bablu   | M      | 45000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      1 | Amit    | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      4 | Geeta | F      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+
+MariaDB [mydb]> select * from emp limit 3,4;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
++--------+---------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4,4;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4,2;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      4 | Geeta | F      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4,3;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
++--------+---------+--------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp limit 4;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      4 | Geeta | F      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp order by emp_no limit 4;
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
+|      3 | Ravi  | M      | 52000.00 |
+|      4 | Geeta | F      | 25000.00 |
++--------+-------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp order by emp_no  desc limit 4;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      9 | Bablu   | M      | 45000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      5 | Sarita  | F      | 74000.00 |
++--------+---------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]>
+MariaDB [mydb]>
+MariaDB [mydb]>
+MariaDB [mydb]>
+MariaDB [mydb]>
+MariaDB [mydb]>
+MariaDB [mydb]> select min(salary) from emp;
++-------------+
+| min(salary) |
++-------------+
+|    25000.00 |
++-------------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select min(salary)  as "ABCD" from emp;;
++----------+
+| ABCD     |
++----------+
+| 25000.00 |
++----------+
+1 row in set (0.000 sec)
+
+ERROR: No query specified
+
+MariaDB [mydb]> select min(salary)  as "Lowest Salary" from emp;;
++---------------+
+| Lowest Salary |
++---------------+
+|      25000.00 |
++---------------+
+1 row in set (0.000 sec)
+
+ERROR: No query specified
+
+MariaDB [mydb]> select max(salary)  as "Lowest Salary" from emp;;
++---------------+
+| Lowest Salary |
++---------------+
+|      78000.00 |
++---------------+
+1 row in set (0.000 sec)
+
+ERROR: No query specified
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select distinct(gender) from emp;
++--------+
+| gender |
++--------+
+| M      |
+| F      |
++--------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select distinct(gender) as "Total gender" from emp;
++--------------+
+| Total gender |
++--------------+
+| M            |
+| F            |
++--------------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "S%";
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      2 | Sumit  | M      | 78000.00 |
+|      5 | Sarita | F      | 74000.00 |
++--------+--------+--------+----------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "%a";
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "%a";
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [mydb]> select count(emp_no) as "Total EMP" from emp;
++-----------+
+| Total EMP |
++-----------+
+|         8 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select sum(salary) as "Total salary" from emp;
++--------------+
+| Total salary |
++--------------+
+|    394882.00 |
++--------------+
+1 row in set (0.001 sec)
+
+MariaDB [mydb]> select * from emp where name like "%_a";
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+3 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "%_ka";
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      6 | Deepika | F      | 30000.00 |
++--------+---------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "_a";
+Empty set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "____a";
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      4 | Geeta | F      | 25000.00 |
++--------+-------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "_____a";
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      5 | Sarita | F      | 74000.00 |
++--------+--------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name like "_____a";
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      5 | Sarita | F      | 74000.00 |
++--------+--------+--------+----------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      2 | Sumit   | M      | 78000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary in (45000.00,52000.00,30000.00);
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      1 | Amit    | M      | 45000.00 |
+|      3 | Ravi    | M      | 52000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary not in (45000.00,52000.00,30000.00);
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      2 | Sumit  | M      | 78000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      8 | Nikhil | M      | 45882.00 |
++--------+--------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary not in (45000.00,52000.00,30000.00);
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      2 | Sumit  | M      | 78000.00 |
+|      4 | Geeta  | F      | 25000.00 |
+|      5 | Sarita | F      | 74000.00 |
+|      8 | Nikhil | M      | 45882.00 |
++--------+--------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name in ("Amit","Sumit");
++--------+-------+--------+----------+
+| emp_no | name  | gender | salary   |
++--------+-------+--------+----------+
+|      1 | Amit  | M      | 45000.00 |
+|      2 | Sumit | M      | 78000.00 |
++--------+-------+--------+----------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where name NOT in ("Amit","Sumit");
++--------+---------+--------+----------+
+| emp_no | name    | gender | salary   |
++--------+---------+--------+----------+
+|      3 | Ravi    | M      | 52000.00 |
+|      4 | Geeta   | F      | 25000.00 |
+|      5 | Sarita  | F      | 74000.00 |
+|      6 | Deepika | F      | 30000.00 |
+|      8 | Nikhil  | M      | 45882.00 |
+|      9 | Bablu   | M      | 45000.00 |
++--------+---------+--------+----------+
+6 rows in set (0.000 sec)
+
+MariaDB [mydb]> select * from emp where salary between 45000.00 and 60000.00;
++--------+--------+--------+----------+
+| emp_no | name   | gender | salary   |
++--------+--------+--------+----------+
+|      1 | Amit   | M      | 45000.00 |
+|      3 | Ravi   | M      | 52000.00 |
+|      8 | Nikhil | M      | 45882.00 |
+|      9 | Bablu  | M      | 45000.00 |
++--------+--------+--------+----------+
+4 rows in set (0.000 sec)
+
+MariaDB [mydb]> --sdasd:
+MariaDB [mydb]> select (emp_no+salary) from emp;
++-----------------+
+| (emp_no+salary) |
++-----------------+
+|        45001.00 |
+|        78002.00 |
+|        52003.00 |
+|        25004.00 |
+|        74005.00 |
+|        30006.00 |
+|        45890.00 |
+|        45009.00 |
++-----------------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> select 66+90;
++-------+
+| 66+90 |
++-------+
+|   156 |
++-------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> select 66+90 as "SUM";
++-----+
+| SUM |
++-----+
+| 156 |
++-----+
+1 row in set (0.000 sec)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Setting environment for using XAMPP for Windows.
+Geek-Institute@DESKTOP-HDAC0NG c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use mydb;
+Database changed
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+4 rows in set (0.017 sec)
+
+MariaDB [mydb]> alter table emp add city varchar(30);
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.011 sec)
+
+MariaDB [mydb]> alter table emp add email varchar(30);
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| email  | varchar(30)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.012 sec)
+
+MariaDB [mydb]> alter table emp drop email;
+Query OK, 0 rows affected (0.022 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | char(1)       | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.010 sec)
+
+MariaDB [mydb]> alter table emp modify gender varchar(10);
+Query OK, 8 rows affected (0.045 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | YES  |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.011 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+------+
+| emp_no | name    | gender | salary   | city |
++--------+---------+--------+----------+------+
+|      1 | Amit    | M      | 45000.00 | NULL |
+|      2 | Sumit   | M      | 78000.00 | NULL |
+|      3 | Ravi    | M      | 52000.00 | NULL |
+|      4 | Geeta   | F      | 25000.00 | NULL |
+|      5 | Sarita  | F      | 74000.00 | NULL |
+|      6 | Deepika | F      | 30000.00 | NULL |
+|      8 | Nikhil  | M      | 45882.00 | NULL |
+|      9 | Bablu   | M      | 45000.00 | NULL |
++--------+---------+--------+----------+------+
+8 rows in set (0.029 sec)
+
+
+MariaDB [mydb]> alter table emp modify emp_no int(5) NOT NULL;
+Query OK, 0 rows affected (0.045 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+5 rows in set (0.011 sec)
+
+MariaDB [mydb]> alter table emp add phone varchar(30);
+Query OK, 0 rows affected (0.007 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> alter table emp modify phone varchar(10) UNIQUE;
+Query OK, 8 rows affected (0.060 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+------+-------+
+| emp_no | name    | gender | salary   | city | phone |
++--------+---------+--------+----------+------+-------+
+|      1 | Amit    | M      | 45000.00 | NULL | NULL  |
+|      2 | Sumit   | M      | 78000.00 | NULL | NULL  |
+|      3 | Ravi    | M      | 52000.00 | NULL | NULL  |
+|      4 | Geeta   | F      | 25000.00 | NULL | NULL  |
+|      5 | Sarita  | F      | 74000.00 | NULL | NULL  |
+|      6 | Deepika | F      | 30000.00 | NULL | NULL  |
+|      8 | Nikhil  | M      | 45882.00 | NULL | NULL  |
+|      9 | Bablu   | M      | 45000.00 | NULL | NULL  |
++--------+---------+--------+----------+------+-------+
+8 rows in set (0.001 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   |     | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  | UNI | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.011 sec)
+
+MariaDB [mydb]> update emp set phone="1234567890" where emp_no=1;
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> update emp set phone="1234567890" where emp_no=2;
+ERROR 1062 (23000): Duplicate entry '1234567890' for key 'phone'
+MariaDB [mydb]> alter table emp modify emp_no int(5) PRIMARY KEY;
+Query OK, 0 rows affected (0.043 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  | UNI | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.011 sec)
+
+
+MariaDB [mydb]> alter table emp add age int(10) CHECK (age>=18);
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  | UNI | NULL    |       |
+| age    | int(10)       | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+7 rows in set (0.013 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+------+------------+------+
+| emp_no | name    | gender | salary   | city | phone      | age  |
++--------+---------+--------+----------+------+------------+------+
+|      1 | Amit    | M      | 45000.00 | NULL | 1234567890 | NULL |
+|      2 | Sumit   | M      | 78000.00 | NULL | NULL       | NULL |
+|      3 | Ravi    | M      | 52000.00 | NULL | NULL       | NULL |
+|      4 | Geeta   | F      | 25000.00 | NULL | NULL       | NULL |
+|      5 | Sarita  | F      | 74000.00 | NULL | NULL       | NULL |
+|      6 | Deepika | F      | 30000.00 | NULL | NULL       | NULL |
+|      8 | Nikhil  | M      | 45882.00 | NULL | NULL       | NULL |
+|      9 | Bablu   | M      | 45000.00 | NULL | NULL       | NULL |
++--------+---------+--------+----------+------+------------+------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> update emp set age=10 where emp_no=1;
+ERROR 4025 (23000): CONSTRAINT `emp.age` failed for `mydb`.`emp`
+MariaDB [mydb]> update emp set age=18 where emp_no=1;
+Query OK, 1 row affected (0.003 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+------+------------+------+
+| emp_no | name    | gender | salary   | city | phone      | age  |
++--------+---------+--------+----------+------+------------+------+
+|      1 | Amit    | M      | 45000.00 | NULL | 1234567890 |   18 |
+|      2 | Sumit   | M      | 78000.00 | NULL | NULL       | NULL |
+|      3 | Ravi    | M      | 52000.00 | NULL | NULL       | NULL |
+|      4 | Geeta   | F      | 25000.00 | NULL | NULL       | NULL |
+|      5 | Sarita  | F      | 74000.00 | NULL | NULL       | NULL |
+|      6 | Deepika | F      | 30000.00 | NULL | NULL       | NULL |
+|      8 | Nikhil  | M      | 45882.00 | NULL | NULL       | NULL |
+|      9 | Bablu   | M      | 45000.00 | NULL | NULL       | NULL |
++--------+---------+--------+----------+------+------------+------+
+8 rows in set (0.000 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  | UNI | NULL    |       |
+| age    | int(10)       | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+7 rows in set (0.014 sec)
+
+MariaDB [mydb]> alter table emp drop INDEX phone;
+Query OK, 0 rows affected (0.009 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  |     | NULL    |       |
+| age    | int(10)       | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+7 rows in set (0.012 sec)
+
+
+MariaDB [mydb]> alter table emp drop age;
+Query OK, 0 rows affected (0.006 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.012 sec)
+
+MariaDB [mydb]> create table students (roll_no int(5) PRIMARY KEY, name varchar(30) NOT NULL);
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [mydb]> desc students;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| roll_no | int(5)      | NO   | PRI | NULL    |       |
+| name    | varchar(30) | NO   |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+2 rows in set (0.012 sec)
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | NULL    |       |
+| phone  | varchar(10)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.011 sec)
+
+
+MariaDB [mydb]> alter table emp alter city SET DEFAULT "Delhi";
+Query OK, 0 rows affected (0.005 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [mydb]> desc emp;
++--------+---------------+------+-----+---------+-------+
+| Field  | Type          | Null | Key | Default | Extra |
++--------+---------------+------+-----+---------+-------+
+| emp_no | int(5)        | NO   | PRI | NULL    |       |
+| name   | varchar(50)   | YES  |     | NULL    |       |
+| gender | varchar(10)   | YES  |     | NULL    |       |
+| salary | decimal(10,2) | YES  |     | NULL    |       |
+| city   | varchar(30)   | YES  |     | Delhi   |       |
+| phone  | varchar(10)   | YES  |     | NULL    |       |
++--------+---------------+------+-----+---------+-------+
+6 rows in set (0.013 sec)
+
+MariaDB [mydb]> insert into emp (emp_no,name,gender) VALUE (10,"AA","Male");
+Query OK, 1 row affected (0.003 sec)
+
+MariaDB [mydb]> select * from emp;
++--------+---------+--------+----------+-------+------------+
+| emp_no | name    | gender | salary   | city  | phone      |
++--------+---------+--------+----------+-------+------------+
+|      1 | Amit    | M      | 45000.00 | NULL  | 1234567890 |
+|      2 | Sumit   | M      | 78000.00 | NULL  | NULL       |
+|      3 | Ravi    | M      | 52000.00 | NULL  | NULL       |
+|      4 | Geeta   | F      | 25000.00 | NULL  | NULL       |
+|      5 | Sarita  | F      | 74000.00 | NULL  | NULL       |
+|      6 | Deepika | F      | 30000.00 | NULL  | NULL       |
+|      8 | Nikhil  | M      | 45882.00 | NULL  | NULL       |
+|      9 | Bablu   | M      | 45000.00 | NULL  | NULL       |
+|     10 | AA      | Male   |     NULL | Delhi | NULL       |
++--------+---------+--------+----------+-------+------------+
+9 rows in set (0.000 sec)
+
+MariaDB [mydb]> create table abcd (sr_no int(10) PRIMARY KEY AUTO_INCREMENT, name varchar(30));
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [mydb]> desc abcd;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| sr_no | int(10)     | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(30) | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+2 rows in set (0.011 sec)
+
+MariaDB [mydb]> insert into abcd (name) VALUES ("Amit");
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [mydb]> select * from abcd;
++-------+------+
+| sr_no | name |
++-------+------+
+|     1 | Amit |
++-------+------+
+1 row in set (0.000 sec)
+
+MariaDB [mydb]> insert into abcd (name) VALUES ("Sumit");
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [mydb]> select * from abcd;
++-------+-------+
+| sr_no | name  |
++-------+-------+
+|     1 | Amit  |
+|     2 | Sumit |
++-------+-------+
+2 rows in set (0.000 sec)
+
+MariaDB [mydb]>

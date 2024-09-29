@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            width: 100vw;
+            height: 100vh;
+            /* margin: 50px auto; */
+            display: grid;
+            grid-template-columns:100px 1fr 100px ;
+            grid-template-rows: 70px 40px 1fr 50px  ;
+            gap: 5px;
+
+            grid-template-areas: "header header header"
+                                 "nav nav nav" 
+                                 "left-sidebar main right-sidebar"
+                                 "footer footer footer"             
+            ;
+
+
+        }
+
+        .box {
+            text-align: center;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            grid-area: header;
+   
+        }
+
+        .box2 {
+            background-color: green;
+            grid-area: nav;
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+            grid-area: left-sidebar;
+        }
+
+        .box4 {
+            background-color: cyan;
+            grid-area: main;
+
+        }
+
+        .box5 {
+            background-color: plum;
+            grid-area: right-sidebar;
+
+        }
+
+        .box6 {
+            background-color: crimson;
+            grid-area: footer;
+     
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">header</div>
+        <div class="box box2">nav</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">footer</div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

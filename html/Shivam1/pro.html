@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            /* border: 1px solid black; */
+            height: 50px;
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+        .nav:first-child{
+            user-select: none;
+        }
+        .nav h1 span{
+            color:rgb(241, 151, 78);
+        }
+        .nav ul li{
+            /* border: 1px solid red; */
+            display: inline-block;
+            padding: 14px 5px;
+            /* margin-left: 80px; */
+        }
+        .nav ul li a{
+            color: gray;
+            font-size: large;
+            margin: 2vw;
+        }
+        .sub{
+            position: absolute;
+            display: block;
+            /* border: 1px solid black; */
+            background-color: rgb(211, 199, 199);
+            box-shadow: 2px 3px 3px black;
+            top: 50px;
+            right: 37vw;
+            visibility: hidden;
+        }
+        .nav ul li ul li{
+            display: block;
+            
+        }
+        .nav ul li:hover{
+            background-color: aqua;
+            color: black;
+        }
+        .nav ul li:hover .sub{
+            visibility: visible;
+        }
+        .main{
+            text-align: center;
+            margin-top: 10px;
+        }.main h2+p{
+            color: gray;
+        }
+        .abcd>img{
+            width: 100%;
+            padding: 2px;
+            margin-top: 20px;
+        }
+
+        .abcd{
+            display: inline-block;
+            /* border: 1px solid red; */
+            width: 20vw;
+        }
+        .partner{
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            margin: 10px 0px 10px 0px;
+        }
+        .footer{
+            border: 1px solid red;
+            height: 100px;
+        }
+        .container{
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .review{
+            border: 1px solid red;
+            height: 20vh;
+            width: 30vw;
+            /* overflow: hidden; */
+        }
+        .review video{
+            width:100%;
+            margin-top: 40px;
+        }
+        .review img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .img{
+            display: flex;
+        }
+        .Testimonials{
+            padding: 10px 0px 0px 35px ;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h1>YOUR<span>logo</span></h1>
+        <ul>
+            <li><a href="#" style="color: rgb(241, 151, 78);">Home</a></li>
+            <li><a href="#">Pages</a>
+            <ul class="sub">
+                <li><a href="#">Page1</a></li>
+                <li><a href="#">Page2</a></li>
+            </ul></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section>
+        <img src="../web/images/16.jpg" alt="" width="100%" height="300px">
+    </section>
+    <section class="main">
+        <h2>Create Your Own Genuine Web Masterpiece</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="abcd">
+            <img src="../web/images/20.jpg" alt="">
+            <p>Awesome title</p>
+        </div>
+
+        <div class="abcd">
+            <img src="../web/images/20.jpg" alt="">
+            <p>Awesome title</p>
+        </div>
+
+        <div class="abcd">
+            <img src="../web/images/20.jpg" alt="">
+            <p>Awesome title</p>
+        </div>
+
+        <div class="abcd">
+            <img src="../web/images/20.jpg" alt="">
+            <p>Awesome title</p>
+        </div>
+    </section>
+    <div class="title"> 
+        <h2 class="video_tour">Video Tour</h2> <h2>Testimonials</h2>
+    </div>
+    <section class="container">
+       <div class="review">
+        <video src="../video.mp4" controls ></video>
+       </div>
+       <div class="review Testimonials">
+            <div class="img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQECwbHBrpDMAM_QoOYjwQWlmgzEgEGQ75i-A&usqp=CAU" alt="img">
+                <div>
+                    <h3>Peyush Bansal</h3>
+                    <h4>Manger</h4>
+                </div>
+                
+            </div>
+       </div>
+       <div class="review">3
+
+       </div> 
+        
+        
+    </section>
+    <section class="partner">
+        <div class="box">
+            <p>PARTNER'S <H3>LOGO</H3> </p>
+        </div>
+        <div class="box">
+            <p>PARTNER'S <H3>LOGO</H3> </p>
+        </div>
+        <div class="box">
+            <p>PARTNER'S <H3>LOGO</H3> </p>
+        </div>
+        <div class="box">
+            <p>PARTNER'S <H3>LOGO</H3> </p>
+        </div>
+        <div class="box">
+            <p>PARTNER'S <H3>LOGO</H3> </p>
+        </div>
+    </section>
+    <section>
+        <div class="footer">footer</div>
+    </section>
+</body>
+</html>

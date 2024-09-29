@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+/* 
+            margin-top: calc(50vh - 150px);
+            margin-left: calc(50vw - 150px); */
+            
+        }
+
+        .text{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            /* font-size: 60px; */
+            text-align: center;
+            /* line-height: 300px; */
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s;
+            /* transform: rotateY(180deg); */
+            
+        }
+
+        .go,.end{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            box-shadow: 2px 2px 3px greenyellow;
+        }
+
+        .go{
+            background-color: cyan;
+        }
+        
+        .end{
+            background-color: rgb(211, 14, 129);
+            transform: rotateY(180deg);
+            padding: 20px;
+        }
+        .go img{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+        }
+.box:hover .text{
+    transform: rotatey(180deg);
+
+
+}
+
+.sir{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.sir .pera{
+    color: rgb(21, 68, 196);
+    font: x-large;
+    line-height: 15px;
+    text-align: justify;
+    margin: 20px;
+
+}
+
+
+
+.name{
+    position: absolute;
+    color: rgb(132, 32, 214);
+    /* z-index: 1000; */
+    font-size: 60px;
+    display: inline-block;
+    left: 00px;
+    top: 232px;
+    background-color:rgba(0, 0, 0, 0.534);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 300px;
+    text-shadow: 2px 2px 2px white, 2px 2px 4px greenyellow ;
+    /* margin-top: -150px; */
+    /* border: 1px solid balc; */
+}
+
+</style>
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="text">
+            <div class="go">
+                <h1 class="name">Dhruv</h1>
+                <img src="../web/images/13.png" alt="">
+            </div>
+            <div class="end">
+                <p class="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe distinctio voluptate, nihil fuga odio possimus illum quae impedit! Voluptatem rem, atque laboriosam accusantium corporis reprehenderit ut ea earum similique! Voluptate!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci perspiciatis autem laboriosam tenetur quos dicta laudantium aut voluptatibus eligendi, natus, voluptatem exercitationem veritatis consequatur iusto nesciunt iste suscipit? Ut.
+                </p>
+                <h1 class="sir">Dhruv</h1>
+              
+            </div>
+        </div>
+    </div>
+</body>
+</html>

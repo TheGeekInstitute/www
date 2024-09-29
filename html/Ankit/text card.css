@@ -1,0 +1,59 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+body{
+    background-color: rgb(214, 183, 103);
+}
+.card{
+    height: 400px;
+    width: 500px;
+    text-align: center;
+    margin:auto;
+   
+    padding-bottom: 0px ;
+    margin-top: 100px;
+    background-color: rgb(79, 221, 221);
+    border-radius:50px;  
+      box-shadow: 5px whitesmoke;       }
+    .card img{
+       border:5px solid black; 
+       border-radius:50%;
+       height: 120px;
+       width: 120px;
+
+    }
+    .name{
+      
+        text-shadow: 5px 6px 8px red;
+    }
+
+    .about{
+        text-transform: capitalize;
+        text-align: justify;
+        text-decoration: wavy;       
+       color: darkred;
+       letter-spacing: 1px;
+       word-spacing: 10px;
+       line-height: 18px;
+       white-space: pre-wrap;
+       
+    }
+    .pro{
+        border:1px whitesmoke;
+        border-top-left-radius: 10%;
+        border-top-right-radius:10px; 
+        
+    }
+    .jim{
+        outline-style: dotted;
+        outline-color: crimson;
+
+    }
+
+
+
+       
+        /* color: azure; */
+    }
+               

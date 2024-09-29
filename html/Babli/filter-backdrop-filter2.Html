@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+        img{
+            height:300px;
+            width:300px ;
+            object-fit:cover;
+
+            filter:blur(5);
+            /* filter:brightness(150x); */
+            filter:contrast(150px) brightness(150px);
+            filter:drop-shadow(4px 4px black);
+            /* filter:grayscale(50%); */
+            /* filter:hue-rotate(200deg); */
+            /* filter:invert(1); */
+            /* filter:opacity(50%); */
+            /* filter:saturate(100%); */
+            /* filter:sepia(200%); */
+        }
+
+       .container{
+        border:2px  solid black ;
+        height:400px ;
+        width:400px ;
+        background-image:url("../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg");
+        background-size:cover ;
+        background-position:center ;
+        background-repeat:no-repeat ;
+        display:flex ;
+        align-items:center ;
+        justify-content:center ;
+       }
+
+       .container .box{
+        /* border:2px solid blue ; */
+        height:150px ;
+        width:150px ;
+       }
+
+       @supports(backdrop-filter:saturate(200%)){
+        .container .box{
+        backdrop-filter:saturate(200%) blur(3px);
+    }
+       }
+
+       @supports not (backdrop-filter:saturate(200%)){
+        .container .box{
+            background-color: rgba(156, 66, 66, 0.582);
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+	<img src="../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg" alt="">
+
+    <!-- <img src="https://cdn.freebiesupply.com/images/large/2x/apple-logo-transparent.png" alt="">   -->
+
+
+    <div class="container">
+        <div class="box">
+            <h1>A Dolphin</h1>
+        </div>
+    </div>
+</body>
+</html>
+
+

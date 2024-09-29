@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(206, 255, 239);
+        }
+.card{
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 250px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 12px;
+    background-image: url("https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* filter: blur(1px); */
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px black;
+}
+.box{
+    /* border: 2px solid red; */
+    height: 300px;
+    width: 250px;
+    transform: translateY(80%);
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .3s;
+    padding: 10px;
+    text-align: center;
+
+    }
+
+    .box h1{
+        color: white;
+        text-shadow: 0px 0px 5px rgb(5, 48, 190);
+        border-bottom: 2px solid white;
+        line-height: 50px;
+    }
+
+.card:hover .box{
+   transform: translateY(0);
+   border-radius: 12px;
+
+}
+.box img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0px 0px 20px white, 0px 0px 10px cyan;
+    border: 5px solid white;
+}
+
+.box p{
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+.box .star{
+    color: gold;
+    /* text-align: left; */
+    padding: 10px 0;
+    /* border-bottom: 2px solid black; */
+    /* width: 110px; */
+}
+
+    </style>
+</head>
+<body>
+    
+        <div class="card">    
+            <div class="box">
+                <h1>ABCD XYZ</h1>
+                <img src="https://cdn.shopify.com/s/files/1/1172/5864/files/A_Guide_to_Water_Conservation_-_Saving_Water_and_the_Earth_480x480.jpg?v=1644994401" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi temporibus unde</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>

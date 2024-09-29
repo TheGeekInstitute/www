@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 70px 40px  1fr 50px ;
+            gap: 5px;
+
+        }
+
+        .box {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            grid-area: 1 / 1/ 2 / 4;
+        }
+
+
+        .box2 {
+            background-color: green;
+            grid-area: 2 / 1/ 3 / 4;
+
+         
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+       
+        }
+
+        .box4 {
+            background-color: cyan;
+
+        }
+
+        .box5 {
+            background-color: plum;
+        
+
+        }
+
+        .box6 {
+            background-color: crimson;
+         
+
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+
+        .box9{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Navigation Menu</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">Footer</div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

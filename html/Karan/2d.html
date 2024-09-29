@@ -1,0 +1,69 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+<style>
+    * {
+  font-family:'Lato';
+}
+
+body {
+  display:flex;
+}
+
+.scene {
+  width:10em;
+  height:10em;
+  margin:2em;
+  border:3px solid black;
+  transform: rotate(90deg);
+  perspective: 10em;
+}
+
+.karan {
+  width:100%;
+  height:100%;
+  background-color:blue;
+  line-height:10em;
+  text-align:center;
+  color:#FFF;
+}
+
+.karan.x-axis {
+  animation: x-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+.karan.y-axis {
+  animation: y-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+.karan.z-axis {
+  animation: z-axis-animation 1s ease-in-out 0s infinite alternate;
+}
+
+@keyframes x-axis-animation {
+  from {transform: rotateX(20deg)}
+  to {transform: rotateX(-20deg)}
+}
+
+@keyframes y-axis-animation {
+  from {transform: rotateY(20deg)}
+  to {transform: rotateY(-20deg)}
+}
+
+@keyframes z-axis-animation {
+  from {transform: rotateZ(20deg)}
+  to {transform: rotateZ(-20deg)}
+}
+</style>
+
+<body>
+  <div class="scene">
+    <div class="karan x-axis">x-axis</div>
+  </div>
+
+  <div class="scene">
+    <div class="karan y-axis">y-axis</div>
+  </div>
+
+  <div class="scene">
+    <div class="karan z-axis">z-axis</div>
+  </div>
+</body>

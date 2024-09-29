@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .container{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+            text-align: center;
+            border-radius: 10px;
+            transform-style: preserve-3d;
+            perspective: 600px;
+
+        }
+        .container .card{
+            height: 400px;
+            width: 400px;
+            transition: all 3s ease-in-out;
+            transform-style: preserve-3d;
+
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 400px;
+            width: 400px;
+            font-size: 90px;
+            line-height: 300px;
+            position: absolute;
+            border-radius: 10px;
+            backface-visibility: hidden;
+            box-shadow: 0px 0px 10px crimson;
+        }
+        .container .card .front{
+            background-color: rgb(255, 145, 0);
+            background-image: url(https://cdn.pixabay.com/photo/2023/07/24/07/24/flower-wallpaper-8146421_1280.png);
+            background-position: center;
+            
+        
+        }
+        .container .card .back{
+            background-color: palevioletred;
+            transform: rotatey(180deg);
+            background-image: url(https://i.pinimg.com/474x/a4/af/3b/a4af3bf62b48a750fe6cac0501049460.jpg);
+            background-position: center;
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front"></div>
+            <div class="back"></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

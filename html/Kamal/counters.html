@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            counter-reset: section;
+        }
+
+        h1::before{
+        content: counter(section) ". ";
+        counter-increment: section;
+        color: red;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2{
+            text-indent: 60px;
+            counter-reset: sub-sub-section;
+        }
+
+        h2::before{
+            content: counter(section) "." counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: rebeccapurple;
+        }
+
+        h3{
+            text-indent: 120px;
+        }
+        h3::before{
+            content:counter(section) "." counter(sub-section) "." counter(sub-sub-section) ". ";
+            counter-increment: sub-sub-section;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Website Development</h1>
+            <h2>HTML</h2>
+                <h3>Heading</h3>
+                <h3>Table</h3>
+                <h3>Sementic</h3>
+                <h3>Form</h3>
+            <h2>CSS</h2>
+            <h2>JS</h2>
+            
+        <h1>Cyber Security</h1>
+            <h2>Linux</h2>
+            <h2>Metasploit</h2>
+            <h2>Kali Linux</h2>
+        <h1>Programming</h1>
+            <h2>Java</h2>
+            <h3>Heading</h3>
+            <h3>Table</h3>
+            <h3>Sementic</h3>
+            <h3>Form</h3>
+            <h2>Python</h2>
+            <h3>Heading</h3>
+            <h3>Table</h3>
+            
+            <h2>C/C++</h2>
+    </div>
+</body>
+</html>

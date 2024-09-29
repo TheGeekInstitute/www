@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: cursive;
+        }
+
+        nav{
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+
+        .logo{
+            font-size: 2.7rem;
+            font-weight: 900;
+        }
+
+        .logo span{
+            color: orangered;
+        }
+
+        nav > ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav > ul > li{
+            margin: 0 .4rem;
+        }
+
+        nav > ul > li > a{
+            color: white;
+            display: block;
+            line-height: 50px;
+            width: 4rem;
+            text-align: center;
+         
+        }
+        nav > ul > li > a:hover{
+            background-color: grey;
+        }
+
+        nav > ul > li > .submenu{
+            /* border: 1px solid red; */
+            position: absolute;
+            width: 7rem;
+            text-align: center;
+            background-color: rgb(192, 190, 190);
+            display: none;
+            z-index: 900;
+            top: 50px;
+            right: 10rem;
+        }
+
+        nav > ul > li > .submenu > li > a{
+            display: block;
+            line-height: 3rem;
+            padding: 0 1rem;
+            color: white;
+            /* border: 1px solid red; */
+        }
+        nav > ul > li > .submenu > li > a:hover{
+            background-color: grey;
+        }
+
+
+    
+        nav > ul > li > .submenu > li > .sub-sub-menu{
+            position: absolute;
+            background-color: rgb(192, 190, 190);
+            width: 7rem;
+            left: 7rem;
+            top: 6rem ;
+            display: none;
+        }
+
+        nav > ul > li > .submenu > li > .sub-sub-menu> li > a{
+            display: block;
+            line-height: 3rem;
+            padding: 0 1rem;
+            color: white;
+        }
+        nav > ul > li > .submenu > li > .sub-sub-menu> li > a:hover{
+            background-color: gray;
+        }
+
+
+        nav ul li:hover .submenu{
+            display: block;
+        }
+
+        nav ul li .submenu li:hover .sub-sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LO<span>GO</span></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages +</a>
+                <ul class="submenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3+</a>
+                        <ul class="sub-sub-menu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                            <li><a href="#">Page 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Mode</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            background-color: rgba(0, 255, 255, 0.4);
+        }
+ 
+        .box img{
+            mix-blend-mode: overlay;
+
+        }
+
+
+        .new{
+            height: 400px;
+            width: 400px;
+            background-image: url("../../web/images/12.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(0, 0, 255, 0.4);
+            background-blend-mode: overlay;
+        }
+
+
+        .new h1{
+            color: white;
+        }
+
+        .head{
+            font-size: 150px;
+            background-image:url("../../web/images/12.jpg");
+
+            color:transparent;
+            -webkit-background-clip:text;
+            background-clip:text;
+
+            -webkit-text-stroke: red 4px;
+            /* text-stroke: red 4px; */
+        }
+
+ </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../../web/images/11.jpg" alt="">
+    </div>
+
+    <div class="new">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore corporis, tenetur, nostrum deleniti culpa voluptates numquam quisquam veritatis voluptas nesciunt odio alias, facere repudiandae voluptatum quo eveniet assumenda eaque necessitatibus?</h1>
+    </div>
+
+
+    <h1 class="head">ABCD</h1>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border-radius: 1000px;
+            margin: 20px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: cursive;
+            text-shadow: 0px 0px 10px red;
+        }
+
+        .nav .logo span{
+            color: red;
+            text-shadow: 0px 0px 3px white;
+
+        }
+
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        .nav ul li a{
+            display: block;
+            color: white;
+            margin: 0 10px;
+            padding: 0 10px;
+            line-height: 50px;
+            font-size: large;
+        }
+
+        .nav ul li a:hover{
+            background-color: red;
+        }
+
+
+        .container{
+            
+                padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .box{
+          
+            height:320px;
+            width: 250px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+           
+            background-color: burlywood;
+            border: 10px ridge chartreuse;
+            border-radius: 10px;
+          
+            box-shadow: 0px 0px 10px black;
+        
+           
+
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            object-fit:cover;
+            border: 10px ridge crimson;
+            border-radius: 50%;
+           
+
+        }
+       .container .box a{
+            border: 2px solid black;
+            padding: 6px;
+            
+        }
+        .container .box a:hover{
+            background-color: yellowgreen;
+        }
+        .container .box  a:visited{
+            color: red;
+        }
+        .container .box p{
+            margin-bottom: 50px;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            height: 40px;
+        }
+
+        .footer p{
+            text-align: center;
+            line-height: 40px;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">LO<span>GO</span></div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="box"><img src="../web/images/7.png" alt="">
+            <h1>EZAZ</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nostrum  </p>
+            <a href="#">Read More</a>
+        </div>
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; All Rights Reserved. </p>
+        </div>
+        
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box {
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:linear-gradient(to bottom,Red, yellow,aqua,green) ; */
+        background-image:linear-gradient(45deg,Red, yellow,green,aquamarine) ;
+       } 
+
+       .box h1{
+        height:50px ;
+        width:50px ;
+        /* border:10px solid Yellow ; */
+        margin:auto ;
+       }
+
+       .box1{
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:radial-gradient(circle,Red 10%, yellow 20%,aqua,green) ; */
+        background-image:radial-gradient(farthest-side at 10%,Red 10%, yellow 20%,aqua,green) ;
+       
+       }
+
+       .box1 img{
+        height:300px ;
+        width:300px ;
+        margin-top:50px ;
+        margin-bottom:200px ;
+        margin-left:150px ;
+       }
+
+       .box2{
+        height:400px ;
+        width:600px ;
+        border:2px solid black ;
+        margin:100px auto ;
+        /* background-image:conic-gradient(yellowgreen 20deg,aquamarine,red 25deg, orange,) ;   */
+        background-image:conic-gradient(from 45deg,yellowgreen,aquamarine,red , orange) ; 
+        /* background-image:conic-gradient(at 10% 10%,yellowgreen,aquamarine,red 25deg, orange) ;  */
+       }
+
+       .box3{
+        height:200px ;
+        width:200px ;
+        border:2px solid black ;
+        margin:150px  ;
+        background-color:Blue ;
+        /* transition-property:Width,height ;
+        transition-property:all ; */
+        /* transition-duration:1s; */
+        /* transition-delay:2s ; */
+        /* transition-timing-function:ease-in-out ; */
+        /* transition-timing-function:steps(5) ; */
+
+        transition:all 1s linear ;
+       }
+
+       .box:hover{
+        height:400px ;
+        width:400px ;
+        border-radius:50% ;
+        background-color: blueviolet;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>paragraph</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident incidunt eius delectus dolor magni error. Omnis veniam libero sunt iusto voluptas. Amet, eaque iste temporibus eum aliquam non consequatur odio.
+        Quaerat, temporibus veritatis. Vel corrupti perferendis sit deserunt quos fugit, officia cumque. Eligendi labore asperiores, veritatis quisquam architecto at aspernatur, nihil voluptatibus temporibus fugit doloribus laborum vero impedit officia neque.
+       
+        </p>
+    </div>
+
+    <div class="box1">
+        <img src="../web/images/10.jpg">
+
+    </div>
+
+    <div class="box2">
+        <h1>An Animal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti tempore nihil quis voluptate doloremque id quas facilis aliquid! Voluptatum ut quod natus atque reprehenderit non soluta perspiciatis ea maiores amet!</p>
+
+    </div>
+
+    <div class="box3"></div>
+</body>
+</html>

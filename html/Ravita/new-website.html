@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>new-website</title>
+     
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .container{
+            background-color: #37517E;
+            height: 95vh;
+            color: white;
+        }
+
+        .container .nav{
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 2rem;
+        }
+
+.container .nav .logo1{
+            font-size: 2.7rem;
+            font-weight: 700;
+            text-shadow: 0 2px 2px rgb(7, 7, 7);
+
+
+        }
+
+
+.container .nav .start{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+ .container .nav  .start li a{
+            display: block;
+            color: white;
+            margin: 0 10px;
+            font-size: 1.3rem;
+
+        }
+
+.container  .nav .start li:last-child a{
+
+            background-color: #47B2E4;
+            padding: 10px 20px;
+            border-radius: 1000px;
+        }
+
+ 
+
+
+     
+ .main{
+    /* border: 2px solid black; */
+    display: flex;
+    /* position: absolute; */
+    margin: 20px auto;
+
+}
+
+
+.main > .content{
+    width: 50%;
+    text-align: center;
+    padding: 150px 0;
+}
+
+
+
+.main .content >h1{
+    color: white;
+    font-size: 44px;
+    text-shadow: 0 2px 2px black;
+    width: 70%;
+    text-align: left;
+    margin: 0 80px;
+}
+
+
+.main .content >p{
+    color: rgb(211, 209, 209);
+    font-size: 22px;
+    width: 70%;
+    text-align: left;
+    margin: 5px 80px;
+}
+
+
+
+
+.main .content .box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 ;
+}
+
+.main .content .box .get{
+    width: 10rem;
+    margin: 0 80px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 200px;
+    
+}
+
+.main .content .box .get:hover{
+    background-color:rgba(90, 87, 87, 0.616);
+    box-shadow: 0 2px 2px white;
+}
+
+.main .content .box .icon{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 11rem;
+    margin: 0 3rem;
+}
+
+.main .content .box .icon h2{
+    font-size: 1.3rem;
+    color: white;
+
+}
+
+.main .content .box .icon{
+    font-size: 18px;
+    color: white;
+    padding: 5px 5px;
+}
+
+.main .content .box .icon i{
+    font-size: 18px;
+    color: white;
+    padding: 5px 5px;
+}
+
+.main .img {
+    /* border: 1px solid pink; */
+    width: 50%;
+}
+
+.main .img img{
+    width: 40rem;
+    animation-name: img;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+} 
+
+@keyframes img{
+    0%{
+        transform: translateY(6px);
+
+    }
+    100%{
+        transform: translateY(-6px);
+    }
+} 
+
+.logo{
+    /* border: 1px solid black; */
+    height: 5rem;
+    background-color: rgb(241, 209, 209);
+}
+
+.logo .box1{
+    height: 5rem;
+    width: 85rem;
+    display: flex;
+}
+
+.logo .box1 .imge{
+    /* border: 1px solid black; */
+    width: 5rem;
+    height: 3.3rem;
+    margin: auto;
+    text-align: center;
+}
+
+.logo .box1 .imge img{
+    width: 4.5rem;
+    padding: 9px 0;
+}
+
+.logo .box1 .imge:hover img{
+    width: 5rem;
+    transition: all 0.2s linear;
+}
+
+.icons{
+
+    width: 5rem;
+    height: 3.5rem;
+    margin: 1.5px 10rem ;
+    text-align: center;
+    animation: slider 7s linear 0s infinite alternate;
+    /* animation-timing-function: steps(10); */
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes slider{
+            form{
+
+            transform: translateX(0) ;
+                
+            }
+            to{
+                transform: translateX(-110vw)  ;
+
+
+            }
+        }  
+
+.about{
+    /* border: .5px solid black; */
+    text-align: center;
+    padding: 3.5rem 1.5rem 5rem 1.5rem;
+    /* height: 27rem; */
+
+}
+
+.about > h1{
+    color: rgb(37, 37, 95);
+    border-bottom: .5px solid rgb(47, 47, 104);
+    display: inline;
+   
+}
+
+
+.about .text {
+    /* border: 1px solid black; */
+    margin-top: 3.5rem;
+    text-align: left;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.about .text .lorem{
+    list-style-type:decimal;
+    width: 58%;
+    padding: 8px;
+}
+
+
+.about .text .lorem p{
+    font-size: 18px;
+}
+
+
+.about .text .ullamco{
+    /* border: 1px solid pink; */
+    width: 50%;
+    padding: 8px;
+}
+
+
+.about .text .ullamco p{
+    font-size: 18px;
+}
+
+
+.about .text .ullamco button{
+    border: 2px solid   #32a0d3;
+    height:2.5rem;
+    width: 9rem;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #148dc5;
+    margin-top: 1rem;
+}
+
+.content2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* border: 1px solid saddlebrown ; */
+    padding-top: 50px;
+background-color: #e1eef5c4;
+margin-top: 20px;
+}
+
+.content2 .main1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+padding-bottom: 100px;
+    width: 50%;
+
+
+}
+
+.content2 .img{
+    /* border: 1px solid red; */
+    width: 50%;
+   
+}
+
+.content2 .img img{
+    height: 450px;
+}
+
+.content2 .main1 h1{
+color: #045479;
+padding-left: 20px;
+
+}
+
+.content2 .main1  p{
+    color: rgb(94, 92, 92);
+padding-left: 20px;
+
+}
+
+
+ 
+ 
+
+#btn:checked ~ .data{
+            display: block;
+        }
+
+#btn1:checked ~ .data{
+            display: block;
+        }
+
+#btn2:checked ~ .data{
+            display: block;
+        }
+
+#btn:checked ~ label i{
+            transform: rotate(90deg);
+            color: rgb(20, 20, 20);
+        }
+
+
+#btn1:checked ~ label i{
+            transform: rotate(90deg);
+            color: rgb(10, 10, 10);
+        }
+
+
+ #btn2:checked ~ label i{
+ transform: rotate(90deg);
+  color: rgb(23, 24, 24);
+}
+
+
+        
+ .accordion{
+ width: 450px;
+ margin: 100px auto;
+}
+
+input[type="checkbox"]{
+ display: none;
+}
+.accordion .bts{
+ margin: 5px 0;
+
+}
+.accordion .bts p{
+    color:black;
+    background-color:rgba(177, 173, 173, 0.76);
+    height: 120px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.accordion .head{
+    background-color: rgb(248, 210, 216);
+    color: #37517E;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;        
+ height: 80px;
+ padding: 0 10px;
+ /* user-select: none; */
+ font-size:large;
+}
+
+.accordion .data{
+ padding: 10px;
+ display: none;
+}
+ 
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="nav">
+            <div class="logo1">RAVITA</div>
+            <ul class="start">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">team</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">dropdown</a></li>
+                <li><a href=""> Contact</a></li>
+                <li class="Started"><a href="">Get Started</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+               <div class="content">
+                  <h1>Better Solutions For Your Business</h1>
+                  <h2>We are team of talented designers making websites with Bootstrap</h2>
+                  <div class="box">
+                    <div class="get">
+                        <h2>Get Started</h2>
+                    </div>
+                    
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <h2>Watch Video</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="img">
+    
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png " alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="logo">
+    <div class="box1">
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" alt="01"
+            class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-7.png" alt="02"
+            class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="03"
+            class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="04"
+            class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" alt="05" class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" alt="06"
+            class="icons">
+        </div>
+        <div class="imge">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" alt="07"
+            class="icons">
+        </div>
+    </div>
+</div>
+<div class="about">
+    <h1>
+        ABOUT US
+    </h1>
+    <div class="text">
+        <div class="lorem">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul>
+                <li>
+                    <p><i class="fa-regular fa-circle-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </li>
+
+                <li>
+                    <p><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </li>
+
+                <li>
+                    <p><i class="fa-regular fa-circle-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="ullamco">
+            <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            </p>
+
+            <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+
+    <div class="content2">
+        <div class="main1">
+            
+            <h1>Eum ipsam laborum deleniti velit pariatur architecto aut nihil</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit 
+            </p>
+
+            <div class="accordion">
+                <div class="bts">
+                    <input type="checkbox"  id="btn">
+                    <label for="btn" class="head" >
+                        <h2>
+                            01 Non consectetur a erat nam at lectus urna duis?
+                             <i class="fa-solid fa-greater-than"></i>
+                            </h2>
+                        </label>
+                    <div class="data">
+                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                   </div>
+                </div> 
+
+                <div class="bts">
+                    <input type="checkbox"  id="btn1">
+                    <label for="btn1" class="head">
+                   <h2>
+                     02 Feugiat scelerisque varius morbi enim nunc faucibus a ellentesque?
+                       <i class="fa-solid fa-greater-than"></i>
+                   </h2>
+                   </label>
+   
+                   <div class="data">
+                   <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+               </div>
+
+                </div>
+
+         <div class="bts">
+            <input type="checkbox"  id="btn2">
+            <label for="btn2" class="head" >
+                <h2>
+                  03 Dolor sit amet consectetur adipiscing elit pellenteseque?
+                    <i class="fa-solid fa-greater-than"></i>
+                </h2>
+                </label>
+                <div class="data">
+                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+
+                </p>
+         </div>
+        </div>
+            </div>
+            
+        </div>
+
+        <div class="img">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/why-us.png" alt="">
+        </div>
+
+        </div>
+
+        
+    <div class="lorem">
+        <div class="img">
+            <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/skills.png" alt="img">
+        </div>
+        <div class="word">
+            <h1>Voluptatem dignissimos provident quasi corporis voluptas</h1>
+            <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </i></p>
+            <div class="h1">
+                <div class="code">
+                    <p>Html</p>
+                    <p>100%</p>
+                </div>
+                <div class="photo">
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+            <div class="h1">
+                <div class="code">
+                    <p>CSS</p>
+                    <p>90%</p>
+                </div>
+                <div class="photo">
+                    <div class="box01"></div>
+                </div>
+            </div>
+
+            <div class="h1">
+                <div class="code">
+                    <p>JAVASCRIPT</p>
+                    <p>75%</p>
+                </div>
+                <div class="photo">
+                    <div class="box02"></div>
+                </div>
+            </div>
+
+            <div class="h1">
+                <div class="code">
+                    <p>PHOTOSHOP</p>
+                    <p>55%</p>
+                </div>
+                <div class="photo">
+                    <div class="box03"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>         
+</body>
+</html>
+ 

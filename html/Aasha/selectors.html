@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        *{
+            text-decoration: none;
+
+        }
+        
+        .links a:link{
+            color: black;
+        }
+
+        .links a:hover{
+            color: blue;
+        }
+
+        .links a:active{
+            color: yellowgreen;
+        }
+
+        .links a:visited{
+            color: red;
+        }
+        .new{
+            border: 1px solid black;
+            height: 50px;
+            width: 50px;
+        }
+
+        .new:hover{
+            background-color: red;
+        }
+
+        .new:active{
+            background-color: yellow;
+            
+        }
+
+        ul li{
+            font-weight: 900;
+            font-size: 32px;
+        }
+/* 
+    .list li:first-child{
+        color: red;
+    }
+
+    .list li:last-child{
+        color: blue;
+    } 
+    
+    */
+
+    /* .list li:nth-child(2n+1){
+        color: red;
+    } */
+
+/* .list li:nth-last-child(2n){
+    color: red;
+} */
+
+/* 
+    .links a:last-child{
+        color: aqua;
+    } */
+
+div p:first-of-type{
+    color: red;
+}
+
+div p:last-of-type{
+    color: blue;
+}
+
+div p:only-child{
+    color: aqua;
+}
+
+.abcd{
+    border: 2px solid black;
+    height: 200px;
+    padding: 10px;
+    /* width: 300px; */
+    text-align: center;
+}
+
+.abcd{
+    
+}
+
+.abcd a{
+    display: inline-block;
+    margin: auto;
+    /* height: 30px;
+    width: 40px; */
+    text-transform: uppercase;
+}
+
+.abcd a:first-child{
+    border: 2px solid red;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+}
+
+.abcd a:last-child{
+    border: 2px solid red;
+    padding: 10px 20px;
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="links">
+        <a href="#1">Link1</a>
+        <a href="#4">Link2</a>
+        <a href="#3">Link3</a>
+        <a href="#2">Link4</a>
+        <a href="#1">Link5</a>
+    </div>
+
+    <div class="new"></div>
+
+
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed laboriosam a, eveniet maxime rerum quibusdam commodi quisquam laborum sint molestias ipsa similique iure unde necessitatibus nisi ab minus animi non.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia enim praesentium molestias recusandae modi eos. Optio eaque ratione placeat cumque unde, veritatis recusandae. Libero sapiente laboriosam error nam maiores corporis.</p>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at iure, deserunt inventore veniam saepe temporibus! Assumenda, recusandae obcaecati? Saepe eius dicta dolorum! Assumenda beatae dicta labore exercitationem. Voluptate, facere!</span>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum possimus consequuntur modi quidem sequi eius est commodi sint tempora, harum magni odio corporis nulla, pariatur laudantium non rerum animi autem.</p>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, nesciunt libero repellat consequatur corporis dolorum velit, qui amet aliquid omnis illo sapiente. Nam aspernatur, vero iste error quae minus eos!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fuga, maiores similique magnam dicta ipsum culpa provident consequatur nam repudiandae, incidunt vitae assumenda amet alias molestiae magni deleniti minima. Doloribus?</p>
+    </div>
+</div>
+
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est mollitia nobis porro officia obcaecati. Aut illum animi, ipsam ipsa iusto voluptatem in. Numquam enim nisi maiores architecto fugiat! Sapiente, quod.</p>
+</div>
+
+<div class="abcd"> 
+    <a href="#">Link</a>
+    <a href="#">Link2</a>
+
+</div>
+
+</body>
+</html>

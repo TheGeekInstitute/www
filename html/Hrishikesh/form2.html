@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: #13ca3ac0;
+        }
+        .container{
+            width: 20.5rem;
+            margin: 3.5rem auto;
+            box-shadow: 1px 1px 20px rgb(131, 214, 6);
+            padding: 0.3rem .2rem;
+            background-image: url("https://wallpapers.com/images/featured/pastel-gradient-background-etu0z7lbeebg6mlf.jpg");
+            border-radius: .5rem;
+        }
+        .container h1{
+            margin: .5rem 0;
+            color: crimson;
+            text-shadow: 1px 1px 5px green;
+            text-align: center;
+        }
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            flex-direction: column;
+            text-shadow: 1px 1px 2px rgb(26, 183, 194);
+        }
+        .container form label{
+            margin-top: .5rem;
+            width: 19rem;
+            color: rgb(3, 3, 8);
+            /* text-align: left; */
+            padding: .2rem .3rem;
+        }
+        .container form input,.container form select{
+            padding: .7rem;
+            width: 18rem;
+            border: 1px solid black;
+            border-radius: .3rem;
+            border-width: 1px 1px 2px 1px;
+            outline: none;
+            background-color: transparent;
+
+        }
+        .container form #btn{
+            background-color: blue;
+            color: white;
+            padding:0.5rem 1.5rem;
+            width: 8rem;
+            margin-bottom: .7rem;
+            margin-top: .5rem;
+        }
+        .container form #btn:hover{
+            background-color: chocolate;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <h1>Registration Form</h1>
+        <form>
+            <label>First Name</label>
+            <input type="text" required placeholder="Enter First Name">
+            <label>Username</label>
+            <input type="text" required placeholder="Enter Username">
+            <label>Password</label>
+            <input type="password" required placeholder="Enter Password">
+            <label>Date of Birth</label>
+            <input type="date" required >
+            <label>Gender</label>
+            <select>
+                <option value="#">Choose</option>
+                <option value="#">Male</option>
+                <option value="#">Female</option>
+                <option value="#">Other</option>
+            </select>
+            <label>Email</label>
+            <input type="email" required>
+            <input type="submit" value="Signup" id="btn">
+        </form>
+     </div>
+</body>
+</html>

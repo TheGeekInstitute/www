@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            /* border: 1px solid black; */
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            transform-style: preserve-3d;
+
+        }
+        .container .card{
+            height: 300px;
+            width: 300px;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+        }
+        .container .card .front,
+        .container .card .back{
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            /* line-height: 300px; */
+            /* font-size: 70px; */
+            position: absolute;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+        .container .card .front{
+            background-image: url(https://cdn.pixabay.com/photo/2020/06/13/17/51/milky-way-5295160_960_720.jpg);
+            /* transform: rotateY(180deg); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container .card .back{
+            background-color: brown;
+            transform: rotateY(180deg);
+
+        }
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                <h1>ABCD XYZ</h1>
+            </div>
+            <div class="back">
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque excepturi rerum at explicabo inventore nam, aperiam iste quia obcaecati commodi ducimus quidem voluptatibus dolor minus temporibus tenetur praesentium illo! Quam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

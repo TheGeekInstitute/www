@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .hero{
+            /* border: 1px solid red; */
+            height: 70vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background: url("https://media.istockphoto.com/id/533716912/photo/businessman-fixing-cufflinks-his-suit.jpg?s=612x612&w=0&k=20&c=w9ShQiVhSD6UYMuycqWjVMuim1s02p8UOPyTaDQkn70=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #2C3E4E;
+            background-blend-mode: overlay;
+        }
+        .hero h3{
+            text-transform: uppercase;
+        }
+        .hero h1{
+            text-transform: uppercase;
+        }
+        .hero a{
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            /* border: 1px solid red; */
+            background-color: rgb(255, 1, 136);
+            color: white;
+            padding: .5rem;
+            border-radius: 3px;
+        }
+
+        .services{
+            margin-top: 20px;
+            /* border: 1px solid red; */
+            /* height: 25vh; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .services .item{
+            /* border: 1px solid green; */
+            height: 10rem;
+            width: 12rem;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .services .item i{
+            /* border: 1px solid red; */
+            font-size: 25px;
+            border-radius: 50%;
+            padding: 15px;
+            background-color:#2C3E4E ;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+.footer{
+    /* border: 1px solid red; */
+    background-color: #2C3E4E;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .left{
+    /* border: 1px solid green; */
+    width: 300px;
+    line-height: 25px;
+    color: white;
+}
+
+.footer .left p{
+    margin-bottom: 2rem;
+}
+
+.footer .right{
+    width: 300px;
+}
+
+.footer .right img{
+            height: 40%;
+        }
+
+        .footer .left a{
+            /* display: block; */
+            /* width: 60%; */
+            margin-top: 2rem;
+            text-decoration: none;
+            /* border: 1px solid red; */
+            background-color: rgb(255, 1, 136);
+            color: white;
+            padding: .5rem;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h3>we are dead serious</h3>
+        <h1>about your business</h1>
+        <a href="#">What About You?</a>
+    </div>
+
+    <div class="services">
+        <div class="item">
+<i class="fa-solid fa-briefcase"></i>
+            <p>probiz solutions</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="item">
+            <i class="fa-brands fa-laravel"></i>
+            <p>probiz solutions</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="item">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <p>probiz solutions</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <h2>OUR SERVICES</h2>
+            <p>We use our own patented system called CCC, short for Clients, Culture and Company. Our specialists are able to "infiltrate" all company sections and analyze for areas where improvement is needed. No matter what problem we discover, we have a solution and our specialists are ready for the job.</p>
+
+            <a href="#">Download our folder</a>
+        </div>
+        <div class="right">
+            <img src="https://probiz.demos.wpbeaverbuilder.com/wp-content/uploads/sites/20/2016/02/probiz-folder.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

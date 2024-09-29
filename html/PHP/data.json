@@ -1,0 +1,41 @@
+[
+    [
+        [
+            {
+                "name": "Amit",
+                "age": 25,
+                "gender": "male"
+            },
+            {
+                "name": "Sumit",
+                "age": 25,
+                "gender": "male"
+            },
+            {
+                "name": "Ravi",
+                "age": 27,
+                "gender": "male"
+            }
+        ],
+        {
+            "name": "Sumit",
+            "age": 25,
+            "gender": "male"
+        },
+        {
+            "name": "Ravi",
+            "age": 27,
+            "gender": "male"
+        }
+    ],
+    {
+        "name": "Sumit",
+        "age": 25,
+        "gender": "male"
+    },
+    {
+        "name": "Ravi",
+        "age": 27,
+        "gender": "male"
+    }
+]

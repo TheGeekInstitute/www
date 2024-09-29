@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .one{
+            height: 70vh;
+            background-image: url('https://www.kartavyablogs.in/wp-content/uploads/2023/08/Railways.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color:white;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.418);
+        }
+        
+        .one h1{
+            padding-top: 20vh;
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 50vw;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+        .menu{
+            width: 55vw;
+            text-align: center;
+            margin: auto;
+        }
+        .one a{
+            color: white;
+            font-size: 1.2rem; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+            
+        }
+        .menu .main{
+            color: red;
+        }
+        .two{
+            background-color:rgb(34, 55, 126) ;
+            height: 15vh;
+            margin: auto;
+            padding: 50px 18vw ;
+            
+        }
+        .two a{
+            color: white;
+            font-size: 1.2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 10px 50px;
+            border-right: 1px solid white;
+            
+            
+            
+        }
+        .two a.sub{
+            color: red;
+        }
+
+        .two a:hover{
+            color: red;
+        }
+        .hero{
+            display: flex;
+            justify-content: space-around;
+            margin: 10vh 15vw;
+            width: 70vw;
+            /* border: 1px solid red; */
+        }
+        .article{
+            width: 50vw;
+        }
+        
+        .hero .article .three{
+            display: flex;
+        }
+        .three .menu{
+            display:flex;
+            align-items: end;
+            position: absolute;
+            left: 48vw;
+            
+        }
+        
+        .three .menu h1{
+            font-size: 1.4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-right: 10px;
+        }
+        .three .menu a i{
+            color: black;
+            font-size: 1.1rem;
+            padding-top: 50px;
+            padding-left: 12px;
+        }
+        .article h3{
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(73, 73, 73);
+        }
+        .article p{
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(80, 79, 79);
+        }
+        .article h1{
+            margin-top:2rem ;
+            font-size: 1.7rem;
+            color: rgb(56, 56, 56);
+
+        }
+        
+        .three .heading h1{
+            background-color: rgb(18, 118, 201);
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 31vw;
+            padding: 15px ;
+            color: white;
+            border-top-left-radius: 10px;
+        }
+        .hero .article img{
+            /* margin: 2vh 4vw; */
+            height: 55vh;
+            width: 45vw;
+            border-left: 15px solid rgb(18, 118, 201);
+            border-bottom-left-radius: 15px;
+            
+        }
+        .side{
+            /* border: 1px solid blue; */
+            margin-left: 20px;
+            width: 25vw;
+            margin-top: 2rem;
+        }
+        .side1{
+            display: flex;
+            /* border: 1px solid gold; */
+            height: 30vh;
+            margin-top: 2rem;
+            background-color: rgb(143, 143, 150);
+            color: white;
+        }
+        
+        .side h3{
+            font-size: 1.5rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:block;
+            background-color: rgb(18, 118, 201);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .side1 img{
+            height: 30vh;
+            width: 8vw;
+        }
+        .side1 h1{
+            font-size: 1.4rem;
+            margin-top: 1rem;
+        }
+        .side1 p{
+            font-size: 1.2rem;
+            border-bottom: 1px solid white;
+        }
+        .side1 .left{
+
+            padding: 1rem 2rem;
+        }
+        .side1 .left:hover{
+            background-color: rgb(41, 41, 105);
+            transition: all .3s;
+        }
+        .left h6{
+            margin-top: 3rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+
+        }
+        .left h4{
+            font-weight: 500;
+
+        }
+        .six{
+                height: 50vh;
+                background-color:rgb(225, 225, 245);
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .six .first{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            
+            .six .first h1{
+                color: rgb(34, 55, 126);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:1.8rem;
+                margin-left: 6rem;
+                width: 15vw;
+            }
+            .first p{
+                font-size: 1.3rem;
+                /* margin-left: -5rem; */
+                margin-top: 1rem;
+            }
+            .six .menu{
+                margin-left: 6rem;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                justify-content: center;
+            }
+            .six .menu a {
+                color: black;
+                font-size: 1.5rem;
+                border-left: 1px solid black;
+                height: 50vh;
+                line-height: 50vh;
+                padding:  0 20px;
+                
+            }
+            .last{
+                margin-left: 5rem;
+                margin-top: 5rem;
+            }
+            .last h1{
+                color: rgb(34, 55, 126);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin-bottom: 1.5rem;
+                margin-left: 1.5rem;
+                
+            }
+            .form{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            input[type=text]{
+                
+                width: 20vw;
+                height:4vh;
+                padding-left: 10px;
+                margin: .5rem 2rem;
+            }
+            input[type=email]{
+                width: 20vw;
+                height:4vh;
+                padding-left: 10px;
+                margin: .5rem 2rem;
+            }
+            input[type=code]{
+                width: 20vw;
+                height:4vh;
+                padding-left: 10px;
+                margin: .5rem 2rem;
+            }
+            .last h5{
+                margin: .7rem 2rem;
+                font-size: 1.2rem;
+            }
+            #btn{
+                margin-left: 2.3vw;
+            }
+          
+           label{
+            margin: .7rem 1rem;
+            font-size: 1.2rem;
+            }
+            input[type=submit]{
+                margin-left: 15rem;
+                padding: 9px 25px;
+                border-radius: none;
+                border: none;
+                color: white;
+                background-color:  rgb(18, 118, 201);
+                font-size: 1rem;
+            }
+            .seven{
+                display: flex;
+                justify-content: space-evenly;
+                background-color: rgb(20, 61, 116);
+                height: 20vh;
+                color: white;
+                align-items: center;
+            }
+            .seven .image{
+                height: 12vh;
+                border-right: 1px solid white ;
+                padding-right: 6rem;
+            }
+            .mid{
+                border-right: 1px solid white;
+                padding: 1rem 4rem;
+                margin-left: -16rem;
+            }
+            .mid h3{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 500;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+            .mid i{
+                font-size: 1.3rem;
+            }
+            .mid a{
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.1rem;
+                font-weight: 400;
+                margin-left: 10px;
+            }
+            .right3{
+                margin-left: -7rem;
+                margin-top: 4rem;
+            }
+            .right3 h3{
+                font-size: 1.4rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 400;
+                margin-bottom: 30px;
+                margin-top: -4rem;
+               
+            }
+            span{
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 15px 10px;
+            }
+            span:hover{
+                background-color: white;
+                color: rgb(20, 61, 116);
+                font-weight: 900;
+            }
+            .right3 img{
+                margin-top: 2.3rem;
+                height: 1rem;
+            }
+            .right3 a{
+                color:white;
+                margin-right: 2rem;
+            }
+
+
+
+      </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Indian Railway's Leapfrogging In Building Engineering Marvels In Amrit Kaal.</h1>
+        <div class="menu">
+
+            <a href="#">Home /</a>
+            <a href="#">Themes /</a>
+            <a href="#">Reforming Railways /</a>
+            <a href="#" class="main">Indian Railway's Leapfrogging In Building Engineering Marvels In Amrit Kaal.</a>
+        </div>
+        </div>
+        <div class="two">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">THEMES</a>
+            <a href="#">QUIZ</a>
+            <a href="#">CONTACT</a>
+            <a href="#" class="sub">SUBSCRIBE</a>
+        </div>
+        <div class="hero">
+            
+            <div class="article">
+                <div class="three">
+                    <div class="heading">
+                        <h1>New India's Global Leadership</h1>
+                    </div>
+                    <div class="menu">
+                        <h1>Share:</h1>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i>in</i>
+                        </a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/08/Railways.jpg" alt="">
+                <h3>Where ever my Indians are, we never see the colour of their passports, their link with the motherland is enough - PM Modi </h3>
+                <p>India’s global identity has gone for a makeover since 2014. When India was taking its baby steps towards national development post 1947, the environment was contextualised by a dearth of resources. Grappling with its internal developmental concerns, if Indians abroad or in neighbourhood were passing through a restive phase, the Indian government advised them to cooperate with the country concerned, but didn’t go for full-fledged evacuation missions most of the time. 2014 has been a game changer. Building upon the evacuation experiences of previous decades, and learning from previous operational mistakes, the face of Indian evacuation and HADR exercises has changed for the better. 
+                </p>
+
+            <p>The increasing need for a prompt, coordinated and effective mechanism involving the government, intelligence inputs, the armed forces and academia is due to the mutated and more complex nature of missions. Any mission for a successful pitch has to go through 4 crucial stages of Assessment of ground situation, Planning of Mission, Operational Phase and Post Evacuation Measures, all with razor sharp precision, with any slackness costing human life and resources.
+            </p>
+            <h1>WHY EVACUATE-</h1>
+            <p>Out of the 32 million overseas Indians, 13.45 million are NRIs, and 18.68 million PIOs. The number of passport holders has been on a rise, indicating mobility of the population (From 2014 until May 2022 8,81,37,068 passports).</p>
+            <p>Not to forget that India is a youthful nation, which will further instil more emigration for short durations, or as permanent expatriates. Besides the humanitarian reasons, the national-cultural ties with India, and their immense contribution to the economy of India are two major reasons why the government undertakes risky endeavours to protect them. Besides, India’s moral take on seeing the world as a family makes it go further to rescuing foreign nationals, at times on an equal footing with its own citizens, an approach that has led it to earn the title of “First Responder” in the South Asian region.</p>
+            <p>A brief overview of major evacuation operations and humanitarian assistance missions undertaken by India-Operation Neer- A major fire damaging the cabling of the generator to distillation plants, causing disconnection to water supply in Male, Maldives, on 4th December 14 was promptly responded to by the Indian Navy. INS Sukanya with the capability to produce 20 tons of water each day was sent across by India. The ship used its onboard desalination plant. INS Deepak produced 100 tons of water each day. 3 IL-76 and 2 C-17 Globemasters were effectively used too.</p>
+            <h1>Operation Raahat-</h1>
+            <p>This mission started on 1st April, till 8th April’2015, to evacuate the citizens and foreign nationals from Yemen in the backdrop of the Saudi and Arab coalition forces’ war on Yemen. More than 4640 Indian citizens and 960 foreign nationals from over 41 countries were rescued with the help of the Armed forces as well as Air India. The MEA was prompt in issuing several rounds of prior advisories to fly back before the atmosphere heats up. Since Yemen was declared a no-fly zone, Djibouti was the initial Centre for evacuation by sea. Destroyer INS Mumbai and Frigate INS Tarkash provided operational support to INS Summitra in the mission. India extended support to the nationals of several countries including Pakistan, Russia, Germany, UK, Turkey, Bahrain, Bangladesh, etc.</p>
+
+            <h1>
+            Operation Maitri- 
+            </h1>
+
+            <p>On 25th April, a 7.9 heavy magnitude earthquake shook Nepal, causing death and destruction. India, within 15 mins of it, mobilized resources for relief and a full-fledged HADR operation called Mission Dost was launched. 18 medical teams, 12 engineer teams, and a power assessment team for electricity restoration were sent. The air force used its C-17 Globemaster-III, 8 Mi-17 helicopters for air-dropping, and C-130J Hercules. Over 170 foreign nationals from US, UK, Russia, Germany, Spain were rescued, and over 5000 Indians were brought back by the commendable coordination of Army and Air force. The Sahastra Seema Bal sent 3 dozen vehicles including ambulances and Water Tanks. With other relief materials, and prompt response, India stood on the expectations of being a responsible neighbour.</p>
+
+            <h1>Operation Sankat Mochan-</h1> 
+
+            <p>A 2016 Indian Air Force operation to evacuate Indian citizens and other foreign nationals from South Sudan’s capital Juba. Over 600 Indians were stuck. Under the Minister of state for external affairs- General VK Singh’s leadership, the mission was undertaken, with women and children given priority.
+            </p>
+            <p>Operation Insaniyat- This 2017 mission was undertaken to help Bangladesh overcome humanitarian exigency due to the influx of refugees from Myanmar. Food aid of rice, pulses, salt, etc. was channelled for supply by India. A UN report shows that over 3 Lakh people fled Myanmar. The shipment of essentials was done in several consignments. The 2nd consignment consisted of essentials for women and children to the camps like milk powder, baby food, dried fish. A developmental assistance of 25 million $ was granted for the Rakhine state too.</p>
+
+            <p>Vandebharat Mission- Covid-19 lockdown left Indians stuck in other countries with little to no protection, urging the Indian government for swift evacuation for safe and timely return of the citizens. It is the largest ever evacuation exercise since that of 1,77,000 people at the time of gulf war in early 1990s. Air India operated 64 flights to repatriate Indians from over 12 countries. Similarly, Operation Samudra Setu that lasted over 55 days repatriated over 3000 Indians, setting on a journey covering 23,000Km by sea. Overseas Indians from around 93 countries availed repatriation. India also set special travel arrangements called air travel bubbles with different countries for commercial passenger services during the pandemic. Moreover, a collaboration of the Ministry of skill development and entrepreneurship, civil aviation and external affairs launched the SWADES scheme for skill mapping of the repatriates to help them find gainful employment.</p>
+
+            <h1>Operation Devi Shakti- </h1>
+
+            <p>800 people were evacuated from Afghanistan in 2021 on the fall of Kabul and its takeover by the rogue Taliban. Over 800 people were evacuated. Jaishankar called it “a difficult and complicated exercise”. For agile response, a special Afghan cell under MEA was formed. Lack of responsible agents in Afghanistan with which the Indian government could meaningfully collaborate for effective rescue complicated this mission. However, the Indian embassy’s presence when all others were closing down is extremely telling of this government’s commitment towards its people.</p>
+
+            <h1>Operation Dost-</h1>
+
+            <p>India’s efforts at alleviating humanitarian distress caused due to a 7.8 magnitude earthquake ravaging Syria and Turkey, in 2023, is an exemplary case of India’s humanitarian and disaster relief activity. It sent emergency relief materials worth a total of Rs.7 Crore like lifesaving drugs, critical care equipment, and sent medical teams. On 6th February’23 when the earthquake hit, much was done within 12 hours of the disaster, India was among the first countries to rush in. The efforts of NDMA, NDRF, Defense, Civil Aviation, Health and Family affairs ministry talks about coordination. Turkish diplomat Firat Sunel applauded India’s help by quoting “A friend in need is a friend indeed”. The army used SANCHAR, a network independent tracking and managing system to help track both team members and assets as they ventured into the earthquake hit regions. Moreover, India was bent upon making relief effective in a sanction hit Syria. This is telling of India’s humanitarian outlook.</p>
+            <h1>
+            Operation Kaveri-</h1>
+
+            <p>The rivers reach their destination irrespective of the barriers. This spirit was to be observed in this mission of the government of India, to evacuate Indians from the unrest in Sudan because of skirmishes between the army and the paramilitary there starting 15th April’23. The agenda was to transport Indians to Khartoum and from there to India. Close to 3800 Indians were to be rescued. The mission was launched on 24th April’23. This operation involved effective communication with nearby states of Saudi, Egypt, UAE and the UN as well.</p>
+
+            <p>The article is an attempt to highlight the various missions to show that today India undertakes a wide spectrum of operations from consular assistance to logistical and financial support, often re-building the key infrastructure of the affected states. Indian grit involves keeping its diplomatic mission active even in very hostile environments, while others close down. India will continue to elevate its response effectiveness in all such times to come – That’s the new India during its Amrit Kaal under the leadership of Prime Minister Narendra Modi.</p>
+            
+        </div>
+        <div class="side">
+            <h3>You May also like</h3>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/06/My-project-copy-1-e1687445111941.jpg" alt="">
+                </div>
+            </div>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/06/Futuristic-farming.jpg" alt="">
+                </div>
+            </div>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-17.04.46-1-1-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/03/7-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/06/imageedit_1_3848027779.jpg" alt="">
+                </div>
+            </div>
+            <div class="side1">
+                <div class="left">
+
+                    <p>Aatmanirbhar Bharat....</p>
+                    <h1>New India's Journey From fragile five fastest growing activity in the world.</h1>
+                    <h6>
+                        By Rangam Trivedi
+                    </h6>
+                    <h4>Jun 22, 2023</h4>
+                </div>
+                <div class="image">
+
+                    <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/06/8-e1687445671335-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</div>
+        <div class="six">
+            <div class="first">
+            <h1>24 / 7 Updates Via Social Media</h1>
+            <p>Follow us today.</p>
+            </div>
+           
+            <div class="menu">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i>in</i>
+                </a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="last">
+                <h1>Join Our Newsletter</h1>
+                <div class="form">
+                    <input type="text" placeholder="First Name*">
+                    <input type="text" placeholder="Last Name*">
+                    <input type="email" placeholder="Email Address*">
+                    <input type="text" placeholder="Mobile Number*">
+                    <input type="text" placeholder="District*">
+                    <input type="code" placeholder="Referral Code*">
+                </div>
+    
+                <h5>Can we email you?</h5>
+                <input type="checkbox" id="btn">
+                <label for="btn">Yes,I'd like to receive the new blog email*</label>
+                <input type="submit" value="Submit">
+                </div>
+    
+        </div>
+        <div class="seven">
+            <img src="https://www.kartavyablogs.in/wp-content/uploads/2023/08/logo-white.png" alt="" class="image">
+            <div class="mid">
+                <h3>Initative by Niravadya Foundation</h3>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="#">editor@kartavyablogs.in</a>
+    
+            </div>
+            <div class="right3">
+               <h3>Visitor Counter</h3>
+               <div class="num">
+               <span>5</span>
+               <span>0</span>
+               <span>3</span>
+               <span>7</span>
+               <span>1</span>
+            </div>
+               <img src="https://www.kartavyablogs.in/wp-content/plugins/sitepress-multilingual-cms/res/flags/hi.svg" alt="">
+               <a href="#">हिन्दी</a>
+               <img src="https://www.kartavyablogs.in/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.svg" alt="">
+               <a href="#">English</a>
+    
+            </div>
+        </div>
+        
+    
+    
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{
+            
+            margin: 0%;
+            padding:0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+
+        }
+        body{
+            background-color: rgb(234, 255, 248);
+        }
+
+
+        .main{
+            background-color: aqua;
+            padding: 0px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 15px;
+            margin: 10px;
+        }
+    
+        .logo{
+            color: rgb(231, 17, 213);
+            text-shadow: 2px 2px 3px black;
+        }
+        
+        
+        
+        .logo span{
+            color: blueviolet;
+        }
+        .logo span:hover{
+            color: rgb(13, 13, 14);
+        } 
+
+
+        .main ul li{
+            display: inline-block;
+        }
+
+        .main ul li a{
+            display: block;
+            color: white;
+            padding: 10px;
+            /* border: 2px solid red; */
+            font-weight: 700;
+        }
+
+        .main ul li a:hover{
+            background-color: black;
+            border-radius: 4px
+        }
+        
+        .box img{
+            height: 150px;
+            width: 150px;
+        }
+
+        .office{
+            text-align: center;
+            justify-content:space-evenly;
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .box{
+            border: solid red;
+            height: 350px;
+            width: 300px;
+            padding: 10px 10px;
+            margin:10px ;
+            background-color: darkgray;
+            border-radius: 10px; 
+            box-shadow:3px 3px 6px ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="logo">The <span>Institute</span></h1>
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Conatct</a></li>
+    </ul>
+    </div>
+    <div class="office">
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+            <h1 class="name">this is image of office cabin</h1>
+            <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                
+                </p>
+               <a href="btn">Read More</a>                                                                                                                   
+
+               </div>
+               
+               <div class="office">
+
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                    <h1 class="name">this is image of office cabin</h1>
+                    <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                        
+                        </p>
+                       <a href="btn">Read More</a>                                                                                                                   
+        
+                </div>
+                <div class="office">
+
+                    <div class="box">
+                        <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                        <h1 class="name">this is image of office cabin</h1>
+                        <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                            
+                            </p>
+                           <a href="btn">Read More</a>                                                                                                                   
+            
+                    </div>
+                    <div class="office">
+
+                        <div class="box">
+                            <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                            <h1 class="name">this is image of office cabin</h1>
+                            <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                                
+                                </p>
+                               <a href="btn">Read More</a>                                                                                                                   
+                
+                        </div>
+                        <div class="office">
+
+                            <div class="box">
+                                <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                                <h1 class="name">this is image of office cabin</h1>
+                                <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                                    
+                                    </p>
+                                   <a href="btn">Read More</a>                                                                                                                   
+                    
+                            </div>
+                            <div class="office">
+
+                                <div class="box">
+                                    <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                                    <h1 class="name">this is image of office cabin</h1>
+                                    <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                                        
+                                        </p>
+                                       <a href="btn">Read More</a>                                                                                                                   
+                        
+                                </div>
+                                <div class="office">
+
+                                    <div class="box">
+                                        <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                                        <h1 class="name">this is image of office cabin</h1>
+                                        <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                                            
+                                            </p>
+                                           <a href="btn">Read More</a>                                                                                                                   
+                            
+                                    </div>
+                                    <div class="office">
+
+                                        <div class="box">
+                                            <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt="image">
+                                            <h1 class="name">this is image of office cabin</h1>
+                                            <p>ebruary 2, 2023 - Shop mortgage rates from trusted lenders to compare costs. Use our mortgage calculators and find expert mortgage help and money-saving loan tools at HSH.com
+                                                
+                                                </p>
+                                               <a href="btn">Read More</a>                                                                                                                   
+                                
+                                        </div>
+        
+
+
+</body>
+</html>

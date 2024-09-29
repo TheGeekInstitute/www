@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .box{
+            background-color: red;
+            height: 300px;
+            width: 250px;
+            margin: 150px auto;
+            transition: all .3s linear;
+        }
+
+
+        .box:hover{
+            /* transform: translateX(100px); */
+            /* transform: translateY(100px); */
+
+            /* transform: translate(100px,100px); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scale(2); */
+            /* transform: rotate(60deg); */
+
+            /* transform: skewX(60deg); */
+            /* transform: skewY(60deg); */
+            transform:skew(20deg,20deg) rotate(360deg);
+
+
+
+
+
+        }
+
+        .container{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+        }
+
+        .container .card{
+            height: 200px;
+            width: 200px;
+            transition: all .5s linear;
+            background-color: red;
+            transform: translateY(100%);
+        }
+
+        .container:hover .card{
+            transform: translateY(0);
+        }
+       
+    </style>
+</head>
+<body>
+    
+<!-- 
+    <div class="box">
+        <h1>ABCD XYZ</h1>
+    </div> -->
+
+
+    <div class="container">
+        <i class="fa-brands fa-linkedin"></i>
+
+        <div class="card">
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!-- http://10.10.10.10/Aasha/card.html -->

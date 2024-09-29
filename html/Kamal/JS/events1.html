@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="txt" cols="30" rows="10" value="dasd"></textarea>
+
+    <p id="result"></p>
+    <script>
+        document.body.addEventListener("mousedown",(e)=>{
+            // console.log()
+            switch(e.button){
+                case 0 : document.body.style.backgroundColor="red";
+                break;
+                case 1 : document.body.style.backgroundColor="yellow";
+                break;
+                case 2 : document.body.style.backgroundColor="green";
+                break;
+                default :  document.body.style.backgroundColor="white";
+
+
+            }
+        })
+
+
+        let txt = document.querySelector("#txt");
+        let result  =  document.querySelector('#result');
+
+        txt.addEventListener("copy",()=>{
+            result.innerHTML = "text Copied";
+        })
+
+
+        txt.addEventListener("cut",()=>{
+            result.innerHTML = "text Cutted";
+        })
+
+        txt.addEventListener("paste",()=>{
+            result.innerHTML = "text Pasted";
+        })
+
+
+
+        if (navigator.onLine) {
+  console.log("online");
+} else {
+  console.log("offline");
+}
+
+
+
+
+    </script>
+</body>
+</html>

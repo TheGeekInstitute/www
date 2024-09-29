@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change{
+            font-family: cursive;
+            color: red;
+            font-size: xx-large;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1 class="heading">This is Heading1</h1>
+    <h1 class="heading">This is Heading2</h1>
+    <h1 class="heading">This is Heading3</h1>
+    
+    <h1 id="myhead" class="change">This is another Heading</h1>
+    
+    <button onclick="change()">Change</button>
+
+    <script>
+        // let heading=document.getElementsByClassName("heading")[0];
+
+        // let heading= document.querySelector(".heading");
+        let myheading = document.querySelector("#myhead")
+        let heading= document.querySelectorAll(".heading");
+        
+        // console.log(heading)
+        // console.log(myheading);
+        
+        
+        function change(){
+            // heading.style.color="red";
+            // heading.style.backgroundColor="black"
+            // console.log(heading.className)
+            // heading.className = "change"
+            // heading.classList.add("change")
+
+            // myheading.classList.remove("change")
+
+            heading.forEach(function(e){
+                // console.log(e)
+                e.style.color="red";
+             e.style.backgroundColor="black"
+            })
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

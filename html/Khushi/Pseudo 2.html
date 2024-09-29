@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        ul li{
+            font-size:40px;
+            font-weight: 100;
+        }
+        ul li:first-child{
+            /* color: aqua; */
+
+        }
+        ul li:last-child{
+            /* color: aqua; */
+        }
+        ul li:nth-child(2n+1){
+            /* color: blueviolet; */
+        }
+        ul li:nth-last-child(2n+1){
+            color:blue;
+        }
+        ul li:nth :nth-child(6){
+            color:blueviolet;
+        }
+        .parent p:first-of-type{
+            color: rgb(255, 0, 255);
+        }
+        .parent p:last-of-type{
+            color: brown;
+        }
+        .parent p:nth-of-type(2){
+            color: rgb(204, 14, 14);
+        }
+        div:empty{
+            border: 3px solid rgb(8, 114, 17);
+            height: 20px;
+        }
+        div:not(:empty){
+        border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>ten</li>
+
+    </ul>
+    <div class="parent">
+        <b>second child</b>
+        <P>second child</P>
+        <P>third child</P>
+
+        <div class="child">
+            <b>second child1</b>
+            <P>first child2</P>
+            <P>third child3</P>
+        </div>
+    </div>
+
+    <div></div>
+    
+</body>
+</html>

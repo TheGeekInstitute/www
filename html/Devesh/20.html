@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css);
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            /* list-st/yle: none; */
+            
+        }
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav a{
+            color: black;
+        }
+
+        .nav .logo{
+            font-size: x-large;
+        }
+
+        .nav #btn{
+            background-color: royalblue;
+            color:white;
+            font-size: large;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .hero h1{
+            /* height: 200px; */
+            padding-top: 200px;
+            width: 600px;
+            font-size: 40px;
+            /* text-align: center; */
+            margin: auto;
+            color: white;
+        }
+
+        .hero form{
+margin-top: 50px;
+        }
+
+
+        .hero{
+            height: 600px;
+            text-align: center;
+            /* background-color: ; */
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.4);
+            /* background-blend-mode: overlay; */
+        }
+
+        .hero form input{
+            width: 400px;
+            height: 40px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: large;
+        }
+
+        .hero form #submit{
+            height: 40px;
+            width: 100px;
+            border-radius: 5px;
+        margin-left: 20px;
+        color: white;
+        background-color: royalblue;
+        
+        }
+
+        .features{
+            /* border: 2px solid red; */
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 50px 0px;
+        }
+        .features .box{
+            /* border: 2px solid black; */
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .features .box i{
+           font-size: 5rem;
+           margin-bottom: 10px;
+            color: royalblue;
+        }
+
+        .features .box h3{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .features .box p{
+            font-size: large;
+        }
+
+        .services{
+
+        }
+
+        .services .service{
+display: flex;
+align-items: center;
+justify-content: center;
+        }
+
+        .services .service .content{
+            height: 500px;
+            width: 50%;
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .services .service .content h1{
+            margin-bottom: 20px;
+        }
+
+        .services .service img{
+            height: 500px;
+            width: 50%;
+            object-fit: cover;
+
+        }
+
+        .teams{
+text-align: center;
+        }
+
+        .teams h1{
+            margin: 30px 0;
+        }
+
+        .teams .people{
+            display: flex;
+align-items: center;
+justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        }
+
+        .teams .people .person{
+text-align: center;
+height: 300px;
+width: 300px;
+margin: 20px;
+        }
+         .teams .people .person h3{
+margin: 20px 0;
+         }
+
+         .teams .people .person img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px black;
+         }
+
+         .contact{
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.1);
+            background-blend-mode: overlay;
+            text-align: center;
+            background-position: center;
+         }
+         .contact h1{
+            text-align: center;
+            color: white;
+            padding: 50px;
+         }
+
+         .contact form{
+            /* border: 2px solid black; */
+         }
+
+         .contact form input{
+            height: 45px;
+            width: 450px;
+            border-radius: 5px;
+            padding: 2px 5px;
+            font-size: large;
+border: none;
+         }
+         .contact form #btn1{
+            background-color: royalblue;
+            color: white;
+       width: 100px;
+       margin-left: 20px;
+         }
+
+         .footer{
+            /* border: 1px solid red; */
+            text-align: center;
+            height: 300px;
+            padding: 50px 0px;
+         }
+
+         .footer .links{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            list-style: none;
+            justify-content: center;
+            margin-bottom: 20px;
+         }
+
+         .footer .links li a{
+            display: block;
+            margin: 0px 10px;
+            font-size: large;
+            color: blue;
+         }
+
+         .footer p{
+            font-size: large;
+            margin-bottom: 20px;
+         }
+
+         .footer .social{
+           font-size: 30px;
+         }
+
+         .footer .social ul{
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .footer .social ul li a{
+            color: black;
+            margin: 0px 10px;
+         }
+
+
+        
+
+
+       
+
+
+        
+    </style>
+</head>
+<body>
+<div class="nav">
+        <a href="#" class="logo">Start Bootstrap</a>
+        <a href="#" id="btn">Sign Up</a>
+       
+</div>
+
+<div class="hero">
+
+      <h1>Generate more leads with a professional landing page!</h1>
+      <form action="">
+        <input type="email" placeholder="Email Address">
+
+        <input type="submit" id="submit" value="Submit">
+      </form>
+
+     
+    </div>
+</div>
+<div class="features">
+<div class="box">
+    <i class="fa-regular fa-window-restore"></i>
+<h3>Fully Responsive</h3>
+<p>This theme will look great on any device, no matter the size!</p>
+</div>
+
+<div class="box">
+    <i class="fa-solid fa-layer-group"></i>
+    <h3>Bootstrap 5 Ready </h3>
+    <p>Featuring the latest build of the new Bootstrap 5 framework!</p>
+</div>
+
+<div class="box">
+    <i class="fa-solid fa-terminal"></i>
+    <h3>Easy to Use </h3>
+    <p>Ready to use with your own content, or customize the source files! </p>
+</div>
+</div>
+
+<div class="services">
+    <div class="service">
+        <div class="content">
+            <h1>Fully Responsive Design</h1>
+            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+        </div>
+        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="ABCD">
+    </div>
+
+    <div class="service">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-2.jpg" alt="ABCD">
+
+            <div class="content">
+            <h1>Updated For Bootstrap 5</h1>
+
+            <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+           
+        </div>
+    </div>
+
+    <div class="service">
+        <div class="content">
+            <h1>Easy to Use & Customize</h1>
+
+            <p>Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+</div>
+        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-3.jpg" alt="ABCD">
+    </div>
+</div>
+
+<div class="teams">
+    <h1>What people are saying...</h1>
+
+    <div class="people">
+
+        <div class="person">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg" alt="">
+
+            <h3>Margaret E.</h3>
+            <p>"This is fantastic! Thanks so much guys!"</p>
+        </div>
+
+        <div class="person">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg" alt="">
+
+            <h3>Fred S..</h3>
+            <p>"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+        </div>
+
+        <div class="person">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg" alt="">
+
+            <h3>Sarah W.</h3>
+            <p>"Thanks so much for making these free resources available to us!"</p>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+   
+    <h1>Ready to get started? Sign up now!</h1>
+
+    <form action="">
+        <input type="email" placeholder="Email Address">
+
+        <input type="Submit" value="Submit" id="btn1">
+    </form>
+</div>
+
+<div class="footer">
+    <ul class="links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">. Contact</a></li>
+        <li><a href="#">. Terms of Use</a></li>
+        <li><a href="#">. Privacy Policy</a></li>
+    </ul>
+    <p>&copy;  Your Website 2023. All Rights Reserved.</p>
+
+<div class="social">
+    <ul>
+        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+
+        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-twitter"></i></a></li>
+
+        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+<script>
+    function print(data){
+        document.write(data);
+    }
+
+    let name=["Amit","Sumit","Ravi","Ankit","Bablu","Sumit",'Zoya'];
+    let num=[10,20,30,40,50];
+    // print(name);
+    document.write(name)
+    document.write("<br><br>");
+    document.write(num)
+    document.write("<br><br>");
+
+
+    //## Deleting and Modifying an array index
+    // name[0]=null
+    // delete name[0]
+    // name[0]="Golu"
+    // document.write(name)
+    // console.table(name)
+
+
+    //## sort() reverse() // asc desc
+    // name.sort()
+    // name.reverse()
+    // document.write(name)
+
+    //## pop() push() // deleting and adding last index value of an array
+
+    // name.pop()
+    // name.push("Karan")
+    // document.write(name)
+
+    //## shift() unshift() // deleting and adding  index value at the begning of an array
+
+    // name.shift();
+    // name.unshift("Vicky")
+    // document.write(name)
+
+
+    //##concat() //joining two or more arrays 
+    let new_arr=["ABCD","XYZ"]
+    // let data= new_arr.concat(name)
+    // console.log(data)
+    // let data =name.join(" * ")
+    // document.write(data)
+
+    //##slice(),splice()
+    // let data= name.slice(1,4)
+    // document.write(data)
+
+    // name.splice(2,0,new_arr)
+    // name.splice(2,1,new_arr)
+    // document.write(name)
+// let data="asdas"
+    // document.write(Array.isArray(data))
+
+    // document.write(name.indexOf("Sumit",2))
+    // document.write(name.lastIndexOf("Sumit",-2))
+
+    // document.write(name.includes("Ravi","Sumit"))
+
+    // let data =num.some(checkAdult)
+    
+    // let data = num.some(function(val){
+    //     return val>20
+    // })
+
+//    let new_data = num.every(function(val){
+//         return val>1
+//     })
+//     document.write(new_data)
+
+
+    // ages.some(checkAdult);
+// function checkAdult(val) {
+//   return val > 20;
+// }
+
+let data = num.filter(function(val){
+    return val>30
+});
+
+// document.write(data)
+
+// document.write(typeof(name.toString()))
+
+// document.write(name.valueOf()) // returning it-self
+
+// name.fill("A")
+// document.write(name)
+
+
+// name.forEach(function(value){
+//     document.write(value +"<br>")
+// });
+
+
+// name.map(function(val){
+//     document.write(val + "<br>")
+// })
+
+
+let arr_obj=[
+    {"name" : "amit", "age":25,"gender": "male"},
+    {"name" : "Sumit", "age":26,"gender": "male"},
+    {"name" : "Ganesh", "age":27,"gender": "male"},
+    {"name" : "Ravi", "age":28,"gender": "male"},
+    {"name" : "Ravi", "age":28,"gender": "male" , "class" : "XII"}
+]
+
+// document.write(arr_obj[1].name)
+
+for(index of arr_obj){
+    // console.log(index)
+    for(data in index){
+        document.write(data+  " : " + index[data] + " <br>")
+    }
+    document.write("<br>")
+}
+  
+</script>
+</body>
+</html>

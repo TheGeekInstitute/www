@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fontawesome.com/icons/whatsapp"> 
+<link rel="stylesheet" href="https://fontawesome.com/icons/instagram"> 
+<link rel="stylesheet" href="https://fontawesome.com/icons/google">
+  
+  <link rel="stylesheet" href="https://fontawesome.com/icons/youtube">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+             
+    
+         }
+         
+     .container{
+        background-color: rgb(182, 176, 176);
+            /* border: 2px solid black; */
+            width:350px;
+            height:27rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin: 150px ;
+                padding: 5px;
+                border-radius: 10px;
+         box-shadow: 0px 0px 30px rgb(15, 3, 66);
+         color:white;
+         background-image:linear-gradient( pink , rgb(248, 115, 137), rgba(113, 113, 241, 0.651));
+
+
+         }
+
+            .container h1{
+                margin:10px 0;
+                color: black;
+         text-shadow: 0px 0px 30px rgb(14, 3, 66);
+
+            }
+    
+            .container form{
+
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+    
+    
+    
+            .container form input{
+                
+                border: 1px solid black;
+                border-width: 1px 1px 3px 1px;
+                padding: 3px;
+                font-size: large;
+                width: 250px;
+                margin: 5px 0;
+                
+                
+                
+            }
+    
+            .container form label{
+                display: block;
+                width: 250px;
+                font-size: large;
+                font-weight: 900;
+                color: black;
+
+            }
+    
+            .container form input[type="submit"]{
+                width: 150px;
+                background-color: rgb(54, 177, 244);
+                color: white;
+                padding: 7px ;
+                border-radius:5px;
+
+            }
+
+
+
+
+
+        .fixed{
+            /* background-color: red; */
+            
+            height: 100px;
+            width: 200px;
+
+            position: fixed;
+            right: 20px;
+            bottom: 50px;
+        }
+
+
+  @font-face {
+    font-family: Radhefont;
+    src: url("./myfont.ttf");
+ }
+
+.icons1{
+    font-size:40px;
+     margin-top:5px;
+
+}
+
+.icons1 .one{
+    color: red;
+}
+
+.icons1 .two{
+    
+    color: black;
+    
+}
+
+.icons1 .three{
+    color: rgb(5, 5, 5);
+}
+        </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Regstration Form</h1>
+
+
+    <form action="">
+        <label for="">Full Name</label>
+        <input type="text" name="fullname">
+        <label for="">Username</label>
+        <input type="text" name="username">
+        <label for="">Email</label>
+        <input type="email" name="email">
+        <label for="">Password</label>
+        <input type="password" name="password">
+        <input type="submit" value="Signup">
+        <!-- <a href="./SignUp.html">Login</a> -->
+    </form>
+
+       <div class="icons1">
+            <a href=" https://www.youtube.com/">
+                <i class="fa-brands fa-youtube one"></i>
+            </a>
+
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://web.whatsapp.com/&ved=2ahUKEwizsdXhltCFAxWZR2wGHVHPA74QFnoECBsQAQ&usg=AOvVaw1V09js0t2A_u6GXzP1jPsR">
+            <i class="fa-brands fa-whatsapp two"></i>
+        </a>
+         <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.instagram.com/&ved=2ahUKEwij-YeRl9CFAxWJcmwGHTH9BUgQFnoECAcQAQ&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm">
+            <i class="fa-brands fa-instagram three"></i>
+        </a>
+
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.google.co.in/&ved=2ahUKEwiBmrKal9CFAxXhZmwGHVJnBSQQFnoECAYQAQ&usg=AOvVaw1JJPJSW95uLD_bTipFUwd8">
+            <i class="fa-brands fa-google four" ></i>
+        </a>
+        </div>
+</body>
+</html>

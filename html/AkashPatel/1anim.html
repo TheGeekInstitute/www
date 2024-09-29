@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            font-size: 70px;
+            text-align: center;
+            line-height: 200px;
+            animation-name: string;
+            animation-duration: 0.4s;
+            /* animation-delay: 2s; */
+        }
+
+        @keyframes string{
+            from{
+                border-radius: 0;
+                background-color: crimson;
+            }
+
+            to{
+                border-radius: 50%;
+                background-color: yellow;
+            }
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        SUN
+    </div>
+</body>
+</html>

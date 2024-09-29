@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;  
+        }
+
+        .box{
+            background-color: rgba(255, 0, 0, 1);
+            position: absolute;
+            z-index: -10;
+        }
+        .box1{
+            background-color: rgba(0, 255, 255, 1);
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: -2;
+            overflow: scroll;
+            resize: both;
+        }
+
+        h1{
+            position: absolute;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+<!-- 
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum incidunt neque placeat corporis consequatur animi nemo aliquam minus earum nesciunt, nam accusamus laudantium maiores asperiores pariatur inventore repudiandae minima.</h1> -->
+    <div class="box"></div>
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi consequuntur sunt asperiores dolores perferendis quis earum, iusto autem a dignissimos, ipsum assumenda reprehenderit minima cumque perspiciatis corrupti omnis odio aliquid.
+        Tempora non sint ab necessitatibus expedita sunt ex debitis est consectetur quisquam cupiditate eius ipsa minima reiciendis nostrum dolores sequi, natus ratione dolore officia? Accusantium veritatis nemo voluptas repudiandae suscipit?
+        Quas facilis earum ipsam non deserunt inventore laborum unde qui provident dolores eos obcaecati eveniet ab labore voluptatibus ullam, quam consectetur maiores ea? Assumenda ut sapiente cupiditate est dignissimos asperiores?</p>
+    </div>
+    
+</body>
+</html>

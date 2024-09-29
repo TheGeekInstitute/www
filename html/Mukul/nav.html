@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            background-color: rebeccapurple;
+            height: 50px;
+            text-align: center;
+        }
+
+        .nav ul li{
+            /* border: 1px solid red; */
+            display: inline-block;
+        }
+
+        .nav ul li a{
+            display: block;
+            color: white;
+            line-height: 50px;
+            padding: 0 10px;
+            margin: 0 10px;
+            transition: all .3s linear;
+        }
+
+        .nav ul li a:Hover{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+</body>
+</html>

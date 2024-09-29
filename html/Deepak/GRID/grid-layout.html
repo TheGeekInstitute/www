@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 50px 1fr 50px;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            background-color: rebeccapurple;
+            height:4em;
+            width: calc(100% - 12rem);
+            margin-left: 12rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rebeccapurple;
+            padding: 0px 10px;
+            /* font-weight: 600; */
+            box-shadow: 10px 10px 20px grey;
+            
+        }
+
+        .sidebar{
+            background-color: blue;
+            grid-area: 1 / 1 / 5 / 2;
+        }
+
+        .main{
+            background-color: green;
+        }
+
+        .footer{
+            background-color: black;
+        }
+        .sidebar .links{
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            margin: 10px 0;
+        }
+
+        .sidebar .links li{
+            width: 100%;
+        }
+
+        .sidebar .links li a{
+            display: block;
+            color: white;
+            font-size: large;
+            line-height: 40px;
+            padding: 0 5px;
+        }
+
+        .sidebar .links li a:hover{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box nav">
+
+
+        </div>
+        <div class="box sidebar">
+
+            <ul class="links">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ul>
+
+        </div>
+        <div class="box main">
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="items">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+
+                    <p>Students</p>
+                </div>
+            </a>
+
+
+        </div>
+        <div class="box footer">
+            <p>Copyright &copy; <a href="#">Geek Institute Of Cyber Security</a> All Rights Reserved. </p>
+        </div>
+    </div>
+</body>
+</html>

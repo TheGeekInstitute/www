@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:   border-box;
+        }
+      #open{
+        background-color: royalblue;
+        color: white;
+        padding: 5px;
+        display: block;
+        width: 7rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: large;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px black;
+      }
+
+      .modal{
+        background-color: aquamarine;
+        padding: 10px;
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        top: calc(50% - 200px);
+        left: calc(50% - 300px);
+    
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px black;
+        animation: show .5s linear 0s 1 alternate forwards;
+        display: none;
+        z-index: 1000;
+      }
+
+      .modal .heading{
+        font-size: larger;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        border-bottom: 2px solid black;
+        user-select: none;
+      }
+
+      .modal .content{
+        padding: 1rem;
+      }
+
+      .modal .heading #close{
+        color: red;
+        font-size: x-large;
+        cursor: pointer;
+      }
+
+      #btn:checked + .modal{
+        display: block;
+      }
+
+      #btn{
+        display: none;
+      }
+
+      @keyframes show {
+        0%{
+            transform: scale(0);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+      }
+    </style>
+</head>
+<body>
+    
+    <label for="btn" id="open">Open Popup</label>
+
+    <input type="checkbox" id="btn">
+    <div class="modal">
+        <div class="heading">
+            <p>Lorem ipsum dolor, sit amet consectetur</p>
+            <label for="btn" id="close">X</label>
+        </div>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quo minima aspernatur necessitatibus quae maiores odio cupiditate exercitationem ea deserunt accusantium eveniet provident in ducimus, corrupti, quibusdam, odit porro dignissimos.
+            Eligendi iure numquam beatae? Nemo iusto, facilis similique sequi sunt reprehenderit asperiores cumque! Saepe doloribus, at iusto, ut cum qui laudantium quis et beatae quidem non, tempora eos illo inventore.</p>
+        </div>
+    </div>
+
+</body>
+</html>

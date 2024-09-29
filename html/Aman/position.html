@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .static{
+            position: static;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin: auto;
+        margin-top: 50px ;
+        margin-bottom: 50px ;
+        }
+
+        .box{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: relative;
+            /* margin: auto; */
+            top: 20px;
+            left: 50px;
+        }
+
+        .fixed{
+            border: 2px solid green;
+            background-color: greenyellow;
+            height: 150px;
+            width: 150px;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+
+
+        .abs{
+            background-color: green;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+
+        .sticky{
+            position: sticky;
+            background-color: red;
+            height: 100px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci id laboriosam blanditiis doloribus explicabo deserunt, labore quod, optio animi, error illo saepe. Ducimus architecto ratione totam at, debitis vel quasi?
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <div class="fixed">Fixed</div>
+
+    <div class="abs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat reiciendis molestias illum dolor sit aliquam, voluptas ut assumenda facilis impedit doloremque nobis aperiam aut distinctio laboriosam ducimus corporis velit!</div>
+
+    <div class="sticky">Sticky</div>
+
+   
+    Illum voluptate sapiente ipsam tenetur quisquam excepturi architecto reiciendis harum quidem aliquam amet placeat, fugiat error, assumenda esse dolors, incidunt?
+    Quam inventore aliquam in est nihil magni rerum voluptatibus natus omnis voluptate temporibus, deserunt ad sit vel quos! Illum nulla animi debitis non saepe quisquam officia itaque, dolores consequuntur fuga.
+    Dolore unde necessitatibus, maiores rerum placeat quidem temporibus quibusdam quam quisquam fugit pariatur sint, sapiente amet dolores, id libero magnam ducimus cumque repudiandae animi odio nobis exercitationem! Eligendi, quo possimus.
+    Nam magni labore nisi voluptatum officiis odit nulla repellat. Molestiae poribus minima quod culpa explicabo asperiores quidem. Esse sint voluptatum nostrum placeat? Pariatur odit saepe ut!</p>
+
+</body>
+</html>

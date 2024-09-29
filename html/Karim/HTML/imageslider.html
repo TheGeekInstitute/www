@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            overflow: hidden;
+        }
+
+        .container .slider{
+            display: flex;
+            width:400vw;
+            animation: image-slider 10s linear 0s infinite alternate ;
+        }
+
+        .container .slider .image{
+            height: 70vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .slider .image .content{
+            width: 75vw;
+            background-color: rgba(0, 0, 0, .5);
+            color: white;
+            padding: 10px;
+            border-radius: 30px 5px;
+
+        }
+        
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+            }
+
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-100vw);
+            }
+
+            45%{
+                transform: translateX(-100vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-200vw);
+            }
+
+            65%{
+                transform: translateX(-200vw);
+            }
+
+            70%{
+                transform: translateX(-200vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-300vw);
+            }
+
+            85%{
+                transform: translateX(-300vw);
+            }
+            90%{
+                transform: translateX(-300vw);
+            }
+
+            95%{
+                transform: translateX(-300vw);
+            }
+
+            100%{
+                transform: translateX(-300vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+
+            <div class="image" style="background-image: url(./images/1.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facilis facere nemo sequi neque consequuntur qui, explicabo consequatur animi tempora quas officia earum distinctio delectus enim ea est eos eius.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(./images/2.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facilis facere nemo sequi neque consequuntur qui, explicabo consequatur animi tempora quas officia earum distinctio delectus enim ea est eos eius.</p>
+                </div>
+            </div>
+
+
+            <div class="image" style="background-image: url(./images/3.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facilis facere nemo sequi neque consequuntur qui, explicabo consequatur animi tempora quas officia earum distinctio delectus enim ea est eos eius.</p>
+                </div>
+            </div>
+
+            <div class="image" style="background-image: url(./images/4.jpeg);">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facilis facere nemo sequi neque consequuntur qui, explicabo consequatur animi tempora quas officia earum distinctio delectus enim ea est eos eius.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

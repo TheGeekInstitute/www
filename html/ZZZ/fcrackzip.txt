@@ -1,0 +1,13 @@
+
+
+Crack ZIP file password with fcrackzip
+
+1. root@Mr-Malware:~# apt-get install fcrackzip(Installation)
+
+compressing zip with apssword # zip --password 12345678 zipfilename.zip * (or directory)
+
+2. root@Mr-Malware:~# fcrackzip -b -c a -v -u
+
+5. root@Mr-Malware:~# fcrackzip -D -p passlist.txt -u zipfile.zip(cracking password with passwordlist file)
+Published with Simplenote
+Report abuse

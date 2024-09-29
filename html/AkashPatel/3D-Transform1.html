@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D</title>
+    <style>
+        body{
+            perspective: 600px;
+        }
+        .container{
+            background-color: rgba(128, 128, 128, 0.568);
+            height: 400px;
+            width: 350px;
+            perspective:600px;
+            margin: auto;
+            margin-top: 200px;
+            transform-style: preserve-3d;
+            transition: all 2s;
+            
+        }
+
+        .container:hover{
+            transform: rotateX(30deg);
+            transform: rotateX(30deg);
+            transform: rotateX(30deg);
+            
+            
+
+        }
+
+        .box{
+            background-color: red;
+            height: 400px;
+            width: 350px;
+            transition: all 2s;
+            /* transform-origin: top left; */
+            font-size: 60px;
+            /* backface-visibility: hidden; */
+        }
+
+        .box:hover{
+            transform:  translate3d(200px,100px,200px);
+            /* transform:  translateZ(200px); */
+            /* transform: scaleZ(1.5); */
+            /* transform: perspective(600px) scale3d(2,2,2); */
+
+            transform: rotateY(180deg);
+
+
+            transform: rotate3d(1,1,-2,30deg);
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        sdfsdf
+        <div class="box">
+            ABCD
+        </div>
+    </div>
+</body>
+</html>

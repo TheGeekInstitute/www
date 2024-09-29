@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            background: yellow;
+        }
+        .card{
+            height: 400px;
+            width: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 150px);
+            /* background: black; */
+            border-radius: 30px;
+
+/* 
+            margin-top: calc(50vh - 150px);
+            margin-left: calc(50vw - 150px); */
+            
+        }
+
+        .content{
+            position: absolute;
+            height: 400px;
+            width: 300px;
+            /* font-size: 60px; */
+            text-align: center;
+            /* line-height: 300px; */
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: all 1s;
+            
+        }
+
+        .front,.back{
+            position: absolute;
+            height: 400px;
+            width: 300px;
+            backface-visibility: hidden;
+            border-radius: 30px;
+            box-shadow: 4px 4px 3px black;
+        }
+
+        .front{
+            background-color: rgb(10, 53, 248);
+            border: 3px solid red;
+        }
+        .front img{
+            /* position: absolute; */
+            margin-top: 10px;
+            height: 200px;
+            width: 200px;
+            border: 4px groove red;
+            border-radius: 50%;
+
+        }
+        .front hr{
+            /* margin: 0;
+            padding: 0; */
+            height: 2px;
+            background: red;
+        }
+        .front a{
+            display: block;
+            list-style: none;
+            text-decoration: none;
+            margin-top: 20px;
+            border: 2px inset white;
+            border-radius: 40%;
+            font-size: 60px;
+            padding: 9px;
+            color: white;
+            background: red;
+            box-shadow: 3px 3px 2px black ;
+        }
+
+        .back{
+            background-color: red;
+            transform: rotateY(180deg);
+            border: 3px solid blue;
+            
+        }
+        .back h1{
+            color: blue;
+            border: 5px double blue;
+            border-radius: 20%;
+            background: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 3px black;
+        }
+        .back p{
+            color: white;
+            font-size: 16px;
+            background: red;
+            border-radius: 30%;
+
+        }
+.card:hover .content{
+    transform: rotateY(180deg);
+
+}
+.icon{
+            font-size: xx-large;
+            padding: 10px;
+            background: red;
+            border-radius: 30px;
+            /* margin: 10px; */
+        }
+        .fb,.tw,.ig{
+            margin: 5px;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+            border: 2px solid red;
+            
+        }
+        .fb{
+            color: blue;
+        }
+        .ig{
+            color: blueviolet;
+        }
+        .tw{
+            color: aqua;
+        }
+
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="content">
+            <div class="front">
+                <img src="https://cdn.wallpapersafari.com/76/53/aj9pTf.jpg" alt="">
+                <hr>
+                <a href="" class="dora">Doremon</a>
+            </div>
+            <div class="back">
+                <h1>Doremon...</h1>
+                <p>Doraemon is a Japanese manga and anime series created by Fujiko F. Fujio.01 It tells the story of a male robotic earless cat named Nobita who travels back in time from the 22nd century to aid a preteen boy named Nobita.The two form a close bond and every episode sees Nobita with a new problem and Doraemon with a new gadget to help him solve it. The manga was first serialized in December 1969, with its 1,345 individual chapters compiled into 45 tankbon volumes and published by Shogakukan from 1970 to 1996.</p>
+                <div class="icon">
+                    <a href="#"><i class="fa fa-instagram ig" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fb" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter tw" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

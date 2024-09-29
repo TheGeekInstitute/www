@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0%;
+           box-sizing: border-box;
+           list-style: none;
+           text-decoration: none; 
+        }   
+        .image{
+            display: flex;
+        }
+        .nav{
+            border: 1px solid black;
+            width: 50rem;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+            height: 10rem;
+        }
+        .image{
+            border: 2px solid red;
+            width: 20rem;
+            overflow: hidden;
+
+        }
+        img{
+            width: 25rem;
+            border: 1px solid black;    
+            height: 10rem;
+            /* display: block; */
+        }
+        .btn{
+            margin-left: 15rem;
+            margin-top: 20px;
+        }
+        button{
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 5px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="image">
+            <img src="https://w0.peakpx.com/wallpaper/327/502/HD-wallpaper-a-waterfall-flowing-through-a-subtropical-forest-8k-waterfall-forest-nature.jpg" alt="">
+            <img src="https://img.freepik.com/premium-photo/free-photo-beautiful-nature-hd-8k-wallpaper-stock-photographic-image_915071-68230.jpg" alt="">
+            <img src="https://e0.pxfuel.com/wallpapers/291/488/desktop-wallpaper-8k-nature-8k-ultra-nature.jpg" alt="">
+
+
+        </div>
+     
+    </div>
+    <div class="btn">
+        <button class="previus">Previes</button>
+        <button class="next">Next</button>
+
+    </div>
+    <script>
+        let image = document.querySelector(".image");
+        let next = document.querySelector(".next");
+        let previus = document.querySelector(".previes");
+        let img = document.querySelectorAll("img");
+        let index = 0;
+        next.addEventListener("click",function(){
+            img.forEach((e)=>{
+                e.style.marginLeft = `-${index*10}px`;
+                index++;
+            })
+            
+        
+        })
+
+        // setInterval(() => {
+        //     img.forEach((e)=>{
+        //         e.style.marginLeft = "-100px";
+        //     })
+        // }, 1000);
+    </script>
+
+</body>
+</html>

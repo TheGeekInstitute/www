@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imageslidre</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            overflow: hidden;
+        }
+
+        .container .slider{
+            display: flex;
+            width:400vw;
+            animation: image-slider 20s linear 0s infinite alternate ;
+        }
+
+        .container .slider .image{
+            height: 80vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .slider .image .passage{
+            width: 75vw;
+            background-color: rgba(3, 2, 3, 0.528);
+            color: rgb(250, 250, 250);
+            padding: 10px;
+            border-radius: 40px 5px;
+            font-style: italic;
+            font-weight: 800;
+        }
+        
+
+        @keyframes image-slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            15%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+
+            25%{
+                transform: translateX(-100vw);
+            }
+
+            30%{
+                transform: translateX(-100vw);
+            }
+            35%{
+                transform: translateX(-100vw);
+            }
+
+            40%{
+                transform: translateX(-100vw);
+            }
+
+            45%{
+                transform: translateX(-100vw);
+            }
+
+            50%{
+                transform: translateX(-200vw);
+            }
+            55%{
+                transform: translateX(-200vw);
+            }
+
+            60%{
+                transform: translateX(-200vw);
+            }
+
+            65%{
+                transform: translateX(-200vw);
+            }
+
+            70%{
+                transform: translateX(-200vw);
+            }
+
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-300vw);
+            }
+
+            85%{
+                transform: translateX(-300vw);
+            }
+            90%{
+                transform: translateX(-300vw);
+            }
+
+            95%{
+                transform: translateX(-300vw);
+            }
+
+            100%{
+                transform: translateX(-300vw);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://wallpapers.com/images/featured/beautiful-3vau5vtfa3qn7k8v.jpg);">
+                <div class="passage">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias eius? Sed nesciunt nam, quibusdam ipsum, dolore ea ullam perspiciatis aspernatur debitis pariatur eligendi repudiandae ipsa asperiores eos quos magnam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, reiciendis. Dolorem, ipsam veniam. Delectus, recusandae reiciendis officiis ad doloremque tempore et distinctio error nesciunt, quisquam officia, deserunt velit deleniti ullam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laboriosam omnis eaque quidem nisi, vero voluptate dolores dolorem sint ducimus, consequuntur ipsam recusandae iste accusantium natus eveniet error aut quod.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus deleniti sunt! Possimus dignissimos quisquam quasi voluptatibus esse recusandae repudiandae. Nam voluptate fugit accusamus, culpa possimus sit debitis eum eveniet!
+                    </p>
+                </div>
+
+            </div>
+            <div class="image" style="background-image: url(https://images.unsplash.com/photo-1509043759401-136742328bb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);">
+                <div class="passage">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias eius? Sed nesciunt nam, quibusdam ipsum, dolore ea ullam perspiciatis aspernatur debitis pariatur eligendi repudiandae ipsa asperiores eos quos magnam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, modi obcaecati omnis tempore sed sapiente ducimus sit voluptates, neque distinctio rem deserunt repellat pariatur expedita suscipit consectetur quis cumque facilis!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto temporibus alias soluta, itaque quod accusamus. Minus nemo cum doloribus dignissimos. Laudantium et hic esse culpa ipsum ullam corporis quas eum?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium incidunt, nostrum voluptate rerum non beatae dolor maxime ullam deserunt sunt fugit quas sequi. Laboriosam dolorem repudiandae necessitatibus? Voluptates, illo magni!
+                    </p>
+                </div>
+
+            </div>
+            <div class="image" style="background-image: url(https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_640.jpg);">
+                <div class="passage">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias eius? Sed nesciunt nam, quibusdam ipsum, dolore ea ullam perspiciatis aspernatur debitis pariatur eligendi repudiandae ipsa asperiores eos quos magnam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum accusamus, quisquam quibusdam minima labore, atque tempore consequuntur debitis quia quo repellendus est a, eum quasi? Nemo totam magnam saepe vitae!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sunt. Expedita voluptate eos id rem eveniet explicabo pariatur quae corrupti, eius error porro! Cumque, cum perspiciatis quis rem debitis facere?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro excepturi, molestias earum quis necessitatibus magni illum, cum distinctio modi rerum atque ut quasi accusamus tempore quisquam dolor enim quae ipsam!
+                    </p>
+                </div>
+
+            </div>
+            <div class="image" style="background-image: url(https://t4.ftcdn.net/jpg/05/57/29/25/360_F_557292539_2kXYz0frOcCGISoYEd2MNTmxyT0lYyOj.jpg);">
+                <div class="passage">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, alias eius? Sed nesciunt nam, quibusdam ipsum, dolore ea ullam perspiciatis aspernatur debitis pariatur eligendi repudiandae ipsa asperiores eos quos magnam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, eligendi enim. Minus eveniet mollitia, repudiandae, magni numquam ullam libero sunt ex consequuntur porro pariatur ducimus quae a dolorum placeat aliquid!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro quibusdam, id itaque explicabo animi ducimus corporis ipsam illum ut impedit distinctio, molestiae enim quos libero alias aliquam rerum dicta.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas dignissimos unde dolor quaerat reiciendis delectus! Asperiores, ut obcaecati! Praesentium cum ut, harum corrupti cumque vel dicta nisi impedit inventore modi!
+                    </p>
+                </div>
+
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>

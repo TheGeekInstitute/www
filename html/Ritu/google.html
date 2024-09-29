@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       html{
+        font-size: 62.5%;
+        }
+      
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: flex-end;
+            height: 8rem;
+            /* background-color: grey; */
+            align-items: center;
+            padding: 1.6em 1.6rem;
+
+
+        }
+        .nav ul li {
+            display: inline;
+            padding: 0em  1em;
+        }
+        .nav ul li a {
+            color: black;
+        }
+        .nav img{
+            height: 1.3em;
+            width: 1.3em;
+            margin: -.4em 1em;
+
+        }
+        input[type=submit]{
+            padding: .5em 1.3em;
+            font-size: .9em;
+            color: white;
+            background-color: rgb(4, 108, 228);
+            border-radius: 5px;
+            border: none;
+        }
+        .google img{
+            height: 20em;
+            width: 44em;
+            display: block;
+            margin: auto;
+        }
+        input[type=search]{
+            display: block;
+            margin: auto;
+            height: 5rem;
+            width: 55rem;
+            border-radius:10rem ;
+            border: 1px groove grey;
+            /* background-color: rgba(4, 109, 228, 0.411); */
+            outline: none;
+            padding-left:6rem ;
+        }
+        .hero i{
+            position: absolute;
+            top: 18.7em;
+            left: 37em;
+            font-size: 1.6em;
+            color:  rgba(136, 136, 136, 0.575);
+        }
+        .mic,.camera{
+            position: absolute;
+            top: 29rem;
+            left: 104rem;
+            height: 3rem;
+            width: 3rem;
+        }
+        .camera{
+            top: 29rem;
+            left: 100rem;
+        }
+        .main{
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            height: 4em;
+            
+            
+        }
+        .main p{
+            font-size:1em;
+            margin: .5em;
+            padding: .7em .9em;
+            background: rgba(163, 163, 163, 0.129);
+            border-radius: 5px;
+            color: rgb(96, 96, 96);
+
+        }
+        .main1 {
+            display: flex;
+            justify-content: center;
+            font-size: 1.4em;
+            text-align: center;
+            margin: .5em;
+        }
+        .main1 ul li {
+            display: inline;
+            margin: .4em;
+        }
+        .main1 ul li a:hover{
+            text-decoration: underline ;
+        }
+        .footer{
+            height: 10rem;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(128, 128, 128, 0.329);
+            padding: 2rem;
+            
+        }
+        .footer p{
+          font-size:1.5em ;
+          padding-left: 2rem; 
+          border-bottom: 1px solid rgba(165, 164, 164, 0.973);
+          padding-bottom: 1em;
+          color: grey;
+        }
+        .footer ul li {
+            display: inline;
+            font-size: 1.5em;
+            margin: 2rem;
+            
+        }
+        .main3 ul li a{
+            color: grey;
+        }
+        .main3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            text-decoration: none;
+            list-style: none;
+            
+            
+        }
+        .footer ul li a:hover{
+            text-decoration: underline;
+            list-style: none;
+        
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0sjn8Fgpt89jkiT2SQGa-41HqnBh60EveZsKWgVsVhpoXWpv1hO1FHkhB1vXOlwq2izgY6vj4wq0&usqp=CAU&ec=48600113" alt="">
+            <input type="submit" value="sign in">
+        </ul>
+    </div>
+    <div class="google">
+        <img src="https://logolook.net/wp-content/uploads/2021/06/Google-Logo.png" alt="">
+    </div>
+    <div class="hero">
+        <input type="search" >
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="icon">
+            <svg class="mic" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+
+
+            <svg class="camera" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="192" width="192"></rect><g><circle fill="#4285f4" cx="96" cy="104.15" r="28"></circle><path fill="#ea4335" d="M160,72v40.15V136c0,1.69-0.34,3.29-0.82,4.82v0v0c-1.57,4.92-5.43,8.78-10.35,10.35h0v0 c-1.53,0.49-3.13,0.82-4.82,0.82H66l16,16h50h12c4.42,0,8.63-0.9,12.46-2.51c3.83-1.62,7.28-3.96,10.17-6.86 c1.45-1.45,2.76-3.03,3.91-4.74c2.3-3.4,3.96-7.28,4.81-11.44c0.43-2.08,0.65-4.24,0.65-6.45v-12V96.15V84l-6-19l-10.82,2.18 C159.66,68.71,160,70.31,160,72z"></path><path fill="#4285f4" d="M32,72c0-1.69,0.34-3.29,0.82-4.82c1.57-4.92,5.43-8.78,10.35-10.35C44.71,56.34,46.31,56,48,56 h96c1.69,0,3.29,0.34,4.82,0.82c0,0,0,0,0,0L149,45l-17-5l-16-16h-13.44H96h-6.56H76L60,40H48c-17.67,0-32,14.33-32,32v12v20l16,16 V72z"></path><path fill="#34a853" d="M144,40h-12l16.83,16.83c1.23,0.39,2.39,0.93,3.47,1.59c2.16,1.32,3.97,3.13,5.29,5.29 c0.66,1.08,1.2,2.24,1.59,3.47v0L176,84V72C176,54.33,161.67,40,144,40z"></path><path fill="#fbbc05" d="M48,168h39.89l-16-16H48c-8.82,0-16-7.18-16-16v-23.89l-16-16V136C16,153.67,30.33,168,48,168z"></path></g></svg>
+        </div>
+    </div>
+    <div class="main">
+        <p>Google Search</p>
+        <p>I'm Feeling lucky</p>
+    </div>
+    <div class="main1">
+        <p>Google offered in:</p>
+       <ul>
+           <li><a href="#">हिन्दी</a></li>
+           <li><a href="#">বাংলা</a></li>
+           <li><a href="#">తెలుగు</a></li>
+           <li><a href="#"> मराठी</a></li>
+           <li><a href="#">தமிழ்</a></li>
+           <li><a href="#">ગુજરાતી</a></li>
+           <li><a href="#">ಕನ್ನಡ</a></li>
+           <li><a href="#"> മലയാളം </a></li>
+           <li><a href="#">ਪੰਜਾਬੀ</a></li>
+       </ul>
+    </div>
+<footer>
+    <div class="footer">
+        <p>India</p>
+        <div class="main3">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search works</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+            
+        </ul>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

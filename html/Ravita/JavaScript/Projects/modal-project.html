@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container {
+            /* border: 1px solid black; */
+        }
+
+
+        .container .modal {
+
+            border: 2px solid black;
+            height: 160px;
+            width: 300px;
+            margin: 200px auto;
+            /* justify-content: center; */
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .modal h1 {
+            /* margin-bottom: 100px; */
+            padding: 25px;
+            font-size: 35px;
+        }
+
+        .modal button {
+            height: 26px;
+            width: 8rem;
+            font-size: 13px;
+
+        }
+
+        .next{
+            /* border: 1px solid b; */
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.301);
+            display:none;
+        }
+
+        .next .content{
+            background-color: white;
+            height: 300px;
+            width: 350px;
+            position: absolute;
+            z-index: 100;
+            top:calc(50% - 150px);
+            left:calc(50% - 175px);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .next .content .heading{
+            background-color: crimson;
+            height: 40px;
+            padding: 0 10px;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            font-size: large;
+            user-select: none;
+        }
+
+        .next .content .heading #close{
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .next .content > p{
+            padding: 10px;
+        }
+
+
+        .container .active{
+                display: block;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="modal">
+            <h1>Modal Project</h1>
+            <button id="btn">OPEN MODAL</button>
+            <!-- <div class="img">
+            <img src="https://img.freepik.com/premium-photo/futuristic-glowing-red-light-blue-gray-metallic-d-squares-background_208978-8965.jpg" alt="01">
+           </div> -->
+
+        </div>
+
+        <div class="next">
+            
+            <div class="content">
+                <div class="heading">
+                    <p>Heading</p>
+                    <p id="close">X</p>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis aliquid nostrum ipsa ex ab odit recusandae reiciendis atque, quia, velit quidem suscipit placeat? Aspernatur velit aliquam officiis natus sapiente!</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let next = document.querySelector(".next");
+        btn.addEventListener("click",()=>{
+            next.classList.add("active")
+        })
+
+
+        document.querySelector("#close").addEventListener("click",()=>{
+            next.classList.remove("active")
+        })
+    </script>
+
+</body>
+
+</html>

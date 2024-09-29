@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loader {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            object-fit: cover;
+            /* display: none; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://loading.io/assets/mod/spinner/spinner/lg.gif" alt="" id="loader">
+
+    <div class="container">
+
+    </div>
+
+
+
+    <script>
+        let xhr = new XMLHttpRequest();
+        let loader = document.querySelector("#loader");
+        let container = document.querySelector(".container");
+        // xhr.onreadystatechange = function () {
+        //     if (this.status == 200 && this.readyState == 4) {
+        //         loader.style.display = "none"
+        //         for (x of JSON.parse(this.responseText).products) {
+
+        //             let data = `
+        //             <div class="box">
+        //                 <img src="${x.thumbnail}" alt="">
+        //                 <h1>${x.title}</h1>
+        //                 <p>${x.description}</p>
+        //             </div>
+        //             `
+        //             // console.log(x)
+        //             container.insertAdjacentHTML("beforeend",data)
+
+        //         }
+
+        //     }
+        // }
+
+        // xhr.open("GET", "https://dummyjson.com/products", true);
+        // xhr.send();
+
+
+
+        let fdata = fetch("https://dummyjson.com/products");
+        fdata.then((e)=>{
+            return e.text();
+        }).then((a)=>{
+            loader.style.display = "none"
+                for (x of JSON.parse(a).products) {
+
+                    let data = `
+                    <div class="box">
+                        <img src="${x.thumbnail}" alt="">
+                        <h1>${x.title}</h1>
+                        <p>${x.description}</p>
+                    </div>
+                    `
+                    // console.log(x)
+                    container.insertAdjacentHTML("beforeend",data)
+
+                }
+        })
+    </script>
+
+</body>
+
+</html>

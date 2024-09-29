@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        let xhr = new XMLHttpRequest();
+
+        xhr.onload = function(){
+            console.log(this.readyState);
+            console.log(this.status)
+            console.log(this.responseText)
+            
+        }
+
+        xhr.onreadystatechange = function(){
+            // console.log(this.status)
+            if(this.readyState == 4 && this.status == 200){
+                console.log(this.responseText)
+            }
+            else{
+                // console.log("loading...")
+                console.log("not working")
+            }
+        }
+
+
+        xhr.open("GET","data.txt",true);
+        xhr.send();
+
+        // xhr.abort()
+        
+    </script>
+
+</body>
+</html>

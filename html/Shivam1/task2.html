@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 1px solid black; */
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 15vw 1fr 15vw;
+            grid-template-rows: 10vh repeat(3,1fr) 10vh;
+            text-align: center;
+
+        }
+        .box{
+            /* border: 1px solid red; */
+            font-weight: bolder;
+            font-size: xx-large;
+            text-shadow: 1px 2px 3px gray;
+        }
+        .Header{
+            background-color: aqua;
+            grid-column: 1/ span 3;
+            line-height: 10vh;
+            color: white;
+        }
+        .Side-bar{
+            background-color: blue;
+            grid-row: 2 / span 3;
+            padding-top: 10px;
+            /* color: aqua; */
+        }
+        .Main{
+            background-color:aquamarine;
+            grid-row: 2 / span 3;
+            padding-top: 10px;
+        }
+        .box4{
+            background-color: yellowgreen;
+        }
+        .box5{
+            background-color: coral;
+        }
+        .box6{
+            background-color: wheat;
+        }
+        .Footer{
+        background-color: black;
+            grid-area: 5 / 1 / -1 / 4;  
+            color: white; 
+            line-height: 10vh;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box Header">Header</div>
+            <div class="box Side-bar">Side-bar</div>
+            <div class="box Main">Main</div>
+            <div class="box box4">Instgram</div>
+            <div class="box box5">Facebook</div>
+            <div class="box box6">Twetter</div>
+            <div class="box Footer">Footer</div>
+        </div>
+</body>
+</html>

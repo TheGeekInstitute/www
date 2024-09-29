@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            text-align: center;
+        }
+
+        .box{
+            margin: 10px;
+            height: 200px;
+            width: 130px;
+            display: inline-block;
+            border: 2px solid black;
+            padding:10px;
+            text-align: justify;
+        }
+
+        .box:nth-child(odd){
+            background-color: orange;
+        }
+
+        .box:nth-child(even){
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <script>
+        function table(num){
+            let data="";
+            for(let i=1; i<=10 ; i++){
+                data += num + " x " + i + " = " + (num*i) + "<br>";
+            }
+            return data;
+        }
+
+
+        for(let a =1 ; a<=100 ; a++){
+            document.write('<div class="box">' + table(a) + ' </div>')
+        }
+    </script>
+
+</body>
+</html>

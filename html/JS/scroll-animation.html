@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <style>
+        .container{
+
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 10px auto;
+         
+        }
+        .box:nth-child(odd){
+            background-color: red;
+        }
+
+        .box:nth-child(even){
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="abcd animate__animated animate__bounce">This Scroll Animation</h1>
+    <div class="container">
+        <div class="box wow animate__animated animate__fadeInDown"></div>
+        <div class="box wow animate__animated animate__fadeInLeft"></div>
+        <div class="box wow animate__animated animate__fadeInLeftBig"></div>
+        <div class="box wow animate__animated"></div>
+        <div class="box wow animate__animated"></div>
+        <div class="box wow animate__animated"></div>
+        <div class="box wow animate__animated"></div>
+        <div class="box wow animate__animated animate__backInDown"></div>
+        <div class="box wow animate__animated"></div>
+        <div class="box wow animate__animated animate__backInUp"></div>
+        <div class="box wow animate__animated animate__backInUp"></div>
+        <div class="box wow animate__animated animate__backInUp" ></div>
+        <div class="box wow animate__animated animate__backInUp" data-wow-delay=".5s"></div>
+        <div class="box wow animate__animated  animate__fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s"></div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+root@HackingLab:/etc/nginx/sites-available# cp default site1.com
+root@HackingLab:/etc/nginx/sites-available# cp default site2.com
+root@HackingLab:/etc/nginx/sites-available# nano site1.com
+root@HackingLab:/etc/nginx/sites-available# nano site2.com
+root@HackingLab:/etc/nginx/sites-available# root@HackingLab:/etc/nginx/sites-available#
+
+root@HackingLab:/etc/nginx/sites-available# pwd
+/etc/nginx/sites-available
+root@HackingLab:/etc/nginx/sites-available# cd ..
+root@HackingLab:/etc/nginx# ls
+conf.d        fastcgi_params  koi-win     modules-available  nginx.conf    scgi_params      sites-enabled  uwsgi_params
+fastcgi.conf  koi-utf         mime.types  modules-enabled    proxy_params  sites-available  snippets       win-utf
+root@HackingLab:/etc/nginx# cd sites-enabled/
+root@HackingLab:/etc/nginx/sites-enabled# ls -l
+total 0
+lrwxrwxrwx 1 root root 34 May  8 06:30 default -> /etc/nginx/sites-available/default
+root@HackingLab:/etc/nginx/sites-enabled#
+root@HackingLab:/etc/nginx/sites-enabled#
+root@HackingLab:/etc/nginx/sites-enabled#
+root@HackingLab:/etc/nginx/sites-enabled# ln -s /etc/nginx/sites-available/site1.com /etc/nginx/sites-enabled/
+root@HackingLab:/etc/nginx/sites-enabled# ln -s /etc/nginx/sites-available/site2.com /etc/nginx/sites-enabled/
+root@HackingLab:/etc/nginx/sites-enabled# systemctl restart nginx
+root@HackingLab:/etc/nginx/sites-enabled# ls
+default  site1.com  site2.com
+root@HackingLab:/etc/nginx/sites-enabled# ls -la
+total 8
+drwxr-xr-x 2 root root 4096 May  8 06:34 .
+drwxr-xr-x 8 root root 4096 May  8 06:30 ..
+lrwxrwxrwx 1 root root   34 May  8 06:30 default -> /etc/nginx/sites-available/default
+lrwxrwxrwx 1 root root   36 May  8 06:34 site1.com -> /etc/nginx/sites-available/site1.com
+lrwxrwxrwx 1 root root   36 May  8 06:34 site2.com -> /etc/nginx/sites-available/site2.com
+root@HackingLab:/etc/nginx/sites-enabled# unlink site1.com
+root@HackingLab:/etc/nginx/sites-enabled# ls -la
+total 8
+drwxr-xr-x 2 root root 4096 May  8 06:36 .
+drwxr-xr-x 8 root root 4096 May  8 06:30 ..
+lrwxrwxrwx 1 root root   34 May  8 06:30 default -> /etc/nginx/sites-available/default
+lrwxrwxrwx 1 root root   36 May  8 06:34 site2.com -> /etc/nginx/sites-available/site2.com
+root@HackingLab:/etc/nginx/sites-enabled# unlink site2.com
+root@HackingLab:/etc/nginx/sites-enabled# ls
+default
+root@HackingLab:/etc/nginx/sites-enabled# systemctl restart nginx
+root@HackingLab:/etc/nginx/sites-enabled#

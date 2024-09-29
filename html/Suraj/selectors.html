@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+
+    <style>
+        .main h1 , .main p{
+            color: red;
+        }
+        
+        div  div div >p{
+            /* color: red; */
+            color: blue;
+        }
+        
+            div > div > p{
+            }
+
+         div + p{
+            color: yellow;
+         }
+
+
+         div ~ p{
+            color:green;
+         }
+
+         /* ul li:last-child{
+            color: red;
+         }
+
+         ul li:first-child{
+            color: blue;
+         } */
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit id maxime quod quia, unde labore voluptates ullam corrupti sint dolores pariatur natus et inventore eum illum, laboriosam omnis in itaque.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab repellendus assumenda maxime reprehenderit debitis voluptatibus unde, vero eaque necessitatibus animi molestiae, non earum impedit provident similique asperiores aspernatur quam sed.</p>
+    </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eaque quidem non ab eum doloremque dolorum laudantium ducimus nemo quas illo, ut incidunt? Ratione culpa id aliquid magnam, voluptatem nesciunt!</p>
+
+<p>sdjkhasjkfdhjk</p>
+
+<div class="parent">
+    <div class="child">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita deleniti nam, sapiente facilis, alias molestias consectetur, et aspernatur dolores exercitationem doloribus fugiat repellendus at. Amet perferendis soluta quisquam hic cumque!</p>
+        <div class="grand-child">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In maiores excepturi neque at? Aliquid obcaecati facere architecto, id reprehenderit vel repellat dolore voluptatum sed ipsum quaerat nostrum voluptas aspernatur ipsa.</p>
+        </div>
+    </div>
+</div>
+
+<div class="parent1">
+    <div class="child1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita deleniti nam, sapiente facilis, alias molestias consectetur, et aspernatur dolores exercitationem doloribus fugiat repellendus at. Amet perferendis soluta quisquam hic cumque!</p>
+        <div class="grand-child1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In maiores excepturi neque at? Aliquid obcaecati facere architecto, id reprehenderit vel repellat dolore voluptatum sed ipsum quaerat nostrum voluptas aspernatur ipsa.</p>
+        </div>
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, officia accusantium, ratione quia voluptas distinctio necessitatibus placeat amet ea sunt vero praesentium et sapiente quos repellendus omnis in minus dolorem!</p>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem mollitia obcaecati ipsum asperiores quaerat, error veniam, animi adipisci dolores culpa possimus et ex excepturi voluptas accusantium quam tempora sint?</p>
+
+
+<p>last para</p>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+</ul>
+
+
+</body>
+</html>

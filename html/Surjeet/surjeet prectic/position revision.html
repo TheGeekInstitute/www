@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position revision</title>
+    <style>
+        .container{
+            margin: 50px auto;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+        }
+
+        .container .box{
+            background-color: cyan;
+            height: 30px;
+            width: 30px;
+            position: relative;
+            top: 30px;
+            left: 60px;
+        }
+
+        .sticky{
+            background-color: brown;
+            height: 40px;
+            
+            position: sticky;
+            top: 0;
+        }
+
+        .abs{
+            background-color: crimson;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+        }
+
+        .fixed{
+            background-color: blue;
+            height: 150px;
+            width: 150px;
+            position: fixed;
+            top: 20px;
+            bottom: 50px;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <div class="sticky"></div>
+
+    <div class="fixed"></div>
+
+    <div class="abs"></div>
+
+    <div class="static"></div>
+</body>
+</html>

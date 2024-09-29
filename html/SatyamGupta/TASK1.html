@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            /* overflow: hidden; */
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            height: 3.5rem;
+            /* display: block; */
+        }
+
+        nav .first {
+            margin-left: 150px;
+            font-size: xx-large;
+            /* padding: 5rem 3.5rem; */
+            
+        }
+
+        nav .first span{
+            color: brown;
+        }
+
+        nav .second {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* display: block; */
+            color: white;
+            margin-right: 10rem;
+
+            /* padding: 1.2rem; */
+
+        }
+
+        nav .second li a {
+            padding: 1.2rem;
+            color: white;
+            font-size: larger;
+        }
+
+        nav .second li a:hover {
+            color: brown;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 100px;
+            flex-wrap: wrap
+            /* display: block; */
+
+        }
+
+        .main .left {
+            /* margin: 20px; */
+            /* border: 2px solid gold; */
+            height: 24rem;
+            width: 30.5rem;
+            padding: 40px;
+            font-size: x-large;
+            /* margin: 20px; */
+            margin-left: -70px;
+
+        }
+
+        .main .left span{
+            color: brown;
+        }
+
+        .main .left h2{
+            font-size: 4.6rem;
+        }
+
+        .main .left h1{
+            font-size: 1.8rem;
+            padding-top: 10px;
+        }
+
+        .main .right {
+            /* border: 2px solid black; */
+            height: 24rem;
+            width: 22rem;
+            margin-right: 10rem;
+        }
+
+        
+
+        .main .right img{
+            height: 90%;
+            width: 130%;
+            /* border: 1px solid red; */
+            transform: scale(1.6);
+            position: relative;
+            top: 5.2rem;
+            filter: drop-shadow(0px 0px 5px grey);
+        }
+        .main .left .btn {
+            margin-top: 20px;
+        }
+
+        .main .left .btn a{
+            color: white;
+            background-color: black;
+            border-radius: 1rem;
+            padding: 6px;
+            font-size: large;
+            /* margin-top: -20px; */
+        }
+        
+        .section{
+
+            margin: 11.6rem 8rem 0rem 8rem;
+
+        }
+
+        .sectionone{
+            float: left;
+            flex-wrap: wrap;
+           
+        }
+
+        .section img{
+            height: 21rem;
+            width: 18.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .sectiontwo{
+            height: 2rem;
+            width: 0rem;
+        }
+
+        .sectiontwo h1 ,p {
+         padding-left: 21rem;         
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1 class="first"><span>S</span>atyam Portfolio</h1>
+        <ul class="second">
+            <li><a href="">Home</a></li>
+            <li><a href="">Class</a></li>
+            <li><a href="">Section</a></li>
+            <li><a href="">Subject</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="left">
+            <p style="color: rgb(247, 71, 100); font-size: 50px;">Hello:</p>
+            <h2>I'm <span>Satyam Gupta</span></h2>
+            <h1>A full Stack web developer</h1>
+            <div class="btn">
+                <a style="background-color: rgb(194, 79, 79);" href="">Git-Hub</a>
+                <a href="">My project</a>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <img src="./images/updated pic.png" alt="" srcset="">
+        </div>
+    </div>
+</body>
+
+
+<div class="section">
+<div class="sectionone">
+    <img src="./images/profile.jpeg" alt="" srcset="">
+</div>
+    <div class="sectiontwo">
+        <h1>About me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ipsam magnam! Excepturi ipsum amet quo illum minima asperiores autem vitae earum, assumenda necessitatibus distinctio! Vero dolore perferendis molestiae aut ipsum ad fuga sapiente in? Aliquam sunt consectetur maiores nostrum fugit ad illo! Vero sequi illo, ad ab dolor alias! Ipsam pariatur culpa esse veniam, provident, aliquid aspernatur eaque quos totam nemo omnis suscipit aliquam? Temporibus ratione dicta consectetur, quidem quo aliquam placeat distinctio, sequi ea ullam impedit ex perferendis iure.</p>
+
+    </div>
+</div>
+
+
+</html>

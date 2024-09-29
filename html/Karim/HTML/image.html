@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Web</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 10px 10px 10px 10px white;
+            
+        }
+        .image{
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            padding: 0;
+            margin: 10px;
+            transition: all .3s;
+            cursor: pointer;
+        }
+        
+        .image img{
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 9;
+        }
+        
+        .image label{
+            /* border: 2px solid red; */
+            display: block;
+            position: relative;
+            top: -103%;
+            z-index: 10;
+            font-size: 5rem;
+            font-weight: 900;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            backdrop-filter: blur(2px);
+            transition: all .3s;
+        }
+
+        .image:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 0px 4px black;
+        }
+
+        .image:hover label{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+ 
+        
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+          
+         <img src="https://st3.depositphotos.com/1064024/14272/i/450/depositphotos_142722813-stock-photo-heart-love-tree.jpg" alt="">
+         <label>1</label>
+        </div>
+        <div class="image">
+            <img src="https://blog.hootsuite.com/wp-content/uploads/2020/02/Image-copyright.png" alt="">
+            <label>2</label>
+        </div>
+        <div class="image">
+            <img src="https://www.befunky.com/images/prismic/f5ca4181-01da-4237-92bf-b6938359503e_hero-blur-image-5.jpg?auto=avif,webp&format=jpg&width=896" alt="">
+            <label>3</label>
+        </div>
+        <div class="image">
+            <img src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg" alt="">
+            <label>4</label>
+        </div>
+        <div class="image">
+            <img src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg" alt="">
+            <label>5</label>
+        </div>
+
+        <div class="image">
+            <img src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg" alt="">
+            <label>5</label>
+        </div>
+
+        <div class="image">
+            <img src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg" alt="">
+            <label>5</label>
+        </div>
+
+        <div class="image">
+            <img src="https://damassets.autodesk.net/content/dam/autodesk/www/industry/3d-animation/create-beautiful-3d-animations-thumb-1204x677.jpg" alt="">
+            <label>5</label>
+        </div>
+        
+    </div>
+</body>
+</html>

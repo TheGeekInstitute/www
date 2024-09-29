@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function print_num(num){
+            let sum=0;
+            let print="";
+            if(num!=null && Number.isInteger(num)==true){
+                if(num%2==0){
+                    for(let i=0 ; i<=num ; i+=2){
+                        sum+=i;
+                        print+=i + "<br>";
+                    }
+                    print+="Sum of All Evens Above : " + sum;
+                }
+                else{
+                    for(let i=1 ; i<=num ; i+=2){
+                        sum+=i;
+                        print+=i + "<br>";
+                    }
+                    print+="Sum of All Odds Above : " + sum;
+                }
+
+                return print;
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // document.write(print_num(87))
+
+        function print_arr(arr){
+            let print="";
+            if(arr!=null && Array.isArray(arr)==true){
+                for(value of arr){
+                    print+=value + "<br>";
+                }
+                return print;
+            }   
+            else{
+                return "Please Provide an Array";
+            }
+        }
+
+        let name = ['Amit','Sumit','Ravi']
+        // document.write(print_arr(name))
+
+        function check_num(num){
+            if(num!=null && Number.isInteger(num)==true){
+                if(num%2==0){
+                    return  num +  " is an Even Number";
+                }
+                else{
+                    return  num +  " is a Odd Number";
+                }
+            }
+            else{
+                return "Please Provide a Number";
+            }
+        }
+
+        // document.write(check_num(25));
+
+
+
+        function table(num){
+            let sum=0;
+        if(num!=null && num > 0 && Number.isInteger(num)){
+            let table = "";
+            for(let i =1; i<=10; i++) {
+                sum+=num*i;
+                table += num + " x " + i + " = " + num*i + "<br>";
+
+            }
+            return table + "Sum of All Above : " +sum;
+        }
+        else{ 
+            return "please provide valid number";
+
+        }
+    }
+
+    document.write(table(1337))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container{
+            height: 300px;
+            width: 250px;
+            background-image: url("../wallpapers/animals/ingo-stiller-3tkxfe2GocY-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 150px auto;
+            overflow: hidden;
+        }
+
+        .container .card{
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+            transform: translate(0,100%);
+            text-align: center;
+            padding: 5px;
+            transition: all .3s linear;
+            color: white;
+        }
+
+        .container:hover .card{
+            transform: translate(0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur</h1>
+        </div>
+    </div>
+</body>
+</html>

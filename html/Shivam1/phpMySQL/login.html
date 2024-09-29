@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            height: 20rem;
+            width: 20rem;
+            padding: 1rem;
+            border-radius: 2rem;
+            background-image: linear-gradient(yellow,green,aqua);
+            
+        }
+
+        .box input{
+            height: 2rem;
+            border-radius: 8px;
+            border:none;
+            margin-bottom: 5px;
+            outline: none;
+            width: 15rem;
+            
+        }
+        .box h1{
+            text-align: center;
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        form{
+            /* border: 1px solid black; */
+            height: 25rem;
+            width: 20rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: calc(50% - 12.5rem);
+            border-radius: 1rem;
+            background-color: rgba(40, 160, 140, 0.767);
+            box-shadow: 3px 4px 5px;
+        }
+
+        label{
+            font-size: 20px;
+            font-weight: 600;
+            font-family:'Times New Roman', Times, serif;
+            margin-bottom: -5px;
+            margin-top: 0;
+        }
+        input{
+            height: 2rem;
+            width: 12rem;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            padding-left: 10px;
+            
+        }
+        h1{
+            text-shadow: 2px 3px 5px;
+        }
+
+        input[type=submit]{
+            background-color: rgb(177, 21, 197);
+            width: 8rem;
+            border-radius: 15px;
+            color: white;
+            font-weight: 900;
+            font-size: 20px;
+            box-shadow: 5px 3px 4px black;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <h1>Login</h1>
+        <label for="">Username</label>
+        <input type="text" placeholder="Username">
+        <label for="">Password</label>
+        <input type="password" name="" id="" placeholder="Password">
+        <input type="submit" value="Login">
+
+        <a href="">Sing up</a>
+    </div> -->
+
+
+    <form action="" method="post">
+        <h1>Signup</h1>
+        <label for="">Full Name : </label>
+        <input type="text" name="fullname">
+        <label for="">Email : </label>
+        <input type="email" name="email">
+        <label for="">Username : </label>
+        <input type="text" name="username">
+        <label for="">Password : </label>
+        <input type="password" name="password">
+        <input type="submit" value="Signup">
+    </form>
+
+
+</body>
+</html>

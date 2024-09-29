@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }  
+      body{
+        background-color: pink;
+      }
+      .container{
+        border: 2px solid black;
+        text-align: center;
+        width: 300px;
+        background-color: rgba(53, 50, 50, 0.945);
+        margin: 250px auto;
+        height: 360px;
+        border-radius: 20px;
+        padding: 15px;
+      }
+      
+      
+      .container input{
+        width:100%;
+        outline: none;
+        margin-bottom: 20px;
+        line-height: 50px;
+        border-radius: 10px;
+        font-size: xx-large;
+        background-color: khaki;
+        border: 2px solid rgba(53, 50, 50, 0.945);
+        
+      }
+      .container .btns{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,1fr);
+        gap: 5px;
+        cursor: pointer;
+      }
+      .zero{
+        grid-area: 5 / 1 / 6 / 3;
+      }
+      .container .btns .equal{
+        grid-area: 4 / 4 / 6 / 5;
+        background-color: red;
+
+      }
+      .container .btns{
+        height: 250px;
+      }
+      .container .btns button{
+        /* height: 40px; */
+        color: white;
+        cursor: pointer;
+        margin: 3px;
+        background-color: lightslategray;
+        font-size: x-large;
+        border: 2px solid rgba(53, 50, 50, 0.945);
+        box-shadow: 2px 2px 5px black;
+        
+      }
+      .container .btns .main{
+        background-color: rgba(0, 0, 0, 0.582);
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="values">
+       
+       
+        <div class="btns">
+        <button class="main clear">C</button>
+        <button class="main">M+</button>
+        <button class="main divide">/</button>
+        <button class="main multiply">X</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>-</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="equal">=</button>
+
+        <button class="zero">0</button>
+        <button>.</button>
+      
+      
+
+       </div>
+    </div>    
+      <script>
+            let field = document.querySelector(".values");
+            let btns=  document.querySelector(".btns");
+            Array.from(btns.children).forEach((e)=>{
+                e.addEventListener('click',()=>{
+                    if(e.innerHTML=="C"){
+                        field.value=""
+                    }
+                    else if(e.innerHTML=="="){
+                        field.value = eval(field.value.replace("X","*"));
+                    }
+                    else if(e.innerHTML=="M+"){
+                        field.value +="";
+                        console.log(field.value);
+                    }
+                    else{
+                        field.value+=e.innerHTML;
+                    }
+                })
+            })
+          
+            
+
+        </script>
+</body>
+</html>

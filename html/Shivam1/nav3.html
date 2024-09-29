@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 2rem;
+        }
+
+        nav input[type="checkbox"]{
+            display: none;
+        }
+
+        nav label span{
+            display: block;
+            margin: 0.4rem 0;
+            background-color: white;
+            height: 4px;
+            width: 2rem;
+            transition: all .6s;
+        }
+
+        .one, .three{
+            position: relative;
+        }
+
+        #btn:checked ~ label .two{
+            display: none;
+        }
+
+        #btn:checked ~ label .one{
+            transform: rotate(45deg);
+            width: 2.5rem;
+            top: 5px;
+        }
+
+        #btn:checked ~label .three{
+            transform: rotate(-45deg);
+            width: 2.5rem;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LOGO</div>
+
+        <input type="checkbox" id="btn">
+
+        <label for="btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </label>
+    </nav>
+</body>
+</html>

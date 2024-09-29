@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("./new.css");
+
+        @font-face {
+            font-family: Aman;
+            src: url("./WinterSunday.ttf");
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            /* overflow: scroll; */
+            overflow: hidden;
+            /* resize: horizontal; */
+            resize: both;
+            /* float: right; */
+
+            /* user-select: all; */
+            user-select: none;
+            font-family: Aman;
+        }
+
+        .box1{
+            background-color: red;
+            /* clear: right; */
+            line-height: 200px;
+            font-size: 60px;
+            text-align: center;
+            transition: all .3s;
+            backface-visibility: hidden;
+        }
+
+        .box1:hover{
+            transform:perspective(600px) rotateY(180deg);
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            mix-blend-mode: multiply;
+        }
+
+        .container{
+            border: 2px solid red;
+            background-color: cyan;
+        }
+
+
+        .new{
+            height: 200px;
+            background-image: url("../wallpapers/animals/flavio-gasperini-dolphin-coming-up-for-air.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: cyan;
+            background-blend-mode: luminosity;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <img src="../wallpaper.jpg" alt="">
+</div>    
+    <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi cum provident autem nam ab! Quisquam consequatur deserunt fuga, dicta necessitatibus eos libero quae ratione maxime deleniti dolorum laboriosam, impedit tenetur!
+            Explicabo minima debitis modi dolorum, voluptas dolorem quae temporibus enim quis ex nisi totam aliquid recusandae labore, repudiandae mollitia nihil numquam? Nesciunt hic rerum, esse aliquid neque veritatis aspernatur ipsa?
+        </div>
+
+        <div class="box box1">HELLO</div>
+
+        <div class="new">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut laboriosam, ab nemo dolore est at provident, quibusdam vero, deserunt dolores reiciendis explicabo. Sit error, sequi autem veritatis nostrum rem provident.
+        </div>
+</body>
+</html>

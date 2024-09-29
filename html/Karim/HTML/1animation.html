@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            /* background-color: rgba(17, 2, 68, 0.705); */
+            margin: 0;
+            padding: 0;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+            background-repeat:repeat;
+        }
+        .box{
+            margin: auto;
+            margin-top:20%;
+            border: 2px solid rgb(158, 142, 218);
+            height: 100px;
+            width: 100px;
+            /* background-color: rgb(236, 0, 0); */
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+            /* animation-timing-function: steps(4); */
+            box-shadow: 2px 2px 5px 10px rgb(97, 156, 223) ;
+            text-align: center;
+            
+
+
+        }
+        
+        @keyframes circle{
+            from{
+                /* border-radius: 0%; */
+                width: 100px;
+                background-color: rgb(4, 14, 99);
+            }
+            to{
+             /* border-radius: 100%; */
+             width: 400px;
+             background-color: rgb(95, 97, 228);
+
+            }
+        }
+        .box:hover{
+            /* animation-play-state: paused; */
+        }
+        .class{
+            /* text-decoration: solid; */            
+            margin: auto;
+            margin-top:90%;
+            border: 2px solid rgb(158, 142, 218);
+            height: 100px;
+            width: 100px;
+            /* background-color: rgb(236, 0, 0); */
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: backwards;
+            /* animation-timing-function: steps(4); */
+            box-shadow: 2px 2px 5px 10px rgb(97, 156, 223) ;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">The Coding World
+        <div class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ad et, eum suscipit quidem nobis sequi dolore cum aut nam! Provident temporibus ipsum aliquam neque, quos dolor odio sed quo?</div>
+    </div>
+
+</body>
+</html>

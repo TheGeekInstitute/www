@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        *{ padding: 0;
+        margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+     }
+
+     .form{ border: 2px solid black;
+       height: 320px;
+       width: 250px;
+       align-items: center;
+       justify-content:center;
+       flex-direction: column;
+       margin:150px  auto;
+       border-radius: 10%;
+       background-image: linear-gradient(45deg,purple,aqua);
+
+       
+     }
+    .form .box{ height:40px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: block;
+    
+    }
+    .heading{ font-size: xx-large;
+    text-align: center;}
+     .form .box input{height: 30px;
+    width: 100pxpx;}
+
+    .form .submit{ text-align: center;
+justify-content: center;
+align-items: center;
+display: block;}
+
+.form .forgot{ border: 2px solid black;
+height: 30px;
+width: 90%;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin: auto;
+line-height:25px
+}
+    
+    </style>
+</head>
+<body>
+   <div class="form">
+    <div class="heading">
+        <i class="fa-solid fa-user "></i>
+        <br>
+        Login
+    </div>
+<br> <br>
+     <div class="box">
+        <i class="fa-regular fa-user"></i>
+        <input type="text" placeholder="Full Name"> 
+     </div>
+     <div class="box">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Email">
+    </div>
+        
+
+        <div class="box">
+            <i class="fa-solid fa-unlock"></i>
+
+         <input type="password" placeholder="Password">
+         
+         
+
+     </div>
+     <br>
+     <div class="forgot">
+        <a href="#">Forgot Password</a>
+     </div>
+     <br>
+       
+     
+        <input type="submit">
+        
+     </div>
+   </div>
+</body>
+</html>

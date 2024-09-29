@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accouts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            height: 70vh;
+            width: 30vw;
+            position: absolute;
+            top: calc(50% - 35vh);
+            left: calc(50% - 15vw);
+            border: 2px solid  rgb(202, 202, 202);
+            font-size: 1.6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 2.5em 2.3em;
+            /* align-items: center; */
+            margin: auto;
+            border-radius: 5px;
+            font-family: 'Google sans','Noto','Sans Myanmar', Arial ,Helvetica,sans-serif;
+            line-height: 2.4em;
+
+        }
+        .form .top{
+            text-align: center;
+            
+        }
+        .form .top p:nth-of-type(1){
+            height: 2em;
+            font-size: 1.7em;
+            /* border: 1px solid green; */
+        }
+        .form .top img{
+            height: 1.7em;
+        }
+    .form .sec{
+        line-height: 0em;
+        text-align: start;
+    }
+    .form .top:nth-child(1) {
+        /* border: 2px solid red; */
+    }
+        .form .sec input{
+            width: 26.5em;
+            height: 2em;
+            padding: 1.7em .6em;
+            /* margin-top: ; */
+            margin-bottom: 1em;
+            font-size: 1em;
+            width: ;
+            border-radius: 3px;
+            background-color: transparent;
+            border:1px solid rgb(202, 202, 202);
+        }
+        .form .sec label{
+            position: relative;
+            display: inline-block;
+            left: .74em;
+            top: -2.75em;
+            color: rgb(90, 90, 90);
+            z-index: -1;
+            /* height: 16px; */
+            transition:all .3s ;
+            
+            
+        }
+        .form .sec input::placeholder{
+            color: transparent;
+        }
+        .form .sec input:focus + label{
+            transform: translateY(-1.9em);
+            z-index: 10;
+            padding: 0 2px;
+            height: 1em;
+            background-color: white;
+            color: rgb(40, 108, 255);
+
+            /* border:.5px solid red ; */
+
+        }
+        .form .sec input:focus{
+            outline: transparent;
+            border: 2px groove  rgb(40, 108, 255);
+            
+        }
+        .box input:not(:placeholder-shown) + label{
+            transform: translateY(-25px);
+        }
+        .form .sec a{
+            position: relative;
+            left: -7.3em;
+            text-align: start;
+            /* border: 1px solid blue; */
+            align-self: start;
+            font-size: 15px;
+            color: rgb(40, 108, 255);
+            text-decoration: none;
+            /* font-weight: 505; */
+
+        }
+        .form .third{
+            display: flex;
+            flex-direction: column;
+            color: rgb(90, 90, 90);
+            border: 2px solid green;
+        }
+
+        .form .third p{
+            font-size: 15px;
+        }
+        .form .third a{
+
+            margin-top: -1em;
+            font-size: 15px;
+            color:rgb(40, 108, 255);
+            text-decoration: none;
+
+        }
+        .form .third a{
+            border: 1px solid red;
+            display: block;
+            height: 1.5em;
+            line-height: 1.5em;
+            border-radius: 50%;
+            padding: 0;
+            width: 5.4em;
+            margin-top: .5em;
+        }
+        .form .fourth{
+            display: flex;
+            justify-content: space-between;
+        }
+        .form .fourth a:nth-child(1){
+            font-size: 15px;
+            color:rgb(40, 108, 255);
+            text-decoration: none;
+        }
+        .form .fourth a:nth-child(2) {
+            /* border: 2px solid green; */
+            padding: .01em 1.5em;
+            background-color: rgb(40, 108, 255);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <div class="top">
+            <img src="https://cdn.freebiesupply.com/images/large/2x/google-logo-transparent.png" alt="">
+            <p>Sign in</p>
+            <p>Use your Google Account</p>
+        </div>
+        <div class="sec"><input type="text" placeholder="Email or phone">
+            <label for="">Email or phone</label>
+            <a href="">Foregot email?</a>
+        </div>
+        <div class="third">
+            <p>Not your computer? Use a Private Window to sign up.</p>
+            <a href="">Learn more</a>
+        </div>
+        <div class="fourth">
+            <a href="">Create account</a>
+            <a href="">Next</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+
+
+File Compression in linux
+
+Compressing Files with tar
+
+$ tar -cvf abc.tar <files> <dir> ---> For Compressing The file and directories in a tar
+
+$ du -sh abc.tar ---> for checking the file size
+
+$ tar -xvf file_name.tar ---> Decompressing The tar file
+
+$ tar -C /myfolder -xvf file_name.tar.gz
+You can specify a different directory to extract to using the -C parameter and path to the directory
+
+__________________________________________________________________
+Compressing Files with gzip
+
+$ gzip filename -----> To compress a single file invoke the gzip command followed by the filename
+##
+$ gzip -k filename ---> Keep the original file
+##
+$ gzip -c filename > filename.gz
+
+Another option to keep the original file is to use the -c option which tells gzip to write on standard output and redirect the output to a file
+##
+$ gzip file1 file2 file3 dir1 dir2 ---> compressing multiple files and directories
+##
+Compress all files in a directory
+To compress all files in a given directory, use the -r option:
+
+$ gzip -r directory
+gzip will recursively traverse through the whole directory structure and compress all the files in the directory and it’s subdirectories
+##
+
+$ gzip -9 filename
+
+gzip allows you to specify a range of compression levels, from 1 to 9. -1 or --fast means fastest compression speed with minimal compression ratio, -9 or --best indicates the slowest compression speed with maximum compression ratio. The default compression level is -6
+##
+Decompressing Files with gzip
+
+$ gunzip filename.gz
+
+$ gunzip -k filename.gz
+-k option tells gzip to keep the input file, in this case, that is the compressed file
+
+Decompress multiple files
+$ gzip -d file1.gz file2.gz file3.gz
+
+$ gzip -dr directory
+When used with -d and -r options, gzip decompresses all files in a given directory recursively:
+_________________________________________________
+
+File compression bzip2
+
+$ bzip2 file --> for compressing the file
+$ bzip2 -k filename --> for keep the original file
+
+Decompressing the file
+$ $ bzip2 -d filename.bz2
+
+______________
+file compresson 7z
+$ sudo apt-get install p7zip-full
+
+$ 7z a data.7z data.txt --> compressing the file
+
+$ $ 7z l data.7z
+To show the detail information list of any archive file, run 7z command with l option.
+
+$ $ 7z e data.7z --> decompressing /extract the file
+
+
+$ zip abc.zip file.txt
+To include sub-directories in the ZIP file, use the -r (recursive) option and include the name of the sub-directory on the command line. To create a ZIP file as before and also include the archive sub-directory, use this command
+
+Adding Passwords to ZIP Files
+zip -e -r -q dir
+
+$ unzip source_code.zip ---> decompress

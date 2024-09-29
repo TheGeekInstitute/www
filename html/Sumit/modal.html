@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .open{
+            background-color: royalblue;
+            color: white;
+        /* padding:10px; */
+            display: block;
+            font-size: large;
+            width: 70px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            margin: 150px auto;
+        }
+
+        .container{
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            /* display: block; */
+            transform: scale(0);
+            animation: show .5s linear 0s 1 alternate forwards;
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        #btn:checked + .container{
+            display: block;
+        }
+        
+        .container .modal{
+            height: 300px;
+            width: 400px;
+            /* padding: ; */
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 200px);
+
+        }
+
+        .container .modal .heading{
+            padding: 0 10px;
+            background-color: crimson;
+            color: white;
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 40px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .container .modal .content{
+            padding: 10px;
+        }
+
+
+        @keyframes show {
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <label for="btn" class="open">Open</label>
+
+    <input type="checkbox" id="btn">
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>Modal heading</p>
+                <label for="btn">X</label>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam aut veritatis, nemo ex nostrum dicta, perspiciatis, officiis deleniti placeat omnis dolorum earum. Quasi molestias rerum impedit magnam consequatur inventore repellat?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

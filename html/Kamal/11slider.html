@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            overflow: hidden;
+        }
+        .container .slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400vw;
+            animation: imageslider 10s linear  0s infinite;
+        }
+        .container .slider:hover{
+            animation-play-state: paused;
+        }
+        .container .slider .image{
+            height: 30rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* height: 10vw; */
+        }
+        .container .slider .image .content{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.267);
+            color: white;
+            font-size: large;
+            font-family: cursive;
+            border-radius: 2rem 5px;
+            box-shadow: 5px 5px 5px white;
+        }
+        @keyframes imageslider {
+            0%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translate(-100vw);
+            }
+            30%{
+                transform: translate(-100vw);
+            }
+            40%{
+                transform: translate(-100vw);
+            }
+            50%{
+                transform: translateX(-200vw);
+            }
+            60%{
+                transform: translateX(-200vw);
+            }
+            70%{
+                transform: translateX(-200vw);
+            }
+            75%{
+                transform: translateX(-300vw);
+            }
+            80%{
+                transform: translateX(-300vw);
+            }
+            90%{
+                transform: translateX(-300vw);
+            }
+            100%{
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://media4.giphy.com/media/xTcnSMB8VXjTox23zW/giphy.gif?cid=ecf05e47b4f8itpf9vgucrelwjygfajkdu242zfvwz4uptbc&ep=v1_gifs_search&rid=giphy.gif&ct=g);">
+                <div class="content">
+                    hello i am bird. <br> i just flying to my friends house anyone wants to come with me so say <br> hiii
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://media1.giphy.com/media/QTaNqfIczYL0iY4udO/giphy.gif?cid=ecf05e471opbtd1pnk32k53en966w95dmawhg9eyifygwoda&ep=v1_gifs_search&rid=giphy.gif&ct=g);">
+                <div class="content">
+                    hello myself mini dragon <br> we all friends going for a meetup  and friends party <br> if you wants to come say <br>hii
+                </div>
+            </div>
+            <div class="image" style="background-image: url(https://media2.giphy.com/media/KxpC1qUpE1ERRhS5H9/giphy.gif?cid=ecf05e471opbtd1pnk32k53en966w95dmawhg9eyifygwoda&ep=v1_gifs_search&rid=giphy.gif&ct=g);">
+                <div class="content">
+                    hello friends, wanna come over for a party <br> lets get your tickets from me. <br> tickets are free br enjoy the party 
+
+                </div>
+            </div>  <div class="image" style="background-image: url(https://media2.giphy.com/media/brsEO1JayBVja/giphy.gif?cid=ecf05e472lyji45qzhsvrqm6uawyukgkq4eu77lo8p2psrlj&ep=v1_gifs_related&rid=giphy.gif&ct=g);">
+                <div class="content">
+                    hello friends, i m shy person <br> i m also coming for tghe party lets go friends <br> hurayyyy  
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

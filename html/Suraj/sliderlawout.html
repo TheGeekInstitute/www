@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;        
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            border: 1px solid black;
+            background-color: aqua;
+            display: flex;
+            height: 3em;
+            /* justify-content: space-around; */
+            width: 100em;
+            /* position: fixed; */
+        }
+        .nav ul{
+            margin-left: 60em;
+        }
+        .nav ul li{
+            display: inline-block;
+            /* padding-left: 60em; */
+            padding: 10px 50px;
+        }
+        .logo{
+            margin-left: 50px;
+            font-size: 30px;
+            
+        }
+        .main{
+            display: flex;
+            width: 900vw;
+            animation-name: imageslider;
+            animation-duration: 20s;
+            /* transition: all 5s ease; */
+            animation-duration: 20s;
+           
+        }
+        
+        img{
+            /* display: block; */
+            height: 35em;
+            width: 100vw;
+            /* transition: all .8s linear; */
+            /* position: absolute; */
+        }
+        .contant{
+            /* position: absolute; */
+        }
+        @keyframes imageslider {
+
+           10%{
+                transform: translateX(0%);           
+           }
+           20%{
+            transform: translatex(-100vw);
+           }
+           30%{
+            transform: translateX(-200vw);
+           }
+           40%{
+            transform: translateX(-300vw);
+           }
+           50%{
+            transform: translateX(-400vw);
+           }
+           60%{
+                transform: translateX(-500vw);           
+           }
+           70%{
+            transform: translatex(-600vw);
+           }
+           80%{
+            transform: translateX(-700vw);
+           }
+           90%{
+            transform: translateX(-800vw);
+           }
+           100%{
+            transform: translateX(900vw);
+           }          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">Logo</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>  
+    </div>
+    <div class="main">
+        <img src="https://1.bp.blogspot.com/-MyPOEyx-j-c/YC8rS-jGfBI/AAAAAAAAAxg/rhMIE4ukkqsLFABEOGLfFREzPp4mtzAhgCLcBGAsYHQ/s1280/Grid-Layout-Responsive-Website-Design-Responsive-Website-Layout-Design-With-Grid-Concept-HTML-And-CSS-Rustcode.jpg" alt="" class="slider1">
+        <div class="contant">
+            <h2>Welcome TO Out Sheet</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam vitae error enim ducimus eligendi labore! Quia sunt sed pariatur perspiciatis in dolorum saepe inventore quo iste, delectus quidem illum! Eveniet.</p>
+        </div>
+        <img src="https://media.istockphoto.com/id/1226444511/vector/mobile-website-development-technology-conceptual-illustration-design-of-internet-pages-of.jpg?s=612x612&w=0&k=20&c=pygvwNzpyOHXIQtJsD_fFY2S0Trylw_hy9Kq-MVRdUo=" alt="" class="slider2">
+        <img src="https://i1.wp.com/www.instantshift.com/assets/uploads/2022/07/php-css-development-tools.jpg" alt="" class="slider3">
+        <img src="https://www.developerdrive.com/wp-content/uploads/2018/02/css-grid-spanning-tracks.jpg" alt="" class="slider4">
+        <img src="https://i.ytimg.com/vi/68O6eOGAGqA/maxresdefault.jpg" alt="" class="slider5">
+        <img src="https://i.ytimg.com/vi/yOPCQ5nD1Vs/maxresdefault.jpg" alt="" class="slider6">
+        <img src="https://www.practicalecommerce.com/wp-content/uploads/2017/10/101217-complex-layout-570x293.png" alt="" class="slider7">
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/01/css-layout.jpg" alt="" class="slider8">
+    </div>
+</body>
+</html>

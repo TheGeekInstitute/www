@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+        .container{
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            /* border: 1px solid green; */
+            width: 40rem;
+            /* height: 7rem; */
+            margin: 1px 0;
+        }
+
+        .name{
+            background-color: rebeccapurple;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1rem;
+            height: 2.3rem;
+            align-items: center;
+        }
+
+        .para{
+            background-color: rgb(62, 129, 245);
+            color: white;
+            padding: .3rem 1rem ;
+            text-align: justify;
+            display: none;
+        }
+
+        #btn:checked ~ .para{
+            display: block;
+        }
+
+        #btn1:checked ~ .para{
+            display: block;
+        }
+
+        #btn2:checked ~ .para{
+            display: block;
+        }
+
+        #btn3:checked ~ .para{
+            display: block;
+        }
+
+        #btn4:checked ~ .para{
+            display: block;
+        }
+
+        #btn5:checked ~ .para{
+            display: block;
+        }
+
+        #btn:checked ~ .para{
+            display: block;
+        }
+
+        #btn1:checked ~ .para{
+            display: block;
+        }
+
+        #btn2:checked ~ .para{
+            display: block;
+        }
+
+        #btn3:checked ~ .para{
+            display: block;
+        }
+
+        #btn4:checked ~ .para{
+            display: block;
+        }
+
+        #btn5:checked ~ .para{
+            display: block;
+        }
+
+
+
+        
+        #btn:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        #btn1:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        #btn2:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        #btn3:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        #btn4:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        #btn5:checked +  .name  .btn{
+            transform: rotate(45deg);
+        }
+
+        .btn{
+            transition: all .3s;
+        }
+
+ 
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="box">
+            <input type="checkbox" id="btn">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn">
+                    <i class="fa-solid fa-plus btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <input type="checkbox" id="btn1">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn1">
+                    <i class="fa-solid fa-plus  btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn2">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn2">
+                    <i class="fa-solid fa-plus btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn3">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn3">
+                    <i class="fa-solid fa-plus btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn4">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn4">
+                    <i class="fa-solid fa-plus btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <input type="checkbox" id="btn5">
+
+            <div class="name">
+                <p>What is CSS ? </p>
+                <label for="btn5">
+                    <i class="fa-solid fa-plus btn"></i>
+                </label>
+            </div>
+
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsa vel doloribus doloremque sit provident veniam molestiae a dolores itaque libero sapiente dolorem iusto, architecto quos delectus omnis, tenetur non?</p>
+            </div>
+        </div>
+
+    </div>
+    
+  
+</body>
+</html>

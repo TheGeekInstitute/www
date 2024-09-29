@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .nav{
+            display: flex;
+            width: 900vw;
+            animation-name: imageslider;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+           animation-iteration-count: infinite;
+           /* animation-direction: alternate; */
+        }
+        
+        img{
+            /* display: block; */
+            height: 35em;
+            width: 100vw;
+            transition: all .8s linear;
+        }
+        @keyframes imageslider {
+           10%{
+                transform: translateX(-100vw);           
+           }
+           20%{
+            transform: translatex(-200vw);
+           }
+           30%{
+            transform: translateX(-300vw);
+           }
+           40%{
+            transform: translateX(-400vw);
+           }
+           50%{
+            transform: translateX(-500vw);
+           }
+           60%{
+                transform: translateX(-600vw);           
+           }
+           70%{
+            transform: translatex(-700vw);
+           }
+           80%{
+            transform: translateX(-800vw);
+           }
+           90%{
+            transform: translateX(-900vw);
+           }
+           100%{
+            /* transform: translateX(400vw); */
+           }          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://1.bp.blogspot.com/-MyPOEyx-j-c/YC8rS-jGfBI/AAAAAAAAAxg/rhMIE4ukkqsLFABEOGLfFREzPp4mtzAhgCLcBGAsYHQ/s1280/Grid-Layout-Responsive-Website-Design-Responsive-Website-Layout-Design-With-Grid-Concept-HTML-And-CSS-Rustcode.jpg" alt="" class="slider1">
+        <img src="https://www.freecodecamp.org/news/content/images/2022/05/CSS-GRID-3.png" alt="" class="slider2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH5-NUjJa4ONXuLJPSXixC5ncwTWl9rWd-A0WUsknoLhLXc1WMGLwWYDQKWpxwMy_y39M&usqp=CAU" alt="" class="slider3">
+        <img src="https://www.developerdrive.com/wp-content/uploads/2018/02/css-grid-spanning-tracks.jpg" alt="" class="slider4">
+        <img src="https://i.ytimg.com/vi/68O6eOGAGqA/maxresdefault.jpg" alt="" class="slider5">
+        <img src="https://i.ytimg.com/vi/yOPCQ5nD1Vs/maxresdefault.jpg" alt="" class="slider6">
+        <img src="https://www.practicalecommerce.com/wp-content/uploads/2017/10/101217-complex-layout-570x293.png" alt="" class="slider7">
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/01/css-layout.jpg" alt="" class="slider8">
+    </div>
+</body>
+</html>

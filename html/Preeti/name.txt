@@ -1,0 +1,12 @@
+Name1: ram
+Name2: shyam
+
+Name1: rani
+Name2: seema
+
+Name1: python -u "/var/www/html/Preeti/22.py"
+Name2: python -u "/var/www/html/Preeti/tempCodeRunnerFile.py"
+
+Name1: python -u "/var/www/html/Preeti/22.py"
+Name2: python -u "/var/www/html/Preeti/22.py"
+

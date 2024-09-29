@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip path - Shape Outside</title>
+    <style>
+        img{
+            float: right;
+            height: 200px;
+            width: 200px;
+            /* clip-path: circle(20%); */
+            /* shape-outside: circle(20%); */
+
+            clip-path: polygon(50% 0%, 16% 65%, 98% 35%, 41% 51%, 79% 91%, 81% 63%, 21% 91%, 45% 29%, 2% 35%, 74% 55%);
+            shape-outside: polygon(50% 0%, 16% 65%, 98% 35%, 41% 51%, 79% 91%, 81% 63%, 21% 91%, 45% 29%, 2% 35%, 74% 55%);
+        }
+
+        .box{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+        }
+
+        /* https://bennettfeely.com/clippy/ */
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequuntur sit itaque voluptates neque. Maxime pariatur ab veniam aperiam eius culpa, quisquam nemo quo qui autem tempore harum officiis. Sint.
+    Alias iusto laborum, maxime at saepe non ad! A, dolor repudiandae! Omnis iusto magni recusandae repellendus! Dolores voluptatem optio deserunt, cupiditate libero ullam minus veritatis dolore delectus itaque? Excepturi, assumenda!
+    Non reprehenderit, quas esse, debitis natus laborum dolores soluta minus veritatis exercitationem libero aperiam dolor delectus nemo. Deleniti, minus, illo voluptate voluptatem repudiandae maiores molestiae enim perferendis, distinctio totam corrupti.
+    Vel cupiditate, optio delectus impedit expedita quia est doloremque quos nostrum atque porro exercitationem possimus dolorum voluptate, repudiandae eos molestiae quo cum deserunt aut a. Accusantium aliquam sit delectus consequuntur.</p>
+    <img src="../web/images/10.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero aspernatur eos nesciunt iste, quasi quibusdam quidem voluptas unde earum voluptatem sit placeat veritatis illum quae a eius praesentium quia.
+    Accusantium fuga placeat natus voluptate nihil ratione, consequatur cupiditate aut unde velit earum eaque deserunt ad soluta numquam harum? Harum laudantium dolor quibusdam dignissimos nemo, debitis inventore aspernatur dicta? Provident!
+    Sit ex vel culpa error delectus est aliquam illo labore nobis dignissimos amet, totam, ipsam cumque molestiae asperiores enim tenetur? Modi blanditiis amet quam possimus temporibus. Ratione unde nulla quis?
+    Autem rerum aperiam inventore laboriosam sunt nisi distinctio architecto sed quasi consequatur! Sed aliquam quisquam quidem sit, repellendus quam aperiam esse rerum, eius, facere quo doloremque adipisci? Explicabo, laboriosam provident.
+    Porro atque eaque eveniet impedit sapiente autem aliquam voluptatum. Harum consequatur doloribus similique. Facilis fugit eius enim facere dolores, mollitia quae suscipit nesciunt quam. In quos fugit ipsum dolor voluptatum?
+    Molestias quas itaque repudiandae nihil magnam reiciendis obcaecati repellat, corporis sequi quasi, velit ipsum quis error minima ea earum facere. Velit cum expedita sed recusandae voluptates ratione pariatur eius aperiam.
+    Aliquam voluptatem adipisci et provident mollitia similique eligendi, assumenda porro optio, saepe ipsam? Animi esse nulla dolorum distinctio voluptates nostrum obcaecati officiis ipsam, dignissimos aliquid, corporis ipsa. Magni, placeat? Eligendi.
+    Ex, tempore molestias. Corporis soluta perspiciatis iste eum labore reiciendis! Inventore mollitia doloremque nostrum quis provident at rem minima amet! Sit similique autem soluta ratione doloribus rerum dolorem et magnam!
+    Illum, voluptas blanditiis nesciunt possimus ea modi exercitationem. Veniam consequatur quam nihil facere adipisci repellat odit ad sint reprehenderit illum vel eum laborum minus hic, possimus exercitationem eligendi rem voluptates.
+    Totam, ducimus laborum quam tenetur sed cum suscipit repellendus qui eveniet harum inventore, fugit rerum necessitatibus? Officiis dolor ipsa, harum dignissimos, quo veritatis culpa error maiores aliquid esse adipisci eaque.</p>
+</body>
+</html>

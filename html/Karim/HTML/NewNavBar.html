@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=Nav">
+    <title>NavBar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            background-color: rgb(54, 5, 82);
+        }
+
+        nav{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            background-color: rgb(20, 1, 39);
+            font-family: cursive;
+            box-shadow: 0px 0px 4px rgb(34, 64, 163);
+            margin: auto;
+            position: sticky;
+            top: 0;
+
+        }
+
+        nav ul{
+            display: flex;
+        }
+        nav ul li a{
+            display: block;
+            margin: 0 .5rem;
+            color: rgb(221, 206, 206);
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 50px;
+            padding: 0 10px;
+        }
+
+        nav ul li a:hover{
+            background-color: grey;
+        }
+
+        .logo{
+            color: rgb(26, 116, 218);
+            font-size: 2rem;
+        }
+
+        .logo span{
+            color: rgb(235, 224, 224);
+        }
+        .post{
+            /* border: 1px solid red; */
+            width: 15rem;
+            height: 15rem;
+            text-align: center;
+            margin: 5rem 3rem;
+            background-color: rgb(22, 138, 222);
+            border-radius: .7rem;
+            /* box-shadow: 0px 0px 2px black; */
+            transition: all .5s;
+            border: 1px solid grey;
+        }
+        
+        .post img{
+            height: 5rem;
+            width: 8rem;
+            border-radius: .7rem;
+            margin-top: -2.5rem;
+            box-shadow: 2px 2px 5px white;
+        }
+
+        .post a{
+            display: block;
+            background-color: rgb(16, 244, 206);
+            padding: .5rem;
+            width: 6rem;
+            color: black;
+            font-weight: 700;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+.post:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    position: sticky;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 20px;
+    line-height: 50px;
+}
+.APJ:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+.APJ img{
+            height: 5rem;
+            width: 8rem;
+            border-radius: .7rem;
+            margin-top: -2.5rem;
+            box-shadow: 2px 2px 5px white;
+        }
+        .APJ a{
+            display: block;
+            background-color: rgb(16, 244, 206);
+            padding: .5rem;
+            width: 6rem;
+            color: black;
+            font-weight: 700;
+            margin: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+</style>
+</head>
+<body>
+    <nav>
+        <h1 class="logo">
+            LO<span>GO</span>
+        </h1>
+
+        <ul>
+            <li><a href="https://www.dictionary.com/browse/home">Home</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.facebook.com/">faceBook</a></li>
+            <li><a href="https://twitter.com/login">Menu</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+
+        <div class="APJ">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQELRJNIDJxadkcbt9_NATcqHwCayKGYUoqwvwkjPgQKaMlcnwM" alt="">
+            <h3 class="name">A. P. J. Abdul Kalam</h3>
+            <p>Avul Pakir Jainulabdeen Abdul Kalam BR  15 October 1931 27 July 2015 was an Indian aerospace scientist and statesman who served as the 11th president of India from 2002 to 2007.</p>
+            <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam">Read More</a>
+        </div>
+    
+
+        <div class="post">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Mahatma_Gandhi_photo.jpg" alt="">
+            <h3 class="name">
+                Mahatma gandhi </h3>
+            <p>Mahatma Gandhi and Truth
+
+
+                You have heard the name of Mahatma Gandhiji. For India he is the father of the Nation just as George Washington is the father of America.  </p>
+            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwibvuvP38SAAxUPkmYCHbL2ChsYABAAGgJzbQ&ohost=www.google.com&cid=CAASJuRofEGmYhuJmGtMaaP9c0wHxd65ZCCSXwTiWFs6MwHZmROQzL9i&sig=AOD64_05odoNdAyIdpNE4WEyNdIpUescsg&q&adurl&ved=2ahUKEwiOt-HP38SAAxWQ6jgGHaZODsgQ0Qx6BAgLEAE">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="../../web/images/10.jpg" alt="">
+            <h3 class="name">Lorem ipsum dolor sit, amet consectetur adipisicing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quod dolorum eos dicta, voluptatum ratione repellat mollitia vero soluta</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; All Rights Reserved</p>
+    </footer>
+</body>
+</html>

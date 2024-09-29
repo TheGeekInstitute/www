@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .popup {
+            width: 65vw;
+            border-radius: 10px;
+            padding: 1em;
+            box-shadow: 0 0 20px 10px #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50vh;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            background-color: royalblue;
+            color: #fff;
+        }
+
+        .popup .details-container .details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .5em;
+            justify-items: self-start;
+            margin: 1em 0;
+        }
+
+        .popup .details-container .details section {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .details section p:first-child {
+            color: #000;
+            font-weight: 600;
+        }
+
+        .reminder {
+            padding: .5em 0;
+            width: 70%;
+            line-height: 1.5;
+        }
+
+        button {
+            padding: .5em 1.5em;
+            cursor: pointer;
+        }
+
+        .btn-container {
+            margin: 1em 0;
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pop up -->
+    <div class="popup">
+        <div class="details-container">
+            <div class="details">
+                <section>
+                    <p>Product Name/Number</p>
+                    <p>Samsung Galaxy</p>
+                </section>
+                <section>
+                    <p>Creted On Date</p>
+                    <p>23 June 2023</p>
+                </section>
+                <section>
+                    <p>MFG Date</p>
+                    <p>20 June 2023</p>
+                </section>
+                <section>
+                    <p>Expiry Date</p>
+                    <p>20 June 2023</p>
+                </section>
+                <section>
+                    <p>Reminder Date</p>
+                    <p>30 June 2023</p>
+                </section>
+            </div>
+            <div class="reminder">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio molestias reprehenderit vero
+                    dignissimos, eaque nam eligendi sint excepturi sapiente cumque?</p>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button>Complete</button>
+            <button>Delay For Tomorrwo</button>
+        </div>
+        <div style="position: absolute; right: 20px; bottom: 20px;">
+            <button>Next</button>
+            <button>Previous</button>
+        </div>
+    </div>
+</body>
+
+</html>

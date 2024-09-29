@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media box</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and  ( min-width: 1024px){
+            .desktopone{
+                display: none;
+                
+            }
+            .desktoptwo{
+                display: none;
+                
+            }
+
+            .desktop{
+                text-align: center;
+                justify-content: center;
+                display: block;
+            }
+
+
+        }
+
+        @media screen and  ( min-width: 768px) and (max-width : 1023px ){
+            .desktop{
+                display: none;
+            }
+
+            .desktoptwo{
+                display: none;   
+            }
+            .desktopone{
+                text-align: center;
+                justify-content: center;
+                display: block;
+            }
+        }
+
+        @media screen and  ( max-width: 767px){
+            .desktop{
+                display: none;
+            }
+            .desktoptwo{
+                text-align: center;
+                justify-content: center;
+                display: block;
+                padding-top: 5rem;
+            }
+
+            .desktopone{
+                display: none;
+            }
+        }
+        
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <h1>Welcome in Desktop model</h1>
+        <img src="./images/trading.jpg" alt="" srcset="">
+
+    </div>
+
+
+    <div class="desktopone">
+        <h1>Welcome in Tablet model</h1>
+        <img src="./images/trade2.jpg" alt="" srcset="">
+
+    </div>
+
+    <div class="desktoptwo">
+        <h1>Welcome in Mobile model</h1>
+        <img src="./images/Youtube-shorts-icon-png.png" alt="" srcset="">
+
+    </div>
+
+
+</body>
+</html>

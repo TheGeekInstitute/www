@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none
+        }
+        .bg{
+            position: absolute;
+            background-image: url("http://192.168.1.4/GEEK/img/carousel-1.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-color: rgba(33, 44, 56, 0.966);
+            background-blend-mode: overlay;
+
+        }
+        .top{
+            height: 3vh;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px groove  rgba(255, 255, 255, 0.514);
+
+        }
+        .adrs{
+            display: flex;
+            margin-left: 3vw;
+        }
+        .adrs h6{
+            margin-left: 10px;
+            color:  rgba(255, 255, 255, 0.514);
+            /* align-items: center; */
+            text-align: center;
+        }
+        .media{
+            margin-right: 3px;
+        }
+        .media ul li{
+            display: inline-block;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 3px;
+            font-size: smaller;
+            color: aliceblue;
+        }
+        .media ul li a{
+            color: rgba(255, 255, 255, 0.514);
+        }
+
+        .adrs i{
+            font-size: 12px;
+            /* color: aliceblue; */
+        }
+        .nav{
+            height: 7vh;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .nav ul li{
+            display: inline-block;
+            font-size: smaller;
+            margin: 5px;
+        }
+        .nav ul li a{
+            color: white;
+
+        }
+        .drop{
+            position: absolute;
+            background: gray;
+            width: 5.5rem;
+            border: 1px solid white;
+            border-radius: 5px;
+            background: white;
+            /* color: white; */
+            /* left: 5; */
+            /* padding: -50px; */
+            margin-top: 5px;
+            margin-left: 0px;
+            display: none;
+            color: black;
+        }
+        .nav h1{
+            font-size: x-large;
+            margin-left: 4vw;
+        }
+        span{
+            color: rgb(255, 115, 0);
+        }
+        .nav ul li:hover .drop{
+            display: block;
+        }
+        .veri{
+            border: 1px solid  orange;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #book{
+            border: 1px solid white;
+            border-radius: 50%;
+            background: white;
+            padding: 3px;
+        }
+        .content h1{
+            /* position: absolute; */
+            text-align: center;
+            margin-top: 250px;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        .ler{
+            color: white;
+            border: 1 solid rgb(255, 123, 0);
+            background:  rgb(255, 123, 0);
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            border-radius: 5px;
+            margin: auto;
+            /* margin-wi: 10px; */
+            margin-top: 150px;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="bg">
+    <div class="top">
+        <div class="adrs">
+            <h6><i class="fa fa-map-marker" aria-hidden="true"></i>New Delhi,India</h6>
+           <h6> <i class="fa fa-envelope-o" aria-hidden="true"></i>contect@gmail.com.org</h6>
+        </div>
+        <div class="media">
+            <ul>
+                <li>Follow us:</li>
+                <li><a href=""><i class="fa fa-facebook fb" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter tx" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin in" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram ig" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav">
+        <h1><span>Geek</span>Institute</h1>
+        <ul>
+            <li><a href=""> <span>Home</span></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Pages +</a>
+            <ul class="drop">
+                <li><a href="">Servise</a></li>
+                <li><a href="">Donate</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Testimonial</a></li>
+                <li><a href="">404 pages</a></li>
+            </ul></li>
+            <li><a href="">Contect</a></li>
+            <li><a href=""> <span class="veri"> Verify certificate<i  id="book" class="fa fa-book" aria-hidden="true"></i></span></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Let's Change The World
+           <br> With Humanity
+        </h1>
+        
+    </div>
+    <h1 class="ler">Learn more<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h1>
+</div>
+
+    
+</body>
+</html>

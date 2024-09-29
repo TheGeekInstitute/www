@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freepik Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+       
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            border: 1px solid red;
+            padding: 0rem 1rem  ;
+            position: sticky;
+            /* box-shadow: 2px 2px 10px gray; */
+        }
+        
+        .nav img{
+            height: 4rem;
+            /* border: 1px solid green; */
+        }
+        .nav input{
+            width: 86rem;
+            height: 3rem;
+            outline: none;
+            border: 2px solid  rgb(199, 199, 199);
+            background: #d7d7d7;
+            padding: 1rem 3rem;
+            padding-left: 12rem;
+            font-size:.9rem ;
+            border-radius: .3rem;
+        }
+        .nav input::placeholder {
+            color: gray;
+        }
+        .nav .mg{
+            position: relative;
+            right: 2rem;
+            border: 2px solid rgb(198, 198, 198);
+            text-align: center;
+            font-size: 1.3rem;
+            background: rgb(223, 223, 223);
+            /* background-color: rgb(0, 76, 255); */
+            /* color: white; */
+            padding: .8rem .8rem;
+            height: 3rem;
+            width: 3rem;
+            border-radius: .3rem;
+        }
+        .nav input:hover .mg{
+            background-color: blue;
+
+        }
+        i{
+            /* color: green; */
+        }
+        .nav p{
+            /* border: 1px solid red; */
+            height: 2.5rem;
+            width: 11rem;
+            padding: .6rem 0rem;
+            position: absolute;
+            left: 13rem;
+            text-align: center;
+            font-size: 1.1rem;
+            color: gray;
+            border-right:2px solid  rgb(203, 198, 198);
+
+        }
+        .nav p i:nth-child(1){
+            position: relative;
+            right: 1.5rem;
+            /* bottom: .2rem; */
+        }
+        .nav p i:nth-child(2){
+            position: relative;
+            left: 2.5rem;
+            bottom: .2rem;
+            font-size: .8rem;
+            /* padding: 0rem 2rem; */
+
+        }
+        .hash{
+            display: flex;
+            justify-content: space-evenly;
+            padding: .5rem 2.5rem;
+            padding-right: 8rem;
+            border: 1px solid blue;
+        }
+        .hash a{
+            border: 1px solid black;
+            color: black;
+            padding: .7rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 2px solid rgb(214, 214, 214);
+            
+
+        }
+        .hash a i{
+            margin: .2rem 0rem;
+            margin-right: .4rem;
+        }
+        .hash .r-arrow{
+            position: relative;
+            top: 1rem;
+            left: 3rem;
+            color: gray;
+        }
+        .main{
+            border: 1px solid magenta;
+            margin: 1rem 5vw;
+            /* background: red; */
+            display: grid;
+            width: 90vw;
+            grid-template-columns: 21.5vw 21.5vw 21.5vw 21.5vw;
+            gap: 20px;
+            /* height: 110rem; */
+        }
+        /* .main  div{
+            border: 2px solid white;
+
+        } */
+        .main .first{
+            font-size: 30px;
+            display: grid;
+            /* background: white; */
+            grid-template-rows:10rem 10rem 20rem 10rem 20rem 10rem 13rem 10rem ;
+            gap: 20px;
+            
+
+        }
+        .main .first .overlay1{
+            position: relative;
+            border: 1px solid red;
+            height: 100%;
+            width: 100%;
+        }
+        .overlay1 .tag a{
+            font-size: 15px;
+            /* display: block; */
+            border: 2px solid blue;
+        }
+        .items{
+            background-color: gray  ;
+            
+        }
+        .main .sec{
+            font-size: 30px;
+            display: grid;
+            /* background: gray; */
+            grid-template-rows:10rem 10rem 20rem 10rem 22rem 20rem 10rem 10rem ;
+            gap: 20px;
+            
+
+        }
+        .main .third{
+            font-size: 30px;
+            display: grid;
+            /* background: gray; */
+            grid-template-rows:10rem 10rem 40rem 20rem 13rem 10rem 13rem 10rem;
+            gap: 20px;
+            
+
+        }
+        .main .fourth{
+            font-size: 30px;
+            display: grid;
+            /* background: gray; */
+            grid-template-rows:18rem 10rem 10rem 18rem 11rem 11rem 13rem 10rem 
+            10rem 13rem;
+            gap: 20px;
+            
+
+        }
+
+        .first .items .overlay1{
+            visibility: hidden;
+        }
+
+        .first .items:hover .overlay1{
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="../freepik.png" alt="">
+        <p title="Assets"><i class="fa-brands fa-sass"></i> Assets<i class="fa-solid fa-sort-down"></i></p>
+        
+        <input type="search" placeholder="Search all assets">
+        <i class="fa-solid fa-magnifying-glass mg"></i>
+    </div>
+    <div class="hash">
+        <a href="" style="background-color: rgb(238, 234, 234);"><i class="fa-solid fa-sliders"></i>Filters</a>
+        <a href=""><i class="fa-regular fa-image"></i>Photos</a>
+        <a href=""><i class="fa-solid fa-sliders"></i>Vector</a>
+        <a href=""><i class="fa-regular fa-file-pdf"></i>PSD</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass mgweb"></i>website template</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass mgweb"></i>Website</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass mgweb"></i>Website wireframe</a>
+        <a href=""><i class="fa-solid fa-magnifying-glass mgweb"></i>Website layout mockup</a>
+        <i class="fa-solid fa-chevron-right r-arrow"></i>
+    </div>
+    <div class="main">
+        
+        <div class="first">
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/web-template-with-landing-page-traditional-italian-food-restaurant_23-2148526098.jpg?w=1380&t=st=1689687350~exp=1689687950~hmac=192f87fd2968cf70ab5200e1800f4ee8952ae08d451361facfa223c9d69c0d73); background-size: cover;">
+                <div class="overlay1">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="tag">
+                    <a href="">Site</a>
+                    <a href="">Web site</a>
+                    <a href="">website</a>
+                    </div>
+                </div>
+            </div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/website-design-your-business_24972-394.jpg?w=1060&t=st=1689687525~exp=1689688125~hmac=fdc899a4b05e83cc75190c61b86497dfc2541094a10db1468959a9880ef61a22);  background-size: cover">2</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/web-page-vertical-design-set-with-new-project-symbols_1284-10212.jpg?w=740&t=st=1689687794~exp=1689688394~hmac=cb83b9573fce417cd0e8b08f0b6e85223825f1f9dcbda18efb34b4e7efb51725); background-size: cover;">3</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/american-food-website-app-template_23-2148477329.jpg?w=1380&t=st=1689687824~exp=1689688424~hmac=1a0e8ec3d77ffa65c603ae7f485b927eaf27c919e7a7da7f02722cf5907e7c2f); background-size: cover;">4</div>
+            <div class="items"  style="background-image: url(https://img.freepik.com/premium-psd/hotel-resort-website-design-template-hotel-landing-page-design_780523-3.jpg?size=626&ext=jpg&ga=GA1.2.377296477.1689426829&semt=ais); background-size: cover;">5</div>
+            <div class="items"  style="background-image: url(https://img.freepik.com/free-psd/yoga-landing-page_23-2148468785.jpg?w=1380&t=st=1689687855~exp=1689688455~hmac=48a4f1253966fd10e10c04b5b79b48f9dd823b9605dffb285f5a9e9ed2b4faa4); background-size: cover;">6</div>
+            <div class="items"  style="background-image: url(https://img.freepik.com/premium-psd/website-mockup_68185-286.jpg?size=626&ext=jpg&ga=GA1.2.377296477.1689426829&semt=ais); background-size: cover;">7</div>
+            <div class="items"  style="background-image: url(https://img.freepik.com/free-psd/american-food-style-stationery_23-2148473308.jpg?size=626&ext=jpg&ga=GA1.2.377296477.1689426829&semt=ais); background-size: cover;">8</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-psd/food-store-web-template-premium-psd_120329-43.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">9</div>
+            
+        </div>
+        <div class="sec">
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/restaurant-landing-page-template_23-2148466849.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">1</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/veterinary-landing-pages-concept_23-2148451973.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">2</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/web-page-vertical-design-set-with-new-project-symbols_1284-10212.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">3</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/american-food-website-app-template_23-2148477329.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">4</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-psd/ui-ux-design-agency-landing-page-premium-psd-template_120329-78.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">5</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/yoga-landing-page_23-2148468785.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">6</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/indian-food-website-templates-collection_23-2148182633.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">7</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/user-interface-design-website-template_23-2149182791.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">8</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/flat-design-ui-ux-landing-page_52683-72187.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">9</div>
+        </div>
+        <div class="third">
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">1</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/minimalist-scrapbook-web-design-template_23-2149197312.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">2</div>
+            <div class="items" style="background-image: url(); background-size: cover;">3</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-psd/mobile-app-website-template_234432-1.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">4</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/web-design-landing-page-template_52683-18357.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">5</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/modern-web-page-template-breakfast-restaurant_23-2148351347.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">6</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-psd/it-company-website-landing-page-template_200778-28.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover; background-repeat: no-repeat ;">7</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/restaurant-opening-web-template-design_23-2148410411.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">8</div>
+        </div>
+        <div class="fourth">
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/set-modern-website-landing-page-design-templates-mobile-phone-tablet-with-gallery-articles-contact-form-flat-isolated-illustration_1284-60948.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">1</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/landing-page-template-design-newsletter_23-2148948010.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">2</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/italian-food-concept-web-template_23-2148517302.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">3</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-psd/food-store-web-template-premium-psd_120329-43.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">4</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/cartoon-web-design-landing-page_52683-70880.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">5</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/premium-vector/main-web-page-design_87720-407.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">6</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/flat-design-ui-ux-landing-page_52683-72187.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">7</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/indian-food-website-templates-collection_23-2148182633.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">8</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-psd/american-food-template-concept_23-2148474729.jpg?size=626&ext=jpg&ga=GA1.1.377296477.1689426829&semt=ais); background-size: cover;">9</div>
+            <div class="items" style="background-image: url(https://img.freepik.com/free-vector/travel-landing-page-template-with-photo_52683-29401.jpg?size=626&ext=jpg&ga=GA1.2.377296477.1689426829&semt=ais); background-size: cover;">10</div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

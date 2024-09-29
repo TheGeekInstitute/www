@@ -1,0 +1,1 @@
+x = np.searchsorted(arr, 7, side='right')

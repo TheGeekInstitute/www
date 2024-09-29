@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar on Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            height: 100vh;
+            padding: 20px;
+        }
+
+        #content {
+            margin-top: 60px; /* Ensure content starts below the navbar */
+        }
+
+        /* Styles for scrolled navbar */
+        .scrolled {
+            background-color: #000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <section id="home">Home Section</section>
+        <section id="about">About Section</section>
+        <section id="services">Services Section</section>
+        <section id="contact">Contact Section</section>
+    </div>
+
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            const stickyOffset = navbar.offsetTop;
+
+            const handleScroll = () => {
+                if (window.scrollY > stickyOffset) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll);
+        });
+
+    </script>
+</body>
+</html>

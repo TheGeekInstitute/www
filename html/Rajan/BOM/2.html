@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Open</button>
+    <button id="btn2">close</button>
+
+    <button id="btn3">move</button>
+
+    <button id="btn4">resize</button>
+
+
+
+    <script>
+        let win;
+        document.querySelector('#btn').addEventListener("click", () => {
+            win= window.open("http://10.10.10.10","_blank","height=200px,width=200px,top=250px,left=700px")
+
+        })
+
+
+
+        document.querySelector('#btn2').addEventListener("click", () => {
+            window.focus()
+            win.close()
+        })
+
+
+        document.querySelector("#btn3").addEventListener("click",()=>{
+            // win.moveBy(250,0)
+            win.moveTo(100,0)
+
+            win.focus()
+        })
+
+
+
+        document.querySelector("#btn4").addEventListener("click",()=>{
+            // win.moveBy(250,0)
+            // win.resizeTo(300,300)
+            win.resizeBy(300,300)
+
+            win.focus()
+        })
+    </script>
+</body>
+
+</html>
+<!-- 
+open() & close()
+window.open() - open a new window
+window.close() - close the current window 
+moveBy() & moveTo()
+resizeBy() & resizeTo()
+
+-->

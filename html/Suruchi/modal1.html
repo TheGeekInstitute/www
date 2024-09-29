@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+              position: absolute;
+              background-color: rgba(0, 0, 0, 0.34);  
+              inset: 0;
+              display: none;
+            }
+            .container .model{
+                background-color: white;
+                height: 300px;
+                width: 450px;
+                border-radius: 10px;
+                position: absolute;
+                top: calc(50% - 150px);
+                left: calc(50% - 225px);
+               /* padding: 10px; */
+            }
+            .container .model .heading{
+                background-color: rebeccapurple;
+                border-radius: 10px 10px 0 0;
+                padding: 10px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: xx-large;
+
+            }
+            .container .model .heading label{
+                display: block;
+                cursor: pointer;
+
+            }
+            .container .model .content{
+                padding: 10px;
+
+            }
+            #btn{
+                display: none;
+
+            }
+            #open{
+                background-color: royalblue;
+                padding: 5px;
+                display: block;
+                width: 100px;
+                align-items: center;
+                margin: 150px auto;
+                border-radius: 3px;
+                color: white;
+                cursor: pointer;
+
+            }
+            #btn:checked + .container{
+                display: block;
+            }
+        </style>
+    
+     
+</head>
+<body>
+    <label for="btn" id="open">Open</label>
+    <input type="checkbox" name="" id="btn">
+    <div class="container">
+        <div class="model">
+            <div class="heading">
+                <p>Heading</p>
+                <label for="btn">X</label>
+
+            </div>
+            <div class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex ratione sequi sint, delectus, voluptatum earum sit aliquam dolor vel eius accusamus architecto pariatur omnis debitis alias repudiandae rem laborum. Architecto!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

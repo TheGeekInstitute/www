@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // i = 1;
+        // while(i<=10){
+        //     document.write(i  + "<br>");
+        //     i++;
+        // }
+
+
+        // do{
+        //     document.write(i + "<br>");
+        //     i++;
+        // }
+        // while(i<=10)
+
+
+        // for(let i=1; i<=100; i++){
+        //     document.write(i + "<br>")
+        // }
+
+
+        // function table(num){
+        //     // num= parseInt(nu)
+        //     if(num!=null && num!>0){
+        //         let table = " "
+        //         for(let i = 0 ; i<=10; "<br>"){
+        //             document.write(i + "x" + i + "=" )
+        //         }
+        //     }
+        // }
+
+        // function table(num){
+        //     num = parseInt(num)
+        //     if(num!=null && num>0){
+        //         let table = "";
+        //         for( let i=1 ; i < 10 ; i++){
+        //             table += num + "x" + i + " = " + num*i + "<br>";
+        //         }
+        //         return table;
+        //     }
+        //     else{
+        //         return "Please Provide a Real Number"
+        //     }
+        // }
+        // document.write(table(prompt("Enter The Real Number")))
+
+
+
+        
+        // function table(num){
+        //     num = parseInt(num)
+        // if(num!=null && num>0){
+        //     let table="";
+        //     for(let i=1 ; i <=10 ; i++){
+        //        table += num + " x " + i + " = " + num*i  + "<br>";
+        //     }
+        //     return table;
+        //     }
+        //     else{
+        //     return "Please Provide a Positive Number";
+        //     }
+        // }
+
+
+
+        // function khustra(ashish){
+        //     ashish = parseInt(ashish)
+        //      if(ashsih!=null && ashish>0){
+        //         let rohit = "";
+        //         for(let i = 1; i < 10 ; i++ ){
+        //            rohit += ashis + " x " + i + " ashish*i" + "<br>";
+        //         }
+        //         return table;
+        //      }
+        //      else{
+        //         return " please provide a positive number";
+        //      }
+            
+        // }
+
+        // document.write(ashsih (prompt("Enter The Number")))
+
+
+    //    let i = 1;
+    //    for(i ;  i <= 10 ; i++){
+    //     document.write(i + "<br>")
+    //    }
+
+    // let i = prompt("kuch bhi likh")
+    // i = parseInt(i)
+    // let sum = 0;
+    // if(i!=null && i>0){
+    //     for(i; i<=10; i++){
+    //         document.write(i + "<br>"  )
+    //         sum+=i;
+    //     }
+    //     document.write("The Sum of all above :" + sum)
+
+    // }
+
+    // function abcd(name){
+    //     if(name!=null){
+    //         return "hi " + name
+    //     }
+    //     else{
+    //         return "please provide name"
+    //     }
+    // }
+    // abcd("aksh")
+    // document.write( abcd("aksh") )
+
+
+    function max(){
+        let a = prompt("Enter the first number");
+        let b = prompt("Enter the second number");
+        let c = prompt("Enter the third number");
+        if(a!=null && b!=null && a!=null){
+            if(a>b && a>c){
+                return a + "is grater then " + b + "and" + c
+            }
+            else if(b>a && b>c){
+                return b + "is grater then " + c + "and " + a
+            }
+            else if(c>a && c>b){
+                return c + "is grater then " + b + "and " + a
+            }
+        }
+        else{
+            return "please provid three number"
+        }
+    }
+
+    document.write(max(25, 56, 25))
+    </script>
+</body>
+</html>

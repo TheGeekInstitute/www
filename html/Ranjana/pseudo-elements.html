@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            font-size: 20px;
+            color: red;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+        .para{
+            color: blue;
+        }
+
+        ol li{
+            color: red;
+        }
+
+        ol li::marker{
+            color: greenyellow;
+            
+        }
+
+        ul li::marker{
+            color: blue;
+        }
+        ul li{
+            color: green;
+        }
+
+        .new::selection{
+            color: red;
+            background-color: yellow;
+
+        }
+        .new{
+            user-select: auto;
+        }
+
+        h1::before{
+            content: "The ";
+            color: red;
+        }
+
+        h1:hover::after{
+            content: attr(data-myattr);
+            /* content: url("../web/images/10.jpg"); */
+
+            color: orangered;
+            /* font-size: 100px; */
+        }
+
+        input{
+            caret-color: red;
+        }
+
+        input::placeholder{
+            color: red;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>dsa</li>
+        <li>sad</li>
+        <li>sada</li>
+    </ul>
+
+<ol>
+    <li>sfdf</li>
+    <li>sdf</li>
+    <li>sdfsd</li>
+</ol>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime voluptate eveniet amet itaque officiis debitis cupiditate facere excepturi officia illum ad, esse fugiat rem nobis ex, incidunt magni suscipit.</p>
+
+<p class="new">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic ipsum distinctio, necessitatibus qui sequi ex saepe natus, optio harum vero a quasi alias temporibus corporis praesentium ab, tenetur at?
+    Perspiciatis distinctio, debitis molestias eos repellendus praesentium voluptatum doloremque eligendi est ratione, maxime recusandae commodi vel consectetur deleniti ab voluptate sint ad quibusdam? Soluta tenetur autem nemo vel error. Impedit.
+</p>
+
+
+<h1 align="center" data-myattr=" Institute of cyber Security">Geek</h1>
+
+<input type="text" placeholder="ABCD">
+
+</body>
+</html>

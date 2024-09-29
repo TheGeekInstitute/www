@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="" id="">
+
+    <p id="para"></p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto assumenda eius corporis ratione voluptatum debitis provident laborum porro numquam. Placeat eveniet hic quod dolores tempore aperiam, blanditiis dolore delectus! Ducimus!
+    Enim delectus doloribus repudiandae pariatur accusantium hic itaque eos neque? Nemo porro iusto veritatis provident et incidunt, dignissimos vitae animi ipsam tempore ex eius eveniet asperiores excepturi quis ratione iure.
+    Fuga saepe natus, ad, doloribus corrupti quam magni, necessitatibus praesentium omnis nemo consequatur architecto ipsam ea neque voluptatibus autem? Animi nulla adipisci optio ullam fugiat voluptate quam error consectetur inventore.</p>
+
+    <script>
+        document.body.addEventListener("keydown",(e)=>{
+            // console.log(e.metaKey)
+            // console.log(e.altKey)
+            // console.log(e.ctrlKey)
+            // console.log(e.keyCode)
+
+            // console.log(e)
+
+
+        })
+
+
+        document.body.addEventListener("mousedown",(e)=>{
+        //   console.log(e.button)
+            if(e.button==0){
+                document.body.style.backgroundColor="red"
+            }    
+            else if(e.button==1){
+                document.body.style.backgroundColor="green"
+            }
+            else if(e.button==2){
+                document.body.style.backgroundColor="cyan"
+            }
+            else{
+                document.body.style.backgroundColor="white"
+
+            }
+        })
+
+        document.querySelector("input").addEventListener("copy",()=>{
+            alert("text Copied")
+        })
+
+        document.querySelector("input").addEventListener("cut",()=>{
+            alert("text cutted")
+        })
+
+        document.querySelector("input").addEventListener("paste",()=>{
+            alert("text Pasted")
+        })
+        
+
+    </script>
+
+</body>
+</html>
+<!-- 
+ctrl key, shift key, alt key, meta key
+
+Button MouseEvent Property
+key : KeyboardEvent Property -->

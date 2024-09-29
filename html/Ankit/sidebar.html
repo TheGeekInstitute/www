@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .nav{
+            position: fixed;
+            top: 0;
+            background-color: black;
+            height: 50px;
+            margin-left: 140px;
+            color: white;
+            width: calc(100vw - 140px);
+        }
+
+        .sidebar{
+            position: fixed;
+            background-color: cyan;
+            width: 140px;
+            height: calc(100vh + 50px);
+            margin-top: -50px;
+        }
+
+        .sidebar img{
+            height: 70px;
+            width: 70px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+        .footer{
+            position: fixed;
+            bottom: 0px;
+            z-index: 100000;
+            background-color: black;
+            margin-left: 140px;
+            height: 50px;
+            margin-top: -100px;
+            width: calc(100% - 140px);
+            border: 1px solid red;
+        }
+
+        .main{
+            background-color: greenyellow;
+            /* width: 100px; */
+            /* height: 100px; */
+            position: absolute;
+            top: 50px;
+            left: 140px;
+            width: calc(100% - 140px);
+            /* height: calc(100% - 100px); */
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .menu{
+            /* border: 1px solid red; */
+            margin-top: 15px;
+        }
+
+        .menu li{
+            /* border: 1px solid black; */
+            height: 50px;
+            border-bottom: 2px solid black;
+        }
+
+        .menu li a{
+            display: block;
+            line-height: 50px;
+            padding:0px 15px;
+            /* border: 1px solid green; */
+            font-weight: 700;
+            font-size: large;
+            color: black;
+        }
+
+        .menu li:hover{
+            background-color: grey;
+        }
+
+        .submenu{
+            /* border: 2px solid red; */
+            position: absolute;
+            z-index:100000000;
+            left:141px;
+            top:102px;
+            background-color:grey;
+            display:none;
+        }
+        .submenu li:hover{
+            background-color:white;
+        }
+
+        .sidebar .menu li:hover .submenu{
+            display:block;
+        }
+
+        .box{
+            border: 1px solid red;
+            height: 200px;
+            width: 170px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">sadad</div>
+    <div class="sidebar">
+        <h1>Logo</h1>
+        <img src="../web/images/10.jpg" alt="">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages +</a>
+                <ul class="submenu">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+    <div class="main">
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

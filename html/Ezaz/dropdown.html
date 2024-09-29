@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .nav{
+            height: 50px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+         
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: cursive;
+            text-shadow: 0px 0px 10px red;
+        }
+
+        .nav .logo span{
+            color: red;
+            text-shadow: 0px 0px 3px white;
+
+        }
+
+        .nav > ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        .nav > ul  > li > a{
+            display: block;
+            color: white;
+            margin: 0 10px;
+            padding: 0 10px;
+            line-height: 50px;
+            font-size: large;
+        }
+
+        .nav > ul > li > a:hover{
+            background-color: red;
+        }
+
+
+        .nav ul li .sub{
+            position: absolute;
+            top: 50px;
+            background-color: grey;
+            width: 100px;
+            text-align: center;
+
+            display: none;
+        }
+        .nav ul li .sub li a{
+            line-height: 40px;
+            display: block;
+            color: white;
+        }
+
+        .nav ul li .sub li a:hover{
+            background-color: rebeccapurple;
+        }
+
+        .nav ul li:hover .sub{
+            display: block;
+        }
+      
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="logo">LO<span>GO</span></div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages +</a>
+
+                <ul class="sub">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Services</a>
+            
+                <ul class="sub">
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            
+            </li>
+        </ul>
+    </div>
+
+
+
+
+</body>
+</html>

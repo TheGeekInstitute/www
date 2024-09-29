@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .container .box{
+            border: 2px solid black;
+            height: 300px;
+            width: 350px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .container .box > img{
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+        }
+
+        .container .box .price{
+            width: 90%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container .box .images img{
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+     
+    </div>
+
+    <script>
+var box;
+        let container =  document.querySelector(".container");
+
+        let data = fetch("https://dummyjson.com/products");
+
+        data.then((e)=>{
+            return e.text();
+        }).then((val)=>{
+           
+            for(x of JSON.parse(val).products){
+                for(index in x){
+                     box =`
+                    <div class="box">
+                    <img src="${x.thumbnail}" alt="">
+                    <h2>${x.title}</h2>
+                    <p>${x.description}</p>
+
+                    <div class="price">
+                        <p>Price : ${x.price}</p>
+                        <p>Discount : ${x.discountPercentage}%</p>
+                        <p>Rating : ${x.rating}</p>
+                    </div>
+
+                        <div class="images">
+                        <img src="${x.images[0]}" alt="">
+                        <img src="${x.images[1]}" alt="">
+                        <img src="${x.images[2]}" alt="">
+                        </div>
+                </div>`;
+
+                
+                
+                
+                
+                // console.log(x.title)
+            }
+            container.insertAdjacentHTML("beforeend",box)
+        
+        }
+
+        })
+        
+    </script>
+</body>
+</html>

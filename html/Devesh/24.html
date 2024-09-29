@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #ec0ab4;
+            height: 100%;
+           
+            
+        }
+        .heading{
+            font-size: xx-large;
+            background-color: #fff;
+            text-align: center;
+            position: relative;
+            border-radius: 60px;
+            margin: 30px 20px;
+            box-shadow: 0px 0px 10px  black, 0px 0px 20px rgb(32, 10, 233);
+        }
+
+        .heading h1{
+            color: black;
+            
+        }
+        .clock{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: #fff;
+            border-radius: 100%;
+            border: 10px solid #2e0bcc;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            box-shadow: 0px 0px 50px  white;
+
+        }
+
+        .clock .top{
+            position: absolute;
+            width: 4px;
+            height: 8px;
+            background-color: #262626;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+        }
+        
+        .clock .right{
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            background-color: #262626;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .clock .bottom{
+            position: absolute;
+            width: 4px;
+            height: 10px;
+            background-color: #262626;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+        }
+
+        .clock .left{
+            position: absolute;
+            width: 10px;
+            height: 4px;
+            background-color: #262626;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .clock .center{
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #262626;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .clock .shadow{
+            background: linear-gradient(rgba(0,0,0,0)rgba(0,0,0,0.1));
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            left: 60px;
+            top: 60px;
+            transform: rotate(135deg);
+        }
+
+        .clock .hour{
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 216000s infinite linear;
+        }
+
+        .clock .hour:before{
+            background-color: #262626;
+            content: "";
+            height: 40px;
+            width: 4px;
+            position: absolute;
+            top: 50px;
+        }
+
+        .clock .minute{
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 3600s infinite linear;
+
+        }
+
+        .clock .minute:before{
+            position: absolute;
+            content: "";
+            background-color: #262626;
+            height: 60px;
+            width: 4px;
+            top: 27px;
+
+        }
+
+        .clock .second{
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            animation: time 60s infinite steps(60);
+        }
+
+        .clock .second::before{
+            position: absolute;
+            content: "";
+            background-color: #fd1111;
+            height: 50px;
+            width: 4px;
+            top: 40px;
+
+        }
+
+        @keyframes time {
+        to{
+            transform: rotate(360deg);
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Clock</h1>
+    </div>
+    <div class="clock">
+        <div class="top"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="shadow"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+    </div>
+    
+</body>
+</html>

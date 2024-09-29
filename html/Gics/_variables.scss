@@ -1,0 +1,15 @@
+$accent-color : #2b32b2;
+$dark-color: #000;
+$white-color: #fff;
+$border: 2px solid red;
+$para-color:  hsl(212,25%,20%);
+
+@mixin  flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#creative{
+    color: $accent-color;
+}

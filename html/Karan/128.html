@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+        .box{
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 100px;
+            margin: 5px;    
+            background-color: yellow;
+           
+        }
+        
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            column-gap: 0px;
+        }
+
+        .alias{
+            cursor: alias;
+        }
+
+        .all-scroll{
+            /* cursor: all-scroll; */
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .context-menu{
+            cursor: context-menu;
+        }
+        .help{
+            cursor: help;
+        }
+        .pointer{
+            cursor: pointer;
+            cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto;
+        }
+        .progress{
+            cursor: progress;
+        }
+        .wait{
+            cursor: wait;
+        }
+        .cell{
+            cursor: cell;
+        }
+        .crosshair{
+            cursor: crosshair;
+        }
+        .text{
+            cursor: text;
+        }
+        .vertical-text{
+            cursor: vertical-text
+        }
+        .copy{
+            cursor: copy;
+        }
+        .move{
+            cursor: move;
+        }
+        .no-drop{
+            cursor: no-drop;
+        }
+        .not-allowed{
+            cursor: not-allowed;
+        }
+        .all-scroll{
+            cursor: all-scroll;
+        }
+        .col-resize{
+            cursor: col-resize;
+        }
+        .n-resize{
+            cursor: n-resize;
+        }
+        .e-resize{
+            cursor: e-resize;
+        }
+        .s-resize{
+            cursor: s-resize;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box alias">alias</div>
+        <div class="box all-scroll">all-scroll</div>
+        <div class="box context-menu">context-menu</div>
+        <div class="box help ">help</div>
+        <div class="box pointer">pointer</div>
+        <div class="box progress" >progress</div>
+        <div class="box wait">wait</div>
+        <div class="box cell">cell</div>
+        <div class="box crosshair">crosshair</div>
+        <div class="box text">text</div>
+        <div class="box vertical-text">vertical-text</div>
+        <div class="box copy">copy</div>
+        <div class="box move">move</div>
+        <div class="box no-drop">no-drop</div>
+        <div class="box not-allowed">not-allowed</div>
+        <div class="box all-scroll">all-scroll</div>
+        <div class="box col-resize">col-resize</div>
+        <div class="box n-resize">n-resize</div>
+        <div class="box  e-resize">e-resize</div>
+        <div class="box s-resize">s-resize</div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        body{
+            background-color: rgb(248, 241, 241);
+        }
+        .main{
+            display: flex;
+            background-color: blue;
+            height: 9vh;
+            justify-content: space-evenly;
+            text-align: center;
+            align-items: center;
+            /* position: fixed; */
+            width: 100%;
+        }
+        
+        .main img{
+            height: 5vh;
+            margin-bottom: 20px;
+        }
+        .main h1{
+            display: block;
+        }
+        .top ul li{
+            display: inline-block;
+        }
+        .top ul li a{
+            color: #fff;
+            font-weight: 900;
+            margin: 12px;
+            font-size: 18px;
+            font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+            
+        }
+        /* .input,input[type=text]{
+            padding: 10px;
+            width: 400px;
+            outline: none;
+        } */
+        .plus{
+            font-size: 13px;
+            color: yellow;
+            
+        }
+        .main h1{
+            font-size: 25px;
+            font-family: cursive;
+            color: #fff;
+        }
+        .hero h3{
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+        }
+        .hero h3:hover{
+            color: rgb(37, 37, 212);
+        }
+        .search{
+            height: 50px;
+           
+        }
+        input,span{
+            line-height: 50px;
+        }
+        input{
+            height: 30px;
+            width: 350px;
+            padding-right: 50px;
+        }
+        span i{
+            position: absolute;
+            top: 21px;
+            left: 640px;
+            color: blue;
+        }
+        .search input:focus ~ span i{
+            visibility: hidden;
+        }
+         .login{
+            padding:0.4rem;
+            background-color: #fff;
+            color: blue;
+            width: 6rem;
+            border: 1px solid #fff;
+            box-shadow: 2px 2px 2px grey;
+        }
+        .login a{
+            color: blue;
+        }
+        .hero{
+            background-color: #fff;
+        }
+        .image img{
+            height: 5.2rem;
+            border-radius: 50%;
+        }
+        .code{
+            height:18vh ;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: .5rem;
+             box-shadow: 3px 5px 4px #b8abab;
+        }
+        .copy img{
+            margin-top: 0.6rem;
+            width: 99vw;
+            height: 48vh;
+            box-shadow: 2px 4px 4px rgb(121, 89, 89);
+            mix-blend-mode: darken;
+        }
+        .copy{
+            margin-top: 0.5rem;
+            width: 90vw;
+            height: 55vh;
+        }
+        .karan{
+            display: flex;
+            margin-top: 2rem;
+            justify-content: space-around;
+            background-color: aliceblue;
+            height: 50vh;
+        }
+        .golu img{
+            height: 25vh;
+        }
+        .axis{
+            border-radius: 1.2rem;
+            width: 25vw;
+        }
+        .excel{
+            height: 50vh;
+        }
+        .word{
+            margin-top: .5rem;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 2px 4px 4px grey;
+        }
+        .imagess img{
+            width: 10rem;
+            height: 8rem;
+            margin-top: 1rem;
+        }
+        .imagess ol a{
+            background-color: rgb(25, 0, 255);
+            border: 1px solid  ;
+            padding: 0.5rem;
+            background-color: rgb(44, 130, 211);
+            color: #fff;
+            border-radius: 3px;
+            display: block;
+            width: 80px;
+            margin-top:.5rem;
+        }
+        .one img{
+            height: 40vh;
+            width: 15vw;
+        }
+      .english p{
+        text-align: justify;
+      }
+      .footer{
+        height: 60vh;
+        background-color:rgb(6, 39, 71);
+      }
+      .foot{
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem;
+        border-bottom: 1px solid grey;
+        margin-top: 1rem;
+      }
+      .foot ul li a{
+        color: #fff;
+        font-size: .8rem;
+        padding: 1rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .foot ul{
+        color: #fff;
+      }
+      .foot ul li a:hover{
+        text-decoration: underline;
+      }
+      .social{
+        border-right: 1px solid grey;
+      }
+      .foot h2{
+        color:gray;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      .end{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.6rem;
+      }
+      .end i{
+        color: yellow;
+      }
+      .end{
+        color: #fff;
+      }
+      /* .drop{
+        float: right;
+        border: 1px solid red;
+        margin-bottom: 3rem;
+      } */
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="main">
+            <h1>FLIPKART <p class="plus">Explore  Plus</p> </h1>
+            <div class="search">
+                <input type="text" placeholder="Search for products, brands and more ">
+                <span><i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+            </div>
+        <div class="login">
+        <a href="#">Login</a>
+    </div>
+        <div class="top">
+        <ul>
+            <li><a href="#">Become a Saller</a></li>
+            <li><a href="#">More<i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                Card</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <div class="hero">
+        <div class="code">
+            <div class="image">
+                <img src="https://www.lifewire.com/thmb/8qS8pae6uS0YV4gwIzpRg-ncJh4=/1250x1409/filters:fill(auto,1)/iphone-3g-5a6c87d7875db90037d168ad.jpg" alt="">
+                <h3>MOBILE</h3>
+            </div>
+            <div class="image">
+                <img src="https://n3.sdlcdn.com/imgs/b/s/t/Nirma-Washing-Powder-1000-gms-SDL632059957-1-81971.jpg" alt="">
+                <H3>NIRMA</H3>
+            </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.0zhf1Yr44V-071tx_XkGCAHaE8?pid=ImgDet&rs=1" alt="">
+            <H3>LEPTOP</H3>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.oLd0M6QI6s5WbFVQdtcqbQHaE7?pid=ImgDet&rs=1" alt="">
+            <H3>MIX VEG.</H3>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.WFCtNK4sWM6TXHh1LTKsuwHaFj?pid=ImgDet&rs=1" alt="">
+            <H3>VEGTABLES</H3>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.LxBt6Xf51qriT2FwaboLzAHaFj?pid=ImgDet&rs=1" alt="">
+            <H3>SALADE</H3>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.TTUdcobJMh9qGOOE4T8-0AHaHa?pid=ImgDet&rs=1" alt="">
+            <H3>FAISHON BAGS</H3>
+        </div>
+        <div class="image">
+            <img src="https://www.treehugger.com/thmb/dUYeXcqsC0I_XpY1FU73_DMryfk=/fit-in/1478x1500/filters:no_upscale():max_bytes(150000):strip_icc()/BeeGreenReusableGroceryBag10-Pack-076ca14259be48338660acceabfc9bad.jpg" alt="">
+            <H3>BAGES</H3>
+        </div>
+        <div class="image">
+            <img src="https://th.bing.com/th/id/OIP.QykVs8Vn_4VwERqr_jSceQD6D6?pid=ImgDet&rs=1" alt="">
+            <H3>KENT</H3>
+        </div>
+    </div>
+    </div>
+    <div class="copy">
+        <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/9338d774ac329613.jpg?q=50" alt=""></div>
+        <!-- <div class="drop">
+            <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            <div class="drop1">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </div> -->
+ <!-- <div class="karan">
+    <div class="golu">
+        <img src="https://cardinfo.in/assets/images/flipkart-axis-bank-credit-card.jpg" alt="">
+    </div>
+    <div class="golu">
+        <img src="https://th.bing.com/th/id/OIP.ONKnSqHOkPPo0_E10ndamAHaEs?pid=ImgDet&rs=1" alt="">
+    </div>
+    <div class="golu">
+        <img src="https://i.ytimg.com/vi/rQjmqaEuo2k/maxresdefault.jpg"  class="axis">
+    </div>
+ </div> -->
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kkfrjww0/monitor/k/h/3/ew2480-9-benq-original-imafzs3h2gmfnydh.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kactpjk0/shaver/m/6/z/philips-s1121-45-s1121-45-original-imafry2qgxcwnm9r.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="one">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/464/708/image/5942bb5b5233d597.jpg?q=70" alt="">
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k7w8eq80/two-wheeler-tyre/v/y/s/90-90-12-106061-milaze-tl-54j-sw-ceat-original-imafqyx5tnfraaxh.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kc3p30w0/headphone/i/h/z/k52-akg-original-imaftb5hptnuajfu.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/power-bank/j/i/v/power-bank-dx09-20000-mah-20000-dx09-20k-callmate-original-imagn22tuac3hqnz.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/windcheater/r/t/z/m-m7aw22jkt007a-m7-by-metronaut-original-imagjhhypg3sunrz.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kxz0pe80/kids-thermal/v/w/t/2-3-years-thermal-top-lower-super-original-imagabfrxmrg7f6f.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kod858w0/snack-savourie/x/1/p/500-500g-fresh-kolkata-bengali-style-yammi-tasty-khatta-mittha-original-imag2twfa8js2yk4.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/torch/8/i/e/5-led-cob-mini-flashlights-bright-usb-rechargeable-light-with-original-imagkd8gzyxcjtjr.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/bottle/3/f/9/1000-crystal-clear-water-bottle-for-fridge-home-office-gym-original-imagnpgch6jzqgrm.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/bottle/u/g/p/1000-stainless-steel-2-1-litre-water-bottle-set-of-2-kimaya-original-imaggd3xcggqgseg.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kn3i1zk0/band/g/e/y/13-resistance-bands-tube-1-48-acjin-enterprise-original-imagfujsbvd9nduz.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/jc0ttow0/vehicle-lubricant/5/h/q/1-3000-4t-plus-20w40-hc-tech-engine-oil-for-bikes-motul-original-imaff8z4xtq5ry6a.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k6mibgw0/bedsheet/3/y/b/double-bedsheet-ncs4-flat-new-click-shop-original-imaez2yhc8f5k9sy.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <!-- <div class="images">
+        <div class="https://rukminim1.flixcart.com/image/200/200/ked56kw0/battery/nimh/z/v/e/duracell-plus-a-a-4-pcs-1300-mah-original-imafv2ff3mbzj6gg.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div> -->
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kl5hh8w0/puzzle/g/n/g/60-wooden-earth-jigsaw-puzzle-60-pcs-webby-original-imagyc8hsdztzdzb.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kqgyhe80/stroller-pram/m/g/r/easy-to-push-baby-pram-with-quick-one-hand-folding-blue-mm-50-a-original-imag4h6bzrb6fngh.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kt7jv680/pump/p/f/9/bike-pump-foot-activated-floor-pump-air-pump-for-car-and-bike-original-imag6hmcz95ca4zg.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k2rwlu80/sport-glove/k/y/z/left-right-racing-equipment-motorcycle-xl-na-170-11-riding-original-imafm2fthy5tw3ef.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k7w8eq80/two-wheeler-tyre/v/y/s/90-90-12-106061-milaze-tl-54j-sw-ceat-original-imafqyx5tnfraaxh.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kc3p30w0/headphone/i/h/z/k52-akg-original-imaftb5hptnuajfu.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/l58iaa80/electric-cycle/i/y/f/-original-imagfykthgudy4qz.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/power-bank/j/i/v/power-bank-dx09-20000-mah-20000-dx09-20k-callmate-original-imagn22tuac3hqnz.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/windcheater/r/t/z/m-m7aw22jkt007a-m7-by-metronaut-original-imagjhhypg3sunrz.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kxz0pe80/kids-thermal/v/w/t/2-3-years-thermal-top-lower-super-original-imagabfrxmrg7f6f.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kz5vwy80/helmet/o/4/k/-original-imagb8azfdthjhqr.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kz8qsnk0/mosquito-net/h/1/p/double-bed-polyester-adults-blue-mosquito-net-double-bed-nets-original-imagbagfgnfvnquj.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/klzhq4w0/jam-spread/w/q/u/510-chocolate-peanut-butter-crunchy-510g-jar-nut-butter-original-imagyzpqqfaguxny.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/jk1grrk0/car-pressure-washer/j/c/m/06008a7af0-bosch-original-imaf7hd6bv8g3m6r.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/knyxqq80/dslr-camera/r/y/x/digital-camera-eos-m50-mark-ii-eos-m50-mark-ii-canon-original-imag2gzkexzqhyhu.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/instant-camera/y/l/3/mini-12-instax-16791340-fujifilm-original-imagzkbhzrx7ssyd.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/ktop5e80/tablet/6/o/s/mk2p3hn-a-apple-original-imag6yy8deumbvxz.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/washing-machine-new/s/e/b/-original-imagzcg5zgb7bvfh.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kqzj7gw0/washing-machine-new/k/t/a/7-p7020ngay-lg-original-imag4vnghhh5qzhq.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kb9ou4w0/shoe/j/g/6/11391306-40-u-s-polo-assn-white-original-imafsnetwnyzu8x2.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k59xci80/watch/t/p/9/premium-luxury-business-casual-trendy-water-resistant-original-imafnzmembfxdyhv.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/jvmpci80/track-pant/g/w/j/s-7224489-hrx-by-hrithik-roshan-original-imafghfrgedw3zq8.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="excel">
+    <div class="word">
+        <div class="imagess">
+          <h1>Best of <br> Electronics</h1>
+          <ol><a href="#">VIEW ALL</a></ol>
+          <img src="https://dukanindia.in/home/wp-content/uploads/2022/05/0oejr_512.jpg" alt="">
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/k59xci80/watch/t/p/9/premium-luxury-business-casual-trendy-water-resistant-original-imafnzmembfxdyhv.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kmds4nk0/vehicle-indicator-light/c/g/9/set-of-4-bike-front-side-rear-smd-blue-led-light-indicator-turn-original-imagfatnzgzegkmg.jpeg?q=70" alt="">
+            <p>Top Mirroless Cameras</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, Sony, Fujiflims.</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/sari/8/6/w/free-sknt17-d-divastri-unstitched-original-imagg9j9vvv8s3hb.jpeg?q=70" alt="">
+            <p>Top hair cuter</p>
+            <li><a href="#">shop Now!</a></li>
+            <h4>Canon, useful</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/image/200/200/kdbzqfk0/bar/8/h/q/push-up-bar-0-8-long-ankaro-original-imafu9dmvdk3rzvy.jpeg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+        <div class="images">
+            <img src="https://rukminim1.flixcart.com/fk-p-flap/200/200/image/5aa98b7cee183286.jpg?q=70" alt="">
+            <p>Best of hair dryer</p>
+            <li><a href="#">Lowest cost!</a></li>
+            <h4>hair dryer</h4>
+        </div>
+    </div>
+ </div>
+ <div class="english">
+    <h2>Top Stories:Brand Directory</h2>
+    <span>MOST SEARCH FOR ON FLIPKART</span>
+   <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus aspernatur commodi iste non ratione aliquid beatae nihil animi quae repellat, velit, similique reprehenderit repellendus tenetur quasi doloremque, molestias molestiae?
+   Doloremque explicabo perferendis dicta error dignissimos ut minima, placeat a quae amet aspernatur id officiis tempora facilis assumenda adipisci culpa ratione. Animi placeat voluptas minima possimus non, reiciendis porro optio.
+   Corrupti, tenetur! Natus architecto labore corporis! Impedit illum nobis nihil a veniam illo id officia neque. Quidem, veniam? Vitae distinctio deleniti a perferendis omnis debitis eos esse consectetur animi saepe.
+   Molestias perferendis voluptatum, itaque ipsa suscipit dolores dignissimos magni veniam deleniti quod alias earum! Atque iure enim cum id nam velit. Quos quasi nobis repudiandae ut sint odit dolorem harum!
+   Ex iure nesciunt at soluta pariatur enim! Ea quidem dolor et maiores. Adipisci repellat dicta ducimus vitae ratione perspiciatis, sed in! Accusamus odit eos eum mollitia modi voluptatibus ipsa nemo.
+   Deleniti in sed optio enim deserunt. Quisquam aut quos voluptates velit neque. Eius officiis, delectus deleniti voluptatibus quod dicta! Doloribus atque fugiat maxime neque quia magnam odit laudantium ad quibusdam?
+   Amet tenetur cupiditate repellat ad natus commodi magnam fugit iste possimus debitis esse ipsum dolorem sequi sit explicabo aut, inventore culpa! Accusamus debitis eaque possimus laborum voluptatum dignissimos ab molestiae?
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit provident odio eum nemo, dolore iste minus quasi aspernatur. Pariatur iusto esse aut, praesentium sed deserunt voluptatum corporis libero iure.
+   Eum, voluptate ad? Quasi cum, sit eligendi unde reprehenderit sunt iste totam eveniet voluptas sapiente, ratione quisquam eos expedita nihil aspernatur animi sequi. Minus unde voluptatum alias. Sapiente, optio asperiores.
+   Voluptas perferendis debitis repudiandae nobis aperiam libero quidem ipsum nihil alias fugiat reprehenderit, esse dicta tempora temporibus qui voluptatem dolore numquam nisi facilis rem porro omnis. Voluptatum et rem non.
+   Dolorum quaerat minus fugiat reprehenderit saepe mollitia ipsa dignissimos non, animi provident delectus nulla perferendis esse obcaecati, veniam harum nam sed nihil. Aliquid asperiores totam aspernatur, temporibus vel deserunt minus?
+   Deleniti nobis magnam distinctio magni qui, nihil, rem laborum, natus cupiditate non quos maiores voluptatum dolores? Est ea exercitationem harum omnis aliquam. Ipsum consequuntur dolores quas consequatur velit ea sed!
+   Repudiandae sit accusamus consectetur perspiciatis magni incidunt culpa eos iusto, quaerat debitis praesentium cumque hic dolorum nulla qui voluptas provident rem dolor unde similique ullam! Nam accusamus perspiciatis eius alias?
+   Magnam, nostrum voluptate! Soluta laudantium ad ex numquam repellat incidunt architecto temporibus consequuntur. Illum praesentium dolorum rerum possimus dignissimos sapiente commodi alias et rem error! Obcaecati sequi ipsum sapiente placeat!
+   Dicta aspernatur facere, incidunt iusto illo blanditiis inventore dolore totam eligendi autem commodi aut provident dolorem et aliquam omnis adipisci eveniet voluptatem tempora temporibus magni praesentium nulla, officiis quia. Rerum!
+   Mollitia voluptatem laudantium nemo veniam nam modi, eius perspiciatis aliquam accusamus aliquid, voluptas quia ex amet vero consectetur nesciunt facere eveniet explicabo consequuntur molestiae non excepturi? Reprehenderit cumque hic a.
+   Reiciendis corporis voluptatem labore perspiciatis officiis ea illum dolorem alias atque delectus ullam itaque aut hic, voluptates nemo ducimus iste earum adipisci odit ad, exercitationem velit! Rerum voluptate officiis hic.
+   Expedita modi veritatis vel aut excepturi animi mollitia ex cum voluptates eum quasi debitis harum natus iusto quidem, ratione optio nostrum! Ducimus itaque esse enim ipsa alias iure, rerum dolore.
+   Omnis sit praesentium aut officiis eius sunt doloribus nesciunt quaerat quibusdam soluta porro aspernatur ea consequuntur, consectetur ipsa fuga corporis quia dolorum expedita sed, error impedit vel nostrum voluptatum. Nisi.
+   Est illo quos hic iste accusantium possimus totam, dolore fuga facilis quia incidunt a architecto assumenda repellat, omnis, magni consequuntur! Fuga exercitationem officia illum at necessitatibus esse in nam! Distinctio?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptates, accusantium pariatur ratione assumenda voluptatum debitis, dolor molestiae delectus blanditiis eius ipsam id itaque esse natus voluptate veritatis. Soluta, quibusdam?
+   At mollitia repellendus ducimus obcaecati impedit libero similique reprehenderit esse et. Pariatur voluptas doloremque similique doloribus a odit quod laborum corporis voluptatem sequi nisi minima iusto, voluptates, dolor eligendi omnis.
+   Similique excepturi labore blanditiis eligendi ratione, obcaecati accusamus reprehenderit autem eaque reiciendis omnis perferendis. Dignissimos hic exercitationem, iste, laudantium harum nam fuga quisquam deleniti magnam nostrum dolore omnis, repellat officia.
+   Nihil excepturi quidem modi reprehenderit? Aut facilis deserunt omnis molestias quam, laudantium sed dicta repudiandae vitae minus, nobis expedita at? Vitae, quas quia laboriosam voluptatibus in dolor culpa placeat architecto.
+   Explicabo quibusdam, dolor laborum odio corporis voluptatem animi quaerat quae enim accusantium maiores voluptas laudantium velit quia, hic cupiditate voluptates reprehenderit repudiandae vitae quod culpa porro fugiat? Dolore, dicta reprehenderit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio modi optio eaque, expedita debitis magnam neque alias placeat illo molestiae ex nihil voluptatem temporibus impedit quas id! Laboriosam, obcaecati perspiciatis.
+   Laborum sunt labore delectus tempora adipisci dolores minus, dignissimos reiciendis perferendis vel voluptatem, recusandae eos et voluptas! Hic unde ad harum aperiam eius? Facere sint autem sed, nam nisi maxime.
+   Optio ratione, esse tenetur quia distinctio dolorum delectus dolores aspernatur ex nam ducimus provident aperiam harum laudantium culpa, a beatae impedit. Exercitationem cumque dolore ad? Enim ut deleniti minima accusamus.
+   Dolorem blanditiis ullam autem beatae officia. Explicabo tempore libero, animi earum ad iusto, cumque molestiae nulla tempora voluptas reiciendis ducimus repellendus consequatur ratione! Praesentium autem totam id officiis quia nam?
+   Commodi itaque nisi suscipit consequatur maxime dolorum saepe quasi optio, provident corrupti id recusandae dicta autem sed esse asperiores soluta nulla qui voluptatum neque voluptate officiis. Nulla voluptatem corporis porro?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque laudantium reprehenderit quod recusandae placeat aut quasi cumque error, aperiam earum? Dolorem pariatur tenetur dolores magnam beatae. Repellendus, error maiores.
+Nisi fugiat id at earum odit distinctio, harum possimus incidunt qui dolorum explicabo perspiciatis ducimus aut quidem sed amet quae necessitatibus dolore voluptates commodi, minus omnis? Ipsam inventore autem molestiae.
+Magni, velit ab quos temporibus quibusdam sint totam, nemo ipsa obcaecati sunt incidunt vitae at nihil nobis nostrum explicabo magnam expedita voluptas adipisci enim doloribus vel ipsum commodi. Fuga, mollitia.
+A architecto debitis quo praesentium, nulla aliquam atque, non unde quibusdam officia corporis consequatur nam! Repudiandae non sequi veniam? Aliquid ad, atque numquam error quaerat rem aut dolor obcaecati voluptate.
+Dolore magni excepturi quas eaque ipsam animi, reiciendis nam facilis porro optio architecto quia? Consectetur, voluptate eveniet! Atque consequuntur quod delectus, nisi ducimus, ipsum, perspiciatis quo enim sunt eligendi omnis.
+Magnam nostrum quidem tempore laborum! Sit voluptatum quas ad eum porro aperiam itaque, unde corporis! Earum vel eum rerum, id et omnis quisquam, saepe laborum aut temporibus corporis quis deleniti!
+Earum id exercitationem rerum cum, similique laudantium, pariatur dolores ex reprehenderit iste odit ab cupiditate consequuntur laborum maxime explicabo dolore consequatur, debitis numquam modi possimus totam minus accusamus! Ipsa, placeat!
+Maiores, expedita harum voluptas accusamus officia itaque odit! Facilis expedita consequuntur ducimus, veniam tempore sapiente architecto illo nostrum maxime quod ratione! Possimus molestiae esse quam a, assumenda explicabo nemo error.
+Nihil magnam sunt pariatur! Sequi suscipit consequatur consectetur nulla porro quis aspernatur explicabo. Aperiam magni alias nostrum sequi atque neque, assumenda tempora commodi odit earum expedita quaerat nam numquam porro.
+Quaerat possimus adipisci aut at ad. Beatae exercitationem autem necessitatibus rem iusto laudantium ut ad nobis quia, odio omnis placeat, dicta suscipit, ex dignissimos dolorum distinctio voluptas natus similique. Dolorem.
+Cum earum ipsam pariatur rem libero atque assumenda consequuntur odio iusto? Ad facilis atque nemo minima ducimus itaque perspiciatis commodi voluptas, animi dolorem totam nam sed cumque, placeat officia deleniti.
+Et enim sapiente dolorem modi molestiae odit laudantium, deserunt aliquam tempora consequatur provident nobis totam. Fugit, distinctio? Recusandae, harum repudiandae cupiditate hic necessitatibus nostrum libero accusantium error quis fuga nemo.
+Eius ut, id deleniti voluptatem molestias distinctio rerum quisquam repellendus esse. Laborum iusto magni, molestias illo quia temporibus numquam autem sapiente, quibusdam architecto veniam quod quo placeat nihil odio amet!
+Nihil odit, inventore velit reiciendis a explicabo deserunt dolore praesentium consequatur nostrum porro molestias voluptate excepturi earum ipsum placeat optio cumque vero, officiis qui omnis vel eos rem quam. Quos!
+Natus assumenda id, magnam aut distinctio iure porro reiciendis veritatis dolorem repellat numquam molestiae ipsum! Ullam aliquam nam perspiciatis rem, et cumque eligendi earum. Ut adipisci distinctio explicabo veritatis inventore.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolores obcaecati recusandae! Aliquid similique quia saepe rem labore dignissimos perferendis incidunt recusandae, autem suscipit commodi cumque inventore voluptatibus et magni?
+Nesciunt laboriosam quae minus placeat atque odio enim consequuntur autem soluta suscipit, eum, recusandae doloremque totam fuga illo magni. Omnis mollitia repudiandae minima consequatur vero accusamus fuga suscipit voluptatem veritatis?
+Aliquid, provident! Placeat suscipit saepe vitae corporis tenetur est accusamus animi earum voluptatibus magni debitis quis repellendus maiores, ex nesciunt blanditiis voluptates pariatur. Id quibusdam minima esse illum officia animi?
+Voluptate fuga esse soluta quam culpa rem debitis, suscipit sapiente accusantium eos vero numquam ipsa eum, dolorem ea maxime hic consequatur magnam cupiditate. Numquam, quisquam? Amet quis ut dolores perspiciatis!
+Quae vel illo neque suscipit, repudiandae expedita laborum necessitatibus dolore cum ex omnis nihil, accusamus enim dicta eaque voluptates, minima debitis? Sunt fuga reiciendis temporibus maiores nostrum tempora illum impedit!
+Sapiente dolore libero nulla, blanditiis et tempore, magnam labore, cupiditate dignissimos est dicta dolores incidunt officiis delectus perspiciatis a tempora distinctio deleniti vel possimus. Beatae, modi? Ab consequatur assumenda eveniet?
+Dolore autem officiis iste repudiandae reiciendis magnam, rem ducimus esse impedit, itaque pariatur expedita aperiam nobis recusandae asperiores vitae enim natus, sit amet quia cupiditate porro necessitatibus doloribus dolorem? Molestiae?
+Libero accusantium voluptate unde maxime expedita modi nesciunt porro iusto odio natus minima molestias nostrum asperiores, fugit distinctio ab magnam voluptatum eaque aliquam quaerat! Velit ab consequatur at dolorum voluptatem!
+Qui vero aspernatur pariatur assumenda tenetur at maxime illum nemo facilis consectetur nesciunt necessitatibus sit doloremque, ad accusantium dolorem repellendus. Obcaecati eos, exercitationem eveniet iusto quibusdam natus earum aperiam maxime?
+Ex voluptate dolor nihil architecto vitae! Saepe eos illo veritatis, quam enim quasi expedita, velit modi error, odio minima consectetur consequuntur non libero? Temporibus eaque non quam repellendus laboriosam corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloremque, dolore magni fuga deserunt eaque neque, libero minus autem laudantium quasi repellendus vero, quisquam iste dolores tempora sint facere est.
+Vero vitae consequuntur accusantium dolorem sequi a hic quas asperiores numquam fuga? Ex explicabo consectetur optio aspernatur cum voluptate iure dignissimos natus quidem excepturi expedita illo molestiae voluptatem, quibusdam facere.
+<h4>Flipkart:The One-Stop Shopping Destination</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, incidunt illum doloremque dignissimos, neque odit, aliquam labore eum ipsam sapiente dolore vel aliquid explicabo blanditiis aperiam. Nostrum minima ab facere.
+Nihil consectetur dolore, quos ut saepe laudantium quaerat qui sequi ratione provident numquam consequatur eos animi magni expedita ipsa illum totam possimus molestias, mollitia veritatis nobis maxime? Voluptatem, hic in!
+Modi, ad. Minus accusantium, sit sunt ea unde reprehenderit inventore cupiditate omnis voluptates quaerat odit hic iusto nobis. Culpa beatae rem soluta aut officia expedita, minima consectetur molestiae dolorem recusandae.</p>
+<h4>Flipkart Plus</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit doloribus modi aut atque at nesciunt laboriosam quos nisi, cum ipsum suscipit placeat, voluptates officia, optio fugiat incidunt tempora illo?
+Velit deserunt dolore cumque voluptatibus rerum delectus animi accusamus temporibus iure vel perferendis, quibusdam quas provident reiciendis id explicabo placeat est accusantium recusandae dolor ducimus! Maiores, voluptate magni! Temporibus, qui?</p>
+<h4>No Cost EMI</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem reprehenderit nam architecto porro, est, obcaecati placeat, debitis velit delectus nobis enim ipsa vitae commodi ipsum amet at repudiandae excepturi cupiditate!</p>
+<h4>Mobile Exchange Offers</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore delectus, vel cumque, beatae tempora consequatur consectetur magni, a ipsa perferendis nostrum. Labore, temporibus similique sit minus nobis laboriosam harum.</p>
+<h4>EMI on Debit Cardsh</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi unde rem itaque nesciunt ut a atque asperiores, magnam voluptatibus ratione ex delectus quidem quis voluptas dolores autem laborum eum.</p>
+<h4>What Can You Buy From From Flipkart? <br>Mobile Phones</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi est praesentium veniam perferendis a laudantium doloremque, iusto nobis tenetur, nisi maiores dolorum ab sunt suscipit eaque. Quo, eius architecto?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque aut ducimus sint optio vero voluptatem accusantium deserunt sed ex culpa fugiat soluta, repudiandae hic molestiae natus totam nemo placeat voluptatibus!</p>
+<h4>Electronic Device and Accessories</h4>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ex voluptatem magnam maxime quos. Perspiciatis suscipit excepturi quibusdam quos in voluptates fuga aliquam eius, voluptate accusamus nisi adipisci nulla at?
+Soluta dicta aliquid maiores nemo molestias, beatae, debitis ipsam repellat accusamus excepturi, vero minus facere ipsum itaque reiciendis voluptas iste? Deserunt reiciendis nulla perspiciatis. Similique iure ipsa unde corporis fugit!</p>
+<h4>Large Application</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus beatae consectetur sunt repudiandae id explicabo, facere dolore quibusdam totam exercitationem corporis reprehenderit tenetur dolorem quis asperiores aliquid quidem officiis. Nemo.</p>
+<h4>Small Home Application</h4>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, ducimus aspernatur minus labore dolorem dolores. Porro at quaerat sapiente, nam voluptatibus nesciunt incidunt blanditiis harum, debitis, deserunt ex quod omnis.</p>
+<h4>Lifestyle</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maiores, accusamus ipsam illum saepe iste esse iure temporibus exercitationem, consequuntur culpa eveniet nostrum, facilis mollitia libero aliquid maxime sunt necessitatibus!</p>
+<h4>Home and Furniture</h4>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit suscipit earum similique numquam blanditiis asperiores totam maxime expedita minima doloribus eum, deleniti ullam qui at cupiditate beatae sed perspiciatis in?</p>
+<h4>Baby and kids</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis eum aut corporis exercitationem optio eius consequatur aperiam. In dolorem aut veritatis facilis sint repudiandae quo, suscipit a eius, ipsa numquam?</p>
+<h4>Books, Sports and Games</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi id maxime reprehenderit omnis! Laborum, iure dolor. Quaerat suscipit sint minus, eveniet dicta maiores exercitationem iste, ad repudiandae et, quo dolores?</p>
+<h4>Grocery/Supermart</h4>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, molestias tempora adipisci tenetur similique ab ipsum autem quam id hic. Eos aspernatur sapiente nihil molestiae at quasi totam in placeat.</p>
+</p>
+ </div>
+ <div class="footer">
+    <div class="foot">
+        <div class="about">
+            <H2>ABOUT</H2>
+            <ul>
+                <li><a href="#">Contact Us </a></li>
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Flipkart Stories</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Flipkart</a></li>
+                <li><a href="#">Wholeless</a></li>
+                <li><a href="#">Corporate</a></li>
+                <li><a href="#">Information</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <h2>HELP</h2>
+            <ul>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Cancellation &</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Report</a></li>
+                <li><a href="#">Infergement</a></li>
+            </ul>
+        </div>
+        <div class="policy">
+            <h2>CONSUMER POLICY</h2>
+            <ul>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Terms Of Uses</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Griveance</a></li>
+                <li><a href="#">Redressal</a></li>
+                <li><a href="#">EPF Caompliance</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h2>SOCIAL</h2>
+            <UL>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Instagram</a></li>
+            </UL>
+        </div>
+        <div class="mail">
+            <h2>MAIL US</h2>
+            <ul>Flipkart Internet Private Limitated, <br>Buildings Always Begoina & <br>Clove Embassy Tach Village, <br> OUter Ring Road, Village <br>Bengaluru, 52369856, <br>Karnataka, India</ul>
+        </div>
+    <div class="office">
+        <h2>Regestered Office Address:</h2>
+        <ul>
+          Flipkart Internet Private Limitated, <br>Buildings Always Begoina & <br>Clove Embassy Tach Village, <br> OUter Ring Road, Village <br>Bengaluru, 52369856, <br>Karnataka, India <br>CIN:U156982K265LUG1255 <br>
+          Telephone:044-5698236  
+        </ul>
+        </div>
+    </div>
+    <div class="last">
+        <div class="end">
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Become a Seller</p>
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Advertise</p>
+            <p><i class="fa fa-briefcase" aria-hidden="true"></i>
+                Gift Cards</p>
+            <p><i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                Help Center</p>
+            <p>2007-2023 Flipkart.com</p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <!-- <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p> -->
+            <!-- <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p>
+            <p><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt=""></p> -->
+        </div>
+    </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0 ;
+            padding:0 ;
+            box-sizing:border-box ;
+            text-decoration:none ;
+        }
+
+        .nav{
+            height:50px ;
+            display:flex ;
+            align-items:center ;
+            justify-content:space-between ;
+            padding:0 20px ;
+        }
+
+
+        .nav a{
+            font-size: xx-large;
+            color:black;
+        }
+
+        .nav #btn{
+            background-color:royalblue ;
+            padding:7px 10px ;
+            border-radius:3px ;
+            font-size:large ;
+            color:black ;
+        }
+
+        .main{
+            background-image:url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+           
+            background-size:cover ;
+            background-repeat:no-repeat ;
+            background-position:center ;
+            height:600px ;
+            text-align:center ;
+        }
+        .main h1{
+            font: size 35px ;
+            padding-top:200px ;
+            text-align:center ;
+            margin:0 auto ;
+            width:500px ;
+            color:white ;
+        }
+
+        .main form{
+            margin-top:50px ;
+        }
+
+        .main form input{
+            height:45px ;
+            width:500px ;
+            font-size:large ;
+            padding:2px 5px ;
+            border-radius:5px ;
+            border:none ;
+        }
+
+        .main form #Submit{
+            width:120px ;
+            background-color:royalblue ;
+            color:white ;
+            font-size:large ;
+        }
+
+        .Services {
+            height:300px ;
+            display:flex ;
+            align-items:center ;
+            justify-content:center ;
+        }
+
+        .Services .box{
+            margin:10px ;
+            height:250 ;
+            text-align:center ;
+            width:300px ;
+            padding:10px ;
+        }
+
+        .Services .box i{
+            font-size:80px ;
+            color:royalblue ;
+        }
+
+        .Services .box H3{
+            font-size:large ;
+            margin:10px 0 ;
+        }
+
+        .Services .box P{
+            font-size:large;
+        }
+
+        .features{
+
+        }
+
+        .features .container{
+            display:flex ;
+            align-items:center ;
+            justify-content:center ;
+        }
+
+        .features .container img{
+            height:500px ;
+            width: 50%;
+            
+        }
+
+        .features .container .box{
+            width: 50%;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        .teams{
+            margin-top:50px ;
+            text-align:center ;
+           
+            
+        }
+
+        .teams .members {
+        text-align:center ;
+        display:flex ;
+        align-items:center ;
+        justify-content:space-evenly ;
+        flex-wrap:wrap ;
+        }
+
+        .teams .members .box{
+            text-align:center ;
+            height:300px ;
+            width:300px ;
+            margin:10px ;
+                  
+        }
+
+        .teams .members .box img{
+         height:200px ;
+         width:200px ;
+         border-radius:50% ;
+         box-shadow:0 0 10px Black ;
+        }
+
+        .container{
+         padding:20px ;
+         text-align:center ;
+        }
+
+        .contact{
+            height:200px ;
+            background-image:url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size:cover ;
+            background-position:center ;
+            background-repeat:no-repeat ;
+            text-align:center ;
+            padding:20px ;
+        }
+
+        .contact h1{
+            padding:20px 0 ;
+        }
+
+        .contact Form{
+            display:flex ;
+            align-items:center ;
+            justify-content:center ;
+        }
+
+        .contact form input{
+            width:400px ;
+            height:45px ;
+            padding:2px 3px ;
+            border-radius:3px ;
+            border:none ;
+        }
+
+        .contact form input[type="Submit"]{
+            background-color:royalblue ;
+            border:none ;
+            width:100px ;
+            color:white ;
+            font-size:large ;
+            margin-left:30px ;
+        }
+
+        .footer{
+            /* text-align:center ; */
+            /* background-color:black ; */
+            color:black;
+            font-size:large ;
+            padding:20px 50px ;
+            display:flex ;
+            align-items:center ;
+            justify-content:space-around ;
+        }
+
+        .footer .box{
+            width:45%;
+            height:100px ;
+            /* border: 1px solid red ; */
+        }
+
+        .footer .links{
+            display:flex ;
+            align-items:center ;
+            height:50px ;
+        }
+
+        .footer .links li a{
+           display:block ;
+           color:antiquewhite ;
+           margin:0 15px ;
+        }
+
+        .footer p{
+         text-align:center ;
+         /* line-height:10px ; */
+        }
+
+        .social{
+          color:royalblue ;
+          display: flex;
+        }
+        .social a{
+            color:royalblue;
+        }
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="#">Start Bootstrap</a>
+            <a href="" id="btn">Sign Up</a>
+        </div>
+
+        <div class="main">
+            <h1>Generate more leads with a professional landing page!</h1>
+
+        <form>
+            <input type="Email" placeholder="Email Address">
+            <input type="Submit" id="Submit">
+        </form>
+    </div>
+
+
+    <div class="Services">
+        <div class="box">
+            <i class="fa-solid fa-window-maximize"></i>
+            <h3>Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+            </div>
+    
+        <div class="box">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Bookstrap 5 Ready</h3>
+            <p>Featuring the latest build of the new 5 bookstrap framework!</p>
+            </div>
+    
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+           <h3>Easy to use</h3>
+           <p>Ready to use with your own content, or customize the source files!</p>
+        </div>
+    </div>
+
+      
+
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <div class="box">
+             <h1> fully Responsive Design</h1>  
+             When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! when you use a thing created by
+            </div>
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+        </div>
+
+        <div class="container">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+            <div class="box">
+             <h1> fully Responsive Design</h1>  
+             When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! when you use a thing created by
+            </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="box">
+             <h1> fully Responsive Design</h1>  
+             When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively! when you use a thing created by
+            </div>
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+        </div>
+    </div>
+
+
+    
+
+             <div class="teams">
+                <h1>What people are saying...</h1>
+                <div class="members">
+                    <div class="box">
+                        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg">
+                        <h3>margret E.</h3>
+                        <p>"This is Fantastic! Thanks so much guys!"</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg">
+                        <h3>Fred S.</h3>
+                        <p>"Bootstrap is amazing. I've been using it to create lots of super nice landing pages"
+
+                        </p>
+          </div>
+
+            <div class="box">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg">
+            <h3>Sarah W.</h3>
+             <p>"Thanks so much for making these free resources available to use!"</p>
+                        
+         </div>
+      </div>
+    </div>
+
+    <div class="contact">
+        <h1>Ready to get started? Sign up now!</h1>
+        <form action="">
+         <input type="Email" placeholder="Email Adress">
+         <input type="Submit" id="Submit" value="Submit">   
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="box">
+        <ul class="links">
+        <i><a href="#">About</a><i>
+        <i><a href="#">Contacts</a></i> 
+        <i><a href="#">Terms of use</a></i>
+        <i><a href="#">Privacy policy</a></i>
+        </ul>  
+        <p>© Your Website 2023. All Rights Reserved.</p>  
+        </div>
+
+        <div class="box">
+        <div class="social">
+            
+            <a href=""><i class="fa-brands fa-fackbook"></i>
+             <a href=""><i class="fa-brands fa-x-twitter"></i>
+            <a href=""><i class="fa-brands fa-instagram"></i>
+    </div>
+             
+
+        
+        </div>
+    
+    </body>
+    </html>

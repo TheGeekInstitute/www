@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 3.5rem;
+            background-color: black;
+        }
+
+        .box{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 25rem;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box1{
+            background-image: url("./images/1.jpeg");
+        }
+        .box2{
+            background-image: url("images/2.jpeg");
+        }
+        .box3{
+            background-image: url("./images/3.jpeg");
+        }
+
+        .box4{
+            background-image:url("./images/4.jpeg");
+        }
+
+        .box .content{
+            /* border:1px solid red; */
+            height: 10rem;
+            width: 30vw;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
+            
+            -webkit-backdrop-filter: blur(4px);
+            padding: 10px;
+            text-align: center;
+            color:white;
+            border-radius: 30px 10px;
+        }
+        .box .content h3{
+            margin-top: 15px;
+        }
+
+        .slider{
+            width: 400vw;
+            display:flex;
+            animation: slider 20s linear 0s infinite ;
+        }
+        .container{
+            overflow: hidden;
+        }
+
+        @keyframes slider {
+            0%{
+                transform: translateX(0);
+            }
+
+            5%{
+                transform: translateX(0);
+
+            }
+
+            10%{
+                transform: translateX(0);
+
+            }
+
+            15%{
+                transform: translateX(0);
+
+            }
+
+            20%{
+                transform: translateX(0);
+
+            }
+            25%{
+                transform: translateX(-100vw);
+
+            }
+
+            30%{
+                transform: translateX(-100vw);
+
+            }
+
+            35%{
+                transform: translateX(-100vw);
+
+            }
+
+            40%{
+                transform: translateX(-100vw);
+
+            }
+
+            45%{
+                transform: translateX(-100vw);
+
+            }
+
+            50%{
+                transform: translateX(-200vw);
+
+            }
+
+            55%{
+                transform: translateX(-200vw);
+
+            }
+            60%{
+                transform: translateX(-200vw);
+
+            }
+            65%{
+                transform: translateX(-200vw);
+
+            }
+
+            70%{
+                transform: translateX(-200vw);
+
+            }
+            75%{
+                transform: translateX(-300vw);
+
+            }
+            80%{
+                transform: translateX(-300vw);
+            }
+
+            85%{
+                transform: translateX(-300vw);
+
+            }
+
+            90%{
+                transform: translateX(-300vw);
+
+            }
+            95%{
+                transform: translateX(-300vw);
+
+            }
+            100%{
+                transform: translateX(-300vw);
+
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="slider">
+            <div class="box box1">
+                <div class="content">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, id?</h3>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="content">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, id?</h3>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="content">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, id?</h3>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="content">
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, id?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

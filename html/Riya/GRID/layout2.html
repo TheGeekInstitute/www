@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 70px 40px  1fr 50px ;
+            gap: 5px;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "left-sidebar main right-sidebar"
+                                 "footer footer footer"
+            ;
+        
+        }
+
+        .box {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            
+            grid-area: header;
+        }
+
+
+        .box2 {
+            background-color: green;
+            
+            grid-area: nav;
+
+         
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+            grid-area: left-sidebar;
+        }
+
+        .box4 {
+            background-color: cyan;
+            
+            grid-area: main;
+        }
+
+        .box5 {
+            background-color: plum;
+            grid-area: right-sidebar;
+
+        }
+
+        .box6 {
+            background-color: crimson;
+   
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">Header</div>
+        <div class="box box2">Navigation Menu</div>
+        <div class="box box3">Content</div>
+        <div class="box box4">Main Content</div>
+        <div class="box box5">Content</div>
+        <div class="box box6">Footer</div>
+    </div>
+
+</body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">

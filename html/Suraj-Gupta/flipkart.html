@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        .nav{
+            border: 1px solid black;
+            height: 50px;
+            display: flex;
+            background-color: blue;
+            position: sticky;
+            top: 0;
+        }
+        .nav img{
+            height: 30px;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        .nav input{
+            margin-left: 80px;
+        }
+        .nav span input:first-child{
+            height: 25px;
+            margin-top: 15px;
+            width: 300px;
+            padding-left: 20px;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        .main{
+            display: flex;
+            margin-left: 30em;
+            margin-top: 6px;
+        }
+         .main ul li a{
+            color: white;
+            /* display: inline-block;     */
+            /* gap: 20px; */
+            padding: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main ul li{
+            display: inline-block;
+            margin: px;
+        }
+        .main ul li{
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .main ul li:hover{
+            border: 2px solid black;
+            background-color: red;
+            }
+.largebox{
+    display: flex;
+    margin-left: 70px;
+    padding-top: 30px;
+    /* grid-template-columns: auto ; */
+    /* grid-template-rows: auto auto auto auto auto auto; */
+}
+.largebox2{
+    display: flex;
+    margin-left: 30px;
+    padding-top: 30px;
+    /* grid-template-columns: auto ; */
+}
+.largebox2 .box2{
+    margin: 20px;
+}
+.largebox2 .box2 img{
+    height: 160px;
+}
+
+.largebox .box{
+    margin: 10px;
+}
+.largebox .box img{
+    height: 130px;
+}
+.icon img{
+    width: 180vh;
+    height: 15em;
+    /* align-items: center; */
+    margin-left: 2em;
+}
+.writing{
+    /* border: 2px solid black; */
+    padding: 5px;
+    height: 37em;
+    
+}
+.writing h3{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-weight: 400;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.writing h4{
+    /* border: 2px solid black; */
+    padding-top: 20px;
+    padding-left: 50px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text{
+    /* border: 1px solid black; */
+    padding: 5px ;
+    
+}
+.text h2{
+    font-weight: 500;
+    padding-left: 30px;
+}
+.text h3{
+    padding-top: 20px;
+    padding-left: 50px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
+        <span>
+        <input type="text" placeholder="Search">
+        <!-- <input type="Login"> -->
+    </span>
+        <div class="main">
+            <ul>
+                <li><a href="#">Become a seller</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="largebox">
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100" alt="">
+                <p>Top offers</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0a0243119f02f7a5.png?q=100" alt="">
+                <p> Mobile & Tablets</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100" alt="">
+                <p>Electronics</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100" alt="">
+                <p>TVs & Appliances</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100" alt="">
+                <p>Fashion</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100" alt="">
+                <p>Beauty</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100" alt="">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100" alt="">
+                <p>Furniture</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/def8193d5a7380ee.png?q=100" alt="">
+                <p>Flights</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+            <!-- <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div> -->
+        </div>
+        <div class="icon">
+           <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/94259f8832cdf08b.jpg?q=50" alt="">
+        </div>
+        <!-- <div class="icons">
+            <img src="https://cdn-icons-png.flaticon.com/128/2126/2126961.png" alt="">
+        </div> -->
+        <div class="largebox2">
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100" alt="">
+                <p>Top offers</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0a0243119f02f7a5.png?q=100" alt="">
+                <p> Mobile & Tablets</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100" alt="">
+                <p>Electronics</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100" alt="">
+                <p>TVs & Appliances</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100" alt="">
+                <p>Fashion</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100" alt="">
+                <p>Beauty</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100" alt="">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100" alt="">
+                <p>Furniture</p>
+            </div>
+            <!-- <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/def8193d5a7380ee.png?q=100" alt="">
+                <p>Flights</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div> -->
+        </div>
+        <!-- <div class="icon">
+           <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/32687b8ef5c8be25.jpg?q=50" alt="">
+        </div> -->
+        </div>
+        <div class="largebox">
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100" alt="">
+                <p>Top offers</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0a0243119f02f7a5.png?q=100" alt="">
+                <p> Mobile & Tablets</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100" alt="">
+                <p>Electronics</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100" alt="">
+                <p>TVs & Appliances</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100" alt="">
+                <p>Fashion</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100" alt="">
+                <p>Beauty</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100" alt="">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100" alt="">
+                <p>Furniture</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/def8193d5a7380ee.png?q=100" alt="">
+                <p>Flights</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+        </div>
+        <div class="icon">
+           <!-- <img src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/32687b8ef5c8be25.jpg?q=50" alt=""> -->
+        </div>
+        <!-- <div class="icons">
+            <img src="https://cdn-icons-png.flaticon.com/128/2126/2126961.png" alt="">
+        </div> -->
+        <div class="largebox">
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/50379f65f7b59622.png?q=100" alt="">
+                <p>Top offers</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0a0243119f02f7a5.png?q=100" alt="">
+                <p> Mobile & Tablets</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/da4491af4ee551d6.png?q=100" alt="">
+                <p>Electronics</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/7a9da987f315df35.png?q=100" alt="">
+                <p>TVs & Appliances</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/f7b2a4eeb35a8c9f.png?q=100" alt="">
+                <p>Fashion</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e83a5f27b01d9a7e.png?q=100" alt="">
+                <p>Beauty</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a8cfa33c7206ae57.png?q=100" alt="">
+                <p>Home & Kitchen</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/4e0bdf8567ecb960.png?q=100" alt="">
+                <p>Furniture</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/def8193d5a7380ee.png?q=100" alt="">
+                <p>Flights</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+            <div class="box">
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/aecfaba5969b96dd.png?q=100" alt="">
+                <p>Grocery</p>
+            </div>
+        </div>
+        <div class="writing">
+            <h3>Top Stories </h3> <h4> Brand Directory
+                Most searched for on Flipkart:One PiecesFashion EOSS SaleTrend StopFlipkart Axis Bank Super Elite Credit card5G Mobile PhonesPrimebook LaptopsMoto Edge 40Bounce Infinity E1Buy Laptop on EMIInfinix Zero Book UltraOPPO Reno8 5GOPPO Reno8 Pro 5GFresh Flower BouquetElectric CyclesBadmintonBouquetLaptop Repair ServicesAC Cleaning ServicesOneplus MonitorsGrievance RedressalMobile Repair ServicesSell Old Mobile PhonesPremium LaptopsElectronics StorePhone coverInfinix INBook Y1 PlusOkaya Electric Vehiclesbgauss electric scooterOPPO Reno7 Pro 5GiPhone 13iPhone 13 ProiPhone 13 Pro MaxiPhone 13 MiniGoogle Pixel 6a coversFlipkart QuickAmpere MagnusFlipkart Help CentreOnline Boat StoreCovers from Rs 99Flipkart Track OrdersFlipkart Manage OrdersFlipkart Return OrdersFlipkart Gift Cards StoreFlipkart Axis Bank Credit CardFlipkart Pay Later
+                Mobiles:iPhone 12 64GBiPhone 12 Pro 512GBiPhone 12 128GBVivo Y91iVivo Y11Vivo Y15Nothing PhoneVivo Y50Vivo Y12Reno2 FOppo A12Nothing Phone 5gGoogle Pixel 5g PhoneMotorola 5g PhoneRealme 5g SmartphoneApple 5g PhoneIqoo 5g PhonesOneplus 5g PhonesVivo 5g PhonesOppo 5g Smart PhonesOppo F15Oppo A31Samsung A71Samsung A51Samsung A31Realme X2iPhone 11iPhone 11 ProMobile CoverMobile Offersiphone x4G MobileNokia MobileSamsung MobileiphoneOppo MobileVivo Mobile
+                Camera:GoPro Action CameraNikon CameraCanon CameraSony CameraCanon DSLRNikon DSLR
+                Laptops:MacBook Pro M2Premium LaptopASUS ROG Strix SCAR 16 (2023) Core i9 13th GenASUS ROG Zephyrus M16 (2023) Core i9 13th GenASUS Zenbook 14 OLED (2022)Realme Book Prime Core i5 11th GenMicrosoft Surface Go Pentium 128GBBranded LaptopsApple LaptopsAcer LaptopsLenovo LaptopsDell LaptopsAsus LaptopsHP LaptopsGaming Laptops2 in 1 LaptopsLaptopsDell latest laptops 2022HP latest laptops 2022Infinix INBook Y1 PlusSAMSUNG Galaxy Book312th Gen Intel Core Laptops
+                TVs:Nokia TVPanasonic TVThomson TVMi X ProRealme TVMotorola TVOnePlus TVsLG TVTVSony TVSamsung TVAndroid TelevisionIffalcon TvMi TV
+                Large Appliances:TV & Appliances End of Season SaleTelevisionWashing MachinesRefrigeratorsAir ConditionersElectric CookersElectric Jug(Heater) / Travel KettlesInduction CooktopsInverters / stabilizerIrons / Iron BoxMixer Grinder JuicerWet GrindersChimneysMicrowave OvensVacuum CleanersWater PurifierFanMarQ Customer Care
+                Clothing:Green bridal lehengaBridal BlouseHalf saree blouse designsDesigner blousesBlouse designsMen ShirtsPlain suit with heavy dupattaHalf saree for kidsCotton saree blouse designsKurta PajamaMen T-ShirtsNew blouse designJeansBridal designer blouseSimple aari work blouse designsBridal banarasi sareesSareeHigh waist pantiesHooded jacket womenDressesHoodie tshirts for menOne piecesHip hop cap for menGroom wedding sherwaniDesigner Salwar SuitsBraAari work blouse hand designsCotton simple blouse designsBanarasi saree blouse designsDesigner KurtisStylish blouse astin designTrack PantBlouse neck designsMen KurtasV neck blouse designsGym WearParty DressesPalazzo SuitsBoys ClothingGlovesNightyMaxi DressesAnarkaliGownsCulottesSalwar SuitsKurtisDesigner SareesLeggingsShortsGeorgette SareesEthnic WearBriefs & TrunksNike WatchesWomen henleyuppada pattu sareesBlouse back designLeopard dressesSleeveless shrugsLatest blouse designsSimple Blouse designs
+                Footwear:ShoesAdidas ShoesReebok ShoesNike ShoesPuma ShoesBootsBata ShoesWoodland ShoesSkechers ShoesSneakersWomens BootsSports ShoesLoafersSandalsLotto Sports ShoesCasual ShoesWomens Skechers ShoesAsics Sports ShoesFormal ShoesSchool Shoes
+                Groceries:PhonePe Grocery VoucherHand WashSoapCashew NutsSunflower OilEggsToilet CleanerHarpic Toilet CleanerDettol SoapMustard OilBiscuitsCheesePatanjali AttaFortune OilAashirvaad AttaTea
+                Best Selling on Flipkart:Fire-Boltt Ninja Calling Pro Bluetooth Calling Smartwatch 1.69 inch HD Display SmartwatchBest Gas GeyserKitchen GeyserNutri BlendersPortable Air CoolerBest Air CoolerBagsHitachi Refrigerator 3 DoorBooksToysCandlesHelmetsWall ClocksBaby FoodChocolatesCyclesCalculatorsLipsticksMaskVertiv UPSFastrack WatchesWalletsEarringsGold CoinsRealme Pad MiniHandbagsconekt SW2 SmartwatchMivi DuoPods a350Speaker Cleaner
+                Furniture:FurnitureSofasBedsDining setsWardrobesMattressesTV UnitsTablesChairsShelvesBean BagsOffice ChairsComputer TableOffice TablesRed SofaWakefit BedsWhite SofaWakefit MattressGreen SofaBlack SofaBrown Sofa
+                BGMH:Whey ProteinHomeopathyCricketCyclesFootballsTreadmillsChristmas GiftsFitness AccessoriesOnline GuitarBooks StoreMusical Instrument StoreDabur ChyawanprashBaidyanath ChyawanprashEnergy DrinksToysMilk Drink MixesRakhiChyawanprashIndian FlagProtein Supplements</h4>
+        </div>
+        <div class="text">
+            <h2>Flipkart: The One-stop Shopping Destination    </h2>
+                <h3>                E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+            
+            </h3>
+
+        </div>
+</body>
+</html>

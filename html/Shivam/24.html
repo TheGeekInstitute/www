@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+        body{
+            background-color: rgb(176, 210, 240);
+        }
+
+        .nav{
+            /* border: 1px solid red; */
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            box-shadow: 2px 2px 6px grey;
+        }
+
+        .logo{
+            color: white;
+            margin: 0px 1vw;
+            text-decoration: underline overline;
+            letter-spacing: 5px;
+        }
+
+
+        .nav ul li{
+            /* float: right; */
+            display: inline-block;
+            margin: 1em;
+        }
+
+        .logoimg{
+            height: 8vh;
+            width: 8vh;
+            border-radius: 50%;
+            box-shadow: -2px -2px 3px white,2px 2px 3px white;
+            padding: 3px;
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: large;
+            display: block;
+            color: white;
+            /* margin: 30px; */
+        }
+
+        .nav ul li a:hover{
+          color: red;
+        }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="logo">LOGO</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt="" class="logoimg">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

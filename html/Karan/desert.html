@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            align-items:center ;
+            list-style-type: none;
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 7vh;
+            background-color: rgb(6, 6, 240);
+        }
+        .nav a{
+            color: #ffff;
+            font-size:1.3em;
+        }
+        .nav a:hover{
+            color: black;
+        }
+        .nav a i{
+            margin: 1rem;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .navbar li a{
+            border: 1px solid #ffff;
+            color: #ffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            padding: .3rem;
+            border-radius: .2rem;
+            /* margin-right: 6rem; */
+        }
+        .navbar li a:hover{
+            background-color:red ;
+            color: #ffff;
+            transition: linear all .3s;
+        }
+        .social a{
+            color: #ffff;
+            margin: .5rem;
+        }
+        .social a:hover{
+            color: red;
+        }
+        #karan{
+            padding: .5rem;
+            border-radius: 5px;
+            align-items: center;
+        }
+        .usa{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-decoration: none;
+            list-style-type: none;
+            height: 6em;
+            border-bottom: 1px solid #c0b7b7;
+        }
+        .usa img{
+            height: 5.8em;
+        }
+        .usa li a{
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600; 
+            transition: linear all .2s;
+        }
+        span{
+            color: red;
+        }
+        .usa li a:hover{
+            color: red;
+        }
+        .md{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .cgm h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4em;
+        }
+        .cgm p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cgm a{
+            border: 1px solid black;
+            color: #fff;
+            background-color: black;
+            padding: .5em 2rem;
+            border-radius: .3em;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: linear all .2s;
+        }
+        .cgm a:hover{
+            background-color: #fff;
+            color: black;
+        }
+        .dmd img{
+            height: 30rem;
+        }
+        .md{
+            height: 90vh;
+            border-bottom: 1px solid grey;
+            border-radius: 2px 2px 2px grey;
+        }
+        .new{
+            display: flex;
+            justify-content: space-evenly;
+            text-align: justify;
+        }
+        .foot{
+            height: 6.5em;
+            background-color: rgb(4, 29, 54);
+        }
+        .foot  h3{
+            color: #fff;
+        }
+        .foot p{
+            color: #fff;
+        }
+        .foot a{
+            border: 1px solid #fff;
+            color: #fff;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: .4em;
+            border-radius: .4em;
+            margin: 2em;
+        }
+        .input,input[type=text]{
+            padding: .59em;
+            outline: none;
+            border-radius: .3em;
+        }
+        .new{
+            background-color: rgb(6, 39, 71);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .new ul li a{
+            color: #fff;
+            font-size: .8em;
+            margin: 20px;
+        }
+        .new h3{
+            color: #fff;
+            margin: .8em;
+        }
+        .box{
+            /* border: 1px solid rgb(4, 29, 54); */
+            background-color: rgb(1, 20, 39);
+            box-shadow: 2px 2px 2px  black;
+            padding: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box a { 
+            border: 2px solid #ffff;
+            padding: .4em;
+            border-radius: .3em;
+            color: #fff;
+            margin-left: 1.5em;
+            font-weight: 900;
+        }
+        .box a:hover{
+            background-color: #ffff;
+            color: black;
+        }
+        .box h3{
+            text-align: center;
+        }
+        .box p{
+            text-align: justify;
+            color: #fff;
+        }
+        .icon{
+            font-size: 2em;
+            text-align: center;
+        }
+        .icon .fb{
+            color: blue;
+            /* margin-left: -60px; */
+            /* cursor:url('https://csscursor.info/santahand.fbeeee9f.png'),auto; */
+
+        }
+        .icon .ig{
+            color: rgb(184, 14, 184);
+            
+        }
+        .icon .tw{
+        color: rgba(0, 255, 255, 0.842);
+        }
+        .icon .li{
+            color: rgb(49, 49, 235);
+            /* margin-left: -60px; */
+            cursor: not-allowed;
+        }
+        .explore{
+            margin-bottom: 10rem;
+        }
+        .customer{
+            margin-bottom: 10rem;
+        }
+        .new ul li a:hover{
+            text-decoration: underline;
+        }
+        .about{
+            margin-bottom: 8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="nav">
+     <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+     <a href="#">Hello@Desertshop.com</a>
+    <select id="karan" name="country">
+      <option value="australia">Select Countries</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="canada">India</option>
+      <option value="usa">Germany</option>
+      <option value="canada">Nepal</option>
+      <option value="usa">China</option>
+      <option value="canada">England</option>
+      <option value="usa">Russia</option>
+      <option value="canada">Iceland</option>
+      <option value="usa">Pakistan</option>
+      <option value="canada">Dhana</option>
+      <option value="usa">Japan</option>
+      <option value="usa">Africa</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="canada">India</option>
+      <option value="usa">Germany</option>
+      <option value="canada">Nepal</option>
+      <option value="usa">China</option>
+      <option value="canada">England</option>
+      <option value="usa">Russia</option>
+      <option value="canada">Iceland</option>
+      <option value="usa">Pakistan</option>
+      <option value="canada">Dhana</option>
+      <option value="usa">Japan</option>
+      <option value="usa">Africa</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="canada">India</option>
+      <option value="usa">Germany</option>
+      <option value="canada">Nepal</option>
+      <option value="usa">China</option>
+      <option value="canada">England</option>
+      <option value="usa">Russia</option>
+      <option value="canada">Iceland</option>
+      <option value="usa">Pakistan</option>
+      <option value="canada">Dhana</option>
+      <option value="usa">Japan</option>
+      <option value="usa">Africa</option>
+      </select>
+    </div>
+    <div class="navbar">
+        <li><a href="#">Start Your Desert Shopping</a></li>
+        <div class="social">
+            <a href="https://www.facebook.com/@karanpokhriyal5">
+                <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/Karan_pokhriyal_007/">
+                <i class="fa fa-instagram ig" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com">
+                <i class="fa fa-twitter tw" aria-hidden="true"></i>
+            </a>
+            <a href="https://in.linkedin.com">
+                <i class="fa fa-linkedin li" aria-hidden="true"></i>
+            </a>
+            </div>
+    </div>
+    </div>
+    <div class="shop">
+        <div class="usa">
+            <!-- <img src="https://www.shopusa.com/youshopweship/images/shopusa-logo.png" alt=""> -->
+            <img src="https://t3.ftcdn.net/jpg/02/45/84/16/240_F_245841615_d7QzRv937jfiC176rmKK60ckNXU9V76z.jpg" alt="">
+                <li><a href="#">Shopping</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">EMI</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#"><span>Sign Up Free</span></a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+        </div>
+    </div>
+    <div class="md">
+        <div class="dmd">
+            <img src="https://png.pngtree.com/png-clipart/20201114/ourlarge/pngtree-online-shopping-mobile-application-3d-rendering-png-image_2435415.jpg" alt="">
+        </div>
+        <div class="cgm">
+            <h1>Download <br>Desert-Clap App Now</h1><br>
+            <p>This website is very useful for any person like boys girls teen adults old mans etc other. <br>We all provide you a services 24 hours with any trobles. So Please trust the APP AND Download.</p><br><br>
+            <a href="#">Download</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+    <!-- <div class="deals">
+        <h1>Super<span>Deals</span><a href="#"> Top products.Incredible prices.</a></h1>
+        <div class="super">
+        <div class="image">
+            <img src="https://ae04.alicdn.com/kf/S53fa598c215c48cbbf83d7f7471f3487P.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li>
+            <img src="https://ae04.alicdn.com/kf/Sa8f93935de4e471f9e227985260d2791t.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li>
+            <img src="https://ae04.alicdn.com/kf/S3e47dc0963374c1999475ebbad2d26d66.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li>
+            <img src="https://ae04.alicdn.com/kf/S8a969d2e7b5847dbbcba7bc81a506444k.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li>
+            <img src="https://ae04.alicdn.com/kf/S3e47dc0963374c1999475ebbad2d26d66.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li>
+            <img src="https://ae04.alicdn.com/kf/S09e9ac47edba4cdeb04dbd59279e6ba5J.jpg_200x200q75.jpg_.webp" alt=""></div>
+            <p><sub>Rs.</sub>282.<sub>38</sub></p>
+            <span>Extra 5% off with coins</span><br>
+            <p>5,000+sold <i class="fa fa-star-o" aria-hidden="true"></i></p>
+            <p>New for spiderman Figure To......</p>
+            <li><a href="#">Free Shopping</a></li></div>
+        </div>
+    </div> -->
+    <div class="footer">
+        <div class="foot">
+            <h3>Make Zappos(Email Your New BFF!)</h3>
+            <p>Email</p>
+            <Div class="input">
+            <input type="text" placeholder="Email Address"><a href="#">SUBSCRIBE TO ZAPPOS EMAILS</a></div>
+        </div>
+        <div class="new">
+            <div class="explore">
+                <h3>Explore Zappos</h3>
+                <ul>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">The Style Room</a></li>
+                    <li><a href="#">Eyewear</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Jackers</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Zappos Adaptive</a></li>
+                    <li><a href="#">All Departments</a></li>
+                </ul>
+            </div>
+            <div class="customer">
+                <h3>Costomer Services</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact info</a></li>
+                    <li><a href="#">Ayuda en espanol?</a></li>
+                    <li><a href="#">Shipping and Returns Policy</a></li>
+                    <li><a href="#">About Proposition</a></li><br><br>
+                    <h3>Fit Info</h3>
+                    <li><a href="#">Measurement Guild</a></li>
+                    <li><a href="#">Size Conversion Chart</a></li>
+                    <li><a href="#">Measure Your pant size</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h3>Precausions</h3>
+                <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Zappos One</a></li>
+                <li><a href="#">Zappos for Good</a></li>
+                <li><a href="#">Zappos for need</a></li>
+                <li><a href="#">Zappos for shopping</a></li>
+                <li><a href="#">Your problems</a></li>
+                <li><a href="#">Full sefty</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Counsilling</a></li>
+                <li><a href="#">Free Services</a></li>
+                <li><a href="#"> Company Policy</a></li><br>
+                <!-- <h3>CONSUMER POLICY</h3>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Uses</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    </ul> -->
+                    </div>
+                    <div class="box">
+                        <h3>Your Voice Matters</h3><br>
+                        <p>We love to learn more about <br> your shopping experiences on <br>Zappos.com and how to do  <br>shopping from this website. <br>We will inprove!</p><br>
+                    <a href="#"><i class="fa fa-comments" aria-hidden="true">TAKE SURVEY</i>
+                        </a> <br><br>
+                        <H3>Connect With Us</H3>
+                        <div class="icon">
+                            <!-- <a href="https://www.facebook.com"> -->
+                                <i class="fa fa-facebook-official fb" aria-hidden="true"></i>
+                            </a>
+                            <!-- <a href="https://www.instagram.com/Karan_pokhriyal_007/"> -->
+                                <i class="fa fa-instagram ig" aria-hidden="true"></i>
+                            </a>
+                            <!-- <a href="https://twitter.com"> -->
+                                <i class="fa fa-twitter tw" aria-hidden="true"></i>
+                            </a>
+                            <!-- <a href="https://in.linkedin.com"> -->
+                              <i class="fa fa-linkedin li" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>

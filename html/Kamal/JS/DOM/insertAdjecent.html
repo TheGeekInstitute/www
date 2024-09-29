@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid red;
+            height: 400px;
+            width: 100vw;
+            display: flex;
+            padding: 10px;
+            display: flex;
+           
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 50px;
+            border: 2px solid black;
+            width: 50px;
+            font-size: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .btn{
+            margin: 10px;
+            border: 1px solid black;
+            padding: 5px;
+            color: white;
+            background-color: black;
+            font-weight: 900;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consectetur officia sequi sit velit exercitationem odio aliquam hic consequatur? Debitis modi nemo odio similique aliquam suscipit commodi quo at consequatur.</p>
+            sad
+    </div>
+
+    <button class="btn">add</button>
+
+
+    <script>
+
+
+let element = document.createElement("h1");
+let txt = document.createTextNode('This is text');
+element.append(txt);
+
+// console.log(element)
+
+let container = document.querySelector(".container");
+// container.insertAdjacentElement("beforebegin",element)
+// container.insertAdjacentElement("afterbegin",element)
+// container.insertAdjacentElement("beforeend",element)
+// container.insertAdjacentElement("afterend",element)
+
+let data = `<h1 style="color:red;">This is a text</h1>`
+
+container.insertAdjacentHTML("afterbegin",data)
+
+// console.log(container.childElementCount)
+// console.log(container.children)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

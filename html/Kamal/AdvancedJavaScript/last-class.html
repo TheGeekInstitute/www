@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        // "use strict"
+        // let a =  Symbol("a");
+        // let b = Symbol("a");
+
+
+        // console.log("a"=="a");
+
+        // console.log(a==b)
+
+        // data =45
+
+        // console.log(data)
+
+        let arry = ["a","b","c","d","e","f"];
+
+        // for(x of arry){
+        //     console.log(x)
+        // }
+
+        let data = arry[Symbol.iterator]();
+
+        console.log(data.next().value)
+        console.log(data.next().value)
+        console.log("kuchh aur")
+        console.log(data.next().value)
+        // console.log(data.next())
+        // console.log(data.next())
+        // console.log(data.next())
+        // console.log(data.next())
+
+//#Error Handling
+
+        try{
+            let age=10
+            if(age>=18){
+               document.write("You can Vote")
+            }
+            else{
+                throw "User Generated Error"
+            }
+        }catch(err){
+            console.error()
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

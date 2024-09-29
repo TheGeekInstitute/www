@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Child</title>
+</head>
+<body>
+    
+    <ul class="list1">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+
+    <ul class="list2">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Papaya</li>
+        <li>Grapes</li>
+    </ul>
+
+    <ul class="list3">
+        <li>Radhe</li>
+        <li>Kanha</li>
+        <li>Ram</li>
+        <li>Sita</li>
+        <li>Balram</li>
+    </ul>
+
+
+    <script>
+
+        let list1 = document.querySelector(".list1");
+        let list1_child =  list1.children[0];
+
+
+        let list2 = document.querySelector(".list2");
+        let list2_child =  list2.children[0];
+
+       let list3 = document.querySelector(".list3");
+       let list3_child = list3.children[0];
+
+
+        let child = document.createElement("li");
+        let text = document.createTextNode('hello');
+        child.append(text)
+
+        // list1.replaceChild(child,list1_child)
+
+        // list1.replaceChild(list2_child,list1_child)
+
+        // list1.removeChild(list1_child)
+
+        // console.log(list1.hasAttribute("class"))
+
+        // console.log(list1.hasChildNodes())
+
+        // list3.removeChild(list3_child)
+
+
+        // console.log(list1_child.isEqualNode(list2_child))
+
+        // list1.replaceChild(list3_child,list1_child)
+        
+
+    </script>
+
+</body>
+</html>
+
+<!-- 
+replaceChild() & removeChild()
+cloneNode()
+contains()
+hasAttribute() & hasChildNodes()
+isEqualNode() -->

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let name=["Amit Singh","Sumit Verma","Khustar","Anmol Singh","Riya Singh"];
+        let c=[]
+        for(data of name){
+            if(data.endsWith("Singh")==true){
+                c.push(data);
+            }
+        }
+
+        document.write(c)
+
+        // let c = []
+        // name.push(c)
+        // document.write(c.endsWith("Singh"));
+
+        let num=[12,15,25,28,55];
+
+        let b = []
+        num.map(function(data){
+            b.push(data*10)
+        })
+
+
+        // document.write(b)
+    </script>
+</body>
+</html>

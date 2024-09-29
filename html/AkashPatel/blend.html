@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blend Mode</title>
+    <style>
+        .box{
+            border: 1px solid black;
+            background-color: rgba(95, 158, 160, 0.514);
+        }
+        img{
+            mix-blend-mode: color-burn;
+        }
+
+        .abcd{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background-image: url("../wallpaper.jpg");
+            background-size: cover;
+            background-color: rgba(16, 103, 184, 0.425);
+            background-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../web/images/11.jpg" alt="">
+    </div>
+
+
+    <div class="abcd"></div>
+</body>
+</html>

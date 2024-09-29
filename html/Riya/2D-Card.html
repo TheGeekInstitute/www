@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            width: 250px;
+            height: 300px;
+            text-align: center;
+            margin: 150px auto;
+            background-image: url("../wallpaper.jpg");
+            background-size: cover;
+            background-position: center;
+
+            overflow: hidden;
+
+        }
+
+        .container .card{
+            background-color: rgba(0, 255, 255, 0.726);
+            height: 100%;
+            width: 100%;
+            padding: 5px;
+            transform: translateY(100%);
+            transition: all .3s linear;
+        }
+
+        .container:hover .card{
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="../web/images/11.jpg" alt="abcd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel alias rerum eius dolorem quidem deserunt illum, vero ducimus atque enim unde.</p>
+        </div>
+    </div>
+</body>
+</html>

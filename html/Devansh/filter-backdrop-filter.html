@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            object-fit: cover;
+
+            /* filter: blur(2px); */
+            /* filter: brightness(150%) blur(2px); */
+            /* filter: contrast(150%); */
+            /* filter: drop-shadow(2px 2px red); */
+            /* box-shadow: 2px 2px red; */
+
+            /* filter: grayscale(100%); */
+
+            /* filter: hue-rotate(300deg); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(200%) brightness(150%); */
+            /* filter: sepia(50%); */
+        }
+
+        .container{
+            height: 400px;
+            width: 400px;
+            background-image: url("../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            height: 250px;
+            width: 250px;
+            /* border: 2px solid red; */
+            color: white;
+            /* background-color: rgba(255, 255, 255, 0.137); */
+            border-radius: 20px;
+        }
+
+        @supports (backdrop-filter: blur(3px) saturate(200%)){
+            .container .box{
+            backdrop-filter: blur(3px) saturate(200%);
+            }
+        }
+
+        
+        @supports not (backdrop-filter: blur(3px) saturate(200%)){
+            .container .box{
+            background-color: rgba(0, 0, 0, 0.507);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <img src="../wallpapers/animals/joel-filipe-_AjqGGafofE-unsplash.jpg" alt="">
+
+    <!-- <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt=""> -->
+
+
+    <div class="container">
+        <div class="box">
+            <h1>ABCD XYZ</h1>
+        </div>
+    </div>
+
+</body>
+</html>

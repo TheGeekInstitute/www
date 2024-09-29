@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function print_promise(e){
+            console.log(e);
+        }
+        let data = new Promise((resolved,rejected)=>{
+            let val =true;
+
+            if(val){
+                console.log("Please Wait....");
+                setTimeout(()=>{
+                    resolved("Passed")
+                },3000);
+                
+            }
+            else{
+                console.log("Please Wait....");
+                setTimeout(()=>{
+                    rejected("Failed")
+                },3000);
+                
+            }
+        });
+
+        let data1 = new Promise((resolved,rejected)=>{
+            let val =true;
+
+            if(val){
+                console.log("Please Wait....");
+                setTimeout(()=>{
+                    resolved("Good")
+                },3000);
+                
+            }
+            else{
+                console.log("Please Wait....");
+                setTimeout(()=>{
+                    rejected("Bad")
+                },3000);
+                
+            }
+        });
+
+
+
+        // data.then((a)=>{
+        //     console.log(print_promise(a));
+        // }).catch((b)=>{
+        //     print_promise(b)
+        // })
+
+
+        // data.then((a)=>{
+        //     print_promise(a)
+        // }, 
+        // (b)=>{
+        //     print_promise(b)
+        // }
+        
+        // )
+
+
+
+        let abcd = Promise.all([data,data1]);
+
+        abcd.then((a)=>{
+            a.forEach((x)=>{
+                print_promise(x)
+            })
+        },(b)=>{
+            print_promise(b)
+        })
+
+
+
+    </script>
+</body>
+</html>

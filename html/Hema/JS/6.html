@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+    function print_arr(arr){
+
+        if(arr!=null && Array.isArray(arr)==true){
+            let data="";
+            for(let i=0 ; i < arr.length ; i++){
+                data += arr[i] + " ";
+            }
+            return data + "<br>";
+
+        }
+        else{
+            return "Please Provide an Array";
+        }
+
+
+        
+    }
+
+    let arr = ["A","B","C"]
+// document.write(print_arr(arr))
+
+let arr1 = [1,2,3,4,5,6]
+
+// document.write(print_arr(arr1))
+
+//    console.log(Array.isArray(arr))
+
+
+
+        var info = [
+            [
+            ["A","B","C"],
+            [1,2,3],
+            ["I","II","III"]
+            ],
+
+            [
+                ["D","E","F"],
+                [4,5,6],
+                ["IV","V","VI"]
+            ],
+
+            [
+                ["G","H","I"],
+                [7,8,9],
+                ["VII","VIII","IX"]
+            ]
+        ];
+
+
+        for(outer_arr of info){
+        //    console.log(outer_arr);
+            for(inner_arr of outer_arr){
+                // console.log(inner_arr)
+                for(value of inner_arr){
+                    document.write(value + " ")
+                }
+        document.write("<br>")
+            }
+        document.write("<br>")
+        }
+
+
+
+
+
+        for(outer_arr in info){
+        //    console.log(outer_arr);
+            for(inner_arr in info[outer_arr]){
+                // console.log(inner_arr)
+                for(index in info[outer_arr][inner_arr]){
+                    document.write(info[outer_arr][inner_arr][index] + " ")
+                }
+        document.write("<br>")
+            }
+        document.write("<br>")
+
+
+        }
+
+
+
+        document.write(info[0][0][1])
+</script>
+
+</body>
+</html>

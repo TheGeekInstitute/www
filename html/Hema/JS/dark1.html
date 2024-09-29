@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            width: 230px;
+            margin: 150px auto;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form label{
+            text-align: left;
+            width: 200px;
+            margin: 5px 0;
+            font-size: large;
+        }
+
+        .container form input{
+            width: 200px;
+            margin: 5px 0;
+            height: 35px;
+            border: 2px solid black;
+            padding: 2px 3px;
+            font-size: large;
+        }
+
+        .container form input[type="submit"]{
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+        }
+
+        .dark{
+            background-color: #17202a;
+        }
+
+        .container.dark{
+            border: 2px solid white;
+            color: white;
+            box-shadow: 0px 0px 10px white;
+            background-color:  #05284c ;
+        }
+
+        .container.dark form input{
+            border: 2px solid white;
+            background-color: grey;
+            color: white;
+        }
+
+        .container.dark form input[type="submit"]{
+            background-color: red;
+        }
+
+
+        #btn{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        #btn.change{
+            background-color: white;
+            box-shadow: 0px 0px 10px white;
+            color: black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login Form</h1>
+        <form action="">
+            <label for="">Username</label>
+            <input type="text">
+            <label for="">Password</label>
+            <input type="password" name="" id="">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <button id="btn">Dark</button>
+
+
+    <script>
+        let container =  document.querySelector(".container");
+        let btn=  document.querySelector('#btn');
+
+        btn.addEventListener("click",()=>{
+            btn.classList.toggle("change")
+
+            if(btn.classList.contains("change")){
+                btn.innerHTML="Light";
+            }
+            else{
+                btn.innerHTML="Dark";
+            }
+
+            container.classList.toggle("dark")
+            document.body.classList.toggle("dark")
+
+
+
+        })
+    </script>
+
+</body>
+</html>

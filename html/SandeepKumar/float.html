@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .red{
+            background-color: rgba(255, 0, 0, 0.582);
+            height: 200px;
+            width: 100px;
+            float: left;
+        }
+
+        .green{
+            background-color: rgba(0, 128, 0, 0.678);
+            height: 250px;
+            width: 100px;
+            float: right;
+        }
+
+        .yellow{
+            background-color: yellow;
+            height: 100px;
+            /* clear: left; */
+            clear: both;
+        }
+
+        .box{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .box img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"> </div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+
+    <div class="box">
+        <img src="../web/images/11.jpg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta   http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav{
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+        .main ul li{
+            text-decoration: none;
+            list-style: none;
+            margin: 0px 10px;
+            display: inline; 
+        }
+        .main ul li:hover{
+          color: rgb(238, 85, 65);
+          background-color:rgb(218, 204, 186);
+          border-radius: 50%;
+          box-shadow: 2px 2px 4px grey;
+        }
+        
+            
+        
+        .body{
+            text-align: center;
+            margin-top: 10%;
+        }
+        input[type="submit"]{
+            background-color:rgb(16, 71, 253);
+            color: aliceblue;
+            font-weight: 700;
+            border: 1px solid blue;
+            padding: 10px;
+            
+    
+        }
+        input[type="email"]{
+            border: none;
+            padding: 10px;
+        }
+        input[type="email"]:hover{
+            width: 15rem;
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRniqvVXGGJESshYAEfL5OVJNr5eph0fVwe6A&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            
+        }
+        @media screen and (max-width:500px) {
+            input[type="submit"]{
+                background-color: red;
+                border: 1px solid red;
+                margin-top: 20px;
+            }
+            input[type="email"]{
+                display: block;
+                margin: auto;
+            }
+            body{
+                height: 100vh;
+                width: 100vw;
+                background-position: center;
+            }
+            .body p{
+                width: 30rem;
+                /* display: block; */
+
+            }
+            
+        }
+        
+
+        
+    </style>
+        
+</head>
+<body>
+<div class="main">
+    <div class="nav">
+
+       
+        <h3> <i class="fa fa-lock" aria-hidden="true"></i> Keysoft</h3>
+        
+    <ul>
+        <li>About</li>
+        <li>Features</li>
+        <li>Video</li>
+        <li>Pricing</li>
+        <li>Team</li>
+        <li>Clients</li>
+        <li>Contact</li>
+    </ul>
+</div>
+<div class="body">
+    <h1>Keysoft,blissful innovation</h1>
+    <p>Spend less time worrying about front-end and more focusing on your product</p>
+    <input type="email" placeholder="Your email address">
+    <input type="Submit" value="SUBSCRIBE">
+</div>
+</div>
+
+    
+</body>
+</html>

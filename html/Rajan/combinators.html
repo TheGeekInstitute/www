@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container p{
+            /* color: red; */
+        }
+
+        .container > p{
+            /* color: red; */
+        }
+
+        .container + p{
+            /* color: red; */
+        }
+
+        .container ~ p{
+            color: red;
+        }
+
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container"> 
+        <p>Child1 Of Container</p>
+       
+        <div class="box">
+            <p>Grand Child of Container</p>
+            <b>azdasda</b>
+        </div>
+
+        <p>Child2 Of Container</p>
+    </div>
+   
+    <p>Sibiling1 Of Container</p>
+    <b>Sibiling2 of Container</b>
+    <p>Sibiling3 Of Container</p>
+    <p>Sibiling4 Of Container</p>
+
+</body>
+</html>
+
+
+<!-- descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) -->

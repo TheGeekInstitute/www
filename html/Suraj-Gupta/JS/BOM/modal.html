@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        .nav{
+
+        }
+        button{
+            padding: 5px;
+            user-select: none;
+           
+        }
+        .login{
+            border: 1px solid black;
+            height: 23rem;
+            width: 25rem;
+            /* display: none; */
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 50px;
+            margin-left: 10rem;
+            background-color: aqua;
+            box-shadow: 5px 10px 1200px black;
+            transform: scale(0);
+            transition: all 0.5s;
+        }
+        .login h1{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            /* padding-left: 10px; */
+            margin-left: 20px;
+        }
+        .login h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .page{
+            display: flex;
+            text-align: center;
+        }
+        .page p{
+            font-size: 30px;
+            margin-left: 70px;
+            /* margin-top: -1px; */
+            padding-top: -px;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button class="open">Open</button>
+    </div>
+    <div class="login">
+        <div class="page">
+        <h1>What is login Page</h1>
+        <p class="cut">X</p>
+    </div>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe earum temporibus fuga eius maiores tenetur vero voluptas illum error sapiente deserunt sit quae rerum, odit veritatis, necessitatibus magni? Deleniti, amet.</h2>
+    </div>
+    <script>
+        let login = document.querySelector(".login");
+
+        document.querySelector(".open").addEventListener("click",function(){
+            // login.style.display = "block";
+            login.style.transform = "scale(1)";
+        })
+        document.querySelector(".cut").addEventListener("click",function(){
+            // cut.style.display = "none";
+            login.style.transform = "scale(0)";
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List Methods</title>
+
+    <style>
+        .change{
+            color: red;
+            background-color: black;
+            font-family: cursive;
+        }
+
+        .abcd{
+            border: 5px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1 class="heading abcd" id="heading">This is Simple Heading</h1>
+
+<button id="btn">Change</button>
+    <script>
+
+document.querySelector("#btn").addEventListener("click",function(){
+    let heading = document.querySelector('#heading');
+
+    // console.log(heading)
+    // heading.classList.add("change")
+    // heading.classList.remove("abcd")
+
+    // heading.classList.toggle("change")
+
+    // console.log(heading.classList.contains("abcd"))
+    // console.log(heading.classList.item(1))
+    console.log(heading.classList.length)
+
+})
+
+    </script>
+
+</body>
+</html>

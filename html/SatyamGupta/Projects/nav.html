@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            background-color: black;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            margin: 13px ;
+            /* overflow: auto; */
+        }
+
+        .navbar a{
+            padding: 8px 5px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .right{
+            float: right;
+            margin-top: -33px;
+            color: whitesmoke;
+        }
+
+      
+    </style>
+
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">STUDENT</a></li>
+            <li><a href="">CLASS</a></li>
+            <li><a href="">TABLET</a></li>
+            <li><a href="">TUTION</a></li>
+        </ul>
+
+        
+    </nav>
+
+
+    <div class="right"> Login/Signup</div>
+
+    <br><br>
+   <center>
+        <form action="" >
+            <h2 style="color: brown;"><u>Student Registeration form</u></h2>
+        </center>
+        <br><br>
+
+        <section style="padding-left: 20px;">
+            <label for="">*Name:</label>
+            <input type="text" required style= " border: none; border-bottom: 1px solid ;
+             ">
+
+             <br><br>
+             <label for="">*Select:</label>
+             <select name="" id="">
+                <option >*Age:</option>
+                <option value="">10</option>
+                <option value="">20</option>
+                <option value="">30</option>
+                <option value="">40</option>
+                <option value="">50</option>
+
+            </select>
+
+            <br><br>
+            <label for="">*Gender:</label>
+            <label for="">male</label>
+            <input type="radio" name="a">
+            <label for="">female</label>
+            <input type="radio" name="a">
+
+            <br><br>
+
+            <label for="" >*Father's Name:</label>
+            <input type="text" required placeholder="">
+
+            <br><br>
+            
+
+        </section>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+.heading{
+   
+    background-color: black;
+    color: white;
+
+}
+.abc{
+    background-color: black;
+    color: white;
+   
+}
+
+.image img{
+    height: 120px;
+    width: 200px;
+    border: 2px solid red;
+    /* justify-content: space-between; */
+}

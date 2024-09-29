@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .hero{
+            height: 80vh;
+            background-color: rgb(48, 68, 97);
+        }
+        .logo{
+            color: white;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 4vw;
+        }
+
+        .nav ul li{
+            display: inline-block;
+        }
+        .nav ul li a{
+            color: white;
+            margin: 5px;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .contact{
+            display: block;
+            border: 2px solid cyan;
+            border-radius: 50px;
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .line{
+            background-color: red;
+            height: 5px;
+            width: 300px;
+            color: red;
+            margin: auto;
+            margin-top: 10px;
+            /* margin-top: -5px; */
+        }
+
+        .line hr{
+            width: 100px;
+            margin: auto;
+            height: 10px;
+            /* background-color: cyan; */
+            border: 5px solid black;
+            margin-top: -3px;
+            position: absolute;
+            margin-left: 100px;
+            border-radius: 5px;
+        }
+
+        .logo span{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="nav">
+            <h1 class="logo">AR<span>SHA</span></h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#" class="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="line"><hr></div>
+</body>
+</html>

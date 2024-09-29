@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+        }
+        .hero{
+           background-repeat: no-repeat;
+          color: white;
+          text-align: center;
+          padding-top: 150px;
+          height: 400px;
+          background-image: url("https://images.unsplash.com/photo-1583767417405-2b4497a676c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBzZWF8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+          background-size:cover ;
+        }
+       .btn{
+        border: 1px solid rgb(253, 30, 5);
+        background-color: rgb(253, 31, 6);
+        padding: 6px;
+       }
+       p{
+        padding: 10px;
+        font-size: 20px;
+       }
+       h2{
+        padding: 20px;
+        font-size: 30px;
+       }
+       .services{
+            background-color: black;
+            color: #fff;
+            height: 70vh;
+            cursor: grab;
+        }
+        .app{
+            display: flex;
+        }
+        .three{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 35px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(49, 46, 46, 0.658);
+            font-family: Arial, Helvetica, sans-serif;
+            /* transition: all .5s linear; */
+        }
+        .three p{
+            text-align: justify;
+        }
+        .head h1{
+            color: #fff;
+        }
+        .head{
+            color: black;
+            padding: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .three:hover{
+            background-color: rgb(197, 58, 58);
+            /* box-shadow: 4px 4px 6px white; */
+        }
+        .app i{
+            color: rgb(11, 245, 69);
+            font-size: 45px;
+            cursor: not-allowed;
+        }
+        .main{
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+        .image img{
+            height: 40vh;
+            width: 100vh;
+        }
+        .heading p{
+            width: 500px;
+        }
+        .heading{
+            margin-left: 20rem;
+            margin-top: 100px;
+        }
+        .btn1{
+            padding: 6px;
+            background-color: rgb(240, 41, 19);
+        }
+        .btn1:hover{
+            background-color: green;
+        }
+        .geek{
+            background-color: gray;
+            height: 50vh;
+        }
+        .logo img{
+            float: right;
+            height: 45vh;
+            width: 50vh;
+        }
+        .cyber{
+            margin: 70px;
+        }
+       @media only screen and (max-width:600px) {
+            .hero{
+                background-color: red;
+                margin: auto;
+                width: auto;
+                mix-blend-mode: overlay;
+            }
+            h2{
+                font-size: 25px;
+                margin: auto;
+            }
+            .hero p{
+                font-size: 26px;
+            }
+            .hero a:hover{
+                background-color: rgb(24, 252, 3);
+                border: 1px solid rgb(24, 252, 3);
+
+            }
+            .app{
+                display: block;
+                height: auto;
+            }
+            .services{
+                height: auto;
+                margin: auto;
+            }
+            .main{
+                display: block;
+            }
+            .heading{
+                margin: auto;
+            }
+            .heading p{
+                width: auto;
+                text-align: justify;
+            }
+            .heading {
+                text-align: center;
+            }
+            .image img{
+                width: auto;
+                margin: auto;
+            }
+            .geek{
+                height: auto;
+                background-color: greenyellow;
+            }
+            .cyber h1{
+                font-size: 20px;
+                margin: auto;
+            }
+            input{
+                padding: 4px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+         
+        <p>Clean Fully Modern Design</p>
+        <h2>ABOUT YOUR OWN BUSINESS NOT EXTRA </h2>
+        <a href="#" class="btn">Live Deno Get New</a>
+</div>  
+<div class="services">
+    <div class="head">
+    <h1>My Services</h1>
+    <span>what i provide</span>
+</div>
+<div class="app">
+    <div class="three">
+        <i class="fa fa-users us" aria-hidden="true"></i>
+        <h1>Web App Penetration Testing</h1>
+        <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+    </div>
+    <div class="three">
+        <i class="fa fa-android an" aria-hidden="true"></i>
+    <h1>Android App Penetration testing</h1>
+        <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+    </div>
+    <div class="three">
+        <i class="fa fa-apple ap" aria-hidden="true"></i>
+    <h1>IOS App penetration testing</h1>
+        <p>Provide a complete penetration Test against the web applivation in otder test ensure its sagety.</p>
+    </div>
+</div>
+</div>
+<div class="main">
+    <div class="heading">
+        <h1>OUR SERVCIES</h1>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sit vero, magnam nam, illum aut molestiae recusandae qui quas voluptatum alias rerum odit accusantium, cum saepe ipsum possimus facilis asperiores?</P>
+        <BUtton class="btn1">Download the App</BUtton>
+    </div>
+    <div class="image">
+        <img src="https://previews.123rf.com/images/cre8tive/cre8tive0609/cre8tive060900117/520159-3d-books-stacked-on-top-of-eachother.jpg" alt="">
+    </div>
+</div>
+<div class="geek">
+    <div class="logo">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh8fkpq0qdJxA5_6Ojh3XjPm1PG-E54q0vL70RCQtn1OCWIgijZ61zmsQeoLn0PdK0VnXVmdtsXx6yJ2qynNSFgaTsJSjUtGEbOWeOLqKyjglOOwp1n7qJk_HvRQIPoR6tEKeqp-ZLkZfAmy85gqAqt0XtqO25gP0WPRToRFaAppGkR2jqim5SPhxTK=s200" alt="">
+        </div>
+    <div class="cyber">
+    <h1>THE GEEK INSTITUTE OF CYBER SECURITY </h1>
+     <h3> (A Cyber Security Academy) <br>
+        Call Now +91 8882618533 <br>
+        Email : contact@geekinstitute.org</h3>
+            <div class="input">
+                <input type="text" placeholder="eg.Linex" >
+            </div>
+        </div>
+</div>
+</body>
+</html>

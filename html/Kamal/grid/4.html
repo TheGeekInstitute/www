@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 2px solid black;
+            /* height: 70vh; */
+            width: 80vw;
+            margin:50px  auto;
+            display: grid;
+            gap: 5px;
+
+            /* grid-template-columns: min-content 1fr 100px; */
+            /* grid-template-rows:50px 70px 1fr 70px; */
+            /* grid-template-columns: max-content 1fr 100px; */
+            /* grid-template-columns: minmax(100px,max-content) 1fr 100px; */
+
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2,100px);
+            grid-auto-flow: row;
+            grid-auto-rows: minmax(100px,min-content);
+            grid-auto-columns: 100px;
+
+
+   
+        }
+
+        .box1{
+            background-color: red;
+            
+         
+        }
+
+        .box2{
+            background-color: cyan;
+         
+        }
+
+        .box3{
+            background-color: rebeccapurple;
+      
+        }
+
+        .box4{
+            background-color: blue;
+         
+        }
+        .box5{
+            background-color: purple;
+      
+        
+        }
+        .box6{
+            background-color: crimson;
+         
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box2">2</div>
+        <div class="box box2">2</div>
+        <div class="box box2">2</div>
+        <div class="box box2">2</div>
+        <div class="box box2">2
+
+          
+        </div>
+
+
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html> 

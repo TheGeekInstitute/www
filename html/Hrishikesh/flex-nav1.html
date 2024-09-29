@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        .nav{
+            height: 60px;
+            background-color: rgb(15, 49, 49);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            color: white;
+        }
+        .nav .logo{
+            font-size: 40px;
+            display: block;
+            font-weight: 900;
+            font-family: cursive;
+          
+            padding: 0 10px;
+            text-shadow: 0px 0px 5px cyan;
+        }
+        .nav .logo span{
+            color: purple;
+            
+        }
+        .nav ul li a{
+            color: white;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: large;
+            border: 1px solid transparent;
+            line-height: 55px;
+            padding: 0 10px;
+        }
+        .nav ul li a:hover{
+            border: 1px solid white;
+            background-color: black
+            ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">LO<span>GO</span></div>
+        ABCD
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#" >Services</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
