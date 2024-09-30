@@ -1,6 +1,6 @@
 <?php
 $msg="";
-$conn=mysqli_connect("localhost","root","toor","SANDEEP");
+$conn=mysqli_connect("localhost","root","toor","Suruchi");
 
  if($_SERVER['REQUEST_METHOD']=="POST"){
   if(isset($_POST['name']) && !empty($_POST['name'])){
@@ -30,15 +30,10 @@ $conn=mysqli_connect("localhost","root","toor","SANDEEP");
                       $msg="Email Aready Registered";
                     }
                     else{
-                      // insert
-                    }
-                    
-                            
+                        // INSERT
 
-                    
-                    
-                    $sql="INSERT INTO `users`(`fullname`, `username`, `email`, `password`) VALUES ('$name','$username','$email','$password')";
-                    $query=mysqli_query($conn,$sql);
+                        $sql="INSERT INTO `users`(`user_id`, `fullname`, `username`, `email`, `password`) VALUES ('$name','$Username','$email','$Pasword')";
+                        $query=mysqli_query($conn,$sql);
                     if($query){
                         $msg="Registration Successfully";
                     }

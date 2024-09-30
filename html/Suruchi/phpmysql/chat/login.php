@@ -1,5 +1,5 @@
 <?php
-$smg="";
+$msg="";
 
 session_start();
 $conn=mysqli_connect("localhost","root","toor","Suruchi");
@@ -156,7 +156,7 @@ DOCTYPE html>
         <?php echo $msg; ?>
       </div>
       <div class="Register">
-        <form  method="post">
+        <form  method="">
 
           
 

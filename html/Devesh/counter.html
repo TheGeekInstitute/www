@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .headings{
+            counter-reset: section 0;
+        }
+
+        h1::before{
+            /* content: counter(section,lower-alpha) ". "; */
+            content: counter(section) ". ";
+            counter-increment: section;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2{
+            text-indent: 50px;
+            counter-reset: sub-sub-section;
+        }
+
+        h2::before{
+            content:counter(section) "." counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: green;
+        }
+
+        h3{
+            text-indent: 100px;
+        }
+
+        h3::before{
+            content:counter(section) "." counter(sub-section) "." counter(sub-sub-section) ". ";
+            color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="headings">
+        <h1>Website Development</h1>
+            <h2>HTML</h2>
+                <h3>Forms</h3>
+                <h3>Headings</h3>
+            <h2>CSS</h2>
+            <h2>JavaScript</h2>
+        <h1>Programming</h1>
+            <h2>Java</h2>
+            <h2>Python</h2>
+            <h2>C/C++</h2>
+        <h1>Ethical Hacking</h1>
+            <h2>Web Application Pentesting</h2>
+            <h2>Cyber Forensics</h2>
+    </div>
+
+
+</body>
+</html>

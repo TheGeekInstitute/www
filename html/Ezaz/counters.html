@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTERS</title>
+    <style>
+
+.heading{
+        counter-reset:section"";
+    }
+    h1::before{
+       content:counter(section) ".";
+       counter-increment: section ;
+       color: tomato;
+    }
+    h1{
+        counter-reset: sub-section;
+    }
+    h2{
+        text-indent: 50px;
+      
+    }
+    h2::before{
+        content:counter(sub-section) "." counter(sub-section) " .";
+            counter-increment: sub-section;
+            color: green;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <h1>HTML</h1>
+            <h2>forms</h2>
+            <h2>table</h2>
+            <h2>navbar</h2>
+        <h1>CSS</h1>
+            <h2>Tribute Page</h2>
+            <h2>Webpage Including Form</h2>
+            <h2>Parallax Website </h2>
+        <h1>JAVASCRIPT</h1>
+            <h2>Price Range Slider Input</h2>
+            <h2>Lorem Ipsum Generator</h2>
+            <h2>Data Export and Import</h2>
+        <H1>PYTHON</H1>   
+            <h2>Web Scraping</h2>
+            <h2>Tkinter</h2>
+            <h2>Open CV</h2>
+        <H1>JAVA</H1>
+            <h2>Nginx Web Server</h2>
+            <h2>Docker</h2>
+            <h2>integration</h2>
+        <H1>C/C++</H1>
+            <h2>CGPA Calcultor</h2>
+            <h2>Rock Paper Scissor</h2>
+            <h2>Payroll System</h2>
+    </div>
+    
+</body>
+</html>

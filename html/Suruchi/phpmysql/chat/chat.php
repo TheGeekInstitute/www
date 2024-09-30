@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect("localhost","root","toor","SANDEEP");
+$conn=mysqli_connect("localhost","root","toor","Suruchi");
 if(isset($_SESSION['username']) && isset($_SESSION['fullname'])){
     $username=$_SESSION['username'];
     $fullname=$_SESSION['fullname'];

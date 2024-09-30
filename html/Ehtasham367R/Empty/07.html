@@ -15,143 +15,118 @@
             text-decoration: none;
 
         }
-        .nav{
-            display: flex;
-            /* border:3px solid black; */
-            align-items: center;
+
+
+        ul li:first-child{
+            color: green;
+            font-size: x-large;
+            background-color: purple;
+            margin: 150px auto;
             text-align: center;
-            justify-content: center;
-
+            text-shadow: 2px 3px 5px black;
         }
-        .nav .sub{
-            display: flex;
-            line-height: 60px;
-            /* background-color: purple; */
-            letter-spacing: 7px;
-            font-weight: 800;
-            justify-content: center;
-            
+
+        ul li:first-child::first-letter{
+            color: yellow;
             
         }
-        .nav .sub li{
+        ul li:nth-child(odd){
+            
+        }
+    
+        ul li:last-child{
+            background-color: yellow;
+            
+        }
+
+        p::first-letter{
+            background-color: green;
+            color: red;
+
+        }
+        P::first-line{
+            color: blue;
+            background-color: green;
+
+        }
+         
+
+
+        .box{
             display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        .nav .sub li a{
-            display: block;
-            color:white;
-            margin: 20px;
-            background-color: grey;
-            border-radius: 10px;
-            padding: 0px 10px;
-            box-shadow: 1px 3px 7px black;
-        }
-        .nav .sub li a:hover{
-            background-color:orangered;
-        }
-
-        .nav .sub li .sub2{
-            display: none;
-            position: absolute;
-            top: 80px;
-            right: 440px;
-
+            border: 2px solid black;
+            height: 200px ;
+            width: 300px ;
+            /* align-items: center; */
+            margin: 150px auto;
         
 
-            
-            
         }
-        .nav .sub li .sub2 li a{
-          
-            line-height:40px;
-            color:yellow;
-            margin: 2px;
+
+        .box .glass{
+            border: 3px solid black;
+            height: 100px ;
+            width: 100px;
+            background-color: orange;
+            margin: auto;
+        }
+
+
+        .box .glass:first-child{
+            color: orangered;
+            background-color: orangered;
+            border-radius:30px ;
+            background-image: url(https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?cs=srgb&dl=abstract-background-blur-949587.jpg&fm=jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            align-items: center;
+            background-position: center;
+        }    
+
+        .box .glass:nth-child(3n+0){
             background-color: purple;
 
-            
+
+        }
+        
+        .box .glass:nth-child(4n+2){
+        background-color:red;
+        }
+
+        
     
-        }
-
-        .nav .sub li:hover .sub2{
-            display: block;
-        }
-        .nav .sub li .sub2  a:hover{
-            background-color:orange;
-            color: red;
-        }
-
-        .nav .sub .links{
-            display:none;
-            position: absolute;
-            top: 80px;
-            line-height:50px;
-        
-
-        }
-        .nav .sub .links li{
-            
-            justify-content: center;
-            
-        }
-        .nav .sub .links li a{
-            display: flex;
-            justify-content: center;
-            margin: 2px;
-            line-height: 50px;
-            background-color: yellow;
-            color: red;
-            
-        }
-        .sub li:hover .links{
-            display: block;
-
-        }
-         .nav .sub .links a:hover{
-            background-color:navy;
-            color: white;
-        }
-       
+        </style>
 
 
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
 
-
-
-
-
-
-    </style>
-    <div class="nav">
-        <ul class="sub">
-
-        <li><a href="">home</a>
-        <ul class="sub2">
-         <li><a href="">one </a></li>
-         <li><a href="">two</a></li>
-         <li><a href="">three</a></li>
-         <li><a href="">four</a></li>
         </ul>
-
-
-
-        </li>
-
-
-
-        <li><a href="">about</a>
-        <ul class="links">
-            <li><a href="">Five</a></li>
-            <li><a href="">six</a></li>
-            <li><a href="">seven</a></li>
-            <li><a href="">eight</a></li>
-        </ul>
-        </li>
 
         
 
-        </ul>
+        <br>
+        <br>
+        <p>
 
-    </div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, tempora perspiciatis nulla iusto necessitatibus eveniet, id nostrum similique nihil omnis, veritatis dolorum delectus odio optio neque sed temporibus amet! Fugiat!
+        </p>
+        
+
+
+
+        <div class="box">
+
+            <div class="glass"></div>
+            <div class="glass"></div>
+            <div class="glass"></div>
+            <div class="glass"></div>
+        </div>
+
+
 </body>
 </html>

@@ -163,7 +163,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
       <div class="box">
         <h1>Create Account</h1>
         <span>Already have an account? <a href="login.php">Login</a></span>
-        <?php echo $msg; ?>
+        <!-- <?php echo $msg; ?> -->
       </div>
       <div class="Register">
         <form  method="post">

@@ -16,12 +16,12 @@
                 for(let data of json_data){
                     console.log(data)
                     document.write("<h1>"+data.title+"</h1>"+"<br>");
-                    document.write(data.body+"<br><br>");
+                    document.write('<img src="'+data.url+'">')
                 }
             
             }
         }
-        xhr.open("GET","https://jsonplaceholder.typicode.com/posts");
+        xhr.open("GET","https://jsonplaceholder.typicode.com/albums/1/photos");
         xhr.send();
     </script>
 </body>

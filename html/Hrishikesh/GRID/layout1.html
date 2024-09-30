@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
+        
         * {
             margin: 0;
             padding: 0;
@@ -18,11 +19,9 @@
             height: 100vh;
             /* margin: 50px auto; */
             display: grid;
-            grid-template-columns: [col1-start] 100px [col1-end col2-start] 1fr [col2-end col3-start] 100px [col3-end] ;
-            grid-template-rows: [row1-start] 70px [row1-end row2-start] 40px [row2-end row3-start] 1fr [row3-end row4-start] 50px [row4-end]  ;
+            grid-template-columns: [col1-start] 100px [col1-end col2-start] 1fr [col2-end col3-start] 100px [col3-end];
+            grid-template-rows: [row1-start] 70px [row1-end row2-start] 40px [row2-end row3-start] 1fr [row3-end row4-start] 50px [row4-end];
             gap: 5px;
-
-
         }
 
         .box {
@@ -35,14 +34,14 @@
 
         .box1 {
             background-color: yellowgreen;
-            grid-area: row1-start  / col1-start / row1-end / col3-end;
-   
+            grid-area: row1-start / col1-start / row1-end / col3-end;
+
         }
 
         .box2 {
             background-color: green;
-            grid-area: row2-start  / col1-start / row2-end / col3-end;
-    
+            grid-area: row2-start / col1-start / row2-end / col3-end;
+
         }
 
         .box3 {
@@ -61,9 +60,9 @@
 
         .box6 {
             background-color: crimson;
-            grid-area: row4-start  / col1-start / row4-end / col3-end;
+            grid-area: row4-start / col1-start / row4-end / col3-end;
 
-     
+
         }
 
         .box7 {

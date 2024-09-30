@@ -8,7 +8,7 @@
         .box{
             height:400px ;
             width:400px ;
-            margin:10px ;
+            margin:100px ;
             border:15px solid black ;
             /* border-image-source:url("https://www.w3schools.com/cssref/border.png") ; */
             border-image-source:linear-gradient(45deg,red,blue,yellow,green) ;
@@ -30,6 +30,49 @@
 
         }
 
+        .container{
+          border:2px solid black ;
+          padding:20px ;
+          display:flex;
+          align-items:center ;
+          justify-content:center ;
+          background-color: rgb(70, 70, 197);
+        }
+
+        .container .box{
+            border:2px solid black ;
+            height:100px ;
+            width:100px;
+            margin:5px ;
+            background-color: red;
+        }
+
+      .box1{
+        cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/crosshair.gif"), auto;
+      }
+
+      .box2{
+        cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/pointer.gif"), auto ;
+      }
+
+      .box3{
+        cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/move.gif") ,auto;
+      }
+
+      .box4{
+      cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/col-resize.gif"), auto ;
+    }
+
+      .box5{
+        cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/cell.gif") ,auto  ;
+      }
+
+      .box6{
+        cursor:url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/zoom-in.gif"),auto ;
+      }
+
+
+
         
     </style>
 </head>
@@ -37,6 +80,15 @@
     <div class="box">
         <h1>Our Earth</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cumque minus nostrum maiores. Mollitia fugiat atque quae ipsum totam nesciunt quaerat sequi molestiae suscipit culpa in, deserunt laboriosam recusandae consequatur.</p>
+    </div>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
     </div>
 </body>
 </html>

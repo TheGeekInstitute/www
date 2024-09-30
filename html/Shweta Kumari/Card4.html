@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -13,18 +14,19 @@
         }
 
         .card {
-            border: 5px ridge pink;
-            height: 300px;
-            
-            width: 300px;
+            border: 10px r+idge pink;
+            height: 500px;
+            width: 500px;
             border-radius: 30px;
-            margin: 100px;
+            margin: 50px auto;
             text-align: center;
-            padding: 100px;
+            /* padding: 20px;
+             */
             background-image: linear-gradient(45deg, rgba(236, 82, 172, 0.966), rgba(236, 82, 172, 0.3));
         }
 
         .card img {
+            margin-top: 40px;
             height: 150px;
             width: 150px;
             border-radius: 15px;
@@ -34,9 +36,24 @@
         }
 
         .card h1 {
+    /* border: 1px solid black;10
+     */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 40px;
             -webkit-text-stroke: 1px yellow;
+        }
+
+
+
+        .card .icon{
+            margin: 20px;
+           
+
+        }
+
+        .card .icon i{
+            width: 45px;
+            font-size: 30px;
         }
     </style>
 
@@ -47,8 +64,17 @@
         <img src="https://thumbs.dreamstime.com/b/charming-image-cute-lord-ganesh-playfully-smiling-perfect-hindu-festival-themes-religious-celebrations-spiritual-333358091.jpg"
             alt="">
         <h1> Ganesha </h1>
-        <p> </p>
+        <p>Prosperity King
+            Lord Ganesha,also known as Ganpati,is a revered deity in hinduism,worshipped as the of obstacles and the patron of knowledge,wisdom and prosperity. And also helps devotees overcome challenges. </p>
+
+            <div class="icon">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
     </div>
+
 </body>
 
 </html>

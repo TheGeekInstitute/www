@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+
+        .card {
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .card img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+
+    <script>
+        let container = document.querySelector('.container');
+
+        let data = fetch("https://jsonplaceholder.typicode.com/photos");
+
+        data.then((e) => {
+            // return e.text();
+            return e.json();
+
+        }).then((imgdata) => {
+            for (let x=0 ; x<=50 ; x++) {
+                
+                // console.log(imgdata[x].id)
+
+                let card = `
+                <div class="card">
+                    <img src="${imgdata[x].url}" alt="">
+                    <h1>${imgdata[x].title}</h1>
+                </div>
+                `;
+
+                container.insertAdjacentHTML("afterbegin",card)
+
+                // console.log(x.url)
+            }
+        })
+    </script>
+
+</body>
+
+</html>

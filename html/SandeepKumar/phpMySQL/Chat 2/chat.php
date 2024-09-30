@@ -16,8 +16,17 @@ if(isset($_GET['logout'])){
     header("location:login.php");
 }
 
+if($_SERVER['REQUEST_METHOD']=="POST"){
+    if(isset($_POST['msg']) && !empty($_POST['msg'])){
+        $msg=$_POST['msg'];
+        $sql="INSERT INTO `chat`(`username`, `chat`) VALUES ('$username','$msg')";
+        $query=mysqli_query($conn,$sql);
+        if($query){
+            header("location:chat.php");
+        }
 
-
+    }
+}
 
 
 ?>

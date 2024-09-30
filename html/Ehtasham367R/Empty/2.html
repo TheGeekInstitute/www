@@ -113,7 +113,8 @@
       align-items: center;
       margin: 10px;
       box-shadow: 2px 3px 6px black;
-      
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
   
     }
     
@@ -123,7 +124,7 @@
       width: 100%;
       /* border: 2px solid purple; */
       /* background-color: gray; */
-      background-image: url(https://th.bing.com/th/id/OIP.BdAGcE9OqgPiMscJ9F9H5gHaNK?rs=1&pid=ImgDetMain);
+      /* background-image: url(https://th.bing.com/th/id/OIP.BdAGcE9OqgPiMscJ9F9H5gHaNK?rs=1&pid=ImgDetMain); */
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -136,6 +137,98 @@
   
   
   
+
+    .container .box:first-child .pic{
+      background-image: url(https://wallpapercave.com/wp/wp5007543.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+      
+
+    }
+
+    .container .box:hover{
+      transition: all 0.5s linear;
+      /* transform: rotateX(70deg); */
+      rotate: 40deg;
+      transform: rotatex(40deg);
+   
+    }
+    
+    .container .box:nth-child(2) .pic{
+      background-image: url(https://th.bing.com/th/id/R.dc2d097c327c21f3a524760368a86c6b?rik=%2fE5FVLBiKjrUiw&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2016%2f02%2fmobile-wallpaper-17.jpg&ehk=98nfESEtQno%2baR5egGFDbPJgd%2ftQQSU8Ur6W5ccUVSQ%3d&risl=&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    .container .box:last-child{
+      background-image: url(https://images.pexels.com/photos/1156684/pexels-photo-1156684.jpeg?cs=srgb&dl=lights-iphone-smartphone-1156684.jpg&fm=jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container .box:nth-child(3){
+      background-image: url(https://th.bing.com/th/id/R.8ac45b27aa5ab653e5cfddf78438b94b?rik=yySingmvSU1vBg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f07%2fWallpaper-for-android-phones-Flowers-1080x1920.jpg&ehk=EI7SHOGshPUqA5bjMtP5X8f30vXZ38rrROpcE3KM9nk%3d&risl=&pid=ImgRaw&r=0);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+   
+
+      
+    .next{
+      background-image: url(https://www.pixelstalk.net/wp-content/uploads/2015/12/Desktop-Backgrounds-Download-Free.jpg);
+
+      height: 500px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid black;
+      
+    }
+
+    .next .box{
+      display: flex;
+      /* background-color: white; */
+      height: 100px;
+      width: 100px;
+      margin: 150px auto;
+      overflow: hidden;
+      
+      
+    }
+
+    .next .box .img{
+      border: 2px sold red;
+      background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Desktop-Cell-Phone-Images.jpg);
+      height: 100px;
+      width: 100px;
+      transform: translateY(90%);
+      transition: all .3s linear;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+
+      
+    
+    
+    }
+
+    .next .box:hover .img{
+      transform: translateY(0);
+    }
+
+    
   
   
   </style>
@@ -187,6 +280,22 @@
 
 
 </div>
+
+
+
+
+
+<div class="next">
+
+  <div class="box">
+
+    <div class="img"></div>
+
+
+  </div>
+
+</div>
+
 
 </body>
 </html>

@@ -28,7 +28,7 @@
             position: relative;
         }
 
-        .nav{
+        nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -46,11 +46,24 @@
             background: red;
             color: white;
             padding: 7px 20px;
-            margin: 10px;
+            margin-left: 10px;
             font-size: 20px;
             cursor: pointer;
             border-radius: 4px;
 
+        }
+
+        .language-btn{
+            display: inline-flex;
+            align-items: center;
+            background: transparent;
+            border: 1px solid #fff;
+            padding: 7px 10px;
+        }
+
+        .language-btn img{
+            width: 10px;
+            margin-left: 10px;
         }
 
         .header-content{
@@ -59,12 +72,35 @@
             left: 50%;
             transform: translate(-50% - 50%);
             text-align: center;
-            margin-top: 100%;
+            margin-top: 100px;
         }
 
         .header-content h1{
             font-size: 60px;
-            
+            line-height: 70px;
+            font-weight: 600;
+            max-width: 650px;
+        }
+
+        .header-content h3{
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .email-signup{
+            background: #fff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+
+        .email-signup input{
+            flex: 1;
+            border: 0;
+            outline: 0;
+            margin-left: 20px;
         }
 
 
@@ -76,7 +112,7 @@
         <nav>
             <img src="images2.jpg" class="logo" alt="">
             <div>
-                <button>English</button>
+                <button class="language-btn">English <img src="../web/images/16.jpg" alt=""></button>
                 <button>Sing In</button>
             </div>
         </nav>
@@ -85,7 +121,7 @@
             <h3>Watch Anywhere,Cancel Anytime</h3>
             <p>Ready To Watch? Enter Your Email To Create To Restart Your Membership</p>
 
-            <form class="email">
+            <form class="email-signup">
                 <input type="email" placeholder="Email Address" required>
                 <button type="submit">Get Started</button>
             </form>
@@ -116,7 +152,7 @@
                 <label for="second">How Much Does Netflix Cost.?</label>
                 <i class="fa-solid fa-plus"></i>
                 <div class="content">
-                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 149 to 649 a month. No extra costs, no contracts.</p>
                 </div>
             </li>
 

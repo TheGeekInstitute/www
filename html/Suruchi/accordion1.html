@@ -12,25 +12,22 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         input{
             display: none;
         }
 
         .accordion{
-          
             width: 400px;
             margin: 10px auto;
-        }
 
+        }
         .accordion .box{
-          margin: 10px 0;
+            margin: 10px 0;
         }
-
         .accordion .box label{
             display: block;
             height: 40px;
-            background-color: blue;
+            background-color: rebeccapurple;
             color: white;
             display: flex;
             align-items: center;
@@ -38,82 +35,83 @@
             padding: 0 10px;
             font-size: large;
             cursor: pointer;
+            
+            
         }
-
         .accordion .box label i{
             transition: all .3s linear;
         }
-
         .accordion .box .content{
-            background-color: bisque;
+            background-color: white;
             padding: 5px 10px;
             display: none;
-        }
 
+        }
         #btn:checked ~ .content{
             display: block;
         }
-
         #btn1:checked ~ .content{
             display: block;
         }
-
         #btn2:checked ~ .content{
             display: block;
         }
-
 
         #btn:checked ~ label i{
             transform: rotate(45deg);
         }
         #btn1:checked ~ label i{
             transform: rotate(45deg);
+
         }
         #btn2:checked ~ label i{
             transform: rotate(45deg);
         }
-
-     
     </style>
         
 </head>
 <body>
     <div class="accordion">
-        
-
         <div class="box">
-        <input type="checkbox" id="btn">
+            <input type="checkbox" id="btn">
             <label for="btn">
                 <p>Heading</p>
                 <i class="fa-solid fa-plus"></i>
             </label>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis aliquam ea provident quis, nihil magni temporibus, voluptas quia consequatur laudantium, architecto porro ullam. Sed eos nobis ab amet minima?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere vero, laudantium voluptates quidem delectus magnam quisquam quibusdam. Odio ducimus rem est illum architecto mollitia ipsa, labore hic odit voluptatem. Aspernatur.</p>
             </div>
         </div>
 
-        <div class="box">
-            <input type="checkbox" id="btn1">
-                <label for="btn1">
+
+        <div class="accordion">
+            <div class="box">
+                <input type="checkbox" id="btn">
+                <label for="btn">
                     <p>Heading</p>
                     <i class="fa-solid fa-plus"></i>
                 </label>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis aliquam ea provident quis, nihil magni temporibus, voluptas quia consequatur laudantium, architecto porro ullam. Sed eos nobis ab amet minima?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere vero, laudantium voluptates quidem delectus magnam quisquam quibusdam. Odio ducimus rem est illum architecto mollitia ipsa, labore hic odit voluptatem. Aspernatur.</p>
                 </div>
             </div>
 
 
-            <div class="box">
-                <input type="checkbox" id="btn2">
-                    <label for="btn2">
+            <div class="accordion">
+                <div class="box">
+                    <input type="checkbox" id="btn">
+                    <label for="btn">
                         <p>Heading</p>
                         <i class="fa-solid fa-plus"></i>
                     </label>
                     <div class="content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facilis aliquam ea provident quis, nihil magni temporibus, voluptas quia consequatur laudantium, architecto porro ullam. Sed eos nobis ab amet minima?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere vero, laudantium voluptates quidem delectus magnam quisquam quibusdam. Odio ducimus rem est illum architecto mollitia ipsa, labore hic odit voluptatem. Aspernatur.</p>
                     </div>
                 </div>
+
+                
+        
+
     </div>
 </body>
 </html>
