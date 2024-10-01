@@ -13,10 +13,12 @@
         }
 
         .container{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             width: 300px;
             height: 400px;
             margin: 150px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
         }
 
         .container h1{
@@ -52,7 +54,20 @@
             border-radius: 3px;
         }
 
-        
+        .container form #btn{
+            background-color: royalblue;
+            color: white;
+            font-size: large;
+            font-weight: 900;
+            width: 100px;
+            border: none;
+            box-shadow: 2px 2px black;
+        }
+
+        .container form #btn:hover{
+            background-color: blue;
+        }
+
 
     </style>
 </head>
@@ -74,7 +89,7 @@
             </select>
             <label for="">Password</label>
             <input type="password">
-            <input type="submit" value="Signup">
+            <input type="submit" id="btn" value="Signup">
         </form>
 
     </div>
