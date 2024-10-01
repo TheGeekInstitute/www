@@ -18,7 +18,7 @@
         }
 
         h1{
-            counter-reset: sub-section;
+            counter-reset: sub-section 0;
         }
 
         h2{
@@ -27,8 +27,8 @@
 
         }
         h2::before{
-            content: counter(section) "."counter(sub-section)". ";
-            counter-increment: sub-section;
+            content: counter(section) "."counter(sub-sub-section) ". " ;
+            counter-increment: sub-section ;
             color: magenta;
         }
 

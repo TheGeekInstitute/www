@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin:0 ;
+           padding:0 ;
+          box-sizing:border-box ;
+        }
+
+        .container{
+            /* border:2px solid black ; */
+            height:300px ;
+            width:300px ;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px); 
+            position:absolute ;
+            transform-style:preserve-3d ;
+            perspective:600px ;
+            cursor:pointer ;
+        }
+
+        .container .card{
+            backface-visibility:hidden ;
+            transform-style:preserve-3d ;
+            transition: all .5s ease-in-out;
+        }
+
+        .container .card .front,
+        .container .card .back{
+            text-align:center ;
+            height:300px ;
+            width:300px ;
+
+            /* line-height:300px ; */
+            /* font-size:40px ; */
+
+            position:absolute;
+            backface-visibility:hidden ;
+            border-radius:10px ;
+            box-sizing:0px 0px 10px  ;
+        }
+
+        .container .card .front{
+            background-color: blue;
+        }
+
+      .front img{
+            height:100px ;
+            width:100px ;
+            margin:10px ;
+            border:5px solid white ;
+            border-radius:50% ;
+           
+        }
+
+         .card .front h1{
+            color:White ;
+            /* border-bottom:2px solid white ; */
+            line-height:150px ;
+        }
+
+
+        .container .card .back{
+            background-color: blueviolet;
+            transform: rotateY(180deg);
+        }
+
+        .card .back p{
+            margin-top:50px ;
+           height:100px ;
+           color: white;
+        }
+
+        .container:hover .card{
+            transform: rotateY(180deg);
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTESHG14trKrSwp-5ukLk1-E77TYH5ubHHNFxdRH0q8iuBHLL2_B2zvecqcEA&s" alt="">
+            <h1>Save Water</h1>
+        </div>
+            <div class="back">
+                <p>Save Water Save Life. Water is very important thing in our life . It is used for many household activities like washing clothes, bathing, to make food and many more activities . If you save water
+                    today then it will save you yesterday. A single drop of water is very important for us. </p>
+            </div>
+        
+        </div>
+    </div>
+</body>
+</html>

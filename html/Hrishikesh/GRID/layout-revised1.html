@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 70px 50px 1fr 40px;
+            gap: 5px;
+            grid-template-areas: "header header header"
+                                 " nav nav nav"
+                                 " Left Main Right"
+                                 "Footer Footer Footer"
+            ;
+        }
+        .box{
+            text-align: center;
+            font-size: x-large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      .box1{
+            background-color: yellowgreen;
+            grid-area: header;
+        }
+        .box2{
+            background-color: green;
+            grid-area: nav;
+        }
+        .box3{
+            background-color: teal;
+            grid-area: Left;
+        }
+        .box4{
+            background-color: rgb(51, 40, 206);
+            grid-area: Main;
+        }
+        .box5{
+            background-color: turquoise;
+            grid-area: Right ;
+        }
+        .box6{
+            background-color: purple;
+            grid-area: Footer;
+        }
+    </style>
+</head>
+<body>
+    
+         <div class="container">
+            <div class="box box1">Header</div>
+            <div class="box box2">NAV</div>
+            <div class="box box3">Left</div>
+            <div class="box box4">MAIN</div>
+            <div class="box box5">Right Side bar</div>
+            <div class="box box6">Footer</div>
+         </div>
+
+</body>
+</html>

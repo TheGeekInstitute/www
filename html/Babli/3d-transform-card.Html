@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-card</title>
+<style>
+    *{
+        margin:0 ;
+        padding:0 ;
+        box-sizing:border-box;
+    }
+
+    .container{
+        height:300px ;
+        width:300px ;
+        position:absolute ;
+        top:calc(50%-150px) ;
+        left:calc(50%-150px) ;
+        text-align:center ;
+        transform-style:preserve-3d ;
+        perspective:600px ;
+    }
+
+    .card{
+        height:100% ;
+        width:100px ;
+        transform-style:preserve-3d ;
+        transition:all 1s ease-in-out;
+    }
+
+    .container .card .front,
+     .container .card .back{
+        font-size:70px ;
+        line-height:100px ;
+        height:300px ;
+        width:300px ;
+        position:absolute ;
+        color:white ;
+        backface-visibility:hidden ;
+        border-radius:10px ;
+        box-shadow:0px 0px 30px black ;
+     }
+
+     .container .card .front{
+        background-color:aqua ;
+     }
+
+     .container .card .back{
+        background-color:blue ;
+        transform: rotateY(180deg);
+     }
+
+     .container:hover .card{
+        transform: rotateY(180deg);
+     }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+        <div class="front">front:)</div>
+        <div class="back">back:)</div>
+    </div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows: 60px 50px 1fr 40px;
+        }
+        .box{
+            text-align: center;
+            font-size: x-large;
+            /* color: white; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            background-color: yellowgreen;
+            grid-area: 1 / 1 / 2 /4 ;
+
+        }
+        .box2{
+            background-color: green;
+        }
+        .box3{
+            background-color: aqua;
+        }
+        .box4{
+            background-color: chartreuse;
+        }
+        .box5{
+            background-color: darkcyan;
+        }
+        .box6{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">Menu</div>
+        <div class="box box2">Text</div>
+        <div class="box box3">Tools</div>
+        <div class="box box4">Content</div>
+        <div class="box box5">Slide</div>
+        <div class="box box6">Footer</div>
+        
+    </div>
+    
+</body>
+</html>

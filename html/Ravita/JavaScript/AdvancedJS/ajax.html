@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajax</title>
     <style>
-        #loader{
+        #loader {
             position: absolute;
             inset: 0;
             height: 100vh;
             width: 100vw;
             display: none;
         }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly;
+           flex-wrap: wrap;
+        }
+
+        .container  .box{
+            border: 2px solid black;
+            height: 280px;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container .box img{
+            height: 100px;
+            width: 100px;
+        }
     </style>
 </head>
+
 <body>
 
     <h1 id="hello">Hello World</h1>
-    
+
     <button id="btn">Show</button>
 
-    <img src="https://loading.io/assets/mod/spinner/double-ring/lg.gif" id="loader" alt="">
-
-    <img src=" https://miro.medium.com/v2/resize:fit:1400/1*r4K1PRHfbKG7NpoRx22K4A.gif" id="loader" alt="">
+    <!-- <img src="https://loading.io/assets/mod/spinner/double-ring/lg.gif" id="loader" alt=""> -->
+<!--  -->
+    <!-- <img src=" https://miro.medium.com/v2/resize:fit:1400/1*r4K1PRHfbKG7NpoRx22K4A.gif" id="loader" alt=""> -->
 
     <script>
-        let loader = document.querySelector('#loader');
+        // let loader = document.querySelector('#loader');
         let hello = document.querySelector("#hello")
-    document.querySelector('#btn').addEventListener("click",()=>{
-        let xhr = new XMLHttpRequest();
-        // xhr.onload = function(){
-        //     // console.log(this.status)
-        
-        // }
+        document.querySelector('#btn').addEventListener("click", () => {
+            let xhr = new XMLHttpRequest();
+            // xhr.onload = function(){
+            //     // console.log(this.status)
 
-        xhr.onreadystatechange  = function(){
-            loader.style.display="block"
-            
-            // console.log(this.readyState)
-            if(this.readyState==4 && this.status==200){
-                // console.log(this.responseText)
-                hello.innerHTML = this.responseText
-                loader.style.display="none"
+            // }
+
+            xhr.onreadystatechange = function () {
+                // loader.style.display = "block"
+
+                // console.log(this.readyState)
+                if (this.readyState == 4 && this.status == 200) {
+                    // console.log(this.responseText)
+                    hello.innerHTML = this.responseText
+                    // loader.style.display = "none"
+                }
+                let img_data = JSON.parse(this.responseText)
+                console.log(img_data)
+
+
             }
-            
 
-        }
-
-        xhr.open("GET","http://10.10.10.10/Ravita/JavaScript/AdvancedJS/data.php",true);
-        xhr.send();
-    })
+            xhr.open("GET", "https://jsonplaceholder.typicode.com/photos.php ", true);
+            xhr.send();
+        })
 
 
-       
+
     </script>
 
 </body>
+
 </html>

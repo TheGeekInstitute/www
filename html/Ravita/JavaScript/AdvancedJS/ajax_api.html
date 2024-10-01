@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .container .box {
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .container .box img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+    </div>
+
+    <!-- https://jsonplaceholder.typicode.com/photos -->
+    <script>
+        let container = document.querySelector(".container");
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.status == 200 && this.readyState == 4) {
+                let img_data = JSON.parse(this.responseText);
+
+                for (let x = 0; x <= 100; x++) {
+                    let jsonData = `
+                        <div class="box">
+                            <img src="${img_data[x].url}" alt="">
+                             <h1>${img_data[x].title}</h1>
+                        </div>`;
+
+                    container.insertAdjacentHTML("afterbegin", jsonData)
+                }
+            }
+        }
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/photos", true);
+        xhr.send();
+
+    </script>
+
+</body>
+
+</html>
