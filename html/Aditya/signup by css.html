@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        
+
+        .container{
+            padding: 5px;
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 400px;
+            margin: 150px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container h1{
+            margin:  5px 0;
+            text-align: center;
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container form label{
+            /* border: 1px solid red; */
+            width: 250px;
+            font-size: large;
+            margin: 3px 0;
+            font-weight: 400;
+        }
+
+        .container form input,
+        .container form select{
+            width: 250px;
+            height: 35px;
+            padding: 2px 5px;
+            font-size: large;
+            margin-bottom: 5px;
+            outline: none;
+            border: 1px solid black;
+            border-width: 1px 1px 2px 1px;
+            border-radius: 3px;
+            background-color: transparent;
+        }
+
+        .container form #btn{
+            background-color: royalblue;
+            color: white;
+            font-size: large;
+            font-weight: 900;
+            width: 100px;
+            border: none;
+            box-shadow: 2px 2px black;
+            margin-top: 13px;
+        }
+
+        .container form #btn:hover{
+            background-color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+            <h1>Registration Form</h1>
+        <form>
+            <label for="">Full Name</label>
+            <input type="text">
+            <label for="">Email</label>
+            <input type="email">
+            <label for="">Gender</label>
+            <select name="" id="">
+                <option value="">Choose</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+            <label for="">Password</label>
+            <input type="password">
+            <input type="submit" id="btn" value="Signup">
+        </form>
+
+    </div>
+
+
+</body>
+</html>
