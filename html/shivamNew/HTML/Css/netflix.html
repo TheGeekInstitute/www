@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
+    <title>Netflix India - Watch TV Shows</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,27 +13,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="../apple-logo-icon-bf9728.png">
+    <link rel="icon" href="https://images.ctfassets.net/y2ske730sjqp/4aEQ1zAUZF5pLSDtfviWjb/ba04f8d5bd01428f6e3803cc6effaf30/Netflix_N.png?w=300">
     <style>
         * {
             margin: 0;
             padding: 0;
             list-style: none;
             text-decoration: none;
+            box-sizing: ;
         }
 
         .page {
-            height: 400vh;
+            height: 380vh;
         }
 
         .bg {
             width: 100vw;
-            height: 93vh;
+            height: 100vh;
             background-image: url("https://i.redd.it/zjgs096khv591.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-color: rgba(0, 0, 0, 0.668);
+            background-color: rgba(0, 0, 0, 0.76);
             background-blend-mode: overlay;
             font-family: sans-serif;
             font-weight: 400;
@@ -131,9 +132,10 @@
         }
 
         .sline {
-            font-size: .9em;
+            font-size: 1em;
             text-align: center;
             margin-bottom: 1.5em;
+            line-height: 2em;
 
         }
 
@@ -180,11 +182,16 @@
 
         .bg2 {
             height: 280vh;
-            width: 100vw;
+            width: 80vw;
             background-color: rgb(1, 2, 5);
             position: absolute;
-            top: 90vh;
-            /* border-radius: 5em 4em 3em 5em ; */
+            top: 100vh;
+            /* border-radius: 5em 4em 3em 5em ; */ 
+            /* border-top: 6px solid red;
+            border-top-left-radius: 50% 200px; 
+  border-top-right-radius: 50% 200px; 
+  width: 160%; overflow: hidden; 
+  margin-bottom: -50px;  */
             border-top: 6px solid red;
             border-image: linear-gradient(to right, red, rgb(255, 0, 106));
             border-image-slice: 20;
@@ -192,6 +199,11 @@
             padding: 5em 9em;
             font-family: Calibri, 'Trebuchet MS', sans-serif;
 
+        }
+        .boder{
+            height: 1vh;
+            width: 100vw;
+            background-color: blue;
         }
 
         .line1 {
@@ -235,19 +247,26 @@
             width: 80vw;
             display: flex;
             justify-content: space-between;
+            
 
         }
 
         .line2 .box {
             /* border: 1px solid rgb(178, 23, 139); */
+            box-sizing: border-box;
             height: 33vh;
             width: 12vw;
             border-radius: .7em;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            /* overflow: hidden; */
+            transition: all .2s linear ;
 
 
+        }
+        .line2 .box:hover{
+            transform: scale(1.05);
         }
 
         .box h1 {
@@ -336,28 +355,33 @@
 
         }
         .line4 .box3{
-            height: 10vh;
+            height: 12vh;
             width: 80vw;
-            margin-bottom: .3em;
+            margin-bottom: .4em;
             /* border: 1px solid magenta; */
-            background-color: rgba(98, 98, 98, 0.541);
+            background-color: rgba(53, 51, 51, 0.541);
             color: white;
             display: flex;
             justify-content: space-between;
             box-sizing: border-box;
-            padding: .4em 1em;
+            padding: .7em 1em;
             font-size: 1.7em;
             letter-spacing: -1px;
+        }
+        .line4 .box3:hover{
+            background-color: rgba(78, 77, 77, 0.541);
         }
         .line4 .box3 i{
             padding-top: .3em;
         }
         .login{
-            margin-top: 1em;
+            margin-top: 5em;
             position: absolute;
+            /* bottom: 2em; */
             left: 20%;
             /* border: 1px solid red; */
             width: 55vw;
+            
 
 
         }
@@ -367,10 +391,42 @@
         }
         
         .login p{
+            padding-top: 3em ;
             text-align: center;
             color: white;
             margin: 1em;
             font-size: 1.1em;
+        }
+        .line5{
+            position: absolute;
+            top: 250vh;
+            /* border: 2px solid red; */
+            height: 30vh;
+            width: 80vw;
+        }
+        .line5 h2{
+            color: rgb(165, 165, 165);
+            /* border: 1px solid green; */
+            font-size: 1.1em;
+            text-decoration: underline;
+        }
+        .line5 .rows{
+            margin-top: 1.5em;
+            /* border: 1px solid yellow; */
+            column-count: 4;
+            color: white;
+            height: 20vh;
+        }
+        .line5 .rows ul li{
+            margin-bottom: .5em;
+        }
+        .line5 .rows ul li a{
+            color: rgb(172, 172, 172);
+            font-size: 1.1em;
+            text-decoration: underline;
+        }
+        .line6{
+
         }
     </style>
 </head>
@@ -395,7 +451,7 @@
                     <p class="fline">Starts at ₹149. Cancel at any time.
                         <br>
                     </p>
-                    <h5 class="sline">Ready to watch? Enter your email to create or restart your membership.</h5>
+                    <h5 class="sline">Ready to watch? Enter your email to create or restart your <br>membership.</h5>
                 </div>
                 <div class="row3">
                     <input type="email" class="email" placeholder="Email address">
@@ -404,6 +460,7 @@
 
             </div>
         </div>
+        <div class="border"></div>
         <div class="bg2">
             <div class="line1">
                 <h1>Trending Now</h1>
@@ -423,23 +480,23 @@
             </div>
             <div class="line2">
                 <div class="box"
-                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfJys4Y3H9GhA3g5yQ07fHe-QmQgkD9IekA9P2YxI2ZhEivoSOg-q_u15HINiRF47aYwlgxGuwxvlT0BVpSsqTlWYKAEH5xajsE.jpg?r=6b0); ">
+                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXbZAShSg0ZfQHJGZBU9G8UVF-Hp2f_ix_q8Pre3l5uk6S0WYBeDE-DWr08R2euefmOzixeDNjDTL-AEG9hM6mqe4RnMfSd_q6-X7H8WXGVRNASaC-KE3S3pugE_RGteKgbA7uR-okEzPlAfP_8BWq-QlCD02t01fCm3BQGJvUWIu8Tk6CU9oIhrqa5aCAvEcQO3XV3vPz0SISnsvuP3_HQJunFHMFL1Yhji5tz_3vqiWf6zKjFYtMiuzsug3CLuU0f9oBuPA2tKlaT5poJNaBW4O0pV59JCdL5YyXJPYDtrvzuaLFarx-Q3_YyGw6I0CX3izWBwp1ftWVv3o7pij44.jpg?r=7a3); ">
                     <h1>1</h1>
                 </div>
                 <div class="box"
-                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTscWFtgN6ChhMBUi6DnHhXV3r1lGcEslvrlvoQNg49uDw5M95KzbYgLWZ0j26uvg0QKCJIojXM6U7IKzvPluo-9nApWJLyE7w5KHG25epq3uOixkgaqPuAmuoD30QCqvcKk.jpg?r=88f);">
+                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaO7ECgEt1g4D_TuP1FifxLvgsYcP01mW-zRxhZpqYKIOJQD1AO0WNgr0lbVuQ-8FTp-X8ehD9Dqt2DJTgWAqhpC4dpu7IwFZtYbVMm8K5FkB3YLwTLpXqKpmAs9cqYoCV4gZgwzvC-4UFxT-SHZZ53rOdKxC1mDhq1bn567sL26t6ZRtYKwo6y85X0dhEorZARo-sn-lZjJF7sxMSa6Tj5HvQG5vdzh5ZFZO_6bAS8blNipiiAW6pPm7msfloIgVLzMkYX3OPq3oJJ0mLVFfgHhs3vd7WvhbcSEiVcANyy8WkFyVi5fvP9Tde0PpsmbcYKUME4LXste35LQUPs-N5s.jpg?r=6b0);">
                     <h1>2</h1>
                 </div>
                 <div class="box"
-                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRc69vfHc3NKgTH4SkdYHfkSxtAd3dfh5emgJ09I75aZOlEtXYPqzVU_iEl6L8uoyV1dSGI1Bk4l29jY_6Qcjb69l9ZJkhlsVGOGOdlmjtZpm6nBH7Euq_YNwLyprFteoJ44.jpg?r=cb7); ">
+                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRell2q7GkPUQ6t9PvFIlVQ7aK7tq6TM3n6tiCA2Z-8IrJobpWPtg1PNQ56YtOup7efqbrZlvVCC4IovyUIJd-5G_oYeTRbC8WbUio80NPg9D58J5KJ29wATEk1zH5xJptre8Sq1w9qkswMjq82qMgY-uJm6aNNwTNJcuFf7VlDVDL22FQ773Ua9owfOQkxu182R_3HXWYNkX0PDNm2b-6vLYSpIhVNmrZKBYpeWqZBDG2-5cR9bAy1D_EvRNuRLdb9nVotyQ3S73nz9iajdXsoz7Lqd_LGlK25BfmV0CZauaBuxjNVh4qLuACFfv4GBnOQbWIdUqOnOltRMpIZHg2kikhdVZI6i5L-5RVBfI_dUpnvqeQo.jpg?r=cb7); ">
                     <h1>3</h1>
                 </div>
                 <div class="box"
-                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaG1Obp9hVc0KWL1HxTJkPwmpKLyPJLKeZ6XzxMqJeYTIPAR0QLR2JOjqWIWiPDGzMcpgJJ_xyxN8I3qvfPHOMnl_GonLO3l_fY.jpg?r=7a3); ">
+                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABanmkWKTsNXd1kwyWqeHBEpUw8eaVnhDb1xSoKJakKdw9UM_VIjCwEksl-41sfNvy73eFSYio6FeW3-DHJuGztUhAyzf1H---Khtyx-jO03H8MZ1PsRyOQOrumfwj2NIregbk7GjY4wV9dcGlwNjPAh3OWFnhuR-cpKPV2uLmw8MQC49vFTydVJ1pvG55FBLod0kf6jYYwjwqCC9nWwwyBNpftZyjdYh8PaENNaeIcFlSu3-sQaUQ-3v__EDIUCiW7Sn-yagU3pY4Gm4nYW2vhcfBDXlUEYmYz9tAeaKzojtR1-OYEchlZK0x1dLo985DuMSQAQQHeL1Fo3wTjpmTQc.jpg?r=d7f); ">
                     <h1>4</h1>
                 </div>
                 <div class="box"
-                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABexK7lkxjCD4TkkHmZMsTQqy0MB3fYd9---mVz1qwC8ekvYRPpScegHzrTWCAuSvcaXQMVIDDkW_PAJAGd9Mw4Eb-45uo0oHvuSFP7u5JSCbcSqENWdS3VzqzeaPD10TXnY-.jpg?r=e07); ">
+                    style="background-image: url(https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABabJM9tkdwft9EgYYgvdQ3N6ZLPJIhI20bgT62Wphnp4INniCu29pxGnMn4qb9UBEvpcwseX2w2HSVObm2AyG2kj7B0Eo9CNfdzW1VVMXZLTCqT_-FTsCfySYuYHobtOxczwgFPuGWF65SIYxF9k5LMbO-zq5uQx9pZz2wUP7n0viKj__NPNJvL4fEBCC_3RZSd02Fs_3V2O-ZqFtHK-i-LbdDcM0pfALqSwgn3Y6aok7T7vYS9rMIzJ4Z0nWoLib0hbI4vljoVw9G5H6LmD8MrS8WYZ.jpg?r=a0c); ">
                     <h1>5</h1>
                 </div>
             </div>
@@ -473,7 +530,7 @@
                 </div>
             </div>
             <div class="line4">
-                <h1 style="color: white; margin-bottom: .5em; font-size: 1.6em;">Frequently Asked Questions</h1>
+                <h1 style="color: white; margin: 2em 0em .5em 0em; font-size: 1.6em;">Frequently Asked Questions</h1>
                 <div class="qbox">
                     <div class="box3"><p>What is Netflix?</p><i class="fa-sharp fa-solid fa-plus"></i></div>
                     <div class="box3"><p>How much does Netflix cost?</p><i class="fa-sharp fa-solid fa-plus"></i></div>
@@ -492,6 +549,39 @@
                 </div>
                 
 
+            </div>
+            <div class="line5">
+                <h2>Questions? Call 000-800-919-1694</h2>
+                <div>
+                    <div class="rows">
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Investor Relations</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Speed Test</a></li>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Jobs</a></li>
+                            <li><a href="">Cookies Prefrences</a></li>
+                            <li><a href="">Legal Notices</a></li>
+                            <li><a href="">Acounts</a></li>
+                            <li><a href="">Ways to watch</a></li>
+                            <li><a href="">Corporate Information</a></li>
+                            <li><a href="">Only on Netflix</a></li>
+                            <li><a href="">Media Center</a></li>
+                            <li><a href="">Term us Use </a></li>
+                            <li><a href="">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="line6">
+                    <div class="lft">
+                    <li ><a href="" style="font-size: 1.1em;"><i class="fa-solid fa-person-falling-burst"></i>English<i
+                                class="fa-solid fa-sort-down"></i></a></li>
+                    
+                </div>
+                <p style="color: rgb(201, 201, 201); margin-top: 2em; font-siz:1.1em; ">Netflix India</p>
+                </div>
             </div>
         </div>
     </div>

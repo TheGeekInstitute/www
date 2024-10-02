@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    background-color:rgba(255, 255, 255, 0.966);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.chat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #075E54;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e5ddd5ec;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #075E54;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}.profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.sender .massage{
+    align-self: right;
+    justify-content: right;
+    
+}
+
+
+
+    </style>
+</head>
+<body>
+   <div class="sidebar">
+        <div class="profile">
+            <img src="https://cdn.dribbble.com/users/5534/screenshots/14230133/media/e2f853f8232acad78bf143c32f2f3a04.jpg?compress=1&resize=1600x1200&vertical=top" alt="Profile Picture">
+            <h3>SANDEEP KUMAR</h3>
+        </div>
+        <div class="search">
+           <input type="text" placeholder="search">
+        </div>
+        <div class="chats">
+            <div class="chat-item">Chat 1</div>
+            <div class="chat-item">Chat 2</div>
+            <!-- Add more chat items -->
+        </div>
+    </div>
+    <div class="chat">
+        <div class="chat-header">
+            <h2>931299830</h2>
+        </div>
+        <div class="chat-messages">
+            <div class="message">Hello!</div>
+            <div class="message">How are you?</div>
+            <div class="massage">What is your name?</div>
+            <div class="massage">How Can I help you?</div>
+            <div class="Sender">
+                <div class="massage">Hlo</div>
+                <div class="massgae">I am fine</div>
+                <div class="massage">Anjali Kumari</div>
+                <div class="massage">Yes, tell me a about your company</div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message">
+            <button>Send</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -40,5 +40,12 @@ Recon for Bugbounty
       cat httprobe.txt | urlprobe   --> checking status code
       cat hosts.txt | aquatone -out ~/aquatone/example.com
 
-
       AquaTone Article - https://www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/
+
+      httpx
+      gau
+      gf
+      dalfox
+      skipfish
+      uniscan
+      

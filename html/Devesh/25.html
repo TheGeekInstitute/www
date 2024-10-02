@@ -15,13 +15,13 @@
         }
 
         body{
-            background-color: black;
+            background: black;
             color: white;
         }
         .header{
             width: 100%;
             height: 100vh;
-            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://i.redd.it/zjgs096khv591.jpg");
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images.frandroid.com/wp-content/uploads/2022/10/netflix-octobre-contenus-2022.jpg");
             background-size: cover;
             background-position: center;
             padding: 10px 8%;
@@ -36,7 +36,7 @@
         }
 
         .logo{
-            width: 150px;
+            width: 200px;
             cursor: pointer;
         }
 
@@ -47,10 +47,9 @@
             color: white;
             padding: 7px 20px;
             margin-left: 10px;
-            font-size: 20px;
+            font-size: 12px;
             cursor: pointer;
             border-radius: 4px;
-            font-family: Helvetica, sans-serif;
             font-weight: 600;
 
         }
@@ -61,8 +60,6 @@
             background: transparent;
             border: 1px solid #fff;
             padding: 7px 10px;
-            font-family: Helvetica, sans-serif;
-            font-weight: 500;
         }
 
         .language-btn img{
@@ -71,9 +68,10 @@
         }
 
         .header-content{
+            border: 2px solid white;
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 25%;
+            left: 27%;
             transform: translate(-50% - 50%);
             text-align: center;
             margin-top: 100px;
@@ -89,15 +87,60 @@
         .header-content h3{
             font-weight: 400;
             margin-bottom: 20px;
+            text-align: center;
+            justify-content: center;
         }
 
+
         .email-signup{
+            width: 600px;
+            display: flex;
+            gap: 1em;
+            margin-top: 20px;
+        }
+
+        .email-signup .btn1{
+            width: 550px;
+            padding: 15px 28px;
+            background-color: springgreen;
+            color: rgb(8, 8, 8);
+            border: 2px transparent;
+            border-radius: 8px;
+            font-size: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .email-signup .btn2{
+            width: 100px;
+            padding: 15px 28px;
+            background-color: red;
+            color: black;
+            border: 2px transparent;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+
+        /* .email-signup{
+            border: 2px solid springgreen;
+            height: 50px ;
+            width: 650px;
             background: #fff;
             border-radius: 4px;
             display: flex;
             align-items: center;
             margin-top: 30px;
             overflow: hidden;
+            justify-content: space-between;
+        }
+        .email-signup .email-submit{
+            border: 3px solid rgb(241, 9, 9);
+            height: 50px;
+            width: 200px;
+            padding-left: 50px;
+            margin-left: 20px;
+
         }
 
         .email-signup input{
@@ -106,6 +149,14 @@
             outline: 0;
             margin-left: 20px;
         }
+        .email-signup button{
+            background-color: red;
+            border: 0;
+            outline: 0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }  */
 
 
     </style>
@@ -123,23 +174,35 @@
             <h1>Unlimited Movies, TV Shows And More</h1>
             <h3>Watch Anywhere,Cancel Anytime</h3>
             <p>Ready To Watch? Enter Your Email To Create To Restart Your Membership</p>
-
             <form class="email-signup">
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit">Get Started</button>
+                <input class="btn1" type="email" placeholder="Email Address" required>
+                <button class="btn2" type="submit">Get Started</button>
             </form>
         </div>
     </div>
 
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="img-col">
 
-    <div class="faq">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-uMh1SvW5hIoMNV8XkobKq-PdSEhL9fESAQ&s" alt="">
+        </div>
+        </div>
+    </div>
+
+
+    <div class="features">
         <!-- <style>.faq{
             padding: 50px 15% 10px;
             border-top: 8px solid #232323;
             color: #f1ecec;
         } -->
         </style>
-        <h2>Freqently Ask Questions</h2>
+        <!-- <h2>Freqently Ask Questions</h2>
         <ul class="accordion">
             <li>
                 <input type="radio" name="accordion" id="first">
@@ -230,6 +293,6 @@
         <button class="lang-btn">English <img src="../web/images/14.jpg" alt=""></button>
     </div>
 
-    
+     -->
 </body>
 </html>

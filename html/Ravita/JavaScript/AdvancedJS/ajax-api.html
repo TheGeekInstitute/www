@@ -5,15 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<div class="container">
+    <style>
+        .container {
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            display: flex;
 
-</div>
+        }
+
+        .container .box {
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0px 20px 0px 20px;
+            /* box-shadow: 3px 5px 4px 3px rgba(0, 0, 0, 0.836); */
+            box-shadow: 3px 4px 5px 3px rgba(0, 0, 0, 0.836);
+           
+            background-image: url(https://wallpapercave.com/wp/wp2309567.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            color: white;
+
+        }
+
+
+        .container .box img {
+            border: 1px solid black;
+            height: 120px;
+            width: 120px;
+            border-radius: 100px;
+            justify-content: center;
+            box-shadow: 0px 0px 3px 4px white;
+        }
+
+
+    </style>
+</head>
+
 <body>
+
+    <div class="container">
+        
+    </div>
+
+
+
     <script>
+        let container = document.querySelector(".container");
+
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.status == 200 && this.readyState == 4) {
+                let img_data = JSON.parse(this.responseText);
+
+                for (let x = 0; x <= 100; x++) {
+                    let jsonData = `
+                             <div class="box">
+                           <img src="${img_data[x].url}" alt="">
+                             <h1>${img_data[x].title}</h1>
+                          </div>`;
+
+                    container.insertAdjacentHTML("afterbegin", jsonData)
+                }
+            }
+        }
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/photos", true);
+        xhr.send();
 
     </script>
 </body>
 
 </html>
-

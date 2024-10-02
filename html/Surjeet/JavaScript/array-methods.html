@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let arry =["One","Two","Three",'Four',"Five"];
+        let arry =["One","Two","Three",'Four',"Five","Two",'Six'];
 
         document.write(arry);
         document.write("<br><br>")
@@ -31,6 +31,63 @@
         // let data = arry.join();  // Convert The array into a single string
 
         // document.write(typeof(data))
+
+        // let newArray=  arry.slice(1,5); //break array into parts
+
+        // document.write(newArray)
+
+        // let newArr=["A","B"];
+
+        // document.write(arry.splice(1,4)) //Delete data from array
+
+
+        // document.write(Array.isArray(arry))
+
+        // document.write(arry.indexOf("Two"))
+
+        // document.write(arry.lastIndexOf("Two"))
+
+
+
+        // document.write(arry.includes("Ones"))
+
+
+
+        let num=[10,5,8,9,25,78,66];
+
+        document.write(num);
+
+        document.write("<br><br>")
+
+        function check(val){
+            return val>10;
+         }   //function for checking value
+   
+        // document.write(num.some(check))  //checks some value grater tha 10 are presents in arra or not
+
+        // document.write(num.every(check)) //checks every value grater tha 10 are presents in arra or not
+
+        // let data = num.filter(check) // create a new array with grater tha value 10
+        // document.write(data)
+
+// document.write(num.toString())  //convert array into string
+
+// document.write(num.valueOf())  //retrun itself
+
+// num.fill(5)
+
+// document.write(num)
+
+
+// arry.forEach(function(e){
+//     document.write(e + "<br>")
+// })  //works like a loop for each index of an array
+
+
+arry.map(function(e){
+    document.write(e + "<br>")
+}) //works like a loop for each index of an array
+
     </script>
 
 

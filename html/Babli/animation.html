@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+<style>
+    .box{
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        margin: 150px auto;
+        background-color: yellow;
+    
+        /* animation-name: move; */
+        /* animation-duration: 1s; */
+        /* animation-delay: 2s; */
+        /* animation-iteration-count: infinite; */
+        /* animation-timing-function: linear; */
+        /* animation-direction: alternate-reverse; */
+        /* animation-direction: alternate; */
+        /* animation-fill-mode: forwards; */
+
+        animation: abcd 1s linear 0s infinite alternate;
+    }
+
+
+@keyframes move {
+    form{
+        border-radius: 0;
+    }
+
+    to{
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+
+
+@keyframes abcd {
+    0%{
+        border-radius: 0;
+        background-color: yellow;
+    }
+
+    50%{
+        border-radius: 50%;
+        background-color: red;
+        transform: translate(100px,100px);
+    }
+
+    100%{
+        border-radius: 0;
+        background-color: green;
+    }
+}
+
+
+
+.box:hover{
+    animation-play-state: paused;
+}
+</style>
+</head>
+<body>
+    
+    <div class="box">
+        
+    </div>
+
+</body>
+</html>
