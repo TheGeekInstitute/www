@@ -15,21 +15,20 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif
-            ;
+            font-family: Arial, Helvetica, sans-serif;
 
 
         }
 
         .container {
-            background-image: url(https://cdn.neowin.com/news/images/uploaded/2023/05/1683747988_background-size1920x1080-4e1694a6-75aa-4c36-9d4d-7fb6a3102005-bc5318781aad7f5c8520.jpg);
+            background-image: url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            height: 650px;
+            height: 100vh;
 
             background-blend-mode: overlay;
-            background-color: rgba(0, 0, 0, 0.24);
+            background-color: rgba(0, 0, 0, 0.664);
             color: white;
         }
 
@@ -57,7 +56,7 @@
             font-weight: 600;
         }
 
-        .nav #btn2 {
+        .nav #btnn {
             width: 100px;
             background-color: red;
             margin-left: 20px;
@@ -65,7 +64,7 @@
 
         }
 
-        .nav #btn1 {
+        .nav #btna {
             font-size: 0.9rem;
             background-color: black;
         }
@@ -78,6 +77,138 @@
 
             }
         }
+
+        .page {
+            margin-top: 200px;
+        }
+
+        .page h1 {
+            font-size: 50px;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        .page h6 {
+            font-size: large;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        .field-box {
+            display: flex;
+            /* display: block; */
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        .field-box input {
+            width: 311px;
+            height: 60px;
+            background-color: transparent;
+            color: white;
+            padding: 0 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+
+
+        }
+
+        .field-box #btnb {
+            background-color: red;
+            border: none;
+            width: 190px;
+            margin-left: 10px
+        }
+
+        .container1 {
+            background-color: black;
+            padding: 0 50px;
+
+        }
+
+        .container1 .content h3 {
+            color: white;
+            padding-top: 30px;
+
+        }
+
+        .container1 .list {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+
+        .container1 .list li img {
+            height: 200px;
+            border-radius: 10px;
+
+
+        }
+
+        .container1 .box {
+            height: 30vh;
+            background-image: linear-gradient(to bottom right, rgba(4, 113, 255, 0.315), rgba(128, 0, 128, 0.233));
+            border-radius: 10px;
+            margin-top: 10px;
+            padding: 30px;
+
+        }
+
+        .container1 .item {
+            color: white;
+
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        .container2{
+            height: 500px;
+            width: 100%;
+
+        }
+        .container2 input[type="checkbox"]{
+            display: none;
+        }
+        .container2 .accordian-about{
+           margin: 5px 0;
+        }
+        .container2 .accordian-about .heading{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            background-color:rgba(128, 128, 128, 0.466);
+            height: 70px;
+            font-size:1.15rem;
+            cursor: pointer;
+            color:white;
+        }
+        .container2 .accordian-about .content{
+            background-color:rgba(128, 128, 128, 0.363);
+            padding: 0 10px;
+            font-size: large;
+            display: none;
+        }
+        .container2 .accordian-about .heading{
+            transition: all 0.3s linear;
+        }
+        .container2 input[type="checkbox"]:checked ~ .content{
+            display: block;
+        }
+        .container2 input[type="checkbox"]:checked ~ .heading i{
+            transform:rotate(45deg);
+        }
+        .container2 .accordian-about .content p{
+            color: white;
+        }
+    
     </style>
 </head>
 
@@ -90,28 +221,136 @@
 
 
             <div class="button">
-                <button id="btn1">
+                <button id="btna">
                     <i class="fa-solid fa-language"></i>
                     Languages</button>
 
-                <button id="btn2">Sign in</button>
+                <button id="btnn">Sign in</button>
             </div>
         </div>
-        <div class="page"><h1> Unlimited movies, TV shows <br>
-        and more</h1>
-    <h6>Starts at $1.99. Cancel at any time. <br>Ready to watch? Enter your email to cerate or restart your <br>membership.</h6>
-</div>
-<div class="field-box">
-    <form action="">
-        <input type="email" name="" id="" value="Email address">
-        <input type="btn" name="Get start" id="btn" value="get start">
-    </form>
-</div>
+        <div class="page">
+            <h1> Unlimited movies, TV shows <br>
+                and more</h1>
+            <h6>Starts at $1.99. Cancel at any time. <br>Ready to watch? Enter your email to cerate or restart your
+                <br>membership.
+            </h6>
+        </div>
+        <div class="field-box">
+            <form action="">
+                <input type="email" name="" value="Email address">
+                <input type="btn" name="Get start" id="btnb" value="get start">
+            </form>
+        </div>
     </div>
     <div class="main">
         <hr id="grad3">
     </div>
+    <div class="container1">
+        <div class="content">
+            <h3>Trending Now</h3>
+            <div class="list">
+                <li><img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXbZAShSg0ZfQHJGZBU9G8UVF-Hp2f_ix_q8Pre3l5uk6S0WYBeDE-DWr08R2euefmOzixeDNjDTL-AEG9hM6mqe4RnMfSd_q6-X7H8WXGVRNASaC-KE3S3pugE_RGteKgbA7uR-okEzPlAfP_8BWq-QlCD02t01fCm3BQGJvUWIu8Tk6CU9oIhrqa5aCAvEcQO3XV3vPz0SISnsvuP3_HQJunFHMFL1Yhji5tz_3vqiWf6zKjFYtMiuzsug3CLuU0f9oBuPA2tKlaT5poJNaBW4O0pV59JCdL5YyXJPYDtrvzuaLFarx-Q3_YyGw6I0CX3izWBwp1ftWVv3o7pij44.jpg?r=7a3"
+                        alt=""></li>
+                <li><img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABaO7ECgEt1g4D_TuP1FifxLvgsYcP01mW-zRxhZpqYKIOJQD1AO0WNgr0lbVuQ-8FTp-X8ehD9Dqt2DJTgWAqhpC4dpu7IwFZtYbVMm8K5FkB3YLwTLpXqKpmAs9cqYoCV4gZgwzvC-4UFxT-SHZZ53rOdKxC1mDhq1bn567sL26t6ZRtYKwo6y85X0dhEorZARo-sn-lZjJF7sxMSa6Tj5HvQG5vdzh5ZFZO_6bAS8blNipiiAW6pPm7msfloIgVLzMkYX3OPq3oJJ0mLVFfgHhs3vd7WvhbcSEiVcANyy8WkFyVi5fvP9Tde0PpsmbcYKUME4LXste35LQUPs-N5s.jpg?r=6b0"
+                        alt=""></li>
+                <li><img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRell2q7GkPUQ6t9PvFIlVQ7aK7tq6TM3n6tiCA2Z-8IrJobpWPtg1PNQ56YtOup7efqbrZlvVCC4IovyUIJd-5G_oYeTRbC8WbUio80NPg9D58J5KJ29wATEk1zH5xJptre8Sq1w9qkswMjq82qMgY-uJm6aNNwTNJcuFf7VlDVDL22FQ773Ua9owfOQkxu182R_3HXWYNkX0PDNm2b-6vLYSpIhVNmrZKBYpeWqZBDG2-5cR9bAy1D_EvRNuRLdb9nVotyQ3S73nz9iajdXsoz7Lqd_LGlK25BfmV0CZauaBuxjNVh4qLuACFfv4GBnOQbWIdUqOnOltRMpIZHg2kikhdVZI6i5L-5RVBfI_dUpnvqeQo.jpg?r=cb7"
+                        alt=""></li>
+                <li><img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABanmkWKTsNXd1kwyWqeHBEpUw8eaVnhDb1xSoKJakKdw9UM_VIjCwEksl-41sfNvy73eFSYio6FeW3-DHJuGztUhAyzf1H---Khtyx-jO03H8MZ1PsRyOQOrumfwj2NIregbk7GjY4wV9dcGlwNjPAh3OWFnhuR-cpKPV2uLmw8MQC49vFTydVJ1pvG55FBLod0kf6jYYwjwqCC9nWwwyBNpftZyjdYh8PaENNaeIcFlSu3-sQaUQ-3v__EDIUCiW7Sn-yagU3pY4Gm4nYW2vhcfBDXlUEYmYz9tAeaKzojtR1-OYEchlZK0x1dLo985DuMSQAQQHeL1Fo3wTjpmTQc.jpg?r=d7f"
+                        alt=""></li>
+                <li><img src="https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdinVTuNynxLFTLjTifAYOWKMC-KPFajWZ-rEYutwiBuO9nTjxbkLEnUTzi2Dlp-BTQef4AAI8oh2v-_zzoSlQTqDKAiBlt1raFksfpYdG6Y65UjANLsth_H5aJtbmozZHAhG0UW_VtFkj7zOre1qyYYZtGi_e90TXOTVQqEjnbvINd6J3YfxtC09eM7sOKPG_xlK5sRrd3_FjqX68JdNa7Z6grVkDLMiVyZs_x3UmMyM3lU5C-LTPPJYwt-iGaiNnjSqVqtlEUjrnFfFk8fkzG4kNhR.jpg?r=6f0"
+                        alt=""></li>
+            </div>
+        </div>
+        <div class="item">
+            <h2>More reason to join</h2>
+            <div class="box">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="box">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+            <div class="box">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            </div>
+            <div class="box">
+                <h2>Create profiles for kids
+                </h2>
+                <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                    your membership.</p>
+            </div>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+       
+</head>
+<body>
+    <div class="container2">
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn">
+        <label for="btn" class="heading">
+            <p>what is netfilx?</p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn1">
+        <label for="btn1" class="heading">
+            <p>How much does netfilx cost</p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn2">
+        <label for="btn2" class="heading">
+            <p>Where can I watch? </p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn3">
+        <label for="btn3" class="heading">
+            <p>How do I cancel?</p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn4">
+        <label for="btn4" class="heading">
+            <p>What can I Watch on Netflix</p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
+       <div class="accordian-about">
+        <input type="checkbox" name="" id="btn4">
+        <label for="btn4" class="heading">
+            <p>Is Netflix good for kids</p>
+            <i class="fa-solid fa-plus"></i>
+        </label>
+       <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos alias magni sint quia sit. Dicta voluptate sequi deleniti non possimus sit fugiat porro repellat repudiandae in saepe, nemo ab.</p>
+       </div>
+       </div>
 
+
+    </div>
+    </div>
 </body>
 
 </html>
