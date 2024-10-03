@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Nav</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        .nav{
+            height: 3.5rem;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-family: cursive;
+            font-weight: 900;
+            text-shadow: 2px 2px red;
+        }
+        
+        .nav .logo span{
+            text-shadow: 2px 2px white;
+            color: red;
+        }
+
+        .nav .links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav ul li a{
+            display: block;
+            margin: 0 10px;
+            font-size: large;
+            color: white;
+            padding: 0 10px;
+            line-height: 3.5rem;
+        }
+
+        .nav ul li a:hover{
+            background-color: red;
+        }
+
+        .container{
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .container .box{
+            background-color: aquamarine;
+            padding:10px;
+            width: 270px;
+            height: 270px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+            margin: 15px;
+        }
+
+        .container .box img{
+            height: 70px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .container .box a{
+            display: block;
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+            margin: 5px auto;
+            padding: 7px 12px;
+            border-radius: 3px;
+        }
+
+        .container .box a:hover{
+            background-color: blue;
+        }
+
+        .footer{
+            background-color: black;
+            color: red;
+            height: 40px;
+            text-align: center;
+        }
+
+        .footer p{
+            line-height: 40px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="nav">
+        <div class="logo"> LO<span>GO</span> </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+       
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="list.html">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="media.html">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+               
+        <div class="box">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>ABCD XYZ</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit illo exercitationem aspernatur facilis soluta.</p>
+            <a href="#">Read More</a>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright &copy; All Rights Reserved</p>
+    </div>
+
+
+</body>
+</html>
