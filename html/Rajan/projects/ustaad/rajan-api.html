@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>api</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container .box{
+            margin: auto;
+            text-align: center;
+            /* border: 1px solid black; */
+            width: 20rem;
+            box-shadow: 2px 2px 2px black;
+        }
+        .container .box img{
+            width: 80%;
+            border-radius: 100%;
+        }
+
+    </style>
 </head>
 <body>
+    <div class="container">
+    </div>
     <script>
+        let container=document.querySelector('.container');
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function(){
             if(this.status==200 && this.readyState==4){
@@ -14,9 +41,16 @@
                 // console.log(json_data)
 
                 for(let data of json_data){
+
                     console.log(data)
-                    document.write("<h1>"+data.title+"</h1>"+"<br>");
-                    document.write('<img src="'+data.url+'">')
+                    let card = `<div class="box">
+                                    <img src="${data.url}" alt=""><br>
+                                    <h1>${data.title}</h1><br>
+                                </div>
+                            `;
+                    container.insertAdjacentHTML("afterbegin",card)
+                    // document.write("<h1>"+data.title+"</h1>"+"<br>");
+                    // document.write('<img src="'+data.url+'">')
                 }
             
             }

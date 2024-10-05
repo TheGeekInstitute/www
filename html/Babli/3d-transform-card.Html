@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D-card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <style>
     *{
         margin:0 ;
@@ -12,44 +14,83 @@
     }
 
     .container{
+           /* border:2px solid black ; */
         height:300px ;
         width:300px ;
         position:absolute ;
-        top:calc(50%-150px) ;
-        left:calc(50%-150px) ;
+        top:calc(50% - 150px) ;
+        left:calc(50% - 150px) ;
         text-align:center ;
         transform-style:preserve-3d ;
         perspective:600px ;
+        cursor:pointer;
     }
 
-    .card{
-        height:100% ;
-        width:100px ;
+     .container .card{
+       backface-visibility: hidden;
         transform-style:preserve-3d ;
-        transition:all 1s ease-in-out;
+        transition:all .5s ease-in-out;
     }
 
     .container .card .front,
      .container .card .back{
-        font-size:70px ;
-        line-height:100px ;
+        /* font-size:70px ; */
+        /* line-height:100px ; */
         height:300px ;
         width:300px ;
         position:absolute ;
         color:white ;
         backface-visibility:hidden ;
         border-radius:10px ;
-        box-shadow:0px 0px 30px black ;
+        box-shadow:0px 0px 10px black ;
      }
 
      .container .card .front{
         background-color:aqua ;
      }
 
+     .front img{
+        height:150px ;
+        width:150px ;
+        margin:10px ;
+        border:5px solid purple ;
+        border-radius: 50% ;
+        text-shadow:3px 3px rebeccapurple ;
+     }
+
+     .card .front h1{
+        color:White ;
+            /* border-bottom:2px solid white ; */
+            font-size:xx-large;
+            font-family:cursive;
+            
+            font-style:normal;
+            line-height:150px ;
+            text-shadow:2px 2px rgb(139, 44, 49) ;
+     }
+
+    .card .front .icons{
+     
+     font-size: 40px;
+      }
+
+     .icons .fa-tree{
+     color:green ;
+     }
+
      .container .card .back{
         background-color:blue ;
         transform: rotateY(180deg);
      }
+
+     .card .back p{
+        margin-top:50px ;
+        height:100px ;
+        color: azure;
+        line-height:20px ;
+     }
+
+     
 
      .container:hover .card{
         transform: rotateY(180deg);
@@ -59,8 +100,21 @@
 <body>
   <div class="container">
     <div class="card">
-        <div class="front">front:)</div>
-        <div class="back">back:)</div>
+        <div class="front">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcvVDR_s1cWmyCPRPmDOd0SnlcmQ95IMXC7HX5WsuL1GC53uYadv0VUwYyA&s" alt="">
+            <h1>Save Environment</h1>
+            <div class="icons">
+                <i class="fa-solid fa-tree"></i> 
+                <i class="fa-solid fa-tree"></i> 
+                <i class="fa-solid fa-tree"></i> 
+                <i class="fa-solid fa-tree"></i> 
+                <i class="fa-solid fa-tree"></i> 
+            </div>
+        </div>
+        <div class="back">
+            <p>Save Environment save life. Make a pollution free environment.A pollution free environment give us a fresh air if our environment is polluted then we don't get a fresh air this polluted air is harmful for us. In a polluted if we take oxygen a harmful air is coming in our body and this make us unhealthy So, if you stay heathy protect our environment and grow more trees to make our environment green and clean. </p>
+           
+        </div>
     </div>
   </div>  
 </body>
