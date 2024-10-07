@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSEUDO-ELEMENT</title>
-        <style>
-            .para::first-letter{
-                font-size: xx-large;
-                color: red;
-            }
-            .para::first-line{
-                color: green;
-            }
-            .para{
-                user-select: none;
-            }
-            .para::selection{
-                 color: red;
-                 background-color: yellow;
-            }
-            ul li::marker{
-                color: red;
-            }
-            input::placeholder{
-                color: red;
-            }
-          
-        </style>
+    <style>
+        .para::first-letter {
+            font-size: xx-large;
+            color: red;
+        }
+
+        .para::first-line {
+            color: green;
+        }
+
+        .para {
+            user-select: none;
+        }
+
+        .para::selection {
+            color: red;
+            background-color: yellow;
+        }
+
+        ul li::marker {
+            color: red;
+        }
+
+        input::placeholder {
+            color: red;
+        }
+        #geek::
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button {
+            background-color: orange;
+            border: 2px solid black;
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <ul>
         <li>ONE</li>
         <li>TWO</li>
@@ -38,15 +51,20 @@
 
 
     <p class="para">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, saepe. Delectus recusandae neque praesentium vero accusantium! Dolore praesentium ad nisi molestiae adipisci esse iusto neque, quaerat unde doloribus maxime id!
-        Distinctio officiis debitis impedit, minus perferendis ea nisi magnam optio ipsa, labore at reiciendis libero! Culpa et, consequuntur quae quam illum maxime perferendis veritatis aliquid repellendus eaque architecto cum nesciunt?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, saepe. Delectus recusandae neque praesentium
+        vero accusantium! Dolore praesentium ad nisi molestiae adipisci esse iusto neque, quaerat unde doloribus maxime
+        id!
+        Distinctio officiis debitis impedit, minus perferendis ea nisi magnam optio ipsa, labore at reiciendis libero!
+        Culpa et, consequuntur quae quam illum maxime perferendis veritatis aliquid repellendus eaque architecto cum
+        nesciunt?
     </p>
 
     <input type="text" name="" id="" placeholder="MUKUL">
     <input type="file">
- 
+
 
     <h1 id="geek">GEEK</h1>
 
 </body>
+
 </html>
