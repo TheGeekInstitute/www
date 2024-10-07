@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .nav a{
+            color: black;
+            font-size: x-large;
+        }
+
+        .nav #btn{
+            font-size: large;
+            color: white;
+            background-color: royalblue;
+            padding: 7px 12px;
+            border-radius: 5px;
+        }
+
+        .main{
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 600px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.315);
+            background-blend-mode: overlay;
+        }
+
+        .main h1{
+            color:white;
+            font-size: 40px;
+            width: 550px;
+            margin-inline: auto;
+            padding-top: 200px;
+            margin-bottom: 50px;
+        }
+
+        .main form input{
+            height: 45px;
+            width: 400px;
+            font-size: large;
+            padding: 2px 5px;
+        }
+
+        .main form #submit{
+            background-color: royalblue;
+            color: white;
+            border: none;
+            width: 80px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="#">Start Bootstrap</a>
+        <a href="#" id="btn">Sign Up</a>
+    </div>
+
+    <div class="main">
+        <h1>Generate more leads with a professional landing page!</h1>
+        <form>
+            <input type="email" placeholder="Email Address">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+</body>
+</html>

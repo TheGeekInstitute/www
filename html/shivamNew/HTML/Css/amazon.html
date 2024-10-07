@@ -24,11 +24,11 @@
         .page{
             height: 200vh;
             width: 100vw;
-            border: 1px solid magenta;
+            /* border: 1px solid magenta; */
         }
         .nav{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             height: 8vh;
             width: 100vw;
             display: flex;
@@ -38,17 +38,39 @@
             align-items: center;
             font-size: smaller;
         }
+        .nav span{
+            font-size: 1.03em;
+            font-weight: 600;
+        }
         .nav .left,.left li,.right,.right li,.center{
             display: flex;
             /* justify-content: space-evenly; */
             border: 1px solid green;
             align-items: center;
             padding: .8em;
+            @keyfram &{
+
+            }
 
         }
-        .center li .input{
-            height: 5vh;
-            width: 42vw;
+        .nav li{
+            margin-right: .2em;
+        }
+        .nav .left{
+            /* border: 1px solid red; */
+            /* float: left; */
+        }
+        .center li select,i{
+            position: absolute;
+        }
+        .center li input{
+            float: center;
+           /* border: 1px solid red; */
+           height: 6vh;
+           width: 47vw;
+        }
+        .right{
+            /* width: 30vw; */
         }
 
     </style>
@@ -57,25 +79,27 @@
     
     <div class="page">
         <div class="nav">
-            <div class="left" style="height: 7vh; width: 26vw; margin: 0 0;">
+            <div class="left" style="height: 7vh; width: 26vw; ">
                 <li><img src="https://zeevector.com/wp-content/uploads/LOGO/Amazon-India-Logo-PNG-White2.png" style="height: 4vh; width: 7vw; "></li>
-            <li><i class="fa-solid fa-location-dot"></i><p>Deliverung to New Delhi 110043
-                 <br><span>Update Location</span>
+            <li style="width: 15vw;"><p>Delivering to New Delhi 110043
+                 <br><i class="fa-solid fa-location-dot"; style="margin: ;"></i><span>Update Location</span>
             </p></li>
             </div>
             <div class="center" >
-                <li> <select name="" id="">
+                <li> <select name="" id="all" style="border: none; height: 5.9vh; width: 3.5vw;
+                padding: .6em; border-radius: 5px 0 0 5px; border-right: 1px solid rgba(192, 192, 192, 0.822);">
                     <option value="">All</option>
                     <option value="">All Categories</option>
                     <option value="">All</option>
     
-                </select> <input type="search" placeholder="Search Amazon.in"><i class="fa-solid fa-magnifying-glass"></i></li>
+                </select>
+                 <input type="search" placeholder="Search Amazon.in" style="padding-left: 4vw; font-size: 1.1em;"><i class="fa-solid fa-magnifying-glass" style=" font-size: 1.5em; padding: .5em; background-color: rgb(235, 208, 89); color: rgb(77, 74, 74); left: 71vw; border-radius: 0 5px 5px 0;"></i></li>
             </div>
-            <div class="right">
-                <li><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/india-flag-design-template-186e8b084e00b5e1f777ddf3f534b763_screen.jpg?ts=1625072969" alt="" style="height: 3vh; width: 3vw;"><p>EN</p><i class="fa-solid fa-caret-down"></i></li>
-                <li><p>Hello, sing in <br> <span>Accont & Lists</span></p><i class="fa-solid fa-caret-down"></i></li>
+            <div class="right" style=" width: 30vw;">
+                <li><img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg" alt="" style="height: 1.3em; width: 1.7em; margin-right: .3em; "><p>EN<i class="fa-solid fa-caret-down" style="margin: .2em;"></i></p></li>
+                <li><p>Hello, sing in <br> <span>Accont & Lists</span><i class="fa-solid fa-caret-down" style="margin-left: .2em; color: gray;"></i></p></li>
                 <li><p>Returns <br><span>& Orders</span></p></li>
-                <li><i class="fa-brands fa-opencart"></i><span>Cart</span></li>
+                <li style=" padding:1em 0;"><i class="fa-brands fa-opencart" style="font-size: 2.5em;  ;"></i><p style=" margin-left: 2em; margin-top: 1.5em;"><span>Cart</p></li>
 
             
             </div>

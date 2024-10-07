@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing-page</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration:none ;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .nav{
+            height: 50px;
+            padding: 0 20px;
+            display: flex;
+            align-items:center ;
+            justify-content: space-between;
+
+        }
+        .nav a{
+            font-size: x-large;
+            color: black;
+        }
+
+        .nav #sign {
+            color:hsl(225, 20%, 96%) ;
+            padding:7px 5px ;
+            background-color:royalblue;
+            border-radius: 5px;
+            font-size: large;
+
+        }
+        .main{
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+            background-size:cover ;
+            background-color: rgba(37, 28, 28, 0.315);
+            background-repeat:no-repeat ;
+            background-position: center;
+            height: 600px;
+            background-blend-mode:overlay;
+            text-align: center;
+        }
+        .main h1{
+            color: white;
+            font-size: 40px;
+            width: 550px;
+            margin-inline: auto;
+            margin-bottom:50px ;
+            padding-top: 200px;
+
+        }
+
+        .main form input{
+            height: 45px;
+            width: 400px;
+            padding: 2px 5px;
+            font-size: large;
+        }
+        .main form #submit{
+            background-color: royalblue;
+            color: white;
+            border:none ;
+            width:80px ;
+            border-radius: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="#"> Start Bootstarp</a>
+        <a href="#" id="sign"> Sign Up</a>
+
+    </div>
+    <div class="main">
+        <h1> Generate more leads with a professional landing page!</h1>
+        <form >
+            <input type=" email" placeholder="email address">
+            <input type="submit" value="submit"
+            id="submit">
+
+        </form>
+    </div>
+    
+</body>
+</html>

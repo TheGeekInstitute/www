@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            /* border: 2px solid red; */
+            height: 300px;
+            width: 270px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 150px auto;
+            text-align: center;
+            background-image: url("../wallpapers/abstract/Acrylic\ Paint\ 1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container .card{
+            height: 300px;
+            width: 270px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+            transform: translateY(90%);
+            transition: all .3s ease-in-out;
+            
+        }
+
+         .container .card img{
+            height: 70px;
+            width: 100px;
+            border-radius: 10px;
+
+         }   
+
+         .container:hover .card{
+            transform: translateY(0);
+         }
+
+         .one{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+         }
+
+         .one img{
+            height: 200px;
+            width: 200px;
+            transition: all .3s linear;
+         }
+
+         .one:hover img{
+            transform : scale(1.5);
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <img src="../web/images/11.jpg" alt="asd">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eaque quis. Minus, architecto laboriosam corporis, in vel sunt laborum magnam aperiam quis laudantium</p>
+        </div>
+    </div>
+
+    <div class="one">
+        <img src="../web/images/11.jpg" alt="">
+    </div>
+
+</body>
+</html>

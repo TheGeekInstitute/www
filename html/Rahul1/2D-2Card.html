@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 150px auto;
+            background-image: url(9d59308f8c84825d21c5d4aa64312268.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+        .container .card{
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(127, 255, 212, 0.267);
+            color: white;
+            transform: translateY(90%);
+            transition: all .3s ease-in-out;
+
+        }
+        .container .card img{
+            height: 100px;
+            width: 80px;
+            border-radius: 10px;
+        }
+        .container :hover .card{
+            transform: translateY(0);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="9d59308f8c84825d21c5d4aa64312268.jpg" alt="">
+            <h1>hello buddy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas numquam quia ipsum perspiciatis explicabo omnis impedit ad! Assumenda quibusdam voluptas aliquid deserunt rem cumque molestias, nobis eos vero id!
+            Doloremque libero esse fuga obcaecati tempora cum consequatur nobis, adipisci officiis sunt voluptate earum minima id ab illo voluptas non vero necessitatibus cumque. Sed commodi soluta nemo at neque eligendi?</p>
+
+        </div>
+    </div>
+</body>
+</html>
