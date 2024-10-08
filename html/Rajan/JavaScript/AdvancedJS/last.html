@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last</title>
+</head>
+<body>
+    
+    <script>
+        // "use strict"
+
+        // abcd ="abcd"
+
+        // console.log(abcd)
+
+        // let a=Symbol("a");
+        // let b =Symbol("a");
+
+        // console.log(a==b)
+
+
+        // try{
+        //     let age=19;
+        //     if(age>=18){
+        //         console.log("You can Vote");
+        //     }
+        //     else{
+        //         throw("You Can not Vote");
+        //     }
+        // }catch(e){
+        //     console.error(e)
+        // }
+
+
+        let arry=["Amit","Sumit","Ravi","Ankit","Bablu","Shyam"];
+
+        // for(let x of arry){
+        //     console.log(x)
+        // }
+
+
+        let data = arry[Symbol.iterator]();
+
+        console.log(data.next())
+        console.log(data.next())
+        console("ABCD")
+        console.log(data.next())
+        console.log(data.next())
+            
+        console.log(data.next())
+        console.log(data.next())
+        console.log(data.next())
+
+
+    </script>
+
+</body>
+</html>

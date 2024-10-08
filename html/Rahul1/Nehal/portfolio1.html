@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web-site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         *{
@@ -12,6 +13,7 @@
             padding: 0;
             text-decoration: none;
             list-style: none;
+            box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
         }
         .nav{
@@ -207,6 +209,41 @@
             font-size: 25px;
             
         }
+        .can{
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            margin: 30px auto;
+            text-align: center;
+            background-image: url(4k.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            margin-top: 50px;
+            padding-right: 20px;
+            position: absolute;
+        }
+        .can .card{
+            height: 400px;
+            width: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(97, 253, 201, 0.863);
+            color: white;
+            transform: translateY(90%);
+            transition: all .2s ease-in-out;
+            padding-right: 50px;
+        }
+        .can .card img{
+            height: 120px;
+            width: 90px;
+            border-radius: 10px;
+
+        }
+        .can:hover .card{
+            transform:translateY(0) ;
+        }
     </style>
 </head>
 <body>
@@ -262,6 +299,24 @@
         <h1>What Services you will Get from me !</h1>
 
     </div>
-    <div></div>
+    <div class="can">
+       <div class="card">
+        <img src="Wallpaper (2).jpg" alt="">
+        <h1>UI/UX Design</h1>
+        <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+       </div>
+
+
+        <div class="idea">
+           <div class="ice">
+            <img src="4k.jpg" alt="">
+            <h1>Digital Marketing</h1>
+            <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+
+           </div>
+        </div>
+
+
+    </div>
 </body>
 </html>

@@ -1,76 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing-page</title>
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        *{
+    <style>
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-decoration:none ;
+            text-decoration: none;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        .nav{
+
+        .nav {
             height: 50px;
             padding: 0 20px;
             display: flex;
-            align-items:center ;
+            align-items: center;
             justify-content: space-between;
 
         }
-        .nav a{
+
+        .nav a {
             font-size: x-large;
             color: black;
         }
 
         .nav #sign {
-            color:hsl(225, 20%, 96%) ;
-            padding:7px 5px ;
-            background-color:royalblue;
+            color: hsl(225, 20%, 96%);
+            padding: 7px 5px;
+            background-color: royalblue;
             border-radius: 5px;
             font-size: large;
 
         }
-        .main{
+
+        .main {
             background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
-            background-size:cover ;
+            background-size: cover;
             background-color: rgba(37, 28, 28, 0.315);
-            background-repeat:no-repeat ;
+            background-repeat: no-repeat;
             background-position: center;
             height: 600px;
-            background-blend-mode:overlay;
+            background-blend-mode: overlay;
             text-align: center;
         }
-        .main h1{
+
+        .main h1 {
             color: white;
             font-size: 40px;
             width: 550px;
             margin-inline: auto;
-            margin-bottom:50px ;
+            margin-bottom: 50px;
             padding-top: 200px;
 
         }
 
-        .main form input{
+        .main form input {
             height: 45px;
             width: 400px;
             padding: 2px 5px;
             font-size: large;
         }
-        .main form #submit{
+
+        .main form #submit {
             background-color: royalblue;
             color: white;
-            border:none ;
-            width:80px ;
+            border: none;
+            width: 80px;
             border-radius: 5px;
         }
 
-        
+        .feature {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 400px;
+
+        }
+
+        .feature .box {
+            height: 270px;
+            width: 270;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feature .box i {
+            font-size: 80px;
+            color: royalblue;
+            margin-bottom: 10px;
+        }
+
+        .feature .box h3 {
+            margin: 10px 0;
+        }
+
+        .feature .box p {
+            font-size: large;
+        }
+
+
+        .service .A {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+
+        .service .A .content {
+            width: 50%;
+            padding: 80px;
+            height: 50px;
+        }
+
+        .service .A img {
+            height: 500px;
+            width: 50%;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="nav">
@@ -80,13 +139,79 @@
     </div>
     <div class="main">
         <h1> Generate more leads with a professional landing page!</h1>
-        <form >
+        <form>
             <input type=" email" placeholder="email address">
-            <input type="submit" value="submit"
-            id="submit">
+            <input type="submit" value="submit" id="submit">
 
         </form>
     </div>
-    
+
+    <div class="feature">
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-window-restore"></i>
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+
+
+
+
+        </div>
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-window-restore"></i>
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-terminal"></i>
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
+        </div>
+        <div class="service">
+            <div class="A">
+                <div class="content">
+                    <h1>Fully Responsive Design</h1>
+                    <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                        device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                </div>
+                <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg"
+                    alt="">
+            </div>
+
+
+            <div class="A">
+                <div class="content">
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg"
+                        alt="">
+                    <h1>Fully Responsive Design</h1>
+                    <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                        device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                </div>
+
+
+                <div class="A">
+                    <div class="content">
+                        <h1>Fully Responsive Design</h1>
+                        <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on
+                            any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                    </div>
+                    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg"
+                        alt="">
+                </div>
+
+
+                <div class="A">
+                    <div class="content">
+                        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg"
+                            alt="">
+                        <h1>Fully Responsive Design</h1>
+                        <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on
+                            any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                    </div>
+                </div>
+            </div>
+
 </body>
+
 </html>

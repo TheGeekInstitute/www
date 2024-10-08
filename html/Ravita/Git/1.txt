@@ -1,0 +1,39 @@
+    1  ls
+    2  cd Desktop/
+    3  ls
+    4  ls -l
+    5  ls -la
+    6  clear
+    7  mkdir abcd
+    8  ls
+    9  cd abcd/
+   10  ls
+   11  touch data.html
+   12  ls
+   13  touch style.css
+   14  ls
+   15  mkdir data
+   16  cp style.css data
+   17  ls
+   18  clear
+   19  ls
+   20  ls data
+   21  mv data.html data
+   22  ls
+   23  rmdir data
+   24  rm -rf data/
+   25  ls
+   26  cd ..
+   27  rm -rf abcd/
+   28  clear
+   29  ls
+   30  cat names.txt
+   31  clear
+   32  more names.txt
+   33  clear
+   34  head names.txt
+   35  tail names.txt
+   36  tail -n 5 names.txt
+   37  head -n 20 names.txt
+   38  history
+

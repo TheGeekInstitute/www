@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cursor</title>
+
+    <style>
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+          
+        .box1{
+            cursor:grabbing;
+        }
+        .box2{
+            cursor:all-scroll;
+        }
+
+        .box3{
+            cursor:zoom-in;
+        }
+
+        .box4{
+            cursor:copy;
+        }
+
+        .box5{
+            cursor: url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/help.gif"),auto;
+        }
+
+        .box6{
+            cursor: url("https://developer.mozilla.org/en-US/docs/Web/CSS/cursor/grabbing.gif"),auto;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+
+</body>
+</html>

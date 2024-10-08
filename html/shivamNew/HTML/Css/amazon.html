@@ -37,6 +37,8 @@
             background-color: rgb(30, 35, 48);
             align-items: center;
             font-size: smaller;
+            /* position: sticky; */
+            top: 0;
         }
         .nav span{
             font-size: 1.03em;
@@ -44,17 +46,19 @@
         }
         .nav .left,.left li,.right,.right li,.center{
             display: flex;
-            /* justify-content: space-evenly; */
-            border: 1px solid green;
+            justify-content: space-evenly;
+            /* border: 1px solid green; */
+            /* border: hidden; */
             align-items: center;
-            padding: .8em;
-            @keyfram &{
-
-            }
+            padding: .6rem;
+            box-sizing: border-box;
 
         }
+        .nav .left li:hover,.right li:hover{
+            border: 1px solid white;
+        }
         .nav li{
-            margin-right: .2em;
+            margin-right: .2rem;
         }
         .nav .left{
             /* border: 1px solid red; */
@@ -70,9 +74,60 @@
            width: 47vw;
         }
         .right{
-            /* width: 30vw; */
+            width: 30vw;
+            /* border: 1px solid red; */
+        }
+        .nav2{
+            display: flex;
+            justify-content: space-between;
+            height: 5.5vh;
+            width: 100vw;
+            /* border: 1px solid red; */
+            background-color: rgb(45, 54, 70);
+        }
+        .nav2 ul {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: .5rem;
+        }
+        .nav2 ul li{
+            border: 1px solid rgb(45, 54, 70);
+            padding: .5rem;
+        
+        }
+        .nav2 ul li:hover{
+            border: 1px solid white;
+        }
+        .nav2 ul li a{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .nav2 .right{
+            /* border: 1px solid green; */
+            width: 22rem;
         }
 
+        .theme{
+            height: 80vh;
+            width: 100vw;
+            z-index: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .trans{
+            position:absolute;
+            top: 60vh;
+            /* z-index: 2; */
+            height: 50vh;
+            width: 100vw;
+            border: 1px solid red;
+            /* background-color: white; */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.185),rgba(255, 255, 255, 0.562),rgba(255, 255, 255, 0.938) , white);
+        }
+       
+        
     </style>
 </head>
 <body>
@@ -93,21 +148,45 @@
                     <option value="">All</option>
     
                 </select>
-                 <input type="search" placeholder="Search Amazon.in" style="padding-left: 4vw; font-size: 1.1em;"><i class="fa-solid fa-magnifying-glass" style=" font-size: 1.5em; padding: .5em; background-color: rgb(235, 208, 89); color: rgb(77, 74, 74); left: 71vw; border-radius: 0 5px 5px 0;"></i></li>
+                 <input type="search" placeholder="Search Amazon.in" style="padding-left: 4vw; font-size: 1.1em;"><i class="fa-solid fa-magnifying-glass" style=" font-size: 1.67em; padding: .5em; background-color: rgb(243, 195, 93); color: rgb(77, 74, 74); left: 63rem; border-radius: 0 5px 5px 0;"></i></li>
             </div>
             <div class="right" style=" width: 30vw;">
-                <li><img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg" alt="" style="height: 1.3em; width: 1.7em; margin-right: .3em; "><p>EN<i class="fa-solid fa-caret-down" style="margin: .2em;"></i></p></li>
+                <li style="padding:1rem 1rem 1rem .4rem;"><img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg" alt="" style="height: 1.3em; width: 1.7em; margin-right: .3em; "><p>EN<i class="fa-solid fa-caret-down" style="margin: .2em;"></i></p></li>
                 <li><p>Hello, sing in <br> <span>Accont & Lists</span><i class="fa-solid fa-caret-down" style="margin-left: .2em; color: gray;"></i></p></li>
                 <li><p>Returns <br><span>& Orders</span></p></li>
-                <li style=" padding:1em 0;"><i class="fa-brands fa-opencart" style="font-size: 2.5em;  ;"></i><p style=" margin-left: 2em; margin-top: 1.5em;"><span>Cart</p></li>
+                <li style=" padding:.5rem .2rem;"><i class="fa-brands fa-opencart" style="font-size: 2.5em;  color: rgb(255, 153, 0);"></i><p style=" margin-left: 2.5em; margin-top: 1.5em;"><span>Cart</p></li>
 
             
             </div>
         </div>
-        <div class="nav2"></div>
-        <div class="row">
-            <div class="row1"></div>
+        <div class="nav2">
+            <div class="left">
+                <ul>
+                    <li style="width: 5rem;"><i class="fa-solid fa-list-ul" style=" border: 1px solid green;
+                    margin: rem;"></i><a href="" style="display:inline-block;">All</a></li>
+                    <li><a href="">Fresh</a></li>
+                    <li><a href="">MX Player</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="">Best Seller</a></li>
+                    <li><a href="">Today's Deals</a></li>
+                    <li><a href="">Mobiles</a></li>
+                    <li><a href="">Electronics</a></li>
+                    <li style="padding-left: .1rem ;"><a href="" style="width: 3.4rem;">Prime<i class="fa-solid fa-caret-down" style="margin-left: .2rem;"></i></a></li>
+                    <li><a href="">Home & Kichen</a></li>
+                    <li><a href="">Customer service</a></li>
+                    <li><a href="">Fashion</a></li>
+                </ul>
+            </div>
+            <div class="right" style="overflow: hidden;">
+                <a href=""><img src="../Screenshot 2024-10-08 at 18-18-56 Online Shopping site in India Shop Online for Mobiles Books Watches Shoes and More - Amazon.in.png" alt="" style="height: 2.1rem;"></a>
+            </div>
         </div>
+        <div class="back">
+            <div class="theme"
+            style="background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img24/Fresh/GW/Hero/September/JUP/8/RC/FC_PC1x_Hero_1500x600._CB544312268_.jpg);"></div>
+            <div class="trans"></div>
+        </div>
+        
     </div>
     
 </body>

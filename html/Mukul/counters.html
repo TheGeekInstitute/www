@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+    <style>
+        .container{
+            counter-reset: section ;
+        }
+
+        h1::before{
+            /* content: counter(section,lower-alpha) ". "; */
+            content: counter(section) ". ";
+            color: red;
+            counter-increment: section;
+        }
+
+        h2{
+            text-indent: 100px;
+        }
+
+        h1{
+            counter-reset: sub-section;
+        }
+
+        h2::before{
+            content: counter(section) "." counter(sub-section) ". ";
+            counter-increment: sub-section;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Website Developmet</h1>
+            <h2>HTML</h2>
+            <h2>CSS</h2>
+            <h2>JavaScript</h2>
+        <h1>Cyber Security</h1>
+            <h2>System Penetration Testing</h2>
+            <h2>Mobile Hacking</h2>
+            <h2>Website Hacking</h2>
+        <h1>Programming</h1>   
+            <h2>Java</h2>
+            <h2>Python</h2>
+            <h2>Rust</h2> 
+    </div>
+
+
+</body>
+</html>

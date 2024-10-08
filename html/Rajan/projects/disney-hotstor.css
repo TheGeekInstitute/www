@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.continer{
+    border: 1px solid red;
+}
+.continer .side{
+    border: 1px solid white;
+    width: 8%;
+    height: 47rem;
+}
+.continer .side .box{
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+}
+.continer .side .box img{
+    width: 5%;
+    margin: 5px;
+}
