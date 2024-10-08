@@ -4,6 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        .container{
+            width: 300px;
+            /* border: 2px solid black; */
+            padding: 10px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            position: absolute;
+            top: calc(50% - 250px);
+            left: calc(50% - 150px);
+            background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+    
+        .container h1{
+            margin: 10px 0;
+            text-align: center;
+            text-shadow: 2px 2px cyan;
+        }
+    
+        .container form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        .container form label{
+            /* border: 1px solid red; */
+            width: 80%;
+            font-size: large;
+            font-weight: 900;
+            margin: 3px 0;
+        }
+    
+        .container form input,
+        .container form select{
+            height: 35px;
+            width: 80%;
+            margin-bottom: 10px;
+            font-size: large;
+            padding: 2px 5px;
+            border: 1px solid black;
+            border-width: 1px 1px 3px 1px;
+            border-radius: 3px;
+            outline: none;
+            background-color: transparent;
+        }
+    
+        .container form #submit{
+            background-color: royalblue;
+            color: white;
+            width: 100px;
+        }
+    
+        .container form #submit:hover{
+            background-color: blue;
+        }
+    
+    </style>
 
 </head>
 <body>
@@ -19,13 +89,13 @@
             <label for="">class roll no</label>
             <input type="text">
             <label for="">Bord roll no </label>
-            
-
-
-
-
+            <input type="text">
+            <label type="">Branch</label>
+            <input type="text">
+            <label type="">amout</label>
+            <input type="text">
+            <input type="submit" id="submit" value="Sign Up">
         </from>
-
     </div>
 
 
