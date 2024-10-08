@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COUNTERS</title>
     <style>
-    
+    .container{
+        counter-reset: section ;
+    }
+
+    h1::before{
+        /* content: counter(section,lower-alpha) ". "; */
+        content: counter(section) ". ";
+        color: red;
+        counter-increment: section;
+    }
+
+    h2{
+        text-indent: 100px;
+    }
+
+    h1{
+        counter-reset: sub-section;
+    }
+
+    h2::before{
+        content: counter(section) "." counter(sub-section) ". ";
+        counter-increment: sub-section;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
