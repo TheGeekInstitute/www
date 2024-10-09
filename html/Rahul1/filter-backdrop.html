@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter backdrop</title>
+    <style>
+        img{
+            height: 250px;
+            width: 200px;
+            /* filter: blur(5px); */
+            /* filter: brightness(180% */
+            ;
+            /* filter: contrast(20px); */
+            /* filter: drop-shadow(3px 3px red); */
+            /* filter: grayscale(60%); */
+            /* filter: hue-rotate(30deg); */
+          /* filter: invert(20%); */
+          /* filter: opacity(37%); */
+          /* filter: saturate(107deg); */
+          /* filter: sepia(150%); */
+               
+
+        }
+        .one{
+            height: 300px;
+            width: 250px;
+            background-image: url(77.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .one .box{
+            border: 2px solid white;
+            width: 200px;
+            height: 200px;
+            color: white;
+        }
+        @supports
+        (backdrop-filter: blur (5px);){
+            .one .box{
+                backdrop-filter: blur(5px);
+            }
+        }
+        @supports not
+        (backdrop-filter: blur (5px);){
+            .one .box{
+                /* backdrop-filter: blur (5px); */
+                background-color: rgba(41, 41, 129, 0.589);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="greninja.jpg" alt="">
+    <div class="one">
+        <div class="box">
+            <h1></h1>
+
+        </div>
+
+    </div>
+</body>
+</html>

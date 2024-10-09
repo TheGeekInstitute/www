@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d card</title>
+    <style>
+        .container{
+            border: 1px solid red ;
+            height: 200px ;
+            width: 200px;
+            background-image: url(https://cdn.pixabay.com/photo/2017/08/25/18/48/watercolor-2681039_1280.jpg);
+            border-radius: 5%;
+            position: fixed;
+            left: 300px ;
+            top: 150px ;
+        }
+        .main{
+            height: 200px ;
+            width: 200px ;
+            border-radius: 5%;
+            transform: translateY(170px);
+            backdrop-filter:blur(1px);
+            background-color: rgba(0, 255, 128, 0.068);
+            transition: all 1s linear;
+            visibility: hidden;
+
+        }
+        .main.img{
+            height: 200px ;
+            width: 200px ;
+            border-radius: 50%;
+            padding:10px 70px  ;
+        }
+        .container:hover.main{
+            transform: translateY(-80px);
+            visibility: visible;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Geek Institude</h1>
+
+        <div class="main">
+            <img src="https://media.istockphoto.com/id/458017717/vector/king-lion-aslan.jpg?s=612x612&w=is&k=20&c=Fw9VGOzPqm2V6Bp9ygQNyRIk2LnV9qqiG1yG4qhH01U=">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa debitis quis commodi, harum, repudiandae, placeat ex nam suscipit blanditiis inventore pariatur non dicta iste consequuntur accusantium illum voluptates hic?</p>
+        </div>
+    </div>
+</body>
+</html>

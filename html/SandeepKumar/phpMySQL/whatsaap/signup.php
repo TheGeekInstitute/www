@@ -4,8 +4,8 @@ $msg="";
 $conn=mysqli_connect("localhost","root","toor","SANDEEP");
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
-    if(isset($_POST['name']) && !empty($_POST['name'])){
-        $name=$_POST['name'];
+    if(isset($_POST['fullname']) && !empty($_POST['fullname'])){
+        $name=$_POST['fullname'];
 
         if(isset($_POST['username']) && !empty($_POST['username'])){
             $username=$_POST['username'];
@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                         }
                         else{
                             //Insert;
-                            $sql="INSERT INTO `users`(`name`, `username`, `email`, `password`) VALUES ('$name','$username','$email','$password')";
+                            $sql="INSERT INTO `users`(`fullname`, `username`, `email`, `password`) VALUES ('$name','$username','$email','$password')";
                             $query=mysqli_query($conn,$sql);
                             if($query){
                                 $msg="Registration Successfully";
@@ -116,7 +116,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
           <br><br><br>
          <label  for="" class="A">Name :</label>
          <br>
-         <input type="text" class="B" name="name" placeholder="Name">
+         <input type="text" class="B" name="fullname" placeholder="Name">
          <br><br>
          <label for="" class="A" >Username :</label>
          <br>

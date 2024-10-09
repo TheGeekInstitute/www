@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTRIBUTE-SELECTORS</title>
+    <style>
+        a[target]{
+            /* color: red; */
+        }
+        input[type="text"]{
+            /* background-color: crimson; */
+        }
+        p[class~="para"]{
+            /* color:rebeccapurple; */
+        }
+        p[class^="abcd-xyz"]{
+            /* color: yellow; */
+        }
+    p[class|="abcd"]{
+        /* color: green; */
+    }
+    p[class$="key"]{
+        color: rgb(28, 14, 223);
+    }
+    p[class*="graph"]{
+        color: rgb(243, 16, 16)28, 0, 0);
+    }
+    </style>
+</head>
+<body>
+    <p align="center" class="abcd-xyz para1 paragraph1 mypara1 abcd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus in totam tenetur, sunt mollitia distinctio quaerat, voluptates similique, maxime alias magnam? Nulla vel animi omnis, reiciendis ducimus explicabo laudantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, illum aut perferendis quisquam necessitatibus repellendus rerum doloribus? Optio aliquid aspernatur et laudantium, numquam nihil reprehenderit facere, repellat quisquam, inventore consequatur?
+        Quis a iste, maxime error at iusto repudiandae provident assumenda cum commodi. Mollitia voluptates facilis laborum sapiente. Est quo, libero provident exercitationem incidunt, velit, fugiat saepe ducimus illum totam necessitatibus!
+        Iste vero explicabo ipsum quasi voluptate minus iure fugiat ut delectus, tenetur omnis autem nisi voluptas inventore a harum aspernatur earum voluptatibus, expedita adipisci. Porro nam nemo magnam excepturi eius.
+    </p>
+    <p align="left" class="para paragraph mypara my-abcd key">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident facere est aliquam eum veniam quo tenetur dolorum explicabo aspernatur aliquid, deserunt tempora eaque fugiat animi nam necessitatibus in quam iure.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae dolorum error excepturi quia tempore saepe, facere inventore consequatur soluta similique deserunt animi quaerat quam eveniet illum quo, et sequi distinctio.
+        Nesciunt dolorum id blanditiis asperiores cum voluptatem nostrum fugit tempore sapiente harum, vitae accusantium enim dolores, nulla et explicabo necessitatibus eum recusandae! Numquam, harum quod! Obcaecati eveniet pariatur sit fuga?
+        Saepe consequatur, hic debitis cupiditate quasi repellendus aspernatur dolorum deleniti vitae enim accusamus eum at, architecto voluptate provident nesciunt a dolores quas earum? Odio nisi molestias deleniti error ex placeat?
+    </p>
+    
+    <a href="#">GOOD MORNING</a>
+    <a href="#">HELLO</a>
+    <a href="#" target="_blank">SIR</a>
+<input type="text">
+<input type="password">
+</body>
+</html>

@@ -80,7 +80,7 @@
         .nav2{
             display: flex;
             justify-content: space-between;
-            height: 5.5vh;
+            height: 6vh;
             width: 100vw;
             /* border: 1px solid red; */
             background-color: rgb(45, 54, 70);
@@ -122,9 +122,49 @@
             /* z-index: 2; */
             height: 50vh;
             width: 100vw;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             /* background-color: white; */
-            background-image: linear-gradient(rgba(255, 255, 255, 0.185),rgba(255, 255, 255, 0.562),rgba(255, 255, 255, 0.938) , white);
+            background-image: linear-gradient(rgba(255, 255, 255, 0.007),rgba(255, 255, 255, 0.562),rgba(255, 255, 255, 0.938) , white);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+        }
+        .row{
+            position: absolute;
+            top:55vh ;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(91, 91, 99, 0.349);
+            /* display: none; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .row1{
+            border: 1px aolis black;
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid red;
+
+        }
+        .row .row1 .box{
+            background-color: white;
+            height: 26.5rem;
+            width: 20rem;
+            border: 1px solid green;
+            padding: 1rem;
+        }
+        .row1 .box a{
+            
+            display: inline-block;
+            height: 17rem;
+            width: 18rem;
+            border: 1px solid green;
+            color: rgb(100, 194, 231);
+        }
+        .row .row1 a image{
+            
+            height: 13rem;
+            width: 15rem;
+
         }
        
         
@@ -148,7 +188,7 @@
                     <option value="">All</option>
     
                 </select>
-                 <input type="search" placeholder="Search Amazon.in" style="padding-left: 4vw; font-size: 1.1em;"><i class="fa-solid fa-magnifying-glass" style=" font-size: 1.67em; padding: .5em; background-color: rgb(243, 195, 93); color: rgb(77, 74, 74); left: 63rem; border-radius: 0 5px 5px 0;"></i></li>
+                 <input type="search" placeholder="Search Amazon.in" style="padding-left: 4vw; font-size: 1.1em;"><i class="fa-solid fa-magnifying-glass" style=" font-size: 1.4em; padding: .5em; background-color: rgb(243, 195, 93); color: rgb(77, 74, 74); left: 61rem; border-radius: 0 5px 5px 0;"></i></li>
             </div>
             <div class="right" style=" width: 30vw;">
                 <li style="padding:1rem 1rem 1rem .4rem;"><img src="https://t3.ftcdn.net/jpg/06/12/34/84/360_F_612348476_k3i3brMUOo3N9Wk3yoceMHqZ8w4jpFqu.jpg" alt="" style="height: 1.3em; width: 1.7em; margin-right: .3em; "><p>EN<i class="fa-solid fa-caret-down" style="margin: .2em;"></i></p></li>
@@ -181,10 +221,25 @@
                 <a href=""><img src="../Screenshot 2024-10-08 at 18-18-56 Online Shopping site in India Shop Online for Mobiles Books Watches Shoes and More - Amazon.in.png" alt="" style="height: 2.1rem;"></a>
             </div>
         </div>
-        <div class="back">
+        <div class="back" style="border: 1px solid red;">
             <div class="theme"
-            style="background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img24/Fresh/GW/Hero/September/JUP/8/RC/FC_PC1x_Hero_1500x600._CB544312268_.jpg);"></div>
+            style="background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img24/HPC/GW/Jup/PC-hero/PC_Hero_3000x1200_Lifestyle_02._CB562558941_.jpg);"></div>
             <div class="trans"></div>
+        </div>
+        <div class="row">
+            <div class="row1">
+                <div class="box">
+                    <p style="font-size: 1.rem; font-weight: 800;">Up to 80% off | Electronics & accessories</p>
+                    <div class="ads">
+                        <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Img23/Budget3/REC-PC_CC_379x304._SY304_CB564096366_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;"><br>See all offers</a>
+                    </div>
+                    
+                </div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+            </div>
         </div>
         
     </div>

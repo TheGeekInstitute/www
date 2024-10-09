@@ -25,9 +25,13 @@
             text-align: center;
             margin: 150px auto ;
             width: 300px;
+            height: 350px;
             border-radius: 10px;
             padding: 10px;
             box-shadow: 10px;
+            background-color: wheat ;
+            box-shadow: 0px 0px 10px;
+            
             
         }
         .container form{
@@ -36,6 +40,49 @@
             justify-content: center;
             flex-direction: column;
         }
+        .container form label{
+            text-align: left;
+            width: 80%;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        .container form input,
+        .container form select
+        {
+            border-radius: 3px;
+            border: 1px solid black;
+            font-size: large;
+            border-width: 1px 1px 3px 1px ;
+            height: 35px;
+            width: 80%;
+            padding: 2px 3px;
+            margin: 3px 0;
+            margin-bottom: 10px;
+            background-color: transparent;
+            outline: none;
+
+            
+
+        }
+        .container form #arif{
+            margin-top: 10px;
+        }
+        .container form #submit{
+            background-color:transparent;
+            color: black;
+            width: 100px;
+            margin-top: 10px;
+        }
+        .container form #submit:hover{
+            background-color:  #ec4c28 ;
+
+        }
+        .container h1 {
+            text-shadow: 0px 0px 3px crimson;
+        }
+        
+        
         
     
 </style>
@@ -45,7 +92,7 @@
     
     <div class="container"> 
         <h1> Registration Form </h1>
-        <form action=""><label for="">Username</label>
+        <form action=""><label id="arif">Username</label>
             <input type="text">
             <label for="">Password</label>
             <input type="password">
