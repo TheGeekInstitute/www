@@ -13,17 +13,19 @@ body{
     /* border: 1px solid white; */
     width: 8%;
     height: 45rem;
+    margin-top: 20px;
 }
 .continer .side .box{
-    border: 1px solid rgb(255, 255, 255);
-    margin-top: 20px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* margin-top: 20px; */
     position: absolute;
     width: 100%;
     display: none;
 
 }
 .continer .side .box img{
-    width: 5%;
+    /* border: 1px solid red; */
+    width: 7rem;
     margin: 5px;
 }
 .continer .side .box ul{
@@ -78,6 +80,56 @@ height: 45px;
     color: white;
     font-size: 20px;   
 }
-.continer .side .one ul:hover .box{
-    display: block;
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.fade {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
