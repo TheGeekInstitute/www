@@ -9,6 +9,7 @@
 
     <style>
         *{
+            margin: 0;
             padding:0 ;
             box-sizing:border-box ;
             text-decoration: none;
@@ -43,6 +44,127 @@
             background-blend-mode: overlay;
             
            }
+           .main h1 {
+            color: white;
+            font-size: 40px;
+            width: 550px;
+            margin-inline: auto;
+            padding-top: 200px;
+            margin-bottom: 50px;
+        }
+
+        .main form input {
+            height: 45px;
+            width: 400px;
+            font-size: large;
+            padding: 2px 5px;
+        }
+
+        .main form #submit {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            width: 80px;
+            border-radius: 5px;
+        }
+
+        .features {
+            /* border: 2px solid red; */
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+
+        .features .box {
+            /* border: 2px solid red; */
+            height: 270px;
+            width: 270px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .features .box i {
+            font-size: 80px;
+            
+            color: rgb(65, 161, 225);
+        }
+
+        .features .box h3 {
+            margin: 10px 0;
+            font-size: large;
+ 
+      }
+
+        .features .box p {
+            font-size: large;
+            
+        }
+
+        .services{
+            /* border: 2px solid red; */
+
+        }
+
+        .services .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services .box .content{
+            width: 50%;
+            padding: 80px;
+        }
+
+        .services .box img{
+            height: 500px;
+            object-fit: cover;
+            width: 50%;
+        }
+        .team{
+            margin-top: 50px;
+            text-align: center;
+        }
+        .team .members{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .team .members .box{
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+        }
+        .continer{
+            padding: 20px;
+            text-align: center;
+        }
+        .contact{
+            height: 200px;
+            padding: 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+
+        }
+        .contact form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact h1{
+            padding: 20px 0;
+
+        }
+        cont
 
 
     </style>
@@ -61,73 +183,116 @@
         <input type="submit" value="submit" id="submit">
     </form>
    </div>
-   <div class="feature">
-     
+   
+   <div class="features">
     <div class="box">
-        <i class="fa-duotone fa-solid fa-window-maximize"></i>
-        <h3>Fully Responsive</h3>
-        <p>This theme will look great on any device, no matter the size!</p>
-
+        <i class="fa-sharp fa-solid fa-window-restore"></i>
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
     </div>
 
     <div class="box">
         <i class="fa-solid fa-layer-group"></i>
-        <h3>Fully Responsive</h3>
-        <p>This theme will look great on any device, no matter the size!</p>
-
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
     </div>
     <div class="box">
         <i class="fa-solid fa-terminal"></i>
-        <h3>Fully Responsive</h3>
-        <p>This theme will look great on any device, no matter the size!</p>
-
-    </div>
- </div>
-
-
-
-   <div class="service">
-
-<div class="box">
-    <div class="content">
-        <h1>Fully Responsive Design</h1>
-        <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
-    </div>
-    <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
-
+            <h3> Fully Responsive</h3>
+            <p>This theme will look great on any device, no matter the size!</p>
     </div>
 
+   </div>
 
 
+<div class="services">
+    <div class="box">
+        <div class="content">
+            <h1>Fully Responsive Design</h1>
+            <p> When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                device,
+                whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            </div>
+        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+        
+    </div>
+
+    <div class="box">
+        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+        <div class="content">
+            <h1>Fully Responsive Design</h1>
+            <p> When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                device,
+                whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            </div>
+        
+    </div>
 
     <div class="box">
         <div class="content">
-            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
             <h1>Fully Responsive Design</h1>
-            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            <p> When you use a theme created by Start Bootstrap, you know that the theme will look great on any
+                device,
+                whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            </div>
+        <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
+        
+    </div>
+</div>
+
+<div class="team">
+    <h1>What people are saying...</h1>
+    <div class="members">
+        <div class="box">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-1.jpg" alt="">
+            <h3>margret E.</h3>
+            <p>"This is Fantastic! Thanks so much guys!"</p>
         </div>
-    
-        </div>
-
-
-
-
-
-
 
         <div class="box">
-            <div class="content">
-                <h1>Fully Responsive Design</h1>
-                <p>When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
-            </div>
-            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-showcase-1.jpg" alt="">
-        
-            </div>
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-2.jpg" alt="">
+            <h3>Fred S.</h3>
+            <p>"Bootstrap is amazing. I've been using it to create lots of super nice landing pages" </p>
+        </div>
 
+        <div class="box">
+            <img src="https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/testimonials-3.jpg" alt="">
+            <h3>Sarah W.</h3>
+            <p>"Thanks so much for making these free resources available to use!"</p>
+        </div>
 
+    </div>
+</div>
 
+<div class="contact">
+    <h1>Ready to get started? Sign up now!</h1>
+    <form action="">
+        <input type="email" placeholder="Email Address">
+        <input type="submit" value="submit " id=" submit">
+    </form>
+</div>
+<div class="footer">
+    <div class="box">
+        <ul class="links">
+            <i><a href="#"> about</a></i>
+            <i><a href="#"> contacts</a></i>
+            <i><a href="#"> terms of use</a></i>
+            <i><a href="#"> Privacy policy</a></i>
+        </ul>
+        <p>Your Website 2023. All Rights Reserved copyright
 
-   </div>
+        </p>
+    </div>
+
+    <div class="box">
+        <div class="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-thumbs-up"></i></a>
+        </div>
+    </div>
+</div>
+   
     
 </body>
 </html>

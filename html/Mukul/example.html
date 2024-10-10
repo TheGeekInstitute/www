@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUKUL</title>
+    <title>Example</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-decoration: none;
-            list-style: none;
         }
 
-        .nav {
+        .nav{
             height: 50px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            -color: black;
-            color: backgroundwhite;
-            background-color: white;
+            justify-content: center;
+            background-color: black;
         }
 
-        .nav .logo {
-            font-size: 40px;
-            font-family: HGMinchoE;
-            font-weight: 900;
-        }
-
-        .nav .logo span {
-            color: crimson;
-        }
         .nav label{
             display: block;
             line-height: 50px;
@@ -60,18 +45,7 @@
             left: calc(50% - 200px);
         }
 
-        .login .heading{
-
-            border: 2px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 40px;
-            background-color: black;
-            color: rgb(14, 13, 13);
-            padding: 0 10px;
-            font-size: x-large;
-        }
+        .login .heading,
         .signup .heading{
             border: 2px solid black;
             display: flex;
@@ -97,33 +71,31 @@
         }
     </style>
 </head>
-
 <body>
+    
     <div class="nav">
-        <div class="logo">MUK<span>UL</span></div>
+        <label for="login">Login</label>
+        <label for="signup">SignUp</label>
+    </div>
 
-        <div class="nav">
-            <label for="login">Login</label>
-            <label for="signup">SignUp</label>
+
+    <input type="checkbox" name="" id="login">
+    <div class="login">
+        <div class="heading">
+            <p>Login</p>
+            <label for="login">X</label>
         </div>
+    </div>
 
 
-        <input type="checkbox" name="" id="login">
-        <div class="login">
-            <div class="heading">
-                <p>Login</p>
-                <label for="login">X</label>
-            </div>
+    <input type="checkbox" name="" id="signup">
+    <div class="signup">
+        <div class="heading">
+            <p>Signup</p>
+            <label for="signup">X</label>
         </div>
+    </div>
 
-
-        <input type="checkbox" name="" id="signup">
-        <div class="signup">
-            <div class="heading">
-                <p>Signup</p>
-                <label for="signup">X</label>
-            </div>
-        </div>
+    
 </body>
-
 </html>

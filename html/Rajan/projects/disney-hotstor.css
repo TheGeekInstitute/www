@@ -8,6 +8,7 @@ body{
 }
 .continer{
     border: 1px solid red;
+    display: flex;
 }
 .continer .side{
     /* border: 1px solid white; */
@@ -58,12 +59,8 @@ body{
 .continer .side .box ul:hover p{
     display: inline;
 }
-
-.continer .side .one{
-    /* border: 1px solid rebeccapurple; */
-}
 .continer .side .one img{
-    width: 90%;
+    width: 7rem;
     margin: 5px;
 }
 .continer .side .one ul{
@@ -80,11 +77,6 @@ height: 45px;
     color: white;
     font-size: 20px;   
 }
-
-body {
-    font-family: Arial, sans-serif;
-}
-
 .slider {
     position: relative;
     max-width: 600px;
@@ -132,4 +124,27 @@ img {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+.right{
+    border: 1px solid white;
+    width: 92%;
+}
+.add{
+    border: 1px solid red;
+    width: 100%;
+    height: 18rem;
+    display: flex;
+}
+.add .lift{
+    width: 50%;
+    /* border: 1px solid white; */
+    background-image: url(https://shifu.hotstarext.com/SOURCE/VOD/cd-2024-10-09/WomensT20WCIndvAusDated_BB_W-d56c266e-74bf-4dff-825f-18ce5d0fece5.jpg);
+    background-size: cover;
+}
+.add .right{
+    width: 50%;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px black;
+    background-image: url(https://media.istockphoto.com/id/1089926184/photo/india-and-australia-two-flags-together-realations-textile-cloth-fabric-texture.jpg?s=612x612&w=0&k=20&c=gig-ENMMf1jZVSeRe8VjAEQgom_F5T0BgHk9ypbfuAE=);
+    background-size: cover;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+
+        .static{
+            background-color: red;
+            height: 50px;
+            width: 100px;
+
+            position: static;
+            top: 10px;
+            left: 50px;
+        }
+
+
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+        }
+
+        .container .box{
+            height: 50px;
+            width: 50px;
+            background-color: green;
+
+            position: relative;
+            top: 10px;
+            left: 50px;
+        }
+
+        .abs{
+            background-color: blue;
+            height: 50px;
+            width: 150px;
+
+            position: absolute;
+            top: 100px;
+            right: 50px;   
+        }
+        
+        .fixed{
+            background-color: greenyellow;
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        .sticky{
+            height: 50px;
+            background-color: crimson;
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="static">Static Div</div>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <di/v class="abs">Absolute Div</div>
+
+    <div class="fixed">Fixed Div</div>
+
+    <div class="sticky">Sticky DIV</div>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quasi ratione vel quae itaque modi dolore alias suscipit ullam, tempora incidunt impedrror autem, sit eum natus quam consequatur.
+        Fugiat autem inventore alias atque nemo aut quis earum at veritatis, qui tmpore. Veritatis, soluta.
+        Quis, magnam sapiente esse soluta praesentium exercitationem labore laborum architecto provident velit nesciunt officia minima voluptatibus, dolorem, aliquam quo? Nostrum ullam iure placeat consequuntur, dicta accusantium inventore consequatur optio deleniti?
+        Perferendio culpa. Ab.
+</p>
+
+</body>
+</html>
