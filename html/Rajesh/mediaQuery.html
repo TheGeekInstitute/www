@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+           height: 200px;
+           width: 200px;
+           background-color: crimson;
+        }
+
+        @media print {
+            h1{
+                color: red;
+                border: 2px double red;
+            }
+        }
+
+        
+        @media screen and (max-width:600px){
+            .box{
+                background-color: green;
+                font-family: cursive;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width:400px){
+            .box{
+                background-color: blue;
+                font-size: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+                position: absolute;
+                top: calc(50% - 100px);
+                left: calc(50% - 100px);
+
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="box">
+    <h1>Hello World</h1>
+</div>
+
+
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ratione non iusto. Nisi ipsam sint, dolorum voluptas nulla tempore asperiores eaque modi ipsa ex dolorem possimus laboriosam tempora mollitia tenetur.</h1>
+
+</body>
+</html>
