@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 400px;
+        }
+
+        .container .bars{
+            height: 20px;
+            background-color: grey;
+            margin:5px;
+        }
+
+        .container .bars .fill{
+            height: 20px;
+            background-color: red;
+            width: 0%;
+
+           
+        }
+
+        @keyframes ninty {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width:90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="bars">
+            <div class="fill" style=" animation: ninty .5s linear 0s 1 alternate forwards;"></div>
+        </div>
+
+
+        <div class="bars">
+            <div class="fill"></div>
+        </div>
+
+
+        <div class="bars">
+            <div class="fill"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUKUL</title>
+    <title>FIRST</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-decoration: none;
-            list-style: none;
         }
 
-        .nav {
+        .mukul{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .mukul {
             height: 50px;
             display: flex;
             align-items: center;
@@ -25,36 +29,49 @@
             background-color: white;
         }
 
-        .nav .logo {
+        .mukul .logo {
             font-size: 40px;
             font-family: HGMinchoE;
             font-weight: 900;
         }
 
-        .nav .logo span {
+        .mukul .logo span {
             color: crimson;
         }
 
-        .nav label {
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ece7e7
+        }
+
+        .nav label{
             display: block;
             line-height: 50px;
             margin: 0 10px;
             padding: 0 10px;
             font-size: large;
-            color: rgb(12, 11, 11);
+            color: rgb(14, 13, 13);
             cursor: pointer;
         }
 
-        .nav label:hover {
-            background-color: red;
+        .nav label:hover{
+            background-color:blue;
         }
-
-        input[type="checkbox"] {
+        input[type="checkbox"]{
             display: none;
         }
 
-        .Login,
-        .signup {
+        .login,.signup{
             border: 2px solid black;
             height: 400px;
             width: 400px;
@@ -63,116 +80,131 @@
             left: calc(50% - 200px);
         }
 
-        .Login .heading {
-
+        .login .heading,
+        .signup .heading{
             border: 2px solid black;
             display: flex;
             align-items: center;
             justify-content: space-between;
             height: 40px;
-            background-color: black;
-            color: rgb(240, 236, 236);
+            background-color: rgb(10, 10, 10);
+            color: rgb(231, 231, 235);
             padding: 0 10px;
             font-size: x-large;
         }
 
-        .signup .heading {
-            border: 2px solid black;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 40px;
-            background-color: black;
-            color: white;
-            padding: 0 10px;
-            font-size: x-large;
-        }
-
-        .signup {
+        .signup{
             display: none;
         }
 
-        .login {
+        .login{
             display: none;
         }
 
-        input[type="checkbox"]:checked+div {
+        input[type="checkbox"]:checked + div{
             display: block;
         }
 
-        .container {
-            /* border: 2px solid black; */
-            height: 450px;
-            width: 300px;
-            margin: 150px auto;
-            padding: 10px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 0px 30px rgb(7, 6, 6);
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6HnbEx_UjGgZ-MdvC2UAzHjgb75bIHImkxA&s");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
 
-        .container h1 {
-            margin: 10px 0;
-            margin-bottom: 20px;
-        }
-        .container label {
-            /* border: 1px solid black; */
-            width: 240px;
-            text-align: left;
-            font-size: large;
-            margin: 2px 0;
-        }
 
-        .container input {
-            border: 1px solid rgb(15, 15, 15);
-            outline: none;
-            border-width: 1px 1px 3px 1px;
-            height: 30px;
-            width: 240px;
-            margin: 2px 0;
-            background-color: transparent;
-            font-size: large;
-            padding: 0 3px;
-        }
 
-        .container form #btn {
-            margin-top: 10px;
-            width: 100px;
-            background-color: royalblue;
-            color: white;
-        }
+
+            .container {
+                /* border: 2px solid black; */
+                height: 450px;
+                width: 300px;
+                margin: 150px auto;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0px 0px 30px rgb(7, 6, 6);
+                background-image: url("https://t3.ftcdn.net/jpg/04/56/00/16/360_F_456001627_vYt7ZFjxEQ1sshme67JAXorKRPo8gsfN.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .container h1 {
+                margin: 10px 0;
+                margin-bottom: 20px;
+            }
+
+            .container form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .container form label {
+                /* border: 1px solid black; */
+                width: 240px;
+                text-align: left;
+                font-size: large;
+                margin: 3px 0;
+            }
+
+            .container form input {
+                border: 1px solid rgb(15, 15, 15);
+                outline: none;
+                border-width: 1px 1px 3px 1px;
+                height: 30px;
+                width: 240px;
+                margin: 2px 0;
+                background-color: transparent;
+                font-size: large;
+                padding: 0 3px;
+            }
+
+            .container form #btn {
+                margin-top: 10px;
+                width: 100px;
+                background-color: royalblue;
+                color: white;
+            }
     </style>
 </head>
+<div class="mukul">
+        <div class="logo">MUK<span>UL</span></div> 
 
-<body>
+
     <div class="nav">
-        <div class="logo">MUK<span>UL</span></div>
+        <label for="login">Login</label>
+        <label for="signup">SignUp</label>
+    </div>
 
-        <div class="nav">
-            <label for="login">Login</label>
-            <label for="signup">SignUp</label>
+
+    <input type="checkbox" name="" id="login">
+    <div class="login">
+        <div class="heading">
+            <p>Signup</p>
+            <label for="login">X</label>
         </div>
+    </div>
 
 
-        <input type="checkbox" name="" id="Login">
-        <div class="Login">
-            <div class="heading">
-                <h1>Login</h1>
-                <label for="Login">X</label>
+    <input type="checkbox" name="" id="signup">
+    <div class="signup">
+        <div class="heading">
+            <p>Signup</p>
+            <div class="container">
+                <h1>LOGIN</h1>
+        
+                <form action="">
+                    <label></label>
+                    <label>Email</label>
+                    <input type="text">
+                    <label>Phone</label>
+                    <input type="number">
+                    <label>Password</label>
+                    <input type="password">
+                    <input type="submit" value="LOGIN" id="btn">
+                </form>
             </div>
-
-
-        <input type="checkbox" name="" id="signup">
-        <div class="signup">
-            <div class="heading">
-                <p>Signup</p>
-                <label for="signup">X</label>
-            </div>
+            <label for="signup">X</label>
         </div>
+    </div>
+
+    
 </body>
-
 </html>

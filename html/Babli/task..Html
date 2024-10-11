@@ -242,6 +242,7 @@
         height: 400px;
         margin-top: 40px;
         text-align: center;
+        border: 2px 2px solid white;
        }
        
        .container2 img{
@@ -276,7 +277,131 @@
         text-align: left;
         margin:0px 20px ;
         margin-top:20px ;
+        color: #2c5292;
        }
+
+       .content{
+        height: 400px;
+        margin-top: 400px;
+        text-align: center;
+       }
+
+       .content img{
+        height:400px;
+        width:500px ;
+        /* margin-top: 500px; */
+       }
+
+       .content h1{
+        font-size: 30px ;
+            font-family:Arial, Helvetica, sans-serif;
+            
+            text-align:left ;
+            margin:0px 70px ;
+            color:#345080 ;
+           
+            
+           padding-top:50px ;
+       }
+
+
+       .content p{
+        font-size: 20px;
+        text-align: left;
+        margin:0px 70px ;
+        font-style: italic;
+       }
+
+       .container3{
+        /* border:2px solid red ; */
+        height:400px ;
+        margin-top:200px ;
+       }
+
+       .container3 a{
+        font-size:20px;
+        color:#0f3370 ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin:0px 70px;
+       }
+
+       .container3 #percent{
+           text-align: right;
+            background-color: transparent;
+            
+            margin: 0px 600px;
+            border-radius:3px ;
+            font-size:large ;
+            /* color:white ; */
+            width: 150px;
+       }
+
+       .container3 .bars{
+        height:10px ;
+        background-color:rgba(255, 192, 203, 0.178);
+        margin:10px 70px ;
+        margin-bottom: 20px;
+       }
+
+       .container3 .bars .fill{
+        height:10px ;
+        background-color:#0f3370 ;
+        width:0% ;
+        
+        
+       
+       
+       }
+
+       @keyframes hundred {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width:100%;
+            }
+        }
+
+        @keyframes ninty {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width:90%;
+            }
+        }
+
+        @keyframes seventy-five {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width:75%;
+            }
+        }
+
+        @keyframes fifty-five {
+            0%{
+                width: 0;
+            }
+
+            100%{
+                width:55%;
+            }
+        }
+
+        .content2 a{
+            font-size: xx-large;
+            padding-left:250px;
+            text-align: center;
+             justify-content: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: #2c5292;
+        }
         
     </style>
 </head>
@@ -366,6 +491,48 @@
           <ul>02 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</ul>
             <ul>03 Dolor sit amet consectetur adipiscing elit pellentesque?</ul>
         </div>
+    </div>
+
+    <div class="content">
+        <img src="https://bootstrapmade.com/content/demo/Arsha/assets/img/skills.png" alt="">
+        <h1>Voluptatem dignissimos provident quasi corporis voluptas</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+
+    <div class="container3">
+        <a href="#">HTML</a>
+            <a href="" id="percent" >100%</a>
+        <div class="bars">
+            
+            <div class="fill" style="animation: hundred .5s linear 0s 1 alternate forwards;"></div>
+        </div>
+
+        <a href="#">CSS</a>
+        <a href="" id="percent" >90%</a>
+        <div class="bars">
+        
+            <div class="fill" style="animation: ninty .5s linear 0s 1 alternate forwards;"></div>
+        </div>
+
+        <a href="#">JAVASCRIPT</a>
+        <a href="" id="percent" >75%</a>
+        <div class="bars">
+           
+            <div class="fill" style=" animation:  seventy-five .5s linear 0s 1 alternate forwards;"></div>
+        </div>
+
+        <a href="#">PHOTOSHOP</a>
+            <a href="" id="percent" >55%</a>
+        <div class="bars">
+            
+            <div class="fill" style=" animation: fifty-five .5s linear 0s 1 alternate forwards;"></div>
+            
+        </div>
+    </div>
+
+
+    <div class="content2">
+        <a href="">Services</a>
     </div>
   
 </body>

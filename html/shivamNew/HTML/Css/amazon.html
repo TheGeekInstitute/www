@@ -21,6 +21,8 @@
             text-decoration: none;
             box-sizing: border-box ;
         }
+        
+        
         .page{
             height: 200vh;
             width: 100vw;
@@ -148,11 +150,11 @@
         .row .row1 .box{
             background-color: white;
             height: 26.5rem;
-            width: 20rem;
+            width: 21rem;
             border: 1px solid green;
             padding: 1rem;
         }
-        .row1 .box a{
+        .row1 .box + a{
             
             display: inline-block;
             height: 17rem;
@@ -162,9 +164,28 @@
         }
         .row .row1 a image{
             
-            height: 13rem;
-            width: 15rem;
+            background-position: center;
+            background-size: cover;
 
+        }
+        .row1 .box .grid{
+            display: grid;
+            border: 1px solid blue;
+            grid-template-columns: 8.4rem 8.4rem;
+            grid-template-rows:  8rem 8rem;
+            gap:  1rem;
+            /* box-sizing: border-box; */
+            /* height: 15rem; */
+            /* background-color: gray; */
+        }
+        .row1 .box .items{
+            /* height: 6rem; */
+            /* background-color: red; */
+        }
+        .row1 .box .items a{
+            color: black;
+            font-size: .9rem;
+           
         }
        
         
@@ -229,13 +250,22 @@
         <div class="row">
             <div class="row1">
                 <div class="box">
-                    <p style="font-size: 1.rem; font-weight: 800;">Up to 80% off | Electronics & accessories</p>
+                    <p style="font-size: 1.4rem; font-weight: 800;">Up to 80% off | Electronics & accessories</p>
                     <div class="ads">
                         <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Img23/Budget3/REC-PC_CC_379x304._SY304_CB564096366_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;"><br>See all offers</a>
                     </div>
                     
                 </div>
-                <div class="box"></div>
+                <div class="box">
+                    <p style="font-size: 1.4rem; font-weight: 800;">Minimum 50% off | Home, kitchen & more</p>
+                    <div class="grid">
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_1_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">kitchen appliance</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_2_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">Home decor</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_3_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">furniture</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_4_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">Home improvement</p></a></div>                        
+                    </div>
+                    <a href=""  style="position: relative; top: 1.5rem;border: 1px solid green; ">See all offers</a>
+                </div>
                 <div class="box"></div>
                 <div class="box"></div>
 

@@ -34,10 +34,27 @@
             height: 300px;
             width: 300px;
             position: absolute;
-            border-radius: 10px;
+            font-weight:  900;
             box-shadow: 0 0 10px black;
+            text-align: center;
+            font-size: 50px;
+            line-height: 300px;
+            backface-visibility: hidden;
+            border-radius: 10px;
+
         }
-        
+
+        .container .box .front{
+            background-color: red;
+        }
+          .container .box .back{
+            background-color: yellow;
+            transform: rotateX(180deg);
+          }
+           
+          .container:hover .box{
+            transform: rotateX(540deg);
+          }
     </style>
 </head>
 <body>

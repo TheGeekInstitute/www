@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        .nav{
+            height: 3.5rem;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .nav .logo{
+            font-size: 40px;
+            font-family: cursive;
+            font-weight: 900;
+            text-shadow: 2px 2px red;
+        }
+        
+        .nav .logo span{
+            text-shadow: 2px 2px white;
+            color: red;
+        }
+
+        .nav >.links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav >ul >li >a{
+            display: block;
+            margin: 0 10px;
+            font-size: large;
+            color: white;
+            padding: 0 10px;
+            line-height: 3.5rem;
+        }
+
+        .nav >ul >li >a:hover{
+            background-color: rgb(22, 221, 22);
+        }
+        .nav ul li .sub{
+            
+            width: 100px;
+            display: none;
+            text-align: center;
+            position:absolute ;
+            top:3.5rem ;
+            background-color: gray;
+
+        }
+        .nav ul li ul li a {
+            display: block;
+            line-height: 40px;
+            color: rgb(131, 5, 5);
+        }
+
+        .nav ul li ul li a:hover {
+            background-color: rgb(251, 255, 9);
+        }
+
+        .nav ul li:hover .sub {
+            display: block;
+        }
+        
+
+        
+       
+        
+        .static {
+            background-color:green ;
+            height: 50px;
+            width: 100px;
+
+            position: static;
+            top: 10px;
+            left: 2px;
+        }
+        .container{
+            height:400px ;
+            width: 400px;
+            border: 2px solid red;
+            margin:0 20px ;
+        }
+        .container .box {
+            height: 40px;
+            width: 40px;
+            background-color:yellow ;
+
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .abs{
+            background-color: rebeccapurple;
+            height: 70px;
+            width: 50px;
+
+
+            position: absolute;
+            top: 60px;
+            right: 100px;
+        }
+        .fixed{
+            background-color: cadetblue;
+            height:100px ;
+            width: 100px;
+            position: fixed;
+            bottom: 500px;
+            right: 20px;
+        }
+        .sticky{
+            background-color: darkmagenta;
+            height: 200px;
+            width: 100px;
+            position: sticky;
+            top: 0px;
+        }
+
+       
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"> LO<span>GO</span> </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pages +</a>
+            <ul class="sub">
+                <li><a href="#">page1</a></li>
+                <li><a href="#">page2</a></li>
+                <li><a href="#">page3</a></li>
+                <li><a href="#">page4</a></li>
+            </ul>
+        </li>
+            
+            <li><a href="#">About</a>
+
+            <ul class="sub">
+                <li><a href="#">a</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">c</a></li>
+
+            </ul>
+
+        </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+   
+
+
+    <div class="static">static</div>
+
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <div class="abs">Absolute div</div>
+    <div class="fixed">Fixed div</div>
+    <div class="sticky">Sticky div</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At voluptatibus minima veritatis incidunt ullam quod, rerum saepe, magnam nostrum eligendi vero sint omnis illo, asperiores non fugiat velit? Velit, enim.
+    Consectetur, saepe et. Ab, ut amet! Porro a nostrum adipisci architecto repellendus totam officiis quo! Enim facere deleniti distinctio rerum hic odit dicta dolor minus id. Enim eos saepe nam.
+    In assumenda aperiam neque doloribus optio expedita ut, dolore eos, numquam voluptatum soluta nisi sunt aliquid id minus odio sint officiis nam adipisci pariatur. Quidem tenetur provident culpa officia dignissimos.
+    Accusamus repellat voluptatum, ipsam atque nulla vel dolore labore doloribus? Expedita pariatur facilis eos assumenda, deleniti dolores reiciendis, vero vitae est rem cupiditate numquam officiis dolor corrupti optio distinctio ullam!
+    Molestiae corrupti repellendus ipsum provident perspiciatis. Aut atque non impedit id ab esse ut omnis. Sunt perferendis explicabo nisi, temporibus eaque consequuntur quia exercitationem magni velit totam incidunt maiores molestiae?
+    Quis officiis deserunt voluptate enim! Numquam ratione hic earum sequi excepturi, repellendus exercitationem aut est corporis, ducimus quia reprehenderit nam esse blanditiis facere autem omnis? Recusandae quo ducimus numquam odit.
+    Voluptates quidem harum ex laudantium cumque dolor, aut fugiat dicta corporis quae ipsum earum sint modi voluptatum rerum, quasi illo. Veniam aut nobis saepe praesentium cupiditate earum accusamus repudiandae vitae.
+    Ipsa omnis possimus nemo ut nam, vitae eum doloribus impedit, ullam nobis repellendus. Magni rem asperiores, ad maxime quaerat nulla dolor laboriosam. Reprehenderit nam amet unde, maxime quis placeat vel.
+    Tempora enim voluptatem qui veniam assumenda. Maiores optio facilis similique aut quaerat quos officiis voluptates quas illo libero quae ab animi doloremque quia necessitatibus natus aspernatur magni in, voluptatum fuga!
+    Ducimus, modi reiciendis fuga necessitatibus nam illo sint laborum dolores veniam, unde cupiditate iusto! Sequi quo reiciendis sed corrupti beatae aspernatur quis, vero, nemo eos officia labore unde eum debitis?
+    Ea dolor voluptatum, adipisci qui dolorum rerum ratione repellendus excepturi optio rem porro commodi, impedit repudiandae minus ullam illum iure? Quos, nulla unde. Aut similique quia, explicabo obcaecati optio quo?
+    Dicta velit minus repellat ea cupiditate tenetur saepe? Nesciunt distinctio ad quod provident minima possimus, veniam, adipisci aliquam tenetur error quibusdam mollitia aut sint dignissimos? Nihil quam doloremque soluta ratione!
+    Quidem ea non accusantium rem expedita sapiente dignissimos laboriosam architecto fugiat saepe autem amet, dolorum laborum iure pariatur voluptates in! Ipsam velit consequuntur eveniet alias officia unde modi molestiae architecto!
+    Accusamus consequatur reiciendis impedit, laborum placeat ea labore cum repellendus non, exercitationem officia quaerat sint atque unde velit libero omnis blanditiis temporibus consequuntur nihil esse. Dignissimos fuga magni in. Dignissimos.
+    Sunt est cumque hic, sint, maiores nemo pariatur debitis porro, nobis explicabo repudiandae fugiat! Sed ratione maiores, voluptatem expedita tempore necessitatibus cumque. Temporibus cum molestias odit illum, nulla ut perferendis.
+    Atque debitis totam corporis libero itaque odit quibusdam culpa. Aspernatur sunt necessitatibus reprehenderit hic quae. Nostrum odit maxime iste! Esse sit facilis quaerat deleniti cumque deserunt nobis natus quisquam optio!
+    Maiores iure ipsum numquam ipsa, iusto doloremque facilis illum repellendus. Voluptatem consectetur, id consequatur quasi ut aut dicta nostrum aliquid animi impedit odio tenetur enim commodi beatae eveniet eligendi optio?
+    Magni officia eveniet repudiandae odio enim repellendus vel earum, dicta aperiam laudantium deleniti, omnis, mollitia laborum esse nobis sapiente? Ducimus voluptatibus facilis illum aperiam iusto exercitationem ab placeat, eveniet asperiores.
+    Amet voluptatem distinctio temporibus quibusdam esse nostrum provident voluptatum unde quaerat, nulla porro explicabo obcaecati vero velit impedit praesentium deserunt harum reprehenderit aliquid quisquam? Tenetur tempora nesciunt iusto repellat deserunt!
+    Vel recusandae facere ipsa temporibus animi nam quo voluptas dolorem aliquam quaerat suscipit nesciunt, ratione ipsam ea nisi molestias dolor earum! Sunt suscipit ex inventore tempore assumenda ullam nihil. Asperiores?</p>
+
+
+
+    
+</body>
+</html>

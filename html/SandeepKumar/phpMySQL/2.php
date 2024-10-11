@@ -103,7 +103,6 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $msg="Please Enter Name";
         }
     }
-    
 
 }
 
