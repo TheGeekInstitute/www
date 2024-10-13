@@ -49,7 +49,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
             }
             else{
-
+                echo '
+                <script>
+                alert("Your Payment Request Has Been Done");
+                </script>';
             }
         }
         else{
