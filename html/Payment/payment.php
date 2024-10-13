@@ -12,7 +12,10 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     $stmt->bind_result($db_upi,$db_amt);
     $stmt->execute();
     $stmt->store_result();
-    if($stmt->num_rows=1){
+
+    echo $stmt->num_rows;
+
+    if($stmt->num_rows==1){
         echo $db_amt;
     }
 
