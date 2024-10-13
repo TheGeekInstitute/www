@@ -29,6 +29,10 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $stmt->bind_param("ssss",$payment_id,$upi,$amount,$username);
             $stmt->execute();
             $stmt->store_result();
+            if($stmt->affected_rows==1){
+                $_SESSION['payment_id']=$payment_id;
+            }
+            
            
 
         }
