@@ -16,7 +16,14 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     echo $stmt->num_rows;
 
     if($stmt->num_rows==1){
-        echo $db_amt;
+        $stmt->fetch();
+        
+    }
+    else{
+        echo '
+        <script>
+        alert("Invalid or 
+        </script>';
     }
 
 }
