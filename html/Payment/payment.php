@@ -17,7 +17,7 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     if($stmt->num_rows==1){
         $stmt->fetch();
         $amt=$db_amt;
-        $upi=$db_amt;
+        $upi=$db_upi;
         
     }
     else{
@@ -301,7 +301,7 @@ else{
 
         <div class="amt">
             <p>Payment Amount</p>
-            <p>₹ <?php  ?></p>
+            <p>₹ <?php echo $amt ; ?></p>
         </div>
 
         <p class="upi">
@@ -315,7 +315,7 @@ else{
             <div class="one">
                 <label for=""><span>1.</span> Copy UPI Information</label>
                 <div class="field">
-                    <input type="text" name="upi-id" value="ABCD@ybl" readonly id="upi_address">
+                    <input type="text" name="upi-id" value="<?php echo $upi ; ?>" readonly id="upi_address">
                     <button id="copy" onclick="copyUPI()">Copy</button>
                 </div>
             </div>
