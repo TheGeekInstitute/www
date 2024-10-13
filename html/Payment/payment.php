@@ -4,7 +4,11 @@ require("db.php");
 $msg="";
 session_start();
 session_regenerate_id();
-if(isset($_GET['payment_id']) && !empty($_GET['payment_id']))
+if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
+    $payment_id=input_filter($_GET['payment_id']);
+
+    echo $payment_id;
+}
 
 
 ?>
