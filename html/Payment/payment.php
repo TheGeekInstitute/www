@@ -40,9 +40,9 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         if(strlen($_POST['ref'])==12){
             $ref_no=input_filter($_POST['ref']);
             $status="Paid";
-            $update_sql="UPDATE `payments` SET `ref`=?,`paid_status`=? WHERE `payment_id`=?";
+            $update_sql="UPDATE `payments` SET `ref`=?, `paid_status`=? WHERE `payment_id`=?";
             $update_stmt=$conn->prepare($sql);
-            $update_stmt->bind_param("sss",$ref_no,$status,$payment_id);
+         
 
         }
         else{
