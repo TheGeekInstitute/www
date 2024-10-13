@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            text-decoration: none;
+        }
+
+        .nav{
+            height: 3.5rem;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 0 20px;
+        }
+        .nav p{
+            font-size: large;
+        }
+
+        .nav a:nth-of-type(1){
+            background-color: greenyellow;
+            color: black;
+            font-size: large;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all .2s linear;
+        }
+
+        .nav a:nth-of-type(1):hover{
+            background-color: green;
+            color:white;
+        }
+
+
+
+
+        .nav a:nth-of-type(2){
+            background-color: red;
+            color: white;
+            font-size: large;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all .2s linear;
+        }
+
+        .nav a:nth-of-type(2):hover{
+            background-color: crimson;
+            color:white;
+        }
+
+        .search{
+            margin-top: 10px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search input,
+        .search select{
+            margin: 0 5px;
+            border: 2px solid black;
+            height: 35px;
+            padding: 3px 5px;
+            border-radius: 3px;
+            outline: transparent;
+        }
+
+        .search select{
+            width: 50px;
+            text-align: center;
+        }
+
+        .search input{
+            width: 300px;
+        }
+
+        .search input[type="submit"]{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            transition: all .2s linear;
+        }
+
+        .search input[type="submit"]:hover{
+            background-color: rgb(4, 51, 4);
+        }
+
+        table,th,td{
+            border-bottom: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+
+        table th{
+            text-decoration: underline;
+            font-size: large;
+            color: black;
+            background-color: white;
+        }
+
+        table td.Paid{
+            color:green;
+            font-weight: 900;
+        }
+
+        table td.UnPaid{
+            color: red;
+            font-weight: 900;
+        }
+
+        table tr:nth-child(odd){
+            background-color: rgb(229, 235, 253);
+        }
+
+        .footer{
+            margin: 10px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer p{
+            font-weight: 900;
+            font-size: large;
+            margin-right: 10px;
+        }
+        .footer a{
+            display: block;
+            margin: 0 5px;
+            background-color: grey;
+            color: white;
+            padding: 3px 10px;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        .footer a.active{
+            background-color: royalblue;
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <p>Payment History</p>
+        <a href="create.php">Create Link</a>
+        <a href="?logout=1">Logout</a>
+    </div>
+
+    <div class="search">
+        <form action="" method="GET">
+            <select name="" id="">
+                <option value="10">10</option>
+                <option value="10">50</option>
+                <option value="10">100</option>
+            </select>
+    
+            <input type="text" name="search" placeholder="Search Here">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>UPI</th>
+            <th>Amount</th>
+            <th>Refrence No.</th>
+            <th>Paid Status</th>
+            <th>Created By</th>
+            <th>Created at</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+   
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="Paid">Paid</td>
+            <td>admin123</td>
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>abcd@ybl</td>
+            <td>111111111111</td>
+            <td class="UnPaid">UnPaid</td>
+            <td>admin123</td>
+
+            <td>2024-04-12 20:56:25</td>
+        </tr>
+
+        
+        
+
+    </table>
+
+    <div class="footer">
+        <p>Pages :</p>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+    </div>
+
+
+</body>
+</html>
