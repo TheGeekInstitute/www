@@ -2,6 +2,8 @@
 require("filter.php");
 require("db.php");
 $msg="";
+$amt="0";
+$upi="NULL";
 session_start();
 session_regenerate_id();
 if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
@@ -12,11 +14,10 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     $stmt->bind_result($db_upi,$db_amt);
     $stmt->execute();
     $stmt->store_result();
-
-    echo $stmt->num_rows;
-
     if($stmt->num_rows==1){
         $stmt->fetch();
+        $amt=$db_amt;
+        $upi=$db_amt;
         
     }
     else{
@@ -300,7 +301,7 @@ else{
 
         <div class="amt">
             <p>Payment Amount</p>
-            <p>₹ 1000</p>
+            <p>₹ <?php  ?></p>
         </div>
 
         <p class="upi">
