@@ -22,7 +22,8 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     else{
         echo '
         <script>
-        alert("Invalid or 
+        alert("Invalid or Expired Link");
+        window.location.href="
         </script>';
     }
 
