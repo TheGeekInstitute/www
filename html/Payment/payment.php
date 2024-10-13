@@ -39,8 +39,9 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     if(isset($_POST['ref']) && !empty($_POST['ref'])){
         if(strlen($_POST['ref'])==12){
             $ref_no=input_filter($_POST['ref']);
-    
-            $update_sql="UPDATE `payments` SET `ref`='[value-5]',`paid_status`='[value-6]',`created_by`='[value-7]',`created_at`='[value-8]' WHERE `payment_id`=?";
+            $status="Paid";
+            $update_sql="UPDATE `payments` SET `ref`=?,`paid_status`=? WHERE `payment_id`=?";
+            $update_stmt=$conn->prepare($sql);
             
 
         }
