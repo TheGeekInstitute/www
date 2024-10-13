@@ -180,7 +180,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
 
         <div class="link">
-            <p>Generated Link : ↓</p> <a href="?payment_id=<?php echo $_SESSION['payment_id'] ?>">https://<?php echo $_SERVER['HTTP_HOST'];  ?>/payment.php?</a>
+            <p>Generated Link : ↓</p> <a href="payment.php?payment_id=<?php echo $_SESSION['payment_id'] ?>">https://<?php echo $_SERVER['HTTP_HOST'];  ?>/payment.php?payment_id=<?php echo $_SESSION['payment_id'] ?></a>
         </div>
 
 
