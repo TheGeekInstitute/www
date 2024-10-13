@@ -38,6 +38,10 @@ else{
 if($_SERVER['REQUEST_METHOD']=="POST"){
     if(isset($_POST['ref']) && !empty($_POST['ref'])){
 
+        echo '
+        <script>
+        alert("Please Enter Reference Number");
+        </script>';
         echo $_POST['ref'];
         die();
 
@@ -368,6 +372,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                 <label for=""><span>3.</span> Please enter Ref No. to complete the Payment.</label>
                 <form action="">
                     <input type="text" name="ref" placeholder="Ref No.">
+                    <input type="hidden" name="payment_id" value="<?php echo $_SESSION['payment_id']; ?>">
                     <input type="submit" value="Submit">
                 </form>
             </div>
