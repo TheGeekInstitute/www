@@ -54,7 +54,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             else{
                 echo '
                 <script>
-                alert("Someting Went Wrong");
+                alert("Already Submitted Request");
                 </script>';
             }
         }
