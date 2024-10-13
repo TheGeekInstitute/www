@@ -23,11 +23,15 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
         echo '
         <script>
         alert("Invalid or Expired Link");
-        window.location.href="
+        window.location.href="index.php";
         </script>';
     }
 
 }
+else{
+    header("location:index.php");
+}
+
 
 
 ?>
