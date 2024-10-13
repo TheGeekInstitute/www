@@ -37,6 +37,9 @@ else{
 if($_SERVER['REQUEST_METHOD']=="POST"){
     if(isset($_POST['ref']) && !empty($_POST['ref'])){
 
+        echo $_POST['ref'];
+        die();
+
     }
     else{
         echo '
