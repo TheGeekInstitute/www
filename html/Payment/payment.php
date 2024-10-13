@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $status="Paid";
             $update_sql="UPDATE `payments` SET `ref`=?,`paid_status`=? WHERE `payment_id`=?";
             $update_stmt=$conn->prepare($sql);
-            
+            $update_stmt->bind_param("sss",$ref_no,$status,$payment_id);
 
         }
         else{
