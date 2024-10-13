@@ -9,6 +9,12 @@ if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
     $sql="SELECT `upi`, `amt` FROM `payments` WHERE `payment_id`=?";
     $stmt=mysqli_prepare($conn,$sql);
     $stmt->bind_param("s",$payment_id);
+    $stmt->bind_result($db_upi,$db_amt);
+    $stmt->execute();
+    $stmt->store_result();
+    if($stmt->num_rows=1){
+        echo $db_amt;
+    }
 
 }
 
