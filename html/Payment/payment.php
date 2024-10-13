@@ -44,8 +44,13 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $update_stmt=$conn->prepare($update_sql);
             $update_stmt->bind_param("sss",$ref_no,$status,$payment_id);
             $update_stmt->execute();
-            $update_stmt->store
+            $update_stmt->store_result();
+            if($update_stmt->affected_rows==1){
 
+            }
+            else{
+
+            }
         }
         else{
             echo '
