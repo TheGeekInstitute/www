@@ -35,7 +35,15 @@ else{
 
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
-    if(isset($_POST['ref']) && !empty($_POST['']))
+    if(isset($_POST['ref']) && !empty($_POST['ref'])){
+
+    }
+    else{
+        echo '
+        <script>
+        alert("Please Enter Reference Number");
+        </script>';
+    }
 }
 
 
