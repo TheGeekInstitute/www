@@ -6,8 +6,9 @@ $amt="0";
 $upi="NULL";
 session_start();
 session_regenerate_id();
-if(isset($_GET['payment_id']) && !empty($_GET['payment_id'])){
-    $payment_id=input_filter($_GET['payment_id']);
+if(isset($_REQUEST['payment_id']) && !empty($_REQUEST['payment_id'])){
+    $payment_id=input_filter($_REQUEST['payment_id']);
+    $_SESSION['payment_id']=$payment_id;
     $sql="SELECT `upi`, `amt` FROM `payments` WHERE `payment_id`=?";
     $stmt=mysqli_prepare($conn,$sql);
     $stmt->bind_param("s",$payment_id);
