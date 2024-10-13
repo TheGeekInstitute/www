@@ -46,12 +46,15 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             $update_stmt->execute();
             $update_stmt->store_result();
             if($update_stmt->affected_rows==1){
-
+                echo '
+                <script>
+                alert("Your Payment Request Has Been Done");
+                </script>';
             }
             else{
                 echo '
                 <script>
-                alert("Your Payment Request Has Been Done");
+                alert("Someting Went Wrong");
                 </script>';
             }
         }
@@ -389,7 +392,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             <div class="three">
                 <label for=""><span>3.</span> Please enter Ref No. to complete the Payment.</label>
                 <form action="" METHOD="POST">
-                    <input type="text" name="ref" placeholder="Ref No.">
+                    <input type="text" name="ref" max-length="12" placeholder="Ref No.">
                     <input type="hidden" name="payment_id" value="<?php echo $_SESSION['payment_id']; ?>">
                     <input type="submit" value="Submit">
                 </form>
