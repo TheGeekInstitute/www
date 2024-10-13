@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 
         if(isset($_POST['upi']) && !empty($_POST['upi'])){
             $upi=$_POST['upi'];
-            $payment_id=bin2hex(random_bytes(10));
+            $payment_id=bin2hex(random_bytes(15));
             $sql="INSERT INTO `payments`(`payment_id`,`upi`, `amt`, `created_by`) VALUES (?,?,?,?)";
             $stmt=mysqli_prepare($conn,$sql);
             $stmt->bind_param("ssss",$payment_id,$upi,$amount,$username);
