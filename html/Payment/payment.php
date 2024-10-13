@@ -38,6 +38,9 @@ else{
 if($_SERVER['REQUEST_METHOD']=="POST"){
     if(isset($_POST['ref']) && !empty($_POST['ref'])){
         if(strlen($_POST['ref'])==12){
+            $ref_no=input_filter($_POST['ref']);
+    
+        
 
         }
         else{
@@ -47,10 +50,6 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
             </script>';
         }
         
-        $ref_no=input_filter($_POST['ref']);
-
-        echo $_POST['ref'];
-        die();
 
     }
     else{
