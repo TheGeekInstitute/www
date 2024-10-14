@@ -78,6 +78,7 @@ height: 45px;
     font-size: 20px;   
 }
 .slider {
+    border: 1px solid red;
     position: relative;
     max-width: 600px;
     margin: auto;
@@ -86,6 +87,7 @@ height: 45px;
 
 .slides {
     display: flex;
+    border: 1px solid white;
     transition: transform 0.5s ease;
 }
 
@@ -130,11 +132,11 @@ img {
     width: 92%;
 }
 .add{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
     height: 18rem;
     margin: 10px auto;
     border-radius: 5px;
     background-image: url(https://www.exopicmedia.com/wp-content/uploads/2022/01/Hotstar_Advertising_Agency_in_Delhi_NCR.jpeg);
-    backg
+    background-size: cover;
 }

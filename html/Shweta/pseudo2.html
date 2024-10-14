@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --my-color:rgb(13, 228, 120);
+        }
+
+        ul li{
+            font-size: xx-large;
+            font-weight: 900;
+        }
+        ul li:first-child{
+            color: rgb(209, 209, 8);
+
+        }
+        ul li:last-child{
+            color: rgb(146, 6, 6);
+        }
+        ul li:nth-child(4){
+            color: aqua;
+        }
+        ul li:nth-last-child(5){
+            color: blueviolet;
+        }
+
+        ul li:first-of-type{
+            color: chartreuse;
+        }
+        ul li:last-of-type{
+            color: cornflowerblue;
+        }
+        div p:nth-of-type(2){
+            color: red;
+        }
+
+        div p:nth-last-child(2){
+            color: rgb(89, 64, 179);
+        }
+
+        div p:only-of-type{
+            color: rgb(221, 123, 10);
+        }
+
+        div p:only-child{
+            color: red;
+        }
+
+        div:empty{
+            
+            height: 200px;
+            border-radius: 10px;
+            border: 2px solid var(--my-color) ;
+        }
+
+        div:not(:empty){
+            border: 2px solid rgb(1, 109, 73);
+            border-radius: 10px;
+        }
+        :target{
+            background-color:var(--my-color);
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+   </ul>
+
+   <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, officia laboriosam? Esse non fugiat nesciunt quas libero sequi pariatur, quis quibusdam nihil! Deleniti pariatur saepe ducimus, odit eligendi laboriosam quaerat.</p>
+
+    <b>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus ducimus magnam corporis aliquam quaerat accusantium inventore nemo et fugiat nesciunt expedita aliquid hic eligendi amet eveniet perspiciatis iusto, qui blanditiis.</b>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, error enim, possimus dolor hic nulla quas repellendus aliquam sint suscipit, et quam voluptate cumque perspiciatis reiciendis consequuntur dicta sapiente rerum.</p>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel similique ipsa velit molestiae, quaerat blanditiis quia, alias consectetur tenetur libero fugit aperiam aliquid doloremque unde quam, 
+            consequuntur quibusdam placeat illo.</p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, repudiandae distinctio quam id expedita molestias perferendis quasi nam ab animi in omnis minima
+                
+                corrupti dolores? Iste ipsa perferendis quod sequi.</b>
+
+
+    </div>
+   </div>
+
+   <div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ratione doloribus assumenda error, quo velit aliquid. Laborum, blanditiis laudantium, expedita voluptate officia, ipsa provident accusantium facere culpa delectus voluptatum ea.</p>
+   </div>
+
+   <div>
+    <b>first world</b>
+    <p>the world</p>
+    <p>always people fake </p>
+   </div>
+
+   <div></div>
+    <ul>
+        <li><a href="#one">one</a></li>
+        <li><a href="#two">two</a></li>
+    </ul>
+
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ullam quis voluptates neque, fuga, culpa vitae corporis ipsam sequi explicabo error saepe est possimus! Eveniet, autem corporis. Natus, impedit adipisci.</p>
+
+
+    <p id="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sequi neque error dolorum esse nihil sed corrupti, tenetur delectus earum, animi pariatur odio eveniet velit dolores eaque quo explicabo nisi.</p>
+</body>
+</html>

@@ -3,43 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIRST</title>
+    <title>Example</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .mukul{
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-        }
-        .mukul {
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            -color: black;
-            color: backgroundwhite;
-            background-color: white;
-        }
-
-        .mukul .logo {
-            font-size: 40px;
-            font-family: HGMinchoE;
-            font-weight: 900;
-        }
-
-        .mukul .logo span {
-            color: crimson;
-        }
-
-
         *{
             margin: 0;
             padding: 0;
@@ -51,7 +16,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ece7e7
+            background-color: black;
         }
 
         .nav label{
@@ -60,12 +25,12 @@
             margin: 0 10px;
             padding: 0 10px;
             font-size: large;
-            color: rgb(14, 13, 13);
+            color: white;
             cursor: pointer;
         }
 
         .nav label:hover{
-            background-color:blue;
+            background-color: red;
         }
         input[type="checkbox"]{
             display: none;
@@ -87,8 +52,8 @@
             align-items: center;
             justify-content: space-between;
             height: 40px;
-            background-color: rgb(10, 10, 10);
-            color: rgb(231, 231, 235);
+            background-color: black;
+            color: white;
             padding: 0 10px;
             font-size: x-large;
         }
@@ -104,70 +69,10 @@
         input[type="checkbox"]:checked + div{
             display: block;
         }
-
-
-
-
-
-            .container {
-                /* border: 2px solid black; */
-                height: 450px;
-                width: 300px;
-                margin: 150px auto;
-                padding: 10px;
-                text-align: center;
-                border-radius: 10px;
-                box-shadow: 0px 0px 30px rgb(7, 6, 6);
-                background-image: url("https://t3.ftcdn.net/jpg/04/56/00/16/360_F_456001627_vYt7ZFjxEQ1sshme67JAXorKRPo8gsfN.jpg");
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .container h1 {
-                margin: 10px 0;
-                margin-bottom: 20px;
-            }
-
-            .container form {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            .container form label {
-                /* border: 1px solid black; */
-                width: 240px;
-                text-align: left;
-                font-size: large;
-                margin: 3px 0;
-            }
-
-            .container form input {
-                border: 1px solid rgb(15, 15, 15);
-                outline: none;
-                border-width: 1px 1px 3px 1px;
-                height: 30px;
-                width: 240px;
-                margin: 2px 0;
-                background-color: transparent;
-                font-size: large;
-                padding: 0 3px;
-            }
-
-            .container form #btn {
-                margin-top: 10px;
-                width: 100px;
-                background-color: royalblue;
-                color: white;
-            }
     </style>
 </head>
-<div class="mukul">
-        <div class="logo">MUK<span>UL</span></div> 
-
-
+<body>
+    
     <div class="nav">
         <label for="login">Login</label>
         <label for="signup">SignUp</label>
@@ -177,7 +82,7 @@
     <input type="checkbox" name="" id="login">
     <div class="login">
         <div class="heading">
-            <p>Signup</p>
+            <p>Login</p>
             <label for="login">X</label>
         </div>
     </div>
@@ -187,20 +92,6 @@
     <div class="signup">
         <div class="heading">
             <p>Signup</p>
-            <div class="container">
-                <h1>LOGIN</h1>
-        
-                <form action="">
-                    <label></label>
-                    <label>Email</label>
-                    <input type="text">
-                    <label>Phone</label>
-                    <input type="number">
-                    <label>Password</label>
-                    <input type="password">
-                    <input type="submit" value="LOGIN" id="btn">
-                </form>
-            </div>
             <label for="signup">X</label>
         </div>
     </div>

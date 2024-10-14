@@ -1,5 +1,8 @@
 #######################################
 # Constants (LITERAL1)
+
+#https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json
+
 #######################################
 MOD_CONTROL_LEFT	LITERAL1
 MOD_SHIFT_LEFT		LITERAL1

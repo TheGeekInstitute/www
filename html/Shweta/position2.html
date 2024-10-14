@@ -133,8 +133,22 @@
             top: 0px;
         }
 
-       
+       .one p{
+        /* color: blue; */
+       }
+       .one>p{
+        /* color: red; */
+       }
+       .one+p{
+        color: blueviolet;
+       }
 
+       .two +p{
+        /* color: blueviolet; */
+       }
+.two ~p{
+    color: chartreuse;
+}
 
         
     </style>
@@ -202,8 +216,17 @@
     Amet voluptatem distinctio temporibus quibusdam esse nostrum provident voluptatum unde quaerat, nulla porro explicabo obcaecati vero velit impedit praesentium deserunt harum reprehenderit aliquid quisquam? Tenetur tempora nesciunt iusto repellat deserunt!
     Vel recusandae facere ipsa temporibus animi nam quo voluptas dolorem aliquam quaerat suscipit nesciunt, ratione ipsam ea nisi molestias dolor earum! Sunt suscipit ex inventore tempore assumenda ullam nihil. Asperiores?</p>
 
+<br><br>
 
+    <div class=" one">
+        <p>one's child</p>
+    </div>
 
-    
+    <p>sibling</p>
+    <div class="two">
+        <p>two's child</p>
+    </div>
+    <p>one's sibling1</p>
+    <p>one's sibling2</p>
 </body>
 </html>

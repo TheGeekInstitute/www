@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            font-size:xx-large ;
+            font-weight: 900;
+        }
+
+        ul li:first-child{
+            color:aqua
+        }
+
+        ul li:last-child{
+            color: blue;
+        }
+
+        ul li:nth-child(3){
+            color: blueviolet;
+        }
+
+        ul li:nth-last-child(3){
+          color: purple;
+        }
+
+        div p:first-of-type{
+            /* color: red; */
+        }
+
+        div p:last-of-type{
+            color:green;
+        }
+
+        div p:nth-of-type(2){
+        color: gold;
+        }
+
+        div p:nth-last-child(2){
+            color: brown;
+        }
+
+        div p:only-of-type{
+            color:Red;
+        }
+
+        div p:only-child{
+            color:purple;
+        }
+
+        div :empty{
+            height:200px;
+            border: 2px solid red;
+        }
+
+        div:not(:empty){
+            border: 2px solid green;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima placeat accusamus excepturi. Error
+            tenetur cumque ipsa nam optio odit, vel consequatur possimus mollitia sapiente. Accusantium laudantium vel
+            quibusdam cumque.</p>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, aperiam reprehenderit blanditiis
+            doloremque nulla odio rem quas corrupti praesentium autem libero eos. Deserunt eum possimus id sint quaerat
+            distinctio natus!</b>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, dicta. Incidunt qui dolorem tenetur assumenda
+            deleniti, adipisci sapiente odio esse excepturi, sit voluptatibus a aliquam corrupti rerum numquam
+            repudiandae beatae.</p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius cum commodi aliquid voluptate
+                sequi eos, consequuntur possimus vitae dolorem tempora inventore ducimus quibusdam totam animi iusto
+                cumque! Veritatis, expedita!</p>
+            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia provident officiis accusamus
+                doloribus. Omnis amet maxime consequatur ab, provident accusamus iusto consequuntur, libero nostrum
+                nobis magnam, aliquam cum labore?</b>
+        </div>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ducimus vitae qui perferendis vel id
+            architecto laudantium adipisci, non numquam voluptatum, eligendi dolorem amet suscipit nisi, necessitatibus
+            doloremque aut repellendus.</p>
+    </div>
+
+
+    <div>
+        <b>sdasdf</b>
+        <p>dasdas</p>
+        <p>adasdas</p>
+    </div>
+
+<div></div>
+
+    <ul>
+        <li><a href="#one">One</a></li>
+        <li><a href="#two">Two</a></li>
+    </ul>
+
+
+
+    <p id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam iure aspernatur ab officia! Recusandae,
+        iure error fugiat itaque veritatis ipsa magni aliquid consequatur. Ratione et iste placeat in dolorum
+        voluptatem!</p>
+    <p id="two">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quod, quibusdam voluptates eaque
+        tenetur unde, delectus laborum doloremque facilis cupiditate quas sunt molestias nostrum! Vel esse sed
+        voluptatem accusamus quod?</p> 
+</body>
+</html>

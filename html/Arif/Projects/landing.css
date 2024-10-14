@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav{
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.nav a{
+    font-size: x-large;
+    color: black;
+}
+
+.nav #btn{
+    background-color: royalblue;
+    color: white;
+    font-size:  large;
+    padding: 10px 20px;
+    border-radius: .5rem;
+}
+
+.main{
+    background-image: url("https://startbootstrap.github.io/startbootstrap-landing-page/assets/img/bg-masthead.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+    text-align: center;
+}
+
+.main h1{
+    color: white;
+    font-size: 2.7rem;
+    padding-top: 200px;
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 38rem;
+    margin: 0 auto;
+}
+
+.main form input{
+    height: 50px;
+    width: 450px;
+    font-size: large;
+    padding: 3px 5px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 3rem;
+}
+.main form #submit{
+    width: 100px;
+    margin-left: 20px;
+    background-color: royalblue;
+    color: white;
+
+}
+.icons{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box{
+ 
+    width: 20rem;
+    
+    text-align: center;
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.box i {
+    font-size: 5rem;
+    color: royalblue;
+    margin: 15px;
+    margin-top: 90px;
+}
+.box h2{
+    margin: 15px;
+}
+
+
