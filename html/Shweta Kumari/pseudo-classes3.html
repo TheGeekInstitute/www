@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style> 
+   
+   input:focus{
+        /* background-color: red; */
+        caret-color: rgb(255, 0, 149);
+    }
+
+    input:checked{
+        outline: 2px solid rgb(255, 0, 106);
+        accent-color: rgb(128, 0, 0);
+    }
+
+
+    input:disabled{
+        background-color: rgb(255, 0, 106);
+    }
+
+    input:enabled{
+        background-color: rgb(220, 20, 143);
+    }
+
+    input:read-only{
+        /* background-color: crimson; */
+    }
+
+    input:read-write{
+        /* background-color: green; */
+    }
+
+    input:valid{
+        /* background-color: cyan; */
+    }
+
+    input:invalid{
+        /* background-color: red; */
+    }
+
+
+    input:in-range{
+        /* background-color: green; */
+    }
+
+    input:out-of-range{
+        /* background-color: crimson; */
+    }
+
+    input:optional{
+        /* background-color: green; */
+    }
+
+    input:required{
+        /* background-color: red; */
+    }
+    
+
+    input:default{
+        /* background-color: red; */
+    }
+
+    h1{
+            text-decoration-line: underline;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1> Registration Form</h1>
+   <form> <label> First Name :</label>
+    <input type="text" placeholder="Enter First Name" disabled>
+    <br><br>
+    <label> Last Name</label>
+    <input type="text" placeholder="Enter Last Name" required>
+    <br><br>
+
+    <label> Gender</label>
+    <input type="radio" name="gender">
+    <label>Male</label>
+    <input type="radio" name="gender">
+    <label>Female</label>
+    <br><br>
+
+    <label>DOB :</label>
+    <input type="date" readonly>
+    <br><br>
+
+    <label>Email</label>
+    <input type="Email">
+    <br><br>
+
+    <label> Phone Number</label>
+    <input type="number" min="10" max="20">
+<br><br>
+
+<label> Password</label>
+<input type="password">
+    <br><br>
+
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox" checked>
+    <input type="checkbox" checked>
+    <input type="checkbox">
+    <input type="checkbox">
+    <input type="checkbox">
+  <br><br>
+
+  <input type="submit" value="register now">
+<input type="reset">
+</form>
+</body>
+</html>

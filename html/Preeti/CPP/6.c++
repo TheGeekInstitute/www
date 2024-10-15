@@ -1,11 +1,11 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// int main(){
+int main(){
 
-// // for(int i=1; i<=10 ; i++){
-// //     cout<<i<<endl;
-// // }
+for(int i=1; i<=10 ; i++){
+    cout<<i<<endl;
+}
 
 
 // // int arry[2][2][2]={{{1,2},{3,4}},{{5,6},{7,8}}};
@@ -75,5 +75,5 @@
 // }
 //     cout<<fact;
 
-//     return 0;
-// }
+    return 0;
+}

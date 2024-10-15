@@ -20,9 +20,7 @@ if(isset($_GET['edit'])){
     $gender=$data['gender'];
     $salary=$data['salary'];
 
-   
-    
-   
+
 }
 
 
@@ -101,10 +99,6 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
                     if($query){
                         $msg="Record Updated";
                     }
-
-    
-    
-    
                 }
                 else{
                     $msg="Please Enter Salary";

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        :root{
+         --my-color:Pink;
+        }
         ul li{
             font-size:xx-large ;
             font-weight: 900;
@@ -50,13 +54,17 @@
             color:purple;
         }
 
-        div :empty{
+        div:empty{
             height:200px;
             border: 2px solid red;
         }
 
         div:not(:empty){
-            border: 2px solid green;
+            border: 2px solid var(--my-color);
+        }
+
+        p:target{
+            background-color: blueviolet;
         }
         
     </style>

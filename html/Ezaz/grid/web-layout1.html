@@ -21,8 +21,9 @@
             padding: 10px ;
             box-shadow: 0 0 15px 1px black;
             border-radius: 8px;
-           grid-template-columns: 150px 1fr 150px;
-           grid-template-rows: 80px 50px 1fr 70px;
+     
+           grid-template-columns: [col1-start] 150px [col1-end col2-start] 1fr [col2-end col3-start] 150px [col3-end];
+           grid-template-rows: [row1-start] 80px [row1-end row2-start] 50px [row2-end row3-start] 1fr [row3-end row4-start] 70px [row4-end];
 
         
 
@@ -36,17 +37,18 @@
             font-weight: 500;
             border-radius: 10px;
             
+            
         }
         .box1{
             
-            grid-area: 1 / 1 / 2 / 4;
-          
+     
+          grid-area: row1-start / col1-start / row1-end / col3-end;
 
            
         }
         .box2{
-           
-            grid-area: 2 / 1 / 3 / 4;
+          
+            grid-area: row2-start / col1-start / row2-end / col3-end;
     
 
         }
@@ -57,7 +59,7 @@
 
         }
         .box4{
-           
+          
          
            
         }
@@ -67,8 +69,8 @@
         }
         .box6{
           
-    
-            grid-area: 4 / 1 / 5 / 4;
+            grid-area: row4-start / col1-start / row4-end / col3-end;
+     
             
         }
     </style>

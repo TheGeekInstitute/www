@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /">
     <style>
         *{
             margin:0 ;
@@ -338,7 +339,7 @@
 
        .container3 .bars{
         height:10px ;
-        background-color:rgba(255, 192, 203, 0.178);
+        background-color:pink(5px,5px,6px);
         margin:10px 70px ;
         margin-bottom: 20px;
        }
@@ -347,10 +348,6 @@
         height:10px ;
         background-color:#0f3370 ;
         width:0% ;
-        
-        
-       
-       
        }
 
        @keyframes hundred {
@@ -409,16 +406,18 @@
             margin: 10px 70px;
         }
 
-
-        .link1 {
-             
+        .link1{
+         height:200px;
+         width:300px;
+         border:2px 2px solid white;
         }
 
-        .link1 img{
-        height:400px;
-        width:500px ;
-        margin: 10px 70px;
+        .link1 .icons{
+            height:25px;
+
         }
+
+        
     </style>
 </head>
 <body>
@@ -554,12 +553,37 @@
     </div>
 
     <div class="link1">
-    <div class="icons">
-        <i class="fa-thin fa-wave-pulse"></i>
-        <i class="fa-solid fa-signal-stream"></i>
-      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-    </div>
+        <div class="box">
+
+                <div class="icon"><i class="bi bi-activity icon"></i></div>
+                <h4>Lorem Ipsum</h4>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+           
+  
+        <div class="box">
+                <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+                <h4>Sed ut perspici</h4>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>   
+          
+  
+            
+                <div class="box">
+                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                <h4>Magni Dolores</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div> 
+  
+           
+                <div class="box">
+                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                <h4>Nemo Enim</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+  
     </div>
   
 </body>
+<i class="fa-solid fa-signal-stream"></i>
 </html>

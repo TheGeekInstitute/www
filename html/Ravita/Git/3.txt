@@ -1,0 +1,56 @@
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass
+$ git branch
+  feature
+* main
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git add .
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git commit -m "asdas"
+[main e49fdb4] asdas
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git checkout features
+error: pathspec 'features' did not match any file(s) known to git
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git merge feature
+Already up to date.
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git add .
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git commit -m "dasda"
+[main 602b61a] dasda
+ 1 file changed, 1 insertion(+)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git branch
+  feature
+* main
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git merge main
+Updating 2af1cba..602b61a
+Fast-forward
+ index.html | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$

@@ -1,0 +1,19 @@
+.heading{
+    color: blanchedalmond;
+    background-color: black;
+}
+*{
+    background-color: coral;
+}
+#heading3 {
+    color: cadetblue;
+    background-color: blue;
+}
+#heading6{
+    color: black;
+    background-color: yellow;
+}
+h2,p{
+    color: darkblue blanchedalmond;
+    background-color: crimson;
+}

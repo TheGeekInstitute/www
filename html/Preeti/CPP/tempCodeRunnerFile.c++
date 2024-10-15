@@ -1,1 +1,2 @@
-insertfront
+    return 0;
+}

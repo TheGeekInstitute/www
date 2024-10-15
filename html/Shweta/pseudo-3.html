@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        input:focus{
+            background-color: aquamarine;
+            caret-color: blueviolet;
+        }
+        input:checked{
+            /* outline:2px solid red ; */
+            accent-color: red;
+        }
+        input:disabled{
+            background-color: rgb(230, 117, 11);
+        }
+        input:enabled{
+            background-color: rgb(20, 194, 238);
+        }
+        input:read-only{
+            background-color: chartreuse;
+        }
+        input:read-write{
+            /* background-color: cornflowerblue; */
+        }
+        input:valid{
+            /* background-color: red; */
+        }
+        input:invalid{
+            background-color: red;
+        }
+        input:in-range{
+            background-color: yellow;
+
+    } input:out-of-range{
+        background-color: blueviolet;
+    }
+    input:optional{
+        /* background-color: chocolate; */
+    }
+    input:required{
+        background-color: brown;
+    }
+    input:default{
+        background-color: crimson;
+    }
+    </style>
+</head>
+<body>
+    <h1>Regstration from</h1>
+    <form >
+        <label>First Name:</label>
+        <input type="text" placeholder=" Enter first name "disabled>
+        <br>
+
+
+        <label>Last Name</label>
+        <input type="text" placeholder="last name"  required>
+        <br><br>
+        <label > DOB:</label>
+        <input type="date" readonly>
+
+        <br><br>
+
+        <label >Gender</label>
+        <input type="radio" name="Gender">
+        <label>Female</label>
+        <input type="radio" name="Gender">
+        <label> Male</label>
+        <br><br>
+
+        <label >Email</label>
+        <input type="email">
+        <br><br>
+
+        <label>Phone number</label>
+        <input type="number"max="10">
+        <br><br>
+        <label >password</label>
+        <input type="password">
+        <br><br>
+
+
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text" checked>
+        <input type="text">
+        <input type="text"checked>
+        <input type="text">
+        <input type="text">
+
+        <br><br>
+        <input type="submit"value=" Register now">
+        <input type="reset">
+    </form>
+    
+</body>
+</html>

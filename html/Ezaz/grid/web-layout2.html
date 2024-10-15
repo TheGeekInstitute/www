@@ -21,9 +21,16 @@
             padding: 10px ;
             box-shadow: 0 0 15px 1px black;
             border-radius: 8px;
+     
            grid-template-columns: 150px 1fr 150px;
            grid-template-rows: 80px 50px 1fr 70px;
 
+           grid-template-areas: "header header header"
+                                "nav nav nav"
+                                "left-sidebar main right-sidebar"
+                                "footer footer footer"
+
+           ;
         
 
         }
@@ -35,40 +42,40 @@
             font-size: x-large;
             font-weight: 500;
             border-radius: 10px;
-            
         }
         .box1{
-            
-            grid-area: 1 / 1 / 2 / 4;
           
+      
+          grid-area: header;
 
            
         }
         .box2{
-           
-            grid-area: 2 / 1 / 3 / 4;
+            
+            grid-area: nav;
     
 
         }
         .box3{
-           
-
+          
+      
+            grid-area: left-sidebar;
            
 
         }
         .box4{
            
-         
+            grid-area: main;
            
         }
         .box5{
-           
-
+         
+            grid-area: right-sidebar;
         }
         .box6{
-          
-    
-            grid-area: 4 / 1 / 5 / 4;
+           
+            grid-area: footer;
+
             
         }
     </style>
