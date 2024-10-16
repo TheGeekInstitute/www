@@ -45,7 +45,7 @@
             right: -100px;
             position: absolute;
 
-            animation: boy 5s linear 0s infinite;
+            animation: boy 11s linear 0s infinite;
             
         }
         @keyframes boy{
@@ -56,10 +56,35 @@
                 transform: translateX(-100vw) rotateY(180deg);
             }
         }
+        .sun{
+            height: 90px;
+            position: absolute;
+            left: -11vw;
+            top: 25vh;
+
+            animation: sun 11s linear 0s infinite;
+        }
+        @keyframes sun{ 
+           0%{
+            transform: translate(0,0);
+           }
+           30%{
+            transform: translate(50vw,-15vh);
+           }
+           60%{
+            transform: translate(90vw,-3vh);
+           }
+           100%{
+            transform: translate(112vw,10vh);
+           }
+
+           
+        }
     </style>
 </head>
 <body>
     <img src="../Aasha/image/car.gif" alt="" class="car">
     <img src="../Aasha/image/boy.gif" alt="" class="boy">
+    <img src="https://png.pngtree.com/png-vector/20230414/ourmid/pngtree-sun-orange-three-dimensional-illustration-png-image_6694186.png" alt="" class="sun">
 </body>
 </html>

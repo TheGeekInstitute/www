@@ -126,16 +126,16 @@
             width: 100vw;
             /* border: 1px solid red; */
             /* background-color: white; */
-            background-image: linear-gradient(rgba(255, 255, 255, 0.007),rgba(255, 255, 255, 0.562),rgba(255, 255, 255, 0.938) , white);
+            background-image: linear-gradient(rgba(255, 255, 255, 0.007),rgba(255, 255, 255, 0.562),rgba(255, 255, 255, 0.938) , rgb(196, 194, 194));
             -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
         }
         .row{
             position: absolute;
             top:55vh ;
-            height: 100vh;
+            height: 200vh;
             width: 100vw;
-            background-color: rgba(91, 91, 99, 0.349);
+            background-color: rgba(104, 104, 104, 0.541);
             /* display: none; */
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             
@@ -145,13 +145,14 @@
             display: flex;
             justify-content: space-evenly;
             border: 1px solid red;
+            margin-bottom: 1rem;
 
         }
         .row .row1 .box{
             background-color: white;
             height: 26.5rem;
-            width: 21rem;
-            border: 1px solid green;
+            width: 20rem;
+            /* border: 1px solid green; */
             padding: 1rem;
         }
         .row1 .box + a{
@@ -159,7 +160,7 @@
             display: inline-block;
             height: 17rem;
             width: 18rem;
-            border: 1px solid green;
+            /* border: 1px solid green; */
             color: rgb(100, 194, 231);
         }
         .row .row1 a image{
@@ -170,10 +171,10 @@
         }
         .row1 .box .grid{
             display: grid;
-            border: 1px solid blue;
-            grid-template-columns: 8.4rem 8.4rem;
-            grid-template-rows:  8rem 8rem;
-            gap:  1rem;
+            /* border: 1px solid blue; */
+            grid-template-columns: 8.8rem 8.8rem;
+            grid-template-rows:  8.4rem 8.4rem;
+            gap:  1rem .3rem;
             /* box-sizing: border-box; */
             /* height: 15rem; */
             /* background-color: gray; */
@@ -182,10 +183,21 @@
             /* height: 6rem; */
             /* background-color: red; */
         }
+        .row1 .box >p{
+            /* border: 1px solid black; */
+            margin-bottom: .5rem;
+        }
         .row1 .box .items a{
             color: black;
             font-size: .9rem;
            
+        }
+        .row1 .see{
+            color: rgb(0, 153, 255);
+            font-size: .9rem;
+        }
+        .row1 .see:hover{
+            color: red;
         }
        
         
@@ -250,25 +262,82 @@
         <div class="row">
             <div class="row1">
                 <div class="box">
+                    <p style="font-size: 1.4rem; font-weight: 800;">Great Indian Festival | New deals added everyday</p>
+                    <div class="ads">
+                        <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase2/J24_P2_GW_PC_CC_SAD_1x._SY304_CB544959958_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;" ><br><p class="see">Explore offers</p></a>
+                    </div>
+                    
+                </div>
+                <div class="box">
                     <p style="font-size: 1.4rem; font-weight: 800;">Up to 80% off | Electronics & accessories</p>
                     <div class="ads">
-                        <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Img23/Budget3/REC-PC_CC_379x304._SY304_CB564096366_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;"><br>See all offers</a>
+                        <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Img23/Budget3/REC-PC_CC_379x304._SY304_CB564096366_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;" class="see"><br><p class="see">See offers</p></a>
                     </div>
                     
                 </div>
                 <div class="box">
                     <p style="font-size: 1.4rem; font-weight: 800;">Minimum 50% off | Home, kitchen & more</p>
                     <div class="grid">
-                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_1_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">kitchen appliance</p></a></div>   
-                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_2_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">Home decor</p></a></div>   
-                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_3_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">furniture</p></a></div>   
-                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_4_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="border: 1px solid green; ">Home improvement</p></a></div>                        
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_1_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>kitchen appliance</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_2_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>Home decor</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_3_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>furniture</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_4_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="">Home improvement</p></a></div>                        
                     </div>
-                    <a href=""  style="position: relative; top: 1.5rem;border: 1px solid green; ">See all offers</a>
+                    <a href=""  style="position: relative; top: 1.5rem" class="see">See all offers</a>
                 </div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box">
+                    <p style="font-size: 1.4rem; font-weight: 800;">Starting ₹299 | Latest styles from top brands</p>
+                    <div class="grid">
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Kurtas_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">kurtas</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Tops_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>Tops</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Dresses_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">Dresses</p></a></div>   
+                        <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Sarees_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">Sarees</p></a></div>                        
+                    </div>
+                    <a href=""  style="position: relative; top: 1.5rem; " class="see">See all offers</a>
+                </div>
 
+            </div>
+
+            <div class="row1">
+                
+                    <div class="box">
+                        <p style="font-size: 1.4rem; font-weight: 800;">Great Indian Festival | New deals added everyday</p>
+                        <div class="ads">
+                            <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase2/J24_P2_GW_PC_CC_SAD_1x._SY304_CB544959958_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;" ><br><p class="see">Explore offers</p></a>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <p style="font-size: 1.4rem; font-weight: 800;">Up to 80% off | Electronics & accessories</p>
+                        <div class="ads">
+                            <a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/Img23/Budget3/REC-PC_CC_379x304._SY304_CB564096366_.jpg" alt="" style="text-align: center;height: 17rem; width: 18rem; margin-bottom: 2rem;" class="see"><br><p class="see">See offers</p></a>
+                        </div>
+                        
+                    </div>
+                    <div class="box">
+                        <p style="font-size: 1.4rem; font-weight: 800;">Minimum 50% off | Home, kitchen & more</p>
+                        <div class="grid">
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_1_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>kitchen appliance</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_2_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>Home decor</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_3_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>furniture</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/OHL/Jup24/GW/PC_QC_4_1x._SY116_CB562243010_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p style="">Home improvement</p></a></div>                        
+                        </div>
+                        <a href=""  style="position: relative; top: 1.5rem" class="see">See all offers</a>
+                    </div>
+                    <div class="box">
+                        <p style="font-size: 1.4rem; font-weight: 800;">Starting ₹299 | Latest styles from top brands</p>
+                        <div class="grid">
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Kurtas_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">kurtas</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Tops_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p>Tops</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Dresses_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">Dresses</p></a></div>   
+                            <div class="items"><a href=""><img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Jupiter/BTF/PCQC/1x/New/Sarees_372x232._SY116_CB562046867_.jpg"  alt="" style="height: 6rem; width: 8.4rem;"> <p ">Sarees</p></a></div>                        
+                        </div>
+                        <a href=""  style="position: relative; top: 1.5rem; " class="see">See all offers</a>
+                    </div>
+             
+            </div>
+            <div class="row2">
+                <div class="box"></div>
             </div>
         </div>
         

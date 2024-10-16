@@ -1,0 +1,268 @@
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ cd Desktop/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop
+$ cd GitClass
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitC
+$ git branch
+* feature
+  main
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitC
+$ code .
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git log
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> feature, main)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+commit 2af1cba43e9c8e93e90a461719852cc40267c776
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:01:40 2024 +0530
+
+    Mofified
+
+commit 04df7cd42f0256b4e653c1b384f00c153431ae2e
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:00:37 2024 +0530
+
+    added app.js
+
+commit b80adc896a9258eae3e2911011e77bbfbe6f2d1c
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 19:58:28 2024 +0530
+
+    after long time
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git log
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> feature, main)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+commit 2af1cba43e9c8e93e90a461719852cc40267c776
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:01:40 2024 +0530
+
+    Mofified
+
+commit 04df7cd42f0256b4e653c1b384f00c153431ae2e
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:00:37 2024 +0530
+
+    added app.js
+
+commit b80adc896a9258eae3e2911011e77bbfbe6f2d1c
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 19:58:28 2024 +0530
+
+    after long time
+
+ ESCOD
+> feature, main)
+
+
+
+> feature, main)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git log
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> feature, main)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+commit 2af1cba43e9c8e93e90a461719852cc40267c776
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:01:40 2024 +0530
+
+    Mofified
+
+commit 04df7cd42f0256b4e653c1b384f00c153431ae2e
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:00:37 2024 +0530
+
+    added app.js
+
+commit b80adc896a9258eae3e2911011e77bbfbe6f2d1c
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 19:58:28 2024 +0530
+
+    after long time
+
+commit 62637265e764d42ed66318f3037cb467172ab046
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Mon Oct 14 19:57:59 2024 +0530
+
+    Modified Index file
+
+commit c06fbdea69f34ad2117c2ec3a4416f80be5b552a
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Mon Oct 14 19:55:49 2024 +0530
+
+    Initial Commit
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git reset --hard c06fbdea69f34ad2117c2ec3a4416f80be5b552a
+HEAD is now at c06fbde Initial Commit
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git reset --hard 602b61a28c391bdf06d754c3c2aab05dbe9ca54e
+HEAD is now at 602b61a dasda
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git branch
+* feature
+  main
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (feature)
+$ git checkout main
+Switched to branch 'main'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git log -p 2
+fatal: ambiguous argument '2': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git log -l 2
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> main, feature)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+commit 2af1cba43e9c8e93e90a461719852cc40267c776
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:01:40 2024 +0530
+
+    Mofified
+
+commit 04df7cd42f0256b4e653c1b384f00c153431ae2e
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:00:37 2024 +0530
+
+    added app.js
+
+commit b80adc896a9258eae3e2911011e77bbfbe6f2d1c
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 19:58:28 2024 +0530
+
+    after long time
+
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git log -n 2
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> main, feature)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git log -n 3
+commit 602b61a28c391bdf06d754c3c2aab05dbe9ca54e (HEAD -> main, feature)
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:05:08 2024 +0530
+
+    dasda
+
+commit e49fdb405bc9a7fd75d8d9d360510f019eb748d0
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:03:45 2024 +0530
+
+    asdas
+
+commit 2af1cba43e9c8e93e90a461719852cc40267c776
+Author: Ravita <ravitakumari012345@gmail.com>
+Date:   Tue Oct 15 20:01:40 2024 +0530
+
+    Mofified
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git branch -d feature
+Deleted branch feature (was 602b61a).
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git branch
+* main
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #btn{
+            /* display: none; */
+        }
+
+        .open{
+            display: block;
+            height: 40px;
+            width: 100px;
+            line-height:40px ;
+            background-color: blue;
+            border-radius: 10px;
+            text-align: center;
+            font-size: large;
+            color: white;
+            margin: 150px auto;
+
+        }
+
+
+
+        .open:hover{
+            background-color: rgb(45, 2, 85);
+        }
+
+
+        .container{
+            display: none;
+            background-color:rgba(0, 0, 0, 0.418) ;
+            position: absolute;
+            inset: 0;
+
+        }
+        .container .modal{
+            height:300px ;
+            width:400px ;
+            background-color:white ;
+            border-radius: 10px;
+            overflow:hidden ;
+            position: absolute;
+            top:calc(50% - 150px ) ;
+            left: calc(50% - 200px);
+
+        }
+        .container .modal .heading{
+            height: 40px;
+            color: white;
+            padding: 0 10px;
+           background-color:rgb(216, 17, 117) ;
+            text-align: center;
+            justify-content: space-between;
+            font-size: large;
+            display: flex;
+
+        }
+        .container .modal .content{
+            padding: 10px;
+        }
+        #btn:checked + .container{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="btn" class="open">Open</label>
+    <input type="checkbox" id="btn">
+
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>Modal heading</p>
+                <label for="btn">X</label>
+            
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorum, cupiditate excepturi quisquam labore perspiciatis aspernatur. Atque quidem nihil, aperiam aut vitae temporibus esse. Minima omnis quod sunt temporibus voluptatem!</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

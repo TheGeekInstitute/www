@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 900px; */
+            height: 500px;
+            margin: auto;
+            
+            display: grid;
+            /* gap: 5px; */
+      
+            /* grid-template-columns: repeat(3,50px); */
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 200px)); */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+
+            grid-template-rows: repeat(3,50px);
+
+            /* grid-auto-flow: column;
+            grid-auto-columns: 100px; */
+
+            grid-auto-flow: row;
+            grid-auto-rows: 50px;
+
+            /* align-items: start; */
+            /* justify-items: center; */
+     
+            /* place-items: start end; */
+
+
+            /* justify-content: space-between; */
+            /* align-content: space-between; */
+        }
+
+        .box1 {
+            background-color: yellowgreen;
+            /* align-self: center; */
+            /* justify-self: center; */
+      
+            /* place-self: center start; */
+            order: 10;
+        }
+
+
+        .box2 {
+            background-color: green;
+            order: 9;
+       
+            
+        }
+
+        .box3 {
+            background-color: rebeccapurple;
+      
+        
+        }
+
+        .box4 {
+            background-color: cyan;
+        }
+
+        .box5 {
+            background-color: plum;
+        }
+
+        .box6 {
+            background-color: crimson;
+        }
+
+        .box7 {
+            background-color: orange;
+        }
+
+        .box8 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- https://www.w3schools.com/css/css_website_layout.asp -->

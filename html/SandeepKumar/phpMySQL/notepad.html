@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Pad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .container {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30rem;
+            width: 50rem;
+            position: absolute;
+            top: calc(50% - 15rem);
+            left: calc(50% - 25rem);
+            background-color: antiquewhite;
+        }
+
+        .container .box {
+            width: 50%;
+            height: 30rem;
+        }
+
+        .container .box:first-child {
+            padding: 1rem 0;
+
+        }
+
+
+        .container .box:first-child form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+
+        .container .box:first-child form input {
+            border: 2px solid black;
+            height: 3rem;
+            width: 90%;
+            padding: 0 5px;
+            font-size: x-large;
+            outline: none;
+            border-width: 1px 1px 4px 1px;
+            border-radius: 3px;
+        }
+
+        .container .box:first-child form textarea {
+            border: 2px solid black;
+            margin-top: 1rem;
+            border-width: 1px 1px 4px 1px;
+            width: 90%;
+            height: 20rem;
+            padding: 10px;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            outline: transparent;
+            border-radius: 3px;
+        }
+
+        .container .box:last-child {
+
+            padding: 1rem;
+
+        }
+
+
+        .container .box:last-child table,
+        .container .box:last-child td,
+        .container .box:last-child th {
+            border: 3px solid antiquewhite;
+            border-collapse: collapse;
+            padding: 3px;
+            font-size: large;
+        }
+
+
+        .container .box:last-child table {
+            width: 90%;
+            margin: auto;
+        }
+
+
+        .container .box:last-child table th {
+            background-color: green;
+            color: white;
+        }
+
+
+        .container .box:last-child table tr:nth-child(odd) {
+            background-color: rgb(212, 241, 241);
+
+        }
+
+
+        .container .box:last-child table tr:nth-child(even) {
+            background-color: rgb(190, 250, 250);
+        }
+
+        .container .box:first-child form input[type="submit"] {
+            background-color: royalblue;
+            color: white;
+            width: 7rem;
+            margin: .5rem;
+            height: 2.5rem;
+            cursor: pointer;
+            transition: all .3s linear;
+
+        }
+
+
+        .container .box:first-child form input[type="submit"]:hover {
+            background-color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="box">
+            <form action="" method="POST">
+                <input type="text" placeholder="heading" name="heading" value="">
+                <textarea name="content" placeholder="Content"></textarea>
+                <div class="btn">
+                    <input type="submit" value="Save" name="save">
+                    <input type="submit" value="Update" name="update">
+                </div>
+            </form>
+        </div>
+        <div class="box">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+
+
+                <tr>
+                    <td>asdas...</td>
+                    <td>
+                        <a href="?edit=14">Edit</a>
+                        <a href="?delete=14">Delete</a>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

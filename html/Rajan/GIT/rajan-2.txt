@@ -1,0 +1,249 @@
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ git config --global user.name Rajan
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ git config --global user.email rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ git config --global list
+error: key does not contain a section: list
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ git config --global --list
+user.name=Rajan
+user.email=rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ cod .
+bash: cod: command not found
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ code .
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ gitclass/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~
+$ cd Desktop/
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop
+$ ls
+ Card.htm
+ Gitclass/
+'OpenOffice 4.1.15 (en-US) Installation Files'/
+ desktop-wallpaper-fall-colors-reflection-autumn-trees.jpg
+ index.html
+ rajan/
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop
+$ cd rajan/
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan
+$ ls
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan
+$ git init
+Initialized empty Git repository in C:/Users/Geek-Institute/Desktop/rajan/.git/
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git config
+error: no action specified
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git config --global user.name Rajan
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git config --global user.email rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git config --global list
+error: key does not contain a section: list
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git config --global --list
+user.name=Rajan
+user.email=rajan.kumar367351@gmail.com
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ code .
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ touch data.txt index.html style.css
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ ls
+data.txt  index.html  style.css
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data.txt
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git add index.html
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data.txt
+        style.css
+
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git commit -m "initial commit"
+[master (root-commit) 76e8805] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data.txt
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status -s
+?? data.txt
+?? style.css
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git add .
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   data.txt
+        new file:   style.css
+
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git commit -m "second commit"
+[master 730572d] second commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 data.txt
+ create mode 100644 style.css
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git log
+commit 730572d148a355020f79435ae3f5f61943118f5b (HEAD -> master)
+Author: Rajan <rajan.kumar367351@gmail.com>
+Date:   Wed Oct 16 12:13:32 2024 +0530
+
+    second commit
+
+commit 76e88057f6a150d3b60b4eab434df2940cc40638
+Author: Rajan <rajan.kumar367351@gmail.com>
+Date:   Wed Oct 16 12:11:54 2024 +0530
+
+    initial commit
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git reset --hard 76e88057f6a150d3b60b4eab434df2940cc40638
+HEAD is now at 76e8805 initial commit
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$ git reset --hard730572d148a355020f79435ae3f5f61943118f5b
+error: unknown option `hard730572d148a355020f79435ae3f5f61943118f5b'
+usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspec-file-nul]] [<tree-ish>]
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>...]
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tree-ish>]
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index after reset
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and working tree
+    --merge               reset HEAD, index and working tree
+    --keep                reset HEAD but keep local changes
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating of submodules
+    -p, --[no-]patch      select hunks interactively
+    -N, --[no-]intent-to-add
+                          record only the fact that removed paths will be added later
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    DEPRECATED (use --pathspec-file-nul instead): paths are separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-from-file=- instead): read paths from <stdin>
+
+
+Geek-Institute@Geek-Institute-05 MINGW64 ~/Desktop/rajan (master)
+$

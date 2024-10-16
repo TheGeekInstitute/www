@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            #btn {
+                display: none;
+            }
+
+            .open {
+                display: block;
+                height: 40px;
+                width: 100px;
+                line-height: 40px;
+                background-color: blue;
+                border-radius: 3px;
+                text-align: center;
+                font-size: small;
+                color: brown;
+                margin: 160px auto;
+            }
+
+            .open:hover {
+                background-color: blueviolet;
+            }
+
+            .container {
+                display: none;
+                background-color: rgba(0, 0, 0, 0.13);
+                position: absolute;
+                inset: 0;
+            }
+
+            .container .modal {
+                background-color: white;
+                height: 400px;
+                width: 450px;
+                border-radius: 10p;
+                overflow: hidden;
+                position: absolute;
+                top: calc(50%-150px);
+                left: calc(50%-200px);
+            }
+
+            .container.modal.heading {
+                background-color: rgb(255, 0, 128);
+                color: blue;
+                padding: 0 10px;
+                height: 40px;
+                display: flex;
+                align-items: center ;
+                justify-content: space-between;
+                font-size: large;
+            }
+
+            .container.modal.content{
+                padding: 10px;
+
+            }
+
+            #btn:checked+.container{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <label for="btn" class="open">open</label>
+    <input type="checkbox" id="btn">
+
+    <div class="container">
+        <div class="modal">
+            <div class="heading">
+                <p>Model Heading</p>
+                <label for="btn">X</label>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, nam voluptates doloremque nulla
+                    earum unde magnam dolor veritatis laudantium minus quam pariatur fugit. Explicabo perspiciatis alias
+                    blanditiis corporis mollitia magni!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

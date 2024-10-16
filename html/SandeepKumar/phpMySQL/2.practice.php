@@ -87,7 +87,47 @@ if(isset($_POST['update']) && isset($_POST['id'])){
 
 
 
-?>;
+?>
+<?php
+        $sql="SELECT * FORM `note`";
+
+        $quarry=mysqli_query($conn,$sql);
+
+        if(mysqli_num_rows($quarry)>0){
+            $i=1;
+            while($data=mysqli_fetch_assoc($quarry)){
+                echo '
+                <tr>
+                <td>'.$data['heading'].'</td>
+                <td>'.$data['content'].'</td>
+                   
+                    <td><a href="?edit='.$data['user_id'].'">edit</a> / <a href="?delete='.$data['user_id'].'">delete</a></td>
+                </tr>
+                ';
+                $i++;
+            }
+        }
+        else{
+            echo '
+            <tr>
+            <td colspan="5">NO Records Found</td>
+            <tr>
+            ';
+        }
+
+
+        if(isset($_GET['delete']) && !empty($_GET['delete'])){
+            $id=$_GET['delete'];
+            $sql="DELETE FROM `note` WHERE `user_id`='$id'";
+            $query=mysqli_query($conn,$sql);
+            if($query){
+                header('location:' . $_SERVER['PHP_SELF']);
+            }
+        }
+
+
+        ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
