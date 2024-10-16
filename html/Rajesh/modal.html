@@ -12,7 +12,14 @@
         }
 
         .container{
-            display: none;
+            /* display: none; */
+            background-color: rgba(0, 0, 0, 0.493);
+            position: absolute;
+            /* top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+            inset : 0;
         }
 
         #btn{
@@ -31,6 +38,11 @@
             color: white;
             border-radius: 3px;
             margin: 150px auto;
+            cursor: pointer;
+        }
+
+        .open:hover{
+            background-color: blue;
         }
 
     </style>
@@ -38,7 +50,7 @@
 </head>
 <body>
     
-    <label for="btn">Open</label>
+    <label for="btn" class="open">Open</label>
 
     <input type="checkbox" id="btn" >
 
