@@ -21,18 +21,18 @@
         }
         .girl{
             height: 150px;
-            bottom: 20px;
+            bottom: 5vw;
             position: absolute;
-            left: -10vw;
+            right: -10vw;
 
             animation: girl 10s linear 0s infinite;
         }
         @keyframes girl{
             0%{
-                transform: translateX(-10vw)
+                transform: translateX(10vw);
             }
             100%{
-                transform: translateX(110vw);
+                transform: translateX(-110vw);
             }
         }
         .woman{
@@ -42,10 +42,10 @@
             left: 5vw;
         }
         .gender{
-            height: 90px;
+            height: 50px;
             position: absolute;
-            bottom: 10vw;
-            left: 65vw;
+            bottom: 17vw;
+            left: 68vw;
         }
         .race{
             height: 250px;
@@ -63,13 +63,53 @@
                 transform: translateX(110vw);
             }
         }
-        
+        .dude{
+            height: 140px;
+            position: absolute;
+            bottom: 8vw;
+            right: -10vw;
+
+            animation: dude 20s linear 0s infinite;
+        }
+        @keyframes dude{
+            0%{
+                transform: translateX(10vw)
+            }
+            100%{
+                transform: translateX(-110vw);
+            }
+        }
+        .sun{
+            height: 80px;
+            position: absolute;
+            left: -10vw;
+            bottom: 60vh;
+             
+            animation: sun 15s linear 0s infinite;
+        }
+        @keyframes sun{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(58vw,-28vh);
+            }
+            65%{
+                transform: translate(90vw,-8vh)
+
+            }
+            100%{
+                transform: translate(110vw,10vh);
+            }
+        }
     </style>
 </head>
 <body>
-    <img src="https://www.pngmart.com/files/15/Running-Female-Athlete-Transparent-Background.png" alt="" class="girl">
+    <img src="https://media.tenor.com/_iSX87na8aQAAAAj/woman-running-joypixels.gif" alt="" class="girl">
     <img src="https://media.tenor.com/XYB-y9Bjo6AAAAAj/mimibubu.gif" alt="" class="gender">
     <img src="https://media.tenor.com/TpJWdSfc7NcAAAAj/jagyasini-singh-hula-hoop.gif" alt="" class="woman">
     <img src="https://media.tenor.com/AgQlG3sOWBYAAAAj/bike-biking.gif" alt="" class="race">
+    <img src="https://media.tenor.com/1J9_dVUf7moAAAAj/bike-race.gif" alt="" class="dude">
+    <img src="https://media.tenor.com/_w_ea8aRK2kAAAAj/dm4uz3-foekoe.gif" alt="" class="sun">
 </body>
 </html>

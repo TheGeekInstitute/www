@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" );
+
+    *{
+        margin:0 ;
+        padding:0 ;
+        box-sizing: border-box;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    .container{
+        /* border:2px solid red ; */
+        width:500px ;
+        margin:50px auto ;
+    }
+
+    .container .accordian{
+        /* border:2px solid green ; */
+        margin:5px 0 ;
+    }
+
+    .container .accordian .heading{
+        height:40px ;
+        display:flex ;
+        align-items:center ;
+        justify-content:space-between ;
+        padding:0 20px ;
+        font-size:x-large ;
+        background-color:rgb(49, 125, 212);
+        color:white ;
+    }
+
+    .container .accordian .content{
+        background-color:aquamarine;
+        padding:10px ;
+        display:none ;
+    }
+
+    input[type="checkbox"]:checked ~ .content{
+            display:  block;
+        }
+
+        input[type="checkbox"]:checked ~ .heading i{
+            transform: rotate(90deg);
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="accordian">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="heading">
+                <p>About the heading</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque blanditiis quisquam. Fuga quia ratione incidunt aperiam, quidem corporis at voluptatibus eos alias eligendi quis hic maiores suscipit! Officiis, blanditiis!</p>
+                </div>
+        </div>
+
+        <div class="accordian">
+            <input type="checkbox" id="btn1">
+            <label for="btn1" class="heading">
+                <p>About the heading</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque blanditiis quisquam. Fuga quia ratione incidunt aperiam, quidem corporis at voluptatibus eos alias eligendi quis hic maiores suscipit! Officiis, blanditiis!</p>
+                </div>
+        </div>
+
+        <div class="accordian">
+            <input type="checkbox" id="btn2">
+            <label for="btn2" class="heading">
+                <p>About the heading</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque blanditiis quisquam. Fuga quia ratione incidunt aperiam, quidem corporis at voluptatibus eos alias eligendi quis hic maiores suscipit! Officiis, blanditiis!</p>
+                </div>
+        </div>
+
+        <div class="accordian">
+            <input type="checkbox" id="btn3">
+            <label for="btn3" class="heading">
+                <p>About the heading</p>
+                <i class="fa-solid fa-angle-right"></i>
+            </label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam itaque blanditiis quisquam. Fuga quia ratione incidunt aperiam, quidem corporis at voluptatibus eos alias eligendi quis hic maiores suscipit! Officiis, blanditiis!</p>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

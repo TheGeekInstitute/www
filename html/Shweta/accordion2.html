@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"]{
+            display: none;
+        }
+        .container{
+            /* border:2px solid red; */
+            width:500px;
+            margin: 50px auto;
+        }
+        .container .accordion{
+            /* border: 2px solid green; */
+            margin: 5px 0;
+        }
+        .container .accordion .heading{
+            height: 40px;
+            display: flex;
+            background-color:rgba(145, 8, 122, 0.945) ;
+            justify-content:space-between ;
+            align-items:center ;
+            padding: 0 20px;
+            color: rgb(237, 230, 245);
+            font-size: x-large;
+
+
+
+        }
+        .container .accordion .content{
+            background-color: rgb(9, 184, 175);
+            padding:10px ;
+            display: none;
+        }
+        input[type="checkbox"]:checked ~ .content{
+            display: block;
+        }
+
+        input[type="checkbox"]:checked ~ .heading i{
+         transform: rotate(45deg);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="accordion">
+            <input type="checkbox" id="btn">
+            <label for="btn" class="heading">
+                <p>This is Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iusto quas tempora voluptas laudantium labore tempore architecto rem veniam ipsam accusamus explicabo dolores, quam ratione temporibus reprehenderit illo libero? Id?</p>
+            </div>
+           
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox" id="btn1">
+            <label for="btn1" class="heading">
+                <p>This is Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iusto quas tempora voluptas laudantium labore tempore architecto rem veniam ipsam accusamus explicabo dolores, quam ratione temporibus reprehenderit illo libero? Id?</p>
+            </div>
+           
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox" id="btn2">
+            <label for="btn2" class="heading">
+                <p>This is Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iusto quas tempora voluptas laudantium labore tempore architecto rem veniam ipsam accusamus explicabo dolores, quam ratione temporibus reprehenderit illo libero? Id?</p>
+            </div>
+           
+        </div>
+
+        <div class="accordion">
+            <input type="checkbox" id="btn3">
+            <label for="btn3" class="heading">
+                <p>This is Heading</p>
+                <i class="fa-solid fa-plus"></i>
+            </label>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iusto quas tempora voluptas laudantium labore tempore architecto rem veniam ipsam accusamus explicabo dolores, quam ratione temporibus reprehenderit illo libero? Id?</p>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+</html>

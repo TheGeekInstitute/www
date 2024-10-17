@@ -118,6 +118,9 @@
     padding-top: 6rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: x-large;
+    background-color:  #d6dbdf ;
+    padding: 
+                          ;
 }
    
 
@@ -160,6 +163,7 @@
     margin-top: 5rem;
     text-align: center;
     padding-top: 200px;
+
 }
 .child{
     /* border: 2px solid black; */
@@ -172,6 +176,8 @@
     width: 34rem;
     border-radius: 7px;
     margin: 0 10px;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .child button{
     border-radius: 7px;
@@ -185,7 +191,7 @@
 .image h1 {
     font-size: 42px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color:  white;
 }
 
     

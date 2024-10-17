@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .new{
+            color: red;
+        }
+
+        .abcd{
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="abcd">This is Heading <i>Something</i> </h1>
+
+
+    <script>
+        let heading = document.getElementById("heading");
+
+        // console.log(heading.innerText)
+        // console.log(heading.innerHTML)
+        // console.log(heading.getAttribute("id"))
+        // console.log(heading.getAttributeNode("id"))
+        // console.log(heading.attributes[0])
+
+        // heading.innerText = "lorem ipsum dolor <i>asdsa</i>"
+        // heading.innerHTML = "lorem ipsum dolor <i>asdsa</i>"
+        // heading.setAttribute("class","new")
+        // heading.setAttribute("style","background-color: green;")
+        heading.removeAttribute("class")
+    </script>
+</body>
+</html>
+
+<!--
+ DOM Get & set Values Methods
+    DOM GET:
+        innerText
+        innerHTML
+        getAttribute
+        getAttributeNode
+        Attribute
+    DOM SET:
+        innerText
+        innerHTML
+        setAttribute
+    removeAttribute 
+                    -->

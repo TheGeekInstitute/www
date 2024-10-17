@@ -20,6 +20,7 @@
             right: 0;
             bottom: 0; */
             inset : 0;
+            display: none;
         }
 
         .container .modal{
@@ -27,6 +28,7 @@
             width: 400px;
             background-color: white;
             position: absolute;
+            overflow: hidden;
             border-radius: 10px;
             left: calc(50% - 200px);
             top: calc(50% - 150px);
@@ -37,7 +39,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            /* background-color: rebeccapurple; */
+            background-color: rebeccapurple;
             color: white;
             padding: 0 10px;
             font-size: large;
@@ -68,6 +70,10 @@
 
         .open:hover{
             background-color: blue;
+        }
+
+        #btn:checked ~ .container{
+            display: block;
         }
 
     </style>

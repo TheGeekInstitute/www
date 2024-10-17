@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .red{
+            height: 200px;
+            width: 100px;
+            background-color: rgba(255, 0, 0, 0.623);
+            float: left;
+        }
+
+        .green{
+            height: 250px;
+            width: 100px;
+            background-color: rgba(0, 128, 0, 0.521);
+            float: right;
+        }
+
+        .blue{
+            height: 50px;
+            background-color: blue;
+            /* clear: left; */
+            /* clear: right; */
+            clear: both;
+
+        }
+
+        .box{
+            border: 3px solid red;
+            display: flow-root;
+        }
+
+        .box img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+
+    <div class="box">
+        <img src="../web/images/11.jpg" alt="">
+    </div>
+</body>
+</html>

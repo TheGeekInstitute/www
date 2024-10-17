@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-site</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        body{
+            background: #36517C;
+        }        
+        
+        .container{
+            height: 55px;
+            justify-content: space-between;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .container .logo{
+            color: white;
+            font-size: xx-large;
+            font-weight: 700;
+            padding: 50px;
+            height: 2vh;
+        }
+        .container .link{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+
+        }
+        .container .link li a{
+            display: block;
+            padding: 0 5px;
+            margin: 0 15px;
+            align-items: center;
+            line-height: 45px;
+            color: white;
+            top: 50px;
+            height: 3vh;
+            &:hover{
+                color: #47b2e4;
+            }
+            
+        }
+        .container form{
+            height: 5vh;
+        }
+        .container #btn{
+            background-color: #47b2e4;
+            color: white;
+            padding: 0 5px;
+            margin: 5px 10px;
+            height: 40px ;
+            width: 120px;
+            border-radius: 25px;
+            
+        }
+        .com{
+            color: white;
+            padding: 200px 80px;
+            width: 400px;
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">ARSHA</div>
+        <ul class="link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">team</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">Dropdown</a></li>
+            <li><a href="#">Contact</a></li>
+            <form>
+                <input type="submit" id="btn" value="Get Started">
+            </form>
+
+
+        </ul>
+    </div>
+    <div class="com">
+        <h1>Better Solutions For Your Business</h1>
+            <h3>Better Solutions For Your Business</h3>
+            <form> 
+                <input type="submit" id="btn" value="Get Started">
+            </form>
+    </div>
+</body>
+</html>

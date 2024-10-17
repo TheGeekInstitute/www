@@ -7,21 +7,39 @@
     <style>
 
 
-body{
+    body{
+    /*perspective: 200px */;
+      }
            .container{
+
             background-color:rgba(128, 128, 128, 0.527);
-            height: 300px;
-            width: 300px;
+            height: 250px;
+            width: 250px;
             margin: 150px auto;
             perspective: 600px;
-            transform: rotateY(30deg);
+  zx          transform: rotateY(30deg);
             transform-style: preserve-3d;
         }
+         .container .box {
+            height: 250px;
+            width: 250px;
+            background-color: rgb(71, 201, 45);
+            transition: all .3s linear;
+         }
 
+         .container:hover .box{
+            transform: rotateX(60deg);
+         }
 
     </style>
-</head>
-<body>
+     </head>
+     <body>
     
+    <div class="container">
+        <div class="box">
+            <h1> Deepika </h1>
+        </div>
+    </div>
+
 </body>
 </html>
