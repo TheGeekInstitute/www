@@ -7,9 +7,14 @@
     <title>Counters</title>
     <style>
         .container{
-            counter-reset: section;
+            counter-reset: section ;
         }
 
+        h1::before{
+            /* content: counter(section,lower-alpha) ". "; */
+            content: counter(section,lower-alpha) ". ";
+            counter-increment: section;
+        }
 
     </style>
 </head>
