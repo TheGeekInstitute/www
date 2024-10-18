@@ -144,6 +144,9 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px black;
             display: inline-block;
+            display: flex;
+            align-items: center;
+            ju
         }
 
         .container .box img{
@@ -165,6 +168,61 @@
         .container .box a:hover{
             background-color: rgb(0, 0, 0);
             border: 2px solid black;
+        }
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            width: 400px;
+            margin: 10px auto;
+        }
+
+        .container input[type="checkbox"] {
+            display: none;
+        }
+
+        .container .accordion {
+            margin: 5px 0;
+        }
+
+        .container .accordion .heading {
+            background-color: rebeccapurple;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            color: white;
+            font-size: x-large;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .container .accordion .heading i {
+            transition: all .2s linear;
+
+        }
+
+        .container .accordion .content {
+            background-color: aquamarine;
+            padding: 10px;
+            display: none;
+        }
+
+        .container .accordion input[type="checkbox"]:checked~.content {
+            display: block;
+        }
+
+        .container .accordion input[type="checkbox"]:checked~.heading i {
+            transform: rotate(45deg);
         }
     </style>
 </head>.
