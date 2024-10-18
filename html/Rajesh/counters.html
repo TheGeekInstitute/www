@@ -32,7 +32,15 @@
             color: green;
         }
 
-        
+        h3{
+            text-indent: 200px;
+        }
+
+        h3::before{
+            content:counter(section) "." counter(sub-section) "." counter(sub-sub-section) ". ";
+            color: crimson;
+            counter-increment: sub-sub-section;
+        }
 
     </style>
 </head>
