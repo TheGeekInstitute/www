@@ -20,7 +20,16 @@
         h1{
             counter-reset: sub-section;
         }
-        
+
+        h2{
+            text-indent: 100px;
+        }
+
+        h2::before{
+            content:counter(section) "." counter(sub-section) ". ";
+            counter-increment: sub-section;
+            color: green;
+        }
 
     </style>
 </head>
@@ -30,6 +39,8 @@
     <div class="container">
         <h1>Website Development</h1>
                 <h2>HTML</h2>
+                    <h3>Headings</h3>
+                    h3
                 <h2>CSS</h2>
                 <h2>JS</h2>
         <h1>Programming</h1>
