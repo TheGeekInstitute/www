@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-image.slider</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 350px;
+            width: 200px;
+        }
+        .container{
+            width: 200px;
+            height: 350px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            animation: --i 20s linear infinite;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="containet">
+        <span class="--i:1"><img src="https://storage.googleapis.com/fc-freepik-pro-rev1-eu-static/ai-styles-landings/anime/characters-and-scenes.jpg?h=1280" alt=""></span>
+        <span class="--i:2"><img src="https://cdn.pixabay.com/photo/2024/06/01/01/33/anime-8801333_1280.png" alt=""></span>
+        <span class="--i:3"><img src="https://i.pinimg.com/236x/74/7c/5c/747c5c9d6727452611d6d7a8abdfcecf.jpg" alt=""></span>
+        <span class="--i:4"><img src="https://img.freepik.com/free-photo/portrait-anime-character-with-stars_23-2151556386.jpg" alt=""></span>
+        <span class="--i:5"><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/k/x/f/medium-cute-girl-anime-original-pretty-eyes-matte-finish-wall-original-imagpbyyfwsahw5t.jpeg?q=90&crop=false" alt=""></span>
+        <span class="--i:6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5flLXhAAyclPxV-QNQ_XtUgu5ylHwoEcXw&s" alt=""></span>
+        <span class="--i:7"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtSrhko2RmxAshQEYlx25kUycJOheWw8syvDjCoAY1QkclAB9xQ5PK9LqAHXyPrNbtLM&usqp=CAU" alt=""></span>
+        <span class="--i:8"><img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-8Iz8KB1pJNil.jpg" alt=""></span>
+    </div>
+</body>
+</html>

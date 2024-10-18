@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image-slider</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 600px;
+            overflow: hidden;
+        }
+        .container .slider{
+            width: 800vw;
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            animation: slider 10s ease-in-out 0s infinite;
+        }
+        .container .slider .image{
+            height: 600px;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .container .slider .image .content{
+            color: white;
+            height: 300px;
+            width: 400px;
+            border-radius: 10px 50px;
+            padding: 50px;
+            font-size: x large;
+            background-color: rgba(0, 0, 0, 0.171);
+
+
+        }
+        @keyframes slider{
+            0%{
+                transform: translateX(0);
+            }
+            5%{
+                transform: translateX(0);
+            }
+            10%{
+                transform: translateX(0);
+            }
+            12.5%{
+                transform: translateX(-100vw);
+            }
+            15%{
+                transform: translateX(100vw);
+
+            }
+            18%{
+                transform: translateX(100vw);
+            }
+            21%{
+                transform: translateX(100vw);
+            }
+            25%{
+                transform: translateX(-200vw);
+            }
+            28%{
+                transform: translateX(-200vw);
+            }
+            31%{
+                transform: translateX(-200vw);
+            }
+            34%{
+                transform: translateX(-200vw);
+            }
+            37.5%{
+                transform: translateX(-300vw);
+            }
+            41%{
+                transform: translateX(-300vw);
+            }
+            45%{
+                transform: translateX(-300vw);
+
+            }
+            50%{
+                transform: translateX(-400vw);
+            }
+            53%{
+                transform: translateX(-400vw);
+            }
+            57%{
+                transform: translateX(-400vw);
+            }
+            62.5%{
+                transform: translateX(-500vw);
+            }
+            66%{
+                transform: translateX(-500vw);
+            }
+            70%{
+                transform: translateX(-500vw);
+            }
+            75%{
+                transform: translateX(-600vw);
+
+            }
+            79%{
+                transform: translateX(-600vw);
+
+            }
+            83%{
+                transform: translateX(-600vw);
+
+            }
+            87.5%{
+                transform: translateX(-700vw);
+            }
+            91%{
+                transform: translateX(-700vw);  
+            }
+            95%{
+                transform: translateX(-700vw);
+            }
+            100%{
+                transform: translateX(-800vw);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="image" style="background-image: url(https://i.pinimg.com/236x/74/7c/5c/747c5c9d6727452611d6d7a8abdfcecf.jpg);">
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                </div>
+                </div>
+
+                <div class="image" style="background-image: url(https://storage.googleapis.com/fc-freepik-pro-rev1-eu-static/ai-styles-landings/anime/characters-and-scenes.jpg?h=1280);">
+                    <div class="content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                    </div>
+                    </div>
+                    
+                    <div class="image" style="background-image: url(https://cdn.pixabay.com/photo/2024/06/01/01/33/anime-8801333_1280.png);">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                        </div>
+                        </div>
+                        
+                        <div class="image" style="background-image: url(https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/k/x/f/medium-cute-girl-anime-original-pretty-eyes-matte-finish-wall-original-imagpbyyfwsahw5t.jpeg?q=90&crop=false);">
+                            <div class="content">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                            </div>
+                            </div>
+
+                            <div class="image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5flLXhAAyclPxV-QNQ_XtUgu5ylHwoEcXw&s);">
+                                <div class="content">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                                </div>
+                                </div>
+
+                                <div class="image" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqtSrhko2RmxAshQEYlx25kUycJOheWw8syvDjCoAY1QkclAB9xQ5PK9LqAHXyPrNbtLM&usqp=CAU);">
+                                    <div class="content">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="image" style="background-image: url(https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-8Iz8KB1pJNil.jpg);">
+                                        <div class="content">
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo veritatis aliquam. A tempore similique cum optio in et. Nesciunt nulla quo debitis dicta eligendi? Dignissimos laborum totam cumque deleniti.</p>
+                                        </div>
+                                        </div>
+
+        </div>
+    </div>
+</body>
+</html>

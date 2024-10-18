@@ -1,0 +1,156 @@
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ ssh-keygen -t rsa -C "amazingphysics154@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Geek-Institute/.ssh/id_rsa):
+/c/Users/Geek-Institute/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase for "/c/Users/Geek-Institute/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Geek-Institute/.ssh/id_rsa
+Your public key has been saved in /c/Users/Geek-Institute/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:HsuFD0P91Wvl2k3HmqCFH9flRYuNTmi62D6ASCGyyTo amazingphysics154@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|                .|
+|.. .     .  . +o.|
+|oo. .   . .o +.o=|
+|o. .   . .ooo. ==|
+|. . . . S.o =..oB|
+|E  . . +oB.+ +.*o|
+| .     .=oo . + o|
+|        ..       |
+|         ..      |
++----[SHA256]-----+
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ cat  /c/Users/Geek-Institute/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEqfbbbBuJEJw8aUSi6ww5s5i+srsI4dhzaFTJhdekE9kCVjTar/iPCABlN4tk6Z7Kf8kur4NWJ14R4hhF5GFk70sia/ss6X4879nZZxXjUlqkkgxVTGrM7lXrNUMRsZjIvzxd6S/DVstCphUjEpH7gbu1s+piW4wBvEfGgQy+/JHy6XDCArI5bSeZ/zLHij6fvNHNpkXtHnOUYql+A7TiXwYCqItnowBmAXlQr0rAouOGhBFGmail.com
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ ssh -T git@github.com
+Hi Ravita-Kumari! You've successfully authenticated, but GitHub does n
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin main
+Enumerating objects: 23, done.
+Counting objects: 100% (23/23), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (23/23), 4.25 KiB | 1.06 MiB/s, done.
+Total 23 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To github.com:Ravita-Kumari/GitClass.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin feature
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 237 bytes | 237.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Ravita-Kumari/GitClass/pull/new/feature
+remote:
+To github.com:Ravita-Kumari/GitClass.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git push -u origin main
+To github.com:Ravita-Kumari/GitClass.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:Ravita-Kumari/GitClass.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 15.71 KiB | 1.05 MiB/s, done.
+From github.com:Ravita-Kumari/GitClass
+ * branch            main       -> FETCH_HEAD
+   602b61a..3f6cadd  main       -> origin/main
+Updating 602b61a..3f6cadd
+Fast-forward
+ 1_tl3B9CRamhIw54usIfXubw.png | Bin 0 -> 14827 bytes
+ helloworld.c                 |   0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1_tl3B9CRamhIw54usIfXubw.png
+ create mode 100644 helloworld.c
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ ls
+1_tl3B9CRamhIw54usIfXubw.png  helloworld.c  pseudo-classes.html
+app.js                        index.html    style.css
+ex.html                       loops.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
+$ cd
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TM.blf
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{0680e1ba-8af9-11ee-b3e5-f09e4a7e8eee}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ git clone https://github.com/Ravita-Kumari/GitClass.git
+Cloning into 'GitClass'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 29 (delta 9), reused 24 (delta 8), pack-reused 0 (from 0)
+Receiving objects: 100% (29/29), 20.13 KiB | 6.71 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~
+$ cd GitClass/
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/GitClass (main)
+$ ls
+1_tl3B9CRamhIw54usIfXubw.png  helloworld.c  pseudo-classes.html
+app.js                        index.html    style.css
+ex.html                       loops.html
+
+Geek-Institute@Geek-Institute-00 MINGW64 ~/GitClass (main)
+$

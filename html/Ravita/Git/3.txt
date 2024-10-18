@@ -7,7 +7,7 @@ Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
 $ git add .
 
 Geek-Institute@Geek-Institute-00 MINGW64 ~/Desktop/GitClass (main)
-$ git commit -m "asdas"
+$ git commit -m "asdas"clc
 [main e49fdb4] asdas
  1 file changed, 1 insertion(+), 1 deletion(-)
 

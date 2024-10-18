@@ -15,6 +15,8 @@
             list-style: none;
         }
 
+    
+
         .nav{
             height:50px ;
             display:flex ;
@@ -408,34 +410,56 @@
         }
 
         .link1 .box5{
-         height:250px;
+         height:300px;
          /* width:300px; */
          /* border-radius: 50%; */
-         border: 2px solid Black;
+         border: 2px solid black;
          margin:50px 70px;
+         
+         
         }
 
-        .link1  .box .icon{
-            font-size:25px;
+        .link1 .box5:hover{
+           transform: translateY(80px); 
+        }
+
+        .link1  .box5 .icon{
+           font-size: 40px;
             color: Blue;
+            margin:50px 30px ;
+            
             
 
 
         }
 
-        .link1 .icon .fa-vector-square .fa-wave-square .fa-calender-days .fa-tower-broadcast{
-            color: aqua;
+        .link1 .icon .fa-vector-square  {
+            color:rgb(84, 193, 236);
             
+        }
+
+        .link1 .icon .fa-wave-square{
+            color:rgb(84, 193, 236) ;
+        }
+
+        .link1 .icon .fa-calendar-days{
+            color:rgb(84, 193, 236) ;
+        }
+
+        .link1 .icon .fa-tower-broadcast{
+        color:rgb(84, 193, 236) ;
         }
 
         .link1 h1{
-            font-size:large;
+            font-size:xx-large;
             color: #0f3370 ;
+            padding: 0 30px;
+            margin-top: 5px;
         }
 
         .link1 p{
             font-size:20px ;
-            margin-top: 10px;
+            margin: 10px 30px;
         }
 
         .main2{
@@ -448,30 +472,80 @@
             /* text-align:center ; */
             display: flex;
             /* border: 2px solid Black; */
-        
-         /* mix-blend-mode: darken; */
+            color: #2c5292;
+            
+            background-blend-mode:darken;
         }
 
-        .main2 h1{
-            font-size: 35px ;
+        .main2 .border h1{
+            font-size: 30px ;
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            padding-top:0px ;
+         
             text-align:center ;
-            margin:0px 70px;
-            width:500px ;
+          
             color:white ;
-            
-           padding-top:100px ;
+            justify-content: center;
+           /* padding-left:10px ; */
+           padding-top: 100px;
+           display: block;
           
         }
 
-        .main2 p{
-          font-size:30px;
+        .main2 .border p{
+          font-size:20px;
           color: white;
-          padding-top: 100px;
+          padding-top: 20px;
+          margin: 0px 100px;
         }
 
+
+        .main2  .border a {
+            font-size:20px ;
+            text-align: center;
+            background-color: transparent;
+            border: 2px solid White;
+            margin: 50px 300px;
+           justify-content: center;
+            border-radius:50px ;
+         
+            color:white ;
+            padding: 10px 50px;
+            
+           
+        }
+
+        .images{
+            height: 150px;
+            margin: 50px 0px;
+        }
+
+         .images a{
+            font-size: xx-large;
+            /* padding-left:250px; */
+            margin: 50px 250px;
+            text-align: center;
+             justify-content: center;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            color: #2c5292;
+         }
+
+         .images p{
+            font-size: 20px;
+            margin: 10px 70px;
+         }
         
+         .img1{
+            
+         height: 400px;
+           
+        }
+
+        .img1 li a{
+            height: 50px;
+            align-items: center;
+        }
+         
     </style>
 </head>
 <body>
@@ -639,9 +713,28 @@
         </div>
 
         <div class="main2">
+            <div class="border">
             <h1>Call To Action</h1>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-           <a href="" id="btn">all To Action</a>
+           <a href="" id="btn">Call To Action</a>
+        </div>
+        
+        </div>
+
+        <div class="images">
+            <a href="">PORTFOLIO</a>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+           
+        </div>
+
+        <div class="img1">
+            <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">App</a></li>
+            <li><a href="#">Card</a></li>
+            <li><a href="#">Web</a></li>
+        </ul>
+        </div>
 </body>
 
 </html>

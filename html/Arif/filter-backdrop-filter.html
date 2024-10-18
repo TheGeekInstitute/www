@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter & backdropfilter</title>
+    <style>
+        img {
+            height: 400px;
+            width: 400px;
+
+            /* filter: blur(2px); */
+            /* filter: brightness(500%) blur(2px); */
+            /* filter: contrast(200%); */
+            /* filter: drop-shadow(2px 2px red); */
+            /* box-shadow: 2px 2px red; */
+            object-fit: cover;
+            /* filter: grayscale(50%); */
+            /* filter: invert(1); */
+            /* filter: opacity(50%); */
+            /* filter: saturate(300%); */
+            /* filter: sepia(50%); */
+        }
+
+        .container{
+            background-image: url("../wallpapers/abstract/Acrylic\ Paint\ 2.jpg");
+            height: 400px;
+            width: 400px;
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+
+
+        @supports(backdrop-filter: blur(2px)){
+            .container .box{
+                backdrop-filter: blur(2px);
+            }
+        }
+
+
+
+        @supports not (backdrop-filter: blur(2px)){
+            .container .box{
+                background-color: rgba(255, 0, 0, 0.534);
+            }
+        }
+
+        .nature{ object-fit: cover;
+            height: 300px;
+            width: 500px;
+            margin-top: 100px;
+            padding-top: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="../wallpapers/abstract/Acrylic Paint 3.jpg" alt="asd">
+
+    <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Apple_logo_grey.svg/1200px-Apple_logo_grey.svg.png" alt=""> -->
+
+
+<div class="container">
+    <div class="box"></div>
+</div>
+
+<img class="nature" src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg" alt="">
+
+
+
+</body>
+
+</html>

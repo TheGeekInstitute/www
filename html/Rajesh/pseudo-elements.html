@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        .para::first-letter{
+            font-size: xx-large;
+            color: red;
+            font-weight: 900;
+        }
+
+        .para::first-line{
+            color: green;
+        }
+
+        .para{
+            /* user-select: all; */
+            /* user-select: none; */
+        }
+
+
+        .para::selection{
+            color: red;
+            background-color: yellow;
+        }
+
+        ul li::marker{
+            color: red;
+            font-size: xx-large;
+        }
+
+        input::placeholder{
+            color: red;
+            opacity: 1;
+        }
+
+        input::-webkit-file-upload-button,
+        input::file-selector-button{
+            border: 2px solid red;
+            background-color: yellow;
+            font-size: large;
+        }
+
+        #geek::before{
+            content: 'The ';
+            color: red;
+        }
+
+        #geek:hover::after{
+            content: attr(data-myattr);
+            color: crimson;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit tempora exercitationem nisi fugit, et, quam culpa molestias blanditiis recusandae id beatae atque veniam? Fugit quas dolore saepe deleniti cumque.</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+
+    <h1 id="geek" data-myattr=" Institute">Geek Institute</h1>
+    
+    <input type="text" placeholder="Enter Name" name="" id="">
+
+    <input type="file">
+</body>
+</html>

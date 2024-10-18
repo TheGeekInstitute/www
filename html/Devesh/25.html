@@ -10,20 +10,16 @@
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'poppins',sans-serif;
-        }
-
-        body{
-            background: black;
-            color: white;
+            box-sizing: ;
+            list-style: none;
+            text-decoration: none;
         }
 
         .page{
             height: 380vh;
         }
         .bg{
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             background-image: url("https://i.redd.it/zjgs096khv591.jpg");
             background-color: rgba(0, 0, 0, 0.76);
@@ -40,7 +36,7 @@
             left: 9%;
             height: 10vh;
             width: 80vw;
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: flex;
             justify-content: space-between;
             color: aliceblue;
@@ -56,19 +52,20 @@
         .lft{
             display: flex;
             justify-content: space-between;
-            padding: 3em;
+            /* padding: 3em; */
         }
 
         .lft li{
             border: 1px solid rgb(100, 100, 100);
             width: 7em;
-            color: white;
+            /* color: white; */
             align-items: center;
             text-align: center;
             margin-right: .7em;
             padding: .3em .6em;
             border-radius: .2em;
             height: 1.5em;
+            background-color: rgba(22, 22, 22, 0.623);
             
         }
 
@@ -115,7 +112,7 @@
         .row2 .fline{
             font-size: 1.1em;
             font-weight: 700;
-            line-height: 1em;
+            line-height: 4em;
             text-align: center;
             letter-spacing: 1px;
             }
@@ -142,17 +139,6 @@
                 padding: 0em .9em;
                 border-radius: .3em;
                 border: 1px  solid grey;
-            }
-
-            .row3 input{
-                height: 7vh;
-                width: 25vw;
-                background-color: rgba(14, 13, 0.719);
-                font-size: 1em;
-                color: white;
-                padding: 0em .9em;
-                border: 1px solid grey;
-                border-radius: .3em;
             }
 
             .row3 li{
@@ -188,19 +174,36 @@
             font-family: Calibri, 'Trebuchet MS', sans-serif;
             }
 
-            .line1{
-                border: 2px solid white;
-                align-items: center;
-                justify-content: center;
-                text-align: start;
-                text-decoration: transparent;
-                
+            .border{
+                height: 1vh;
+                width: 100vw;
+                background-color: blue;
             }
 
-            .line1 .choose{
-                border: 2px solid red;
-                display: block;
+            .line1{
+                height: 13vh;
+                width: 80vw;
+                color: white;
             }
+
+            .line1 h1{
+                font-size: 1.7rem;
+                padding: .4em;
+            }
+
+            .line1 select{
+                height: 2.5em;
+                padding: 0em .8em;
+                margin-right: .9em;
+                background-color: rgba(29, 29, 29, 0.616);
+                font-size: 1em;
+                font-family: calibri, 'trebuchet MS', sans-serif;
+                color: white;
+                border-radius: .3em;
+                border: 1px solid gray;
+            }
+
+            
         
 
        
@@ -228,7 +231,7 @@
                 </div>
                 <div class="row2">
                     <p class="fline">Starts at ₹149. Cancel at any time.
-                        <br>
+                    <br>
                     </p>
                     <h5>Ready to watch? Enter your email to create or restart your <br> membership. </h5>
                 </div>
